@@ -1,7 +1,5 @@
 # Observer-Patch Holography
 
-> **Disclaimer:** This is speculative theoretical work. The framework is not proven correct, and the probability that it accurately describes physical reality is low. While internally consistent with some numerical matches, this does not constitute evidence of correctness. Many theoretical frameworks with good-looking math have ultimately been wrong. This material is presented for research discussion; all claims should be treated with appropriate skepticism.
-
 ## Abstract
 
 We present an observer-centric model in which fundamental data live on a
