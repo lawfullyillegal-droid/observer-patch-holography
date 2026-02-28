@@ -1,0 +1,95 @@
+\documentclass[11pt,a4paper]{article}
+
+% ── Encoding & fonts ──
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ── Page geometry ──
+\usepackage[margin=1in]{geometry}
+
+% ── Math ──
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+
+% ── Tables ──
+\usepackage{longtable,booktabs,array}
+\usepackage{calc}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+\usepackage{footnote}
+\makesavenoteenv{longtable}
+
+% ── Colors and hyperlinks ──
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=RoyalBlue,citecolor=ForestGreen,urlcolor=Maroon]{hyperref}
+
+% ── Theorem environments ──
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% ── Section numbering ──
+\setcounter{secnumdepth}{3}
+
+% ── Spacing ──
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}
+
+% ── Graphics ──
+\usepackage{graphicx}
+
+% ── Blockquote styling ──
+\usepackage{csquotes}
+
+% ── Tight list ──
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% ── Pandoc CSL refs ──
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2]{}{}
+\newcommand{\CSLBlock}[1]{#1}
+\newcommand{\CSLLeftMargin}[1]{#1}
+\newcommand{\CSLRightInline}[1]{#1}
+\newcommand{\CSLIndent}[1]{}
+
+% ══════════════════════════════════════════
+% METADATA
+% ══════════════════════════════════════════
+
+$if(title)$
+\title{$title$}
+$endif$
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+\date{}
+
+\begin{document}
+
+$if(title)$
+\maketitle
+$endif$
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+$body$
+
+\end{document}

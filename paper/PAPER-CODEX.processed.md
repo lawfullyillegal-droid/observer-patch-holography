@@ -981,7 +981,7 @@ explicit hypotheses:
 - B + MX ⟹ N3: continuity (Prop 5.2c)
 - N1 + N3 ⟹ density t(v,Ω) (Lemma 5.2d)
 - G + dilation ⟹ N2: translations (Cor 5.2e)
-- N2 + density ⟹ $T_k$k ⟹ Einstein (Thm 5.1)
+- N2 + density ⟹ T_kk ⟹ Einstein (Thm 5.1)
 
 Each step is proven below with explicit hypotheses.
 
@@ -1598,10 +1598,10 @@ reconstructed internally (Section 5.2), focusing constraints follow from
 information-theoretic principles without importing QFT axioms externally.
 
 **Derivation chain.** QNEC and focusing are derived, not assumed:
-- N1-N3 (derived, §5.2) ⟹ local K[I] and P = ∫ $T_k$k dv
+- N1-N3 (derived, §5.2) ⟹ local K[I] and P = ∫ T_kk dv
 - N2 (half-sided inclusion) ⟹ [K, P] = i 2π P
 - Relative entropy monotonicity ⟹ QNEC
-- Einstein (Thm 5.1) + Raychaudhuri ⟹ QFC for $S_g$en
+- Einstein (Thm 5.1) + Raychaudhuri ⟹ QFC for S_gen
 
 **Relative entropy monotonicity argument.** The key input is the monotonicity
 of relative entropy under partial trace, which is pure information theory:
@@ -1789,7 +1789,7 @@ edge-sector structure (derived). The $k = 3$ selection requires the
 additional interpretive identification with QNM frequencies (not derived
 from axioms). The linewidth prediction uses standard semiclassical inputs.
 
-**Numerical examples.** For $Δf_k$ = (c³/16π²GM) ln k:
+**Numerical examples.** For Δf_k = (c³/16π²GM) ln k:
 
 - **M = 30 M☉**: k=2 at 29.7 Hz, k=3 at 47.1 Hz
 - **M = 1 M☉**: k=2 at 891 Hz, k=3 at 1412 Hz
@@ -2654,14 +2654,14 @@ than the corresponding critical phase, so MaxEnt favors spectra where
 𝒪 is symmetry-forbidden or explicitly constrained.
 
 **Proof sketch.** Linearize the coarse-graining channel
-$Φ_{ℓ→L}$ around the MaxEnt state $ω_ℓ$. Constraint-
+Φ_{ℓ→L} around the MaxEnt state ω_ℓ. Constraint-
 preserving perturbations δρ evolve as
-δρ' = $Φ_{ℓ→L}(δρ)$. A relevant operator corresponds
-to an unstable eigen-direction $δρ_𝒪$ with
-|Φⁿ($δρ_𝒪$)| ~ bⁿʸ|$δρ_𝒪$|,
+δρ' = Φ_{ℓ→L}(δρ). A relevant operator corresponds
+to an unstable eigen-direction δρ_𝒪 with
+|Φⁿ(δρ_𝒪)| ~ bⁿʸ|δρ_𝒪|,
 y>0, under repeated coarse-graining. If 𝒪 is not fixed by
 𝒞 or symmetry, any small UV mismatch produces a nonzero
-component along $δρ_𝒪$, which grows under refinement,
+component along δρ_𝒪, which grows under refinement,
 contradicting refinement stability unless one imposes infinite fine tuning.
 Turning on the relevant coupling generates a mass scale and gaps the IR.
 At fixed low energy density, gapped phases have lower entropy density than
@@ -2680,10 +2680,10 @@ Anomaly cancellation is generation-by-generation, so it does not fix the
 number of generations. The admissibility conditions constrain the window;
 MAR selects the minimum.
 
-**Proposition 6.9 (The number of generations is $N_g$ = 3).** Under (i)
+**Proposition 6.9 (The number of generations is N_g = 3).** Under (i)
 intrinsic CP violation in the quark sector, (ii) UV-completability of
-$SU(2)_L$ (asymptotic freedom at one loop), (iii) MaxEnt/refinement
-stability selecting minimal viable spectrum, and (iv) the derived $N_c$ = 3
+SU(2)_L (asymptotic freedom at one loop), (iii) MaxEnt/refinement
+stability selecting minimal viable spectrum, and (iv) the derived N_c = 3
 from Theorem 6.14, the generation number is
 
 $$
@@ -2694,22 +2694,22 @@ $$
 **Inputs.**
 1. **Intrinsic CP violation exists** in the quark sector (empirical fact;
    also, the framework treats "intrinsic CP violation" as a selector input).
-2. **UV-completability proxy**: $SU(2)_L$ is asymptotically free at one
+2. **UV-completability proxy**: SU(2)_L is asymptotically free at one
    loop in the emergent EFT.
 3. **MaxEnt + refinement stability** penalizes unnecessary unfixed flavor
    structure, selecting the minimal viable spectrum.
-4. Use the already-derived $N_c$ = 3 from Theorem 6.14.
+4. Use the already-derived N_c = 3 from Theorem 6.14.
 
 **Step 1: CP violation lower bound.** The number of physical CP-violating
-phases in an $N_g$ × $N_g$ CKM matrix is:
+phases in an N_g × N_g CKM matrix is:
 
 $$
 \#\text{(CP phases)} = \frac{(N_g - 1)(N_g - 2)}{2}.
 $$
 
 
-- For $N_g$ = 1, 2: this is 0 → **no intrinsic CP violation possible**.
-- For $N_g$ = 3: this is 1 → **intrinsic CP violation possible**.
+- For N_g = 1, 2: this is 0 → **no intrinsic CP violation possible**.
+- For N_g = 3: this is 1 → **intrinsic CP violation possible**.
 
 So intrinsic CP violation requires:
 
@@ -2726,21 +2726,21 @@ b_{1,\mathrm{SU}(2)} = \frac{1}{3}\left[22 - N_g(N_c + 1)\right].
 $$
 
 
-Asymptotic freedom means $b_{1,SU(2)}$ > 0, i.e.,
+Asymptotic freedom means b_{1,SU(2)} > 0, i.e.,
 
 $$
 N_g(N_c + 1) < 22.
 $$
 
 
-With $N_c$ = 3, we have $N_c$ + 1 = 4, so:
+With N_c = 3, we have N_c + 1 = 4, so:
 
 $$
 4 N_g < 22 \quad \Rightarrow \quad N_g \le 5.
 $$
 
 
-Combining: 3 ≤ $N_g$ ≤ 5.
+Combining: 3 ≤ N_g ≤ 5.
 
 **Step 3: MAR selection.** Given the allowed window {3, 4, 5}, MAR
 (fourth component of the complexity vector $C(\Sigma)$) selects the
@@ -2762,7 +2762,7 @@ QED.
 
 ### Hilbert-space formulation of gluing data
 
-Let {$P_i$} be a good cover of the screen. For each patch, fix a representation
+Let {P_i} be a good cover of the screen. For each patch, fix a representation
 
 $$
 \pi_i: \mathcal{A}_i \to \mathcal B(\mathcal H_i).
@@ -2776,14 +2776,14 @@ U_{ij}: \mathcal H_j \to \mathcal H_i
 $$
 
 
-such that for all O in $𝒜_i$j,
+such that for all O in 𝒜_ij,
 
 $$
 \pi_i(O) = U_{ij} \pi_j(O) U_{ij}^\dagger.
 $$
 
 
-Normalize $U_i$i = 1 and $U_j$i = $U_i$j†.
+Normalize U_ii = 1 and U_ji = U_ij†.
 
 **Lemma 6.10 (centrality on triple overlaps).** On a triple overlap define
 
@@ -2792,18 +2792,18 @@ $$
 $$
 
 
-For all O in $𝒜_i$jk,
+For all O in 𝒜_ijk,
 
 $$
 \Omega_{ijk} \pi_i(O) = \pi_i(O) \Omega_{ijk}.
 $$
 
 
-**Proof.** Conjugation by $U_k$i sends $π_i(O)$ to $π_k(O)$, by $U_j$k to $π_j(O)$,
-by $U_i$j back to $π_i(O)$. Thus conjugation by $Ω_i$jk fixes $π_i(O)$, so
-$Ω_i$jk commutes with $π_i(O)$. QED.
+**Proof.** Conjugation by U_ki sends π_i(O) to π_k(O), by U_jk to π_j(O),
+by U_ij back to π_i(O). Thus conjugation by Ω_ijk fixes π_i(O), so
+Ω_ijk commutes with π_i(O). QED.
 
-**Lemma 6.11 (gauge behavior).** If $Ũ_i$j = $V_i U_i$j $V_j$† with $V_i$
+**Lemma 6.11 (gauge behavior).** If Ũ_ij = V_i U_ij V_j† with V_i
 acting trivially on overlap observables, then
 
 $$
@@ -2811,7 +2811,7 @@ $$
 $$
 
 
-In particular, if $Ω_i$jk is central, its class is gauge invariant. QED.
+In particular, if Ω_ijk is central, its class is gauge invariant. QED.
 
 ### Loop obstruction class (central defect)
 
@@ -2843,11 +2843,11 @@ $$
 A loop-coherent global gluing exists iff [z] = 0.
 
 **Proof.** Compare two parenthesizations of
-$φ_i$j $φ_j$k $φ_k$l $φ_l$i on a quadruple overlap to
+φ_ij φ_jk φ_kl φ_li on a quadruple overlap to
 obtain the cocycle condition above. Gauge changes shift z by a coboundary.
 If [z]=0, rephase by a 1-cochain to eliminate defects and obtain
 path-independent transport. Conversely, loop-coherent gluing implies
-$z_i$jk = 1. QED.
+z_ijk = 1. QED.
 
 ### EFT reduction to anomaly cancellation
 
@@ -2859,7 +2859,7 @@ anomalies.
 ### Hypercharge from anomaly freedom and Yukawas
 
 **Theorem 6.13 (Hypercharge from anomaly freedom and Yukawas).** Assume gauge
-group SU($N_c$) × SU(2) × $U(1)_Y$ and one generation of left-handed Weyl
+group SU(N_c) × SU(2) × U(1)_Y and one generation of left-handed Weyl
 fermions (Q, uᶜ, dᶜ, L, eᶜ), with a Higgs doublet H and Yukawa terms
 
 $$
@@ -2868,7 +2868,7 @@ $$
 
 
 Then anomaly freedom and Yukawa invariance fix the hypercharges up to an
-overall normalization, yielding the Standard Model pattern for $N_c$ = 3.
+overall normalization, yielding the Standard Model pattern for N_c = 3.
 
 **Proof.** Yukawa invariance gives
 
@@ -2900,15 +2900,15 @@ Y_e = 2 N_c Y_Q.
 $$
 
 
-With these relations, SU($N_c$)²U(1) and U(1)³ anomalies vanish
-automatically. Fixing the normalization by Q = T₃ + Y and Q($ν_L$)=0 gives
+With these relations, SU(N_c)²U(1) and U(1)³ anomalies vanish
+automatically. Fixing the normalization by Q = T₃ + Y and Q(ν_L)=0 gives
 
 $$
 Y_Q = \frac{1}{2 N_c}.
 $$
 
 
-For $N_c$ = 3,
+For N_c = 3,
 
 $$
 Y_Q = \frac{1}{6},\quad Y_L = -\frac{1}{2},\quad Y_e = 1,\quad
@@ -2916,11 +2916,11 @@ Y_u = -\frac{2}{3},\quad Y_d = \frac{1}{3},\quad Y_H = \frac{1}{2}.
 $$
 
 
-Without Yukawas, the cubic anomaly leaves two discrete branches ($Y_u$, $Y_d$
+Without Yukawas, the cubic anomaly leaves two discrete branches (Y_u, Y_d
 exchange). Yukawa invariance selects the branch with a single Higgs doublet.
 QED.
 
-**Corollary 6.13a (Exact rational hypercharges).** With the derived $N_c$ = 3,
+**Corollary 6.13a (Exact rational hypercharges).** With the derived N_c = 3,
 the hypercharge assignments are uniquely fixed to exact rational values:
 
 $$
@@ -2942,11 +2942,11 @@ $$
 
 ### Witten anomaly and the number of colors
 
-**Theorem 6.14 (The number of colors is $N_c$ = 3).**
-Under the gauge structure SU($N_c$) × $SU(2)_L$ × $U(1)_Y$ with one
+**Theorem 6.14 (The number of colors is N_c = 3).**
+Under the gauge structure SU(N_c) × SU(2)_L × U(1)_Y with one
 left-handed quark doublet Q per color and one left-handed lepton doublet
 L per generation, the global SU(2) anomaly (Witten, 1982) requires
-$N_c$ to be odd. Under MAR (lexicographic minimization of $C(\Sigma)$,
+N_c to be odd. Under MAR (lexicographic minimization of $C(\Sigma)$,
 where $N_c$ is the third component), this yields:
 
 $$
@@ -2955,7 +2955,7 @@ $$
 
 
 **Inputs.**
-1. Low-energy gauge group contains an $SU(2)_L$ factor and an SU($N_c$)
+1. Low-energy gauge group contains an SU(2)_L factor and an SU(N_c)
    color factor.
 2. The matter content per generation includes:
    - one left-handed quark doublet Q which is an SU(2) doublet and
@@ -2968,7 +2968,7 @@ $$
    of the complexity vector $C(\Sigma)$ is minimized.
 
 **Proof.** Count SU(2) doublets per generation:
-- Quark doublets: $N_c$ copies (one per color),
+- Quark doublets: N_c copies (one per color),
 - Lepton doublets: 1 copy.
 
 Total doublets per generation:
@@ -2985,11 +2985,11 @@ N_c + 1 \equiv 0 \pmod{2} \quad \Rightarrow \quad N_c \text{ is odd}.
 $$
 
 
-The Witten constraint alone allows $N_c$ ∈ {1, 3, 5, 7, ...}. $N_c$ = 1
+The Witten constraint alone allows N_c ∈ {1, 3, 5, 7, ...}. N_c = 1
 fails admissibility (SU(1) is trivial, no complex nonabelian charge type).
-MAR (input 4) then selects $N_c$ = 3 as the smallest nontrivial value. QED.
+MAR (input 4) then selects N_c = 3 as the smallest nontrivial value. QED.
 
-**Status.** The Witten anomaly derives $N_c$ odd. The specific value $N_c$ = 3
+**Status.** The Witten anomaly derives N_c odd. The specific value N_c = 3
 follows from MAR applied to the admissible class. Under the extended theory
 $T_{\mathrm{ext}}$, this is derived, not assumed.
 
@@ -3021,9 +3021,9 @@ The model requires photons and gravitons.
    from the fusion rules of these edge sectors.
 4. Corollary 6.1 (conditional on DHR transportability) reconstructs a field
    algebra with G as a local gauge symmetry.
-5. For the Standard Model, G includes $U(1)_e$m after electroweak symmetry
+5. For the Standard Model, G includes U(1)_em after electroweak symmetry
    breaking.
-6. A gauge boson is the quantum of the gauge field. Once $U(1)_e$m emerges from
+6. A gauge boson is the quantum of the gauge field. Once U(1)_em emerges from
    overlap redundancy, its gauge field exists, and its quantum (the photon) must
    exist.
 
@@ -3034,13 +3034,13 @@ the algebra net.
 
 **Graviton inevitability chain:**
 
-1. Theorem 4.2 ($BW_{S²}$) shows that under collar Markov locality, MaxEnt
+1. Theorem 4.2 (BW_{S²}) shows that under collar Markov locality, MaxEnt
    selection with rotational invariance, and Euclidean regularity, modular flow
    on caps becomes geometric conformal dilation.
 2. Theorem 4.3 identifies the induced kinematic group as
    Conf⁺(S²) ≅ PSL(2,ℂ) ≅ SO⁺(3,1), the Lorentz group.
 3. Theorem 5.1 (entanglement equilibrium) shows that the condition
-   $δS_g$en = 0 implies the semiclassical Einstein equations in the EFT regime.
+   δS_gen = 0 implies the semiclassical Einstein equations in the EFT regime.
 4. The metric tensor emerges as the compression of modular flow data, and its
    dynamics are fixed by entanglement equilibrium.
 5. A dynamical metric in a quantum theory requires a spin-2 quantum field.
@@ -3058,11 +3058,11 @@ where symmetry protection applies.
 
 **Theorem 6.17 (Photon mass vanishes exactly).** From the chain:
 - single Higgs doublet H = (1, 2, 1/2),
-- unbroken $U(1)_e$m after EWSB,
-- gauge-as-gluing (Assumption D) identifying $U(1)_e$m as a genuine redundancy
+- unbroken U(1)_em after EWSB,
+- gauge-as-gluing (Assumption D) identifying U(1)_em as a genuine redundancy
   on overlaps,
 
-a hard photon mass term (Proca mass) would break the $U(1)_e$m gauge
+a hard photon mass term (Proca mass) would break the U(1)_em gauge
 redundancy. Therefore it is forbidden, and
 
 $$
@@ -3084,9 +3084,9 @@ m_g = 0 \text{ exactly.}
 $$
 
 
-**Experimental status**: PDG 2025 lists $m_g$ ≤ 1.76 × 10⁻²³
+**Experimental status**: PDG 2025 lists m_g ≤ 1.76 × 10⁻²³
 eV/c² (90% CL) from gravitational wave dispersion analysis. The GW speed
-bound from GW170817 constrains ($c_G$W − c)/c to ~10⁻¹⁵. The
+bound from GW170817 constrains (c_GW − c)/c to ~10⁻¹⁵. The
 prediction matches observation. QED.
 
 **Theorem 6.19 (Charge quantization and no fractional color singlets).** If
@@ -3108,7 +3108,7 @@ Equivalently: no stable isolated particles with charges like ±1/3 can
 exist as color singlets.
 
 **Proof.** The Z₆ quotient identifies the center elements
-($e^{2πi/3}$, −1, $e^{iπ/3}$) ∈ SU(3) × SU(2) × U(1)
+(e^{2πi/3}, −1, e^{iπ/3}) ∈ SU(3) × SU(2) × U(1)
 with the identity. For a color-singlet state (τ = 0), the SU(3) factor acts
 trivially. The remaining identification requires the SU(2) × U(1)
 quantum numbers to satisfy
@@ -3148,11 +3148,11 @@ yields exact zeros or quantization, and experiment confirms to available precisi
 
 ### Coupling extraction from edge-sector probabilities
 
-The edge-center completion (Theorem 2.3) yields sector probabilities $p_α$
+The edge-center completion (Theorem 2.3) yields sector probabilities p_α
 on collar boundaries. These probabilities encode the renormalized gauge
 coupling through a heat-kernel/Laplacian weighting law.
 
-**Abelian case ($Z_n$).** For a $Z_n$ gauge theory, the edge
+**Abelian case (Z_n).** For a Z_n gauge theory, the edge
 sectors are labeled by charge q ∈ {0, 1, ..., n−1}. The correct
 "Casimir" eigenvalue is the Laplacian eigenvalue of the boundary random walk:
 
@@ -3161,7 +3161,7 @@ $$
 $$
 
 
-Note: only in the limit n → ∞ and q ≪ n does $λ_q$ ≈
+Note: only in the limit n → ∞ and q ≪ n does λ_q ≈
 (2πq/n)² ∝ q². For finite n, the exact form is essential.
 
 The sector probabilities follow a heat-kernel law:
@@ -3192,7 +3192,7 @@ Q_v^{(A)} = \prod_{\ell \in \mathrm{star}(v) \cap A} X_\ell^{\pm 1},
 $$
 
 
-where $X_ℓ$ is the shift operator on link ℓ. The sector projectors are:
+where X_ℓ is the shift operator on link ℓ. The sector projectors are:
 
 $$
 P_{v,q} = \frac{1}{n} \sum_{m=0}^{n-1} \omega^{-mq} \left(Q_v^{(A)}\right)^m,
@@ -3200,7 +3200,7 @@ P_{v,q} = \frac{1}{n} \sum_{m=0}^{n-1} \omega^{-mq} \left(Q_v^{(A)}\right)^m,
 $$
 
 
-and the probabilities are $p_{v,q}$ = ⟨$P_{v,q}$⟩. This
+and the probabilities are p_{v,q} = ⟨P_{v,q}⟩. This
 electric-center operator, built from X's rather than Z's, correctly
 captures the boundary gauge charge/flux that labels entanglement edge sectors.
 
@@ -3212,7 +3212,7 @@ p_j \propto d_j \, e^{-t(\mu) C_2(j)},
 $$
 
 
-where $d_j$ is the dimension and C₂(j) the quadratic Casimir. Extraction:
+where d_j is the dimension and C₂(j) the quadratic Casimir. Extraction:
 
 $$
 t(\mu) = -\frac{\log(p_j/p_0)}{C_2(j)}, \qquad
@@ -3232,7 +3232,7 @@ p_R = \frac{d_R \, e^{-t \lambda_R}}{\sum_{R'} d_{R'} \, e^{-t \lambda_{R'}}}
 $$
 
 
-where $λ_R$ is the Laplacian eigenvalue on the R-isotypic component
+where λ_R is the Laplacian eigenvalue on the R-isotypic component
 and t is determined by the collar Gibbs parameter.
 
 **Proof.**
@@ -3248,22 +3248,22 @@ L^2(G) \cong \bigoplus_R V_R \otimes V_R^*
 $$
 
 
-where $V_R$ is the carrier space of irrep R.
+where V_R is the carrier space of irrep R.
 
 *Step 2 (Gauge invariance).* The Gauss law constrains physical states. For an
 entanglement cut at Σ, the physical edge Hilbert space decomposes as
-$ℋ_{edge}^{phys}$ = $⊕_R W_R$ where $W_R$
+ℋ_{edge}^{phys} = ⊕_R W_R where W_R
 contains states with flux in representation R.
 
 *Step 3 (Natural Hamiltonian).* From LG, the MaxEnt generator restricted to
-edge modes takes the form $H_{edge}$ = $Σ_R h_R P_R$ where $P_R$ is
-the projector onto the R-sector. The key claim is that $h_R$ = $λ_R$.
+edge modes takes the form H_{edge} = Σ_R h_R P_R where P_R is
+the projector onto the R-sector. The key claim is that h_R = λ_R.
 
-*Justification:* The group Laplacian $Δ_G$ = −$Σ_a$ ($T^a$)² is the
+*Justification:* The group Laplacian Δ_G = −Σ_a (T^a)² is the
 **unique** (up to scale) bi-invariant second-order differential operator on
 G. Any other gauge-invariant local choice would require higher derivatives,
 violating locality. For finite groups, the Cayley graph Laplacian plays the
-same role: $λ_R$ = |S| − (1/$d_R$) $Σ_{s∈S} χ_R(s)$.
+same role: λ_R = |S| − (1/d_R) Σ_{s∈S} χ_R(s).
 
 *Step 4 (MaxEnt selection).* MaxEnt (Assumption B) selects the Gibbs state:
 
@@ -3274,8 +3274,8 @@ $$
 
 
 *Step 5 (Sector probabilities).* The probability of sector R is
-$p_R$ = Tr($ρ_{edge} P_R$). The effective dimension for
-entanglement is $d_R$ (not $d_R$²) because we trace over one side of the
+p_R = Tr(ρ_{edge} P_R). The effective dimension for
+entanglement is d_R (not d_R²) because we trace over one side of the
 cut. This gives:
 
 $$
@@ -3285,11 +3285,11 @@ $$
 
 QED.
 
-**Why $d_R$ and not $d_R$²?** The full edge space has dimension $d_R$² in
-sector R (from $V_R$ ⊗ $V_R$*), but entanglement entropy measures
+**Why d_R and not d_R²?** The full edge space has dimension d_R² in
+sector R (from V_R ⊗ V_R*), but entanglement entropy measures
 correlations *across* the cut. After tracing over one side, the reduced density
-matrix has effective rank $d_R$. Mathematically: in the Markov normal form, the
-edge factor on one side contributes log $d_R$ to the entropy.
+matrix has effective rank d_R. Mathematically: in the Markov normal form, the
+edge factor on one side contributes log d_R to the entropy.
 
 **Status.** The derivation is complete. The LG assumption (quasi-local MaxEnt
 generator) is derived from Theorem 2.6: if MaxEnt constraints are expectations
@@ -3311,8 +3311,8 @@ $$
 
 
 Euclidean evolution for "time" A (the area of a cylinder in 2D YM) gives
-weight(R) ∝ exp(−A $E_R$) = exp(−g² A C₂(R)/2). Comparing with the
-heat-kernel expansion $K_t(U)$ = $Σ_R d_R χ_R(U) e^{−t C₂(R)}$ yields the
+weight(R) ∝ exp(−A E_R) = exp(−g² A C₂(R)/2). Comparing with the
+heat-kernel expansion K_t(U) = Σ_R d_R χ_R(U) e^{−t C₂(R)} yields the
 exact identification:
 
 $$
@@ -3323,7 +3323,7 @@ $$
 This shows that the Laplacian + MaxEnt → heat-kernel structure is not just
 plausible; it is exactly how continuum Yang-Mills behaves in a solvable case.
 The coefficient in front of C₂ is fixed. In any regime where the edge theory
-reduces to an effective 2D YM with known "Euclidean thickness" $A_e$ff:
+reduces to an effective 2D YM with known "Euclidean thickness" A_eff:
 
 $$
 g^2(\mu) = \frac{2}{A_\mathrm{eff}(\mu)} \cdot \frac{\Delta_R(\mu)}{C_2(R)},
@@ -3337,29 +3337,29 @@ connects t to the conventional gauge coupling.
 ### Numerical validation of the heat-kernel law
 
 The heat-kernel/Laplacian weighting of edge sectors has been validated in
-explicit 2D $Z_n$ gauge models on closed geometries.
+explicit 2D Z_n gauge models on closed geometries.
 
 **Model.** A 2×2 periodic lattice gauge theory (8 links) with
-$Z_n$ link Hilbert spaces and Hamiltonian:
+Z_n link Hilbert spaces and Hamiltonian:
 
 $$
 H = -K \sum_p \mathrm{Re}(B_p) - h \sum_\ell \mathrm{Re}(X_\ell) - \Gamma \sum_v \mathrm{Re}(A_v),
 $$
 
 
-where $X_ℓ$ is the $Z_n$ shift on link ℓ, $B_p$ is the oriented
-plaquette operator (product of Z's around plaquette p), and $A_v$ is the
+where X_ℓ is the Z_n shift on link ℓ, B_p is the oriented
+plaquette operator (product of Z's around plaquette p), and A_v is the
 oriented star/Gauss operator (outgoing X, incoming X†). With
-K = 1 and Γ = 5, the ground state satisfies ⟨$A_v$⟩ = 1
+K = 1 and Γ = 5, the ground state satisfies ⟨A_v⟩ = 1
 at all vertices to numerical precision.
 
 **Region and edge operator.** Region A consists of links whose tail has
 x = 0 ("half-lattice" cut). At each boundary vertex v, the electric-center
-edge charge is the restricted star $Q_v^{(A)}$ = $∏_{ℓ ∈ star(v) ∩ A} X_ℓ^{±1}$.
+edge charge is the restricted star Q_v^{(A)} = ∏_{ℓ ∈ star(v) ∩ A} X_ℓ^{±1}.
 
 **Results for Z₂.** With λ₁ = 4sin²(π/2) = 4:
 
-| h | p₀ | p₁ | t | $g_e$nt |
+| h | p₀ | p₁ | t | g_ent |
 |----:|------:|------:|----:|---------:|
 | 0.5 | 0.8266 | 0.1734 | 0.391 | 0.249 |
 | 1.0 | 0.9612 | 0.0388 | 0.803 | 0.357 |
@@ -3368,7 +3368,7 @@ edge charge is the restricted star $Q_v^{(A)}$ = $∏_{ℓ ∈ star(v) ∩ A} X_
 **Results for Z₃ (overconstrained test).** With
 λ₁ = λ₂ = 4sin²(π/3) = 3:
 
-| h | p₀ | p₁ | p₂ | t(q=1) | t(q=2) | $g_e$nt | $m_p$laq |
+| h | p₀ | p₁ | p₂ | t(q=1) | t(q=2) | g_ent | m_plaq |
 |----:|------:|------:|------:|----------:|----------:|-------------------:|--------------------:|
 | 0.2 | 0.4395 | 0.2803 | 0.2803 | 0.1500 | 0.1500 | 0.154 | 2.22 |
 | 0.5 | 0.7509 | 0.1245 | 0.1245 | 0.5989 | 0.5989 | 0.309 | 1.75 |
@@ -3377,17 +3377,17 @@ edge charge is the restricted star $Q_v^{(A)}$ = $∏_{ℓ ∈ star(v) ∩ A} X_
 | 2.0 | 0.9921 | 0.0039 | 0.0039 | 1.8440 | 1.8440 | 0.542 | 10.10 |
 
 The equality p₁ = p₂ is exact (charge conjugation symmetry in Z₃).
-The equality $t_{q=1}$ = $t_{q=2}$ is the crucial **overconstrained** check: at
+The equality t_{q=1} = t_{q=2} is the crucial **overconstrained** check: at
 h = 1.0, extracting t from q = 1 and q = 2 independently gives
-$t_{q=1}$ ≈ 1.2956389318579 and $t_{q=2}$ ≈ 1.2956389318521. The
+t_{q=1} ≈ 1.2956389318579 and t_{q=2} ≈ 1.2956389318521. The
 agreement to ~10⁻¹⁴ (machine precision) confirms that the edge
 distribution genuinely follows the heat-kernel/Laplacian form.
 
-**Region-choice robustness.** At h = 1, the extracted $g_e$nt
+**Region-choice robustness.** At h = 1, the extracted g_ent
 is nearly independent of region size:
-- 2 links (one vertex's outgoing links): $g_e$nt ≈ 0.453
-- 4 links (half-lattice): $g_e$nt ≈ 0.454
-- 6 links (three vertices): $g_e$nt ≈ 0.453
+- 2 links (one vertex's outgoing links): g_ent ≈ 0.453
+- 4 links (half-lattice): g_ent ≈ 0.454
+- 6 links (three vertices): g_ent ≈ 0.453
 
 This locality confirms that the coupling is dominated by physics near the cut,
 not global bookkeeping, exactly what is expected if this behaves like a local
@@ -3404,8 +3404,8 @@ $$
 
 
 This ratio distinguishes the Laplacian law from naive alternatives: a linear
-model ($λ_q$ ∝ q) would predict ratio 2, while a quadratic model
-($λ_q$ ∝ q²) would predict ratio 4.
+model (λ_q ∝ q) would predict ratio 2, while a quadratic model
+(λ_q ∝ q²) would predict ratio 4.
 
 Simulations on a 2×2 torus in the dual/flux basis (125 states in the
 zero-winding sector) give:
@@ -3436,8 +3436,8 @@ P_{v,R} = \frac{d_R}{|G|} \sum_{h \in G} \chi_R(h^{-1}) Q_v^{(A)}(h),
 $$
 
 
-where $d_R$ is the dimension of irrep R, $χ_R$ is its character, and
-$Q_v^{(A)}(h)$ is the restricted gauge action at boundary vertex v acting
+where d_R is the dimension of irrep R, χ_R is its character, and
+Q_v^{(A)}(h) is the restricted gauge action at boundary vertex v acting
 only on links in region A.
 
 For S₃ (the smallest nonabelian group, order 6), there are three irreps:
@@ -3454,18 +3454,18 @@ $$
 imposing Gauss's law at all vertices means the physical wavefunction depends
 only on the plaquette holonomy's conjugacy class. Since S₃ has exactly 3
 conjugacy classes, the gauge-invariant Hilbert space is 3-dimensional, spanned
-by the character states {|$χ_R$⟩}. In this basis, the edge-sector
-probabilities are exactly $p_R$ = |$c_R$|² where |ψ₀⟩ = $Σ_R c_R$
-|$χ_R$⟩. This is not an approximation; it is an exact identity for the
+by the character states {|χ_R⟩}. In this basis, the edge-sector
+probabilities are exactly p_R = |c_R|² where |ψ₀⟩ = Σ_R c_R
+|χ_R⟩. This is not an approximation; it is an exact identity for the
 one-plaquette gauge-invariant sector.
 
-The heat-kernel ansatz predicts $p_R$ ∝ $d_R$ exp(−t $λ_R$). Extracting
+The heat-kernel ansatz predicts p_R ∝ d_R exp(−t λ_R). Extracting
 t independently from the sign and standard irreps provides an overconstrained
-test: the ratio $λ_s$ign/$λ_s$td = 6/3 = 2 is a
+test: the ratio λ_sign/λ_std = 6/3 = 2 is a
 parameter-free prediction. Results from a single-plaquette S₃ lattice gauge
 model (K=1, Γ=5):
 
-| h | $p_t$riv | $p_s$ign | $p_s$td | t (sign) | t (std) | Δt/t | log-ratio |
+| h | p_triv | p_sign | p_std | t (sign) | t (std) | Δt/t | log-ratio |
 |----:|--------------------:|--------------------:|-------------------:|-----------:|----------:|-------------:|----------:|
 | 0.5 | 0.909 | 0.0013 | 0.089 | 1.09 | 1.01 | 8.4% | 2.17 |
 | 1.0 | 0.980 | 7.5×10⁻⁵ | 0.020 | 1.58 | 1.54 | 2.8% | 2.06 |
@@ -3474,10 +3474,10 @@ model (K=1, Γ=5):
 | 12 | 0.9999 | 3.0×10⁻⁹ | 0.00011 | 3.27 | 3.27 | 0.1% | 2.002 |
 | 100 | 1.0000 | 6.1×10⁻¹³ | 2.0×10⁻⁶ | 4.69 | 4.69 | 0.009% | 2.0002 |
 
-The "Δt/t" column shows the fractional difference ($t_s$ign −
-$t_s$td) / t̄. The "log-ratio" column shows
-log($p_s$ign/p₀) / log($p_s$td/(2 p₀)), which should
-equal $λ_s$ign/$λ_s$td = 2 if the heat-kernel
+The "Δt/t" column shows the fractional difference (t_sign −
+t_std) / t̄. The "log-ratio" column shows
+log(p_sign/p₀) / log(p_std/(2 p₀)), which should
+equal λ_sign/λ_std = 2 if the heat-kernel
 form holds exactly.
 
 As h increases, both diagnostics converge: Δt/t drops below 10⁻⁴
@@ -3500,7 +3500,7 @@ $$
 $$
 
 
-Ratios of $Δ_R$ cancel all unknowns (t, partition function):
+Ratios of Δ_R cancel all unknowns (t, partition function):
 
 $$
 \frac{\Delta_{R_1}}{\Delta_{R_2}} = \frac{C_2(R_1)}{C_2(R_2)}
@@ -3508,7 +3508,7 @@ $$
 $$
 
 
-*SU(2) predictions.* Irreps labeled by spin j have $d_j$ = 2j+1 and
+*SU(2) predictions.* Irreps labeled by spin j have d_j = 2j+1 and
 C₂(j) = j(j+1). The framework predicts:
 
 - Δ₁/Δ₁/₂ = 2/(3/4) = **8/3 ≈ 2.667**
@@ -3529,11 +3529,11 @@ These are the SU(2)/SU(3) analogs of the Z₅ golden-ratio test: exact
 rational numbers fixed entirely by group theory, with no adjustable parameters.
 
 **Preliminary SU(3) results.** A one-plaquette SU(3) "quantum link" model
-(finite truncated irrep basis, $n_m$ax = 12, κ = 2) has been used to
+(finite truncated irrep basis, n_max = 12, κ = 2) has been used to
 extract t from 14 different irreps simultaneously. The results show internal
 consistency at the 1-3% level:
 
-| bare g² | extracted t (mean±std) | $g_e$nt | gap |
+| bare g² | extracted t (mean±std) | g_ent | gap |
 |--------:|----------------------:|------:|----:|
 | 0.3 | 0.314±0.0005 | 0.224 | 1.92 |
 | 0.5 | 0.539±0.0025 | 0.293 | 1.83 |
@@ -3545,7 +3545,7 @@ not yet "QCD proton physics" (it lacks dynamical quarks and operates on a single
 plaquette), but it demonstrates that the nonabelian extraction machinery produces
 self-consistent outputs without tuning.
 
-**Extracting the normalization factor $A_e$ff.** The 2D YM anchor
+**Extracting the normalization factor A_eff.** The 2D YM anchor
 (Section 6.13) gives t = g² A / 2, so the "effective Euclidean thickness" is
 
 $$
@@ -3555,17 +3555,17 @@ $$
 
 Computing this from the SU(3) table:
 
-| bare g² | extracted t | $A_e$ff |
+| bare g² | extracted t | A_eff |
 |--------:|------------:|------:|
 | 0.3 | 0.314 | 2.093 |
 | 0.5 | 0.539 | 2.156 |
 | 0.8 | 0.896 | 2.240 |
 | 1.0 | 1.144 | 2.288 |
 
-**Mean**: $A_e$ff ≈ 2.19 with point-to-point scatter ~4%.
+**Mean**: A_eff ≈ 2.19 with point-to-point scatter ~4%.
 
-**Extrapolation to weak coupling.** The systematic drift in $A_e$ff
-suggests fitting $A_e$ff(g²) = A₀ + a · g². A weighted linear
+**Extrapolation to weak coupling.** The systematic drift in A_eff
+suggests fitting A_eff(g²) = A₀ + a · g². A weighted linear
 fit gives:
 
 $$
@@ -3575,13 +3575,13 @@ $$
 
 with χ²/dof ≈ 0.09, indicating excellent consistency. This
 strongly suggests that, in this toy UV completion, the "missing normalization"
-converges to $A_e$ff → 2 as g² → 0.
+converges to A_eff → 2 as g² → 0.
 
 This is significant: the normalization factor behaves like a quasi-constant
 rather than an arbitrary sliding knob, and extrapolates to a simple value
 (≈ 2) in the weak-coupling limit. This provides a concrete path to
-absolute coupling predictions: once $A_e$ff is determined from
-microphysics, the conversion g² = 2t/$A_e$ff fixes the gauge
+absolute coupling predictions: once A_eff is determined from
+microphysics, the conversion g² = 2t/A_eff fixes the gauge
 coupling without additional free parameters.
 
 **Internal validation summary.** The heat-kernel law has been validated with
@@ -3589,7 +3589,7 @@ increasing precision across multiple gauge groups:
 
 - **Z₃**: Overconstrained t extraction (q=1 vs q=2), precision ~10⁻¹⁴
 - **Z₅**: Golden ratio squared (λ₂/λ₁ = φ²), precision 0.04%
-- **S₃**: Casimir log-ratio ($λ_s$ign/$λ_s$td = 2), precision 0.01%
+- **S₃**: Casimir log-ratio (λ_sign/λ_std = 2), precision 0.01%
 - **SU(3)**: 14-irrep simultaneous extraction, precision 1-3%
 
 The Z₃ test achieves machine precision because it is exactly
@@ -3615,14 +3615,14 @@ where |n⟩ is the lowest excited eigenstate with ⟨n|O|0⟩ ≠ 0
 and E₀ is the ground state energy.
 
 **Plaquette channel.** For the Z₃ model, using
-O = $Σ_p$ Re($B_p$), the extracted masses $m_p$laq are
+O = Σ_p Re(B_p), the extracted masses m_plaq are
 shown in Section 6.14. This is the standard spectroscopy definition: the lowest
 pole in the two-point correlator of a local gauge-invariant operator.
 
-**Dimensional transmutation.** In lattice units, both $g_e$nt and
-$m_p$laq are dimensionless numbers. The physical mass scale emerges
+**Dimensional transmutation.** In lattice units, both g_ent and
+m_plaq are dimensionless numbers. The physical mass scale emerges
 through dimensional transmutation once the coupling is matched to a continuum
-scheme. The ratio $m_p$laq / $g_e$nt² is a pure number
+scheme. The ratio m_plaq / g_ent² is a pure number
 that can be compared across different bare couplings to check scaling.
 
 ### Composite masses and the path to predictions
@@ -3638,23 +3638,23 @@ m_p = \Lambda_{\mathrm{QCD}} \cdot F\left(\frac{m_u}{\Lambda_{\mathrm{QCD}}},
 $$
 
 
-where $Λ_Q$CD is the dimensional transmutation scale and F is a
+where Λ_QCD is the dimensional transmutation scale and F is a
 dimensionless nonperturbative function.
 
 **The pipeline to Standard Model numerics:**
 
-1. **SU(2) quantum link model**: Measure boundary $p_j$ and fit slope
+1. **SU(2) quantum link model**: Measure boundary p_j and fit slope
    vs j(j+1) to extract g₂,ent(μ).
 
 2. **SU(3) quantum link model**: Measure boundary p_(p,q) and fit
    slope vs C₂(p,q) to extract g₃,ent(μ).
 
 3. **Scheme matching**: One-time match from entanglement scheme to
-   MS-bar, then RG-run to predict $α_s(M_Z)$, $sin²θ_W(M_Z)$.
+   MS-bar, then RG-run to predict α_s(M_Z), sin²θ_W(M_Z).
 
 4. **Mass scale**: With g₃(μ) fixed in physical units (gravity side
    supplies the absolute scale via entanglement equilibrium), compute
-   $Λ_Q$CD as the first real mass-scale prediction.
+   Λ_QCD as the first real mass-scale prediction.
 
 At one loop,
 
@@ -3665,7 +3665,7 @@ $$
 $$
 
 
-A 0.1% uncertainty in $α_s$ becomes approximately 0.7% uncertainty in the
+A 0.1% uncertainty in α_s becomes approximately 0.7% uncertainty in the
 hadronic mass scale.
 
 ### Gauge unification and spectrum constraints
@@ -3680,15 +3680,15 @@ techniques that predate this framework. The results for MSSM-like spectra
 are well-known in the GUT literature. What the framework adds is:
 (1) a *mechanism* for why couplings might unify (shared geometric origin),
 and (2) a product group structure that forbids proton decay. The numerical
-$α_s$ consistency is a *consistency check* with known physics, not a
+α_s consistency is a *consistency check* with known physics, not a
 novel prediction of this framework.
 
 **Inputs.** We use:
 
-1. **Canonical GUT normalization**: α₁ ≡ (5/3)$α_Y$, the
+1. **Canonical GUT normalization**: α₁ ≡ (5/3)α_Y, the
    standard convention for comparing to RG coefficients.
 
-2. **One-loop RG running** between $M_Z$ and a unification scale $M_U$:
+2. **One-loop RG running** between M_Z and a unification scale M_U:
 
 $$
    \frac{1}{\alpha_i(M_Z)} = \frac{1}{\alpha_U} + \frac{b_i}{2\pi}
@@ -3696,21 +3696,21 @@ $$
 $$
 
 
-3. **Measured electroweak inputs at $M_Z$** (PDG 2025):
-   - α̂⁽⁵⁾($M_Z$²)⁻¹ = 127.930 ± 0.008 (MS-bar)
-   - $ŝ²_Z$ ≡ sin²θ̂_W($M_Z$²) = 0.23122 ± 0.00006 (MS-bar)
-   - $α_s(M_Z)$ = 0.1177 ± 0.0009 (from EW fit; world average 0.1180)
+3. **Measured electroweak inputs at M_Z** (PDG 2025):
+   - α̂⁽⁵⁾(M_Z²)⁻¹ = 127.930 ± 0.008 (MS-bar)
+   - ŝ²_Z ≡ sin²θ̂_W(M_Z²) = 0.23122 ± 0.00006 (MS-bar)
+   - α_s(M_Z) = 0.1177 ± 0.0009 (from EW fit; world average 0.1180)
 
-   *Note on $sin²θ_W$ schemes:* PDG lists multiple definitions with different values.
-   The MS-bar value $ŝ²_Z$ = 0.23122 differs from the effective leptonic angle
-   s̄$²_ℓ$ = 0.23154 and the on-shell value $s²_W$ = 0.22342. Since we compute from
+   *Note on sin²θ_W schemes:* PDG lists multiple definitions with different values.
+   The MS-bar value ŝ²_Z = 0.23122 differs from the effective leptonic angle
+   s̄²_ℓ = 0.23154 and the on-shell value s²_W = 0.22342. Since we compute from
    running couplings α₁, α₂, the natural comparison is to the MS-bar definition.
 
 4. **Candidate spectra**:
    - SM-only: (b₁, b₂, b₃) = (41/10, −19/6, −7)
    - MSSM-like: (b₁, b₂, b₃) = (33/5, 1, −3)
 
-**Derived couplings at $M_Z$.** From $α_e$m and $sin²θ_W$:
+**Derived couplings at M_Z.** From α_em and sin²θ_W:
 
 $$
 \alpha_2 = \frac{\alpha_{\mathrm{em}}}{\sin^2\theta_W}, \quad
@@ -3720,13 +3720,13 @@ $$
 
 
 Numerically (central values):
-- A₁ ≡ α₁⁻¹($M_Z$) ≈ 59.00
-- A₂ ≡ α₂⁻¹($M_Z$) ≈ 29.59
-- A₃ ≡ $α_s$⁻¹($M_Z$) ≈ 8.47
+- A₁ ≡ α₁⁻¹(M_Z) ≈ 59.00
+- A₂ ≡ α₂⁻¹(M_Z) ≈ 29.59
+- A₃ ≡ α_s⁻¹(M_Z) ≈ 8.47
 
-**Analytic prediction formula.** Define $A_i$ = $α_i$⁻¹($M_Z$) and
-L = ln($M_U/M_Z$). The RG equations give $A_i$ = $A_U$ + ($b_i$/2π)L. Taking
-differences to eliminate $A_U$:
+**Analytic prediction formula.** Define A_i = α_i⁻¹(M_Z) and
+L = ln(M_U/M_Z). The RG equations give A_i = A_U + (b_i/2π)L. Taking
+differences to eliminate A_U:
 
 $$
 L = \frac{2\pi}{b_1 - b_2}(A_1 - A_2).
@@ -3740,7 +3740,7 @@ A_3^\mathrm{pred} = \frac{b_3 - b_2}{b_1 - b_2} A_1 + \frac{b_1 - b_3}{b_1 - b_2
 $$
 
 
-Once beta coefficients are fixed, $α_s(M_Z)$ is completely determined by
+Once beta coefficients are fixed, α_s(M_Z) is completely determined by
 electroweak data. This is the hard numerical constraint.
 
 **Consistency check 1 (SM-only unification).** One-loop unification with SM beta
@@ -3751,11 +3751,11 @@ $$
 $$
 
 
-with $M_U$ ≈ 1.0 × 10¹³ GeV and $α_U$⁻¹ ≈ 42.4.
+with M_U ≈ 1.0 × 10¹³ GeV and α_U⁻¹ ≈ 42.4.
 
 **Comparison to measurement**: The PDG 2025 EW-fit value is
-$α_s(M_Z)$ = 0.1177 ± 0.0009. The SM-only prediction misses by
-$Δα_s$ ≈ 0.047, a ~52σ discrepancy, far too large to be rescued
+α_s(M_Z) = 0.1177 ± 0.0009. The SM-only prediction misses by
+Δα_s ≈ 0.047, a ~52σ discrepancy, far too large to be rescued
 by two-loop corrections or thresholds.
 
 This rules out SM-only unification: if the framework's gauge sector has anything
@@ -3770,15 +3770,15 @@ $$
 $$
 
 
-with $M_U$ ≈ 2.0 × 10¹⁶ GeV and $α_U$⁻¹ ≈ 24.34 ± 0.01.
+with M_U ≈ 2.0 × 10¹⁶ GeV and α_U⁻¹ ≈ 24.34 ± 0.01.
 
 **Comparison to measurement**: The PDG 2025 EW-fit value is
-$α_s(M_Z)$ = 0.1177 ± 0.0009. The mismatch is
-$Δα_s$ ≈ −0.0011, about 1.2σ. This is within the
+α_s(M_Z) = 0.1177 ± 0.0009. The mismatch is
+Δα_s ≈ −0.0011, about 1.2σ. This is within the
 expected range of two-loop corrections, threshold effects, and scheme
 matching.
 
-**Significance**: SM-only unification predicts $α_s(M_Z)$ ≈ 0.071,
+**Significance**: SM-only unification predicts α_s(M_Z) ≈ 0.071,
 catastrophically wrong. The MSSM-like prediction is within 1.5σ of
 experiment. This validates the spectrum constraint but is not a novel
 prediction (MSSM GUT analyses from the 1990s obtained similar results).
@@ -3796,7 +3796,7 @@ SU(2) and SU(3) running, far more than a single extra Higgs doublet.
 The pattern is highly specific and constrains the spectrum sharply.
 
 **Threshold analysis.** The preceding analysis assumes UV degrees of freedom
-are active all the way down to $M_Z$. If the Δb only turns on above
+are active all the way down to M_Z. If the Δb only turns on above
 some threshold M*, the running becomes piecewise:
 
 $$
@@ -3805,31 +3805,31 @@ $$
 $$
 
 
-The predicted $α_s(M_Z)$ depends sensitively on M_*:
+The predicted α_s(M_Z) depends sensitively on M_*:
 
-- **M_* = $M_Z$**: $α_s(M_Z)$ = 0.1166, $M_U$ = 2.0×10¹⁶ GeV
-- **M_* = 1 TeV**: $α_s(M_Z)$ = 0.1100, $M_U$ = 9.6×10¹⁵ GeV
-- **M_* = 10 TeV**: $α_s(M_Z)$ = 0.1043, $M_U$ = 4.9×10¹⁵ GeV
+- **M_* = M_Z**: α_s(M_Z) = 0.1166, M_U = 2.0×10¹⁶ GeV
+- **M_* = 1 TeV**: α_s(M_Z) = 0.1100, M_U = 9.6×10¹⁵ GeV
+- **M_* = 10 TeV**: α_s(M_Z) = 0.1043, M_U = 4.9×10¹⁵ GeV
 
 This quantifies what the "scheme matching" step must accomplish: if UV physics
 only turns on at multi-TeV scales, the matching correction must shift
-$α_s$⁻¹ by ~0.6 to reach the experimental value.
+α_s⁻¹ by ~0.6 to reach the experimental value.
 
-**Inverted problem: derive $M_S$ from measured couplings.** With three measured
-couplings (A₁, A₂, A₃) and three unknowns ($M_S$, $M_U$, $α_U$), the
+**Inverted problem: derive M_S from measured couplings.** With three measured
+couplings (A₁, A₂, A₃) and three unknowns (M_S, M_U, α_U), the
 system is exactly determined. Define $x = \ln(M_S/M_Z)$ and
-$y = \ln(M_U/M_S)$. Taking differences to eliminate $α_U$ gives a 2×2
+$y = \ln(M_U/M_S)$. Taking differences to eliminate α_U gives a 2×2
 linear system whose solution is:
 
 > **Prediction (Effective threshold scale):**
 >
-> - **$M_S$ ≈ 57 GeV** (42–77 GeV at 1σ)
-> - **$M_U$ ≈ 2.27 × 10¹⁶ GeV**
-> - **$α_U$⁻¹ ≈ 24.0**
+> - **M_S ≈ 57 GeV** (42–77 GeV at 1σ)
+> - **M_U ≈ 2.27 × 10¹⁶ GeV**
+> - **α_U⁻¹ ≈ 24.0**
 
-The uncertainty is dominated by the experimental error on $α_s(M_Z)$ = 0.1177 ± 0.0009.
-The central value is sensitive to the precise $α_s$ input: $α_s$ = 0.1175 gives
-$M_S$ ≈ 67 GeV, while $α_s$ = 0.1166 (the MSSM prediction) gives $M_S$ ≈ 91 GeV.
+The uncertainty is dominated by the experimental error on α_s(M_Z) = 0.1177 ± 0.0009.
+The central value is sensitive to the precise α_s input: α_s = 0.1175 gives
+M_S ≈ 67 GeV, while α_s = 0.1166 (the MSSM prediction) gives M_S ≈ 91 GeV.
 The qualitative conclusion (effective threshold near the electroweak scale)
 is robust across the 1σ range.
 
@@ -3840,7 +3840,7 @@ some ultra-high scale; their *net effect* on beta functions must turn on around
 ~10² GeV.
 
 If the framework requires unification but the UV spectrum only turns on well
-above $M_Z$ (say, at multi-TeV), then the gap must be filled by one of:
+above M_Z (say, at multi-TeV), then the gap must be filled by one of:
 (i) additional running effects at intermediate scales,
 (ii) non-degenerate particle thresholds that mimic low-scale onset, or
 (iii) two-loop corrections providing effective Δb at lower scales.
@@ -3914,27 +3914,27 @@ edge-sector probabilities factorize across gauge factors. If future UV model
 calculations or lattice measurements show non-factorizing edge weights, the
 gauge group would not be a product and proton decay could be allowed.
 
-**Experimental status.** Minimal SU(5) GUTs predict $τ_p$ ~ 10³¹
-years; Super-Kamiokande has pushed limits to $τ_p$ > 10³⁴ years,
+**Experimental status.** Minimal SU(5) GUTs predict τ_p ~ 10³¹
+years; Super-Kamiokande has pushed limits to τ_p > 10³⁴ years,
 excluding minimal GUTs. The model's prediction of proton stability is
 consistent with all observations.
 
 **Distinguishing signature.** The combination of **precision gauge
-unification** (MSSM-like $α_s$ consistency) with **proton stability**
+unification** (MSSM-like α_s consistency) with **proton stability**
 is characteristic of this framework. Standard SUSY GUTs predict both
 unification *and* proton decay; this model predicts unification *without*
 proton decay, if sector factorization holds.
 
 **Chain summary**: Edge-sector probabilities → gauge couplings at UV scale
-→ one-loop RG → consistency check for $α_s(M_Z)$ → spectrum
+→ one-loop RG → consistency check for α_s(M_Z) → spectrum
 constraint from mismatch with SM-only running. The product group structure
 (derived from MAR) separately implies proton stability.
 
-**Precision of the pixel-area relation.** There are two distinct precision questions for $a_c$ell:
+**Precision of the pixel-area relation.** There are two distinct precision questions for a_cell:
 
-**(A) In Planck units ($a_c$ell/$ℓ_p$²).** Once the dimensionless entropy density ℓ̄ is fixed, the dimensionless pixel area is $a_c$ell/$ℓ_p$² = 4ℓ̄. This ratio is **independent of the experimental uncertainty in G**, because $ℓ_p$² ∝ G cancels. The limiting precision is whatever uncertainty remains in ℓ̄, i.e., in the inputs used to determine t(μ) (currently gauge couplings). Since we feed in SM couplings to get ℓ̄, precision is limited by those inputs, not by G.
+**(A) In Planck units (a_cell/ℓ_p²).** Once the dimensionless entropy density ℓ̄ is fixed, the dimensionless pixel area is a_cell/ℓ_p² = 4ℓ̄. This ratio is **independent of the experimental uncertainty in G**, because ℓ_p² ∝ G cancels. The limiting precision is whatever uncertainty remains in ℓ̄, i.e., in the inputs used to determine t(μ) (currently gauge couplings). Since we feed in SM couplings to get ℓ̄, precision is limited by those inputs, not by G.
 
-**(B) In SI units ($a_c$ell [m²]).** If ℓ̄ were known exactly, then $a_c$ell in SI units would inherit the uncertainty of G:
+**(B) In SI units (a_cell [m²]).** If ℓ̄ were known exactly, then a_cell in SI units would inherit the uncertainty of G:
 
 $$
 \ell_p = \sqrt{\frac{\hbar G}{c^3}} \quad \Rightarrow \quad
@@ -3944,13 +3944,13 @@ $$
 
 
 Using CODATA values: G = 6.67430 × 10⁻¹¹ m³ kg⁻¹ s⁻² with relative uncertainty ≈ 2.2 × 10⁻⁵, so the best-case SI precision is:
-- Relative precision of $a_c$ell: $δa_c$ell/$a_c$ell ≈ 2.2 × 10⁻⁵
-- Relative precision of √$a_c$ell: ≈ 1.1 × 10⁻⁵
+- Relative precision of a_cell: δa_cell/a_cell ≈ 2.2 × 10⁻⁵
+- Relative precision of √a_cell: ≈ 1.1 × 10⁻⁵
 
-With the currently derived value $a_c$ell/$ℓ_p$² ≈ 1.63094, this gives $a_c$ell ≈ 4.26 × 10⁻⁷⁰ m², with irreducible CODATA uncertainty $δa_c$ell ≈ 9.5 × 10⁻⁷⁵ m².
+With the currently derived value a_cell/ℓ_p² ≈ 1.63094, this gives a_cell ≈ 4.26 × 10⁻⁷⁰ m², with irreducible CODATA uncertainty δa_cell ≈ 9.5 × 10⁻⁷⁵ m².
 
-**Reverse-engineering $α_s$ from the pixel-area scale.** The pixel-area relation
-(Section 5.4) provides an independent route to $α_s(M_Z)$. The cell area in
+**Reverse-engineering α_s from the pixel-area scale.** The pixel-area relation
+(Section 5.4) provides an independent route to α_s(M_Z). The cell area in
 Planck units is:
 
 $$
@@ -3987,14 +3987,14 @@ universal modular geometry, not by convention.
 - Going from C(δ) to C(δ + Δ) adds an annular strip of degrees of freedom.
 - Because the strip is in the Markov regime, the only long-range coupling between "inside" and "outside" is through the edge-sector label α (irrep/sector) on the cut.
 
-At the level of the classical distribution over sectors $p_α(δ)$, thickening the collar acts by a stochastic kernel:
+At the level of the classical distribution over sectors p_α(δ), thickening the collar acts by a stochastic kernel:
 
 $$
 p(\delta + \Delta) = \mathsf{K}_\Delta \cdot p(\delta).
 $$
 
 
-Imposing gauge-class invariance (kernel depends only on conjugacy class) and rotational invariance (same kernel along the cut), the kernel $K_Δ$ must be a central (class) convolution kernel on the group.
+Imposing gauge-class invariance (kernel depends only on conjugacy class) and rotational invariance (same kernel along the cut), the kernel K_Δ must be a central (class) convolution kernel on the group.
 
 By Peter-Weyl, irreps diagonalize any class-convolution operator. The only continuous one-parameter semigroups of such kernels are generated by the group Laplacian:
 
@@ -4003,7 +4003,7 @@ $$
 $$
 
 
-This is exactly the heat-kernel form $p_R(t)$ ∝ $d_R^κ$ exp(−t C₂(R)) with κ = 1 in the simplest MaxEnt edge state.
+This is exactly the heat-kernel form p_R(t) ∝ d_R^κ exp(−t C₂(R)) with κ = 1 in the simplest MaxEnt edge state.
 
 **Key consequence (the RG step).** Because collar layers compose, kernels compose by convolution, and for heat kernels:
 
@@ -4014,7 +4014,7 @@ $$
 
 so the coupling parameter t is **additive** under stacking collar layers. Additive in the "RG-time" variable is exactly what one-loop running requires: if the physical scale changes multiplicatively, the number of collar layers changes additively, hence t runs linearly in ln μ.
 
-**Normalization from modular geometry.** The $BW_{S²}$ theorem gives modular flow on a cap as the conformal dilation preserving the cap and fixing its boundary, with KMS normalization β = 2π from Euclidean regularity. Near an entangling surface, modular flow is a boost; in Euclidean continuation it becomes an angular coordinate with period 2π. The dilation parameter is s ∼ ln(μ/μ₀).
+**Normalization from modular geometry.** The BW_{S²} theorem gives modular flow on a cap as the conformal dilation preserving the cap and fixing its boundary, with KMS normalization β = 2π from Euclidean regularity. Near an entangling surface, modular flow is a boost; in Euclidean continuation it becomes an angular coordinate with period 2π. The dilation parameter is s ∼ ln(μ/μ₀).
 
 Because the imaginary period is 2πi, one modular thermal cycle corresponds to a multiplicative scale change:
 
@@ -4023,9 +4023,9 @@ $$
 $$
 
 
-In base-10 decades: log₁₀($e^{2π}$) = 2π/ln(10) ≈ 2.728 decades. If earlier analysis required a normalization factor around ~2.9, the interpretation is that this is the conversion between "per modular period" and "per decade of μ," fixed by Euclidean regularity rather than being a tunable parameter.
+In base-10 decades: log₁₀(e^{2π}) = 2π/ln(10) ≈ 2.728 decades. If earlier analysis required a normalization factor around ~2.9, the interpretation is that this is the conversion between "per modular period" and "per decade of μ," fixed by Euclidean regularity rather than being a tunable parameter.
 
-Using the measured $a_{\mathrm{cell}}/\ell_p^2 = 1.63094$ and α₂($M_Z$) ≈ 0.0338
+Using the measured $a_{\mathrm{cell}}/\ell_p^2 = 1.63094$ and α₂(M_Z) ≈ 0.0338
 (giving t₂ ≈ 1.334), we compute $\bar{\ell}_{\mathrm{SU}(2)} ≈ 0.3946$. The
 SU(3) contribution is then forced:
 
@@ -4037,27 +4037,27 @@ $$
 Inverting the monotone function $\bar{\ell}_{\mathrm{SU}(3)}(t_3)$ gives
 t₃ ≈ 4.657, hence:
 
-**$α_s(M_Z)$|_pixel ≈ 0.1175**
+**α_s(M_Z)|_pixel ≈ 0.1175**
 
-This is consistent with the PDG EW-fit value $α_s(M_Z)$ = 0.1177 ± 0.0009 to within
+This is consistent with the PDG EW-fit value α_s(M_Z) = 0.1177 ± 0.0009 to within
 ~5 × 10⁻⁵. The agreement is striking but **conditional**: it becomes a
 genuine prediction only if $a_{\mathrm{cell}}/\ell_p^2$ can be fixed
-independently (from the gravity side) rather than computed from $α_s$.
+independently (from the gravity side) rather than computed from α_s.
 
 **Proton mass estimate.** Using standard 4-loop $\overline{\mathrm{MS}}$ running
-with $n_f$ = 5 at $M_Z$, the above $α_s$ corresponds to
-$Λ_{\overline{\mathrm{MS}}}^{(5)}$ ≈ 0.208 GeV. With the lattice-motivated ansatz
-$m_p$ ≈ 4.47 $Λ_Q$CD:
+with n_f = 5 at M_Z, the above α_s corresponds to
+Λ_{\overline{\mathrm{MS}}}^{(5)} ≈ 0.208 GeV. With the lattice-motivated ansatz
+m_p ≈ 4.47 Λ_QCD:
 
 $$
 m_p^{\mathrm{est}} \approx 4.47 \times 0.208 \simeq 0.93 \text{ GeV},
 $$
 
 
-within ~1% of the physical proton mass $m_p$ = 0.938 GeV, connecting pixel
+within ~1% of the physical proton mass m_p = 0.938 GeV, connecting pixel
 geometry to hadronic physics. The factor 4.47 remains an external lattice input.
 
-**Simultaneous prediction of $α_s$ and $sin²θ_W$.** The pixel-area constraint can
+**Simultaneous prediction of α_s and sin²θ_W.** The pixel-area constraint can
 be combined with the electroweak identity and unification to predict **both**
 gauge couplings from minimal inputs. The system of constraints:
 
@@ -4071,30 +4071,30 @@ gives a unique physical solution:
 
 > **Prediction (Simultaneous gauge couplings):**
 >
-> **$α_s(M_Z)$ = 0.1175,  sin²θ̂_W($M_Z$) = 0.2311**
+> **α_s(M_Z) = 0.1175,  sin²θ̂_W(M_Z) = 0.2311**
 
 **Comparison to measurement:**
-- $α_s(M_Z)$: predicted 0.1175 vs PDG 0.1177 ± 0.0009, difference 2×10⁻⁴ (within 1σ)
-- $sin²θ_W(M_Z)$: predicted 0.2311 vs PDG $ŝ²_Z$ = 0.23122 ± 0.00006 (MS-bar), difference ~1×10⁻⁴ (~2σ)
+- α_s(M_Z): predicted 0.1175 vs PDG 0.1177 ± 0.0009, difference 2×10⁻⁴ (within 1σ)
+- sin²θ_W(M_Z): predicted 0.2311 vs PDG ŝ²_Z = 0.23122 ± 0.00006 (MS-bar), difference ~1×10⁻⁴ (~2σ)
 
-**Important caveat on $sin²θ_W$.** In *percentage* terms, 0.05% looks impressive. But
+**Important caveat on sin²θ_W.** In *percentage* terms, 0.05% looks impressive. But
 the MS-bar experimental uncertainty is ±0.00006, so the difference ~1×10⁻⁴ is
 ~2σ in experimental units.
 
 This residual discrepancy is not a calculation bug. For MSSM one-loop coefficients,
-unification implies a tight relation between $α_s$ and $sin²θ_W$ once α̂ is fixed:
+unification implies a tight relation between α_s and sin²θ_W once α̂ is fixed:
 
 $$
 \sin^2\hat{\theta}_W(M_Z) = \frac{1}{5} + \frac{7}{15}\frac{\hat{\alpha}(M_Z)}{\alpha_s(M_Z)}.
 $$
 
 
-Once the pipeline outputs $α_s$ ≈ 0.1175, the weak mixing angle is essentially
+Once the pipeline outputs α_s ≈ 0.1175, the weak mixing angle is essentially
 locked near 0.231. The ~2σ residual reflects missing theoretical corrections,
 not a flaw in the core calculation.
 
-The required correction is small: shifting $sin²θ_W$ by ~1×10⁻⁴ corresponds to
-only ~0.04% change in α₂($M_Z$). Effects at this level include:
+The required correction is small: shifting sin²θ_W by ~1×10⁻⁴ corresponds to
+only ~0.04% change in α₂(M_Z). Effects at this level include:
 
 - Two-loop running (including top-Yukawa contributions)
 - Electroweak matching subtleties
@@ -4103,7 +4103,7 @@ only ~0.04% change in α₂($M_Z$). Effects at this level include:
 - Definition differences (on-shell vs $\overline{\text{MS}}$ vs effective leptonic)
 
 All of these are O(10⁻⁴) corrections that the current one-loop treatment
-omits. The claim is therefore: the framework produces $sin²θ_W$ within ~2σ
+omits. The claim is therefore: the framework produces sin²θ_W within ~2σ
 of the MS-bar measurement using only EW inputs plus the pixel constraint.
 This is a genuine parameter reduction, though precision claims require a
 proper theory error budget.
@@ -4113,23 +4113,23 @@ estimating theoretical uncertainties. The dominant sources are:
 
 | Source | Estimated size |
 |--------|---------------|
-| Two-loop running | O(10⁻⁴) in $sin²θ_W$ |
+| Two-loop running | O(10⁻⁴) in sin²θ_W |
 | Threshold corrections (edge→4D matching) | Unknown; could be O(10⁻³) |
-| $A_e$ff normalization ambiguity | Factor ~6; affects absolute t, not ratios |
+| A_eff normalization ambiguity | Factor ~6; affects absolute t, not ratios |
 | Scheme conversion (entanglement → MS-bar) | O(10⁻⁴) expected |
 | Missing U(1) mixing effects | O(10⁻⁴) |
 
 Without a full two-loop treatment and proper threshold matching, the
-framework cannot claim precision better than ~0.1% on $sin²θ_W$. The ~2σ
+framework cannot claim precision better than ~0.1% on sin²θ_W. The ~2σ
 agreement with MS-bar data is encouraging but not definitive evidence.
 
 **Input elimination.** This represents a genuine reduction in free parameters:
 the standard unification story requires both $\hat{\alpha}(M_Z)$ **and**
-$sin²θ_W(M_Z)$ as inputs. The pixel-area constraint eliminates $sin²θ_W$ as an
+sin²θ_W(M_Z) as inputs. The pixel-area constraint eliminates sin²θ_W as an
 input, predicting it instead.
 
 **SM falsification.** Repeating with SM-only beta coefficients
-(b₁, b₂, b₃) = (41/10, −19/6, −7) gives $α_s$ ≈ 0.096 and $sin²θ_W$ ≈ 0.216,
+(b₁, b₂, b₃) = (41/10, −19/6, −7) gives α_s ≈ 0.096 and sin²θ_W ≈ 0.216,
 both far from observation. The pixel-area constraint strongly disfavors
 SM-only running.
 
@@ -4140,11 +4140,11 @@ L^2(G) \simeq \bigoplus_R V_R \otimes V_R^*
 $$
 
 
-A representation R corresponds to a block of size $d_R$². However, entropy and vacuum polarization "see" different parts of this structure:
+A representation R corresponds to a block of size d_R². However, entropy and vacuum polarization "see" different parts of this structure:
 
-- **Entropy (MaxEnt selection)** traces over one side of the entanglement cut, giving the factor $d_R$ in the probability $p_R$ ∝ $d_R$ exp(−t C₂(R)).
+- **Entropy (MaxEnt selection)** traces over one side of the entanglement cut, giving the factor d_R in the probability p_R ∝ d_R exp(−t C₂(R)).
 
-- **Vacuum polarization loops** run over both indices of the $V_R$ ⊗ $V_R$* block, restoring the second $d_R$ factor.
+- **Vacuum polarization loops** run over both indices of the V_R ⊗ V_R* block, restoring the second d_R factor.
 
 Therefore, the effective multiplicity for RG running is:
 
@@ -4153,11 +4153,11 @@ N_{\text{eff}}(R) = d_R \cdot p_R
 $$
 
 
-not just $p_R$. This is a structural consequence of Peter-Weyl, not a fitted parameter.
+not just p_R. This is a structural consequence of Peter-Weyl, not a fitted parameter.
 
 **Edge sector weights.** For the SM product group with Z₆ quotient, the superselection weight for sector (R₃, R₂, n) is:
 
-w(R₃, R₂, n) = d₃(R₃) exp(−t₃ C₂(R₃)) · d₂(R₂) exp(−t₂ C₂(R₂)) · exp(−$t_Y$ n²)
+w(R₃, R₂, n) = d₃(R₃) exp(−t₃ C₂(R₃)) · d₂(R₂) exp(−t₂ C₂(R₂)) · exp(−t_Y n²)
 
 with the Z₆ selection rule n ≡ −2τ − 6j (mod 6), where τ is SU(3) triality and j is SU(2) spin. The probability is p = w/Z (normalized).
 
@@ -4169,13 +4169,13 @@ with the Z₆ selection rule n ≡ −2τ − 6j (mod 6), where τ is SU(3) tria
 
 Δb₁ = (2/3) Σ p · (d₃ d₂) · ((3/5) Y² · d₃ d₂)
 
-where Y = n/6 (canonical GUT normalization) and $T_i$ is the Dynkin index with T(fund) = 1/2.
+where Y = n/6 (canonical GUT normalization) and T_i is the Dynkin index with T(fund) = 1/2.
 
 **Representation bookkeeping.** Complex representations R and their conjugates R̄ are counted separately in the sum. For SU(3), the fundamental **3** and antifundamental **3̄** both contribute with d = 3, C₂ = 4/3, and T = 1/2. Real representations (like the adjoint **8**) appear once. This is standard QFT bookkeeping: each chiral fermion species contributes independently to vacuum polarization.
 
 **Why U(1) uses a different formula.** The hypercharge formula differs from SU(2)/SU(3) because U(1) has no Dynkin index structure; all irreps are 1-dimensional. The contribution to b₁ comes from Y² (the charge squared), with the factor 3/5 from GUT normalization. This is the standard form in unified theories, not a framework-specific choice. The different structure is why the U(1) prediction (5% error) is less precise than the non-Abelian ones (<1% error).
 
-**Numerical result at unification.** At $t_U$ ≈ 1.64 (corresponding to $α_U$⁻¹ ≈ 24.1):
+**Numerical result at unification.** At t_U ≈ 1.64 (corresponding to α_U⁻¹ ≈ 24.1):
 
 | β shift | Predicted | MSSM target | Error |
 |---------|-----------|-------------|-------|
@@ -4187,7 +4187,7 @@ This achieves MSSM-like beta shifts without inserting MSSM by hand. The ~5% tens
 
 **What makes this non-trivial.** The key test is not matching individual Δb values (which can be achieved by adjusting an overall normalization), but the **ratio** Δb₃/Δb₂. The MSSM requires Δb₃/Δb₂ = 4.00/4.17 = 0.959. The Peter-Weyl calculation gives 3.97/4.38 = 0.906, about 6% low. This ratio is fixed by the heat-kernel distribution and representation theory, with no free parameters to adjust. Getting within 6% of a non-trivial ratio like 0.96 from first principles is significant, though the remaining discrepancy indicates the mechanism is not yet complete.
 
-**Alternative minimal Dynkin-index mapping.** A simpler estimate uses only the expected Dynkin index from the heat-kernel ensemble. Assume each RG shell contributes screening proportional to $T_a(R)$, with two sides of the entanglement cut giving a factor of 2:
+**Alternative minimal Dynkin-index mapping.** A simpler estimate uses only the expected Dynkin index from the heat-kernel ensemble. Assume each RG shell contributes screening proportional to T_a(R), with two sides of the entanglement cut giving a factor of 2:
 
 $$
 \Delta b_a(t) = 4\pi \langle T_a \rangle_{p(t)}, \qquad
@@ -4195,7 +4195,7 @@ $$
 $$
 
 
-At $t_U$ ≈ 1.64, the expected Dynkin indices are:
+At t_U ≈ 1.64, the expected Dynkin indices are:
 - ⟨T₂⟩ ≈ 0.330
 - ⟨T₃⟩ ≈ 0.390
 
@@ -4203,23 +4203,23 @@ This gives:
 - Δb₂ ≈ 4π × 0.330 = 4.15 (vs MSSM target 25/6 = 4.17, error −0.4%)
 - Δb₃ ≈ 4π × 0.390 = 4.90 (vs MSSM target 4.0, error +22%)
 
-The SU(2) shift matches the target within 0.4%, but the SU(3) shift is ~22% too large. This points to a **color-specific threshold/decoupling** effect: color edge excitations may stop contributing below some scale $μ_c$, reducing the integrated SU(3) shift. The required suppression factor f = 4.0/4.9 ≈ 0.82, interpreted as the fraction of the RG log-interval over which color screening is active, corresponds to a decoupling scale of order tens of TeV.
+The SU(2) shift matches the target within 0.4%, but the SU(3) shift is ~22% too large. This points to a **color-specific threshold/decoupling** effect: color edge excitations may stop contributing below some scale μ_c, reducing the integrated SU(3) shift. The required suppression factor f = 4.0/4.9 ≈ 0.82, interpreted as the fraction of the RG log-interval over which color screening is active, corresponds to a decoupling scale of order tens of TeV.
 
 **Why this works.** The heat-kernel suppresses high-Casimir representations. The dominant sectors are (1,1), (1,2), (3,1), (3,2), and (8,1), which happen to match MSSM-like content. The Peter-Weyl second-index mechanism provides the correct multiplicity without any fitted constants.
 
-**Numerical outputs.** Using the Peter-Weyl-derived beta shifts and measured $α_e$m($M_Z$), $sin²θ_W(M_Z)$ to fix α₁, α₂, the edge mechanism predicts:
+**Numerical outputs.** Using the Peter-Weyl-derived beta shifts and measured α_em(M_Z), sin²θ_W(M_Z) to fix α₁, α₂, the edge mechanism predicts:
 
-- $α_s(M_Z)$ ≈ 0.1168
-- $M_U$ ≈ 2.0 × 10¹⁶ GeV
-- $α_U$⁻¹ ≈ 24.3
+- α_s(M_Z) ≈ 0.1168
+- M_U ≈ 2.0 × 10¹⁶ GeV
+- α_U⁻¹ ≈ 24.3
 
-Using 4-loop MS̄ running with $n_f$ = 5, this $α_s$ corresponds to:
+Using 4-loop MS̄ running with n_f = 5, this α_s corresponds to:
 
-$Λ_M$S̄⁽⁵⁾ ≈ 195 MeV
+Λ_MS̄⁽⁵⁾ ≈ 195 MeV
 
 This is the first genuinely "mass-like" scale output once β-coefficients are
 internally derived. The proton mass remains blocked by the nonperturbative
-conversion constant $C_p$ (essentially what lattice QCD computes), but the
+conversion constant C_p (essentially what lattice QCD computes), but the
 upstream RG machinery is closed.
 
 **Full UV β-vector from edge modes.** The edge-derived shifts can be combined with SM coefficients to obtain a complete UV running law without importing MSSM by hand:
@@ -4229,9 +4229,9 @@ b^{\rm UV} = b^{\rm SM} + \Delta b_{\rm edge} \approx (6.59, 1.22, -3.03).
 $$
 
 
-**Threshold constraint.** If this UV content were active from $M_Z$ upward, one-loop unification with measured α₁, α₂ would predict $α_s(M_Z)$ ≈ 0.157, far above the measured ~0.118. This forces a threshold/decoupling scale $M_S$ above which the edge spectrum contributes to running, with SM running below.
+**Threshold constraint.** If this UV content were active from M_Z upward, one-loop unification with measured α₁, α₂ would predict α_s(M_Z) ≈ 0.157, far above the measured ~0.118. This forces a threshold/decoupling scale M_S above which the edge spectrum contributes to running, with SM running below.
 
-Solving for $M_S$ that makes measured couplings consistent with piecewise running (SM below $M_S$, edge-UV above):
+Solving for M_S that makes measured couplings consistent with piecewise running (SM below M_S, edge-UV above):
 
 $$
 M_S \approx 100 \text{ TeV}, \quad M_U \approx 6.5 \times 10^{15} \text{ GeV}, \quad \alpha_U^{-1} \approx 28.3
@@ -4240,7 +4240,7 @@ $$
 
 This is a falsifiable prediction: the edge-mode "onset scale" is O(100 TeV), not O(100 GeV) as in conventional SUSY scenarios.
 
-**What remains.** Currently $M_S$ ≈ 100 TeV is what the model needs to match data. To convert this into a genuine prediction requires deriving $M_S$ from the edge physics itself (the gap/decoupling scale of edge excitations in the collar Hamiltonian), rather than solving for it from measured $α_s$. This is the sharpest remaining target for closing the precision prediction chain.
+**What remains.** Currently M_S ≈ 100 TeV is what the model needs to match data. To convert this into a genuine prediction requires deriving M_S from the edge physics itself (the gap/decoupling scale of edge excitations in the collar Hamiltonian), rather than solving for it from measured α_s. This is the sharpest remaining target for closing the precision prediction chain.
 
 ### The Z₆ quotient: edge-sector selection rules and entropy deficit
 
@@ -4250,7 +4250,7 @@ the heat-kernel edge-sector law, this yields sharp, testable predictions.
 
 **The Z₆ congruence rule.** The identified element is (exp(2πi/3), −1, exp(iπ/3)) ∈ SU(3) × SU(2) × U(1). Label edge sectors by SU(3) triality τ ∈ {0,1,2}, SU(2) spin j, and hypercharge Y = n/6 with n ∈ Z. For the representation to descend to the quotient group, the identified element must act trivially:
 
-exp(2πiτ/3) · $(−1)^{2j}$ · exp(iπn/3) = 1
+exp(2πiτ/3) · (−1)^{2j} · exp(iπn/3) = 1
 
 This gives the exact selection rule:
 
@@ -4260,53 +4260,53 @@ Sectors violating this congruence have exactly zero probability. This is a
 hard constraint from the global group structure.
 
 **Sanity check: SM hypercharges.** The rule reproduces the SM pattern:
-- $Q_L$: (3, 2, Y=1/6) => (τ=1, j=1/2, n=1) ✓
-- $L_L$: (1, 2, Y=−1/2) => (τ=0, j=1/2, n=−3) ✓
-- $u^c$: (3̄, 1, Y=−2/3) => (τ=2, j=0, n=−4) ✓
-- $d^c$: (3̄, 1, Y=1/3) => (τ=2, j=0, n=2) ✓
-- $e^c$: (1, 1, Y=1) => (τ=0, j=0, n=6) ✓
+- Q_L: (3, 2, Y=1/6) => (τ=1, j=1/2, n=1) ✓
+- L_L: (1, 2, Y=−1/2) => (τ=0, j=1/2, n=−3) ✓
+- u^c: (3̄, 1, Y=−2/3) => (τ=2, j=0, n=−4) ✓
+- d^c: (3̄, 1, Y=1/3) => (τ=2, j=0, n=2) ✓
+- e^c: (1, 1, Y=1) => (τ=0, j=0, n=6) ✓
 
-**Heat-kernel slopes at $M_Z$.** The general relation is t = $g²A_e$ff/2 where
-$A_e$ff is the effective "Euclidean thickness" of the collar. Section 6.14's
-SU(3) lattice analysis finds $A_e$ff → 2.004 ± 0.012 as g² → 0.
+**Heat-kernel slopes at M_Z.** The general relation is t = g²A_eff/2 where
+A_eff is the effective "Euclidean thickness" of the collar. Section 6.14's
+SU(3) lattice analysis finds A_eff → 2.004 ± 0.012 as g² → 0.
 
-Using g² = 4πα and defining the **normalization convention** $A_e$ff = 4π
+Using g² = 4πα and defining the **normalization convention** A_eff = 4π
 (which differs from the lattice extrapolation by a factor of ~2π; see
 normalization note below), we have:
 
-$t_i$ = ($g_i$² · 4π)/2 = 2π · $g_i$² = 4π² $α_i$
+t_i = (g_i² · 4π)/2 = 2π · g_i² = 4π² α_i
 
-With the electroweak inputs and PDG 2025 EW-fit value $α_s(M_Z)$ = 0.1177:
+With the electroweak inputs and PDG 2025 EW-fit value α_s(M_Z) = 0.1177:
 
 - t₃ = 4.660
 - t₂ = 1.335
 - t₁ = 0.669
 
-*(Note: Using the MSSM unification prediction $α_s$ = 0.1166 instead would give
-$t_3$ = 4.605, a 1.2% shift that negligibly affects the residue-class distributions
+*(Note: Using the MSSM unification prediction α_s = 0.1166 instead would give
+t_3 = 4.605, a 1.2% shift that negligibly affects the residue-class distributions
 below.)*
 
-For the U(1) factor with Y = n/6, the effective slope is $t_Y$ = t₁/36 = 0.0186.
+For the U(1) factor with Y = n/6, the effective slope is t_Y = t₁/36 = 0.0186.
 
-*Normalization note:* The $A_e$ff = 4π convention gives t = 4π²α, a clean
+*Normalization note:* The A_eff = 4π convention gives t = 4π²α, a clean
 relation used throughout. However, Section 6.14's lattice extrapolation
-gives $A_e$ff → 2, not 4π ≈ 12.6. This factor-of-~6 discrepancy indicates
+gives A_eff → 2, not 4π ≈ 12.6. This factor-of-~6 discrepancy indicates
 either: (1) the toy UV model's "g²" differs from the continuum MS-bar
 convention by a factor of ~2π, or (2) additional physics (spin-statistics,
 vertex factors) enters the lattice↔continuum matching. This normalization
 ambiguity affects *absolute* t values but not ratios between gauge groups,
 so predictions depending only on ratios (hypercharge selection rules,
 entropy deficits) are robust. Predictions depending on absolute t (like
-the $α_s$ pixel-area extraction) require this normalization to be resolved
+the α_s pixel-area extraction) require this normalization to be resolved
 from first principles; currently it is fixed by convention.
 
 **Full edge-sector probability law.** A sector (R₃, R₂, n) has weight
 
-w(R₃, R₂, n) = d₃(R₃) exp(−t₃ C₂(R₃)) · d₂(R₂) exp(−t₂ C₂(R₂)) · exp(−$t_Y$ n²)
+w(R₃, R₂, n) = d₃(R₃) exp(−t₃ C₂(R₃)) · d₂(R₂) exp(−t₂ C₂(R₂)) · exp(−t_Y n²)
 
 but only if the congruence n ≡ −2τ − 6j (mod 6) holds; otherwise w = 0 exactly. The probability is p = w/Z with Z summing over allowed sectors.
 
-**Hypercharge residue class distribution at $M_Z$.** Summing over allowed
+**Hypercharge residue class distribution at M_Z.** Summing over allowed
 sectors with the above weights:
 
 - r ≡ 0 (mod 6): probability 0.6058
@@ -4314,7 +4314,7 @@ sectors with the above weights:
 - r ≡ 2 or 4 (mod 6): probability 0.0039 each
 - r ≡ 1 or 5 (mod 6): probability 0.0024 each
 
-At $M_Z$, because SU(3) is strongly coupled (t₃ large), triality-zero
+At M_Z, because SU(3) is strongly coupled (t₃ large), triality-zero
 sectors dominate, so most weight sits in residues 0 and 3 (integer and
 half-integer hypercharge). The "quark-like residues" (1, 2, 4, 5) are
 suppressed at the 10⁻³ level.
@@ -4327,32 +4327,32 @@ This is a parameter-free constant fixed purely by the Z₆ identification.
 
 **Derivation.** The quotient restricts each (τ, j) combination to a single residue class r ≡ n (mod 6). Define the residue sums
 
-$S_r(t_Y)$ := $Σ_k$ exp(−$t_Y(6k+r)$²)
+S_r(t_Y) := Σ_k exp(−t_Y(6k+r)²)
 
-By Poisson summation, the relative deviation between residue sums is ~2 exp(−π²/(36 $t_Y$)). At $M_Z$ with $t_Y$ = 0.0186:
+By Poisson summation, the relative deviation between residue sums is ~2 exp(−π²/(36 t_Y)). At M_Z with t_Y = 0.0186:
 
-$max_r$ |( $S_r$ − S̄ ) / S̄| ≈ 7.8 × 10⁻⁷
+max_r |( S_r − S̄ ) / S̄| ≈ 7.8 × 10⁻⁷
 
 So the residue sums are essentially equal, and each allowed sector loses a factor of ≈6 of available hypercharge residues compared to the product group.
 
-**Numerical result.** Computing the edge entropy $S_e$dge = H($p_α$) + ⟨log $d_α$⟩:
+**Numerical result.** Computing the edge entropy S_edge = H(p_α) + ⟨log d_α⟩:
 
-- $S_edge^p$rod($M_Z$) = 6.585 bits
-- $S_edge^Z$₆($M_Z$) = 4.000 bits
+- S_edge^prod(M_Z) = 6.585 bits
+- S_edge^Z₆(M_Z) = 4.000 bits
 
 The deficit is:
 
-ΔS($M_Z$) = 2.58497 bits ≈ log₂ 6
+ΔS(M_Z) = 2.58497 bits ≈ log₂ 6
 
 The deviation from log₂ 6 is ~4 × 10⁻⁶ bits.
 
-**Scale dependence.** At the unification scale ($t_U$ ≈ 1.64 for all
+**Scale dependence.** At the unification scale (t_U ≈ 1.64 for all
 factors), nontrivial SU(3) triality sectors become more probable:
 
-- r ≡ 0 (mod 6): P = 0.606 at $M_Z$, P = 0.383 at $M_U$
-- r ≡ 3 (mod 6): P = 0.382 at $M_Z$, P = 0.204 at $M_U$
-- r ≡ 2 or 4 (mod 6): P = 0.004 at $M_Z$, P = 0.134 at $M_U$
-- r ≡ 1 or 5 (mod 6): P = 0.002 at $M_Z$, P = 0.072 at $M_U$
+- r ≡ 0 (mod 6): P = 0.606 at M_Z, P = 0.383 at M_U
+- r ≡ 3 (mod 6): P = 0.382 at M_Z, P = 0.204 at M_U
+- r ≡ 2 or 4 (mod 6): P = 0.004 at M_Z, P = 0.134 at M_U
+- r ≡ 1 or 5 (mod 6): P = 0.002 at M_Z, P = 0.072 at M_U
 
 The framework predicts not just the congruence rule but how the occupancy
 of allowed classes runs with scale.
@@ -4360,7 +4360,7 @@ of allowed classes runs with scale.
 **Why this is sharp.** The log₂ 6 entropy deficit is:
 - Rigidly fixed by the Z₆ identification (not tunable)
 - Independent of UV completion details
-- Numerically precise to 10⁻⁶ bits at $M_Z$
+- Numerically precise to 10⁻⁶ bits at M_Z
 - A direct signature of the global gauge group structure
 
 This provides a "global-structure observable": measuring edge-sector
@@ -4371,7 +4371,7 @@ directly falsify the Z₆ quotient.
 
 The pixel-area scale provides a route to the electroweak symmetry breaking
 (EWSB) scale via dimensional transmutation, paralleling the QCD chain
-$α_s$ → $Λ_Q$CD.
+α_s → Λ_QCD.
 
 **Why transmutation?** Lemma 6.7 shows that refinement stability + MaxEnt forbids
 keeping an unprotected relevant scalar at zero without fine tuning. The Higgs
@@ -4379,49 +4379,49 @@ mass term m²|H|² is exactly such a gauge-invariant relevant scalar (Δ = 2 < 4
 If it were a free UV parameter, generic refinement would gap the theory.
 The natural resolution: the UV completion sits on a scale-invariant manifold
 where the Higgs mass term is not a free parameter, and the electroweak scale
-arises by dimensional transmutation, just as $Λ_Q$CD arises from $α_s$.
+arises by dimensional transmutation, just as Λ_QCD arises from α_s.
 
 **Setup.** From the pixel-area relation (Section 5.4):
-- $a_c$ell/$ℓ_p$² = 1.63094
-- ξ/$ℓ_p$ = √1.63094 = 1.2771
-- $E_c$ell = $E_p$ / (ξ/$ℓ_p$) = 9.56 × 10¹⁸ GeV
+- a_cell/ℓ_p² = 1.63094
+- ξ/ℓ_p = √1.63094 = 1.2771
+- E_cell = E_p / (ξ/ℓ_p) = 9.56 × 10¹⁸ GeV
 
-**Transmutation ansatz.** Assume EWSB is triggered by an edge-sector ordering transition whose scale is set by dimensional transmutation from the UV cell scale, with a one-loop coefficient $β_E$W controlled by the same edge-mode content that produces the MSSM-like beta-function shift:
+**Transmutation ansatz.** Assume EWSB is triggered by an edge-sector ordering transition whose scale is set by dimensional transmutation from the UV cell scale, with a one-loop coefficient β_EW controlled by the same edge-mode content that produces the MSSM-like beta-function shift:
 
-v = $E_c$ell · exp(−2π / ($β_E$W · $α_U$))
+v = E_cell · exp(−2π / (β_EW · α_U))
 
-The edge-mode computation gives Δb₃ ≈ 4.00 (Section 6.17). This integer has a structural origin: $β_E$W = $N_c$ + 1 = 4 is the number of SU(2) doublets per generation ($N_c$ quark doublets plus one lepton doublet). This is not a fit parameter; it is a topological/anomaly-counting integer already derived in Section 6.9 from the Witten anomaly constraint.
+The edge-mode computation gives Δb₃ ≈ 4.00 (Section 6.17). This integer has a structural origin: β_EW = N_c + 1 = 4 is the number of SU(2) doublets per generation (N_c quark doublets plus one lepton doublet). This is not a fit parameter; it is a topological/anomaly-counting integer already derived in Section 6.9 from the Witten anomaly constraint.
 
-**Computation.** Using $α_U$⁻¹ = 24.32 from the unification analysis:
+**Computation.** Using α_U⁻¹ = 24.32 from the unification analysis:
 
-2π / ($β_E$W · $α_U$) = 2π / (4 × 0.0411) = 38.21
+2π / (β_EW · α_U) = 2π / (4 × 0.0411) = 38.21
 
 exp(−38.21) = 2.55 × 10⁻¹⁷
 
 Hence:
 
-> **Prediction (Electroweak scale): $v_p$red ≈ 243.5 GeV**
+> **Prediction (Electroweak scale): v_pred ≈ 243.5 GeV**
 
-**Comparison to measurement.** The measured Higgs VEV is $v_o$bs ≈ 246.2 GeV.
+**Comparison to measurement.** The measured Higgs VEV is v_obs ≈ 246.2 GeV.
 The prediction is **~1.1% low**.
 
-**Reverse-engineering check.** Solving for the coefficient that reproduces $v_o$bs exactly:
+**Reverse-engineering check.** Solving for the coefficient that reproduces v_obs exactly:
 
-$β_E$W = 2π / ($α_U$ · ln($E_c$ell/$v_o$bs)) ≈ 4.001
+β_EW = 2π / (α_U · ln(E_cell/v_obs)) ≈ 4.001
 
-The coefficient demanded by Nature is $β_E$W = 4 to within ~0.03%. This is precisely the integer that appears in the gauge-sector beta-function shift.
+The coefficient demanded by Nature is β_EW = 4 to within ~0.03%. This is precisely the integer that appears in the gauge-sector beta-function shift.
 
-**Caveat.** The structural argument ($N_c$ + 1 doublets) provides a rationale for $β_E$W = 4, but it is also the integer that fits the data. The claim that this is "derived" rather than "fitted" rests on whether the anomaly-counting argument is accepted as fundamental. Skeptics may view this as choosing the integer that works.
+**Caveat.** The structural argument (N_c + 1 doublets) provides a rationale for β_EW = 4, but it is also the integer that fits the data. The claim that this is "derived" rather than "fitted" rests on whether the anomaly-counting argument is accepted as fundamental. Skeptics may view this as choosing the integer that works.
 
 ### Top quark mass from order-one Yukawa
 
-If the top Yukawa is order-one (the natural MaxEnt/refinement-stability outcome for the least-suppressed Yukawa channel), then $y_t$ ≈ 1 and:
+If the top Yukawa is order-one (the natural MaxEnt/refinement-stability outcome for the least-suppressed Yukawa channel), then y_t ≈ 1 and:
 
-> **Prediction (Top quark mass): $m_t$ ≈ v/√2 ≈ 172.2 GeV**
+> **Prediction (Top quark mass): m_t ≈ v/√2 ≈ 172.2 GeV**
 
-The measured top mass is $m_t$ ≈ 172.7 GeV, so the prediction is **~0.3% low**.
+The measured top mass is m_t ≈ 172.7 GeV, so the prediction is **~0.3% low**.
 
-**Caveat.** This is not a genuine prediction. The assumption "$y_t$ ≈ 1" is an empirical fact; it's what makes the top quark special. The "derivation" restates observation rather than predicting it. A genuine prediction would derive $y_t$ ≈ 1 from first principles, which the framework does not do.
+**Caveat.** This is not a genuine prediction. The assumption "y_t ≈ 1" is an empirical fact; it's what makes the top quark special. The "derivation" restates observation rather than predicting it. A genuine prediction would derive y_t ≈ 1 from first principles, which the framework does not do.
 
 ### Yukawa hierarchy from Z₆ defect suppression
 
@@ -4436,19 +4436,19 @@ mass hierarchy without introducing continuous Yukawa parameters.
 
 **Definition (Defect number).** If the direct intertwiner is forbidden by the Z₆ congruence rule, it can be generated by inserting defect operators that shift the grading. Define:
 
-**$n_f$ := min{n ∈ Z≥0 : neutral intertwiner exists after n defect insertions}**
+**n_f := min{n ∈ Z≥0 : neutral intertwiner exists after n defect insertions}**
 
 This is a minimal path length in the overlap groupoid, automatically an integer.
 
 **Suppression from entropy.** Each defect insertion resolves one unit of the Z₆ restriction, removing a factor of 6 in available microstates. MaxEnt weighting then gives:
 
-**$y_f$ ∝ $ε^n_f$ = 6^(−$n_f$),  where ε = 1/6**
+**y_f ∝ ε^n_f = 6^(−n_f),  where ε = 1/6**
 
 This is a Z₆-anchored Froggatt-Nielsen texture with the small parameter ε fixed by topology rather than chosen.
 
-**Extraction of defect charges.** Using $y_f$ = √2 · $m_f$ / $v_p$red and $n_f$ = −ln($y_f$) / ln(6):
+**Extraction of defect charges.** Using y_f = √2 · m_f / v_pred and n_f = −ln(y_f) / ln(6):
 
-| Fermion | $y_f$ (from mass) | $n_f$ (real) | Nearest int | Residual $c_f$ |
+| Fermion | y_f (from mass) | n_f (real) | Nearest int | Residual c_f |
 |---------|-----------------|------------|-------------|--------------|
 | t       | 1.003           | −0.002     | 0           | 1.00         |
 | b       | 0.024           | 2.08       | 2           | 0.87         |
@@ -4463,90 +4463,90 @@ This is a Z₆-anchored Froggatt-Nielsen texture with the small parameter ε fix
 **Key observations:**
 1. The logarithms are close to integers in base 6, the "Z₆ controls hierarchy"
    fingerprint.
-2. The residual coefficients $c_f$ are all order-one (0.6–2.2), consistent with
+2. The residual coefficients c_f are all order-one (0.6–2.2), consistent with
    RG running, mixing angles, and Clebsch-Gordan factors in overlap tensors.
 
 **Minimal charge assignment.** Writing exponents as sums of defect charges (Froggatt-Nielsen style):
 
-- n^$(u)_i$i = $q_Q$i + $q_U$i
-- n^$(d)_i$i = $q_Q$i + $q_D$i
-- n^$(e)_i$i = $q_L$i + $q_E$i
+- n^(u)_ii = q_Qi + q_Ui
+- n^(d)_ii = q_Qi + q_Di
+- n^(e)_ii = q_Li + q_Ei
 
 one compact solution is:
-- $q_Q$ = (2, 1, 0)
-- $q_U$ = (4, 2, 0)
-- $q_D$ = (4, 3, 2)
-- $q_L$ = (3, 1, 0)
-- $q_E$ = (4, 3, 3)
+- q_Q = (2, 1, 0)
+- q_U = (4, 2, 0)
+- q_D = (4, 3, 2)
+- q_L = (3, 1, 0)
+- q_E = (4, 3, 3)
 
 This reproduces the observed hierarchy with integer charges and **no continuous
 parameters beyond ε = 1/6**.
 
 **Significance.** The Yukawa sector reduces from "dozens of arbitrary reals" to:
 - One fixed small parameter ε = 1/6 (from Z₆ topology)
-- A set of integers $n_f$ (defect/charge data) that the UV completion must output
+- A set of integers n_f (defect/charge data) that the UV completion must output
 
 The mass hierarchy stops being an unexplained input and becomes discrete
 topological data constrained by the global gauge group structure.
 
 **Computational verification** (January 2026): The VEV formula gives v = 243.5 GeV
-(-1.1% error); the reverse-engineered $β_E$W = 4.00116 matches the integer 4
+(-1.1% error); the reverse-engineered β_EW = 4.00116 matches the integer 4
 to 0.03% precision.
 
 ### Higgs mass from critical surface constraint
 
-The refinement-stability logic (Section 6.7) forbids unprotected relevant operators unless enforced by constraints. Applied to the Higgs sector at the UV matching scale, this yields a sharp prediction for $m_H$.
+The refinement-stability logic (Section 6.7) forbids unprotected relevant operators unless enforced by constraints. Applied to the Higgs sector at the UV matching scale, this yields a sharp prediction for m_H.
 
-**The critical surface constraint.** Refinement stability pushes the scalar potential to a marginal stability point at the matching scale μ* = $M_U$. The sharpest encoding of "marginally stable" is:
+**The critical surface constraint.** Refinement stability pushes the scalar potential to a marginal stability point at the matching scale μ* = M_U. The sharpest encoding of "marginally stable" is:
 
-λ($M_U$) = 0,  $β_λ(M_U)$ = 0
+λ(M_U) = 0,  β_λ(M_U) = 0
 
 This is not an arbitrary choice but the natural MaxEnt/refinement-stability condition: the Higgs quartic sits at the critical surface where the potential is neither destabilized nor requires fine-tuned cancellations.
 
 **Derivation of the top Yukawa boundary condition.** At one loop in the SM (keeping the dominant top contribution), if λ = 0 then:
 
-$β_λ$ ∝ −6 $y_t$⁴ + (3/8)(2g₂⁴ + (g₂² + g₁²)²)
+β_λ ∝ −6 y_t⁴ + (3/8)(2g₂⁴ + (g₂² + g₁²)²)
 
-Setting $β_λ(M_U)$ = 0 immediately fixes $y_t(M_U)$ in terms of the gauge couplings:
+Setting β_λ(M_U) = 0 immediately fixes y_t(M_U) in terms of the gauge couplings:
 
-$y_t(M_U)$ = [(1/16)(2g₂⁴ + (g₂² + g₁²)²)]^(1/4)
+y_t(M_U) = [(1/16)(2g₂⁴ + (g₂² + g₁²)²)]^(1/4)
 
 This is a genuine prediction: once the matching scale is fixed, the top Yukawa boundary value is determined.
 
 **Computation.** Using the unification scale from the pixel-area pipeline:
 
-μ* = $M_U$ ≈ 2.08 × 10¹⁶ GeV
+μ* = M_U ≈ 2.08 × 10¹⁶ GeV
 
-1. Run g₁, g₂, g₃ from $M_Z$ up to $M_U$ at one loop in the SM:
-   - g₁($M_U$) ≈ 0.5794
-   - g₂($M_U$) ≈ 0.5213
-   - g₃($M_U$) ≈ 0.5265
+1. Run g₁, g₂, g₃ from M_Z up to M_U at one loop in the SM:
+   - g₁(M_U) ≈ 0.5794
+   - g₂(M_U) ≈ 0.5213
+   - g₃(M_U) ≈ 0.5265
 
-2. From λ = 0, $β_λ$ = 0: $y_t(M_U)$ ≈ 0.4239
+2. From λ = 0, β_λ = 0: y_t(M_U) ≈ 0.4239
 
-3. Run ($g_i$, $y_t$, λ) back down to μ = $M_t$ ≈ 173 GeV:
-   - $y_t(M_t)$ ≈ 0.9192
-   - λ($M_t$) ≈ 0.1290
+3. Run (g_i, y_t, λ) back down to μ = M_t ≈ 173 GeV:
+   - y_t(M_t) ≈ 0.9192
+   - λ(M_t) ≈ 0.1290
 
-4. Convert to Higgs mass using $m_H$ = √(2λ($M_t$)) · v:
+4. Convert to Higgs mass using m_H = √(2λ(M_t)) · v:
 
-> **Prediction (Higgs mass): $m_H$ ≈ 125.08 GeV**
+> **Prediction (Higgs mass): m_H ≈ 125.08 GeV**
 
-**Comparison to measurement.** The measured Higgs mass is $m_H^o$bs = 125.09 ± 0.24 GeV. The prediction matches to **within 0.01 GeV**, essentially exact agreement.
+**Comparison to measurement.** The measured Higgs mass is m_H^obs = 125.09 ± 0.24 GeV. The prediction matches to **within 0.01 GeV**, essentially exact agreement.
 
-**Significance.** This is not a fit to $m_H$. It emerges from:
-1. The unification scale $M_U$ (already determined by the pixel-area gauge coupling pipeline)
-2. The refinement-stability constraint λ = $β_λ$ = 0 at $M_U$
+**Significance.** This is not a fit to m_H. It emerges from:
+1. The unification scale M_U (already determined by the pixel-area gauge coupling pipeline)
+2. The refinement-stability constraint λ = β_λ = 0 at M_U
 
 The Higgs mass prediction requires no new parameters beyond those already committed to in the gauge sector analysis.
 
 **Top mass from the same constraint.** The same RG evolution gives:
 
-$m_t^M$S̄($M_t$) = $y_t(M_t)$ · v / √2 ≈ (0.9192 × 246.22) / √2 ≈ 160.0 GeV
+m_t^MS̄(M_t) = y_t(M_t) · v / √2 ≈ (0.9192 × 246.22) / √2 ≈ 160.0 GeV
 
-The pole mass is higher after QCD/EW threshold corrections, consistent with the observed $m_t$ ≈ 172.7 GeV pole mass.
+The pole mass is higher after QCD/EW threshold corrections, consistent with the observed m_t ≈ 172.7 GeV pole mass.
 
-**Chain summary.** The critical surface constraint closes the loop: pixel area → $M_U$ → (λ = 0, $β_λ$ = 0) → $y_t(M_U)$ → RG evolution → $m_H$ ≈ 125 GeV.
+**Chain summary.** The critical surface constraint closes the loop: pixel area → M_U → (λ = 0, β_λ = 0) → y_t(M_U) → RG evolution → m_H ≈ 125 GeV.
 
 ### Rigorous derivation chain: axioms to predictions
 
@@ -4561,7 +4561,7 @@ $$
 $$
 
 
-This is Theorem 2.6. The Lagrange multipliers $λ_a$ are determined by constraint values, not derived by MaxEnt itself.
+This is Theorem 2.6. The Lagrange multipliers λ_a are determined by constraint values, not derived by MaxEnt itself.
 
 For gauge collars with the Casimir as the constraint operator, the MaxEnt state implies:
 
@@ -4593,14 +4593,14 @@ G = \frac{a_{\rm cell}}{4\bar{\ell}_{\rm tot}}, \qquad
 $$
 
 
-In Planck units ($ℓ_p$² ≡ G):
+In Planck units (ℓ_p² ≡ G):
 
 $$
 \frac{a_{\rm cell}}{\ell_p^2} = 4\bar{\ell}_{\rm tot}(t_2, t_3)
 $$
 
 
-This is a derived relation, not an assumption. However, the **numerical value** of $a_c$ell/$ℓ_p$² depends on the $t_i$ values, which depend on the couplings.
+This is a derived relation, not an assumption. However, the **numerical value** of a_cell/ℓ_p² depends on the t_i values, which depend on the couplings.
 
 **Step 4: Edge-derived beta functions via Z₆ quotient structure (new).**
 
@@ -4611,7 +4611,7 @@ $$
 $$
 
 
-The entropy weights by log $d_R$; vacuum polarization loops see $d_R$² (both indices of the Peter-Weyl block $V_R$ ⊗ $V_R$*).
+The entropy weights by log d_R; vacuum polarization loops see d_R² (both indices of the Peter-Weyl block V_R ⊗ V_R*).
 
 **Hypercharge via Z₆ quotient.** For (SU(3) × SU(2) × U(1))/Z₆, the allowed hypercharge lattice is constrained. Writing y = 6Y:
 
@@ -4631,14 +4631,14 @@ $$
 
 with κ from U(1) normalization and the Z₆ congruence enforced.
 
-**Result.** At $t_U$ ≈ π²/6 ≈ 1.645 (corresponding to $α_U$⁻¹ ≈ 24), with one overall normalization fixed by demanding Δb₂ matches MSSM:
+**Result.** At t_U ≈ π²/6 ≈ 1.645 (corresponding to α_U⁻¹ ≈ 24), with one overall normalization fixed by demanding Δb₂ matches MSSM:
 
 $$
 \Delta b_{\rm pred} \approx (2.49, \, 4.17, \, 4.01)
 $$
 
 
-Compare to MSSM–SM shift: $Δb_M$SSM = (2.5, 4.17, 4.0). Agreement is <1% for all three coefficients.
+Compare to MSSM–SM shift: Δb_MSSM = (2.5, 4.17, 4.0). Agreement is <1% for all three coefficients.
 
 **Why this is significant.** This replaces "assume MSSM running" with a computation from the edge sector using only:
 - Heat-kernel form (from MaxEnt)
@@ -4650,12 +4650,12 @@ The ratios Δb₃/Δb₂ and Δb₁/Δb₂ are then predictions.
 
 **Step 5: Inverse problem, deriving threshold and unification scales.**
 
-With edge-derived Δb and measured electroweak inputs at $M_Z$:
-- α̂⁻¹($M_Z$) = 127.951 ± 0.009
-- $ŝ²_Z$ = sin²θ̂_W($M_Z$) = 0.23122 ± 0.00004
-- $α_s(M_Z)$ = 0.1180 ± 0.0009
+With edge-derived Δb and measured electroweak inputs at M_Z:
+- α̂⁻¹(M_Z) = 127.951 ± 0.009
+- ŝ²_Z = sin²θ̂_W(M_Z) = 0.23122 ± 0.00004
+- α_s(M_Z) = 0.1180 ± 0.0009
 
-The piecewise running (SM below $M_S$, edge-UV above) gives a 2×2 system for x = ln($M_S/M_Z$) and y = ln($M_U/M_S$). Solution:
+The piecewise running (SM below M_S, edge-UV above) gives a 2×2 system for x = ln(M_S/M_Z) and y = ln(M_U/M_S). Solution:
 
 $$
 M_S \approx 60 \text{ GeV}, \quad M_U \approx 2.4 \times 10^{16} \text{ GeV}, \quad \alpha_U^{-1} \approx 24.0
@@ -4669,11 +4669,11 @@ The effective threshold scale lands near the electroweak scale, not at multi-TeV
 The cleanest "reduce inputs → predict observables" step:
 
 **Inputs:**
-1. Pixel constant: $a_c$ell/$ℓ_p$² = 1.631 (treat as fundamental)
-2. One electroweak datum: α̂⁻¹($M_Z$) = 127.951
+1. Pixel constant: a_cell/ℓ_p² = 1.631 (treat as fundamental)
+2. One electroweak datum: α̂⁻¹(M_Z) = 127.951
 
 **Constraints:**
-- Pixel: $a_c$ell/$ℓ_p$² = 4(ℓ̄₂ + ℓ̄₃)
+- Pixel: a_cell/ℓ_p² = 4(ℓ̄₂ + ℓ̄₃)
 - One-loop unification with edge-derived Δb
 
 **Outputs (predicted, not input):**
@@ -4684,48 +4684,48 @@ $$
 
 
 **Comparison to PDG:**
-- $α_s(M_Z)$: predicted 0.1175 vs measured 0.1180 ± 0.0009 → 0.6σ low
-- $sin²θ_W$: predicted 0.2310 vs measured 0.23122 ± 0.00004 → ~2σ
+- α_s(M_Z): predicted 0.1175 vs measured 0.1180 ± 0.0009 → 0.6σ low
+- sin²θ_W: predicted 0.2310 vs measured 0.23122 ± 0.00004 → ~2σ
 
-The $α_s$ agreement is excellent. The $sin²θ_W$ tension (~2σ) is where precision threshold/two-loop effects matter.
+The α_s agreement is excellent. The sin²θ_W tension (~2σ) is where precision threshold/two-loop effects matter.
 
-**Step 7: Consistency check, $beta_E$W from v.**
+**Step 7: Consistency check, beta_EW from v.**
 
-If the pixel constant P and electroweak VEV v are both treated as inputs, we can solve for the transmutation coefficient $β_E$W that reproduces v:
+If the pixel constant P and electroweak VEV v are both treated as inputs, we can solve for the transmutation coefficient β_EW that reproduces v:
 
 $$
 v = \frac{E_p}{\sqrt{P}} \exp\left(-\frac{2\pi}{\beta_{\rm EW} \cdot \alpha_U}\right)
 $$
 
 
-Using P = 1.63094, v = 246.22 GeV, $E_p$ = 1.22089 × 10¹⁹ GeV:
+Using P = 1.63094, v = 246.22 GeV, E_p = 1.22089 × 10¹⁹ GeV:
 
 $$
 \beta_{\rm EW}^{\rm req} = 3.997
 $$
 
 
-This is $β_E$W = 4 to within 0.1%. The integer 4 = $N_c$ + 1 (number of SU(2) doublets per generation) emerges from fitting, but also has a structural rationale from the Witten anomaly constraint.
+This is β_EW = 4 to within 0.1%. The integer 4 = N_c + 1 (number of SU(2) doublets per generation) emerges from fitting, but also has a structural rationale from the Witten anomaly constraint.
 
 **What the axioms derive vs what requires additional input.**
 
 | Quantity | Status |
 |----------|--------|
-| Heat-kernel form $p_R(t)$ | Derived from MaxEnt + Casimir constraint |
+| Heat-kernel form p_R(t) | Derived from MaxEnt + Casimir constraint |
 | t = 4π²α normalization | Derived from modular geometry (A = 2π) |
-| G = $a_c$ell/(4ℓ̄) relation | Derived from generalized entropy matching |
-| Numerical value of $a_c$ell/$ℓ_p$² | **Not derived**; requires fixing t (hence α) |
+| G = a_cell/(4ℓ̄) relation | Derived from generalized entropy matching |
+| Numerical value of a_cell/ℓ_p² | **Not derived**; requires fixing t (hence α) |
 | Edge-derived Δb ratios | Derived from Z₆ + Peter-Weyl + one normalization |
-| Threshold scale $M_S$ | Derived from inverse problem given couplings |
-| $β_E$W = 4 | Structural ($N_c$ + 1) or fitted; ambiguous status |
+| Threshold scale M_S | Derived from inverse problem given couplings |
+| β_EW = 4 | Structural (N_c + 1) or fitted; ambiguous status |
 
 **The remaining closure gap.** The axioms derive rigid functional relations but not unique numerical values for the couplings. To close the loop requires either:
 
 1. A principle that fixes t (the Lagrange multiplier) from microphysics
-2. Treating $a_c$ell/$ℓ_p$² as fundamental input (replaces one coupling)
+2. Treating a_cell/ℓ_p² as fundamental input (replaces one coupling)
 3. Using measured v to fix the transmutation chain
 
-Option (2) is the current approach: the pixel constant replaces $sin²θ_W$ as an input, predicting it instead. Full closure (option 1) awaits a UV completion that specifies the MaxEnt constraint values.
+Option (2) is the current approach: the pixel constant replaces sin²θ_W as an input, predicting it instead. Full closure (option 1) awaits a UV completion that specifies the MaxEnt constraint values.
 
 ---
 
@@ -4756,10 +4756,10 @@ The following questions remain for future work:
 - **Gluon mass = 0**: Same as photon (gauge-as-gluing for SU(3))
 - **Lorentz group**: A1-A4 + F + G + H → BW → Conf(S²) ≅ SO(3,1)
 - **CPT invariance**: Lorentz kinematics + locality → CPT theorem
-- **Charge conservation**: Unbroken $U(1)_e$m gauge symmetry
-- **Newton's constant formula**: G = $a_c$ell / (4 ℓ̄(t)) from edge entropy density (Section 5.4)
+- **Charge conservation**: Unbroken U(1)_em gauge symmetry
+- **Newton's constant formula**: G = a_cell / (4 ℓ̄(t)) from edge entropy density (Section 5.4)
 - **Discrete area spectrum**: Log-integer area eigenvalues from edge sectors (Section 5.11); this is robust
-- **Discrete Hawking/GW comb**: The specific comb pattern $ΔE_k$ = $k_B T_H$ ln(k) follows if integer-multiplication transitions dominate; generic transitions would give a denser log-rational spectrum
+- **Discrete Hawking/GW comb**: The specific comb pattern ΔE_k = k_B T_H ln(k) follows if integer-multiplication transitions dominate; generic transitions would give a denser log-rational spectrum
 
 **Derived given assumed matter content:**
 
@@ -4767,30 +4767,30 @@ The following questions remain for future work:
 - **Charge quantization**: Z₆ quotient from realized spectrum
 - **Z₆ congruence rule**: SM global group structure
 - **Edge entropy deficit ≈ log₂ 6 bits**: Heat-kernel law + Z₆ quotient
-- **Yukawa hierarchy $y_f$ ∝ $6^{-n_f}$**: Z₆ defect suppression with integer charges
+- **Yukawa hierarchy y_f ∝ 6^{-n_f}**: Z₆ defect suppression with integer charges
 
 **Precision validations against existing data:**
 
-- **Strong coupling**: $α_s(M_Z)$ ≈ 0.1175 vs PDG 0.1177 ± 0.0009 (within 1σ)
-- **Weak mixing angle**: $sin²θ_W$ ≈ 0.2311 vs PDG $ŝ²_Z$ = 0.23122 ± 0.00006 (MS-bar, ~2σ)
-- **Z₆ charge quantization**: PDG bounds confirm |$q_p$ + $q_e$|/e < 10⁻²¹, fractional charge abundance < 10⁻²²/nucleon, CMS excludes fractionally charged particles to 640 GeV (Section 6.12)
+- **Strong coupling**: α_s(M_Z) ≈ 0.1175 vs PDG 0.1177 ± 0.0009 (within 1σ)
+- **Weak mixing angle**: sin²θ_W ≈ 0.2311 vs PDG ŝ²_Z = 0.23122 ± 0.00006 (MS-bar, ~2σ)
+- **Z₆ charge quantization**: PDG bounds confirm |q_p + q_e|/e < 10⁻²¹, fractional charge abundance < 10⁻²²/nucleon, CMS excludes fractionally charged particles to 640 GeV (Section 6.12)
 - **Casimir log-gap ratios**: Lattice SU(3) data (Bali, hep-lat/0006022) confirms ratios 9/4, 5/2, 4, 9/2, 6 at percent-level precision (Section 8.1)
-- **Photon mass**: PDG bound $m_γ$ < 10⁻¹⁸ eV confirms exact zero
-- **Graviton mass**: PDG bound $m_g$ < 1.76 × 10⁻²³ eV confirms exact zero
+- **Photon mass**: PDG bound m_γ < 10⁻¹⁸ eV confirms exact zero
+- **Graviton mass**: PDG bound m_g < 1.76 × 10⁻²³ eV confirms exact zero
 
 **Derived under extended theory $T_{\mathrm{ext}}$ (A1–A4 + R0 + R1 + [z]=0 + MAR):**
 
 - **Product gauge group**: Derived from minimal faithful carrier $\mathbb{C}^3 \otimes \mathbb{C}^2$ under MAR
 - **SM global gauge group $SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6$**: MAR + admissibility (GAUGE_GROUP_DERIVATION.md)
-- **$N_c$ = 3**: Witten anomaly + MAR minimality (Theorem 6.14)
-- **$N_g$ = 3**: CP + asymptotic freedom + MAR minimality (Proposition 6.9)
+- **N_c = 3**: Witten anomaly + MAR minimality (Theorem 6.14)
+- **N_g = 3**: CP + asymptotic freedom + MAR minimality (Proposition 6.9)
 - **Proton stability**: No gauge-mediated proton decay (product group from MAR)
 - **No magnetic monopoles**: Product group structure (no GUT-scale symmetry breaking)
 
 **Consistency checks (not novel predictions):**
 
-- **$α_s(M_Z)$ ≈ 0.117 with MSSM spectrum**: MSSM GUT analyses (1990s)
-- **$sin²θ_W(M_U)$ = 3/8**: Georgi and Glashow (1974)
+- **α_s(M_Z) ≈ 0.117 with MSSM spectrum**: MSSM GUT analyses (1990s)
+- **sin²θ_W(M_U) = 3/8**: Georgi and Glashow (1974)
 - **Witten anomaly constraint**: Witten (1982)
 - **GIM mechanism (no tree-level FCNC)**: Glashow, Iliopoulos, Maiani (1970)
 
@@ -4804,9 +4804,9 @@ with <1% error, and (3) a product gauge group that forbids proton decay.
 
 The most decisive precision test currently available within the framework requires no UV completion, no scheme matching, and no free parameters. The heat-kernel law (Section 6.13, Theorem 6.20) predicts exact rational ratios of Casimir log-gaps:
 
-$Δ_R$₁ / $Δ_R$₂ = C₂(R₁) / C₂(R₂)  (exact, parameter-free)
+Δ_R₁ / Δ_R₂ = C₂(R₁) / C₂(R₂)  (exact, parameter-free)
 
-where $Δ_R$ = ln(p₀/d₀) − ln($p_R/d_R$) = t C₂(R).
+where Δ_R = ln(p₀/d₀) − ln(p_R/d_R) = t C₂(R).
 
 The headline SU(3) prediction is:
 
@@ -4851,7 +4851,7 @@ the mechanism to the precision achievable with current methods.
 The gravity predictions are symmetry-protected exact zeros that experiments
 have pushed to extraordinary precision:
 
-- **($c_G$W − c)/c**: Model predicts = 0 exactly. Bound: [−3×10⁻¹⁵, +7×10⁻¹⁶]
+- **(c_GW − c)/c**: Model predicts = 0 exactly. Bound: [−3×10⁻¹⁵, +7×10⁻¹⁶]
 - **Graviton mass**: Model predicts = 0 exactly. Bound: ≤ 1.76×10⁻²³ eV/c²
 - **Dipolar radiation**: Model predicts none. Bound: δp̂₋₂ ∈ [−4×10⁻⁶, 2×10⁻⁵]
 - **GW polarizations**: Model predicts tensor only. Pure non-tensor disfavored
@@ -4890,11 +4890,11 @@ near-future data:
 
 **GW horizon spectroscopy comb (Section 5.11).** The log-integer area spectrum predicts discrete resonant frequencies for Kerr black hole horizons:
 
-$f_{k,m}(M,χ)$ = (m $Ω_H$)/(2π) + (c³ g(χ))/(16π² GM) · ln(k)  for k = 2, 3, 4, ...
+f_{k,m}(M,χ) = (m Ω_H)/(2π) + (c³ g(χ))/(16π² GM) · ln(k)  for k = 2, 3, 4, ...
 
-After rescaling by remnant parameters, all events should stack at universal coordinates $x_k$ = ln(k)/(8π). This is checkable with public LIGO/Virgo data. Absence of coherent stacking at the predicted $x_k$ would falsify the log-integer area spectrum.
+After rescaling by remnant parameters, all events should stack at universal coordinates x_k = ln(k)/(8π). This is checkable with public LIGO/Virgo data. Absence of coherent stacking at the predicted x_k would falsify the log-integer area spectrum.
 
-**Discrete Hawking comb (Section 5.11).** For primordial black holes in the final evaporation stage, gamma-ray bursts should show comb structure at $E_k$/E₂ = ln(k)/ln(2). Current PBH burst searches (Fermi, H.E.S.S.) can constrain this with dedicated template analysis.
+**Discrete Hawking comb (Section 5.11).** For primordial black holes in the final evaporation stage, gamma-ray bursts should show comb structure at E_k/E₂ = ln(k)/ln(2). Current PBH burst searches (Fermi, H.E.S.S.) can constrain this with dedicated template analysis.
 
 **Casimir ratio precision (Section 8.1).** Future lattice measurements of SU(3) edge-sector probabilities should confirm Δ₈/Δ₃ = 9/4 exactly, not 2.67 (dimension-only) or 5.06 (Casimir-squared). The full set of parameter-free SU(3) ratio predictions is:
 
@@ -4910,19 +4910,19 @@ These exact rationals are fixed entirely by group theory (Casimir eigenvalue rat
 
 **Black hole spectroscopy secondary structure (Section 5.11).** Beyond the headline log-integer comb, the framework predicts rigid secondary structure:
 
-1. *Universal energy ratios*: $E_k/E_2$ = ln(k)/ln(2) exactly. For example, $E_3/E_2$ = ln(3)/ln(2) ≈ 1.585 is parameter-free. This arithmetic pattern of ratios distinguishes OPH from other "quantized area" proposals that have different functional forms or free spacing parameters.
+1. *Universal energy ratios*: E_k/E_2 = ln(k)/ln(2) exactly. For example, E_3/E_2 = ln(3)/ln(2) ≈ 1.585 is parameter-free. This arithmetic pattern of ratios distinguishes OPH from other "quantized area" proposals that have different functional forms or free spacing parameters.
 
-2. *Mass-independent fractional linewidth*: The intrinsic linewidth Γ/$ΔE_k$ ≈ 3-5% is approximately independent of black hole mass. This is a sharp shape prediction constraining not just line positions but line profiles.
+2. *Mass-independent fractional linewidth*: The intrinsic linewidth Γ/ΔE_k ≈ 3-5% is approximately independent of black hole mass. This is a sharp shape prediction constraining not just line positions but line profiles.
 
 3. *Fixed weight hierarchy*: Line weights follow a (k-1)/k pattern from detailed balance in the log-integer transition rule, on top of the GR greybody envelope. High-k lines asymptote in strength in a specific, counting-driven way.
 
 **Inequality bounds on GR deviations (Section 5.8).** The modular additivity defect satisfies the exact identity ⟨ΔK⟩ = −I(A:D|B), where I(A:D|B) is the conditional mutual information. Under the Markov/mixing assumptions, this defect is exponentially small in collar thickness:
 
-|⟨ΔK⟩| ≤ 2|A| · $η^{w/ξ}$
+|⟨ΔK⟩| ≤ 2|A| · η^{w/ξ}
 
 This propagates into an explicit upper bound on how far the Einstein equation can deviate from GR in regimes where the emergence proof applies. Unlike typical beyond-GR frameworks that postulate corrections, OPH provides a quantitative ceiling: given the information-theoretic primitives, corrections decay exponentially with collar width. This "UV ignorance → rigorous inequality" structure is distinctive.
 
-**Yukawa hierarchy test (Section 6.20).** The prediction $y_f$ ∝ $6^{−n_f}$ with integer defect charges means the extracted exponents −ln($y_f$)/ln(6) should land unusually close to integers across all fermions. The small parameter ε = 1/6 is fixed topologically by the same Z₆ structure that produces the log₂ 6 entropy deficit-this ties hierarchy to a global-group entanglement signature rather than being a chosen Froggatt-Nielsen parameter.
+**Yukawa hierarchy test (Section 6.20).** The prediction y_f ∝ 6^{−n_f} with integer defect charges means the extracted exponents −ln(y_f)/ln(6) should land unusually close to integers across all fermions. The small parameter ε = 1/6 is fixed topologically by the same Z₆ structure that produces the log₂ 6 entropy deficit-this ties hierarchy to a global-group entanglement signature rather than being a chosen Froggatt-Nielsen parameter.
 
 **Proton stability without proton decay (Section 6.11).** If the gauge group is genuinely a product (from sector factorization), coupling unification is geometric (shared edge diffusion parameter) rather than simple-group embedding. This predicts unification-like coupling relations *without* GUT leptoquark bosons, hence no gauge-mediated proton decay. The combination "coupling unification + no proton decay" is a crisp discriminator against classic GUT predictions.
 
@@ -4931,44 +4931,44 @@ This propagates into an explicit upper bound on how far the Einstein equation ca
 **Partially closed gaps (reduced to discrete data):**
 
 - **Yukawa couplings**: No longer arbitrary reals. The hierarchy reduces to
-  $y_f$ ∝ $6^{−n_f}$ with integer defect charges $n_f$. What remains: derive the
+  y_f ∝ 6^{−n_f} with integer defect charges n_f. What remains: derive the
   integer charges from UV gluing/tensor geometry.
 - **β-function coefficients**: The Peter-Weyl second-index mechanism (Section 6.17)
-  derives Δb ≈ (2.49, 4.38, 3.97) from the heat-kernel distribution at $t_U$ ≈ 1.64,
-  matching MSSM targets to within 5%. What remains: derive $t_U$ from group-theoretic
+  derives Δb ≈ (2.49, 4.38, 3.97) from the heat-kernel distribution at t_U ≈ 1.64,
+  matching MSSM targets to within 5%. What remains: derive t_U from group-theoretic
   principles and resolve the ~5% Δb₂ tension.
 - **Scheme matching**: The entanglement → MS̄ map uses Dynkin indices T(R) rather than dimensions, producing near-unity normalization. Remaining: fully derive the map from first principles.
 
 **Still genuinely open:**
 
 - **Transmutation channel derivation**: Why the Higgs sector is critical in
-  the UV and which operator generates v with coefficient $β_E$W = $N_c$ + 1 = 4.
+  the UV and which operator generates v with coefficient β_EW = N_c + 1 = 4.
   Motivated by refinement stability, but not yet dynamically derived.
-- **Higgs mass $m_H$**: Requires the quartic λ (or MSSM threshold matching).
-- **$θ_Q$CD** (strong CP problem): See program lemma below.
+- **Higgs mass m_H**: Requires the quartic λ (or MSSM threshold matching).
+- **θ_QCD** (strong CP problem): See program lemma below.
 - **Λ** (cosmological constant): See structural explanation below.
 - **Neutrino masses**: Not addressed.
 
 **Structural explanation for Λ.** The cosmological constant is not predicted by local consistency because it lives in a quotient ambiguity:
 
-**Proposition (Local modular data cannot fix Λ).** Any reconstruction of $T_a$b from null modular generators determines it only up to φ $g_a$b. Consequently, the Einstein equation derived from local entanglement equilibrium is fixed only up to Λ $g_a$b, and Λ must be fixed by a global constraint or reference state choice.
+**Proposition (Local modular data cannot fix Λ).** Any reconstruction of T_ab from null modular generators determines it only up to φ g_ab. Consequently, the Einstein equation derived from local entanglement equilibrium is fixed only up to Λ g_ab, and Λ must be fixed by a global constraint or reference state choice.
 
-In 4D de Sitter with horizon radius $r_d$S = √(3/Λ):
-- Horizon area: $A_d$S = 4π $r_d$S² = 12π/Λ
-- de Sitter entropy: $S_d$S = A/(4G) = 3π/(GΛ)
+In 4D de Sitter with horizon radius r_dS = √(3/Λ):
+- Horizon area: A_dS = 4π r_dS² = 12π/Λ
+- de Sitter entropy: S_dS = A/(4G) = 3π/(GΛ)
 
-If the fundamental screen Hilbert space has finite total dimension dim($H_t$ot) = exp($S_d$S), then:
+If the fundamental screen Hilbert space has finite total dimension dim(H_tot) = exp(S_dS), then:
 
-**Λ = 3π / (G · log dim $H_t$ot)**
+**Λ = 3π / (G · log dim H_tot)**
 
-**Interpretation.** Λ is not determined by local physics; it is the global "capacity" parameter of the static patch, set by the total number of microscopic degrees of freedom on the screen. This explains why Λ is hard to predict: it requires knowing dim($H_t$ot), which depends on UV details not fixed by the axioms. The observed small value implies log(dim H) ~ 10¹²².
+**Interpretation.** Λ is not determined by local physics; it is the global "capacity" parameter of the static patch, set by the total number of microscopic degrees of freedom on the screen. This explains why Λ is hard to predict: it requires knowing dim(H_tot), which depends on UV details not fixed by the axioms. The observed small value implies log(dim H) ~ 10¹²².
 
-**Program lemma for $θ_Q$CD.** In 3+1D, a θ-term is a topological angle. In the gluing/obstruction language, θ corresponds to a nontrivial 2-group cocycle on triple overlaps:
+**Program lemma for θ_QCD.** In 3+1D, a θ-term is a topological angle. In the gluing/obstruction language, θ corresponds to a nontrivial 2-group cocycle on triple overlaps:
 
-**Conjecture (θ as gluing obstruction).** Adding a θ-term corresponds to weighting gauge histories by exp(iθQ). On the screen net, this appears as a nontrivial 2-cocycle ($g_i$j, $h_i$jk) whose 4D extension class is nonzero. If loop-coherent gluing is imposed (vanishing obstruction in the appropriate cohomology), then θ is forced to a discrete set {0, π} (CP-even points). Refinement stability + MaxEnt then selects θ = 0 unless CP is spontaneously broken.
+**Conjecture (θ as gluing obstruction).** Adding a θ-term corresponds to weighting gauge histories by exp(iθQ). On the screen net, this appears as a nontrivial 2-cocycle (g_ij, h_ijk) whose 4D extension class is nonzero. If loop-coherent gluing is imposed (vanishing obstruction in the appropriate cohomology), then θ is forced to a discrete set {0, π} (CP-even points). Refinement stability + MaxEnt then selects θ = 0 unless CP is spontaneously broken.
 
 **Status.** This is a derivation target, not a proven result. If correct, it
-would explain why $θ_Q$CD ≈ 0 without fine-tuning: the same consistency
+would explain why θ_QCD ≈ 0 without fine-tuning: the same consistency
 conditions that constrain gauge gluing would force θ to discrete values.
 
 ### Comparison with other unification approaches
@@ -4979,7 +4979,7 @@ Unified models attempting to tie together QFT, gravity, and SM structure tend to
 
 In gauge theories and gravity, the Hilbert space does not cleanly split as "inside ⊗ outside" across a cut. This infects entanglement entropy definitions, area terms, edge modes, and observable identification. Many unification attempts handwave this or patch it with conventions.
 
-*How OPH addresses it:* The framework builds from a net of von Neumann algebras on patches plus overlap consistency, not naïve tensor factorization. The gauge-as-gluing + regulator package yields edge-center completion: a canonical block decomposition on collars where the center captures superselection data at the cut, and the state becomes (exactly or approximately) Markov across the collar. The entropy split S($ρ_C$) = $S_b$ulk + ⟨$L_C$⟩ is then a natural consequence of having a center with sector labels, not an ad hoc "add an area term" move.
+*How OPH addresses it:* The framework builds from a net of von Neumann algebras on patches plus overlap consistency, not naïve tensor factorization. The gauge-as-gluing + regulator package yields edge-center completion: a canonical block decomposition on collars where the center captures superselection data at the cut, and the state becomes (exactly or approximately) Markov across the collar. The entropy split S(ρ_C) = S_bulk + ⟨L_C⟩ is then a natural consequence of having a center with sector labels, not an ad hoc "add an area term" move.
 
 **2. Modular Hamiltonian nonlocality.**
 
@@ -4997,7 +4997,7 @@ Discrete microscopic models generally break Lorentz symmetry, and many unified p
 
 Many approaches produce emergent geometry/kinematics but stall at dynamics: why Einstein's equations (with the right coefficient) rather than some other geometric PDE?
 
-*How OPH addresses it:* The framework combines MaxEnt entanglement equilibrium, the derived $K_C$ = $2πB_C$ structure with rigid normalization, and an EFT bridge identifying modular energy with stress-tensor charges. The null modular additivity route (N1-N3 derived from Markov/edge-center mechanisms on null strips) internalizes the EFT bridge rather than importing "assume a UV CFT."
+*How OPH addresses it:* The framework combines MaxEnt entanglement equilibrium, the derived K_C = 2πB_C structure with rigid normalization, and an EFT bridge identifying modular energy with stress-tensor charges. The null modular additivity route (N1-N3 derived from Markov/edge-center mechanisms on null strips) internalizes the EFT bridge rather than importing "assume a UV CFT."
 
 **5. Gauge symmetry origin and compactness.**
 
@@ -5033,7 +5033,7 @@ Traditional simple-group unification introduces leptoquark gauge bosons (X, Y) m
 
 The cosmological constant problem is a graveyard of unified theories: local QFT estimates are enormous, and tiny observed Λ seems to demand absurd fine tuning.
 
-*How OPH addresses it:* From null modular data, $T_a$b is reconstructed only up to $φg_a$b. Local consistency conditions and null focusing are blind to vacuum-energy shifts, so the Einstein equation is fixed only up to $Λg_a$b. Λ becomes a global "capacity" parameter of the static patch (tied to log dim $H_t$ot), not a locally computable quantity. This dissolves a conceptual tension: local microphysics *cannot* fix Λ by structural information-theoretic reasons.
+*How OPH addresses it:* From null modular data, T_ab is reconstructed only up to φg_ab. Local consistency conditions and null focusing are blind to vacuum-energy shifts, so the Einstein equation is fixed only up to Λg_ab. Λ becomes a global "capacity" parameter of the static patch (tied to log dim H_tot), not a locally computable quantity. This dissolves a conceptual tension: local microphysics *cannot* fix Λ by structural information-theoretic reasons.
 
 **11. UV infinities and nonrenormalizability.**
 

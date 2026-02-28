@@ -1,6 +1,6 @@
 # Observer Patch Holography: An Observer-Centric Approach to Fundamental Physics
 
-**Download:** [Technical Paper](https://doi.org/10.5281/zenodo.18288114) | [Book (Web)](https://oth-book.lovable.app)
+**Download:** [Technical Paper](https://zenodo.org/records/18814582) | [Book (Web)](https://oth-book.lovable.app)
 
 **Read:** [How OPH Addresses Major Open Problems in Physics](https://medium.com/@muellerberndt/answering-10-of-the-hardest-questions-in-physics-and-some-bonus-questions-51222bf2419f)
 
