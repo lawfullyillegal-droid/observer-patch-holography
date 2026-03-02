@@ -42,11 +42,7 @@ Physics is reverse engineering at cosmic scale. We observe reality's behavior an
 
 ## The Core Idea (Detailed)
 
-There is no objective reality. There is only a network of subjective perspectives that must agree where they overlap.
-
-Every piece of evidence we have for an "objective world out there" is itself a subjective experience. No one has ever stepped outside their perspective to verify that reality exists independently. The objective is always accessed through the subjective. What we call "objective" is actually *intersubjective*: the consistent overlap of many viewpoints.
-
-**The laws of physics are what allow observers to agree on what the data means.**
+The next section turns this principle into a concrete framework built from observer patches, overlap consistency, and holographic reconstruction.
 
 ## Observer Patch Holography
 

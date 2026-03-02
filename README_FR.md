@@ -44,11 +44,7 @@ La physique est de la rétro-ingénierie à l'échelle cosmique. Nous observons 
 
 ## L'idée centrale (détaillée)
 
-Il n'existe pas de réalité objective au sens fondamental. Il existe un réseau de perspectives subjectives qui doivent se mettre d'accord là où elles se recouvrent.
-
-Chaque preuve d'un « monde objectif extérieur » est elle-même une expérience subjective. Personne n'a jamais quitté sa perspective pour vérifier une réalité indépendante de toute observation. L'objectif n'est accessible qu'à travers le subjectif. Ce que nous appelons « objectif » est en pratique *intersubjectif* : la cohérence de nombreux points de vue.
-
-**Les lois de la physique sont ce qui permet aux observateurs de s'accorder sur le sens des données.**
+La section suivante transforme ce principe en cadre concret, construit à partir de patchs d'observateurs, de cohérence de recouvrement et de reconstruction holographique.
 
 ## Holographie par Patchs d'Observateurs
 
