@@ -1,5 +1,15 @@
 # Holographie par Patchs d'Observateurs : une approche de la physique fondamentale centrée sur l'observateur
 
+## Apprendre l'OPH (non-physiciens)
+
+Si vous débutez en physique, voici d'excellents points d'entrée :
+
+- **Livre (Web) :** [Livre OPH](https://oth-book.lovable.app)
+- **Labo interactif OPH :** [floatingpragma.io/oph](https://floatingpragma.io/oph)
+- **OPH Sage (Telegram) :** envoyez un DM à [@HoloObserverBot](https://t.me/HoloObserverBot) ou ajoutez-le à un groupe
+- **OPH Sage (Bluesky) :** mentionnez [@ophsage.bsky.social](https://bsky.app/profile/ophsage.bsky.social) dans vos questions
+- **NotebookLM :** [Regardez la vidéo d'introduction et commencez à poser vos questions](https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a?artifactId=fb7c0ebd-4375-4997-9cae-6558ff8977b4)
+
 > OPH est la théorie fondamentale qui décrit exactement comment notre univers fonctionne, pourquoi il est tel qu'il est, et pourquoi il existe.
 > Le Modèle Standard, la théorie quantique des champs, la relativité générale et la théorie des cordes sont des descriptions effectives de l'OPH sous-jacente.
 > À partir de deux constantes d'entrée et de cinq axiomes (A1-A4 + MAR), OPH détermine les propriétés de l'univers, résout les incompatibilités et explique les divergences de mesure, y compris la matière noire.
@@ -13,11 +23,7 @@
 
 Tous les autres documents du dépôt sont des dérivations, suppléments et ressources complémentaires.
 
-**Ressources :** [Livre (Web)](https://oth-book.lovable.app)
-
 **Lire :** [Comment l'OPH résout la physique fondamentale](https://medium.com/@muellerberndt/answering-10-of-the-hardest-questions-in-physics-and-some-bonus-questions-51222bf2419f)
-
-**Explorer :** [Labo interactif OPH](https://floatingpragma.io/oph/) -- un laboratoire interactif pour découvrir l'Holographie par Patchs d'Observateurs
 
 **Version anglaise :** [README.md](README.md)
 
@@ -25,8 +31,6 @@ Tous les autres documents du dépôt sont des dérivations, suppléments et ress
 
 - [How OPH Resolves Fundamental Physics](https://medium.com/@muellerberndt/answering-10-of-the-hardest-questions-in-physics-and-some-bonus-questions-51222bf2419f)
 - [How Observer Patch Holography Improves on the Standard Model and General Relativity](https://muellerberndt.medium.com/how-observer-path-holography-improves-on-the-standard-model-and-general-relativity-c971c376027e)
-
-> **Apprendre :** une excellente manière de découvrir la théorie est d'utiliser NotebookLM. [Regardez la vidéo d'introduction](https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a?artifactId=fb7c0ebd-4375-4997-9cae-6558ff8977b4), puis posez toutes vos questions au modèle.
 
 La physique est de la rétro-ingénierie à l'échelle cosmique. Nous observons le comportement de la réalité et remontons vers les règles sous-jacentes. Ce projet présente une théorie du tout au sens littéral : pourquoi la réalité existe et pourquoi elle est telle qu'elle est, à partir de premiers principes.
 

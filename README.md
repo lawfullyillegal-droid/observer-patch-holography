@@ -1,5 +1,15 @@
 # Observer Patch Holography: An Observer-Centric Approach to Fundamental Physics
 
+## Learning OPH for Non-Physicists
+
+If you are new to physics, these are great starting points:
+
+- **Book (Web):** [OPH Book](https://oth-book.lovable.app)
+- **Interactive OPH Lab:** [floatingpragma.io/oph](https://floatingpragma.io/oph)
+- **OPH Sage (Telegram):** DM or add [@HoloObserverBot](https://t.me/HoloObserverBot) to a group
+- **OPH Sage (Bluesky):** Tag [@ophsage.bsky.social](https://bsky.app/profile/ophsage.bsky.social) in your questions
+- **NotebookLM notebook:** [Watch the introduction video and start asking questions](https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a?artifactId=fb7c0ebd-4375-4997-9cae-6558ff8977b4)
+
 > OPH is the fundamental theory that exactly describes how our universe works, why it has the structure it has, and why it exists.
 > The Standard Model, quantum field theory, general relativity, and string theory are effective descriptions of underlying OPH dynamics.
 > From two input constants and five axioms (A1-A4 + MAR), OPH determines universe-wide properties, resolves incompatibilities, and explains measurement divergences including dark matter.
@@ -13,19 +23,12 @@
 
 All other documents in this repository are supporting derivations, supplements, and companion resources.
 
-**Resources:** [Book (Web)](https://oth-book.lovable.app)
-
-**Explore:** [Interactive OPH Lab](https://floatingpragma.io/oph/) -- an interactive lab for learning Observer Patch Holography
-
 **French version:** [README_FR.md](README_FR.md) -- translated by Martin S.
 
 **Blog Posts:**
 
 - [How OPH Resolves Fundamental Physics](https://medium.com/@muellerberndt/answering-10-of-the-hardest-questions-in-physics-and-some-bonus-questions-51222bf2419f)
 - [How Observer Patch Holography Improves on the Standard Model and General Relativity](https://muellerberndt.medium.com/how-observer-path-holography-improves-on-the-standard-model-and-general-relativity-c971c376027e)
-
-
-> **Learn: A great way to learn the theory is via NotebookLM. [Watch the introduction video](https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a?artifactId=fb7c0ebd-4375-4997-9cae-6558ff8977b4), then ask the model any questions you have.**
 
 Physics is reverse engineering at cosmic scale. We observe reality's behavior and work backward to reconstruct the underlying rules. This project presents a theory of everything in the literal sense: it explains why reality exists and why it is the way it is, derived from first principles.
 

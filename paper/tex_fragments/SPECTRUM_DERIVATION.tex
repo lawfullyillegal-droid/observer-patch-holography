@@ -5,9 +5,9 @@ OPH is the fundamental theory that exactly describes how our universe works, why
 \end{quote}
 
 \begin{quote}
-\textbf{Companion document to}: \emph{Observer-Patch Holography} (PAPER.md)
+\textbf{Integrated derivation within this manuscript}: this part applies the OPH framework developed in Part I.
 
-\textbf{Abstract.} The Observer-Patch Holography (OPH) framework derives the Standard Model particle spectrum from a single geometric quantity: the \textbf{pixel area} , the area of one computational cell on the holographic screen, measured in Planck units. Starting from the OPH axioms (A1--A4: entanglement equilibrium, MaxEnt, edge-center completion, refinement stability), the "screen" encodes all physics through its area law (§5 of PAPER.md) and edge-sector structure (§6 of PAPER.md). The pixel area constant \(P \equiv a_{\text{cell}}/\ell_P^2 = 1.63094\) is extracted from the screen\textquotesingle s entropy-matching condition (§5.4 of PAPER.md); a second input , the total screen capacity \(\log(\dim\mathcal{H}) \sim 10^{122}\) , enters only for neutrino masses and the cosmological constant (§14 of TECHNICAL\_SUPPLEMENT.md). Every other quantity appearing in the derivation chain is either a mathematical constant, a consequence of the gauge group (itself reconstructed from the screen\textquotesingle s edge-sector fusion rules via Tannaka-Krein, §6.1 of PAPER.md), or a derived structural integer (\(N_c = 3\), \(N_g = 3\), \(\varepsilon = 1/6\), \(\delta = 2/9\)). No measured masses or couplings enter the prediction pipeline. A complete audit of all constants appears in §1A below.
+\textbf{Abstract.} The Observer-Patch Holography (OPH) framework derives the Standard Model particle spectrum from a single geometric quantity: the \textbf{pixel area} , the area of one computational cell on the holographic screen, measured in Planck units. Starting from the OPH axioms (A1--A4: entanglement equilibrium, MaxEnt, edge-center completion, refinement stability), the "screen" encodes all physics through its area law (§5 of Part I of this manuscript) and edge-sector structure (§6 of Part I of this manuscript). The pixel area constant \(P \equiv a_{\text{cell}}/\ell_P^2 = 1.63094\) is extracted from the screen\textquotesingle s entropy-matching condition (§5.4 of Part I of this manuscript); a second input , the total screen capacity \(\log(\dim\mathcal{H}) \sim 10^{122}\) , enters only for neutrino masses and the cosmological constant (§14 of Part V of this manuscript). Every other quantity appearing in the derivation chain is either a mathematical constant, a consequence of the gauge group (itself reconstructed from the screen\textquotesingle s edge-sector fusion rules via Tannaka-Krein, §6.1 of Part I of this manuscript), or a derived structural integer (\(N_c = 3\), \(N_g = 3\), \(\varepsilon = 1/6\), \(\delta = 2/9\)). No measured masses or couplings enter the prediction pipeline. A complete audit of all constants appears in §1A below.
 \end{quote}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -26,7 +26,7 @@ Input & Symbol & Value & Origin \\
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Pixel area constant & \(P \equiv a_{\text{cell}}/\ell_P^2\) & 1.63094 & Edge entropy matching (§5.4 of PAPER.md) \\
+Pixel area constant & \(P \equiv a_{\text{cell}}/\ell_P^2\) & 1.63094 & Edge entropy matching (§5.4 of Part I of this manuscript) \\
 Screen capacity & \(\log(\dim\mathcal{H}_{\text{tot}})\) & \(\sim 10^{122}\) & De Sitter entropy / cosmological constant \\
 \end{longtable}
 }
@@ -65,8 +65,8 @@ Constant & Value & Code variable & Origin & Status \\
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\(P \equiv a_{\text{cell}}/\ell_P^2\) & 1.63094 & \texttt{P\_DEFAULT} & The pixel area: area of one UV cell on the holographic screen in Planck units. Extracted from the entropy-matching condition \(P/4 = \bar{\ell}_{\text{SU(2)}}(t_2) + \bar{\ell}_{\text{SU(3)}}(t_3)\) (§5.4 of PAPER.md). This relation is \emph{derived} from the axioms; the \emph{numerical value} is fixed by requiring consistency with the observed gauge couplings (just as Newton\textquotesingle s constant \(G\) is the one free parameter of general relativity). & \textbf{Single free parameter} for particle physics \\
-\(\log(\dim\mathcal{H}_{\text{tot}})\) & \(\sim 10^{122}\) & \texttt{LOG\_DIM\_H\_DEFAULT} & Total screen capacity = de Sitter entropy \(S_{dS} = 3\pi/(G\Lambda)\). Enters only for neutrino masses and cosmological constant (§14 of TECHNICAL\_SUPPLEMENT.md). Derived from the screen area law (§5 of PAPER.md). & \textbf{Second input} (cosmology sector only) \\
+\(P \equiv a_{\text{cell}}/\ell_P^2\) & 1.63094 & \texttt{P\_DEFAULT} & The pixel area: area of one UV cell on the holographic screen in Planck units. Extracted from the entropy-matching condition \(P/4 = \bar{\ell}_{\text{SU(2)}}(t_2) + \bar{\ell}_{\text{SU(3)}}(t_3)\) (§5.4 of Part I of this manuscript). This relation is \emph{derived} from the axioms; the \emph{numerical value} is fixed by requiring consistency with the observed gauge couplings (just as Newton\textquotesingle s constant \(G\) is the one free parameter of general relativity). & \textbf{Single free parameter} for particle physics \\
+\(\log(\dim\mathcal{H}_{\text{tot}})\) & \(\sim 10^{122}\) & \texttt{LOG\_DIM\_H\_DEFAULT} & Total screen capacity = de Sitter entropy \(S_{dS} = 3\pi/(G\Lambda)\). Enters only for neutrino masses and cosmological constant (§14 of Part V of this manuscript). Derived from the screen area law (§5 of Part I of this manuscript). & \textbf{Second input} (cosmology sector only) \\
 \end{longtable}
 }
 
@@ -75,19 +75,19 @@ Constant & Value & Code variable & Origin & Status \\
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}lllll@{}}
 \toprule\noalign{}
-Constant & Value & Code variable & Derivation & PAPER.md ref \\
+Constant & Value & Code variable & Derivation & Part I of this manuscript ref \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\(N_c\) (colors) & 3 & \texttt{N\_c\_DEFAULT} & Witten\textquotesingle s global SU(2) anomaly requires \(N_c + 1\) SU(2) doublets per generation to be even, so \(N_c\) must be odd. \(N_c = 1\) is excluded (SU(1) trivial). The Selection Axiom MAR (third component of the complexity vector) picks the smallest nontrivial value. \textbf{Result}: \(N_c = 3\). & Theorem 6.14 (§6.9); GAUGE\_GROUP\_DERIVATION.md §6 \\
-\(N_g\) (generations) & 3 & \texttt{N\_g\_DEFAULT} & Three independent constraints narrow the window: (1) CP violation requires \(N_g \geq 3\) (CKM phases \((N_g-1)(N_g-2)/2 > 0\)). (2) Asymptotic freedom of SU(2) requires \(N_g(N_c+1) < 22\), giving \(N_g \leq 5\). (3) MAR (fourth component of the complexity vector) picks the smallest value in \(\{3, 4, 5\}\). \textbf{Result}: \(N_g = 3\). & Proposition 6.9 (§6.4); GAUGE\_GROUP\_DERIVATION.md §7 \\
-Gauge group & \(\frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}\) & , & Tannaka-Krein / Doplicher-Roberts reconstruction from edge-sector fusion rules yields a compact gauge group \(G\) (Theorem 6.1, §6.1). The Selection Axiom MAR uniquely selects the SM factors: the minimal faithful carrier \(\mathbb{C}^3 \otimes \mathbb{C}^2\) enforces the product structure SU(3) \(\times\) SU(2) \(\times\) U(1), the commutant argument excludes extra factors, and the \(\mathbb{Z}_6\) quotient follows from hypercharge quantization (Proposition 6.6). & §6.1--6.2; GAUGE\_GROUP\_DERIVATION.md \\
+\(N_c\) (colors) & 3 & \texttt{N\_c\_DEFAULT} & Witten\textquotesingle s global SU(2) anomaly requires \(N_c + 1\) SU(2) doublets per generation to be even, so \(N_c\) must be odd. \(N_c = 1\) is excluded (SU(1) trivial). The Selection Axiom MAR (third component of the complexity vector) picks the smallest nontrivial value. \textbf{Result}: \(N_c = 3\). & Theorem 6.14 (§6.9); Part II of this manuscript §6 \\
+\(N_g\) (generations) & 3 & \texttt{N\_g\_DEFAULT} & Three independent constraints narrow the window: (1) CP violation requires \(N_g \geq 3\) (CKM phases \((N_g-1)(N_g-2)/2 > 0\)). (2) Asymptotic freedom of SU(2) requires \(N_g(N_c+1) < 22\), giving \(N_g \leq 5\). (3) MAR (fourth component of the complexity vector) picks the smallest value in \(\{3, 4, 5\}\). \textbf{Result}: \(N_g = 3\). & Proposition 6.9 (§6.4); Part II of this manuscript §7 \\
+Gauge group & \(\frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}\) & , & Tannaka-Krein / Doplicher-Roberts reconstruction from edge-sector fusion rules yields a compact gauge group \(G\) (Theorem 6.1, §6.1). The Selection Axiom MAR uniquely selects the SM factors: the minimal faithful carrier \(\mathbb{C}^3 \otimes \mathbb{C}^2\) enforces the product structure SU(3) \(\times\) SU(2) \(\times\) U(1), the commutant argument excludes extra factors, and the \(\mathbb{Z}_6\) quotient follows from hypercharge quantization (Proposition 6.6). & §6.1--6.2; Part II of this manuscript \\
 \(\beta_{\text{EW}}\) & 4 & \texttt{beta\_ew(N\_c)} & Number of SU(2) doublets per generation = \(N_c\) quark doublets + 1 lepton doublet = \(N_c + 1 = 4\). This is a counting consequence of the Witten anomaly analysis that already fixed \(N_c = 3\). & §6.9, §6.19 \\
 \(\varepsilon\) (Z₆ defect) & \(1/6\) & \texttt{defect\_epsilon\_Z6()} & The SM gauge group has a \(\mathbb{Z}_6\) center quotient. Each unit of \(\mathbb{Z}_6\) defect insertion removes \(\Delta S = \ln 6\) nats of entropy (MaxEnt weighting, Assumption B). The resulting Boltzmann suppression per defect is \(e^{-\ln 6} = 1/6\). \textbf{This is topologically fixed} by the quotient structure, not chosen. & §6.18, §6.21 \\
-\(\delta\) (Koide phase) & \(2/9\) & computed inline & The holonomy phase on generation space: \(\delta = \beta_{\text{EW}} \cdot Y_Q / N_g = (N_c+1)/(2 N_c N_g) = 4/18 = 2/9\). Here \(Y_Q = 1/(2N_c)\) is the quark-doublet hypercharge (fixed by anomaly cancellation) and \(N_g = 3\) is the number of generations. All ingredients are previously derived. Experimental extraction: \(\delta_{\text{exp}} = 0.2222248 \pm 0.0000063\), matching \(2/9 = 0.2222\ldots\) within \(0.4\sigma\). & Proposition 13.3 (§13 of TECHNICAL\_SUPPLEMENT.md) \\
+\(\delta\) (Koide phase) & \(2/9\) & computed inline & The holonomy phase on generation space: \(\delta = \beta_{\text{EW}} \cdot Y_Q / N_g = (N_c+1)/(2 N_c N_g) = 4/18 = 2/9\). Here \(Y_Q = 1/(2N_c)\) is the quark-doublet hypercharge (fixed by anomaly cancellation) and \(N_g = 3\) is the number of generations. All ingredients are previously derived. Experimental extraction: \(\delta_{\text{exp}} = 0.2222248 \pm 0.0000063\), matching \(2/9 = 0.2222\ldots\) within \(0.4\sigma\). & Proposition 13.3 (§13 of Part V of this manuscript) \\
 Quark exponents & \(n_u = (6,3,0)\), \(n_d = (6,4,2)\) & \texttt{derive\_integer\_vectors()} & Minimal SU(3) hierarchy structure: \(n_{u} = (2N_c, N_c, 0)\) and \(n_d = (2N_c, N_c+1, N_c-1)\). These are the unique sequences that (a) span the range \([0, 2N_c]\) in \(N_g\) steps, (b) have the top quark unsuppressed (\(n_t = 0\)), and (c) match the observed up/down mass ordering under CKM rotation. With \(N_c = 3\): \((6,3,0)\) and \((6,4,2)\). & §6.21 \\
-Lepton exponents & \(n_e = (7,4,3)\) & \texttt{derive\_lepton\_exponents()} & Derived algorithmically: the Koide roots \(r_k^2\) (from \(\delta = 2/9\)) must satisfy \(r_i^2/r_j^2 \approx \varepsilon^{n_i - n_j}\) for all pairs. The code scans integer triples near \((N_g, N_g+1, \ldots)\) and selects the unique triple minimizing the log-ratio residuals. \textbf{Result}: \((n_\tau, n_\mu, n_e) = (3, 4, 7)\). & §6.21, §13 of TECHNICAL\_SUPPLEMENT.md \\
+Lepton exponents & \(n_e = (7,4,3)\) & \texttt{derive\_lepton\_exponents()} & Derived algorithmically: the Koide roots \(r_k^2\) (from \(\delta = 2/9\)) must satisfy \(r_i^2/r_j^2 \approx \varepsilon^{n_i - n_j}\) for all pairs. The code scans integer triples near \((N_g, N_g+1, \ldots)\) and selects the unique triple minimizing the log-ratio residuals. \textbf{Result}: \((n_\tau, n_\mu, n_e) = (3, 4, 7)\). & §6.21, §13 of Part V of this manuscript \\
 CKM angles & \(s_{12} = \varepsilon\), \(s_{23} = \varepsilon^2\), \(s_{13} = \varepsilon^3\) & inline & Powers of \(\varepsilon = 1/6\): the CKM mixing angles scale as \$\textbackslash varepsilon\^{}\{ & n\_i - n\_j \\
 \(Q\) (Koide ratio) & \(2/3\) & inline & The \(\mathbb{Z}_3\) mode balance on generation space: the circulant Hermitian matrix \(\Phi = a I + b P + b^* P^2\) on 3 generations satisfies \$Q = (1 + 2 & b/a \\
 \end{longtable}
@@ -105,7 +105,7 @@ Constant & Value & Code location & What determines it \\
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-MSSM \(\beta\)-coefficients & \((b_1, b_2, b_3) = (33/5, 1, -3)\) & \texttt{B\_MSSM} & The edge-sector computation (§6.17 of PAPER.md) derives \(\beta\)-function shifts \(\Delta b \approx (2.49, 4.17, 4.01)\) from the heat-kernel vacuum-polarization weighting and the \(\mathbb{Z}_6\) quotient. These match the shifts from SM to MSSM to better than 1\%. The coefficients themselves are standard 1-loop group theory: \(b_i = \sum_R T(R_i)\) summed over all matter multiplets. Using MSSM content is a \emph{consequence} of the edge-sector matching, not an assumption. SM-only coefficients fail catastrophically (\(\alpha_s\) off by 52\(\sigma\)). \\
+MSSM \(\beta\)-coefficients & \((b_1, b_2, b_3) = (33/5, 1, -3)\) & \texttt{B\_MSSM} & The edge-sector computation (§6.17 of Part I of this manuscript) derives \(\beta\)-function shifts \(\Delta b \approx (2.49, 4.17, 4.01)\) from the heat-kernel vacuum-polarization weighting and the \(\mathbb{Z}_6\) quotient. These match the shifts from SM to MSSM to better than 1\%. The coefficients themselves are standard 1-loop group theory: \(b_i = \sum_R T(R_i)\) summed over all matter multiplets. Using MSSM content is a \emph{consequence} of the edge-sector matching, not an assumption. SM-only coefficients fail catastrophically (\(\alpha_s\) off by 52\(\sigma\)). \\
 SM 1-loop \(\beta\)-coefficients & \((b_1, b_2, b_3)^{\text{SM}} = (41/10, -19/6, -7)\) & \texttt{B\_SM\_1LOOP} & Standard 1-loop coefficients for the SM with \(N_g = 3\), used only for the critical-surface RG evolution from \(M_U\) to \(m_t\) (§5 of this paper). Determined entirely by the SM gauge group and matter content. \\
 4-loop MSbar \(\beta\)-coefficients & \(\beta_0, \beta_1, \beta_2, \beta_3\) & \texttt{beta\_coeffs\_msbar(n\_f)} in \texttt{oph\_qcd.py} & Standard perturbative QCD: \(\beta_0 = 11 - 2n_f/3\), \(\beta_1 = 102 - 38n_f/3\), etc. These are computed from SU(3) Feynman diagrams at each loop order. The 4-loop coefficient \(\beta_3\) involves \(\zeta(3)\); all are universal in the MSbar scheme. \\
 Pole-mass conversion & \(K_2 = 13.44 - 1.04 n_l\), \(K_3 = 190.6 - 26.7 n_l + 0.65 n_l^2\) & \texttt{top\_pole\_from\_msbar()} & Standard 3-loop QCD relation between \(\overline{\text{MS}}\) and pole mass (Chetyrkin, Kniehl, Steinhauser 2000). These are perturbative coefficients computed from Feynman diagrams; they depend only on \(n_l\) (number of light flavors) and SU(3) group factors. \\
@@ -125,8 +125,8 @@ Constant & Value & Code variable & Status \\
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\(E_P\) (Planck energy) & \(1.220890 \times 10^{19}\) GeV & \texttt{E\_PLANCK\_GEV} & \textbf{Definition}: \(E_P = \sqrt{\hbar c^5/G}\). This is a unit conversion factor, not a physical input , it converts from natural (Planck) units to GeV. In the OPH framework, \(G\) itself is derived from the pixel area via \(G = a_{\text{cell}}/(4\bar{\ell}\,\hbar/c^3)\) (§5.4 of PAPER.md), so \(E_P\) is ultimately set by \(P\). \\
-\(e^{2\pi}\) in \(M_U\) formula & 535.49... & inline & The Euclidean regularity condition on the collar geometry fixes the angular period to \(2\pi\) (§5.8 of PAPER.md). This is a geometric constant, not a parameter. \\
+\(E_P\) (Planck energy) & \(1.220890 \times 10^{19}\) GeV & \texttt{E\_PLANCK\_GEV} & \textbf{Definition}: \(E_P = \sqrt{\hbar c^5/G}\). This is a unit conversion factor, not a physical input , it converts from natural (Planck) units to GeV. In the OPH framework, \(G\) itself is derived from the pixel area via \(G = a_{\text{cell}}/(4\bar{\ell}\,\hbar/c^3)\) (§5.4 of Part I of this manuscript), so \(E_P\) is ultimately set by \(P\). \\
+\(e^{2\pi}\) in \(M_U\) formula & 535.49... & inline & The Euclidean regularity condition on the collar geometry fixes the angular period to \(2\pi\) (§5.8 of Part I of this manuscript). This is a geometric constant, not a parameter. \\
 \(\sqrt{2}\) in Yukawa & \(v/\sqrt{2}\) & inline & Standard Higgs mechanism convention: the Yukawa coupling \(y_f\) relates to the fermion mass via \(m_f = y_f v / \sqrt{2}\). This is a normalization convention, not physics. \\
 \(\Delta\rho_{\text{stage-3}}\) & \(3/(32\pi^2) \approx 0.0095\) & inline & Universal 1-loop custodial correction from a unit-Yukawa fermion doublet. This is a standard EW radiative correction; it depends only on the gauge structure, not on measured masses. \\
 \end{longtable}
@@ -171,7 +171,7 @@ Heat-kernel truncation & 200 representations & Adding more changes \(\bar{\ell}\
   Heat-kernel form \(p_R \propto d_R e^{-tC_2(R)}\) (MaxEnt + edge completion)
 \end{itemize}
 
-\textbf{Derived under the Selection Axiom MAR (GAUGE\_GROUP\_DERIVATION.md)}:
+\textbf{Derived under the Selection Axiom MAR (Part II of this manuscript)}:
 
 \begin{itemize}
 \tightlist
@@ -253,7 +253,7 @@ where \(E_P = 1.220890 \times 10^{19}\) GeV is the Planck energy. This gives:
 
 \[M_U \approx 2.474 \times 10^{16} \text{ GeV}\]
 
-\textbf{Derivation}: The factor \(e^{2\pi}\) arises from the modular geometry of the collar (the Euclidean regularity condition fixes the angular period to \(2\pi\)). The \(P^{1/6}\) factor comes from the dimensional relation between pixel area and the UV cell scale (§5.8 of PAPER.md).
+\textbf{Derivation}: The factor \(e^{2\pi}\) arises from the modular geometry of the collar (the Euclidean regularity condition fixes the angular period to \(2\pi\)). The \(P^{1/6}\) factor comes from the dimensional relation between pixel area and the UV cell scale (§5.8 of Part I of this manuscript).
 
 \subsubsection{2.2 Cell Energy Scale}\label{22-cell-energy-scale}
 
@@ -269,7 +269,7 @@ This is the natural energy scale of a single computational element on the hologr
 
 \subsubsection{3.1 The Heat-Kernel Entropy}\label{31-the-heat-kernel-entropy}
 
-The edge-center completion (Theorem 2.3 of PAPER.md) combined with MaxEnt yields sector probabilities of the heat-kernel form:
+The edge-center completion (Theorem 2.3 of Part I of this manuscript) combined with MaxEnt yields sector probabilities of the heat-kernel form:
 
 \[p_R(t) \propto d_R \, e^{-t \, C_2(R)}\]
 
@@ -291,7 +291,7 @@ where \(d_{(p,q)} = \frac{1}{2}(p+1)(q+1)(p+q+2)\) and \(C_2(p,q) = \frac{1}{3}(
 
 \subsubsection{3.2 The Pixel Constraint}\label{32-the-pixel-constraint}
 
-The generalized entropy matching (§5.4 of PAPER.md) gives:
+The generalized entropy matching (§5.4 of Part I of this manuscript) gives:
 
 \[\frac{P}{4} = \bar{\ell}_{\text{SU(2)}}(t_2) + \bar{\ell}_{\text{SU(3)}}(t_3)\]
 
@@ -303,7 +303,7 @@ At the unification scale, all three gauge couplings emerge from a single \(\alph
 
 \[\alpha_i^{-1}(\mu) = \alpha_U^{-1} + \frac{b_i}{2\pi} \ln\frac{M_U}{\mu}\]
 
-\textbf{Why MSSM coefficients?} The edge-sector computation (§6.17 of PAPER.md) derives \(\beta\)-function shifts \(\Delta b \approx (2.49, 4.17, 4.01)\) from the heat-kernel form, the \(\mathbb{Z}_6\) quotient structure, and the Peter-Weyl vacuum-polarization weighting. These match the MSSM shifts \((2.5, 4.17, 4.0)\) to better than 1\%. SM-only coefficients catastrophically fail (\(\alpha_s\) prediction off by 52\(\sigma\)).
+\textbf{Why MSSM coefficients?} The edge-sector computation (§6.17 of Part I of this manuscript) derives \(\beta\)-function shifts \(\Delta b \approx (2.49, 4.17, 4.01)\) from the heat-kernel form, the \(\mathbb{Z}_6\) quotient structure, and the Peter-Weyl vacuum-polarization weighting. These match the MSSM shifts \((2.5, 4.17, 4.0)\) to better than 1\%. SM-only coefficients catastrophically fail (\(\alpha_s\) prediction off by 52\(\sigma\)).
 
 \subsubsection{3.4 Self-Consistent Fixed Point}\label{34-self-consistent-fixed-point}
 
@@ -392,7 +392,7 @@ At tree level:
 
 \subsubsection{5.1 The Critical Surface Constraint}\label{51-the-critical-surface-constraint}
 
-Refinement stability (§6.3, §6.22 of PAPER.md) pushes the Higgs quartic coupling to a marginal stability point at the unification scale:
+Refinement stability (§6.3, §6.22 of Part I of this manuscript) pushes the Higgs quartic coupling to a marginal stability point at the unification scale:
 
 \[\lambda(M_U) = 0, \quad \beta_\lambda(M_U) = 0\]
 
@@ -579,7 +579,7 @@ Graviton & Diffeomorphism invariance (emergent from entanglement equilibrium) fo
 \end{longtable}
 }
 
-These are \textbf{symmetry-protected zeros}, not accidental cancellations. The gauge invariances are derived from the gluing structure (§6.1 of PAPER.md) and entanglement equilibrium (§5 of PAPER.md).
+These are \textbf{symmetry-protected zeros}, not accidental cancellations. The gauge invariances are derived from the gluing structure (§6.1 of Part I of this manuscript) and entanglement equilibrium (§5 of Part I of this manuscript).
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
