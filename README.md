@@ -42,8 +42,6 @@ All other documents in this repository are supporting derivations, supplements, 
 
 ## Common Criticisms
 
-Long-form replies to recurring objections are collected in [COMMON_CRITICISMS.MD](extra/COMMON_CRITICISMS.MD).
-
 - [Deriving `P` from gauge data and then using `P` downstream is completely circular](extra/COMMON_CRITICISMS.MD#criticism-1-deriving-p-from-gauge-data-and-then-using-p-downstream-is-completely-circular)
 - [A fixed cell size breaks Lorentz invariance, so OPH can only recover a Newtonian limit](extra/COMMON_CRITICISMS.MD#criticism-2-a-fixed-cell-size-breaks-lorentz-invariance-so-oph-can-only-recover-a-newtonian-limit)
 
