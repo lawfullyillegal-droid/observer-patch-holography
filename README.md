@@ -4,6 +4,8 @@
 
 **French version:** [README_FR.md](README_FR.md) -- translated by Martin S.
 
+> **Official OPH Website:** Start at [floatingpragma.io/oph/](https://floatingpragma.io/oph/).
+
 > **OPH Disproval Challenge:** A USD 10,000 challenge to disprove OPH is currently running at [challenge.floatingpragma.io](https://challenge.floatingpragma.io).
 
 ## Core Idea
@@ -38,7 +40,7 @@ All other documents in this repository are supporting derivations, supplements, 
 Start with the official OPH website, the interactive OPH Lab, and the web edition of the OPH Book:
 
 - **USD 10,000 OPH disproval challenge:** [challenge.floatingpragma.io](https://challenge.floatingpragma.io)
-- **Official OPH website:** [Observer Patch Holography at floatingpragma.io/oph](https://floatingpragma.io/oph)
+- **Official OPH website:** [Observer Patch Holography at floatingpragma.io/oph/](https://floatingpragma.io/oph/)
 - **Interactive OPH Lab:** [OPH Lab at oph-lab.floatingpragma.io](https://oph-lab.floatingpragma.io)
 - **OPH Book (web edition):** [Read the OPH Book online](https://oph-book.floatingpragma.io)
 - **NotebookLM notebook:** [Watch the OPH introduction video and start asking questions](https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a?artifactId=fb7c0ebd-4375-4997-9cae-6558ff8977b4)
