@@ -1,17 +1,17 @@
-\section{Gauge Group Derivation: Why the Standard Model Is Inevitable}\label{gauge-group-derivation-why-the-standard-model-is-inevitable}
+\section{Gauge Group Derivation: Standard Model Closure under Extended MAR}\label{gauge-group-derivation-standard-model-closure-under-extended-mar}
 
 \begin{quote}
-OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives the Standard Model gauge group, particle mass hierarchy, and key quantitative outputs.
+OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives compact gauge reconstruction, particle mass hierarchy, and key quantitative outputs.
 \end{quote}
 
 \begin{quote}
 \textbf{Integrated derivation within this manuscript}: this part extends the core OPH framework in Part I.
 
-\textbf{Abstract.} We prove that the extended OPH theory , core axioms A1--A4, regulator premises R0--R1, the loop-coherent gluing condition \([z]=0\), and the Selection Axiom MAR (Minimal Admissible Realization) , uniquely selects the Standard Model gauge group, the number of colors, and the number of generations. The result gives the exact global gauge group and goes beyond the SM Lie algebra:
+\textbf{Abstract.} We show that, once Tannaka/DR reconstruction is applied to the refinement-stable edge-sector colimit, the extended OPH theory , core axioms A1--A4, regulator premises R0--R1, the loop-coherent gluing condition \([z]=0\), and the Selection Axiom MAR (Minimal Admissible Realization) , selects the Standard Model connected Lie gauge-sector factors, the number of colors, and the number of generations once the admissible class includes one connected abelian charge factor. The realized hypercharge lattice then fixes the global gauge quotient:
 
 \[G_{\mathrm{phys}} = \frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}, \qquad N_c = 3, \qquad N_g = 3.\]
 
-No other compact gauge group, no other color multiplicity, and no other generation count satisfies all admissibility conditions while minimizing the complexity vector \(C(\Sigma)\).
+Within the positive-dimensional connected Lie admissible class, no other gauge-sector package, no other color multiplicity, and no other generation count satisfies all admissibility conditions while minimizing the complexity vector \(C(\mathfrak S)\).
 \end{quote}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -49,11 +49,11 @@ Component & Content & Reference \\
 
 From \(A1\)--\(A4 + R0 + R1\) alone, the following is established (Part I of this manuscript §6.1):
 
-\textbf{Theorem 6.1 (Tannaka/DR reconstruction).} Edge-center completion yields a rigid symmetric \(C^*\) tensor category \(\mathsf{Sect}\) of edge sectors. There exists a compact group \(G\), unique up to isomorphism, such that
+\textbf{Theorem 6.1 (Tannaka/DR reconstruction).} At each regulator scale one obtains a finite tensor category of transportable edge charges; the refinement-stable directed colimit \(\mathsf{Sect}_\infty\) is the category used for reconstruction. If \(\mathsf{Sect}_\infty\) is a rigid symmetric \(C^*\) tensor category with a faithful fiber functor, then there exists a compact group \(G\), unique up to isomorphism, such that
 
-\[\mathsf{Sect} \simeq \mathrm{Rep}(G), \qquad G = \mathrm{Aut}_\otimes(\mathcal{F}).\]
+\[\mathsf{Sect}_\infty \simeq \mathrm{Rep}(G), \qquad G = \mathrm{Aut}_\otimes(\mathcal{F}).\]
 
-This proves \emph{existence} of a compact gauge group but does not identify \emph{which} compact group is realized. The present document determines it uniquely.
+This proves \emph{existence} of a compact gauge group but does not identify \emph{which} compact group is realized. The present document determines the connected Lie realization selected by the extended admissibility package.
 
 \subsubsection{1.3 The Transportability Premise}\label{13-the-transportability-premise}
 
@@ -67,7 +67,7 @@ This is an internal constraint on the sector structure, not an external physical
 
 \subsection{2. Admissibility Conditions}\label{2-admissibility-conditions}
 
-An \textbf{OPH-realizable gauge sector} \(\Sigma = (G, \text{matter content})\) consists of a compact gauge group \(G\) reconstructed via Tannaka-Krein from the edge-sector category (Theorem 6.1) together with its associated chiral matter spectrum. A sector \(\Sigma\) is \textbf{admissible} if it satisfies all of the following conditions:
+An \textbf{OPH-realizable gauge sector package} \(\mathfrak S = (G, \text{matter content})\) consists of a compact gauge group \(G\) reconstructed via Tannaka-Krein from the refinement-stable edge-sector category (Theorem 6.1) together with its associated chiral matter spectrum. A sector package \(\mathfrak S\) is \textbf{admissible} if it satisfies all of the following conditions:
 
 \subsubsection{(i) Loop-coherent / transportable}\label{i-loop-coherent--transportable}
 
@@ -99,9 +99,9 @@ The MaxEnt/refinement-stable state supports light charged fermions without fine-
 
 \subsubsection{(iv) Single-Higgs Yukawa-completable}\label{iv-single-higgs-yukawa-completable}
 
-The chiral matter content can acquire mass through Yukawa couplings to a single scalar doublet \(H = (1, 2, 1/2)\) after electroweak symmetry breaking, without requiring additional scalar multiplets.
+The chiral matter content can acquire mass through Yukawa couplings to a single scalar doublet \(H\) carrying some charge under one connected abelian factor, after electroweak symmetry breaking, without requiring additional scalar multiplets.
 
-\emph{Rationale:} This is the minimal mechanism for generating fermion masses consistent with electroweak symmetry breaking. Additional Higgs multiplets would increase the scalar capacity without physical necessity.
+\emph{Rationale:} This is the minimal mechanism for generating fermion masses consistent with electroweak symmetry breaking. The admissibility premise only requires one connected abelian charge direction and a single Higgs doublet; the numerical hypercharge assignments are derived later from anomaly cancellation and Yukawa invariance. Additional Higgs multiplets would increase the scalar capacity without physical necessity.
 
 \subsubsection{(v) Intrinsically CP-capable}\label{v-intrinsically-cp-capable}
 
@@ -119,9 +119,9 @@ The weak gauge sector (the factor carrying the pseudoreal doublet) is asymptotic
 
 \subsection{3. Selection Axiom MAR}\label{3-selection-axiom-mar}
 
-\textbf{Selection Axiom MAR (Minimal Admissible Realization).} Among all OPH-realizable sectors \(\Sigma\) that satisfy admissibility conditions (i)--(vi), Nature realizes the \textbf{lexicographically minimal} one under the complexity vector
+\textbf{Selection Axiom MAR (Minimal Admissible Realization).} Among all OPH-realizable sector packages \(\mathfrak S\) that satisfy admissibility conditions (i)--(vi), Nature realizes the \textbf{lexicographically minimal} one under the complexity vector
 
-\[C(\Sigma) = \bigl(\chi_{\mathrm{cpl}},\; N_{\mathrm{nonab}},\; N_c,\; N_g\bigr),\]
+\[C(\mathfrak S) = \bigl(\chi_{\mathrm{cpl}},\; N_{\mathrm{nonab}},\; N_c,\; N_g\bigr),\]
 
 where:
 
@@ -137,7 +137,7 @@ where:
   \(N_g\) is the \textbf{number of chiral generations}.
 \end{itemize}
 
-Lexicographic minimality means: first minimize \(\chi_{\mathrm{cpl}}\); among ties, minimize \(N_{\mathrm{nonab}}\); among further ties, minimize \(N_c\); among final ties, minimize \(N_g\).
+Lexicographic minimality means: first minimize \(\chi_{\mathrm{cpl}}\); among ties, minimize \(N_{\mathrm{nonab}}\); among further ties, minimize \(N_c\); among final ties, minimize \(N_g\). The object minimized here is the full sector package \(\mathfrak S\), not the bare tensor category alone.
 
 \textbf{Key properties of MAR:}
 
@@ -157,7 +157,7 @@ Lexicographic minimality means: first minimize \(\chi_{\mathrm{cpl}}\); among ti
 
 \subsection{4. Main Theorem}\label{4-main-theorem}
 
-\textbf{Theorem (Standard Model Inevitability).} Under the extended OPH theory \(T_{\mathrm{ext}} = A1\text{-}A4 + R0 + R1 + [z]=0 + \mathrm{MAR}\):
+\textbf{Theorem (Standard Model closure under extended admissibility).} Under the extended OPH theory \(T_{\mathrm{ext}} = A1\text{-}A4 + R0 + R1 + [z]=0 + \mathrm{MAR}\), together with the refinement-stable reconstruction hypotheses of Theorem 6.1:
 
 \[G_{\mathrm{phys}} = \frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}, \qquad N_c = 3, \qquad N_g = 3.\]
 
@@ -173,7 +173,7 @@ The proof proceeds in five steps. Steps 1--4 determine the connected gauge group
 
 \textbf{From:} \(A1\)--\(A4 + R0 + R1\).
 
-Edge-center completion (Theorem 2.3, Part I of this manuscript) yields a rigid symmetric \(C^*\) tensor category \(\mathsf{Sect}\) of edge charges. By Theorem 6.1 (Tannaka/DR reconstruction), there exists a compact group \(G\), unique up to isomorphism, with \(\mathsf{Sect} \simeq \mathrm{Rep}(G)\).
+At each cutoff one has a finite tensor category of transportable edge charges. The reconstruction uses the refinement-stable directed colimit \(\mathsf{Sect}_\infty\) of those categories. By Theorem 6.1 (Tannaka/DR reconstruction), there exists a compact group \(G\), unique up to isomorphism, with \(\mathsf{Sect}_\infty \simeq \mathrm{Rep}(G)\).
 
 The premise \([z] = 0\) ensures that this reconstruction is global: charges are DHR-transportable, so the compact group acts as a genuine gauge symmetry, not merely a local labeling (Proposition 6.1a). \(\square\)
 
@@ -202,9 +202,9 @@ A single nonabelian factor cannot simultaneously provide both types: a group is 
 \begin{itemize}
 \tightlist
 \item
-  The smallest faithful pseudoreal irreducible representation of any compact simple group is the fundamental \textbf{2} of \(SU(2)\) (the only 2D pseudoreal irrep).
+  The smallest faithful pseudoreal irreducible representation of any positive-dimensional compact connected Lie group is the fundamental \textbf{2} of \(SU(2)\) (the only 2D pseudoreal irrep in the connected Lie setting used here).
 \item
-  The smallest faithful irreducible complex representation of any compact simple group is the fundamental \textbf{3} of \(SU(3)\) (the 2D fundamental of \(SU(2)\) is pseudoreal, not complex; the fundamental of \(SU(2)\) in dimension 2 is the only option for pseudoreal, while \(SU(3)\) in dimension 3 is the first genuinely complex case).
+  The smallest faithful irreducible complex representation of any positive-dimensional compact connected Lie group is the fundamental \textbf{3} of \(SU(3)\) (the 2D fundamental of \(SU(2)\) is pseudoreal, not complex; the fundamental of \(SU(2)\) in dimension 2 is the only option for pseudoreal, while \(SU(3)\) in dimension 3 is the first genuinely complex case).
 \item
   By definition of \(\chi_{\mathrm{cpl}}\), the admissible pseudoreal and complex charge types must occur on a common nonabelian block rather than on disconnected direct-sum summands. The minimal such block is the tensor product \(V = \mathbb{C}^3 \otimes \mathbb{C}^2\), giving \(\chi_{\mathrm{cpl}} = 6\).
 \item
@@ -219,9 +219,11 @@ A single nonabelian factor cannot simultaneously provide both types: a group is 
 
 Product structure is derived from the minimal coupled-carrier argument. \(\square\)
 
+\textbf{Remark.} The representation-theoretic dimension comparisons in Steps 2--4 apply only to the positive-dimensional connected Lie image carrying the admissible nonabelian charges, equivalently to the identity component of the reconstructed group on that image. Finite or disconnected counterexamples are outside the theorem package used here.
+
 \subsubsection{Step 3: The factors are SU(3), SU(2), and U(1)}\label{step-3-the-factors-are-su3-su2-and-u1}
 
-\textbf{From:} Lemmas 6.3--6.5 of Part I of this manuscript, applied to the minimal coupled carrier.
+\textbf{From:} Lemmas 6.3--6.5 of Part I of this manuscript, applied to the minimal coupled carrier together with the connected abelian admissibility premise.
 
 \textbf{Lemma 5.4 (SU(2) from pseudoreal doublet).} The factor acting on \(\mathbb{C}^2\) as a faithful 2D pseudoreal representation is \(SU(2)\).
 
@@ -231,13 +233,13 @@ Product structure is derived from the minimal coupled-carrier argument. \(\squar
 
 \emph{Proof.} Among compact groups with a faithful irreducible complex 3D representation, the connected component is \(SU(3)\). (The only compact simple Lie groups with a 3D fundamental representation are \(SU(3)\) and \(SO(3)\). But the fundamental of \(SO(3)\) is real, not complex. Therefore \(SU(3)\) is uniquely selected.) This is Lemma 6.4 of Part I of this manuscript. \(\square\)
 
-\textbf{Lemma 5.6 (U(1) from continuous characters).} Admissibility condition (iv) requires continuously parameterized hypercharges for the Yukawa couplings. A continuous family of 1D sectors yields a \(U(1)\) factor.
+\textbf{Lemma 5.6 (Single connected abelian factor).} Admissibility condition (iv) supplies one connected abelian charge factor acting nontrivially on the coupled carrier. Compact connected abelian Lie groups are tori, and the commutant calculation below shows that only a one-torus can act nontrivially on the minimal coupled carrier. Therefore the admissible connected abelian factor is \(U(1)\).
 
-\emph{Proof.} This is Lemma 6.5 of Part I of this manuscript. The hypercharge assignments must form a continuous family (not a discrete group) to allow the full range of Yukawa couplings needed for condition (iv). \(\square\)
+\emph{Proof.} This is Lemma 6.5 of Part I of this manuscript together with the compact-Lie classification of connected abelian groups as tori. The one-dimensional characters form a discrete lattice \(\mathrm{Hom}(U(1)^n,U(1)) \cong \mathbb{Z}^n\); what matters here is the connected torus factor, not a continuous family of inequivalent 1D irreps. \(\square\)
 
 \subsubsection{Step 4: Nothing else , the commutant argument}\label{step-4-nothing-else--the-commutant-argument}
 
-\textbf{Proposition 5.7 (No additional factors).} No extra gauge factor , neither nonabelian nor abelian , can appear without increasing \(\chi_{\mathrm{cpl}}\) beyond 6.
+\textbf{Proposition 5.7 (No additional factors).} No extra gauge factor , neither nonabelian nor connected abelian , can appear without increasing \(\chi_{\mathrm{cpl}}\) beyond 6.
 
 \emph{Proof.} Consider the maximal compact subgroup of \(U(6)\) acting on \(V = \mathbb{C}^3 \otimes \mathbb{C}^2\) with commuting actions on each tensor factor:
 
@@ -254,7 +256,7 @@ Now compute the commutant:
 \item
   The commutant of \(SU(3) \times SU(2)\) inside \(U(6)\) is exactly \(U(1)\).
 \item
-  Therefore no extra continuous factor (neither \(U(1)'\) nor any nonabelian group) can appear without enlarging the carrier beyond \(\chi_{\mathrm{cpl}} = 6\).
+  Therefore any connected abelian factor acting nontrivially on the coupled carrier is necessarily this single \(U(1)\), and no extra continuous factor (neither \(U(1)'\) nor any nonabelian group) can appear without enlarging the carrier beyond \(\chi_{\mathrm{cpl}} = 6\).
 \item
   Any additional nonabelian factor would have to act nontrivially on the same coupled block, increasing \(\chi_{\mathrm{cpl}}\).
 \end{itemize}
@@ -279,7 +281,7 @@ The hypercharge quantization itself follows from anomaly cancellation (condition
 
 \subsubsection{Summary of Step 1--5}\label{summary-of-step-15}
 
-\[\boxed{A1\text{-}A4 + R0 + R1 + [z]=0 + \mathrm{MAR} \;\Longrightarrow\; G_{\mathrm{phys}} = \frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}}\]
+\[\boxed{A1\text{-}A4 + R0 + R1 + [z]=0 + \mathrm{MAR} + \text{Theorem 6.1 hypotheses} \;\Longrightarrow\; G_{\mathrm{phys}} = \frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}}\]
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -337,15 +339,15 @@ Therefore \(N_g \geq 3\).
 
 \textbf{Step 2: Asymptotic freedom gives N\_g ≤ 5.}
 
-Admissibility condition (vi) requires \(SU(2)_L\) to be asymptotically free. The one-loop beta function coefficient is
+Admissibility condition (vi) requires \(SU(2)_L\) to be asymptotically free. With one complex Higgs doublet, the one-loop beta function coefficient is
 
-\[b_{1,SU(2)} = \frac{1}{3}\bigl[22 - N_g(N_c + 1)\bigr].\]
+\[b_{SU(2)} = \frac{22}{3} - \frac{1}{3}N_g(N_c + 1) - \frac{1}{6}.\]
 
-Asymptotic freedom requires \(b_{1,SU(2)} > 0\):
+Asymptotic freedom requires \(b_{SU(2)} > 0\):
 
-\[N_g(N_c + 1) < 22.\]
+\[N_g(N_c + 1) < \frac{43}{2}.\]
 
-With \(N_c = 3\) (from §6): \(4N_g < 22\), so \(N_g \leq 5\).
+With \(N_c = 3\) (from §6): \(4N_g < \frac{43}{2}\), so \(N_g \leq 5\).
 
 Combining: \(3 \leq N_g \leq 5\).
 
@@ -365,7 +367,7 @@ Among the admissible candidates \(\{3, 4, 5\}\), MAR\textquotesingle s complexit
 
 \subsubsection{Corollary 2: Uniqueness}\label{corollary-2-uniqueness}
 
-\textbf{Corollary.} The SM gauge group is the \emph{unique} solution. No other compact gauge group satisfies all admissibility conditions while achieving \(\chi_{\mathrm{cpl}} = 6\).
+\textbf{Corollary.} Within the positive-dimensional connected Lie admissible class with one connected abelian factor, the SM gauge group is the unique realization acting on the minimal coupled carrier with \(\chi_{\mathrm{cpl}} = 6\).
 
 \emph{Proof.} By the commutant argument (Proposition 5.7), the group \(SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6\) exhausts the continuous symmetry of the minimal coupled carrier \(\mathbb{C}^3 \otimes \mathbb{C}^2\). Any alternative group either:
 
@@ -376,7 +378,7 @@ Among the admissible candidates \(\{3, 4, 5\}\), MAR\textquotesingle s complexit
 \item
   Fails to provide both pseudoreal and complex representations (excluded by condition iii), or
 \item
-  Is a subgroup of the SM group, which would fail anomaly cancellation or Yukawa completeness.
+  Is a subgroup of the SM connected group, which would fail anomaly cancellation or Yukawa completeness.
 \end{itemize}
 
 \(\square\)

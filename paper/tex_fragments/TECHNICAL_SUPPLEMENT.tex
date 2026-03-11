@@ -1,12 +1,14 @@
 \section{Technical Supplement: Mathematical Foundations of OPH}\label{technical-supplement-mathematical-foundations-of-observer-patch-holography}
 
 \begin{quote}
-OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives the Standard Model gauge group, particle mass hierarchy, and key quantitative outputs.
+OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives scaling-limit Lorentz/Einstein dynamics, compact gauge reconstruction from refinement-stable edge sectors, Standard Model closure under the extended admissibility package, particle mass hierarchy, and key quantitative outputs.
 \end{quote}
 
 \subsection{For Theoretical Physicists}\label{for-theoretical-physicists}
 
 This document provides the complete mathematical derivations supporting the article "Answering 10 of the Hardest Questions in Physics." All results derive from the OPH axiom set (A1--A4) plus stated premises.
+
+\textbf{Scope convention.} Statements about Lorentz recovery, modular flow, and Einstein dynamics are scaling-limit / EFT statements rather than literal fixed-cutoff type-I claims. Statements about gauge reconstruction refer to the refinement-stable directed colimit of fixed-cutoff sector categories, not to the finite block list at one regulator scale.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -75,7 +77,7 @@ This provides the kinematic structure of special relativity.
 
 \textbf{Assumption G (Euclidean Regularity):} Modular flow near a smooth entangling cut has a regular Euclidean continuation, fixing the angular period to \(2\pi\).
 
-\textbf{Theorem 2.2 (Bisognano-Wichmann on \(S^2\)):} Under Assumption G and CMFP conditions, cap modular flow acts as the unique cap-preserving conformal dilation with period \(2\pi\): \[\sigma_t^\omega(A) = \Delta^{it} A \Delta^{-it}\]
+\textbf{Theorem 2.2 (Bisognano-Wichmann on \(S^2\)):} In the refinement/scaling-limit EFT regime, under Assumption G and CMFP conditions, cap modular flow acts as the unique cap-preserving conformal dilation with period \(2\pi\): \[\sigma_t^\omega(A) = \Delta^{it} A \Delta^{-it}\]
 
 The modular Hamiltonian takes the geometric form: \[K_C = 2\pi \int_C \beta(x) T_{00}(x) \, d^3x\] where \(\beta(x)\) is the local inverse temperature (Tolman factor).
 
@@ -101,7 +103,7 @@ If this vanishes for all \(\hat{n} \in S^2\), each angular moment (scalar, vecto
 
 \subsection{2.5 Entanglement Equilibrium and Einstein\textquotesingle s Equation}\label{25-entanglement-equilibrium-and-einsteins-equation}
 
-\textbf{Theorem 2.5 (Jacobson-type Derivation):} Under MaxEnt state selection with generalized entropy stationarity: \[\delta S_{\text{gen}} = 0\]
+\textbf{Theorem 2.5 (Jacobson-type Derivation):} In the same local Lorentzian scaling regime, under MaxEnt state selection with generalized entropy stationarity: \[\delta S_{\text{gen}} = 0\]
 
 the cap equilibrium condition yields: \[G_{00} + \Lambda g_{00} = 8\pi G \langle T_{00} \rangle\]
 
@@ -298,7 +300,7 @@ The SM prediction is catastrophically wrong; MSSM-like coefficients work.
 
 where \(d_R = \dim R\) and \(C_2(R)\) is the quadratic Casimir.
 
-\textbf{Lemma 5.2 (Bi-invariant Operators):} Any bi-invariant, second-order differential operator on a compact semisimple Lie group \(G\) has the form: \[D = c_0 \mathbf{1} - c \Delta_G\]
+\textbf{Lemma 5.2 (Bi-invariant Operators):} If \(G=\prod_i G_i\) is a compact semisimple Lie group written as a product of compact simple factors, then any bi-invariant, second-order differential operator on \(G\) has the form: \[D = c_0 \mathbf{1} - \sum_i c_i \Delta_{G_i}\]
 
 where \(\Delta_G\) is the Laplace-Beltrami operator.
 
@@ -309,14 +311,15 @@ where \(\Delta_G\) is the Laplace-Beltrami operator.
 \item
   Linear terms vanish (no invariant vectors in adjoint rep)
 \item
-  Quadratic terms \(\propto\) Killing form (unique up to scale for simple factors)
+  Quadratic terms are proportional to the Killing form on each simple factor, giving one independent coefficient per factor
 \end{itemize}
 
 The Casimir element acts as \(-\Delta_G\) in the regular representation. \(\square\)
 
 \subsection{5.4 Peter-Weyl and Effective Multiplicity}\label{54-peter-weyl-and-effective-multiplicity}
 
-By Peter-Weyl decomposition: \[L^2(G) \cong \bigoplus_R V_R \otimes V_R^*\]
+By Peter-Weyl decomposition, the effective refinement-limit edge representation space is
+\[L^2(G) \cong \bigoplus_R V_R \otimes V_R^*\]
 
 \textbf{Key insight:} Entanglement traces over one factor give multiplicity \(d_R\) in \(p_R\), but loops see both factors, giving effective multiplicity: \[N_{\text{eff}}(R) = d_R \cdot p_R\]
 
@@ -491,7 +494,7 @@ The coefficient \(15/(8\pi^2)\) comes from inverting the \(d=4\) geometric integ
 
 \subsection{9.4 The MOND Acceleration Scale}\label{94-the-mond-acceleration-scale}
 
-\textbf{Theorem 9.2:} The unique IR acceleration scale from \(\Lambda\): \[a_0^{(\text{OPH})} := \frac{15}{8\pi^2} c^2 \sqrt{\frac{\Lambda}{3}} = \frac{15}{8\pi^2} \frac{c^2}{r_{dS}}\]
+\textbf{Corollary 9.2 (program-level):} The unique IR acceleration scale available to the modular-anomaly branch from \(\Lambda\) is \[a_0^{(\text{OPH})} := \frac{15}{8\pi^2} c^2 \sqrt{\frac{\Lambda}{3}} = \frac{15}{8\pi^2} \frac{c^2}{r_{dS}}\]
 
 \textbf{Numerical evaluation:} \[a_0^{(\text{OPH})} \approx 1.03 \times 10^{-10} \text{ m/s}^2\]
 
@@ -515,7 +518,7 @@ yields the MOND/RAR form: \[g_{\text{obs}} \approx g_b + \sqrt{a_0 g_b}\]
 
 If \(H_\partial = H_\partial^{(1)} + H_\partial^{(2)} + H_\partial^{(3)}\) with \([H_\partial^{(i)}, H_\partial^{(j)}] = 0\): \[p(R_1, R_2, R_3) \propto \prod_{i=1}^3 d_{R_i} e^{-t_i C_2(R_i)}\]
 
-By Tannaka-Krein reconstruction: \(G \cong \text{SU}(3) \times \text{SU}(2) \times \text{U}(1)\) (up to finite quotient).
+Applied to the refinement-stable edge-sector colimit, Tannaka-Krein reconstruction first yields some compact group \(G\). Under the extended MAR admissibility package, and once the admissible class includes one connected abelian charge factor, the connected Lie realization selected by MAR is \(SU(3) \times SU(2) \times U(1)\) (up to finite quotient).
 
 Under the extended theory \(T_{\mathrm{ext}}\), the Selection Axiom MAR derives this product structure from first principles: the minimal coupled carrier \(\mathbb{C}^3 \otimes \mathbb{C}^2\) enforces commuting color and weak actions, which implies the additive boundary Laplacian. See Part II of this manuscript for the complete proof.
 

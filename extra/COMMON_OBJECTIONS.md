@@ -773,5 +773,5 @@ OPH already treats those as different levels of description. And the UEET replac
 - [Samir Dzolota, "Technical Critique and Resolution of the OPH Framework" (Zenodo)](https://zenodo.org/records/18902120)
 - [Observers Are All You Need PDF](../paper/observers_are_all_you_need.pdf)
   Key sections used above: the regulator premises, the refinement-limit modular claims, and the null modular bridge.
-- [Working manuscript](../wip/PAPER.md)
+- [Main manuscript source](../paper/tex_fragments/PAPER.tex)
   Key sections used above: regulator premises `R0, R1`; the "remaining gap" around geometric modular action; CMFP-3; the cap modular theorem; and the null modular bridge.

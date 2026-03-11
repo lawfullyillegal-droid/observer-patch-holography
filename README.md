@@ -33,7 +33,7 @@ From this starting point (plus entropy and Markov constraints), OPH treats space
 - **PDF:** [Reality as a Consensus Protocol](paper/reality_as_consensus_protocol.pdf)
 - **LaTeX source:** [reality_as_consensus_protocol.tex](paper/reality_as_consensus_protocol.tex)
 
-All other documents in this repository are supporting derivations, supplements, and companion resources.
+The canonical paper sources now live under [`paper/`](paper). The old draft tree has been removed from the repository.
 
 ## Official OPH Resources
 
@@ -122,7 +122,7 @@ The entire framework rests on four core axioms plus one selection axiom:
 | **A4** | Local Markov | Conditional mutual information decays across collars |
 | **MAR** | Minimal Admissible Realization | Among admissible sectors, Nature realizes the lexicographically minimal one |
 
-Additional structural assumptions (MaxEnt, Euclidean regularity, exponential mixing) are detailed in the [Technical Paper](wip/PAPER.md), Section 1.6.
+Additional structural assumptions (MaxEnt, Euclidean regularity, exponential mixing) are detailed in the [main paper source](paper/tex_fragments/PAPER.tex).
 
 ## The Prediction Chain
 
@@ -132,7 +132,7 @@ The following infographic shows how the entire framework flows from two paramete
 
 *From axioms to reality: how overlap consistency derives all of physics.*
 
-> **Particle Spectrum Derivation**: The complete derivation from pixel area to particle masses — with comparison against PDG data and a full audit of every constant — is documented in **[From Pixel Area to Particle Masses](wip/SPECTRUM_DERIVATION.md)**. Outputs are classified by epistemic status: gauge couplings and EW boson masses are calibration-sector consistency checks; charged lepton masses (< 0.04% from parameter-free Koide structure), Higgs and top masses (~1% from critical surface condition) are genuine predictions. See §1B of that document for the full classification.
+> **Particle Spectrum Derivation**: The complete derivation from pixel area to particle masses — with comparison against PDG data and a full audit of every constant — is documented in **[the spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex)**. Outputs are classified by epistemic status: gauge couplings and EW boson masses are calibration-sector consistency checks; charged lepton masses (< 0.04% from parameter-free Koide structure), Higgs and top masses (~1% from critical surface condition) are genuine predictions.
 
 ## The Fundamental Parameters
 
@@ -169,7 +169,7 @@ lets us extract screen capacity from the measured $\Lambda \sim 10^{-52}$ $\text
 - **Pixel area** = resolution (extracted from gauge couplings via edge entropy)
 - **Screen capacity** = total size (extracted from observed cosmological constant)
 
-The axiom structure contains no other dimensionful constants. The axioms plus reconstruction give *a* compact gauge group; the Selection Axiom MAR (Minimal Admissible Realization) then uniquely selects SU(3) x SU(2) x U(1) / Z₆ as the realized gauge group (see [GAUGE_GROUP_DERIVATION.md](wip/GAUGE_GROUP_DERIVATION.md)). Charge quantization and Einstein's equations follow from the axiom structure.
+The axiom structure contains no other dimensionful constants. The axioms plus reconstruction give *a* compact gauge group; the extended MAR admissibility package then selects SU(3) x SU(2) x U(1) / Z₆ as the realized gauge group (see [the gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex)). Charge quantization and scaling-limit semiclassical Einstein dynamics follow from the axiom structure.
 
 ### What This Means
 
@@ -195,18 +195,18 @@ The framework has an end-to-end validated status across the main paper and suppl
 
 | Layer | Headline result | Current status | Primary source |
 |-------|-----------------|----------------|----------------|
-| Core axioms (A1-A4) + MaxEnt + Euclidean regularity | Lorentz kinematics, semiclassical Einstein equations, compact gauge-group reconstruction | Derived (Theorems 4.2-4.3, 5.1, 6.1) | [Technical Paper](wip/PAPER.md) |
-| Extended theory $T_{\text{ext}}$ with MAR | SM global group $SU(3)\times SU(2)\times U(1)/\mathbb{Z}_6$, $N_c=3$, $N_g=3$ | Uniquely selected under admissibility + MAR | [Gauge Group Derivation](wip/GAUGE_GROUP_DERIVATION.md) |
-| Gauge-structure consequence | Proton stability (no gauge-mediated proton decay) | Product gauge group implies no $X/Y$ leptoquark generators | [Gauge Group Derivation](wip/GAUGE_GROUP_DERIVATION.md) |
-| Exact symmetry-protected zeros | $m_\gamma = 0$, $m_g = 0$, $m_{\text{graviton}} = 0$ | Derived as exact zeros from gauge/diffeomorphism invariance | [Technical Paper](wip/PAPER.md), [Spectrum Derivation](wip/SPECTRUM_DERIVATION.md) |
-| Couplings at $m_Z$ | $\alpha_s=0.1183$, $\sin^2\theta_W=0.2307$, $\alpha_{\rm em}^{-1}=128.31$ | Consistency checks (calibration sector, 0.2–0.4%) | [Spectrum Derivation](wip/SPECTRUM_DERIVATION.md) |
-| EW boson masses | $W=80.386$ GeV, $Z=91.220$ GeV | Consistency checks (flow from calibrated couplings, $<0.04\%$) | [Spectrum Derivation](wip/SPECTRUM_DERIVATION.md) |
-| Charged lepton masses | $e/\mu/\tau$ | Genuine predictions at $<0.025\%$ (parameter-free Koide structure) | [Spectrum Derivation](wip/SPECTRUM_DERIVATION.md) |
-| Critical-surface masses | Higgs $=126.48$ GeV, top(pole) $=171.1$ GeV | Genuine predictions at ~1%, from independent boundary condition $\lambda = \beta_\lambda = 0$ | [Spectrum Derivation](wip/SPECTRUM_DERIVATION.md) |
-| Flavor hierarchy structure | $\varepsilon=1/6$ from $\mathbb{Z}_6$, base-6 Yukawa texture | Hierarchy pattern captured; individual quark masses currently 16%-73% off (known scheme/threshold effects) | [Spectrum Derivation](wip/SPECTRUM_DERIVATION.md) |
-| Neutrino sector | $m_{\nu_3}\approx 3.0$ meV, $m_{\nu_2}\approx 0.50$ meV, $m_{\nu_1}\approx 0.084$ meV | Consistent with current bounds; oscillation scales matched at order-of-magnitude | [Spectrum Derivation](wip/SPECTRUM_DERIVATION.md) |
-| QCD/hadron bridge | $P \rightarrow \alpha_s \rightarrow \Lambda_{\overline{\rm MS}}^{(3)} \rightarrow m_{\rm hadrons}$ | Derivation chain complete; current hadron precision limited by quenched/small-volume lattice systematics | [Spectrum Derivation](wip/SPECTRUM_DERIVATION.md) |
-| String-theory bridge | OPH edge weights = 2D YM heat kernels; large-$N$ worldsheet expansion (Gross-Taylor) | Mathematical bridge established; full critical-superstring completion marked as extension work | [String Theory Derivation](wip/STRING_THEORY.md) |
+| Core axioms (A1-A4) + MaxEnt + Euclidean regularity | Lorentz kinematics and semiclassical Einstein dynamics in the scaling limit; compact gauge-group reconstruction | Derived with explicit scaling-limit hypotheses (Theorems 4.2-4.3, 5.1, 6.1) | [Main paper source](paper/tex_fragments/PAPER.tex) |
+| Extended theory $T_{\text{ext}}$ with MAR | SM global group $SU(3)\times SU(2)\times U(1)/\mathbb{Z}_6$, $N_c=3$, $N_g=3$ | Selected under the extended admissibility + MAR package | [Gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
+| Gauge-structure consequence | Proton stability (no gauge-mediated proton decay) | Product gauge group implies no $X/Y$ leptoquark generators | [Gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
+| Exact symmetry-protected zeros | $m_\gamma = 0$, $m_g = 0$, $m_{\text{graviton}} = 0$ | Derived as exact zeros from gauge/diffeomorphism invariance once the corresponding redundancy is realized | [Main paper source](paper/tex_fragments/PAPER.tex), [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Couplings at $m_Z$ | $\alpha_s=0.1183$, $\sin^2\theta_W=0.2307$, $\alpha_{\rm em}^{-1}=128.31$ | Consistency checks (calibration sector, 0.2–0.4%) | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| EW boson masses | $W=80.386$ GeV, $Z=91.220$ GeV | Consistency checks (flow from calibrated couplings, $<0.04\%$) | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Charged lepton masses | $e/\mu/\tau$ | Genuine predictions at $<0.025\%$ (parameter-free Koide structure) | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Critical-surface masses | Higgs $=126.48$ GeV, top(pole) $=171.1$ GeV | Genuine predictions at ~1%, from independent boundary condition $\lambda = \beta_\lambda = 0$ | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Flavor hierarchy structure | $\varepsilon=1/6$ from $\mathbb{Z}_6$, base-6 Yukawa texture | Hierarchy pattern captured; individual quark masses currently 16%-73% off (known scheme/threshold effects) | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Neutrino sector | $m_{\nu_3}\approx 3.0$ meV, $m_{\nu_2}\approx 0.50$ meV, $m_{\nu_1}\approx 0.084$ meV | Consistent with current bounds; oscillation scales matched at order-of-magnitude | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| QCD/hadron bridge | $P \rightarrow \alpha_s \rightarrow \Lambda_{\overline{\rm MS}}^{(3)} \rightarrow m_{\rm hadrons}$ | Derivation chain complete; current hadron precision limited by quenched/small-volume lattice systematics | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| String-theory bridge | OPH edge weights = 2D YM heat kernels; large-$N$ worldsheet expansion (Gross-Taylor) | Mathematical bridge established; full critical-superstring completion marked as extension work | [String-theory derivation source](paper/tex_fragments/STRING_THEORY.tex) |
 
 **Completion targets (active engineering):**
 - Derive the MaxEnt multipliers $t_i$ (and thus couplings/pixel calibration) from first principles rather than calibration.
@@ -258,7 +258,7 @@ The gauge-as-gluing principle (Section above) reconstructs compact gauge groups 
 
 **Proton stability**: This is where our model diverges from traditional Grand Unified Theories. Standard GUTs embed SU(3) x SU(2) x U(1) into a larger simple group, introducing leptoquark bosons that mediate proton decay. Super-Kamiokande's limit $\tau_p > 10^{34}$ years excludes minimal SU(5).
 
-Our model takes a different path. Under MAR, the minimal coupled carrier $\mathbb{C}^3 \otimes \mathbb{C}^2$ enforces a *product* gauge structure. There is no embedding in a larger simple group and no leptoquark generators. See [GAUGE_GROUP_DERIVATION.md](wip/GAUGE_GROUP_DERIVATION.md) for the complete proof.
+Our model takes a different path. Under the extended MAR admissibility package, the minimal coupled carrier $\mathbb{C}^3 \otimes \mathbb{C}^2$ enforces a *product* gauge structure. There is no embedding in a larger simple group and no leptoquark generators. See [the gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) for the complete proof.
 
 ## How the Model Explains Known Physics
 
@@ -292,7 +292,7 @@ These follow once the Standard Model matter content is assumed:
 
 ### Quantitative Outputs vs Existing Data
 
-The complete derivation chain from pixel area $P = 1.63094$ to particle masses is documented in **[From Pixel Area to Particle Masses](wip/SPECTRUM_DERIVATION.md)**. Outputs are classified by epistemic tier (see §1B of that document). Additional results (dark matter, Koide formula, baryogenesis, proton spin) are in the **[Technical Supplement](wip/TECHNICAL_SUPPLEMENT.md)**.
+The complete derivation chain from pixel area $P = 1.63094$ to particle masses is documented in **[the spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex)**. Outputs are classified by epistemic tier there. Additional results (dark matter, Koide formula, baryogenesis, proton spin) are in the **[technical supplement source](paper/tex_fragments/TECHNICAL_SUPPLEMENT.tex)**.
 
 **Calibration-sector consistency checks** (gauge couplings used to fix $P$; agreement expected by construction):
 
@@ -316,7 +316,7 @@ The complete derivation chain from pixel area $P = 1.63094$ to particle masses i
 | Top quark (crit. surf.) | 171.1 GeV | 172.57 ± 0.29 GeV | −0.87% | Critical surface |
 | Top quark (Z₆ texture) | 174.5 GeV | 172.57 ± 0.29 GeV | +1.1% | $\mathbb{Z}_6$ texture ($n_t = 0$) |
 
-**Additional quantitative results** (from [Technical Supplement](wip/TECHNICAL_SUPPLEMENT.md)):
+**Additional quantitative results** (from the [technical supplement source](paper/tex_fragments/TECHNICAL_SUPPLEMENT.tex)):
 
 | Quantity | OPH | Observed | Agreement |
 |----------|-----|----------|-----------|
@@ -383,7 +383,7 @@ These match known results but were derived elsewhere first:
 | Coupling unification without proton decay | Proton lifetime + precision coupling data | Geometric vs algebraic unification |
 | GR deviation bound from Markov defect | Precision gravity tests in low-CMI regime | Exponential suppression with collar width |
 | Neutrino masses: $m_{\nu_3} \approx 3.0$ meV, $m_{\nu_2} \approx 0.50$ meV, $m_{\nu_1} \approx 0.084$ meV | JUNO, DUNE, KATRIN, cosmological $\sum m_\nu$ | Normal ordering; $\sum m_\nu \approx 3.6$ meV (well below Planck bound 120 meV) |
-| String theory from edge sectors | Theoretical verification | OPH edge-sector weights = 2D Yang-Mills heat kernels → worldsheet expansion via Gross-Taylor (see [STRING_THEORY.md](wip/STRING_THEORY.md)) |
+| String theory from edge sectors | Theoretical verification | OPH edge-sector weights = 2D Yang-Mills heat kernels → worldsheet expansion via Gross-Taylor (see [STRING_THEORY.tex](paper/tex_fragments/STRING_THEORY.tex)) |
 
 ### Dynamical Predictions
 

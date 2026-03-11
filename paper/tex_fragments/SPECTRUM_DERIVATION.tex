@@ -3,7 +3,7 @@
 \begin{quote}
 \textbf{Integrated derivation within this manuscript}: this part applies the OPH framework developed in Part I.
 
-\textbf{Abstract.} The Observer-Patch Holography (OPH) framework derives the Standard Model particle spectrum from a single geometric quantity: the \textbf{pixel area} , the area of one computational cell on the holographic screen, measured in Planck units. Starting from the OPH axioms (A1--A4: entanglement equilibrium, MaxEnt, edge-center completion, refinement stability), the ``screen'' encodes all physics through its area law (§5 of Part I of this manuscript) and edge-sector structure (§6 of Part I of this manuscript). The pixel area constant \(P \equiv a_{\text{cell}}/\ell_P^2 = 1.63094\) is \textbf{calibrated} from the gauge coupling sector via the screen\textquotesingle s entropy-matching condition (§5.4 of Part I of this manuscript); a second input, the total screen capacity \(\log(\dim\mathcal{H}) \sim 10^{122}\), enters only for neutrino masses and the cosmological constant (§14 of Part V of this manuscript). Every other quantity appearing in the derivation chain is either a mathematical constant, a consequence of the gauge group (itself reconstructed from the screen\textquotesingle s edge-sector fusion rules via Tannaka-Krein, §6.1 of Part I of this manuscript), or a derived structural integer (\(N_c = 3\), \(N_g = 3\), \(\varepsilon = 1/6\), \(\delta = 2/9\)). Outputs are classified by epistemic status: quantities flowing from the calibrated gauge couplings are consistency checks; quantities determined by independent structural conditions (critical surface, Koide structure, \(\mathbb{Z}_6\) texture) are genuine predictions. A complete audit of all constants and the full epistemic classification appear in §1A--1B below.
+\textbf{Abstract.} The Observer-Patch Holography (OPH) framework derives the Standard Model particle spectrum from a single geometric quantity: the \textbf{pixel area} , the area of one computational cell on the holographic screen, measured in Planck units. Starting from the OPH axioms (A1--A4: entanglement equilibrium, MaxEnt, edge-center completion, refinement stability), the ``screen'' encodes all physics through its area law (§5 of Part I of this manuscript) and edge-sector structure (§6 of Part I of this manuscript). The pixel area constant \(P \equiv a_{\text{cell}}/\ell_P^2 = 1.63094\) is \textbf{calibrated} from the gauge coupling sector via the screen\textquotesingle s entropy-matching condition (§5.4 of Part I of this manuscript); a second input, the total screen capacity \(\log(\dim\mathcal{H}) \sim 10^{122}\), enters only for neutrino masses and the cosmological constant (§14 of Part V of this manuscript). Every other quantity appearing in the derivation chain is either a mathematical constant, a consequence of the gauge group (itself selected from a refinement-stable edge-sector category by Tannaka-Krein/DR reconstruction plus the extended MAR admissibility package, §6.1--§6.2 of Part I of this manuscript), or a derived structural integer (\(N_c = 3\), \(N_g = 3\), \(\varepsilon = 1/6\), \(\delta = 2/9\)). Outputs are classified by epistemic status: quantities flowing from the calibrated gauge couplings are consistency checks; quantities determined by independent structural conditions (critical surface, Koide structure, \(\mathbb{Z}_6\) texture) are genuine predictions. A complete audit of all constants and the full epistemic classification appear in §1A--1B below.
 \end{quote}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -34,7 +34,7 @@ Everything else entering the computation falls into one of three categories:
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{Mathematical constants}: \(\pi\), \(e\), \(\zeta(3)\), Casimir eigenvalues, group dimensions, \(\beta\)-function coefficients , all determined by the gauge group structure (itself derived from the axioms via Tannaka-Krein reconstruction).
+  \textbf{Mathematical constants}: \(\pi\), \(e\), \(\zeta(3)\), Casimir eigenvalues, group dimensions, \(\beta\)-function coefficients , all determined by the gauge group structure (itself selected from the refinement-stable edge-sector category via Tannaka-Krein/DR reconstruction together with the extended MAR admissibility package).
 \item
   \textbf{Derived quantities}: the unification scale \(M_U\), the unified coupling \(\alpha_U\), the electroweak VEV \(v\), all gauge couplings at \(M_Z\), the \(\mathbb{Z}_6\) defect parameter \(\varepsilon = 1/6\), the Koide phase \(\delta = 2/9\), and the Froggatt-Nielsen integer exponents.
 \item
@@ -87,8 +87,8 @@ Constant & Value & Code variable & Derivation & Part I of this manuscript ref \\
 \bottomrule\noalign{}
 \endlastfoot
 \(N_c\) (colors) & 3 & \texttt{N\_c\_DEFAULT} & Witten\textquotesingle s global SU(2) anomaly requires \(N_c + 1\) SU(2) doublets per generation to be even, so \(N_c\) must be odd. \(N_c = 1\) is excluded (SU(1) trivial). The Selection Axiom MAR (third component of the complexity vector) picks the smallest nontrivial value. \textbf{Result}: \(N_c = 3\). & Theorem 6.14 (§6.9); Part II of this manuscript §6 \\
-\(N_g\) (generations) & 3 & \texttt{N\_g\_DEFAULT} & Three independent constraints narrow the window: (1) CP violation requires \(N_g \geq 3\) (CKM phases \((N_g-1)(N_g-2)/2 > 0\)). (2) Asymptotic freedom of SU(2) requires \(N_g(N_c+1) < 22\), giving \(N_g \leq 5\). (3) MAR (fourth component of the complexity vector) picks the smallest value in \(\{3, 4, 5\}\). \textbf{Result}: \(N_g = 3\). & Proposition 6.9 (§6.4); Part II of this manuscript §7 \\
-Gauge group & \((SU(3)\times SU(2)\times U(1))/\mathbb{Z}_6\) & --- & Tannaka-Krein / Doplicher-Roberts reconstruction from edge-sector fusion rules yields a compact gauge group \(G\) (Theorem 6.1, §6.1). The Selection Axiom MAR uniquely selects the SM factors: the minimal coupled carrier \(\mathbb{C}^3 \otimes \mathbb{C}^2\) enforces the product structure SU(3) \(\times\) SU(2) \(\times\) U(1), the commutant argument excludes extra factors, and the \(\mathbb{Z}_6\) quotient follows from hypercharge quantization (Proposition 6.6). & §6.1--6.2; Part II of this manuscript \\
+\(N_g\) (generations) & 3 & \texttt{N\_g\_DEFAULT} & Three independent constraints narrow the window: (1) CP violation requires \(N_g \geq 3\) (CKM phases \((N_g-1)(N_g-2)/2 > 0\)). (2) Asymptotic freedom of SU(2) with one Higgs doublet requires \(N_g(N_c+1) < 43/2\), giving \(N_g \leq 5\). (3) MAR (fourth component of the complexity vector) picks the smallest value in \(\{3, 4, 5\}\). \textbf{Result}: \(N_g = 3\). & Proposition 6.9 (§6.4); Part II of this manuscript §7 \\
+Gauge group & \((SU(3)\times SU(2)\times U(1))/\mathbb{Z}_6\) & --- & Tannaka-Krein / Doplicher-Roberts reconstruction from a refinement-stable edge-sector category yields a compact gauge group \(G\) (Theorem 6.1, §6.1). The Selection Axiom MAR then selects the SM factors once the admissible class includes one connected abelian charge factor: the minimal coupled carrier \(\mathbb{C}^3 \otimes \mathbb{C}^2\) enforces the product structure, the commutant argument fixes the connected abelian factor to a single \(U(1)\), and the \(\mathbb{Z}_6\) quotient follows from hypercharge quantization (Proposition 6.6). & §6.1--6.2; Part II of this manuscript \\
 \(\beta_{\text{EW}}\) & 4 & \texttt{beta\_ew(N\_c)} & Number of SU(2) doublets per generation = \(N_c\) quark doublets + 1 lepton doublet = \(N_c + 1 = 4\). This is a counting consequence of the Witten anomaly analysis that already fixed \(N_c = 3\). & §6.9, §6.19 \\
 \(\varepsilon\) (Z₆ defect) & \(1/6\) & \texttt{defect\_\allowbreak epsilon\_\allowbreak Z6()} & The SM gauge group has a \(\mathbb{Z}_6\) center quotient. Each unit of \(\mathbb{Z}_6\) defect insertion removes \(\Delta S = \ln 6\) nats of entropy (MaxEnt weighting, Assumption B). The resulting Boltzmann suppression per defect is \(e^{-\ln 6} = 1/6\). \textbf{This is topologically fixed} by the quotient structure, not chosen. & §6.18, §6.21 \\
 \(\delta\) (Koide phase) & \(2/9\) & computed inline & The holonomy phase on generation space: \(\delta = \beta_{\text{EW}} \cdot Y_Q / N_g = (N_c+1)/(2 N_c N_g) = 4/18 = 2/9\). Here \(Y_Q = 1/(2N_c)\) is the quark-doublet hypercharge (fixed by anomaly cancellation) and \(N_g = 3\) is the number of generations. All ingredients are previously derived. Experimental extraction: \(\delta_{\text{exp}} = 0.2222248 \pm 0.0000063\), matching \(2/9 = 0.2222\ldots\) within \(0.4\sigma\). & Proposition 13.3 (§13 of Part V of this manuscript) \\
@@ -144,7 +144,7 @@ Constant & Value & Code variable & Status \\
 \(E_P\) (Planck energy) & \(1.220890 \times 10^{19}\) GeV & \texttt{E\_PLANCK\_GEV} & \textbf{Definition}: \(E_P = \sqrt{\hbar c^5/G}\). This is a unit conversion factor, not a physical input , it converts from natural (Planck) units to GeV. In the OPH framework, \(G\) itself is derived from the pixel area via \(G = a_{\text{cell}}/(4\bar{\ell}\,\hbar/c^3)\) (§5.4 of Part I of this manuscript), so \(E_P\) is ultimately set by \(P\). \\
 \(e^{2\pi}\) in \(M_U\) formula & 535.49... & inline & The Euclidean regularity condition on the collar geometry fixes the angular period to \(2\pi\) (§5.8 of Part I of this manuscript). This is a geometric constant, not a parameter. \\
 \(\sqrt{2}\) in Yukawa & \(v/\sqrt{2}\) & inline & Standard Higgs mechanism convention: the Yukawa coupling \(y_f\) relates to the fermion mass via \(m_f = y_f v / \sqrt{2}\). This is a normalization convention, not physics. \\
-\(\Delta\rho_{\text{stage-3}}\) & \(3/(32\pi^2) \approx 0.0095\) & inline & Universal 1-loop custodial correction from a unit-Yukawa fermion doublet. This is a standard EW radiative correction; it depends only on the gauge structure, not on measured masses. \\
+\(\Delta\rho_{\text{stage-3}}\) & \(3y_t^2/(32\pi^2)\), evaluated at \(y_t \approx 1\) & inline & Universal 1-loop custodial correction with explicit Yukawa dependence. The displayed stage-3 number uses the unit-Yukawa estimate \(y_t \approx 1\). \\
 \end{longtable}
 }
 
@@ -479,6 +479,13 @@ From these:
 
 \[\alpha_{\text{em}} = \left(\frac{1}{\alpha_2} + \frac{1}{\frac{3}{5}\alpha_1}\right)^{-1}, \quad \sin^2\theta_W = \frac{\alpha_{\text{em}}}{\alpha_2}\]
 
+We use the electroweak normalization
+\[
+\alpha_1=\frac53\alpha_Y,
+\qquad
+g_Y^2=4\pi\alpha_Y=4\pi\frac35\alpha_1.
+\]
+
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}>{\RaggedRight\arraybackslash}p{0.320\textwidth}>{\RaggedRight\arraybackslash}p{0.320\textwidth}>{\RaggedRight\arraybackslash}p{0.320\textwidth}@{}}
 \toprule\noalign{}
@@ -497,11 +504,15 @@ Observable & Predicted & PDG Value \\
 
 The tree-level \(m_{Z,\text{run}} = 91.65\) GeV is the running mass at its own scale. The physical pole mass includes the custodial correction from top-quark loops:
 
-\[\Delta\rho_{\text{stage-3}} = \frac{3}{32\pi^2} \approx 0.009499\]
+\[\Delta\rho = \frac{3y_t^2}{32\pi^2}\]
+
+For the stage-3 numerical estimate we use \(y_t \approx 1\), giving
+
+\[\Delta\rho_{\text{stage-3}} \approx \frac{3}{32\pi^2} \approx 0.009499\]
 
 \[M_{Z,\text{pole}} = \frac{m_{Z,\text{run}}}{\sqrt{1 + \Delta\rho}} \approx 91.220 \text{ GeV}\]
 
-\textbf{Why \(\Delta\rho = 3/(32\pi^2)\)?} This is the universal one-loop custodial-symmetry-breaking contribution from a unit Yukawa coupling (\(y_t = 1\)), requiring no knowledge of the actual top mass , only that the top Yukawa is order-one (the least-suppressed channel in the \(\mathbb{Z}_6\) texture).
+\textbf{Why the stage-3 estimate uses \(\Delta\rho \approx 3/(32\pi^2)\).} The general one-loop custodial-symmetry-breaking contribution is \(\Delta\rho = 3y_t^2/(32\pi^2)\). The displayed stage-3 number sets \(y_t \approx 1\), requiring no knowledge of the actual top mass , only that the top Yukawa is order-one (the least-suppressed channel in the \(\mathbb{Z}_6\) texture).
 
 \subsubsection{4.2 W Boson Mass}\label{42-w-boson-mass}
 
@@ -521,13 +532,13 @@ Refinement stability (§6.3, §6.22 of Part I of this manuscript) pushes the Hig
 
 Setting \(\beta_\lambda = 0\) at one loop with \(\lambda = 0\) fixes the top Yukawa boundary condition:
 
-\[y_t(M_U) = \left[\frac{1}{16}\left(2g_2^4 + (g_2^2 + g_1^2)^2\right)\right]^{1/4}\]
+\[y_t(M_U) = \left[\frac{1}{16}\left(2g_2^4 + (g_2^2 + g_Y^2)^2\right)\right]^{1/4}\]
 
-where \(g_1(M_U)\) and \(g_2(M_U)\) are obtained by running the OPH-derived couplings from \(m_Z\) to \(M_U\) using 1-loop SM \(\beta\)-functions.
+where \(g_Y(M_U)\) and \(g_2(M_U)\) are obtained by running the OPH-derived couplings from \(m_Z\) to \(M_U\) using 1-loop SM \(\beta\)-functions.
 
 \subsubsection{5.2 RG Evolution to Low Scales}\label{52-rg-evolution-to-low-scales}
 
-The coupled system \((y_t, \lambda, g_1, g_2, g_3)\) is integrated from \(M_U\) down to \(\mu \sim m_t\) using RK4 with 1-loop SM \(\beta\)-functions. The gauge couplings run analytically:
+The coupled system \((y_t, \lambda, g_Y, g_2, g_3)\) is integrated from \(M_U\) down to \(\mu \sim m_t\) using RK4 with 1-loop SM \(\beta\)-functions. The gauge couplings run analytically:
 
 \[\alpha_i^{-1}(\mu) = \alpha_i^{-1}(m_Z) - \frac{b_i^{\text{SM}}}{2\pi}\ln(\mu/m_Z)\]
 

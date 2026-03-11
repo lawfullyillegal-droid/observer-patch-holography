@@ -1,7 +1,7 @@
 \section{Observer-Patch Holography}\label{observer-patch-holography}
 
 \begin{quote}
-OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives the Standard Model gauge group, particle mass hierarchy, and key quantitative outputs. The Standard Model, general relativity, and string theory emerge as effective descriptions of the underlying structure.
+OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives scaling-limit semiclassical gravity, compact gauge reconstruction, particle mass hierarchy, and key quantitative outputs. The Standard Model, general relativity, and string theory emerge as effective descriptions of the underlying structure.
 \end{quote}
 
 \subsection{Abstract}\label{abstract}
@@ -14,9 +14,9 @@ We present an observer-centric model in which fundamental data live on a horizon
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Lorentz kinematics and semiclassical Einstein dynamics} from modular geometry and entanglement equilibrium (Theorems 4.2-4.3, 5.1).
+  \textbf{Lorentz kinematics and semiclassical Einstein dynamics in the scaling limit} from modular geometry and entanglement equilibrium (Theorems 4.2-4.3, 5.1).
 \item
-  \textbf{Gauge-sector reconstruction with unique Standard Model closure}: compact gauge symmetry from edge-sector fusion (Theorem 6.1), then unique selection of \(SU(3)\times SU(2)\times U(1)/\mathbb{Z}_6\) with \(N_c=3\), \(N_g=3\) under MAR and admissibility (see Part II of this manuscript).
+  \textbf{Gauge-sector reconstruction with Standard Model closure under the extended admissibility package}: compact gauge symmetry from a refinement-stable edge-sector colimit (Theorem 6.1), then selection of \(SU(3)\times SU(2)\times U(1)/\mathbb{Z}_6\) with \(N_c=3\), \(N_g=3\) under MAR, admissibility, and a single connected abelian charge factor premise (see Part II of this manuscript).
 \item
   \textbf{Exact symmetry-protected zero masses}: \(m_\gamma = m_g = m_{\text{graviton}} = 0\), with no gauge-mediated proton decay channels in the derived product-group structure.
 \item
@@ -24,12 +24,12 @@ We present an observer-centric model in which fundamental data live on a horizon
 \item
   \textbf{String-theory bridge from OPH first principles}: edge-sector MaxEnt weights are exactly 2D Yang-Mills heat kernels, whose large-\(N\) expansion is the Gross-Taylor worldsheet/string expansion (see Part IV of this manuscript).
 \item
-  \textbf{Quantitative supplementary closures}: Koide structure, \(\mathbb{Z}_6\) hierarchy suppression, black-hole recovery, modular-anomaly dark-sector phenomenology, baryogenesis scale estimates, and cosmological parameter relations are derived within the same framework (see Part V of this manuscript).
+  \textbf{Quantitative supplementary closures}: Koide structure, \(\mathbb{Z}_6\) hierarchy suppression, black-hole recovery, a program-level modular-anomaly dark-sector branch, baryogenesis scale estimates, and cosmological parameter relations are derived within the same framework (see Part V of this manuscript).
 \end{enumerate}
 
-The photon and graviton are forced by the axiom chain: once gauge-as-gluing yields a U(1) factor and entanglement equilibrium yields dynamical geometry, gauge invariance forbids mass terms. These are symmetry-protected zeros, matching observation.
+The photon and graviton are forced by the axiom chain: once the admissible connected abelian factor is realized and entanglement equilibrium yields dynamical geometry, gauge invariance forbids mass terms. These are symmetry-protected zeros, matching observation.
 
-\textbf{Key conditionality.} The EFT bridge (null-surface modular additivity N1-N3) follows from the core axioms A1-A4 under testable conditions (Section 5.2): null strips must qualify as A4 separators, and local finite variation must hold. The gauge group reconstruction yields \emph{a} compact group; the Selection Axiom MAR (Minimal Admissible Realization) then uniquely selects the SM gauge group \(SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6\), \(N_c = 3\), and \(N_g = 3\) (see §6.2 and Part II of this manuscript).
+\textbf{Key conditionality.} The EFT bridge (null-surface modular additivity N1-N3) follows from the core axioms A1-A4 under testable conditions (Section 5.2): null strips must qualify as A4 separators, and local finite variation must hold. The Lorentz/Einstein package is a scaling-limit statement rather than a literal fixed-cutoff claim. The gauge group reconstruction yields \emph{a} compact group from a refinement-stable sector colimit; the Selection Axiom MAR (Minimal Admissible Realization) then selects the SM gauge group \(SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6\), \(N_c = 3\), and \(N_g = 3\) once the admissible class includes one connected abelian charge factor (see §6.2 and Part II of this manuscript).
 
 \textbf{Testable predictions.} The log-integer area spectrum yields a discrete "horizon spectroscopy comb" for gravitational waves: after rescaling by remnant mass and spin, spectral features must stack at universal coordinates \(x_k = \ln k / 8\pi\). This is directly testable with public LIGO/Virgo data. We also derive Newton\textquotesingle s constant as \(G = a_{\rm cell}/4\bar{\ell}(t)\) from edge entropy density. We conclude with precision validations against lattice QCD and PDG bounds and a critical evaluation.
 
@@ -43,7 +43,7 @@ The photon and graviton are forced by the axiom chain: once gauge-as-gluing yiel
   \textbf{Screen capacity}: \(\log(\dim\mathcal{H}_{\rm tot}) \sim 10^{122}\), the total degrees of freedom. Inferred from the observed cosmological constant.
 \end{enumerate}
 
-Everything else (gauge groups, charge quantization, Einstein equations, mass ratios) is derived structure. The axioms contain no other dimensionful constants. Quantities flowing directly from the calibrated gauge couplings are consistency checks; quantities determined by independent structural conditions (critical surface, Koide structure, \(\mathbb{Z}_6\) texture) are genuine predictions.
+Everything else (compact gauge reconstruction, charge quantization, scaling-limit Einstein equations, mass ratios) is derived structure. The axioms contain no other dimensionful constants. Quantities flowing directly from the calibrated gauge couplings are consistency checks; quantities determined by independent structural conditions (critical surface, Koide structure, \(\mathbb{Z}_6\) texture) are genuine predictions.
 
 \subsection{1. Model and Axioms}\label{1-model-and-axioms}
 
@@ -421,7 +421,7 @@ The regulator premises R0 and R1 are abstract axioms. A natural question is whet
 
 \textbf{UV regulator.} Triangulate \(S^2\) at scale \(\ell_{\mathrm{UV}}\), giving vertices \(v\), oriented links \(\ell\), and plaquettes \(p\). Refinement corresponds to \(\ell_{\mathrm{UV}} \to 0\) with increasing lattice size.
 
-\textbf{Degrees of freedom.} Attach to every oriented link \(\ell\) a \textbf{finite-dimensional} Hilbert space \(\mathcal{H}_\ell\). In ordinary Wilson lattice gauge theory, \(\mathcal{H}_\ell \sim L^2(G)\) (infinite-dimensional for continuous \(G\)). The \textbf{quantum link model} replaces this with a finite-dimensional link Hilbert space while preserving gauge symmetry in operator form (see \href{https://arxiv.org/abs/hep-lat/9609042}{Chandrasekharan and Wiese, hep-lat/9609042}). Optionally attach matter Hilbert spaces \(\mathcal{H}_v\) at vertices. Then:
+\textbf{Degrees of freedom.} Attach to every oriented link \(\ell\) a \textbf{finite-dimensional} Hilbert space \(\mathcal{H}_\ell\). In ordinary Wilson lattice gauge theory, the continuum/refinement-limit edge description is modeled by \(L^2(G)\) (infinite-dimensional for continuous \(G\)), but the microscopic OPH regulator is instead a \textbf{quantum link model} with finite-dimensional link Hilbert spaces that preserve gauge symmetry in operator form (see \href{https://arxiv.org/abs/hep-lat/9609042}{Chandrasekharan and Wiese, hep-lat/9609042}). Optionally attach matter Hilbert spaces \(\mathcal{H}_v\) at vertices. Then:
 
 \[
 \tilde{\mathcal{H}}_{\mathrm{total}} = \bigotimes_\ell \mathcal{H}_\ell \otimes \bigotimes_v \mathcal{H}_v,
@@ -742,7 +742,7 @@ Assumption F allows this structure to be used in the collar double-scaling refin
 
 \subsubsection{\texorpdfstring{4.2 Theorem: \(\mathrm{BW}_{S^2}\) from Markov locality, symmetry, regularity}{4.2 Theorem: \textbackslash mathrm\{BW\}\_\{S\^{}2\} from Markov locality, symmetry, regularity}}\label{42-theorem-mathrmbw_s2-from-markov-locality-symmetry-regularity}
 
-\textbf{Theorem 4.2 (\(\mathrm{BW}_{S^2}\) from Markov + symmetry + regularity).} Assume: (i) the collar refinement limit (Assumption F), (ii) MaxEnt selection with rotationally invariant constraints (Assumptions B-C), (iii) geometric modular action on the cap net (Theorem A5, derived from B + LR + MX), and (iv) Euclidean regularity (Assumption G). Then for each cap \(C\), modular flow is the unique conformal dilation that preserves \(C\) and fixes its boundary circle, with KMS normalization \(\beta = 2\pi\). Equivalently,
+\textbf{Theorem 4.2 (\(\mathrm{BW}_{S^2}\) from Markov + symmetry + regularity).} Assume: (i) the collar refinement limit (Assumption F), (ii) MaxEnt selection with rotationally invariant constraints (Assumptions B-C), (iii) geometric modular action on the cap net (Theorem A5, derived from B + LR + MX), and (iv) Euclidean regularity (Assumption G). Then in the controlled refinement/scaling limit, for each cap \(C\), modular flow is the unique conformal dilation that preserves \(C\) and fixes its boundary circle, with KMS normalization \(\beta = 2\pi\). Equivalently,
 
 \[
 K_C = 2 \pi B_C.
@@ -752,7 +752,7 @@ K_C = 2 \pi B_C.
 
 \subsubsection{\texorpdfstring{4.3 Theorem: \(\mathrm{BW}_{S^2}\) implies Lorentz kinematics}{4.3 Theorem: \textbackslash mathrm\{BW\}\_\{S\^{}2\} implies Lorentz kinematics}}\label{43-theorem-mathrmbw_s2-implies-lorentz-kinematics}
 
-\textbf{Theorem 4.3 (Lorentz kinematics on the screen).} If modular flows act by conformal maps of \(S^2\), the induced kinematic group is
+\textbf{Theorem 4.3 (Lorentz kinematics on the screen).} If modular flows act by conformal maps of \(S^2\) in the same scaling limit, the induced kinematic group is
 
 \[
 \mathrm{Conf}^+(S^2) \cong \mathrm{PSL}(2,\mathbb C) \cong \mathrm{SO}^+(3,1).
@@ -1006,7 +1006,7 @@ with \(K_\partial\) central/boundary-supported.
 
 (c) Knowing \(T_{kk}\) for all null directions reconstructs a local symmetric tensor \(T_{ab}\) modulo \(\phi g_{ab}\).
 
-Therefore, in the locally Lorentzian regime the modular Hamiltonian is a stress-tensor charge (up to controlled boundary/central terms and the expected \(\Lambda g_{ab}\) ambiguity).
+Therefore, in the locally Lorentzian scaling regime the modular Hamiltonian is a stress-tensor charge (up to controlled boundary/central terms and the expected \(\Lambda g_{ab}\) ambiguity).
 
 \textbf{Proof.} Premises 1-2 yield N1 (null modular additivity) via the exact Markov argument: \(I(A:D|B)=0\) implies \(K_{ABD} = K_{AB} + K_{BD} - K_B\). Premise 3 yields N2 (half-sided inclusion) since dilation maps half-lines into themselves. Premise 4 is N3 (weak continuity). The lemmas above then construct the density, translations, and reconstruction. QED.
 
@@ -1340,7 +1340,7 @@ Given the derived Einstein equation (Theorem 5.1) and the classical Raychaudhuri
 
 \textbf{Significance.} A3 (generalized entropy with quantum focusing) is a derived consequence of the null modular structure. It is therefore not an independent axiom. The only external input is relative entropy monotonicity, which is pure quantum information theory.
 
-\textbf{Theorem 5.1 (Observer-consistency implies semiclassical Einstein).} Under A1-A4, Assumptions B-G, and the EFT bridge, the cap equilibrium condition implies the semiclassical Einstein equation in regions where the small-diamond modular Hamiltonian is a stress-tensor charge. QED.
+\textbf{Theorem 5.1 (Observer-consistency implies semiclassical Einstein).} Under A1-A4, Assumptions B-G, and the EFT bridge, the cap equilibrium condition implies the semiclassical Einstein equation in the locally Lorentzian scaling regime where the small-diamond modular Hamiltonian is a stress-tensor charge. QED.
 
 \subsubsection{5.11 Discrete horizon area spectrum and Hawking emission (established)}\label{511-discrete-horizon-area-spectrum-and-hawking-emission-established}
 
@@ -1990,20 +1990,26 @@ The model does \textbf{not} solve the classic "give me a unitary CFT on the boun
 
 This section has two logically distinct parts:
 
-\textbf{Part I (§6.1):} The mathematical reconstruction machinery. Given edge-center completion (Theorem 2.3), we get a sector category. If this category satisfies standard categorical properties (rigid, symmetric, \(C^*\)), Tannaka-Krein reconstruction yields \emph{some} compact gauge group \(G\). This part has explicit hypotheses and is unconditional once EC is established.
+\textbf{Part I (§6.1):} The mathematical reconstruction machinery. Given edge-center completion (Theorem 2.3), we get fixed-cutoff sector categories and a refinement-stable colimit category. If that colimit satisfies standard categorical properties (rigid, symmetric, \(C^*\)), Tannaka-Krein reconstruction yields \emph{some} compact gauge group \(G\). This part has explicit hypotheses and is unconditional once the refinement-stable category is specified.
 
-\textbf{Part II (Derived from MAR, §6.2 onward):} The Selection Axiom MAR (Minimal Admissible Realization) uniquely narrows from "some \(G\)" to the Standard Model gauge group. The former Selectors S1--S3 and the separate minimality steps for \(N_c\) and \(N_g\) are all consequences of MAR applied to the admissible class. The SM derivation follows from the extended theory \(T_{\mathrm{ext}} = A1\text{-}A4 + R0 + R1 + [z]=0 + \mathrm{MAR}\). See Part II of this manuscript for the complete proof.
+\textbf{Part II (Derived from MAR, §6.2 onward):} The Selection Axiom MAR (Minimal Admissible Realization) narrows from "some \(G\)" to the Standard Model gauge group once the admissible class includes one connected abelian charge factor. The former Selectors S1--S3 and the separate minimality steps for \(N_c\) and \(N_g\) are all consequences of MAR applied to the admissible class. The SM derivation follows from the extended theory \(T_{\mathrm{ext}} = A1\text{-}A4 + R0 + R1 + [z]=0 + \mathrm{MAR}\). See Part II of this manuscript for the complete proof.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \subsubsection{6.1 Edge sector category and gauge group reconstruction}\label{61-edge-sector-category-and-gauge-group-reconstruction}
 
-Edge-center completion (Theorem 2.3) provides sector labels \(\alpha\) on collars, with fusion defined by concatenating collars. This gives a tensor category \(\mathsf{Sect}\) of edge charges:
+Edge-center completion (Theorem 2.3) provides, at each regulator scale \(r\), a finite tensor category \(\mathsf{Sect}_r\) of transportable edge charges. The reconstruction category is the refinement-stable directed colimit
+
+\[
+\mathsf{Sect}_\infty := \varinjlim_r \mathsf{Sect}_r,
+\]
+
+where the transition functors are induced by refinement and only sectors/intertwiners that persist under refinement are retained. This gives a tensor category \(\mathsf{Sect}_\infty\) of edge charges:
 
 \begin{itemize}
 \tightlist
 \item
-  objects: sector labels \(\alpha\) (minimal central blocks),
+  objects: refinement-stable transportable sector labels,
 \item
   morphisms: intertwiners between sectors,
 \item
@@ -2014,9 +2020,9 @@ Edge-center completion (Theorem 2.3) provides sector labels \(\alpha\) on collar
   symmetric braiding in the EFT regime (no anyonic statistics in 3+1D).
 \end{itemize}
 
-Let \(\mathcal F: \mathsf{Sect} \to \mathsf{Hilb}_{\mathrm{fd}}\) be the fiber functor that sends each sector \(\alpha\) to its edge multiplicity space.
+Let \(\mathcal F: \mathsf{Sect}_\infty \to \mathsf{Hilb}_{\mathrm{fd}}\) be the fiber functor that sends each sector to its edge multiplicity space. The fibers are finite-dimensional objectwise even though \(\mathsf{Sect}_\infty\) can have infinitely many simple objects.
 
-\textbf{Theorem 6.1 (Tannaka/DR reconstruction).} If \(\mathsf{Sect}\) is a rigid symmetric \(C^*\) tensor category with a faithful fiber functor \(\mathcal F\), then there exists a compact group \(G\), unique up to isomorphism, such that \(\mathsf{Sect} \simeq \mathrm{Rep}(G)\). Moreover,
+\textbf{Theorem 6.1 (Tannaka/DR reconstruction).} If \(\mathsf{Sect}_\infty\) is a rigid symmetric \(C^*\) tensor category with a faithful fiber functor \(\mathcal F\), then there exists a compact group \(G\), unique up to isomorphism, such that \(\mathsf{Sect}_\infty \simeq \mathrm{Rep}(G)\). Moreover,
 
 \[
 G = \mathrm{Aut}_\otimes(\mathcal F)
@@ -2024,13 +2030,13 @@ G = \mathrm{Aut}_\otimes(\mathcal F)
 
 is a compact subgroup of a product of unitary groups.
 
-\textbf{Proof sketch.} Define \(G\) as the group of monoidal natural automorphisms of \(\mathcal F\). This is compact because it is closed in a product of unitary groups. By Tannaka-Krein/DR reconstruction, objects and morphisms of \(\mathsf{Sect}\) are recovered as finite-dimensional representations and intertwiners of \(G\). QED.
+\textbf{Proof sketch.} Define \(G\) as the group of monoidal natural automorphisms of \(\mathcal F\). This is compact because it is closed in a product of unitary groups. By Tannaka-Krein/DR reconstruction, objects and morphisms of \(\mathsf{Sect}_\infty\) are recovered as finite-dimensional representations and intertwiners of \(G\). QED.
 
 \textbf{Corollary 6.1 (field algebra reconstruction, conditional).} If in the small-region limit the edge sectors are localized and transportable in the DHR sense (i.e., charges can be moved between patches without changing their fusion), then there exists a field algebra \(\mathcal F\) and a compact group \(G\) such that \(\mathcal A = \mathcal F^G\). This is the Doplicher-Roberts reconstruction of local gauge symmetry from sectors. QED.
 
-\textbf{Proposition 6.1a (Transportability from gluing obstruction).} DHR transportability is not an independent assumption. In the gluing framework (Section 3), transportability is precisely the statement that charges can be moved between patches without changing fusion rules. The obstruction to path-independent transport is the central cocycle \(z_{ijk}\) from Assumption E.
+\textbf{Proposition 6.1a (Transportability from gluing obstruction).} DHR transportability is not an independent assumption. In the gluing framework (Section 3), transportability is precisely the statement that charges can be moved between patches without changing fusion rules. The obstruction to path-independent transport is the \v{C}ech-type central cocycle \(z_{ijk}\) from Assumption E.
 
-Explicitly: the gluing framework gives an obstruction class \([z] \in H^3(G, Z(\mathcal{A}))\) (Section 6.6). Transportability holds iff this class vanishes:
+Explicitly: the gluing framework gives a gauge-invariant \v{C}ech 2-cocycle class \([z]\) built from triple overlaps (Section 6.6). Transportability holds iff this class vanishes:
 
 \[
 \text{DHR transportable} \iff [z] = 0 \iff \text{loop-coherent gluing}.
@@ -2046,13 +2052,13 @@ Theorem 6.1 yields \emph{some} compact \(G\). The Selection Axiom MAR (Minimal A
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\textbf{Selection Axiom MAR (Minimal Admissible Realization).} Among all OPH-realizable sectors \(\Sigma\) that are (i) loop-coherent / transportable (\([z]=0\)), (ii) anomaly-free, (iii) refinement-stable with light chiral matter, (iv) single-Higgs Yukawa-completable, (v) intrinsically CP-capable, (vi) weak-sector UV-completable, Nature realizes the lexicographically minimal one under
+\textbf{Selection Axiom MAR (Minimal Admissible Realization).} Among all OPH-realizable sector packages \(\mathfrak S\) consisting of the connected Lie gauge-sector image relevant in the low-energy EFT, its admissible light chiral matter content, and one Higgs doublet, and which are (i) loop-coherent / transportable (\([z]=0\)), (ii) anomaly-free, (iii) refinement-stable with light chiral matter, (iv) single-Higgs Yukawa-completable with one connected abelian charge factor acting nontrivially on the coupled carrier, (v) intrinsically CP-capable, (vi) weak-sector UV-completable, Nature realizes the lexicographically minimal one under
 
-\[C(\Sigma) = (\chi_{\mathrm{cpl}},\; N_{\mathrm{nonab}},\; N_c,\; N_g).\]
+\[C(\mathfrak S) = (\chi_{\mathrm{cpl}},\; N_{\mathrm{nonab}},\; N_c,\; N_g).\]
 
 See Part II of this manuscript for the complete formal statement, admissibility definitions, and proof.
 
-Here \(\chi_{\mathrm{cpl}}\) is the \textbf{coupled edge capacity}: the dimension of the minimal unitary carrier containing a common irreducible block on which the admissible pseudoreal and complex nonabelian charge types both act nontrivially. This is intentionally stronger than the abstract minimal faithful representation dimension. For \(S(U(3)\times U(2))\), the block-diagonal action on \(\mathbb{C}^3 \oplus \mathbb{C}^2\) is faithful of dimension \(5\), but it is not coupled and therefore does not enter MAR.
+Here \(\chi_{\mathrm{cpl}}\) is the \textbf{coupled edge capacity}: the dimension of the minimal unitary carrier containing a common irreducible block on which the admissible pseudoreal and complex nonabelian charge types both act nontrivially. This is intentionally stronger than the abstract minimal faithful representation dimension. For \(S(U(3)\times U(2))\), the block-diagonal action on \(\mathbb{C}^3 \oplus \mathbb{C}^2\) is faithful of dimension \(5\), but it is not coupled and therefore does not enter MAR. The object minimized by MAR is the sector package \(\mathfrak S\), not the bare tensor category by itself.
 
 \textbf{Note on {[}z{]}=0.} The loop-coherent gluing condition \([z]=0\) (Proposition 6.1a) is kept as an explicit premise of the extended theory, not hidden inside MAR. It ensures that the reconstructed compact group acts as a genuine global gauge symmetry. By Proposition 6.1a, this is equivalent to DHR transportability.
 
@@ -2063,7 +2069,7 @@ Here \(\chi_{\mathrm{cpl}}\) is the \textbf{coupled edge capacity}: the dimensio
 \item
   \textbf{Product structure} (formerly S1): follows from the minimal coupled carrier \(\mathbb{C}^3 \otimes \mathbb{C}^2\), which enforces commuting color and weak actions.
 \item
-  \textbf{Minimal sector content} (formerly S2): the pseudoreal doublet, complex triplet, and continuous abelian character are the minimal representations satisfying the admissibility conditions.
+  \textbf{Minimal sector content} (formerly S2): the pseudoreal doublet and complex triplet are the minimal nonabelian representations satisfying the admissibility conditions, while the connected abelian charge factor is an explicit admissibility input.
 \item
   \textbf{Coupled edge-capacity minimality} (formerly S): is the first component of MAR\textquotesingle s complexity vector.
 \end{itemize}
@@ -2082,11 +2088,11 @@ G \cong G_1 \times G_2,
 
 QED.
 
-\textbf{Lemma 6.3 (SU(2) from a pseudoreal doublet).} If G has a faithful 2D pseudoreal unitary representation V, then the nonabelian part of G contains an SU(2) factor acting as the fundamental doublet. QED.
+\textbf{Lemma 6.3 (SU(2) from a pseudoreal doublet).} Let \(H\) be a positive-dimensional compact connected Lie group with a faithful 2D pseudoreal unitary representation \(V\). Then the semisimple part of \(H\) contains an \(SU(2)\) factor acting as the fundamental doublet. Finite or disconnected counterexamples are not part of the theorem package, which only applies the lemma to the identity component on the relevant nonabelian image. QED.
 
-\textbf{Lemma 6.4 (SU(3) from an irreducible triplet).} If G has a faithful irreducible complex 3D unitary representation W, then the semisimple image contains an SU(3) factor acting as the fundamental triplet. QED.
+\textbf{Lemma 6.4 (SU(3) from an irreducible triplet).} Let \(H\) be a positive-dimensional compact connected Lie group with a faithful irreducible complex 3D unitary representation \(W\). Then the semisimple image contains an \(SU(3)\) factor acting as the fundamental triplet. Finite or disconnected counterexamples are not part of the theorem package, which only applies the lemma to the identity component on the relevant nonabelian image. QED.
 
-\textbf{Lemma 6.5 (U(1) from continuous characters).} A continuous family of one-dimensional sectors in Sect yields a U(1) factor in G. QED.
+\textbf{Lemma 6.5 (Connected abelian factor criterion).} If the admissible sector package contains a connected abelian charge factor acting nontrivially on the coupled carrier, then the identity component of the abelianized reconstructed group contains a one-torus. Under the single connected abelian-factor admissibility premise, this factor is \(U(1)\). QED.
 
 \textbf{Proposition 6.6 (physical group quotient).} If the realized matter spectrum has hypercharges quantized in sixths, then the kernel acting trivially on all realized sectors is Z₆, so
 
@@ -2101,7 +2107,7 @@ QED.
 \begin{itemize}
 \tightlist
 \item
-  Admissibility conditions (iii)--(iv) require both a pseudoreal nonabelian charge type and a complex nonabelian charge type (Lemma 6.7, Corollary 6.8).
+  Admissibility conditions (iii)--(iv) require both a pseudoreal nonabelian charge type and a complex nonabelian charge type, and include one connected abelian charge factor acting nontrivially on the coupled carrier (Lemma 6.7, Corollary 6.8).
 \item
   The minimal faithful pseudoreal representation is the doublet (χ = 2), giving \(SU(2)\). The minimal faithful complex representation is the triplet (χ = 3), giving \(SU(3)\).
 \item
@@ -2111,7 +2117,7 @@ QED.
 \item
   The maximal compact subgroup of \(U(6)\) acting on \(\mathbb{C}^3 \otimes \mathbb{C}^2\) with commuting actions is \((SU(3) \times SU(2) \times U(1))/(\text{finite center})\).
 \item
-  The commutant of \(SU(3) \times SU(2)\) inside \(U(6)\) is exactly \(U(1)\), so no additional continuous factors appear without increasing \(\chi_{\mathrm{cpl}}\).
+  The commutant of \(SU(3) \times SU(2)\) inside \(U(6)\) is exactly \(U(1)\), so any connected abelian factor acting nontrivially on the coupled carrier is necessarily a single \(U(1)\), and no additional continuous factors appear without increasing \(\chi_{\mathrm{cpl}}\).
 \item
   Product structure (formerly Selector S1) is not separately assumed: it follows from the tensor product structure of the minimal coupled carrier.
 \end{itemize}
@@ -2182,24 +2188,24 @@ N_g \ge 3.
 \textbf{Step 2: SU(2) asymptotic freedom upper bound.} The one-loop coefficient is:
 
 \[
-b_{1,\mathrm{SU}(2)} = \frac{1}{3}\left[22 - N_g(N_c + 1)\right].
+b_{\mathrm{SU}(2)} = \frac{22}{3} - \frac{1}{3}N_g(N_c + 1) - \frac{1}{6},
 \]
 
-Asymptotic freedom means b\_\{1,SU(2)\} \textgreater{} 0, i.e.,
+where the final \(-1/6\) is the contribution of one complex Higgs doublet. Asymptotic freedom means \(b_{\mathrm{SU}(2)} > 0\), i.e.,
 
 \[
-N_g(N_c + 1) < 22.
+N_g(N_c + 1) < \frac{43}{2}.
 \]
 
 With N\_c = 3, we have N\_c + 1 = 4, so:
 
 \[
-4 N_g < 22 \quad \Rightarrow \quad N_g \le 5.
+4 N_g < \frac{43}{2} \quad \Rightarrow \quad N_g \le 5.
 \]
 
 Combining: 3 ≤ N\_g ≤ 5.
 
-\textbf{Step 3: MAR selection.} Given the allowed window \{3, 4, 5\}, MAR (fourth component of the complexity vector \(C(\Sigma)\)) selects the smallest viable choice:
+\textbf{Step 3: MAR selection.} Given the allowed window \{3, 4, 5\}, MAR (fourth component of the complexity vector \(C(\mathfrak S)\)) selects the smallest viable choice:
 
 \[
 N_g = 3.
@@ -2293,7 +2299,7 @@ A loop-coherent global gluing exists iff {[}z{]} = 0.
 
 \subsubsection{6.7 EFT reduction to anomaly cancellation}\label{67-eft-reduction-to-anomaly-cancellation}
 
-Assume ExtEFT: a low-energy 3+1D chiral gauge theory exists with group G. Then the obstruction class {[}z{]} coincides with the \textquotesingle t Hooft anomaly class of the EFT. Thus {[}z{]}=0 is equivalent to cancellation of gauge and mixed anomalies.
+Assume ExtEFT: a low-energy 3+1D chiral gauge theory exists with group \(G\). Then the obstruction class \([z]\) is structurally analogous to the EFT \textquotesingle t Hooft anomaly class and is expected to map to it after a separate anomaly-descent construction. That map is not constructed in this manuscript, so \([z]=0\) is used here as an internal gluing/transportability condition rather than a proved equivalence to EFT anomaly cancellation.
 
 \subsubsection{6.8 Hypercharge from anomaly freedom and Yukawas}\label{68-hypercharge-from-anomaly-freedom-and-yukawas}
 
@@ -2372,7 +2378,7 @@ Y_H = \tfrac{1}{2}.
 
 \subsubsection{6.9 Witten anomaly and the number of colors}\label{69-witten-anomaly-and-the-number-of-colors}
 
-\textbf{Theorem 6.14 (The number of colors is N\_c = 3).} Under the gauge structure SU(N\_c) × SU(2)\_L × U(1)\_Y with one left-handed quark doublet Q per color and one left-handed lepton doublet L per generation, the global SU(2) anomaly (Witten, 1982) requires N\_c to be odd. Under MAR (lexicographic minimization of \(C(\Sigma)\), where \(N_c\) is the third component), this yields:
+\textbf{Theorem 6.14 (The number of colors is N\_c = 3).} Under the gauge structure SU(N\_c) × SU(2)\_L × U(1)\_Y with one left-handed quark doublet Q per color and one left-handed lepton doublet L per generation, the global SU(2) anomaly (Witten, 1982) requires N\_c to be odd. Under MAR (lexicographic minimization of \(C(\mathfrak S)\), where \(N_c\) is the third component), this yields:
 
 \[
 N_c = 3.
@@ -2398,7 +2404,7 @@ N_c = 3.
 \item
   \textbf{Witten\textquotesingle s global SU(2) anomaly constraint} (Witten, 1982): the number of left-handed SU(2) doublets must be even.
 \item
-  \textbf{MAR} (Selection Axiom): among allowed values, the third component of the complexity vector \(C(\Sigma)\) is minimized.
+  \textbf{MAR} (Selection Axiom): among allowed values, the third component of the complexity vector \(C(\mathfrak S)\) is minimized.
 \end{enumerate}
 
 \textbf{Proof.} Count SU(2) doublets per generation:
@@ -2626,7 +2632,7 @@ where λ\_R is the Laplacian eigenvalue on the R-isotypic component and t is det
 
 \textbf{Proof.}
 
-\emph{Step 1 (Edge Hilbert space).} From gauge-as-gluing (D) and the regulator (R0-R1), the edge degrees of freedom at a boundary circle Σ = ∂C live in a Hilbert space transforming under the gauge group G. At the regulator scale, a single edge crossing Σ carries the gauge field in L²(G). By the Peter-Weyl theorem:
+\emph{Step 1 (Edge Hilbert space).} From gauge-as-gluing (D) and the regulator (R0-R1), the edge degrees of freedom at a boundary circle Σ = ∂C live in a Hilbert space transforming under the gauge group G. Microscopically this is a finite-dimensional quantum-link edge space; the effective representation-theoretic description in the refinement limit is modeled by \(L^2(G)\). By the Peter-Weyl theorem:
 
 \[
 L^2(G) \cong \bigoplus_R V_R \otimes V_R^*
@@ -2638,7 +2644,7 @@ where V\_R is the carrier space of irrep R.
 
 \emph{Step 3 (Natural Hamiltonian).} From LG, the MaxEnt generator restricted to edge modes takes the form H\_\{edge\} = Σ\_R h\_R P\_R where P\_R is the projector onto the R-sector. The key claim is that h\_R = λ\_R.
 
-\emph{Justification:} The group Laplacian Δ\_G = −Σ\_a (T\^{}a)² is the \textbf{unique} (up to scale) bi-invariant second-order differential operator on G. Any other gauge-invariant local choice would require higher derivatives, violating locality. For finite groups, the Cayley graph Laplacian plays the same role: λ\_R = \textbar S\textbar{} − (1/d\_R) Σ\_\{s∈S\} χ\_R(s).
+\emph{Justification:} For a compact simple factor, the group Laplacian Δ\_G = −Σ\_a (T\^{}a)² is the unique bi-invariant second-order differential operator up to scale. For a product group \(G=\prod_i G_i\), the most general bi-invariant second-order operator is a positive linear combination \(\sum_i c_i \Delta_{G_i}\), with one coefficient per factor. Any other gauge-invariant local choice would require higher derivatives, violating locality. For finite groups, the Cayley graph Laplacian plays the same role: λ\_R = \textbar S\textbar{} − (1/d\_R) Σ\_\{s∈S\} χ\_R(s).
 
 \emph{Step 4 (MaxEnt selection).} MaxEnt (Assumption B) selects the Gibbs state:
 
@@ -2657,7 +2663,7 @@ QED.
 
 \textbf{Why the entropy rank is \(d_R\) (instead of \(d_R^2\)).} The full edge space has dimension \(d_R^2\) in sector \(R\) (from \(V_R \otimes V_R^\ast\)). Entanglement entropy, however, measures correlations \emph{across} the cut. After tracing over one side, the reduced density matrix has effective rank \(d_R\). Mathematically: in the Markov normal form, the edge factor on one side contributes \(\log d_R\) to the entropy.
 
-\textbf{Status.} The derivation is complete. The LG assumption (quasi-local MaxEnt generator) is derived from Theorem 2.6: if MaxEnt constraints are expectations of finitely many quasi-local operators, the entropy maximizer is automatically a Gibbs state with a quasi-local generator. What remains is the specific \emph{Laplacian form} of that generator; this follows from gauge invariance plus uniqueness of the bi-invariant second-order differential operator on G.
+\textbf{Status.} The derivation is complete up to the factorwise Laplacian choice just stated. The LG assumption (quasi-local MaxEnt generator) is derived from Theorem 2.6: if MaxEnt constraints are expectations of finitely many quasi-local operators, the entropy maximizer is automatically a Gibbs state with a quasi-local generator. What remains is the specific \emph{Laplacian form} of that generator; this follows from gauge invariance plus the factorwise uniqueness of the bi-invariant second-order operator on each compact simple factor.
 
 \textbf{Normalization anchor: 2D Yang-Mills.} The parameter t can be exactly matched to a conventional coupling in 2D Yang-Mills, where the physical Hamiltonian is literally the group Laplacian:
 
@@ -3171,7 +3177,7 @@ H_{\partial} = H^{(1)}_{\partial} + H^{(2)}_{\partial} + H^{(3)}_{\partial},
 \quad [H^{(i)}_{\partial}, H^{(j)}_{\partial}] = 0,
 \]
 
-where each \(H^{(i)}_{\partial}\) is the unique bi-invariant second-order operator (group Laplacian) for a compact factor \(G_i\). Then the heat-kernel form implies exact probability factorization:
+where each \(H^{(i)}_{\partial}\) is the bi-invariant second-order operator (group Laplacian) for a compact factor \(G_i\), unique up to an independent positive coefficient on each factor. Then the heat-kernel form implies exact probability factorization:
 
 \[
 p(R_1, R_2, R_3) \propto \prod_{i=1}^3 d_{R_i} e^{-t_i C_2(R_i)}.
@@ -3309,7 +3315,7 @@ within \textasciitilde1\% of the physical proton mass m\_p = 0.938 GeV, connecti
 \item
   Pixel-area: \(a_{\mathrm{cell}}/\ell_p^2 = 4(\bar{\ell}_2 + \bar{\ell}_3)\)
 \item
-  Electroweak identity: \(\hat{\alpha}^{-1}(M_Z) = \alpha_2^{-1} + \frac{5}{3}\alpha_1^{-1}\)
+  Electroweak identity: \(\hat{\alpha}^{-1}(M_Z) = \alpha_2^{-1} + \frac{3}{5}\alpha_1^{-1}\)
 \item
   One-loop unification: \(A_3 = \frac{b_3-b_2}{b_1-b_2}A_1 + \frac{b_1-b_3}{b_1-b_2}A_2\)
 \end{enumerate}
