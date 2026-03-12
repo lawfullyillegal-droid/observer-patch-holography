@@ -16,6 +16,21 @@ Les lois de la physique sont les règles de cohérence qui rendent cet accord in
 
 À partir de ce point de départ (avec les contraintes d'entropie et de Markov), l'OPH fait émerger espace-temps, symétries de jauge et physique des particules comme conséquences de cohérence.
 
+## Programme de recherche
+
+L'OPH doit actuellement être comprise comme un programme de recherche plutôt que comme une théorie achevée. En physique, on ne démontre pas au sens absolu qu'une théorie est "la bonne" ; la cible réaliste est un cadre mathématiquement explicite, adossé à des régulateurs concrets, empiriquement discriminant, et robuste face aux tentatives de falsification.
+
+Le programme actuel consiste donc à :
+
+- transformer les arguments qui ne sont encore qu'à l'état d'esquisse en preuves complètes
+- supprimer les hypothèses auxiliaires lorsque c'est possible, ou les isoler proprement lorsqu'elles restent nécessaires
+- réaliser les axiomes dans des modèles microscopiques explicites d'écran ou dans des régulateurs concrets
+- dériver à partir de ces réalisations les secteurs gravitationnel, de jauge, et quantitatif avec des approximations contrôlées
+- remplacer les étapes encore dépendantes de calibrations par des dérivations de premiers principes lorsque c'est bien cela qui est revendiqué
+- produire des critères de contradiction empiriques nouveaux et des tests sensibles aux différentes branches, qui puissent échouer proprement
+
+L'état final plausible le plus fort n'est donc pas une "preuve de l'OPH" au sens métaphysique, mais une théorie dérivée rigoureusement et tenue responsable expérimentalement, dont les secteurs effectifs, l'économie en paramètres et les prédictions falsifiables résistent à un examen indépendant.
+
 ## Articles
 
 **Observers are all you need** est l'article principal de l'OPH.

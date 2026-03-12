@@ -18,6 +18,21 @@ The laws of physics are the consistency rules that make this intersubjective agr
 
 From this starting point (plus entropy and Markov constraints), OPH treats spacetime, gauge structure, and particle physics as emergent consequences of consistency.
 
+## Research Program
+
+OPH should currently be understood as a research program rather than a finished theory. In physics, one does not prove in an absolute sense that a theory is "the correct one"; the realistic target is a framework that is mathematically explicit, regulator-backed, empirically discriminating, and resilient under attempts at falsification.
+
+The current program is therefore to:
+
+- turn the remaining sketch-level arguments into complete proofs
+- remove auxiliary assumptions where possible, or isolate them sharply where they remain necessary
+- realize the axioms in explicit microscopic screen models or regulators
+- derive the gravity, gauge, and quantitative sectors from those realizations with controlled approximations
+- replace calibration-dependent steps with first-principles derivations where such claims are intended
+- produce novel empirical contradiction criteria and branch-sensitive tests that can fail cleanly
+
+The strongest plausible end state is not "proof of OPH" in a metaphysical sense, but a rigorously derived and experimentally accountable theory whose effective sectors, parameter economy, and falsifiable predictions survive independent scrutiny.
+
 ## Papers
 
 **Observers are all you need** is the primary OPH paper.
