@@ -1,13 +1,13 @@
 \section{Gauge Group Derivation: Standard Model Closure under Extended MAR}\label{gauge-group-derivation-standard-model-closure-under-extended-mar}
 
 \begin{quote}
-OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives compact gauge reconstruction, particle mass hierarchy, and key quantitative outputs.
+OPH is an observer-centric reconstruction program for fundamental physics. In the current implementation it uses two external inputs (pixel area and screen capacity) together with structural axioms and explicit regulator/scaling premises. This part focuses only on the conditional compact-gauge branch and the explicit MAR selector that acts on the admissible low-energy class.
 \end{quote}
 
 \begin{quote}
 \textbf{Integrated derivation within this manuscript}: this part extends the core OPH framework in Part I.
 
-\textbf{Abstract.} We show that, once Tannaka/DR reconstruction is applied to the refinement-stable edge-sector colimit, the extended OPH theory , core axioms A1--A4, regulator premises R0--R1, the loop-coherent gluing condition \([z]=0\), and the Selection Axiom MAR (Minimal Admissible Realization) , selects the Standard Model connected Lie gauge-sector factors, the number of colors, and the number of generations once the admissible class includes one connected abelian charge factor. The realized hypercharge lattice then fixes the global gauge quotient:
+\textbf{Abstract.} We show that, once Tannaka/DR reconstruction is applied to the refinement-stable edge-sector colimit, the extended OPH theory , core axioms A1--A4, regulator premises R0--R1, the loop-coherent gluing condition \([z]=0\), and the explicit structural-economy selector MAR (Minimal Admissible Realization) , select the Standard Model connected Lie gauge-sector factors, the number of colors, and the number of generations once the admissible class includes one connected abelian charge factor. The realized hypercharge lattice then fixes the global gauge quotient:
 
 \[G_{\mathrm{phys}} = \frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}, \qquad N_c = 3, \qquad N_g = 3.\]
 
@@ -119,7 +119,7 @@ The weak gauge sector (the factor carrying the pseudoreal doublet) is asymptotic
 
 \subsection{3. Selection Axiom MAR}\label{3-selection-axiom-mar}
 
-\textbf{Selection Axiom MAR (Minimal Admissible Realization).} Among all OPH-realizable sector packages \(\mathfrak S\) that satisfy admissibility conditions (i)--(vi), Nature realizes the \textbf{lexicographically minimal} one under the complexity vector
+\textbf{Selection Axiom MAR (Minimal Admissible Realization).} Among all OPH-realizable sector packages \(\mathfrak S\) that satisfy admissibility conditions (i)--(vi), the realized low-energy package is the \textbf{lexicographically minimal} one under the complexity vector
 
 \[C(\mathfrak S) = \bigl(\chi_{\mathrm{cpl}},\; N_{\mathrm{nonab}},\; N_c,\; N_g\bigr),\]
 
@@ -137,7 +137,7 @@ where:
   \(N_g\) is the \textbf{number of chiral generations}.
 \end{itemize}
 
-Lexicographic minimality means: first minimize \(\chi_{\mathrm{cpl}}\); among ties, minimize \(N_{\mathrm{nonab}}\); among further ties, minimize \(N_c\); among final ties, minimize \(N_g\). The object minimized here is the full sector package \(\mathfrak S\), not the bare tensor category alone.
+Lexicographic minimality means: first minimize \(\chi_{\mathrm{cpl}}\); among ties, minimize \(N_{\mathrm{nonab}}\); among further ties, minimize \(N_c\); among final ties, minimize \(N_g\). The object minimized here is the full sector package \(\mathfrak S\), not the bare tensor category alone. MAR is therefore an explicit selector on an already-admissible class, not a theorem derived from the earlier axioms.
 
 \textbf{Key properties of MAR:}
 
@@ -204,7 +204,7 @@ A single nonabelian factor cannot simultaneously provide both types: a group is 
 \item
   The smallest faithful pseudoreal irreducible representation of any positive-dimensional compact connected Lie group is the fundamental \textbf{2} of \(SU(2)\) (the only 2D pseudoreal irrep in the connected Lie setting used here).
 \item
-  The smallest faithful irreducible complex representation of any positive-dimensional compact connected Lie group is the fundamental \textbf{3} of \(SU(3)\) (the 2D fundamental of \(SU(2)\) is pseudoreal, not complex; the fundamental of \(SU(2)\) in dimension 2 is the only option for pseudoreal, while \(SU(3)\) in dimension 3 is the first genuinely complex case).
+  No irreducible 2D unitary representation of a positive-dimensional compact connected Lie group can realize the required intrinsically complex nonabelian role: the connected derived subgroup of its image is a compact connected subgroup of \(SU(2)\), hence either trivial, a torus, or all of \(SU(2)\), so the nonabelian action is pseudoreal up to abelian twist. The smallest faithful irreducible intrinsically complex nonabelian representation is therefore the fundamental \textbf{3} of \(SU(3)\).
 \item
   By definition of \(\chi_{\mathrm{cpl}}\), the admissible pseudoreal and complex charge types must occur on a common nonabelian block rather than on disconnected direct-sum summands. The minimal such block is the tensor product \(V = \mathbb{C}^3 \otimes \mathbb{C}^2\), giving \(\chi_{\mathrm{cpl}} = 6\).
 \item
@@ -363,7 +363,7 @@ Among the admissible candidates \(\{3, 4, 5\}\), MAR\textquotesingle s complexit
 
 \textbf{Corollary.} The gauge group \(G_{\mathrm{phys}} = SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6\) does not contain \(X\) or \(Y\) gauge bosons that mediate proton decay.
 
-\emph{Proof.} Proton decay via gauge bosons requires a simple unification group (e.g., \(SU(5)\), \(SO(10)\)) whose additional generators connect quarks to leptons. The MAR derivation forces a product group structure with \(\chi_{\mathrm{cpl}} = 6\), which excludes simple groups. Therefore no gauge bosons mediating \(B\)-violating transitions exist. \(\square\)
+\emph{Proof.} The adjoint representation of the full connected gauge group contains only \((8,1,0)\oplus(1,3,0)\oplus(1,1,0)\); equivalently, the adjoint of the derived gauge group contains only \((8,1,0)\oplus(1,3,0)\). There are therefore no mixed \((3,2,\pm 5/6)\) generators. Proton decay via gauge bosons requires a simple unification group (e.g., \(SU(5)\), \(SO(10)\)) whose additional generators connect quarks to leptons. The MAR derivation forces the product-group structure above, so no such gauge bosons exist. \(\square\)
 
 \subsubsection{Corollary 2: Uniqueness}\label{corollary-2-uniqueness}
 

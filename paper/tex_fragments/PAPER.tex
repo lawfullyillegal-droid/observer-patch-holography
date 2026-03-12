@@ -1,7 +1,7 @@
 \section{Observer-Patch Holography}\label{observer-patch-holography}
 
 \begin{quote}
-OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives a conditional scaling-limit Einstein branch, compact gauge reconstruction, particle mass hierarchy, and key quantitative outputs. The Standard Model, general relativity, and string theory emerge as effective descriptions of the underlying structure.
+OPH is an observer-centric reconstruction program for fundamental physics. From four core axioms, two external configuration inputs in the current implementation, and an explicit regulator/scaling-limit regularity package, OPH develops a conditional Jacobson-type Einstein branch, conditional compact gauge reconstruction in the bosonic edge-sector branch, and quantitative branches whose status is separated into calibration checks, independent Higgs/top outputs, and phenomenological continuations. The Standard Model, general relativity, and string-theoretic worldsheet descriptions are treated as effective sectors of that underlying structure.
 \end{quote}
 
 \subsection{Abstract}\label{abstract}
@@ -20,20 +20,20 @@ We present an observer-centric model in which fundamental data live on a horizon
 \item
   \textbf{Exact symmetry-protected zero masses}: \(m_\gamma = m_g = m_{\text{graviton}} = 0\), with no gauge-mediated proton decay channels in the derived product-group structure.
 \item
-  \textbf{End-to-end particle spectrum derivation from OPH inputs}: from pixel area (one calibrated constant) to couplings and masses. Gauge couplings and EW boson masses are calibration-sector consistency checks; charged lepton masses (\(e, \mu, \tau\), sub-0.025\%) and Higgs/top masses (~1\%) are genuine predictions from independent structural conditions (see Part III of this manuscript).
+  \textbf{Quantitative program from OPH inputs}: the current implementation uses the pixel area and screen capacity as external inputs. Gauge couplings and EW boson masses are calibration-sector consistency checks; the Higgs/top critical-surface branch is the main independent quantitative output; charged-lepton, flavor-texture, neutrino, and hadron branches are retained with weaker phenomenological or downstream numerical status (see Part III of this manuscript).
 \item
   \textbf{String-theory bridge from OPH first principles}: edge-sector MaxEnt weights are exactly 2D Yang-Mills heat kernels, whose large-\(N\) expansion is the Gross-Taylor worldsheet/string expansion (see Part IV of this manuscript).
 \item
-  \textbf{Quantitative supplementary closures}: Koide structure, \(\mathbb{Z}_6\) hierarchy suppression, black-hole recovery, a program-level modular-anomaly dark-sector branch, baryogenesis scale estimates, and cosmological parameter relations are derived within the same framework (see Part V of this manuscript).
+  \textbf{Supplementary continuations and program-level branches}: Koide structure, \(\mathbb{Z}_6\) hierarchy suppression, black-hole recovery, a modular-anomaly dark-sector branch, baryogenesis scale estimates, and cosmological parameter relations are developed within the same framework, but not all with the same logical status as the structural theorems above (see Part V of this manuscript).
 \end{enumerate}
 
 The photon and graviton are forced by the axiom chain: once the admissible connected abelian factor is realized and entanglement equilibrium yields dynamical geometry, gauge invariance forbids mass terms. These are symmetry-protected zeros, matching observation.
 
-\textbf{Key conditionality.} The EFT bridge (null-surface modular additivity N1-N3) follows from the core axioms A1-A4 under testable conditions (Section 5.2): null strips must qualify as A4 separators, and local finite variation must hold. The Lorentz/Einstein package is a scaling-limit statement rather than a literal fixed-cutoff claim. The gauge group reconstruction yields \emph{a} compact group from a refinement-stable sector colimit; the Selection Axiom MAR (Minimal Admissible Realization) then selects the SM gauge group \(SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6\), \(N_c = 3\), and \(N_g = 3\) once the admissible class includes one connected abelian charge factor (see §6.2 and Part II of this manuscript).
+\textbf{Key conditionality.} The Lorentz/null-modular/Einstein package is a scaling-limit statement rather than a literal fixed-cutoff claim. Section 5 formulates an internal route to the null bridge, but the relativistic null-stress identification should still be read as a target regularity property of the intended EFT phase and candidate UV completions, not as a fixed-cutoff matrix-algebra theorem. The gauge group reconstruction yields \emph{a} compact group from a refinement-stable sector colimit; the explicit structural-economy selector MAR (Minimal Admissible Realization) then selects the SM gauge group \(SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6\), \(N_c = 3\), and \(N_g = 3\) once the admissible class includes one connected abelian charge factor (see §6.2 and Part II of this manuscript).
 
 \textbf{Testable predictions.} The log-integer area spectrum yields a discrete "horizon spectroscopy comb" for gravitational waves: after rescaling by remnant mass and spin, spectral features must stack at universal coordinates \(x_k = \ln k / 8\pi\). This is directly testable with public LIGO/Virgo data. We also derive Newton\textquotesingle s constant as \(G = a_{\rm cell}/4\bar{\ell}(t)\) from edge entropy density. We conclude with precision validations against lattice QCD and PDG bounds and a critical evaluation.
 
-\textbf{Fundamental parameters.} The model reduces physics to two parameters characterizing the holographic screen:
+\textbf{Fundamental parameters.} In the current implementation the model uses two external inputs characterizing the holographic screen:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -43,7 +43,7 @@ The photon and graviton are forced by the axiom chain: once the admissible conne
   \textbf{Screen capacity}: \(\log(\dim\mathcal{H}_{\rm tot}) \sim 10^{122}\), the total degrees of freedom. Inferred from the observed cosmological constant.
 \end{enumerate}
 
-Everything else (compact gauge reconstruction, charge quantization, scaling-limit Einstein equations, mass ratios) is derived structure. The axioms contain no other dimensionful constants. Quantities flowing directly from the calibrated gauge couplings are consistency checks; quantities determined by independent structural conditions (critical surface, Koide structure, \(\mathbb{Z}_6\) texture) are genuine predictions.
+Everything else (compact gauge reconstruction, charge quantization, scaling-limit Einstein equations, mass ratios) is derived structure. The axioms contain no other dimensionful constants. Quantities flowing directly from the calibrated gauge couplings are consistency checks; the Higgs/top critical-surface branch is the main independent quantitative output; Koide, charged-lepton, flavor-texture, neutrino, and related branches are retained as phenomenological continuations or downstream numerical branches and are labeled accordingly below.
 
 \subsection{1. Model and Axioms}\label{1-model-and-axioms}
 
@@ -570,7 +570,7 @@ MaxEnt then selects the unique invariant state compatible with those conserved c
 \item
   \textbf{Fixed-cap constraint set}: derived via CMFP-2 (local conserved charges)
 \item
-  \textbf{A3 / focusing input}: derived via EC + QNEC (QFT theorem)
+  \textbf{A3 / focusing package}: internally supported in the null-modular branch, but retained as part of the stated axiom package in this manuscript
 \end{itemize}
 
 The price is that CMFP-3 becomes a phase statement: the refinement-stable MaxEnt fixed point must lie in the geometric modular action class. This is a concrete condition on the UV completion rather than an abstract axiom.
@@ -812,19 +812,19 @@ Each step is proven below with explicit hypotheses.
 
 Setup. For a small circle \(\Sigma = \partial C\), let \(\mathcal N\) be the null surface generated by null geodesics orthogonal to \(\Sigma\) in the locally Lorentzian regime implied by Section 4.2. Label null generators by angle \(\Omega\) and use affine parameter \(v\) along each generator. For an interval \(I\) along a generator, let \(K[I]\) denote the reference modular Hamiltonian for the algebra supported on that interval (or for a region \(R\) that is a union of such intervals across generators).
 
-Input N1 (Null modular additivity): For disjoint null intervals \(I_1, I_2\) separated by a buffer on \(\mathcal N\),
+Input N1 (Null modular additivity): For consecutive null intervals \(I_-,J,I_+\) with \(J\) a buffer strip on \(\mathcal N\), exact Markovity of the reference state (or an explicitly stated idealized recoverability limit reducing to it) gives
 
 \[
-K[I_1 \cup I_2] = K[I_1] + K[I_2] + K_{\partial} + O(\varepsilon),
+K_{I_- \cup J \cup I_+} = K_{I_- \cup J} + K_{J \cup I_+} - K_J
 \]
 
-where \(K_{\partial}\) is a central/boundary term controlled by collar labels and \(\varepsilon\) is the Markov error. This is the null-surface analog of the Markov additivity used in QFT on null planes.
+up to central boundary terms. This is the null analogue of the Markov additivity used in QFT on null planes.
 
-Input N2 (Half-sided modular inclusion): For nested null regions along a generator (e.g., half-lines \(v > v_0\)), the modular group of the larger algebra acts half-sided on the smaller algebra, yielding a translation unitary \(U(a)\) with positive generator.
+Input N2 (Half-sided modular inclusion): For nested null half-line algebras in the scaling-limit blow-up around a smooth cut, the modular group of the larger algebra acts half-sided on the smaller algebra, yielding a translation unitary \(U(a)\) with positive generator.
 
-Input N3 (Weak continuity): For each pair of vectors \(\psi,\phi\), the map \(I \mapsto \langle \psi, K[I] \phi \rangle\) is additive on disjoint intervals, is continuous under interval limits, and has finite variation on bounded intervals.
+Input N3 (Endpoint regularity package): Bounded-interval modular Hamiltonians obey endpoint-Lipschitz control after smearing, and for the renormalized null half-line family one assumes the weak differentiability / vanishing-at-infinity conditions needed for the half-line endpoint-differentiation formula below.
 
-\textbf{Deriving N1-N3 from EC (the null-EC route).} The inputs N1-N3 can be derived from the same EC mechanism already proven for spatial collars (Theorem 2.3), applied to null strips, deriving the gravity bridge without external EFT assumptions.
+\textbf{Deriving the controlled null route from EC.} The null-strip route uses the same edge-center mechanism already proven for spatial collars (Theorem 2.3), applied to regulated null strips. What it establishes directly is the structure needed for null modular additivity and bounded-interval continuity. The final null-stress identification remains a scaling-limit premise of the relativistic EFT phase rather than a fixed-cutoff theorem.
 
 \textbf{Null-strip EC setup.} Define a regulated null strip: pick an affine parameter \(v\) along each generator (labeled by \(\Omega\)). For a small interval \(I = [v_1, v_2]\), define the algebra \(\mathcal{A}(I)\) as the inductive-limit algebra generated by degrees of freedom whose support is in the "thickened" strip \(I \times (\text{small angular cell})\) on \(\mathcal{N}\) at the regulator scale.
 
@@ -850,31 +850,68 @@ with a center generated by projectors \(P_{\alpha_1, \alpha_2}\). Within each bl
 \end{quote}
 
 \begin{quote}
-\textbf{Corollary 5.2b (Null-EC implies N1).} Under null-EC (Prop 5.2a), the tripartition \((I_-):(J):(I_+)\) is exactly Markov with \(I(I_-:I_+ | J) = 0\). This yields exact modular additivity:
+\textbf{Corollary 5.2b (Null-EC implies N1).} Under null-EC (Prop 5.2a), if the reference state on consecutive strips is exactly Markov or lies in the explicitly assumed idealized recoverability limit reducing to exact Markovity, the tripartition \((I_-):(J):(I_+)\) satisfies \(I(I_-:I_+ | J) = 0\). This yields modular additivity:
 
 \[
 K_{I_- \cup J \cup I_+} = K_{I_- \cup J} + K_{J \cup I_+} - K_J
 \quad (\text{up to blockwise constants}).
 \]
 
-In the buffer-shrinking limit, the buffer\textquotesingle s modular Hamiltonian becomes a boundary/central term \(K_\partial\) depending only on edge labels. This is precisely N1 with explicit error control from the recovery bound. QED.
+In the buffer-shrinking limit, the buffer\textquotesingle s modular Hamiltonian becomes a boundary/central term \(K_\partial\) depending only on edge labels. This is precisely N1, with any nonzero recovery error carried as an explicit correction rather than silently absorbed. QED.
 \end{quote}
 
 \begin{quote}
-\textbf{Proposition 5.2c (N3 from B + MX).} Under Assumption B (local MaxEnt, which implies local Gibbs via Lemma 2.6) and Axiom MX (exponential mixing), changing interval endpoints by \(\Delta v\) only changes expectation values of local observables by \(O(\Delta v)\) after smearing, because correlations die exponentially beyond \(O(\ell_{\mathrm{UV}})\).
+\textbf{Proposition 5.2c (Bounded-interval endpoint control from B + MX).} Under Assumption B (local MaxEnt, which implies local Gibbs via Lemma 2.6) and Axiom MX (exponential mixing), changing bounded-interval endpoints by \(\Delta v\) only changes expectation values of local observables by \(O(\Delta v)\) after smearing, because correlations die exponentially beyond \(O(\ell_{\mathrm{UV}})\).
 
-\textbf{Proof.} The local Gibbs form (Lemma 2.6) gives a quasi-local Hamiltonian. The exponential mixing bound (MX) implies that correlations between operators separated by distance \(d\) decay as \(e^{-d/\xi}\). Matrix elements of \(K[I]\) are therefore Lipschitz in the interval endpoints, giving finite variation. This is precisely N3: continuity and finite variation of matrix elements of smeared \(K[I]\). QED.
+\textbf{Proof.} The local Gibbs form (Lemma 2.6) gives a quasi-local Hamiltonian. The exponential mixing bound (MX) implies that correlations between operators separated by distance \(d\) decay as \(e^{-d/\xi}\). Matrix elements of \(K[I]\) are therefore Lipschitz in bounded-interval endpoints, giving finite variation there. This supplies the bounded-interval part of N3; the half-line differentiability and asymptotic-vanishing assumptions used below are additional scaling-limit regularity premises. QED.
 \end{quote}
 
 \begin{quote}
-\textbf{Lemma 5.2d (Additivity + continuity implies density).} Under N1 (Cor 5.2b) and N3 (Prop 5.2c), there exists an operator-valued distribution \(t(v,\Omega)\) such that for any interval \(I\) along a generator,
+\textbf{Lemma 5.2d (Half-line endpoint-differentiation formula).} Fix a null generator \(\Omega\) and define the renormalized half-line modular family
 
 \[
-K[I] = \int_I t(v,\Omega)\,dv + \text{(central term)}.
+\widetilde K_a(\Omega) := K[(a,\infty),\Omega] - K_\partial((a,\infty),\Omega).
 \]
 
-\textbf{Proof.} For fixed \(\psi,\phi\), define the scalar set function \(\mu_{\psi\phi}(I) = \langle \psi, K[I] \phi \rangle\). Additivity and finite variation make \(\mu_{\psi\phi}\) a finite signed measure on intervals. By N3, \(\mu_{\psi\phi}\) is absolutely continuous with respect to Lebesgue measure, so by the Radon-Nikodym theorem there exists a density \(f_{\psi\phi}(v,\Omega)\) with \(\mu_{\psi\phi}(I)=\int_I f_{\psi\phi}\,dv\). Riesz representation then yields an operator-valued distribution \(t(v,\Omega)\) such that \(f_{\psi\phi}(v,\Omega)=\langle \psi, t(v,\Omega)
-\phi \rangle\). The central term collects the collar-label dependence. QED.
+Assume the bounded-interval control of Proposition 5.2c and that for fixed vectors \(\psi,\phi\) in a common dense domain the function
+
+\[
+f_{\psi,\phi}(a) := \langle \psi, \widetilde K_a(\Omega)\phi \rangle
+\]
+
+is twice weakly differentiable in \(a\) with
+
+\[
+\lim_{a\to +\infty} f_{\psi,\phi}(a) = 0,
+\qquad
+\lim_{a\to +\infty} \partial_a f_{\psi,\phi}(a) = 0.
+\]
+
+Then there exists a sesquilinear-form density \(p(v,\Omega)\) such that
+
+\[
+\langle \psi,\widetilde K_a(\Omega)\phi \rangle
+=
+2\pi \int_a^\infty (v-a)\,\langle \psi,p(v,\Omega)\phi \rangle\,dv,
+\]
+
+and distributionally
+
+\[
+\langle \psi,p(a,\Omega)\phi \rangle
+=
+\frac{1}{2\pi}\,\partial_a^2 f_{\psi,\phi}(a).
+\]
+
+\textbf{Proof.} Define the matrix elements of \(p\) distributionally by
+
+\[
+\langle \psi,p(a,\Omega)\phi \rangle
+:=
+\frac{1}{2\pi}\,\partial_a^2 f_{\psi,\phi}(a).
+\]
+
+Integrating twice from \(a\) to \(+\infty\) and using the assumed vanishing of \(f_{\psi,\phi}\) and its first derivative at infinity yields the displayed half-line formula. This avoids the stronger and generally unnecessary claim that bounded-interval modular matrix elements define an interval-independent sigma-additive density. QED.
 \end{quote}
 
 \begin{quote}
@@ -922,19 +959,7 @@ This removes N2 as an independent input; it is derived from the same BW machiner
 Differentiating yields \([K,P] = i 2\pi P\). This is the Borchers-Wiesbrock half-sided modular inclusion theorem. QED.
 \end{quote}
 
-Define the null translation generator and density by
-
-\[
-P = \int T_{kk}(v,\Omega)\,dv,
-\]
-
-so that the modular generator takes the geometric form
-
-\[
-K = 2\pi \int v\,T_{kk}(v,\Omega)\,dv + \text{(central term)}.
-\]
-
-Positivity of \(P\) implies a positive null energy density in this sector description. In a locally Lorentzian regime, knowledge of \(T_{kk}\) for all null directions \(k\) determines a symmetric tensor \(T_{ab}\) \textbf{modulo a metric term} via \(T_{kk} = T_{ab} k^a k^b\):
+In a locally Lorentzian regime, knowledge of \(T_{kk}\) for all null directions \(k\) determines a symmetric tensor \(T_{ab}\) \textbf{modulo a metric term} via \(T_{kk} = T_{ab} k^a k^b\):
 
 \textbf{Lemma (Null data determine \(T_{ab}\) modulo metric term).} Let \(X_{ab}\) be symmetric. If \(X_{ab} k^a k^b = 0\) for all null \(k\) at a point, then \(X_{ab} = \phi \, g_{ab}\) for some scalar \(\phi\). Equivalently, the map \(X_{ab} \mapsto X_{kk}\) is injective on the quotient space of symmetric tensors modulo metric terms.
 
@@ -977,7 +1002,7 @@ This dovetails with the Einstein-equation step: overlap consistency gives the te
 
 This yields an internal construction of a local stress tensor and a local translation structure from modular data.
 
-\textbf{Theorem (EFT bridge from screen axioms, null form).} Consider a small entangling circle \(\Sigma\) and the induced null surface \(\mathcal{N}\) with generators labeled by \(\Omega\) and affine parameter \(v\). Suppose:
+\textbf{Theorem (Conditional null-stress identification from modular data).} Consider a small entangling circle \(\Sigma\) and the induced null surface \(\mathcal{N}\) with generators labeled by \(\Omega\) and affine parameter \(v\). Suppose:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -989,7 +1014,7 @@ This yields an internal construction of a local stress tensor and a local transl
 \item
   \textbf{(Geometric modular flow)} Modular flow acts as the null dilation \(v \mapsto e^{-2\pi t} v\) near \(\Sigma\) (the BW\(_{S^2}\) consequence).
 \item
-  \textbf{(Local finite variation)} Matrix elements \(\langle \psi, K[I,\Omega] \phi \rangle\) have finite variation / weak continuity under interval limits (derivable in any UV regulator with finite DoF density, and stable under refinement).
+  \textbf{(Endpoint regularity + null-stress premise)} The half-line regularity hypotheses of Lemma 5.2d hold, and in the relativistic scaling-limit branch the resulting half-line density is identified with a local null stress-tensor charge up to an explicit recoverability/scaling-limit error.
 \end{enumerate}
 
 Then:
@@ -997,18 +1022,38 @@ Then:
 (a) There exists an operator-valued distribution \(T_{kk}(v,\Omega)\) such that for any interval \(I\),
 
 \[
-K[I,\Omega] = 2\pi \int_I v \, T_{kk}(v,\Omega) \, dv + K_\partial(I,\Omega) + O(\varepsilon),
+\widetilde K[(a,\infty),\Omega]
+=
+2\pi \int_a^\infty (v-a)\,T_{kk}(v,\Omega)\,dv
++ E_{(a,\infty),\Omega}^{(\varepsilon)},
 \]
 
-with \(K_\partial\) central/boundary-supported.
+where \(\widetilde K := K-K_\partial\) and
+
+\[
+\bigl|\langle \psi,E_{I,\Omega}^{(\varepsilon)}\phi\rangle\bigr|
+\le
+C_{I,\Omega,\psi,\phi}\,\varepsilon^{1/2}
+\]
+
+for domain vectors \(\psi,\phi\). If bounded null intervals inherit geometric modular action from the interval-preserving projective flow, then likewise
+
+\[
+\widetilde K[I,\Omega]
+=
+2\pi \int_I g_I(v)\,T_{kk}(v,\Omega)\,dv
++ E_{I,\Omega}^{(\varepsilon)},
+\]
+
+where \(g_I(v)\) is affine-covariant and vanishes at finite interval endpoints.
 
 (b) The corresponding null translation generator \(P(\Omega) = \int T_{kk}(v,\Omega) \, dv\) is positive and satisfies the affine commutator \([K,P] = i 2\pi P\).
 
 (c) Knowing \(T_{kk}\) for all null directions reconstructs a local symmetric tensor \(T_{ab}\) modulo \(\phi g_{ab}\).
 
-Therefore, in the locally Lorentzian scaling regime the modular Hamiltonian is a stress-tensor charge (up to controlled boundary/central terms and the expected \(\Lambda g_{ab}\) ambiguity).
+Therefore, in the locally Lorentzian scaling regime the modular Hamiltonian is conditionally identified with a stress-tensor charge (up to controlled boundary/central terms, the explicit error operator above, and the expected \(\Lambda g_{ab}\) ambiguity).
 
-\textbf{Proof.} Premises 1-2 yield N1 (null modular additivity) via the exact Markov argument: \(I(A:D|B)=0\) implies \(K_{ABD} = K_{AB} + K_{BD} - K_B\). Premise 3 yields N2 (half-sided inclusion) since dilation maps half-lines into themselves. Premise 4 is N3 (weak continuity). The lemmas above then construct the density, translations, and reconstruction. QED.
+\textbf{Proof.} Premises 1-2 yield controlled null modular additivity via the Markov argument. Premise 3 yields half-sided modular inclusion since dilation maps half-lines into themselves. Premise 4 provides the half-line endpoint-differentiation formula. Corollary 5.2e and Lemma 5.2f then identify the resulting half-line density with the positive generator of null translations, and the relativistic scaling-limit premise upgrades that density to \(T_{kk}\) with the displayed error term. The null-to-tensor upgrade is exactly the preceding lemma. QED.
 
 \textbf{Gap closure status.} The theorem shows that the "EFT bridge" follows from the screen axioms, rather than entering as an external assumption. Specifically:
 
@@ -1018,10 +1063,10 @@ Therefore, in the locally Lorentzian scaling regime the modular Hamiltonian is a
 \item
   \textbf{N2 (half-sided modular inclusion)}: Derived from geometric modular flow (BW\(_{S^2}\)). Since dilation maps \(v - v_0 \mapsto e^{-2\pi t}(v - v_0)\) sends half-lines into themselves for \(t \ge 0\), Borchers--Wiesbrock yields translation unitaries with \([K, P] = i2\pi P\).
 \item
-  \textbf{N3 (weak continuity)}: Follows from the modular automorphism group\textquotesingle s continuity properties in any regulator with finite local Hilbert spaces.
+  \textbf{N3 (endpoint regularity)}: Bounded-interval control follows from B + MX, while the half-line differentiability and asymptotic-vanishing hypotheses remain explicit scaling-limit regularity premises.
 \end{itemize}
 
-The bridge is derived, not assumed. Remaining work is purely technical: verifying that explicit UV regulators satisfy the refinement-stability conditions already implicit in the axioms.
+The bridge is therefore conditional rather than automatic. The EC/MaxEnt machinery gives the structural route to null additivity and bounded-interval control, but the relativistic null-stress identification is still a target regularity property of the intended EFT phase and candidate UV completions, not a finished fixed-cutoff theorem.
 
 \subsubsection{5.3 Modular energy as stress-tensor charge (UV CFT)}\label{53-modular-energy-as-stress-tensor-charge-uv-cft}
 
@@ -1278,14 +1323,14 @@ This is the concrete bridge from "axioms about screens" to "precision GR predict
 
 \subsubsection{5.10 Focusing/QNEC internalization via relative entropy}\label{510-focusingqnec-internalization-via-relative-entropy}
 
-Once the null modular structure (N1-N3) and stress tensor \(T_{kk}\) are reconstructed internally (Section 5.2), focusing constraints follow from information-theoretic principles without importing QFT axioms externally.
+Once the controlled null modular structure of Section 5.2 is in place, focusing constraints follow from information-theoretic principles in the same scaling-limit branch rather than from a separate fixed-cutoff postulate.
 
-\textbf{Derivation chain.} QNEC and focusing are derived, not assumed:
+\textbf{Derivation chain.} QNEC and focusing are supported conditionally within the same branch:
 
 \begin{itemize}
 \tightlist
 \item
-  N1-N3 (derived, §5.2) ⟹ local K{[}I{]} and P = ∫ T\_kk dv
+  Controlled null modular bridge (§5.2) ⟹ half-line modular densities and positive null translations
 \item
   N2 (half-sided inclusion) ⟹ {[}K, P{]} = i 2π P
 \item
@@ -1307,7 +1352,7 @@ For null deformations parameterized by \(\lambda\), consider nested null regions
 \]
 
 \begin{quote}
-\textbf{Proposition 5.10a (Internal QNEC).} Under the null-EC structure (N1-N3, all derived in §5.2) and the definition \(P = \int T_{kk} dv\), the second null variation of von Neumann entropy satisfies
+\textbf{Proposition 5.10a (Conditional internal QNEC).} Under the controlled null bridge of §5.2 and the resulting null-stress identification, the second null variation of von Neumann entropy satisfies
 
 \[
 \frac{d^2 S_{\mathrm{bulk}}}{d\lambda^2} \le 2\pi \langle T_{kk}(\lambda) \rangle,
@@ -1323,7 +1368,7 @@ Consider the relative entropy \(S(\rho_\lambda \| \omega_\lambda)\) between the 
 S(\rho_{R(\lambda)} \| \omega_{R(\lambda)}) \le S(\rho_{R(\lambda')} \| \omega_{R(\lambda')}).
 \]
 
-Using the first law \(\delta S = \delta \langle K \rangle\) and the Rindler form \(K = 2\pi \int v \, T_{kk} \, dv\), expand to second order in the deformation. The convexity of relative entropy yields the QNEC inequality. The bound saturates for coherent states. QED.
+Using the first law \(\delta S = \delta \langle K \rangle\) and the geometric half-line modular form supplied by Section 5.2, expand to second order in the deformation. The convexity of relative entropy yields the QNEC inequality. The bound saturates for coherent states in the standard way. QED.
 \end{quote}
 
 \begin{quote}
@@ -1333,14 +1378,22 @@ Using the first law \(\delta S = \delta \langle K \rangle\) and the Rindler form
 S_{\mathrm{gen}} = \mathrm{Tr}(\rho L_C) + S_{\mathrm{bulk}}.
 \]
 
-Given the derived Einstein equation (Theorem 5.1) and the classical Raychaudhuri identity for null congruences, the Quantum Focusing derive (QFC) follows: the generalized expansion \(\Theta_{\mathrm{gen}}\) is non-increasing along null generators.
+Given the conditional Einstein branch (Theorem 5.1) and the classical Raychaudhuri identity for null congruences, the Quantum Focusing Conjecture (QFC) follows within the same scaling regime: the generalized expansion \(\Theta_{\mathrm{gen}}\) is non-increasing along null generators.
 
 \textbf{Proof sketch.} The Raychaudhuri equation relates expansion evolution to \(R_{kk}\). Einstein\textquotesingle s equation gives \(R_{kk} = 8\pi G (T_{kk} - \frac{1}{2}g_{kk}T)\). For null \(k\), this simplifies to \(R_{kk} = 8\pi G T_{kk}\). The QNEC (Prop 5.10a) then bounds the bulk entropy production, ensuring \(d\Theta_{\mathrm{gen}}/d\lambda \le 0\). QED.
 \end{quote}
 
-\textbf{Significance.} A3 (generalized entropy with quantum focusing) is a derived consequence of the null modular structure. It is therefore not an independent axiom. The only external input is relative entropy monotonicity, which is pure quantum information theory.
+\textbf{Significance.} This section shows how the A3 focusing package is internally supported inside the same null-modular branch once the stress-tensor identification and Einstein relation are in place. In this manuscript, however, A3 remains part of the stated axiom package rather than something silently removed from the premises.
 
-\textbf{Theorem 5.1 (Observer-consistency implies the scaling-limit Einstein branch).} Under A1-A4, Assumptions B-G, and the EFT bridge, the cap equilibrium condition implies the rest-frame first-variation Einstein relation, and overlap consistency upgrades it to the semiclassical Einstein equation in the locally Lorentzian scaling regime where the small-diamond modular Hamiltonian is a stress-tensor charge. QED.
+\textbf{Theorem 5.1 (Observer-consistency implies a conditional scaling-limit Einstein branch).} Under A1-A4, Assumptions B-G, the conditional null-stress identification of Section 5.2, and admissible first variations about a maximally symmetric reference state, the cap equilibrium condition implies the rest-frame first-variation relation
+
+\[
+\delta\!\left(G_{00}+\Lambda g_{00}\right)=8\pi G\,\delta\langle T_{00}\rangle.
+\]
+
+If this relation holds for all local directions and reference states in the locally Lorentzian scaling regime, overlap consistency upgrades it to the semiclassical Einstein equation modulo the expected \(\Lambda g_{ab}\) ambiguity.
+
+\textbf{Proof sketch.} The cap first law identifies \(\delta S_C\) with \(\delta\langle K_C\rangle\), while the conditional null bridge relates the bulk modular variation to a null stress-tensor charge. Since the reference state is maximally symmetric, the fixed-volume small-ball area identity already enters at first order in the perturbation, so entanglement equilibrium yields the displayed rest-frame relation. Overlap consistency then supplies all local directions, and the null-to-tensor lemma upgrades the relation to the tensor equation modulo \(\Lambda g_{ab}\). QED.
 
 \subsubsection{5.11 Discrete horizon area spectrum and Hawking emission (established)}\label{511-discrete-horizon-area-spectrum-and-hawking-emission-established}
 
@@ -2052,13 +2105,13 @@ Theorem 6.1 yields \emph{some} compact \(G\). The Selection Axiom MAR (Minimal A
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\textbf{Selection Axiom MAR (Minimal Admissible Realization).} Among all OPH-realizable sector packages \(\mathfrak S\) consisting of the connected Lie gauge-sector image relevant in the low-energy EFT, its admissible light chiral matter content, and one Higgs doublet, and which are (i) loop-coherent / transportable (\([z]=0\)), (ii) anomaly-free, (iii) refinement-stable with light chiral matter, (iv) single-Higgs Yukawa-completable with one connected abelian charge factor acting nontrivially on the coupled carrier, (v) intrinsically CP-capable, (vi) weak-sector UV-completable, Nature realizes the lexicographically minimal one under
+\textbf{Selection Axiom MAR (Minimal Admissible Realization).} Among all OPH-realizable sector packages \(\mathfrak S\) consisting of the connected Lie gauge-sector image relevant in the low-energy EFT, its admissible light chiral matter content, and one Higgs doublet, and which are (i) loop-coherent / transportable (\([z]=0\)), (ii) anomaly-free, (iii) refinement-stable with light chiral matter, (iv) single-Higgs Yukawa-completable with one connected abelian charge factor acting nontrivially on the coupled carrier, (v) intrinsically CP-capable, (vi) weak-sector UV-completable, the realized low-energy package is the lexicographically minimal one under
 
 \[C(\mathfrak S) = (\chi_{\mathrm{cpl}},\; N_{\mathrm{nonab}},\; N_c,\; N_g).\]
 
 See Part II of this manuscript for the complete formal statement, admissibility definitions, and proof.
 
-Here \(\chi_{\mathrm{cpl}}\) is the \textbf{coupled edge capacity}: the dimension of the minimal unitary carrier containing a common irreducible block on which the admissible pseudoreal and complex nonabelian charge types both act nontrivially. This is intentionally stronger than the abstract minimal faithful representation dimension. For \(S(U(3)\times U(2))\), the block-diagonal action on \(\mathbb{C}^3 \oplus \mathbb{C}^2\) is faithful of dimension \(5\), but it is not coupled and therefore does not enter MAR. The object minimized by MAR is the sector package \(\mathfrak S\), not the bare tensor category by itself.
+Here \(\chi_{\mathrm{cpl}}\) is the \textbf{coupled edge capacity}: the dimension of the minimal unitary carrier containing a common irreducible block on which the admissible pseudoreal and complex nonabelian charge types both act nontrivially. This is intentionally stronger than the abstract minimal faithful representation dimension. For \(S(U(3)\times U(2))\), the block-diagonal action on \(\mathbb{C}^3 \oplus \mathbb{C}^2\) is faithful of dimension \(5\), but it is not coupled and therefore does not enter MAR. The object minimized by MAR is the sector package \(\mathfrak S\), not the bare tensor category by itself. MAR is thus an explicit structural-economy selector on an already-admissible class, not a theorem derived from the earlier axioms.
 
 \textbf{Note on {[}z{]}=0.} The loop-coherent gluing condition \([z]=0\) (Proposition 6.1a) is kept as an explicit premise of the extended theory, not hidden inside MAR. It ensures that the reconstructed compact group acts as a genuine global gauge symmetry. By Proposition 6.1a, this is equivalent to DHR transportability.
 
@@ -2109,7 +2162,7 @@ QED.
 \item
   Admissibility conditions (iii)--(iv) require both a pseudoreal nonabelian charge type and a complex nonabelian charge type, and include one connected abelian charge factor acting nontrivially on the coupled carrier (Lemma 6.7, Corollary 6.8).
 \item
-  The minimal faithful pseudoreal representation is the doublet (χ = 2), giving \(SU(2)\). The minimal faithful complex representation is the triplet (χ = 3), giving \(SU(3)\).
+  The minimal faithful pseudoreal representation is the doublet (χ = 2), giving \(SU(2)\). No intrinsically complex 2D irrep qualifies in the connected compact Lie class, because the connected derived image of any irreducible 2D unitary representation lies in \(SU(2)\), so the nonabelian action is pseudoreal up to abelian twist. The first intrinsically complex case is therefore the triplet (χ = 3), giving \(SU(3)\).
 \item
   The minimal coupled carrier for both is \(\mathbb{C}^3 \otimes \mathbb{C}^2\), giving coupled edge capacity \(\chi_{\mathrm{cpl}} = 6\).
 \item
@@ -2484,7 +2537,7 @@ The photon is not postulated. It is forced by the axioms through the chain above
 \item
   Theorem 4.3 identifies the induced kinematic group as Conf⁺(S²) ≅ PSL(2,ℂ) ≅ SO⁺(3,1), the Lorentz group.
 \item
-  Theorem 5.1 (entanglement equilibrium) shows that the condition δS\_gen = 0 implies the rest-frame first-variation Einstein relation, with overlap consistency upgrading it to the semiclassical Einstein equations in the EFT regime.
+  Theorem 5.1 shows that, under the stated scaling-limit null-stress and reference-state premises, the condition δS\_gen = 0 implies the rest-frame first-variation Einstein relation, with overlap consistency upgrading it to the semiclassical Einstein equations in the EFT regime.
 \item
   The metric tensor emerges as the compression of modular flow data, and its dynamics are fixed by entanglement equilibrium.
 \item
@@ -3156,13 +3209,13 @@ This is the kind of \emph{quantitative} constraint that is tested or contradicte
 
 \textbf{Argument.} Standard Grand Unified Theories (SU(5), SO(10)) achieve coupling unification by embedding SU(3) × SU(2) × U(1) into a simple Lie group (Georgi and Glashow, 1974). This embedding necessarily introduces X and Y bosons (leptoquarks) that mediate baryon-number-violating processes like p → e⁺π⁰.
 
-In Observer-Patch Holography, unification is \textbf{geometric} (shared diffusion parameter t across edge sectors) rather than \textbf{algebraic} (embedding in a simple group). The Tannaka-Krein reconstruction (Theorem 6.1) yields the gauge group as a \textbf{product}:
+In Observer-Patch Holography, unification is \textbf{geometric} (shared diffusion parameter t across edge sectors) rather than \textbf{algebraic} (embedding in a simple group). The MAR analysis of Section 6.2 yields the realized connected gauge group as a \textbf{product}:
 
 \[
 G = \mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1).
 \]
 
-\textbf{if} the sector factorization assumption holds. There is then no larger group manifold; no leptoquark generators exist in the edge algebra. Therefore:
+There is then no larger simple-group manifold supplying mixed leptoquark generators in the edge algebra. Therefore:
 
 \[
 \tau_p^{\mathrm{gauge}} = \infty \quad \text{(no gauge-mediated proton decay)}
@@ -3307,7 +3360,7 @@ m_p^{\mathrm{est}} \approx 4.47 \times 0.208 \simeq 0.93 \text{ GeV},
 
 within \textasciitilde1\% of the physical proton mass m\_p = 0.938 GeV, connecting pixel geometry to hadronic physics. The factor 4.47 remains an external lattice input.
 
-\textbf{Two-input mode: simultaneous determination of α\_s and sin²θ\_W.} In a two-input mode (treating $P$ and the precisely measured $\hat{\alpha}^{-1}(M_Z)$ as calibration inputs), the pixel-area constraint combined with the electroweak identity and unification determines \textbf{both} remaining gauge couplings. In this mode, $\alpha_s$ and $\sin^2\theta_W$ are genuine predictions (not consistency checks). The system of constraints:
+\textbf{Two-input mode: simultaneous determination of α\_s and sin²θ\_W.} In a two-input mode (treating $P$ and the precisely measured $\hat{\alpha}^{-1}(M_Z)$ as calibration inputs), the pixel-area constraint combined with the electroweak identity and unification determines \textbf{both} remaining gauge couplings. In this alternate calibration mode, $\alpha_s$ and $\sin^2\theta_W$ move from calibration-sector checks to independent quantitative outputs. The system of constraints:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4507,7 +4560,7 @@ Unified programs struggle to give sharp, finite microscopic definitions. Formal 
 
 Unified models often explode in parameters, sectors, or vacua, becoming hard to test directly because everything depends on choices.
 
-\emph{How OPH addresses it:} The framework compresses freedom into a "pixel area" (resolution) parameter and a total Hilbert space capacity (size) parameter, then derives structure from consistency (Lorentz, Einstein form, compact gauge group reconstruction, exact zeros, quantization patterns). The Selection Axiom MAR derives the SM factors and sector factorization from a single minimality principle (Part II of this manuscript).
+\emph{How OPH addresses it:} The framework compresses freedom into a "pixel area" (resolution) parameter and a total Hilbert space capacity (size) parameter, then derives structure from consistency (Lorentz, Einstein form, compact gauge group reconstruction, exact zeros, quantization patterns). The explicit MAR selector then picks the SM factors and sector factorization on the admissible class (Part II of this manuscript).
 
 \textbf{Meta-pattern.} The framework tends to "win" by making consistency conditions do the work. Many unified theories treat locality, Lorentz invariance, gauge symmetry, and gravity as additional \emph{structures}. OPH treats them as \emph{consistency constraints} among overlapping descriptions plus information-theoretic properties of states (Markov/recoverability + MaxEnt), then leans on modular theory rigidity to force familiar symmetries/dynamics. This "structures → consistency" move is what naturally explains or sidesteps classic plagues.
 

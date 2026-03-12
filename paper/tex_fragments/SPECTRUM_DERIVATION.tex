@@ -3,7 +3,7 @@
 \begin{quote}
 \textbf{Integrated derivation within this manuscript}: this part applies the OPH framework developed in Part I.
 
-\textbf{Abstract.} The Observer-Patch Holography (OPH) framework derives the Standard Model particle spectrum from a single geometric quantity: the \textbf{pixel area} , the area of one computational cell on the holographic screen, measured in Planck units. Starting from the OPH axioms (A1--A4: entanglement equilibrium, MaxEnt, edge-center completion, refinement stability), the ``screen'' encodes all physics through its area law (§5 of Part I of this manuscript) and edge-sector structure (§6 of Part I of this manuscript). The pixel area constant \(P \equiv a_{\text{cell}}/\ell_P^2 = 1.63094\) is \textbf{calibrated} from the gauge coupling sector via the screen\textquotesingle s entropy-matching condition (§5.4 of Part I of this manuscript); a second input, the total screen capacity \(\log(\dim\mathcal{H}) \sim 10^{122}\), enters only for neutrino masses and the cosmological constant (§14 of Part V of this manuscript). Every other quantity appearing in the derivation chain is either a mathematical constant, a consequence of the gauge group (itself selected from a refinement-stable edge-sector category by Tannaka-Krein/DR reconstruction plus the extended MAR admissibility package, §6.1--§6.2 of Part I of this manuscript), or a derived structural integer (\(N_c = 3\), \(N_g = 3\), \(\varepsilon = 1/6\), \(\delta = 2/9\)). Outputs are classified by epistemic status: quantities flowing from the calibrated gauge couplings are consistency checks; quantities determined by independent structural conditions (critical surface, Koide structure, \(\mathbb{Z}_6\) texture) are genuine predictions. A complete audit of all constants and the full epistemic classification appear in §1A--1B below.
+\textbf{Abstract.} This part documents the quantitative OPH program in its current implementation. The calculation uses two external inputs: the pixel area \(P \equiv a_{\text{cell}}/\ell_P^2 = 1.63094\), calibrated from the gauge coupling sector via the screen\textquotesingle s entropy-matching condition (§5.4 of Part I of this manuscript), and the total screen capacity \(\log(\dim\mathcal{H}) \sim 10^{122}\), which enters only in the cosmological/neutrino branch (§14 of Part V of this manuscript). Every other quantity appearing in the derivation chain is either a mathematical constant, a consequence of the gauge group (itself selected from a refinement-stable edge-sector category by Tannaka-Krein/DR reconstruction plus the extended MAR admissibility package, §6.1--§6.2 of Part I of this manuscript), or a derived structural integer (\(N_c = 3\), \(N_g = 3\), \(\varepsilon = 1/6\), \(\delta = 2/9\)). Outputs are classified by epistemic status: quantities flowing from the calibrated gauge couplings are calibration-sector consistency checks; the Higgs/top critical-surface branch is the main independent quantitative output; charged-lepton, flavor-texture, neutrino, and hadron branches are weaker phenomenological or downstream numerical continuations. A complete audit of all constants and the full epistemic classification appear in §1A--§1B below.
 \end{quote}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -49,7 +49,7 @@ The computation code enforces a runtime mutation test: after computing all outpu
 
 \subsection{1A. Complete Audit of All Constants}\label{1a-complete-audit-of-all-constants}
 
-\textbf{Purpose.} This section catalogs \emph{every} named constant, integer, or coefficient appearing anywhere in the prediction code or derivation chain, and explains its origin. The goal is to demonstrate that nothing has been "smuggled in" , every value is either (I) the single physical input \(P\), (II) derived from the OPH axioms under minimal assumptions, (III) a mathematical/group-theoretic constant uniquely fixed by the gauge group, or (IV) a standard QFT result that any textbook reproduces from the Lagrangian.
+\textbf{Purpose.} This section catalogs \emph{every} named constant, integer, or coefficient appearing anywhere in the prediction code or derivation chain, and explains its origin. The goal is to demonstrate that nothing has been "smuggled in" , every value is either (I) one of the two external inputs of the current implementation, (II) a derived structural quantity from the OPH axioms and stated premises, (III) a mathematical/group-theoretic constant uniquely fixed by the gauge group, or (IV) a standard QFT result that any textbook reproduces from the Lagrangian.
 
 \subsubsection{1A.1 The Physical Input}\label{1a1-the-physical-input}
 
@@ -219,7 +219,7 @@ Heat-kernel truncation & 200 representations & Adding more changes \(\bar{\ell}\
   GUT normalization factor \(5/3\)
 \end{itemize}
 
-\textbf{The single free parameter}:
+\textbf{The primary particle-physics calibration input}:
 
 \begin{itemize}
 \tightlist
@@ -227,7 +227,7 @@ Heat-kernel truncation & 200 representations & Adding more changes \(\bar{\ell}\
   \(P = 1.63094\) (pixel area), calibrated from the gauge coupling sector (see §1B)
 \end{itemize}
 
-\textbf{Second input (cosmology only)}:
+\textbf{Second external input (cosmology/capacity branch)}:
 
 \begin{itemize}
 \tightlist
@@ -272,21 +272,21 @@ A common objection is that every quantity computed using \(P\) ``inherits the ca
 \item \textbf{Structural determination.} The calibration procedure solves \emph{one} equation (the pixel constraint) for \emph{one} unknown (\(\alpha_U\)). This single degree of freedom determines the gauge couplings, \(v\), \(M_U\), \(m_W\), and \(m_Z\)---all members of a one-parameter family. These are the consistency checks (Tier~1).
 \end{enumerate}
 
-The Tier~2 predictions are determined by structural content---boundary conditions, algebraic identities, topological data---that is \emph{logically independent} of the pixel constraint. Their dimensionless values are fixed before \(P\) enters the computation. Concretely:
+The strongest non-calibration quantitative outputs are determined by structural content---boundary conditions, algebraic identities, topological data---that is \emph{logically independent} of the pixel constraint. Their dimensionless values are fixed before \(P\) enters the computation. Concretely:
 
 {\footnotesize
 \def\LTcaptype{none}
 \begin{longtable}[]{@{}>{\RaggedRight\arraybackslash}p{0.22\textwidth}>{\RaggedRight\arraybackslash}p{0.30\textwidth}>{\RaggedRight\arraybackslash}p{0.40\textwidth}@{}}
 \toprule
-Prediction & Dimensionless form & What determines it (not \(P\)) \\
+Output branch & Dimensionless form & What determines it (not \(P\)) \\
 \midrule
 \endhead
 \bottomrule
 \endfoot
-\(m_e : m_\mu : m_\tau\) & Koide ratios from \(Q = 2/3\), \(\delta = 2/9\) & Algebraic: \(\delta = (N_c+1)/(2N_cN_g)\), \(Q\) from MaxEnt on \(\mathbb{Z}_3\). Zero free parameters. \\
+\(m_e : m_\mu : m_\tau\) continuation & Koide ratios from \(Q = 2/3\), \(\delta = 2/9\) & Algebraic phase data plus an additional discrete-selection step for the exponent pattern; logically independent of \(P\) but weaker than the theorem-level branches. \\
 \(m_H / v\) & \(\approx 0.509\); from \(\lambda(M_U) = 0\), \(\beta_\lambda(M_U) = 0\) & Critical surface (refinement stability). Independent boundary condition, not used in calibrating \(P\). \\
 \(m_t / v\) & \(\approx 0.702\); from \(y_t(M_U)\) at \(\beta_\lambda = 0\) & Same critical surface. \\
-\(m_f / m_t\) (quarks) & \(\varepsilon^{n_f}\) with \(\varepsilon = 1/6\), integer \(n_f\) & \(\mathbb{Z}_6\) quotient topology + \(N_c\), \(N_g\). No continuous parameter. \\
+\(m_f / m_t\) quark-texture continuation & \(\varepsilon^{n_f}\) with \(\varepsilon = 1/6\), integer \(n_f\) & \(\mathbb{Z}_6\) quotient topology + \(N_c\), \(N_g\), plus the texture ansatz used to assign exponents. \\
 \end{longtable}
 }
 
@@ -313,25 +313,39 @@ Quantity & Why it is a consistency check \\
 \end{longtable}
 }
 
-\textbf{Tier 2---Genuine predictions.} These quantities are determined by structural content of OPH (critical surface conditions, Koide structure, \(\mathbb{Z}_6\) texture) that is logically independent of the gauge-coupling calibration. They use \(P\) only to set an overall scale, and their specific values are not guaranteed by the calibration.
+\textbf{Tier 2---Independent quantitative outputs.} These quantities are determined by structural content of OPH that is logically independent of the gauge-coupling calibration. They use \(P\) only to set an overall scale, and their specific values are not guaranteed by the calibration.
 
 {\footnotesize
 \begin{longtable}[]{@{}>{\RaggedRight\arraybackslash}p{0.30\textwidth}>{\RaggedRight\arraybackslash}p{0.62\textwidth}@{}}
 \toprule
-Quantity & Why it is a genuine prediction \\
+Quantity & Why it is an independent quantitative output \\
 \midrule
 \endhead
 \bottomrule
 \endfoot
 \(m_H\) (Higgs mass) & From \(\lambda(M_U) = 0\), \(\beta_\lambda(M_U) = 0\) (refinement stability)---an independent boundary condition not used in calibrating \(P\). \\
 \(m_t\) (top mass, critical surface) & From \(y_t(M_U)\) fixed by \(\beta_\lambda = 0\); independent of the pixel constraint. \\
-\(m_e, m_\mu, m_\tau\) (charged leptons) & From the Koide structure (\(Q = 2/3\), \(\delta = 2/9\))---algebraically independent of the gauge-coupling sector. \\
-Quark mass hierarchy & From \(\mathbb{Z}_6\) texture with exponents derived from \(N_c\), \(N_g\); independent of \(P\)'s value. \\
-\(m_{\nu_1}, m_{\nu_2}, m_{\nu_3}\) & From screen capacity \(\log(\dim\mathcal{H})\), a second input entirely independent of \(P\). \\
 \end{longtable}
 }
 
-\textbf{Tier 3---Parameter-free structural predictions.} These discrete quantities follow from the axioms alone with no continuous free parameter.
+\textbf{Tier 3---Phenomenological continuations and downstream numerical branches.} These outputs use additional ans\"atze, discrete scans, capacity estimates, or downstream numerical machinery beyond the core calibration and critical-surface branches.
+
+{\footnotesize
+\begin{longtable}[]{@{}>{\RaggedRight\arraybackslash}p{0.30\textwidth}>{\RaggedRight\arraybackslash}p{0.62\textwidth}@{}}
+\toprule
+Quantity & Why it is a phenomenological continuation / downstream branch \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\(m_e, m_\mu, m_\tau\) (charged leptons) & Uses the Koide phase data together with an additional discrete-selection step for the exponent pattern. Numerically sharp, but weaker in logical status than the critical-surface branch. \\
+Quark mass hierarchy & Uses the \(\mathbb{Z}_6\) texture ansatz and captures hierarchy structure more reliably than individual masses. \\
+\(m_{\nu_1}, m_{\nu_2}, m_{\nu_3}\) & Capacity-branch estimate from \(\log(\dim\mathcal{H})\); presently an order-of-magnitude branch rather than a benchmark quantitative mass formula. \\
+Hadron masses & Downstream numerical continuation \(P \to \alpha_s \to \Lambda^{(3)} \to m_X\), with standard lattice-QCD systematics dominating the final errors. \\
+\end{longtable}
+}
+
+\textbf{Tier 4---Parameter-free structural outputs.} These discrete quantities follow from the axioms and stated admissibility package with no continuous free parameter.
 
 {\footnotesize
 \begin{longtable}[]{@{}>{\RaggedRight\arraybackslash}p{0.45\textwidth}>{\RaggedRight\arraybackslash}p{0.45\textwidth}@{}}
@@ -352,15 +366,15 @@ No gauge-mediated proton decay & Product gauge group (no leptoquark generators) 
 
 \subsubsection{1B.4 What OPH Achieves}\label{1b4-what-oph-achieves}
 
-The Standard Model has 19 free parameters (or 26 with neutrino masses). OPH reduces this to 1 continuous free parameter (\(P\)) plus 1 cosmological input (\(\log \dim \mathcal{H}\)), with all structural content (gauge group, generation count, mass hierarchy pattern) derived from axioms.
+The Standard Model has 19 free parameters (or 26 with neutrino masses). OPH compresses the current implementation to one primary particle-physics calibration input (\(P\)) plus one cosmological/capacity input (\(\log \dim \mathcal{H}\)), with structural content such as the gauge group and generation count derived from axioms and admissibility.
 
-The genuine predictive content---Tier 2---includes the Higgs mass, top mass, all three charged lepton masses, the fermion mass hierarchy, and neutrino masses. The charged leptons achieve sub-permille accuracy from a structure (\(Q = 2/3\), \(\delta = 2/9\)) that has no free parameters. The Higgs and top masses are predicted at the \textasciitilde1\% level from a boundary condition (\(\lambda = \beta_\lambda = 0\) at \(M_U\)) that is independent of the gauge-coupling calibration.
+The strongest independent quantitative content---Tier 2---is the Higgs/top critical-surface branch. The charged-lepton, texture, neutrino, and hadron sectors sit in Tier 3: they are useful continuations, and in the charged-lepton case numerically very sharp, but they do not currently have the same logical status as the critical-surface branch.
 
 The quark masses are the weakest sector: the hierarchy is qualitatively correct (5 orders of magnitude from integer exponents in base 6), but individual masses show 16--73\% deviations due to missing scheme matching, order-one Clebsch factors, and \(u\)-\(d\) degeneracy.
 
-\(P\) is analogous to Newton's constant \(G\) in general relativity, or \(\alpha\) in QED: a single dimensionful parameter that must be measured. The framework's claim is not ``we predict everything from nothing'' but rather: \textbf{from one measured constant and a set of axioms, the framework determines the complete structure of particle physics, with most outputs being genuine predictions independent of the calibration.}
+\(P\) is analogous to Newton's constant \(G\) in general relativity, or \(\alpha\) in QED: a dimensionful parameter that must be measured. The framework's claim is not ``we predict everything from nothing'' but rather: \textbf{from a small external input set and a set of axioms, the framework sharply constrains particle physics and organizes which outputs are structural, which are calibration-sector, which are independently quantitative, and which remain phenomenological continuations.}
 
-The gauge couplings at \(m_Z\) are consistency checks. The lepton masses, Higgs mass, top mass, and mass hierarchy are predictions. The quark masses are qualitative.
+The gauge couplings at \(m_Z\) are consistency checks. The Higgs and top masses are the main independent quantitative outputs. The charged-lepton, quark-texture, neutrino, and hadron branches are weaker continuations with explicitly stated limitations.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -719,7 +733,7 @@ These are \textbf{symmetry-protected zeros}, not accidental cancellations. The g
 
 \subsection{10. Complete Spectrum: OPH Outputs vs PDG}\label{10-complete-spectrum-oph-outputs-vs-pdg}
 
-All outputs below use inputs \(P = 1.63094\) and \(\log(\dim\mathcal{H}) = 10^{122}\) only. PDG values are from the 2024/2025 edition. Each output is classified as \textbf{consistency check} (Tier~1, from calibration sector), \textbf{prediction} (Tier~2, structurally independent of calibration), or \textbf{structural} (Tier~3, parameter-free). See §1B for the full classification.
+All outputs below use inputs \(P = 1.63094\) and \(\log(\dim\mathcal{H}) = 10^{122}\) only. PDG values are from the 2024/2025 edition. Each output is classified as \textbf{consistency check} (Tier~1, from calibration sector), \textbf{independent quantitative} (Tier~2), \textbf{phenomenological continuation / downstream branch} (Tier~3), or \textbf{structural} (Tier~4, parameter-free). See §1B for the full classification.
 
 \subsubsection{10.1 Gauge Bosons and Higgs}\label{101-gauge-bosons-and-higgs}
 
@@ -858,7 +872,7 @@ Neutron & 0.93957 & \(\approx m_p\) in the isospin limit & Isospin splitting req
 
 \textbf{W boson} (+0.012\%), \textbf{Z boson} (+0.035\%), \textbf{electron} (−0.023\%), \textbf{muon} (−0.022\%), \textbf{tau} (−0.020\%):
 
-These five outputs are at the sub-permille level, but their epistemic status differs. The gauge boson masses (\(W\), \(Z\)) are \textbf{consistency checks}: they flow directly from the calibrated gauge couplings and \(v\), so their agreement is expected by construction. The charged leptons (\(e\), \(\mu\), \(\tau\)) are \textbf{genuine predictions}: the Koide structure (\(Q = 2/3\), \(\delta = 2/9\)) is algebraically independent of the gauge-coupling calibration and has no continuous free parameter.
+These five outputs are at the sub-permille level, but their epistemic status differs. The gauge boson masses (\(W\), \(Z\)) are \textbf{consistency checks}: they flow directly from the calibrated gauge couplings and \(v\), so their agreement is expected by construction. The charged leptons (\(e\), \(\mu\), \(\tau\)) are \textbf{Tier~3 phenomenological continuations}: the Koide structure (\(Q = 2/3\), \(\delta = 2/9\)) is algebraically independent of the gauge-coupling calibration, but the final exponent assignment uses an additional discrete-selection step.
 
 \subsubsection{11.2 Percent-Level Outputs (0.1\% -- 2\%)}\label{112-percent-level-outputs-01--2}
 
@@ -866,7 +880,7 @@ These five outputs are at the sub-permille level, but their epistemic status dif
 
 The epistemic status differs within this group. The \textbf{gauge couplings} (\(\alpha_s\), \(\sin^2\theta_W\), \(\alpha_{\text{em}}^{-1}\)) are \textbf{consistency checks} --- they are the data used to calibrate \(P\), so their agreement demonstrates that the self-consistent fixed-point procedure works, not that the framework predicts them.
 
-The \textbf{Higgs and top masses} are \textbf{genuine predictions}: they come from the critical surface constraint (\(\lambda(M_U) = 0\), \(\beta_\lambda(M_U) = 0\)) with 1-loop RG running --- an independent boundary condition not used in calibrating \(P\). The \textasciitilde1\% error is consistent with the expected size of 2-loop corrections and threshold effects.
+The \textbf{Higgs and top masses} are \textbf{Tier~2 independent quantitative outputs}: they come from the critical surface constraint (\(\lambda(M_U) = 0\), \(\beta_\lambda(M_U) = 0\)) with 1-loop RG running --- an independent boundary condition not used in calibrating \(P\). The \textasciitilde1\% error is consistent with the expected size of 2-loop corrections and threshold effects.
 
 \subsubsection{11.3 Qualitative Agreement Only: Quark Masses (16\% -- 73\%)}\label{113-qualitative-agreement-only-quark-masses-16--73}
 
@@ -999,7 +1013,7 @@ File & Description & Stage \\
 
 \subsection{Summary}\label{summary}
 
-Starting from one calibrated constant --- the pixel area \(P = 1.63094\) --- and one cosmological input --- the screen capacity \(\log(\dim\mathcal{H}) \sim 10^{122}\) --- the OPH derivation chain produces outputs in three epistemic tiers:
+Starting from the current external input set --- the pixel area \(P = 1.63094\) and the screen capacity \(\log(\dim\mathcal{H}) \sim 10^{122}\) --- the OPH derivation chain produces outputs in four epistemic tiers:
 
 \textbf{Calibration-sector consistency checks} (agreement expected by construction):
 \begin{itemize}\tightlist
@@ -1008,17 +1022,21 @@ Starting from one calibrated constant --- the pixel area \(P = 1.63094\) --- and
 \item Higgs VEV \(v\) (+0.22\%)
 \end{itemize}
 
-\textbf{Genuine predictions} (structurally independent of calibration):
+\textbf{Independent quantitative outputs} (structurally independent of calibration):
 \begin{itemize}\tightlist
-\item Charged leptons: \(e\), \(\mu\), \(\tau\) at \textless{} 0.025\% (from parameter-free Koide structure)
 \item Higgs mass: 126.48 GeV vs 125.20 GeV (+1.0\%, from critical surface \(\lambda = \beta_\lambda = 0\))
 \item Top quark: 171.1 GeV vs 172.6 GeV (−0.87\%, from critical surface)
+\end{itemize}
+
+\textbf{Phenomenological continuations / downstream branches}:
+\begin{itemize}\tightlist
+\item Charged leptons: \(e\), \(\mu\), \(\tau\) at \textless{} 0.025\% from the Koide branch plus a discrete exponent-selection step
 \item 6 quark masses at correct order of magnitude with hierarchy reproduced, but 16--73\% individual errors
-\item 3 neutrino masses consistent with all current bounds
+\item 3 neutrino masses presently at order-of-magnitude level and consistent with current bounds
 \item Hadron masses from \(\Lambda_{\overline{\text{MS}}}^{(3)}\) via lattice QCD (10--20\% systematics)
 \end{itemize}
 
-\textbf{Parameter-free structural predictions} (from axioms alone):
+\textbf{Parameter-free structural outputs} (from axioms and admissibility):
 \begin{itemize}\tightlist
 \item Gauge group \(SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6\), \(N_c = 3\), \(N_g = 3\)
 \item 3 exactly massless particles (\(\gamma\), \(g\), graviton) from symmetry protection
@@ -1040,4 +1058,4 @@ P &\xrightarrow{\text{entropy matching}} \alpha_U, M_U
 }
 \]
 
-\(P\) is the single free parameter, calibrated from the gauge coupling sector. The first arrow is calibration; subsequent arrows produce genuine predictions. The framework's claim is not ``we predict everything from nothing'' but: \textbf{from one calibrated constant and structural axioms, the framework determines the complete particle spectrum, with most outputs independent of the calibration.}
+\(P\) is the primary particle-physics calibration input. The first arrow is calibration; the critical-surface branch then gives the main independent quantitative outputs, while later flavor, neutrino, and hadron steps are weaker continuations. The framework's claim is not ``we predict everything from nothing'' but: \textbf{from a small external input set and structural axioms, the framework sharply constrains particle physics while keeping the logical status of each branch explicit.}

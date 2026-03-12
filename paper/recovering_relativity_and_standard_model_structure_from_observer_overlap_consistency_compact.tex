@@ -27,17 +27,17 @@
 \newcommand{\Conf}{\mathrm{Conf}}
 \newcommand{\nf}{\operatorname{nf}}
 
-\title{Recovering Relativity and Standard Model Structure from\\
+\title{A Conditional Reconstruction Program for Relativity and Standard Model Structure from\\
 Observer-Overlap Consistency\\[0.4em]
 \large Observers Are All You Need (Compact)}
 \author{B.\ M\"uller}
-\date{March 9, 2026}
+\date{March 12, 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We present a falsifiable formulation of Observer-Patch Holography (OPH) in which physical law is reconstructed from consistency conditions on overlapping observer patches. The data are five axioms, two numerical inputs, and a small regularity package. From that starting point the framework recovers, in one derivation chain, a schedule-independent normal form for overlap consistency, Lorentz kinematics from geometric modular flow on the screen in a controlled refinement limit, a conditional scaling-limit Einstein branch from constrained entanglement equilibrium and the null modular bridge, conditional compact gauge reconstruction from a refinement-stable bosonic symmetric edge-sector colimit, and, after the extended MAR selector is imposed on the connected positive-dimensional Lie admissible class with one connected abelian charge factor, the Standard Model gauge group
+We present a falsifiable compact formulation of Observer-Patch Holography (OPH) as a conditional reconstruction program. The framework starts from five axioms, two external configuration inputs in the current implementation, and an explicit scaling-limit/categorical regularity package. From that data it derives a schedule-independent normal form for overlap consistency, a conditional geometric-modular Lorentz branch on the screen, a conditional Jacobson-type Einstein branch from generalized entropy stationarity and the null modular bridge, and conditional compact gauge reconstruction in the bosonic internal-gauge branch from a refinement-stable symmetric edge-sector colimit. After the extended MAR selector is imposed on the connected positive-dimensional Lie admissible class with one connected abelian charge factor, the realized low-energy gauge group is
 \[
 \frac{\SU(3)\times \SU(2)\times \U(1)}{\mathbb Z_6},
 \qquad
@@ -45,7 +45,7 @@ N_c=3,
 \qquad
 N_g=3,
 \]
-together with exact rational hypercharges. The two input constants are the pixel area
+together with exact rational hypercharges. The two external inputs of the present implementation are the pixel area
 \[
 P \equiv a_{\mathrm{cell}}/\ell_P^2 = 1.63094
 \]
@@ -53,7 +53,7 @@ and the total screen capacity
 \[
 N_{\mathrm{scr}} \equiv \log \dim \mathcal H_{\mathrm{tot}} \sim 10^{122}.
 \]
-The framework reduces the continuous input set for particle physics and cosmology to these two quantities, replacing the usual Standard Model plus cosmology parameter burden by a much smaller input set plus structural relations. Gauge couplings and tree-level electroweak masses are calibration-sector outputs, while the charged-lepton sector and the critical-surface Higgs/top branch use additional structural conditions; the Koide relation and quark-hierarchy exponents are structural texture outputs; the neutrino branch is presently an order-of-magnitude capacity-branch estimate. Additional consequences include coupling unification without light superpartners, a structural treatment of the cosmological constant, a program-level modular-anomaly branch in the dark sector with an acceleration scale in the observed range, absence of gauge-mediated proton decay and absence of GUT monopoles from product-group structure, a baryogenesis-scale estimate from $\mathbb Z_6$ suppression, proposed edge-sector fingerprints such as a $\mathbb Z_6$-labeled edge-center entropy deficit and an $\SU(3)$-component Casimir-gap pattern, and, on the discrete-horizon branch, a conditional finite-window logarithmic black-hole spectroscopy template. Failure points are stated explicitly in the body of the paper.
+In the current implementation, $P$ is calibrated from the gauge sector and $N_{\mathrm{scr}}$ is inferred from the observed cosmological constant. Gauge couplings and tree-level electroweak masses are calibration-sector consistency checks, while the critical-surface Higgs/top branch is logically independent of that calibration. The charged-lepton, Koide, quark-texture, baryogenesis, dark-sector, string, and black-hole-spectroscopy discussions are retained only as phenomenological continuations or conjectural branches, not as theorem-level outputs of overlap consistency alone. The aim of this compact note is therefore not to claim a complete derivation of all Standard Model and cosmological data from observer-overlap consistency by itself, but to state clearly which reconstruction results are structural, which are scaling-limit conditional, which are calibration-sector, and which remain phenomenological.
 \end{abstract}
 
 \section{Introduction}
@@ -64,35 +64,34 @@ The standard model of particle physics and general relativity are successful eff
 \]
 why there are three colors and three generations, why hypercharges take the observed rational values, why the electroweak and flavor scales are what they are, and why dark-sector phenomenology and the cosmological constant enter in the particular form observed.
 
-This paper presents a single framework that addresses this list in one derivation chain. The framework is Observer-Patch Holography (OPH). Its starting point is an observer-centric organization of physical data: each observer has access only to a patch algebra, neighboring observers must agree on overlaps, and global physical law is recovered from the resulting consistency conditions. The same formal structure that produces schedule-independent overlap consistency then yields Lorentz kinematics, a conditional scaling-limit Einstein branch, gauge reconstruction, charge quantization, and the low-energy architecture of the Standard Model.
+This paper presents a single framework that addresses this list as a conditional reconstruction program. The framework is Observer-Patch Holography (OPH). Its starting point is an observer-centric organization of physical data: each observer has access only to a patch algebra, neighboring observers must agree on overlaps, and global physical law is recovered from the resulting consistency conditions. The same formal structure that produces schedule-independent overlap consistency then feeds a Lorentzian modular branch, a Jacobson-type Einstein branch, compact gauge reconstruction in a bosonic internal-gauge sector, charge quantization, and the low-energy architecture selected by the extended MAR admissibility package.
 
 Two decisions shape the present version.
 
 \begin{enumerate}[leftmargin=2em]
-\item The paper is self-contained.\footnote{Questions about ultimate purpose are deferred until the corresponding physical question has been posed with enough precision to deserve an answer.}
-\item The paper separates exact structural theorems, conditional continuum reductions, calibration-sector outputs, and independent quantitative predictions. This keeps strong claims visible and weak claims identifiable.
+\item The compact note presents the main theorem statements in one place, but some quantitative conventions and implementation details live in repository supplements.\footnote{Questions about ultimate purpose are deferred until the corresponding physical question has been posed with enough precision to deserve an answer.}
+\item The paper separates exact structural theorems, conditional scaling-limit branches, calibration-sector outputs, and phenomenological continuations. This keeps strong claims visible and weak claims identifiable.
 \end{enumerate}
 
-The framework is intended as a candidate fundamental theory in the precise sense relevant for physics: general relativity and the Standard Model appear as effective sectors derived from a smaller axiom set. The paper does not use simulation language, observer continuation stories, or other non-falsifiable additions.
+The framework is intended as a candidate fundamental theory in the precise sense relevant for physics: general relativity and the Standard Model appear as effective sectors derived from a smaller axiom set plus an explicit refinement/scaling-limit package. The paper does not use simulation language, observer continuation stories, or other non-falsifiable additions.
 
 \subsection*{Prioritized achievements}
 
 The results emphasized in this paper are ordered below by a combination of impact and defensibility.
 
 \begin{enumerate}[leftmargin=2em]
-\item A conditional scaling-limit Einstein branch is recovered from observer-overlap modular geometry and constrained entanglement equilibrium.
+\item A conditional Jacobson-type Einstein branch is recovered from observer-overlap modular geometry, generalized entropy stationarity, and an explicit null-modular scaling-limit package.
 \item The exact Standard Model gauge structure
 \[
 \frac{\SU(3)\times\SU(2)\times\U(1)}{\mathbb Z_6}
 \]
-is recovered from compact gauge reconstruction plus the extended MAR admissibility package, rather than postulated.
-\item Hypercharges, three colors, and three generations are fixed by anomaly and admissibility arguments.
-\item The parameter count is reduced to two numerical inputs.
-\item The Higgs sector, top mass, charged-lepton spectrum, and Koide structure follow from additional structural relations beyond the calibration branch.
-\item A program-level dark-sector branch appears from modular anomaly, with an acceleration scale in the observed range.
+is recovered in the bosonic compact-gauge branch once the extended MAR admissibility package is imposed.
+\item Hypercharges, three colors, and three generations are fixed only after anomaly constraints, admissibility, and MAR are imposed on that gauge branch.
+\item The current implementation reduces the continuous input set to two external configuration inputs, $P$ and $N_{\mathrm{scr}}$.
+\item The Higgs/top critical-surface branch is quantitatively independent of the gauge-sector calibration, while the charged-lepton/Koide continuation uses extra phenomenological structure beyond the core theorem package.
 \item The cosmological constant is separated from local vacuum energy and tied to global screen capacity.
-\item String theory appears as an effective reorganization of edge degrees of freedom rather than a starting ontology.
 \item Absence of gauge-mediated proton decay follows from product-group structure.
+\item Dark-sector, baryogenesis, string, and spectroscopy branches are kept visible, but only as program-level or conjectural phenomenology.
 \item Objective physical law is identified with the unique normal form of the overlap-consistency problem.
 \end{enumerate}
 
@@ -111,37 +110,37 @@ Problem & Result & Logical status & Validation tier & Mechanism \\
 \bottomrule
 \endfoot
 Objectivity of law & Unique schedule-independent normal form & theorem & structural theorem & Asynchronous confluence of overlap repair \\
-Lorentz kinematics & $\Conf^+(S^2)\cong\mathrm{SO}^+(3,1)$ & theorem & scaling-limit theorem & Geometric modular flow on caps \\
+Lorentz kinematics & $\Conf^+(S^2)\cong\mathrm{SO}^+(3,1)$ & conditional theorem & scaling-limit theorem & Geometric modular flow on caps \\
 Einstein dynamics & Jacobson-type first-variation relation with tensor upgrade & theorem + corollary & conditional scaling-limit theorem & Entanglement equilibrium and null modular bridge \\
-Gauge structure & $(\SU(3)\times\SU(2)\times\U(1))/\Gamma$, fixed later to $\mathbb Z_6$ & theorem/corollary chain & structural theorem & Refinement-stable edge-sector reconstruction plus extended MAR admissibility \\
+Gauge structure & $(\SU(3)\times\SU(2)\times\U(1))/\Gamma$, fixed later to $\mathbb Z_6$ & theorem/corollary chain & conditional structural theorem & Refinement-stable bosonic edge-sector reconstruction plus extended MAR admissibility \\
 Charge lattice & Exact Standard Model hypercharges & theorem & structural theorem & Anomaly cancellation and Yukawa invariance \\
-Discrete matter content & $N_c=3$, $N_g=3$ & corollary chain & structural theorem & CKM CP capability, total-spectrum anomaly constraint, admissibility \\
-Parameter economy & Two numerical inputs & structural result & structural theorem & Pixel area and screen capacity only \\
+Discrete matter content & $N_c=3$, $N_g=3$ after MAR & corollary chain & structural theorem & CKM CP capability, anomaly constraints, admissibility \\
+Parameter economy & Two external configuration inputs in the current implementation & structural result & structural theorem & Pixel area and screen capacity only \\
 Unification sector & MSSM-like coupling evolution without light superpartners & derived reduction & calibration sector & Edge-sector beta-function shifts \\
 Electroweak scale & $v$, $m_W$, $m_Z$, gauge couplings & derived reduction & calibration sector & Pixel constraint and self-consistent fixed point \\
 Higgs and top & $m_H \approx 126.5$ GeV, $m_t \approx 171.1$ GeV & derived reduction & independent quantitative & Critical surface $\lambda=\beta_\lambda=0$ at $M_U$ \\
-Charged leptons and Koide & $Q=2/3$, $\delta=2/9$, sub-permille lepton masses & derived reduction & independent quantitative & $\mathbb Z_3$ holonomy plus $\mathbb Z_6$ suppression \\
+Charged leptons and Koide & $Q=2/3$, $\delta=2/9$, sub-permille lepton masses & semi-empirical continuation & phenomenological continuation & $\mathbb Z_3$ holonomy plus a $\mathbb Z_6$-motivated suppression ansatz \\
 Cosmological constant from capacity & $\Lambda=3\pi/(G N_{\mathrm{scr}})$ & corollary & derived reduction & Global screen-capacity identification \\
 Neutrino scale from $N_{\mathrm{scr}}$ & capacity-branch neutrino estimate & derived reduction & order-of-magnitude estimate & Global screen capacity \\
 Dark matter phenomenology & MOND-like acceleration scale from modular anomaly & program corollary & program-level phenomenology & Imperfect Markovity in collar modular flow \\
 Baryogenesis scale & $\varepsilon^{12}=6^{-12}$ in the observed range & program corollary & program-level phenomenology & $\mathbb Z_6$ suppression and electroweak topology \\
-Edge-sector fingerprints & $\mathbb Z_6$ center-label entropy deficit and $\SU(3)$ Casimir-gap pattern & program corollary & program-level phenomenology & Quotient label structure and heat-kernel spectrum \\
+Edge-sector fingerprints & conditional $\mathbb Z_6$ center-label entropy deficit and exact $\SU(3)$ Casimir ratios & program corollary & program-level phenomenology & Quotient-label ansatz and heat-kernel spectrum \\
 Black-hole spectroscopy & Finite-window logarithmic horizon template & conditional phenomenology & program-level phenomenology & Discrete horizon area counting \\
 String-theory sector & 2D Yang-Mills and worldsheet expansion from edge heat kernel & effective-description corollary & program-level phenomenology & Open-edge weights and large-$N_{\mathrm{edge}}$ reorganization \\
 No gauge-mediated proton decay and no GUT monopoles & $\tau_p^{(\mathrm{gauge})}=\infty$ and no simple-group breaking sector & corollary & structural theorem & Product gauge structure, no $X/Y$ bosons, no simple-group breaking \\
 \end{longtable}
 \endgroup
 
-The same axiom system is used to obtain the overlap fixed point, the gravity chain, the gauge reconstruction, and the quantitative spectrum. Multiple effective sectors are recovered from one observer-overlap principle.
+The same OPH framework is used to obtain the overlap fixed point, the gravity chain, the gauge reconstruction, and the quantitative spectrum, but not all outputs have the same logical status. The compact note therefore keeps structural theorems, scaling-limit branches, calibration checks, and phenomenological continuations distinct.
 
-\section{Five Axioms, Two Inputs, and Technical Premises}
+\section{Five Axioms, Two External Inputs, and Technical Premises}
 
-The formulation uses exactly two numerical inputs:
+The formulation uses exactly two external configuration inputs:
 \begin{align}
 P &\equiv a_{\mathrm{cell}}/\ell_P^2 = 1.63094,\\
 N_{\mathrm{scr}} &\equiv \log \dim \mathcal H_{\mathrm{tot}} \sim 10^{122}.
 \end{align}
-The first sets the particle-physics scale. The second enters the cosmological-capacity branch and a separate order-of-magnitude neutrino estimate.
+In the current implementation, $P$ is calibrated from the gauge sector and $N_{\mathrm{scr}}$ is inferred from the observed cosmological constant. The first sets the particle-physics scale. The second enters the cosmological-capacity branch and a separate order-of-magnitude neutrino estimate.
 
 \begin{axiom}[Screen Net]\label{ax:screen}
 Physical data is organized on a horizon screen $S^2$ carrying a net of local algebras
@@ -167,12 +166,12 @@ For overlapping patches $P_1\cap P_2\neq\varnothing$, the local states induced o
 At the UV scale the realized state maximizes entropy subject to a finite family of gauge-invariant local constraints. The resulting family of states is stable under coarse-graining, so symmetry-allowed relevant operators are not held at zero by unexplained fine tuning.
 \end{axiom}
 
-\begin{axiom}[Generalized Entropy and Recoverability]\label{ax:entropy}
-A generalized entropy exists on caps,
+\begin{axiom}[Recoverable Generalized Entropy]\label{ax:entropy}
+A generalized entropy functional exists on caps,
 \[
-S_{\mathrm{gen}}(C)=\frac{A(\partial C)}{4G}+S_{\mathrm{bulk}}(C),
+S_{\mathrm{gen}}(C)=S_{\mathrm{bulk}}(C)+\langle L_C\rangle,
 \]
-obeys quantum focusing on null generators, and collar tripartitions have small conditional mutual information with controlled recovery maps \cite{LiebRuskai,Petz86,Petz88,FawziRenner}.
+where $L_C$ is a positive edge-center entropy functional. In the semiclassical scaling branch, its leading coarse-grained contribution is identified with $A(\partial C)/(4G)$. The functional obeys quantum focusing on null generators, and collar tripartitions have small conditional mutual information with controlled recovery maps \cite{LiebRuskai,Petz86,Petz88,FawziRenner}.
 \end{axiom}
 
 \begin{axiom}[Minimal Admissible Realization]\label{ax:mar}
@@ -180,7 +179,7 @@ Among realized sector packages $\mathfrak S$ consisting of the connected Lie gau
 \[
 C(\mathfrak S)=\bigl(\chi_{\mathrm{cpl}},\,N_{\mathrm{nonab}},\,N_c,\,N_g\bigr).
 \]
-\(\mathfrak S\) is the sector package on which MAR acts; it is not the bare tensor category alone. \(\chi_{\mathrm{cpl}}\) is the coupled carrier dimension: the smallest unitary carrier containing a common irreducible block on which the admissible pseudoreal and complex nonabelian charge types both act nontrivially. This is stronger than the abstract minimal faithful representation dimension.
+\(\mathfrak S\) is the sector package on which MAR acts; it is not the bare tensor category alone. MAR is therefore an explicit structural-economy axiom on already-admissible realized low-energy branches, not a theorem derived from the preceding axioms. \(\chi_{\mathrm{cpl}}\) is the coupled carrier dimension: the smallest unitary carrier containing a common irreducible block on which the admissible pseudoreal and complex nonabelian charge types both act nontrivially. This is stronger than the abstract minimal faithful representation dimension.
 \end{axiom}
 
 \begin{assumption}[Technical Premises]\label{ass:technical}
@@ -201,7 +200,7 @@ The continuum reductions additionally use:
 \end{assumption}
 
 \begin{remark}
-The five axioms define the physical content of the formulation. Assumption~\ref{ass:technical} collects the regularity conditions needed to express the continuum limit precisely.
+The five axioms define the physical content of the formulation. Assumption~\ref{ass:technical} collects the regularity conditions needed to express the continuum limit precisely. In particular, the Lorentz/null-modular/Einstein and compact-gauge statements below are scaling-limit claims, not fixed-cutoff matrix-algebra identities. These premises are not derived in the compact note; they are target regularity properties of the intended Lorentzian EFT phase and candidate UV completions.
 \end{remark}
 
 \subsection*{Dependency Ledger}
@@ -213,20 +212,20 @@ The five axioms define the physical content of the formulation. Assumption~\ref{
 Claim & Status & Additional ingredients beyond the five axioms \\
 \midrule
 Unique schedule-independent normal form & theorem & finite patch net, termination, local confluence \\
-Lorentz group on the screen net & scaling-limit theorem & cap isotropy / geometric modular phase together with Euclidean modular regularity in Assumption~\ref{ass:technical} \\
-Einstein equation & conditional scaling-limit theorem & admissible first variations, exact-or-controlled null-strip Markov premise, half-sided modular inclusion premise, localized generalized entropy, null-to-tensor upgrade \\
-Compact gauge reconstruction & scaling-limit theorem & refinement-stable bosonic symmetric sector colimit, transportability, finite-fiber premises, symmetric braiding, and bosonic fiber functor in Assumption~\ref{ass:technical} \\
-Exact Standard Model quotient & theorem / corollary chain & MAR selector, connected abelian admissibility premise, anomaly analysis, hypercharge lattice, global transportability, and vanishing obstruction \\
-Two-input parameter economy & structural result & no extra ingredients \\
+Lorentz group on the screen net & conditional scaling-limit theorem & cap isotropy / geometric modular phase together with Euclidean modular regularity in Assumption~\ref{ass:technical} \\
+Einstein equation & conditional scaling-limit theorem & admissible first variations, exact-or-controlled null-strip Markov premise, half-sided modular inclusion premise or its scaling-limit blow-up corollary, localized generalized entropy, scaling-limit null-stress identification, null-to-tensor upgrade \\
+Compact gauge reconstruction & conditional scaling-limit theorem & refinement-stable bosonic symmetric sector colimit, transportability, finite-fiber premises, symmetric braiding, and bosonic fiber functor in Assumption~\ref{ass:technical} \\
+Exact Standard Model quotient & theorem / corollary chain & MAR selector, connected abelian admissibility premise, anomaly analysis, hypercharge lattice, global transportability, and vanishing obstruction on the realized branch \\
+Two-input parameter economy & structural result & no extra ingredients, but the inputs are external in the current implementation \\
 Gauge and electroweak closure in one-input mode & calibration sector & pixel constraint and edge heat-kernel closure \\
-Higgs, top, charged leptons, Koide branch & independent quantitative & critical-surface boundary condition and discrete holonomy data \\
+Higgs/top branch and flavor continuations & mixed quantitative / phenomenological & critical-surface boundary condition for Higgs/top; discrete holonomy data and a $\mathbb Z_6$-motivated ansatz for the flavor continuation \\
 Dark-sector, baryogenesis, and spectroscopy branches & program / corollary & sector-specific phenomenological continuation of the core structure \\
 \bottomrule
 \end{tabular}
 \endgroup
 
 \begin{theorem}[Master reconstruction schema]\label{thm:master}
-Assume Axioms~\ref{ax:screen}--\ref{ax:entropy}, Axiom~\ref{ax:mar}, Assumption~\ref{ass:technical}, and the hypotheses of Theorems~\ref{thm:confluence}, \ref{thm:bw}, \ref{thm:einstein}, \ref{thm:compactgauge}, \ref{thm:sm}, and \ref{thm:hypercharge}, together with Corollaries~\ref{cor:ng}, \ref{cor:nc}, and Proposition~\ref{prop:z6}. Then, in the controlled refinement/scaling regime singled out by Assumption~\ref{ass:technical}:
+Assume Axioms~\ref{ax:screen}--\ref{ax:entropy}, Axiom~\ref{ax:mar}, Assumption~\ref{ass:technical}, and the hypotheses of Theorems~\ref{thm:confluence}, \ref{thm:bw}, \ref{thm:stress}, \ref{thm:einstein}, \ref{thm:compactgauge}, \ref{thm:sm}, and \ref{thm:hypercharge}, together with Corollaries~\ref{cor:ng}, \ref{cor:nc}, and Proposition~\ref{prop:z6}. Then, in the controlled refinement/scaling regime singled out by Assumption~\ref{ass:technical}:
 \begin{enumerate}[label=(\roman*),leftmargin=2em]
 \item overlap repair admits a unique schedule-independent normal form;
 \item cap modular flow is geometric and yields the connected Lorentz group
@@ -266,13 +265,13 @@ Items (i)--(iii) are collected from Theorem~\ref{thm:confluence}, Corollary~\ref
 \toprule
 Structure & Common treatment & OPH treatment \\
 \midrule
-Lorentz kinematics & background symmetry or starting axiom & derived from geometric modular flow on screen caps \\
-Einstein dynamics & fundamental field equation & derived as a first-variation relation with tensor upgrade from generalized entropy, null modular data, and entanglement equilibrium \\
-Gauge group & model input & compact group reconstructed from edge sectors; exact SM quotient selected by admissibility \\
+Lorentz kinematics & background symmetry or starting axiom & conditional scaling-limit branch from geometric modular flow on screen caps \\
+Einstein dynamics & fundamental field equation & conditional first-variation relation with tensor upgrade from generalized entropy, null modular data, and entanglement equilibrium \\
+Gauge group & model input & conditional compact group reconstruction from edge sectors; exact SM quotient selected by admissibility \\
 Hypercharge lattice & matter-assignment input & solved from anomaly cancellation and Yukawa invariance \\
 Color and generation count & empirical input & fixed by anomaly, CP capability, asymptotic freedom, and minimality \\
-Flavor hierarchy unit & model-dependent small parameter & fixed by the $\mathbb Z_6$ quotient as $\varepsilon=1/6$ \\
-Koide phase & phenomenological fit & derived from previously fixed discrete data as $\delta=2/9$ \\
+Flavor hierarchy unit & model-dependent small parameter & phenomenological ansatz $\varepsilon=1/6$ motivated by a uniform $\mathbb Z_6$ center-label ensemble \\
+Koide phase & phenomenological fit & continuation tied to the previously fixed discrete data as $\delta=2/9$ \\
 Cosmological constant & local vacuum-energy puzzle & global screen-capacity term \\
 \bottomrule
 \end{tabular}
@@ -395,7 +394,38 @@ The label $\alpha$ is classical center data carried by the cut.
 This is the standard structure theorem for exact quantum Markov states on tripartite systems \cite{HJPW}. In the present framework it is applied to collar neighborhoods produced by edge-center completion and recoverability.
 \end{proof}
 
-\begin{proposition}[Markov-collar splice theorem]\label{prop:splice}
+\begin{proposition}[Approximate collar recovery]\label{prop:approxrecover}
+Let $A$-$B$-$D$ be a collar tripartition satisfying
+\[
+I(A:D|B)_\rho\le \varepsilon,
+\]
+and let $\mathcal R_{B\to BD}$ be a recovery map such that
+\[
+F\!\left(\rho_{ABD},(\mathrm{id}_A\otimes \mathcal R_{B\to BD})(\rho_{AB})\right)\ge 2^{-\varepsilon/2}.
+\]
+Define the recovered state
+\[
+\rho^{\mathrm{rec}}_{ABD}:=(\mathrm{id}_A\otimes \mathcal R_{B\to BD})(\rho_{AB}).
+\]
+Then every bounded observable $X$ supported on $A\cup B$ obeys
+\[
+\left|\mathrm{Tr}\!\left[X(\rho_{ABD}-\rho^{\mathrm{rec}}_{ABD})\right]\right|
+\le
+\|X\|_\infty\,\|\rho_{ABD}-\rho^{\mathrm{rec}}_{ABD}\|_1
+\le
+2\|X\|_\infty \sqrt{1-2^{-\varepsilon}}.
+\]
+\end{proposition}
+
+\begin{proof}
+The first inequality is the trace-norm bound for bounded observables. The second is the Fuchs--van de Graaf estimate applied to the fidelity lower bound supplied by recoverability \cite{FawziRenner}. Thus small conditional mutual information controls deviations from the exact Markov splice identities by $O(\varepsilon^{1/2})$.
+\end{proof}
+
+\begin{remark}
+Theorems~\ref{thm:markovcollar} and Corollary~\ref{cor:n1} below use exact Markovity or an explicitly stated idealized recoverability limit. Axiom~\ref{ax:entropy} itself supplies only approximate recoverability. The compact note therefore separates exact identities from their controlled $O(\varepsilon^{1/2})$ approximations rather than silently upgrading one regime into the other.
+\end{remark}
+
+\begin{proposition}[Exact Markov-collar splice theorem]\label{prop:splice}
 Under Theorem~\ref{thm:markovcollar}, let $\sigma^{(\alpha)}_{b_R^\alpha D'}$ be any normalized family of states compatible with the same right-boundary sectors, and define
 \[
 \rho'_{AB D'}
@@ -485,7 +515,7 @@ Proposition~\ref{prop:splice} is the algebraic version of interior invariance un
 
 The continuum interpretation replaces the discrete patch net by cap algebras on $S^2$. Recoverability localizes the modular defect to an arbitrarily thin collar around the entangling surface.
 
-\begin{theorem}[Geometric Modular Flow on Caps]\label{thm:bw}
+\begin{theorem}[Conditional geometric modular flow on caps]\label{thm:bw}
 Assume Axioms~\ref{ax:screen}--\ref{ax:entropy} and Assumption~\ref{ass:technical}, including cap isotropy / geometric modular action around the entangling circle and Euclidean regularity. Then in the refinement/scaling limit of the cap net, for each cap $C\subset S^2$, the modular flow is the unique cap-preserving conformal dilation with KMS normalization $2\pi$:
 \[
 K_C=2\pi B_C.
@@ -506,7 +536,7 @@ The induced local kinematic group is the connected Lorentz group.
 
 \subsection{The null modular bridge}
 
-The gravity chain requires a bridge from modular data to a local stress tensor. The central claim is that this bridge follows from the same observer-overlap axioms rather than being imported as an independent assumption.
+The gravity chain requires a bridge from modular data to a local stress tensor. In the compact note this bridge is pursued within the OPH framework, but the final null-stress identification is still a scaling-limit ingredient tied to Assumption~\ref{ass:technical}; it is not presented as a fixed-cutoff matrix-algebra theorem.
 
 For a small entangling circle $\Sigma=\partial C$, let $\mathcal N$ be the null surface generated by orthogonal null geodesics. Label generators by angle $\Omega$ and affine parameter $v$.
 
@@ -516,9 +546,9 @@ The derivation has five steps:
 \item modular additivity on consecutive null intervals;
 \item weak continuity and finite variation of interval modular Hamiltonians;
 \item emergence of a positive null translation generator from half-sided modular inclusion;
-\item identification of the modular Hamiltonian with a stress-tensor charge.
+\item scaling-limit identification of the renormalized modular Hamiltonian with a null stress-tensor charge.
 \end{enumerate}
-Only the last step uses continuum language. The previous steps refer directly to the overlap algebra and its regulated collar structure.
+Only the last step uses continuum stress-tensor language. The previous steps refer directly to the overlap algebra and its regulated collar structure.
 
 \begin{proposition}[Null Edge-Center Completion]\label{prop:nullec}
 Under the regulator premises in Assumption~\ref{ass:technical}, a regulated null buffer strip has the same central block decomposition as an ordinary spatial collar. If the reference/MaxEnt state on consecutive strips satisfies exact Markovity
@@ -566,23 +596,57 @@ on bounded intervals. In particular they vary continuously with interval endpoin
 Local MaxEnt gives a quasi-local Gibbs form for the regulated state. Quasi-locality together with finite-velocity propagation implies that moving an interval endpoint by $\Delta v$ changes expectation values of local observables by $O(\Delta v)$ after smearing, while Assumption~\ref{ass:technical}\textbf{T3} supplies the required endpoint-Lipschitz control. The resulting matrix elements are therefore Lipschitz on bounded intervals and in particular have finite variation.
 \end{proof}
 
-\begin{lemma}[Density on Null Intervals]\label{lem:density}
-Under Corollary~\ref{cor:n1} and Proposition~\ref{prop:n3}, for fixed vectors $\psi,\phi$ the interval functional
+\begin{definition}[Renormalized null modular functional]
+For a null interval $I$, write
 \[
-\mu_{\psi,\phi}(I):=\langle\psi,K[I]\phi\rangle
+\widetilde K[I]:=K[I]-K_\partial(I)
 \]
-is absolutely continuous with respect to interval length on bounded intervals. Consequently there exists an operator-valued distribution $t(v,\Omega)$ such that
+for the full modular Hamiltonian with the central endpoint-label term removed.
+\end{definition}
+
+\begin{theorem}[Half-line endpoint-differentiation formula]\label{lem:density}
+Fix a null generator $\Omega$ and define
 \[
-K[I]=\int_I t(v,\Omega)\,dv + \text{(central term)}.
+\widetilde K_a(\Omega):=\widetilde K[(a,\infty),\Omega].
 \]
-\end{lemma}
+Assume that for fixed vectors $\psi,\phi$ in a common dense domain the function
+\[
+f_{\psi,\phi}(a):=\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+\]
+is twice weakly differentiable in $a$ with
+\[
+\lim_{a\to+\infty}f_{\psi,\phi}(a)=0,
+\qquad
+\lim_{a\to+\infty}\partial_a f_{\psi,\phi}(a)=0.
+\]
+Then there exists a sesquilinear-form density $p(v,\Omega)$ such that
+\[
+\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+=
+2\pi\int_a^\infty (v-a)\,\langle\psi,p(v,\Omega)\phi\rangle\,dv,
+\]
+and distributionally
+\[
+\langle\psi,p(a,\Omega)\phi\rangle
+=
+\frac{1}{2\pi}\,\partial_a^2 f_{\psi,\phi}(a).
+\]
+\end{theorem}
 
 \begin{proof}
-For fixed vectors $\psi,\phi$, Corollary~\ref{cor:n1} gives additivity, so $I\mapsto \mu_{\psi,\phi}(I)$ defines a finite signed measure on bounded intervals. Proposition~\ref{prop:n3} gives
+Define the matrix elements of $p$ distributionally by
 \[
-\bigl|\mu_{\psi,\phi}([a,b])\bigr|\le C_{\psi,\phi}\,\lvert b-a\rvert,
+\langle\psi,p(a,\Omega)\phi\rangle
+:=
+\frac{1}{2\pi}\,\partial_a^2 f_{\psi,\phi}(a).
 \]
-so the measure is absolutely continuous with respect to Lebesgue measure. The Radon-Nikodym theorem therefore yields a density, and Riesz representation reconstructs the operator-valued distribution.
+Integrating twice from $a$ to $+\infty$ and using the assumed vanishing of $f_{\psi,\phi}$ and its first derivative at infinity yields
+\[
+f_{\psi,\phi}(a)
+=
+2\pi\int_a^\infty (v-a)\,\langle\psi,p(v,\Omega)\phi\rangle\,dv.
+\]
+This is the desired half-line formula. Unlike a sigma-additive bounded-interval measure statement, it is compatible with later interval-dependent kernels on finite null intervals.
 \end{proof}
 
 \begin{corollary}[Half-Sided Modular Inclusion]\label{cor:n2}
@@ -614,16 +678,36 @@ Under the standard half-sided modular inclusion of Corollary~\ref{cor:n2}, there
 This is the Borchers-Wiesbrock consequence of half-sided modular inclusion. The modular group of the larger algebra acts by endomorphisms on the smaller one for one sign of modular time, and that structure produces a positive translation generator $P$ whose affine scaling law is the one written above.
 \end{proof}
 
-\begin{theorem}[Stress-Tensor Charge from Modular Data]\label{thm:stress}
-Under Axioms~\ref{ax:screen}--\ref{ax:entropy} and Assumption~\ref{ass:technical}, in the same scaling regime, the modular Hamiltonian on a null interval has the geometric form
+\begin{theorem}[Conditional null-stress identification from modular data]\label{thm:stress}
+Under Axioms~\ref{ax:screen}--\ref{ax:entropy}, Assumption~\ref{ass:technical}, the hypotheses of Theorem~\ref{lem:density}, and the scaling-limit null-stress identification premise of the relativistic EFT branch, the renormalized modular Hamiltonian on a null half-line or bounded interval takes the geometric form
 \[
-K[I,\Omega]=2\pi\int_I v\,T_{kk}(v,\Omega)\,dv + K_\partial(I,\Omega)+O(\varepsilon),
+\widetilde K[(a,\infty),\Omega]
+=
+2\pi\int_a^\infty (v-a)\,T_{kk}(v,\Omega)\,dv
++E_{(a,\infty),\Omega}^{(\varepsilon)},
+\]
+with
+\[
+\bigl|\langle\psi,E_{I,\Omega}^{(\varepsilon)}\phi\rangle\bigr|
+\le
+C_{I,\Omega,\psi,\phi}\,\varepsilon^{1/2}
+\]
+for all domain vectors $\psi,\phi$, where $\varepsilon$ is the recoverability/scaling-limit control parameter. If bounded null intervals inherit geometric modular action from the interval-preserving projective flow, then for each bounded interval $I$ one likewise has
+\[
+\widetilde K[I,\Omega]
+=
+2\pi\int_I g_I(v)\,T_{kk}(v,\Omega)\,dv
++E_{I,\Omega}^{(\varepsilon)},
+\]
+where $g_I(v)$ is affine-covariant and vanishes at finite interval endpoints. The full modular Hamiltonian is then
+\[
+K[I,\Omega]=\widetilde K[I,\Omega]+K_\partial(I,\Omega),
 \]
 with $K_\partial$ central/boundary-supported. Knowledge of $T_{kk}$ for all null directions reconstructs a symmetric tensor $T_{ab}$ up to the addition of a metric term $\phi g_{ab}$.
 \end{theorem}
 
 \begin{proof}[Proof sketch]
-Corollary~\ref{cor:n1} supplies modular additivity on consecutive intervals, Proposition~\ref{prop:n3} supplies continuity, and Lemma~\ref{lem:density} therefore upgrades interval modular Hamiltonians to an operator-valued density. Corollary~\ref{cor:n2} and Lemma~\ref{lem:translation} identify this density with the positive generator of null translations. The only covariant local object with the correct affine-scaling behavior is the null component of a stress tensor, together with a central boundary contribution. The ambiguity
+Theorem~\ref{lem:density} gives the half-line endpoint-differentiation formula for the renormalized modular family. Corollary~\ref{cor:n2} and Lemma~\ref{lem:translation} identify the resulting half-line density with the positive generator of null translations. In the relativistic scaling-limit branch, one then uses the standard null modular-Hamiltonian identification for local stress-tensor charges, while the recoverability/scaling-limit remainder is absorbed into the error operator $E_{I,\Omega}^{(\varepsilon)}$. If the bounded-interval modular action is geometric, the same half-line density transports to finite intervals with an interval-dependent kernel $g_I(v)$ rather than an interval-independent additive measure density. The ambiguity
 \[
 T_{ab}\to T_{ab}+\phi g_{ab}
 \]
@@ -653,7 +737,21 @@ Y_{ab}k^ak^b
 =
 Y_{00}+2\hat n^iY_{0i}+\hat n^i\hat n^jY_{ij}.
 \]
-This polynomial vanishes for all $\hat n\in S^2$, so every coefficient vanishes. Hence $Y_{ab}=0$.
+Oddness under $\hat n\mapsto-\hat n$ forces $Y_{0i}=0$. Averaging the remaining relation over $S^2$ gives
+\[
+Y_{00}+\frac13\delta^{ij}Y_{ij}=0.
+\]
+Tracelessness of $Y_{ab}$ gives
+\[
+-Y_{00}+\delta^{ij}Y_{ij}=0,
+\]
+so both $Y_{00}$ and the spatial trace $\delta^{ij}Y_{ij}$ vanish. The remaining condition is therefore
+\[
+\hat n^i\hat n^j Y_{ij}^{\mathrm{TF}}=0
+\qquad
+\text{for all }\hat n\in S^2,
+\]
+where $Y_{ij}^{\mathrm{TF}}$ is the traceless spatial part. The $\ell=2$ spherical harmonics are linearly independent, so this implies $Y_{ij}^{\mathrm{TF}}=0$. Hence $Y_{ab}=0$ and therefore $X_{ab}=\phi g_{ab}$.
 \end{proof}
 
 \begin{remark}
@@ -692,8 +790,8 @@ For admissible variations preserving cap labels, cap size/scale, and relevant co
 Within each fixed edge sector, the realized state maximizes entropy subject to the local constraints. The first variation therefore vanishes once the cap size, conserved charges, and sector labels are fixed.
 \end{proof}
 
-\begin{theorem}[First-Variation Einstein Relation from Entanglement Equilibrium]\label{thm:einstein}
-Assume Axioms~\ref{ax:screen}--\ref{ax:entropy} and Assumption~\ref{ass:technical}. Then, for every sufficiently small cap $C$ and every admissible first variation $\delta$ about a reference state $\omega$ in the locally Lorentzian scaling regime,
+\begin{theorem}[Conditional Jacobson-type Einstein relation from entanglement equilibrium]\label{thm:einstein}
+Assume Axioms~\ref{ax:screen}--\ref{ax:entropy}, Assumption~\ref{ass:technical}, and the hypotheses of Theorem~\ref{thm:stress}. Then, for every sufficiently small cap $C$ and every admissible first variation $\delta$ about a reference state $\omega$ in the locally Lorentzian scaling regime,
 \[
 \delta S_{\mathrm{gen}}(C)=0
 \]
@@ -705,9 +803,9 @@ at the cap center in the diamond rest frame.
 \end{theorem}
 
 \begin{proof}[Proof sketch]
-The cap first law gives $\delta S_C=\delta\langle K_C\rangle$, and Theorem~\ref{thm:stress} identifies the bulk part of the background-subtracted variation with a null stress-tensor charge. Proposition~\ref{prop:equilibrium} sets the total admissible first variation of the generalized entropy to zero at fixed cap, fixed size/volume, and fixed conserved charges, while shape deformations are kept separate as $\delta_{\mathrm{shape}}$ or $\partial_\lambda$. The geometric area identity at fixed volume gives
+The cap first law gives $\delta S_C=\delta\langle K_C\rangle$, and Theorem~\ref{thm:stress} identifies the bulk part of the background-subtracted variation with a null stress-tensor charge. Proposition~\ref{prop:equilibrium} sets the total admissible first variation of the generalized entropy to zero at fixed cap, fixed size/volume, and fixed conserved charges, while shape deformations are kept separate as $\delta_{\mathrm{shape}}$ or $\partial_\lambda$. Since the reference state is maximally symmetric, $G_{00}+\Lambda_{\mathrm{ref}} g_{00}=0$ in the background, so the fixed-volume small-ball area identity already enters at first order in the perturbation:
 \[
-\delta A|_{V,\lambda}=-\frac{\Omega_{d-2}\ell^d}{d^2-1}(G_{00}+\lambda g_{00})
+\delta A|_{V,\Lambda_{\mathrm{ref}}}=-\frac{\Omega_{d-2}\ell^d}{d^2-1}(G_{00}+\Lambda_{\mathrm{ref}} g_{00})
 \]
 in the diamond rest frame. Equating the geometric and bulk contributions therefore yields the stated rest-frame first-variation relation.
 \end{proof}
@@ -760,7 +858,7 @@ At any fixed UV cutoff, edge-center completion equips collars with finitely many
 \]
 over regulator refinements $r$, retaining only transportable sectors and intertwiners that persist under refinement. This is the object on which Tannaka/Doplicher-Roberts reconstruction is applied.
 
-\begin{theorem}[Compact Gauge Reconstruction]\label{thm:compactgauge}
+\begin{theorem}[Conditional compact gauge reconstruction in the bosonic branch]\label{thm:compactgauge}
 Assume Axioms~\ref{ax:screen}--\ref{ax:entropy}, the relevant parts of Assumption~\ref{ass:technical}, and that the refinement-stable edge-sector category $\mathsf{Sect}_\infty$ in the EFT regime is a rigid symmetric $C^*$-tensor category with a faithful bosonic fiber functor to finite-dimensional Hilbert spaces. Then
 \[
 \mathsf{Sect}_\infty\simeq \mathrm{Rep}(G)
@@ -772,7 +870,7 @@ for a compact group $G$ uniquely determined up to isomorphism.
 Each fixed-cutoff category has only finitely many simple blocks, but the refinement-stable colimit $\mathsf{Sect}_\infty$ can have infinitely many simple objects while still carrying objectwise finite-dimensional fibers. In the bosonic EFT branch, symmetry and rigidity place the category in the Doplicher-Roberts/Tannakian reconstruction class, and the faithful bosonic fiber functor identifies it with $\mathrm{Rep}(G)$ for a compact group $G$ \cite{DR89,DR90}.
 \end{proof}
 
-If a fermionic sign object is present, the correct reconstruction statement is super-Tannakian rather than purely Tannakian. The compact note works in the bosonic internal-gauge branch.
+If a fermionic sign object is present, the correct reconstruction statement is super-Tannakian rather than purely Tannakian. The compact note does not prove that fermionic/chiral extension; it works only in the bosonic internal-gauge branch.
 
 \subsection{Minimal admissibility and the Standard Model quotient}
 
@@ -809,7 +907,13 @@ V=\mathbb C^3\otimes \mathbb C^2,
 \end{lemma}
 
 \begin{proof}
-The minimal weak-type role in the admissible connected Lie class is the doublet of $\SU(2)$. The minimal intrinsically complex color-type role in the same class is the triplet of $\SU(3)$. By definition of $\chi_{\mathrm{cpl}}$, these two charge roles must occur on a common nonabelian block rather than on disconnected direct-sum summands. The tensor-product carrier $\mathbb C^3\otimes\mathbb C^2$ is therefore the minimal coupled carrier. The block-diagonal representation $\mathbb C^3\oplus \mathbb C^2$ of $S(U(3)\times U(2))$ is faithful of dimension $5$, but it is not coupled and hence is not the MAR minimizer. Connected non-semisimple counterexamples of $U(2)$ type are excluded by the explicit color-type criterion rather than being silently ignored.
+Any nontrivial pseudoreal unitary representation has dimension at least $2$, and the minimal weak-type role is realized by the doublet of $\SU(2)$. Any nontrivial intrinsically complex nonabelian unitary representation has dimension at least $3$: dimension $1$ would be abelian. For an irreducible $2$-dimensional unitary representation of a connected compact group, the connected derived subgroup of its image is a compact connected subgroup of $\SU(2)$, hence either trivial, a torus, or all of $\SU(2)$. In the nonabelian case it is therefore conjugate to $\SU(2)$ itself, so the nonabelian action is the pseudoreal $\SU(2)$ doublet. Abelian twisting does not change that nonabelian pseudoreal role and, by the explicit color-type criterion above, does not count as an intrinsically complex color-type representation. Therefore no irreducible $2$-dimensional unitary representation can realize the required color-type role. The fundamental triplet of $\SU(3)$ realizes this lower bound.
+
+By definition of $\chi_{\mathrm{cpl}}$, the weak-type and color-type roles must act nontrivially on one common irreducible nonabelian block rather than on disconnected direct-sum summands. Commuting irreducible actions on such a common block therefore require dimension at least the product of the minimal weak and color dimensions:
+\[
+\chi_{\mathrm{cpl}}\ge 2\cdot 3=6.
+\]
+Equality is achieved by the tensor-product carrier $\mathbb C^3\otimes\mathbb C^2$. The block-diagonal representation $\mathbb C^3\oplus \mathbb C^2$ of $S(U(3)\times U(2))$ is faithful of dimension $5$, but it is not coupled and hence is not the MAR minimizer. Connected non-semisimple counterexamples of $U(2)$ type are excluded by the explicit color-type criterion rather than being silently ignored.
 \end{proof}
 
 \begin{remark}\label{rem:connectedlie}
@@ -827,7 +931,7 @@ The $\SU(3)$ action is irreducible on the first tensor factor and trivial on the
 \end{proof}
 
 \begin{theorem}[Product Gauge Structure up to Finite Quotient]\label{thm:sm}
-Assume Axiom~\ref{ax:mar}, vanishing obstruction $[z]=0$, the hypotheses of Theorem~\ref{thm:compactgauge}, and the weak-type / color-type MAR premises above. Then the realized connected gauge structure has the form
+Assume Axiom~\ref{ax:mar}, vanishing obstruction $[z]=0$ on the realized low-energy branch, the hypotheses of Theorem~\ref{thm:compactgauge}, the weak-type / color-type MAR premises above, and that the realized connected gauge image acts faithfully on the minimal coupled carrier. Then the realized connected gauge structure has the form
 \[
 G_{\mathrm{phys}}=
 \frac{\SU(3)\times\SU(2)\times\U(1)}{\Gamma}
@@ -836,7 +940,7 @@ for some finite central subgroup $\Gamma$.
 \end{theorem}
 
 \begin{proof}
-Theorem~\ref{thm:compactgauge} yields some compact group $G$. Lemma~\ref{lem:mincontent} identifies the minimal admissible sector content, and Lemma~\ref{lem:carrier} fixes the minimal coupled carrier. The tensor-product structure of that carrier implies commuting color and weak actions, hence product-group structure up to finite quotient. Axiom~\ref{ax:mar} supplies the existence of one connected abelian charge factor acting nontrivially on the coupled carrier, and Lemma~\ref{lem:commutant} shows that any such connected abelian factor is necessarily a single $\U(1)$. The remaining ambiguity is therefore a finite central quotient $\Gamma$.
+Theorem~\ref{thm:compactgauge} yields some compact group $G$. Lemma~\ref{lem:mincontent} identifies the minimal admissible sector content, and Lemma~\ref{lem:carrier} fixes the minimal coupled carrier. The tensor-product structure of that carrier implies commuting color and weak actions, hence product-group structure up to finite quotient. Axiom~\ref{ax:mar} supplies the existence of one connected abelian charge factor acting nontrivially on the coupled carrier, and Lemma~\ref{lem:commutant} shows that any such connected abelian factor is necessarily a single $\U(1)$. Faithfulness rules out an invisible extra torus. The remaining ambiguity is therefore a finite central quotient $\Gamma$.
 \end{proof}
 
 \begin{theorem}[Exact Rational Hypercharges]\label{thm:hypercharge}
@@ -886,14 +990,19 @@ Solving the first anomaly gives
 \[
 Y_L=-N_cY_Q.
 \]
-Substituting the Yukawa relations into the mixed gravitational anomaly then yields
+Substituting the Yukawa relations and $Y_L=-N_cY_Q$ into the mixed gravitational anomaly then yields
 \[
 Y_H=N_cY_Q,\qquad
 Y_u=-(N_c+1)Y_Q,\qquad
 Y_d=(N_c-1)Y_Q,\qquad
 Y_e=2N_cY_Q.
 \]
-With these relations in place, the $\SU(N_c)^2\U(1)$ and $\U(1)^3$ anomalies cancel identically. The normalization of $Y_Q$ is fixed by the electric charge operator $Q=T_3+Y$ together with the neutrality of the neutrino.
+With these relations in place, the $\SU(N_c)^2\U(1)$ and $\U(1)^3$ anomalies cancel identically. The normalization of $Y_Q$ is fixed by the electric charge operator $Q=T_3+Y$ together with $Q(\nu_L)=0$, which implies
+\[
+Y_L=-\frac12=-N_cY_Q,
+\qquad\text{hence}\qquad
+Y_Q=\frac{1}{2N_c}.
+\]
 \end{proof}
 
 \begin{corollary}[Three Generations]\label{cor:ng}
@@ -908,9 +1017,17 @@ Intrinsic CKM CP violation requires
 \[
 \frac{(N_g-1)(N_g-2)}{2}>0,
 \]
-hence $N_g\ge 3$. One-loop asymptotic freedom of the weak sector implies
+hence $N_g\ge 3$. For one Higgs doublet, the one-loop weak-sector coefficient is
 \[
-N_g(N_c+1)<22.
+b_2=\frac{11}{3}C_A-\frac{2}{3}\sum_f T(R_f)-\frac{1}{3}\sum_s T(R_s)
+=
+\frac{22}{3}-\frac{N_g(N_c+1)}{3}-\frac16
+=
+\frac{43}{6}-\frac{N_g(N_c+1)}{3}.
+\]
+Asymptotic freedom therefore implies
+\[
+N_g(N_c+1)<\frac{43}{2}.
 \]
 Since the color-type requirement forces $N_c\ge 3$, this gives $N_g\le 5$. The minimal admissibility selector then chooses $N_g=3$.
 \end{proof}
@@ -935,11 +1052,22 @@ If the realized matter spectrum carries the hypercharges of Theorem~\ref{thm:hyp
 \end{proposition}
 
 \begin{proof}
-The centers of $\SU(3)$ and $\SU(2)$ are $\mathbb Z_3$ and $\mathbb Z_2$, respectively. With the sixth-integer hypercharge lattice, the element
+Write $q:=6Y\in\mathbb Z$ and $\eta:=e^{i\pi/3}$, so the $\U(1)$ factor acts by $\eta^q$ on charge-$q$ multiplets. The element
 \[
-(\omega_3,-1,e^{i\pi/3})
+g_0:=(\omega_3,-1,\eta)
 \]
-acts trivially on every Standard Model multiplet. Its powers generate a subgroup of order six. No larger central subgroup acts trivially because the hypercharge assignments separate the remaining center elements.
+acts trivially on the realized matter and Higgs multiplets:
+\[
+Q:\ \omega_3(-1)\eta=1,\qquad
+u^c:\ \omega_3^{-1}\eta^{-4}=1,\qquad
+d^c:\ \omega_3^{-1}\eta^2=1,
+\]
+\[
+L:\ (-1)\eta^{-3}=1,\qquad
+e^c:\ \eta^6=1,\qquad
+H:\ (-1)\eta^3=1.
+\]
+Its powers therefore generate a subgroup of order six acting trivially on all realized states. Conversely, any central element acting trivially on $e^c$ must have $\U(1)$ part $\eta^n$, and triviality on $Q$ then fixes the $\SU(3)$ and $\SU(2)$ center factors uniquely. Hence every trivial central element is a power of $g_0$, so the kernel is exactly $\mathbb Z_6$.
 \end{proof}
 
 \begin{corollary}[Standard Model Gauge Group]
@@ -955,11 +1083,15 @@ Theorem~\ref{thm:sm} yields the product structure up to finite quotient, and Pro
 \end{proof}
 
 \begin{corollary}[Product-Group Consequences]
-The adjoint representation of the derived gauge group contains only
+The adjoint representation of the full connected gauge group contains only
 \[
 (8,1,0)\oplus(1,3,0)\oplus(1,1,0).
 \]
-There are no mixed $(3,2,\pm 5/6)$ gauge bosons. Hence gauge-mediated proton decay is absent. The unbroken gauge symmetries protect the photon and gluon as massless excitations.
+Equivalently, the adjoint representation of the derived gauge group contains only
+\[
+(8,1,0)\oplus(1,3,0).
+\]
+There are no mixed $(3,2,\pm 5/6)$ gauge bosons. Hence gauge-mediated proton decay is absent. The unbroken gauge symmetries forbid elementary gauge-boson mass terms: the photon remains massless, while gluons are massless gauge fields but confined.
 \end{corollary}
 
 \begin{remark}
@@ -970,7 +1102,7 @@ The same product-group structure removes the usual grand-unification monopole se
 
 \subsection{Parameter count}
 
-The quantitative program uses the same axiom set together with the two numerical inputs $P$ and $N_{\mathrm{scr}}$. The discrete structure
+The quantitative program uses the same axiom set together with the two external inputs $P$ and $N_{\mathrm{scr}}$. In the current implementation, $P$ is calibrated from the gauge sector and $N_{\mathrm{scr}}$ is inferred from the observed cosmological constant. The discrete structure
 \[
 (\SU(3)\times\SU(2)\times\U(1))/\mathbb Z_6,\quad
 N_c=3,\quad
@@ -978,19 +1110,20 @@ N_g=3,\quad
 \varepsilon=\frac16,\quad
 \delta=\frac29
 \]
-is then fixed by structural arguments rather than by fits. Relative to the usual Standard Model parameter count, this replaces roughly nineteen particle-physics inputs, or twenty-six when neutrino parameters are included, by two numerical inputs plus structural relations.
+is then fixed by structural arguments, MAR selection, or phenomenological continuation steps rather than by direct fits. Relative to the usual Standard Model parameter count, this replaces roughly nineteen particle-physics inputs, or twenty-six when neutrino parameters are included, by two external inputs plus structural relations.
 
 \subsection{Epistemic classification of outputs}
 
-The quantitative sector is not uniform. The paper uses three categories.
+The quantitative sector is not uniform. The paper uses four categories.
 
 \begin{enumerate}[leftmargin=2em]
 \item \textbf{Calibration-sector consistency checks.} These are algebraically entangled with the determination of $P$ from the gauge sector. They include $v$, the gauge couplings at $m_Z$, and tree-level electroweak masses.
-\item \textbf{Independent quantitative outputs.} These use additional structural conditions that are logically independent of the pixel constraint. They include the Higgs and top masses from the critical surface and the charged-lepton masses from the Koide construction.
-\item \textbf{Parameter-free structural outputs.} These include the gauge quotient, exact hypercharges, $N_c=3$, $N_g=3$, the $\mathbb Z_6$ suppression parameter, and the Koide phase.
+\item \textbf{Independent quantitative outputs.} These use additional structural conditions that are logically independent of the pixel constraint. In the compact note this category is the Higgs/top critical-surface branch.
+\item \textbf{Parameter-free structural outputs.} These include the gauge quotient, exact hypercharges, $N_c=3$, and $N_g=3$.
+\item \textbf{Phenomenological continuations.} These include the charged-lepton/Koide construction, quark textures, baryogenesis, dark-sector phenomenology, and any use of the $\mathbb Z_6$ suppression factor as a flavor or entropy ansatz.
 \end{enumerate}
 
-The quark-hierarchy and neutrino branches are not at the same maturity level in the compact note: the former is a texture-pattern output, while the latter is currently only an order-of-magnitude capacity-branch estimate.
+The quark-hierarchy and neutrino branches are not at the same maturity level in the compact note: the former is a texture-pattern continuation, while the latter is currently only an order-of-magnitude capacity-branch estimate.
 
 This classification matters because the framework is not presented as a fit to all observables. Its stronger claim is that a large set of discrete and dimensionless structures are fixed before the overall energy scale is chosen.
 
@@ -1082,10 +1215,10 @@ The gauge couplings at $\mu=m_Z$ are then
 \alpha_2(m_Z)\approx 0.03384,\qquad
 \alpha_3(m_Z)\approx 0.1183,
 \]
-which give
+which, under the printed conventions of this compact note, give
 \[
-\alpha_{\mathrm{em}}^{-1}(m_Z)\approx 128.31,\qquad
-\sin^2\theta_W(m_Z)\approx 0.2307.
+\alpha_{\mathrm{em}}^{-1}(m_Z)\approx 127.82,\qquad
+\sin^2\theta_W(m_Z)\approx 0.23119.
 \]
 With
 \[
@@ -1093,23 +1226,23 @@ v\approx 246.77\ \mathrm{GeV},
 \]
 the tree-level electroweak masses are
 \[
-m_W=\frac12 v g_2 \approx 80.39\ \mathrm{GeV},
+m_W=\frac12 v g_2 \approx 80.46\ \mathrm{GeV},
 \]
 and
 \[
-m_{Z,\mathrm{run}}=\frac12v\sqrt{g_2^2+g_Y^2}\approx 91.65\ \mathrm{GeV}.
+m_{Z,\mathrm{run}}=\frac12v\sqrt{g_2^2+g_Y^2}\approx 91.76\ \mathrm{GeV}.
 \]
 Including the custodial correction
 \[
 \Delta\rho=\frac{3y_t^2}{32\pi^2},
 \]
-and using the stage-3 estimate $y_t\approx 1$ for the displayed number,
+and using the illustrative unit-Yukawa estimate $y_t\approx 1$ for the one-loop pole correction,
 one obtains
 \[
-M_{Z,\mathrm{pole}}\approx 91.220\ \mathrm{GeV}.
+M_{Z,\mathrm{pole}}\approx 91.33\ \mathrm{GeV}.
 \]
 
-These are calibration-sector outputs. They demonstrate internal consistency of the two-input closure. Their role in the paper is scale setting, not independent confirmation.
+These are calibration-sector outputs. Their role in the paper is scale setting, not independent confirmation. A fully reproducible numerical audit requires the beta-function shifts and matching conventions supplied in the repository supplements.
 
 \begingroup
 \footnotesize
@@ -1120,11 +1253,11 @@ Quantity & OPH output & Experimental value & Status \\
 \endhead
 \bottomrule
 \endfoot
-$\alpha_{\mathrm{em}}^{-1}(m_Z)$ & $128.31$ & $127.952$ & calibration sector \\
-$\sin^2\theta_W(m_Z)$ & $0.2307$ & $0.23122$ & calibration sector \\
+$\alpha_{\mathrm{em}}^{-1}(m_Z)$ & $127.82$ & $127.952$ & calibration sector \\
+$\sin^2\theta_W(m_Z)$ & $0.23119$ & $0.23122$ & calibration sector \\
 $\alpha_s(m_Z)$ & $0.1183$ & $0.1179$ & calibration sector \\
-$M_Z$ & $91.220~\mathrm{GeV}$ & $91.188~\mathrm{GeV}$ & calibration sector \\
-$m_W$ & $80.39~\mathrm{GeV}$ & $80.38~\mathrm{GeV}$ & calibration sector \\
+$M_Z$ & $91.33~\mathrm{GeV}$ & $91.188~\mathrm{GeV}$ & calibration sector \\
+$m_W$ & $80.46~\mathrm{GeV}$ & $80.38~\mathrm{GeV}$ & calibration sector \\
 \end{longtable}
 \endgroup
 
@@ -1147,7 +1280,7 @@ Running the coupled system $(y_t,\lambda,g_Y,g_2,g_3)$ down to $\mu\sim m_t$ yie
 \[
 m_t^{\overline{\mathrm{MS}}}(m_t)\approx 160.6\ \mathrm{GeV},
 \]
-and after the standard QCD pole-mass conversion,
+and after the standard three-loop QCD pole-mass conversion used in the present implementation,
 \[
 m_t^{\mathrm{pole}}\approx 171.1\ \mathrm{GeV}.
 \]
@@ -1170,19 +1303,21 @@ $m_t^{\mathrm{pole}}$ & $171.1~\mathrm{GeV}$ & $172.6~\mathrm{GeV}$ & independen
 \end{tabular}
 \endgroup
 
-\section{Flavor Structure, Koide, and the Mass Hierarchy}
+\section{Phenomenological Flavor Continuations}
+
+This section is not at the same logical status as the overlap fixed-point theorem, the conditional gravity branch, or the gauge/quotient chain. It records the current flavor continuations used in the OPH program and identifies which steps are phenomenological ans\"atze rather than theorem-level outputs.
 
 \subsection{The $\mathbb Z_6$ suppression parameter}
 
-The global gauge quotient implies an entropy deficit
+Assume a uniform sixfold center-label ensemble on the realized $\mathbb Z_6$ quotient sectors. Then the associated entropy deficit is
 \[
-\Delta S=\ln 6.
+\Delta S_{\mathrm{center}}=\ln 6.
 \]
-The resulting universal suppression factor is
+This motivates the universal suppression factor
 \[
-\varepsilon=e^{-\Delta S}=\frac16.
+\varepsilon=e^{-\Delta S_{\mathrm{center}}}=\frac16,
 \]
-This is the base of the flavor hierarchy in the framework.
+which is used as a phenomenological flavor-hierarchy ansatz in the remainder of this section. The quotient alone does not force this entropy deficit without the ensemble assumption.
 
 \subsection{Koide structure from $\mathbb Z_3$ holonomy}
 
@@ -1214,7 +1349,7 @@ Q_{\mathrm{exp}}=0.666664\ldots,
 \]
 which is numerically indistinguishable from $2/3$ at the scale relevant here.
 
-The phase is fixed by previously derived discrete data:
+Within this continuation, the phase is fixed by previously derived discrete data:
 \[
 \delta=\frac{\beta_{\mathrm{EW}}\,Y_Q}{N_g}
 \;=\;
@@ -1222,11 +1357,11 @@ The phase is fixed by previously derived discrete data:
 \;=\;
 \frac29.
 \]
-This is one of the most rigid outputs of the framework. It ties the Koide phase directly to color count, generation count, and the hypercharge lattice.
+This remains one of the most rigid outputs inside the flavor continuation. It ties the Koide phase directly to color count, generation count, and the hypercharge lattice.
 
 \subsection{Charged-lepton masses}
 
-The lepton exponents are selected by matching the ratios of Koide roots to the $\mathbb Z_6$ hierarchy, giving
+In the current implementation the lepton exponents are selected by a discrete scan that matches the ratios of Koide roots to the $\mathbb Z_6$ hierarchy, giving
 \[
 (n_e,n_\mu,n_\tau)=(7,4,3).
 \]
@@ -1238,11 +1373,12 @@ m_\tau=S r_3^2.
 \]
 The normalization used for the displayed table is
 \[
-\ln S_0=-\frac13\sum_{i=1}^3 \ln\!\left(\frac{r_i^2\sqrt2}{v}\,6^{n_{e,i}}\right),
+\mu_0:=1~\mathrm{GeV},\qquad
+\ln\!\left(\frac{S_0}{\mu_0}\right)=-\frac13\sum_{i=1}^3 \ln\!\left(\frac{r_i^2\sqrt2\,\mu_0}{v}\,6^{n_{e,i}}\right),
 \qquad
 S=S_0\,2^{1/6}.
 \]
-This common normalization makes the hierarchy exponents and the electroweak-scale relation mutually consistent. In the current implementation it yields sub-permille agreement with the charged-lepton data.
+This common normalization makes the hierarchy exponents and the electroweak-scale relation mutually consistent. In the current implementation it yields sub-permille agreement with the charged-lepton data, but the exponent choice itself is a semi-empirical discrete-selection step rather than a theorem of the core OPH axioms.
 
 \begingroup
 \footnotesize
@@ -1250,9 +1386,9 @@ This common normalization makes the hierarchy exponents and the electroweak-scal
 \toprule
 Quantity & OPH output & Experimental value & Status \\
 \midrule
-$m_e$ & $5.109\times 10^{-4}~\mathrm{GeV}$ & $5.110\times 10^{-4}~\mathrm{GeV}$ & independent quantitative \\
-$m_\mu$ & $0.10564~\mathrm{GeV}$ & $0.10566~\mathrm{GeV}$ & independent quantitative \\
-$m_\tau$ & $1.7766~\mathrm{GeV}$ & $1.7769~\mathrm{GeV}$ & independent quantitative \\
+$m_e$ & $5.109\times 10^{-4}~\mathrm{GeV}$ & $5.110\times 10^{-4}~\mathrm{GeV}$ & phenomenological continuation \\
+$m_\mu$ & $0.10564~\mathrm{GeV}$ & $0.10566~\mathrm{GeV}$ & phenomenological continuation \\
+$m_\tau$ & $1.7766~\mathrm{GeV}$ & $1.7769~\mathrm{GeV}$ & phenomenological continuation \\
 \bottomrule
 \end{tabular}
 \endgroup
@@ -1279,13 +1415,13 @@ s_{12}=\varepsilon,\qquad
 s_{23}=\varepsilon^2,\qquad
 s_{13}=\varepsilon^3.
 \]
-This sector is currently a texture/exponent-pattern output rather than a precision light-quark mass prediction. It captures the hierarchy pattern correctly, but absolute light-quark masses remain the least controlled component of the current quantitative program.
+This sector is currently a texture/exponent-pattern continuation rather than a precision light-quark mass prediction. It captures the hierarchy pattern qualitatively, but absolute light-quark masses remain the least controlled component of the current program.
 
 \subsection{Neutrino scale}
 
 The neutrino branch uses the second input $N_{\mathrm{scr}}$. In the compact note this is currently only an order-of-magnitude capacity-branch estimate rather than a benchmark quantitative mass formula. In the present implementation the resulting masses lie well below direct experimental bounds and match the expected order of magnitude from the dark-energy scale. This branch is structurally separate from the gauge-coupling calibration.
 
-\section{Further Problems Addressed by the Framework}
+\section{Program-Level Phenomenology and Further Continuations}
 
 \subsection{Dark-sector modular anomaly}
 
@@ -1367,7 +1503,7 @@ In OPH this is interpreted as an effective worldsheet reorganization of the edge
 
 \subsection{Baryogenesis and CP violation}
 
-The same $\mathbb Z_6$ suppression factor appears in the baryon-violating electroweak channel. A twelve-fermion 't Hooft vertex gives an effective suppression
+If the same phenomenological $\mathbb Z_6$ suppression ansatz is carried into the baryon-violating electroweak channel, a twelve-fermion 't Hooft vertex gives an effective suppression
 \[
 \varepsilon^{12}=6^{-12}\approx 4.6\times 10^{-10},
 \]
@@ -1441,15 +1577,15 @@ Tier & Representative outputs & What would falsify the tier \\
 \endhead
 \bottomrule
 \endfoot
-Structural theorems & Confluence of overlap repair, Lorentz kinematics, the scaling-limit Einstein relation/tensor upgrade, compact gauge reconstruction, Standard Model quotient chain, hypercharge lattice, $N_c=3$, $N_g=3$ & A mathematical failure in the derivation chain, or data that require a different gauge quotient, different hypercharges, a different color count, or gauge-mediated proton decay \\
+Structural theorems & Confluence of overlap repair, conditional Lorentz kinematics, the conditional scaling-limit Einstein relation/tensor upgrade, conditional bosonic compact gauge reconstruction, Standard Model quotient chain, hypercharge lattice, $N_c=3$, $N_g=3$ & A mathematical failure in the derivation chain, or data that require a different gauge quotient, different hypercharges, a different color count, or gauge-mediated proton decay \\
 Calibration sector & $\alpha_i(m_Z)$, $\alpha_{\mathrm{em}}^{-1}(m_Z)$, $\sin^2\theta_W$, $v$, $m_W$, $m_Z$ & Inability to close the pixel fixed point or systematic disagreement once the one-input calibration is imposed \\
-Independent quantitative sector & $m_H$, $m_t$, charged-lepton masses & Failure of the critical-surface branch or charged-lepton normalization branch, or dimensionless ratios that drift outside the stated loop and scheme uncertainty \\
-Texture/capacity branches & Koide-root relation, quark-hierarchy exponents, neutrino order-of-magnitude estimate & Failure of the Koide/holonomy branch, wrong texture exponents, or the need to retract the neutrino branch once a benchmark formula is supplied \\
-Program-level phenomenology & Dark-sector anomaly, baryogenesis scale, edge-sector fingerprints, black-hole spectroscopy comb, string/worldsheet limit & Absence of the predicted acceleration scale, wrong entropy fingerprint, wrong Casimir ratios, or null results in precision tests once the relevant regime is experimentally clean \\
+Independent quantitative sector & $m_H$, $m_t$ & Failure of the critical-surface branch, or dimensionless ratios that drift outside the stated loop and scheme uncertainty \\
+Phenomenological continuations & Charged-lepton masses, Koide relation, quark textures, neutrino estimate & Failure of the Koide/holonomy continuation, wrong texture exponents, or the need to retract the branch once a sharper benchmark formula is supplied \\
+Program-level phenomenology & Dark-sector anomaly, baryogenesis scale, conditional edge-sector fingerprints, black-hole spectroscopy comb, string/worldsheet limit & Absence of the predicted acceleration scale, failure of the center-label ansatz, wrong Casimir ratios, or null results in precision tests once the relevant regime is experimentally clean \\
 \end{longtable}
 \endgroup
 
-This separation is essential for interpreting the quantitative claims. The electroweak calibration branch sets the overall scale. The Higgs, top, and charged-lepton branches then test additional structure that is logically independent of that scale setting. The gauge quotient, hypercharge lattice, color count, generation count, and symmetry-protected exact zeros do not use a continuous fit parameter at all.
+This separation is essential for interpreting the quantitative claims. The electroweak calibration branch sets the overall scale. The Higgs/top branch then tests additional structure that is logically independent of that scale setting. The charged-lepton and Koide branches are retained as phenomenological continuations. The gauge quotient, hypercharge lattice, color count, generation count, and symmetry-protected exact zeros do not use a continuous fit parameter at all.
 
 \subsection{Direct discriminators}
 
@@ -1457,11 +1593,11 @@ Several consequences of the framework are unusually sharp because they are param
 
 \subsubsection{The $\mathbb Z_6$ central-label entropy fingerprint}
 
-Once the realized gauge group is
+If the uniform center-label ensemble ansatz of Section~8.1 is adopted and the realized gauge group is
 \[
 \frac{\SU(3)\times\SU(2)\times\U(1)}{\mathbb Z_6},
 \]
-let $Z$ denote the discrete center/quotient label in the edge-center completion. Then the universal central-label entropy deficit is
+let $Z$ denote the discrete center/quotient label in the edge-center completion. Then the predicted central-label entropy deficit is
 \[
 \Delta S_{\mathrm{center}}=\log 6
 \]
@@ -1469,21 +1605,25 @@ or
 \[
 \Delta S_{\mathrm{center}}^{(\mathrm{bits})}=\log_2 6 \approx 2.585.
 \]
-This is a global-structure observable. It is not the Shannon entropy of the open-edge irrep weights $p_R(t)$ and is not $t$-dependent. A clean measurement of central-label entropies inconsistent with that deficit would directly falsify the quotient claim.
+This is a global-structure observable conditioned on the ensemble ansatz. It is not the Shannon entropy of the open-edge irrep weights $p_R(t)$ and is not $t$-dependent. A clean measurement of central-label entropies inconsistent with that deficit would falsify that continuation.
 
 \subsubsection{Exact $\SU(3)$ Casimir-ratio pattern}
 
-For $\mathbb Z_6$-compatible sectors $(R_3,R_2,Y)$, let $\Delta_R$ denote the $\SU(3)$ Casimir component of the open-edge log-gap relative to the triplet reference sector. Then the open-edge law
+For $\mathbb Z_6$-compatible sectors $(R_3,R_2,Y)$, let
+\[
+r_R:=\frac{C_2(R)}{C_2(3)}
+\]
+denote the $\SU(3)$ Casimir ratio relative to the triplet. Then the open-edge law
 \[
 p_R(t)\propto d_R e^{-tC_2(R)}
 \]
-implies exact ratios among the leading $\SU(3)$ suppression exponents:
+implies exact ratios among the leading $\SU(3)$ Casimir suppressions:
 \[
-\frac{\Delta_8}{\Delta_3}=\frac94,\qquad
-\frac{\Delta_6}{\Delta_3}=\frac52,\qquad
-\frac{\Delta_{10}}{\Delta_3}=\frac92,\qquad
-\frac{\Delta_{15}}{\Delta_3}=4,\qquad
-\frac{\Delta_{27}}{\Delta_3}=6.
+r_8=\frac94,\qquad
+r_6=\frac52,\qquad
+r_{10}=\frac92,\qquad
+r_{15}=4,\qquad
+r_{27}=6.
 \]
 These rational numbers are fixed by representation theory. They do not involve threshold tuning or hidden UV data. Precision lattice access to the $\SU(3)$ component of edge-sector probabilities would therefore probe the mechanism directly.
 
@@ -1527,25 +1667,25 @@ the predicted peaks sit at $x=\ln k$. For any single finite-capacity remnant onl
 
 \subsection{What the paper does not claim}
 
-The present manuscript does not claim precision control of all QCD observables, a finished treatment of hadronic thresholds, or a completed nonlinear dark-sector phenomenology in galaxies and clusters. It claims a derivation chain for the underlying structures, plus a set of quantitative branches whose status is made explicit above. This distinction is important because the framework should be judged by the strongest outputs first.
+The present manuscript does not claim precision control of all QCD observables, a finished treatment of hadronic thresholds, a completed nonlinear dark-sector phenomenology in galaxies and clusters, or a completed fermionic/super-Tannakian gauge branch. It claims a derivation chain for the underlying structures, plus a set of quantitative and phenomenological branches whose status is made explicit above. This distinction is important because the framework should be judged by the strongest outputs first.
 
 \section{Common Objections and Clarifications}
 
-\subsection{Is the use of $P$ circular?}
+\subsection{\texorpdfstring{Is the use of $P$ circular?}{Is the use of P circular?}}
 
-The answer depends on which sector is under discussion. The pixel area $P$ calibrates the overall particle-physics scale through the gauge sector. Quantities that are algebraically entangled with that calibration, such as $v$, $m_W$, $m_Z$, and the gauge couplings at $m_Z$, are consistency checks. The paper treats them as such.
+The answer depends on which sector is under discussion. In the current implementation the pixel area $P$ calibrates the overall particle-physics scale through the gauge sector. Quantities that are algebraically entangled with that calibration, such as $v$, $m_W$, $m_Z$, and the gauge couplings at $m_Z$, are consistency checks. The paper treats them as such.
 
 The stronger outputs enter only after the scale has been set. The critical-surface condition
 \[
 \lambda(M_U)=0,\qquad \beta_\lambda(M_U)=0
 \]
-fixes the Higgs and top branch independently of the pixel constraint. The Koide branch is controlled by
+fixes the Higgs and top branch independently of the pixel constraint. The Koide continuation is controlled by
 \[
 Q=\frac23,\qquad \delta=\frac29,
 \]
-which are structural consequences of the previously derived discrete data. The quark hierarchy depends on the $\mathbb Z_6$ texture, and the neutrino branch depends on the second input $N_{\mathrm{scr}}$, not on $P$.
+which are structural consequences of the previously derived discrete data inside that continuation. The quark hierarchy depends on the $\mathbb Z_6$ texture ansatz, and the neutrino branch depends on the second input $N_{\mathrm{scr}}$, not on $P$.
 
-Operationally, changing $P$ moves the calibration family $(\alpha_U,\alpha_i(m_Z),v,m_W,m_Z)$ as well as the overall GeV scale. It does not alter the parameter-free structural outputs such as the gauge quotient, hypercharge lattice, $\varepsilon$, or $\delta$. The useful distinction is therefore between scale setting and structural determination.
+Operationally, changing $P$ moves the calibration family $(\alpha_U,\alpha_i(m_Z),v,m_W,m_Z)$ as well as the overall GeV scale. It does not alter the parameter-free structural outputs such as the gauge quotient or hypercharge lattice. The useful distinction is therefore between scale setting, structural determination, and later phenomenological continuations.
 
 \subsection{Does a fixed UV cell size break Lorentz invariance?}
 
@@ -1576,10 +1716,10 @@ The framework is strongest where the outputs are discrete or structurally rigid:
 \item the Standard Model gauge quotient chain;
 \item exact hypercharges;
 \item three colors and three generations;
-\item the two-parameter economy.
+\item the two-input economy of the present implementation.
 \end{enumerate}
 
-The next strongest sector is the independent quantitative branch consisting of the Higgs mass, top mass, and charged-lepton masses, together with the Koide-root texture.
+The next strongest sector is the independent quantitative branch consisting of the Higgs and top masses. The charged-lepton and Koide sectors are promising but should presently be read as phenomenological continuations rather than core theorem outputs.
 
 The weakest part is the light-quark and hadron branch. The hierarchy pattern is robust, but precision control of low-energy QCD effects, scheme dependence, and order-one coefficients is not yet complete.
 
@@ -1589,9 +1729,9 @@ Topics intentionally excluded from the present formulation include simulation na
 
 \section{Conclusion}
 
-Observer-Patch Holography starts from overlap consistency of observer patches and recovers, within one axiom system, the main effective structures usually treated separately in modern fundamental physics. The same framework yields a schedule-independent normal form for objective law, scaling-limit Lorentz kinematics and a conditional scaling-limit Einstein branch, the Standard Model gauge quotient with exact hypercharges under the extended MAR admissibility package, three colors, three generations, a two-input quantitative program with critical-surface Higgs/top and charged-lepton branches, a Koide-sector structural texture, and structural corollaries in cosmology together with a program-level dark-sector branch.
+Observer-Patch Holography starts from overlap consistency of observer patches and yields, within one framework, several effective structures usually treated separately in modern fundamental physics. The compact note supports a schedule-independent normal form for objective law, conditional scaling-limit Lorentz kinematics and a conditional Jacobson-type Einstein branch, the Standard Model gauge quotient with exact hypercharges under the extended MAR admissibility package in the bosonic internal-gauge branch, three colors, three generations, a two-input quantitative program with a critical-surface Higgs/top branch, and structural cosmological corollaries. It also records several phenomenological continuations whose present status is weaker and is labeled as such in the text.
 
-Accordingly, the framework functions as a candidate underlying theory from which general relativity and the Standard Model arise as effective descriptions. The next technical task is sharper quantitative control of the sectors that are already present.
+Accordingly, the framework functions as a candidate underlying theory from which general relativity and the Standard Model may arise as effective descriptions once the stated scaling-limit and categorical premises are realized. The next technical tasks are sharper quantitative control, a fuller fermionic gauge branch, and explicit UV completions that land in the required modular/geometric phase.
 
 \appendix
 
@@ -1609,7 +1749,7 @@ y_t\left(\frac92 y_t^2-\frac{17}{12}g_Y^2-\frac94 g_2^2-8g_3^2\right),\\
 24\lambda^2+\lambda\left(12y_t^2-9g_2^2-3g_Y^2\right)-6y_t^4
 +\frac38\left(2g_2^4+(g_2^2+g_Y^2)^2\right).
 \end{align}
-In the present implementation this system is the transport layer between the UV boundary data and the low-energy Higgs/top outputs. Numerically, the compact note uses one-loop $\overline{\mathrm{MS}}$ transport, the matching scale $\mu=m_Z=91.1876\,\mathrm{GeV}$, the unified scale $M_U\approx 2.474\times 10^{16}\,\mathrm{GeV}$ from the main text, and the standard one-loop QCD pole-mass conversion for the top branch. Higher-loop and threshold refinements are expected to shift the final numbers at the GeV level rather than alter the logic of the branch.
+In the present implementation this system is the transport layer between the UV boundary data and the low-energy Higgs/top outputs. Numerically, the compact note uses one-loop $\overline{\mathrm{MS}}$ transport, the matching scale $\mu=m_Z=91.1876\,\mathrm{GeV}$, the unified scale $M_U\approx 2.474\times 10^{16}\,\mathrm{GeV}$ from the main text, and the standard three-loop QCD pole-mass conversion for the displayed top-branch number. Higher-loop and threshold refinements are expected to shift the final numbers at the GeV level rather than alter the logic of the branch.
 
 \section{Quantitative Robustness Audit}\label{app:robustness}
 
@@ -1620,7 +1760,7 @@ In the present implementation this system is the transport layer between the UV 
 Source of variation & Baseline used here & Expected effect on outputs \\
 \midrule
 Critical-surface RG transport & one-loop SM running & moving to two loops is expected to shift $m_H$ by about $1$ GeV and $m_t$ by about $0.5$ GeV \\
-Pole-mass and threshold matching & leading standard conversions & order-one GeV effects in the top branch; sub-GeV to GeV effects in the Higgs branch \\
+Pole-mass and threshold matching & standard three-loop top conversion plus leading electroweak corrections & order-one GeV effects in the top branch; sub-GeV to GeV effects in the Higgs branch \\
 Heat-kernel truncation in $\bar\ell_G$ & 200 representations & negligible at displayed precision, with changes below $10^{-12}$ in the entropy sums \\
 Bisection tolerance for the pixel closure & $10^{-10}$ & affects only the last shown digits of $\alpha_U$ and derived calibration outputs \\
 Light-quark scheme matching & not yet implemented at precision level & dominant source of the present 5\% to 20\% uncertainty in the light-quark branch \\
@@ -1628,7 +1768,7 @@ Light-quark scheme matching & not yet implemented at precision level & dominant 
 \end{tabular}
 \endgroup
 
-The paper therefore separates the quantitative sector by status. The Higgs, top, and charged-lepton branches are useful because their errors are controlled at the percent level. The light-quark and hadronic branch still carries the largest scheme and threshold uncertainty.
+The paper therefore separates the quantitative sector by status. The Higgs and top branches are useful because their errors are controlled at the percent level. The charged-lepton continuation is numerically sharp but rests on a weaker discrete-selection step, while the light-quark and hadronic branch still carries the largest scheme and threshold uncertainty.
 
 \begin{thebibliography}{99}
 

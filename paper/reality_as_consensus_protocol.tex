@@ -29,7 +29,7 @@ We then prove that pairwise agreement between neighboring observers is not enoug
 
 The framework yields four exact theorems: (1) asynchronous confluence, giving schedule-independent physical law; (2) a cycle-obstruction criterion showing when local consistency fails globally; (3) a gauge quotient theorem identifying gauge symmetry with implementation hiding; and (4) a record-layer convergence theorem giving CRDT-like semantics for classical observations. We also formalize a selection principle over the space of possible reconciliation laws, where schedule-robust, observer-supporting, and simple laws are favored by a monotonically increasing fitness functional.
 
-The formalism is the computational spine of Observer-Patch Holography (OPH), a framework in which a conditional scaling-limit Einstein branch, compact gauge reconstruction, an extended-MAR Standard Model closure, and the string-theoretic worldsheet expansion are developed as emergent sectors. The full OPH manuscript is available at \url{https://oph-book.floatingpragma.io/papers/observers_are_all_you_need.pdf}.
+The formalism is the computational spine of Observer-Patch Holography (OPH), a framework in which a conditional scaling-limit Einstein branch, conditional compact gauge reconstruction, an extended-MAR Standard Model closure, and a worldsheet/string reorganization of the bosonic edge sector are developed as emergent sectors. The full OPH manuscript is available at \url{https://oph-book.floatingpragma.io/papers/observers_are_all_you_need.pdf}.
 \end{abstract}
 
 \section{Introduction}
@@ -63,7 +63,7 @@ This paper proves four core results:
 
 We also define a fitness functional over the space of candidate reconciliation laws and prove that replicator dynamics monotonically increases mean fitness (Theorem~\ref{thm:replicator}). This gives a clean mathematical model for the selection of physical law.
 
-The results here are exact theorems about a computational model. The further claim that physical reality instantiates this model is the interpretive hypothesis of Observer-Patch Holography (OPH). The full OPH framework, from which general relativity, the SM gauge group, and the string-theory worldsheet expansion are derived, is presented in a companion manuscript~\cite{OPH}.
+The results here are exact theorems about a computational model. The further claim that physical reality instantiates this model is the interpretive hypothesis of Observer-Patch Holography (OPH). The companion OPH manuscript develops the broader physics branches conditionally and keeps structural theorems, scaling-limit branches, calibration-sector outputs, and phenomenological continuations distinct~\cite{OPH}.
 
 
 \section{Patch Nets, Overlaps, and Global Consistency}
@@ -412,12 +412,12 @@ The bridge to physics works as follows. In the full OPH framework:
 \item The patch net becomes a net of subregion algebras on $S^2$.
 \item Overlap consistency (Axiom A2 of OPH) is the algebraic version of Definition~\ref{def:patchnet}.
 \item Local Markov recoverability (Axiom A4) provides the collar factorization $\rho_{ABD} = \bigoplus_\alpha p_\alpha\,\rho^{(\alpha)}_{Ab_L^\alpha}\otimes\rho^{(\alpha)}_{b_R^\alpha D}$ that makes observer checkpointing and restoration well-defined (see Appendix~\ref{app:splice}).
-\item Gauge symmetry as implementation hiding (Theorem~\ref{thm:gauge}) becomes the edge-sector fusion structure from which OPH derives the Standard Model gauge group $\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)/\mathbb{Z}_6$.
+\item Gauge symmetry as implementation hiding (Theorem~\ref{thm:gauge}) becomes the edge-sector fusion structure from which OPH conditionally reconstructs a compact gauge group and, under the extended MAR admissibility package, selects the Standard Model gauge group $\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)/\mathbb{Z}_6$.
 \item Stable defects (Corollary~\ref{cor:defects}) become the topologically protected excitations that OPH identifies with particles.
 \item The record-layer theorem (Theorem~\ref{thm:crdt}) provides the formal basis for the classical observation layer in OPH, where records are implemented by approximately commuting projectors in overlap centers.
 \end{itemize}
 
-The OPH manuscript derives general relativity from entanglement equilibrium and modular geometry, the complete SM gauge group from edge-sector admissibility, and the string-theoretic worldsheet expansion from large-$N$ heat-kernel asymptotics. These derivations are quantitative: they produce particle masses, coupling constants, and cosmological parameters from two input constants (the pixel area $a_{\rm cell}\approx 1.63\,\ell_P^2$ and the screen capacity $\log\dim\mathcal{H}_{\rm tot}\sim 10^{122}$).
+The OPH manuscript develops a conditional gravity branch from entanglement equilibrium and modular geometry, the SM gauge-group closure from edge-sector admissibility plus MAR, and a worldsheet/string reorganization from large-$N$ heat-kernel asymptotics. Its quantitative program is organized around two external inputs in the current implementation (the pixel area $a_{\rm cell}\approx 1.63\,\ell_P^2$ and the screen capacity $\log\dim\mathcal{H}_{\rm tot}\sim 10^{122}$), with calibration-sector checks, independent Higgs/top outputs, and weaker phenomenological continuations explicitly separated.
 
 The present paper provides the computational foundation. OPH says what the patches are, what the algebras are, and what the reconciliation dynamics looks like at the physical level. This paper proves that any system with the right abstract properties must converge to a unique, schedule-independent, gauge-invariant fixed point. That fixed point is what we call physical law.
 

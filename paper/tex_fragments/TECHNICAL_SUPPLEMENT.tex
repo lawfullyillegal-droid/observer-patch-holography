@@ -1,12 +1,12 @@
 \section{Technical Supplement: Mathematical Foundations of OPH}\label{technical-supplement-mathematical-foundations-of-observer-patch-holography}
 
 \begin{quote}
-OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives scaling-limit Lorentz kinematics and a conditional Einstein branch, compact gauge reconstruction from refinement-stable edge sectors, Standard Model closure under the extended admissibility package, particle mass hierarchy, and key quantitative outputs.
+OPH is an observer-centric reconstruction program for fundamental physics. In the current implementation it uses two external inputs (pixel area and screen capacity) together with structural axioms and explicit regulator/scaling premises. This supplement collects the mathematical ingredients for the conditional Lorentz/null-modular/Einstein branch, conditional compact gauge reconstruction, and the related bosonic quantitative program.
 \end{quote}
 
 \subsection{For Theoretical Physicists}\label{for-theoretical-physicists}
 
-This document provides the complete mathematical derivations supporting the article "Answering 10 of the Hardest Questions in Physics." All results derive from the OPH axiom set (A1--A4) plus stated premises.
+This document collects mathematical derivations and stated premises supporting the OPH program. The Lorentz/null-modular/Einstein and compact-gauge statements are scaling-limit / categorical results under explicit regularity hypotheses; these hypotheses are target properties of the intended EFT phase and candidate UV completions, not fixed-cutoff matrix-algebra theorems.
 
 \textbf{Scope convention.} Statements about Lorentz recovery, modular flow, and the Einstein branch are scaling-limit / EFT statements rather than literal fixed-cutoff type-I claims. Statements about gauge reconstruction refer to the refinement-stable directed colimit of fixed-cutoff sector categories, not to the finite block list at one regulator scale.
 
@@ -83,11 +83,11 @@ The modular Hamiltonian takes the geometric form: \[K_C = 2\pi \int_C \beta(x) T
 
 \subsection{2.3 Null Modular Bridge (EFT Conditions N1-N3)}\label{23-null-modular-bridge-eft-conditions-n1-n3}
 
-\textbf{Condition N1:} The algebra \(\mathcal{A}(I)\) for a null interval \(I\) admits a null translation generator \(P\) with: \[P = \int_I T_{kk}(v, \Omega) \, dv\]
+\textbf{Condition N1:} Consecutive null strips satisfy exact-or-controlled Markov modular additivity up to central boundary terms.
 
-\textbf{Condition N2:} The modular Hamiltonian takes the geometric form: \[K[I, \Omega] = 2\pi \int_I v \, T_{kk}(v, \Omega) \, dv + K_\partial + O(\varepsilon)\]
+\textbf{Condition N2:} Null half-line algebras satisfy the half-sided modular inclusion property, either as an explicit scaling-limit premise or as the blow-up corollary of geometric modular flow near a smooth cut.
 
-\textbf{Condition N3:} Exponential clustering with correlation length \(\xi = O(\ell_{\text{UV}})\).
+\textbf{Condition N3:} Bounded-interval modular Hamiltonians obey endpoint-Lipschitz control, and the renormalized null half-line family satisfies the weak differentiability / vanishing-at-infinity assumptions needed for the half-line endpoint-differentiation formula.
 
 \subsection{2.4 Stress Tensor Reconstruction}\label{24-stress-tensor-reconstruction}
 
@@ -103,11 +103,19 @@ If this vanishes for all \(\hat{n} \in S^2\), each angular moment (scalar, vecto
 
 \subsection{2.5 Entanglement Equilibrium and Einstein\textquotesingle s Equation}\label{25-entanglement-equilibrium-and-einsteins-equation}
 
-\textbf{Theorem 2.5 (Jacobson-type Derivation):} In the same local Lorentzian scaling regime, under MaxEnt state selection with generalized entropy stationarity: \[\delta S_{\text{gen}} = 0\]
+\textbf{Theorem 2.5 (Conditional Jacobson-type Derivation):} In the same local Lorentzian scaling regime, under MaxEnt state selection with generalized entropy stationarity, the null-stress identification premise of the relativistic EFT branch, and admissible first variations about a maximally symmetric reference state,
+\[\delta S_{\text{gen}} = 0\]
 
-the cap equilibrium condition yields: \[G_{00} + \Lambda g_{00} = 8\pi G \langle T_{00} \rangle\]
+implies the rest-frame first-variation relation
+\[
+\delta\!\left(G_{00} + \Lambda g_{00}\right) = 8\pi G \,\delta\langle T_{00} \rangle.
+\]
 
-in a local rest frame. Overlap consistency (A2) upgrades this to the full tensor equation: \[G_{ab} + \Lambda g_{ab} = 8\pi G \langle T_{ab} \rangle\]
+If this first-variation relation holds for all local directions and reference states in the scaling regime, overlap consistency (A2) upgrades it to the full tensor equation
+\[
+G_{ab} + \Lambda g_{ab} = 8\pi G \langle T_{ab} \rangle
+\]
+modulo the expected \(\Lambda g_{ab}\) ambiguity.
 
 \textbf{Derivation sketch:}
 
@@ -520,11 +528,16 @@ If \(H_\partial = H_\partial^{(1)} + H_\partial^{(2)} + H_\partial^{(3)}\) with 
 
 Applied to the refinement-stable edge-sector colimit, Tannaka-Krein reconstruction first yields some compact group \(G\). Under the extended MAR admissibility package, and once the admissible class includes one connected abelian charge factor, the connected Lie realization selected by MAR is \(SU(3) \times SU(2) \times U(1)\) (up to finite quotient).
 
-Under the extended theory \(T_{\mathrm{ext}}\), the Selection Axiom MAR derives this product structure from first principles: the minimal coupled carrier \(\mathbb{C}^3 \otimes \mathbb{C}^2\) enforces commuting color and weak actions, which implies the additive boundary Laplacian. See Part II of this manuscript for the complete proof.
+Under the extended theory \(T_{\mathrm{ext}}\), the explicit MAR selector picks this product structure on the admissible class: the minimal coupled carrier \(\mathbb{C}^3 \otimes \mathbb{C}^2\) enforces commuting color and weak actions, which implies the additive boundary Laplacian. See Part II of this manuscript for the complete proof.
 
 \subsection{10.2 No Leptoquarks, No Gauge Proton Decay}\label{102-no-leptoquarks-no-gauge-proton-decay}
 
-\textbf{Corollary 10.2:} With product gauge group, the adjoint representation is: \[(8,1,0) \oplus (1,3,0) \oplus (1,1,0)\]
+\textbf{Corollary 10.2:} With product gauge group, the adjoint representation of the full connected gauge group is \[(8,1,0) \oplus (1,3,0) \oplus (1,1,0)\]
+
+equivalently, the adjoint of the derived gauge group is
+\[
+(8,1,0) \oplus (1,3,0).
+\]
 
 No gauge generators in mixed representations \((3,2,\pm 5/6)\) (the SU(5) \(X,Y\) bosons). Hence: \[\tau_p^{(\text{gauge})} = \infty\]
 
@@ -767,7 +780,7 @@ With \(H_0 \approx 67.4\) km/s/Mpc, \(\Omega_\Lambda \approx 0.685\): \[t_0 \app
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \(\Lambda\) from first principles (global selection on screen capacity)
+  derive the screen-capacity input or replace it by a deeper first-principles selection principle
 \item
   Yukawa integer exponents \(n_f\) from excitation dictionary
 \item
