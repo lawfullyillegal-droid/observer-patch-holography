@@ -1,8 +1,8 @@
 # Holographie par Patchs d'Observateurs : une approche de la physique fondamentale centrée sur l'observateur
 
-> OPH est un cadre de physique fondamentale centré sur l'observateur.
-> Le Modèle Standard, la relativité générale et la théorie des cordes y apparaissent comme descriptions effectives de structures plus profondes.
-> À partir de deux constantes d'entrée et de cinq axiomes (A1-A4 + MAR), OPH reconstruit une grande partie de la structure physique et organise explicitement ce qui est théorème, réduction conditionnelle, secteur calibré, ou branche programmatique.
+> OPH est un cadre de physique fondamentale centré sur l'observateur. Dans son implémentation actuelle, il utilise deux entrées externes (aire de pixel et capacité d'écran) ainsi que des axiomes structurels et des hypothèses explicites de régularité et de limite d'échelle. OPH développe une branche gravitationnelle conditionnelle dans la limite d'échelle, une reconstruction conditionnelle des groupes de jauge compacts avec clôture du Modèle Standard sous MAR étendu, et un programme quantitatif dont les sorties sont séparées entre contrôles de calibration, sorties indépendantes Higgs/top, et continuations phénoménologiques plus faibles. Le Modèle Standard, la relativité générale et les descriptions de type feuille d'univers en théorie des cordes y émergent comme secteurs effectifs de la structure sous-jacente.
+
+> **Avertissement de statut :** l'OPH est un programme de recherche actif et n'est pas encore entièrement démontré. Plusieurs dérivations restent incomplètes, certaines preuves n'existent actuellement qu'à l'état d'esquisse, et certaines hypothèses auxiliaires doivent encore être éliminées. Le cadre doit donc être considéré comme étant en développement actif.
 
 **Version anglaise :** [README.md](README.md)
 
@@ -23,12 +23,37 @@ Les lois de la physique sont les règles de cohérence qui rendent cet accord in
 - **PDF (article principal) :** [Observers are all you need](paper/observers_are_all_you_need.pdf)
 - **Source LaTeX :** [observers_are_all_you_need.tex](paper/observers_are_all_you_need.tex)
 
-**Reality as a Consensus Protocol** est un article complémentaire orienté informatique qui présente l'ossature computationnelle de l'OPH sous la forme d'un paquet de théorèmes autonome. Il montre que la loi physique objective est le point fixe unique d'un protocole de réconciliation distribué entre patchs d'observateurs, que la topologie peut faire obstacle à la cohérence globale avec des particules comme défauts stables, que la symétrie de jauge est une forme de masquage d'implémentation, et que les enregistrements classiques forment une couche CRDT à cohérence éventuelle.
+**Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency** est
+l'article compact de soumission. Il concentre le coeur falsifiable de l'OPH :
+cinématique de Lorentz, branche d'Einstein conditionnelle dans la limite d'échelle, clôture
+de jauge du Modèle Standard sous le paquet d'admissibilité MAR étendu, hypercharges, trois
+couleurs, trois générations, économie à deux entrées, et branches quantitatives les plus fortes.
+
+- **PDF (article compact de soumission) :** [Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf)
+- **Source LaTeX :** [recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex)
+
+**Reality as a Consensus Protocol** est un article complémentaire orienté informatique qui présente l'ossature computationnelle de l'OPH sous la forme d'un paquet de théorèmes autonome. Il formule la loi physique objective comme le point fixe d'un protocole de réconciliation distribué entre patchs d'observateurs, montre comment la topologie peut faire obstacle à la cohérence globale avec des particules comme défauts stables, interprète la symétrie de jauge comme une forme de masquage d'implémentation, et modélise les enregistrements classiques comme une couche CRDT à cohérence éventuelle.
 
 - **PDF :** [Reality as a Consensus Protocol](paper/reality_as_consensus_protocol.pdf)
 - **Source LaTeX :** [reality_as_consensus_protocol.tex](paper/reality_as_consensus_protocol.tex)
 
+Chaque PDF comporte désormais une ligne de version visible. La source partagée de version est
+[`paper/release_info.tex`](paper/release_info.tex), et les empreintes PDF courantes sont
+écrites dans [`paper/paper_release_manifest.json`](paper/paper_release_manifest.json) en lançant :
+
+```bash
+python3 tools/generate_paper_release_manifest.py
+```
+
 Les sources canoniques des articles se trouvent désormais dans [`paper/`](paper). L'ancien arbre de brouillons a été supprimé du dépôt.
+
+Dans l'ensemble actuel des articles, l'OPH sépare explicitement les affirmations par statut :
+sorties structurelles sans paramètre (chaîne Lorentz/jauge/quotient, hypercharges exactes,
+$N_c=3$, $N_g=3$, zéros protégés par symétrie, stabilité du proton), contrôles de cohérence
+du secteur calibré ($\alpha_i(m_Z)$, $\sin^2\theta_W$, $v$, $m_W$, $m_Z$), branche quantitative
+indépendante principale ($m_H$, $m_t$), et continuations phénoménologiques ou numériques en aval
+plus faibles (Koide/leptons chargés, textures de quarks, neutrinos, hadrons, matière noire,
+baryogenèse).
 
 ## Ressources officielles OPH
 
@@ -128,11 +153,11 @@ Les hypothèses structurelles supplémentaires (MaxEnt, régularité euclidienne
 
 ## La chaîne de prédictions
 
-L'infographie suivante montre comment l'ensemble du cadre relie deux paramètres et quatre axiomes aux caractéristiques observées de la physique :
+L'infographie suivante résume le programme actuel de reconstruction OPH, depuis deux paramètres et quatre axiomes vers une physique effective :
 
 ![Chaîne de prédictions OPH](assets/french/prediction-chain_fr.svg)
 
-*Des axiomes à la réalité : comment la cohérence de recouvrement dérive toute la physique.*
+*Des axiomes à une physique effective : le programme actuel de reconstruction OPH.*
 
 > **Prédictions du spectre de particules :** la dérivation complète de l'aire de pixel aux masses des particules, avec comparaison aux données PDG et audit de toutes les constantes, est présentée dans **[la source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex)**. Les sorties y sont classées par statut épistémique.
 
@@ -150,7 +175,7 @@ L'aire géométrique d'un élément computationnel de l'écran holographique. El
 | En unités SI | $a_{\text{cell}} \approx 4.26 \times 10^{-70}$ m^2 | Aire physique par pixel |
 | « Côté » du pixel | $\sqrt{a_{\text{cell}}} \approx 2.06 \times 10^{-35}$ m | Échelle de résolution |
 
-**Ce qu'elle détermine :** constante de Newton (via $G_{\text{nat}} = a_{\text{cell}}/4\bar{\ell}$ en unités naturelles où $G_{\text{nat}} = \ell_P^2$), échelle de Planck, couplages de jauge, masses des particules.
+**Ce qu'elle détermine :** constante de Newton (via $G_{\text{nat}} = a_{\text{cell}}/4\bar{\ell}$ en unités naturelles où $G_{\text{nat}} = \ell_P^2$), échelle de Planck, secteur calibré des couplages de jauge, et échelle utilisée par la branche Higgs/top indépendante ainsi que par les continuations en aval.
 
 ### 2. Capacité de l'écran : $\log(\dim \mathcal{H}) \sim 10^{122}$
 
@@ -178,7 +203,7 @@ La structure axiomatique ne contient aucune autre constante dimensionnée. Les a
 L'aire de pixel et la capacité de l'écran sont des **paramètres de configuration**, les « réglages » du calcul qu'est notre univers. Ils ne sont pas dérivables depuis l'intérieur de la simulation ; ce sont des conditions aux limites.
 
 Depuis l'intérieur :
-- **Aire de pixel** -> constante de Newton, échelle de Planck, couplages de jauge, masses des particules
+- **Aire de pixel** -> constante de Newton, échelle de Planck, secteur calibré des couplages de jauge, et échelle utilisée par la branche Higgs/top indépendante ainsi que par les continuations en aval
 - **Capacité de l'écran** -> taille de l'univers observable (et elle-même inférée de $\Lambda$ observé)
 
 Les mêmes axiomes avec d'autres réglages produiraient un univers avec d'autres constantes, mais une physique de structure similaire (Einstein, jauge, etc.).
@@ -191,23 +216,21 @@ Le contenu non trivial est que $P$ fournit une contrainte supplémentaire relian
 
 Une fermeture non circulaire complète nécessite un principe UV qui fixe $t$ sans utiliser les couplages mesurés.
 
-### Statut actuel
+### Statut actuel des articles
 
-Le cadre a maintenant un statut de bout en bout à travers l'article principal et les suppléments :
+Les articles actuels ne traitent pas le secteur quantitatif comme un bloc uniforme. Ils séparent
+théorèmes structurels, contrôles de cohérence du secteur calibré, branche Higgs/top sur surface
+critique, et continuations phénoménologiques ou numériques en aval plus faibles.
 
-| Couche | Résultat clé | Statut actuel | Source principale |
-|-------|---------------|---------------|-------------------|
-| Axiomes centraux (A1-A4) + MaxEnt + régularité euclidienne | Cinématique de Lorentz et dynamique d'Einstein semi-classique dans la limite d'échelle ; reconstruction d'un groupe de jauge compact | Dérivé avec hypothèses explicites de limite d'échelle (Théorèmes 4.2-4.3, 5.1, 6.1) | [Source principale](paper/tex_fragments/PAPER.tex) |
-| Théorie étendue $T_{\text{ext}}$ avec MAR | Groupe global MS $SU(3)\times SU(2)\times U(1)/\mathbb{Z}_6$, $N_c=3$, $N_g=3$ | Sélection sous le paquet d'admissibilité + MAR étendu | [Source de dérivation du groupe de jauge](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
-| Conséquence structurelle de jauge | Stabilité du proton (pas de désintégration médiée par jauge) | Structure produit, pas de générateurs leptoquarks $X/Y$ | [Source de dérivation du groupe de jauge](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
-| Zéros exacts protégés par symétrie | $m_\gamma = 0$, $m_g = 0$, $m_{\text{graviton}} = 0$ | Dérivés comme zéros exacts via invariances jauge/difféomorphisme une fois les redondances correspondantes réalisées | [Source principale](paper/tex_fragments/PAPER.tex), [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Couplages à $m_Z$ | $\alpha_s=0.1183$, $\sin^2\theta_W=0.2307$, $\alpha_{\rm em}^{-1}=128.31$ | Contrôles de cohérence (secteur calibré) | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Masses de précision (EW + leptons chargés) | $W=80.386$ GeV, $Z=91.220$ GeV, $e/\mu/\tau$ | Contrôles de cohérence / prédictions selon la branche | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Masses de surface critique | Higgs $=126.48$ GeV, top(pôle) $=171.1$ GeV | Environ 1 %, avec limites connues (1 boucle / seuils) | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Hiérarchie de saveur | $\varepsilon=1/6$ depuis $\mathbb{Z}_6$, texture de Yukawa en base 6 | Hiérarchie capturée ; masses de quarks individuelles encore à 16 %-73 % d'écart | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Secteur neutrino | $m_{\nu_3}\approx 3.0$ meV, $m_{\nu_2}\approx 0.50$ meV, $m_{\nu_1}\approx 0.084$ meV | Compatible avec les bornes actuelles ; bons ordres de grandeur d'oscillation | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Chaîne QCD/hadrons | $P \rightarrow \alpha_s \rightarrow \Lambda_{\overline{\rm MS}}^{(3)} \rightarrow m_{\rm hadrons}$ | Chaîne dérivée complète ; précision limitée par réseau trempé/petits volumes | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Pont vers la théorie des cordes | Poids de bord OPH = noyaux de chaleur YM 2D ; expansion de feuille d'univers à grand $N$ (Gross-Taylor) | Pont mathématique établi ; extension vers supercordes critiques encore ouverte | [Source de dérivation de la théorie des cordes](paper/tex_fragments/STRING_THEORY.tex) |
+| Palier | Sorties représentatives | Statut actuel | Source principale |
+|--------|-------------------------|---------------|-------------------|
+| Théorèmes structurels | Cinématique de Lorentz conditionnelle, branche d'Einstein conditionnelle dans la limite d'échelle, reconstruction de jauge compacte, chaîne de quotient du MS, hypercharges exactes, $N_c=3$, $N_g=3$ | Paquet central de théorèmes sous les prémisses de limite d'échelle et de catégorie explicitement énoncées | [Source principale](paper/tex_fragments/PAPER.tex), [Source de dérivation du groupe de jauge](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
+| Conséquences structurelles exactes | Stabilité du proton ; $m_\gamma = 0$, $m_g = 0$, $m_{\text{graviton}} = 0$ | Conséquences structurelles sans paramètre une fois réalisée la structure de jauge / difféomorphisme / groupe produit correspondante | [Source principale](paper/tex_fragments/PAPER.tex), [Source de dérivation du groupe de jauge](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex), [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Secteur calibré | $\alpha_s=0.1183$, $\sin^2\theta_W=0.2307$, $\alpha_{\rm em}^{-1}=128.31$, $v$, $W$, $Z$ | Contrôles de cohérence après calibration pixel/jauge ; pas présentés comme confirmation quantitative indépendante | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Branche quantitative indépendante | Higgs $=126.48$ GeV, top(pôle) $=171.1$ GeV | Principales sorties quantitatives indépendantes, actuellement contrôlées au niveau du pour-cent avec limites connues de boucle/schéma | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Continuations phénoménologiques | Branche leptons chargés / Koide ; textures de quarks | Palier plus faible : les leptons chargés sont numériquement très précis mais utilisent une étape discrète supplémentaire ; les masses de quarks individuelles gardent une grande incertitude de schéma/seuils | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Branches de capacité / numériques en aval | $m_{\nu_3}\approx 3.0$ meV, $m_{\nu_2}\approx 0.50$ meV, $m_{\nu_1}\approx 0.084$ meV ; $P \rightarrow \alpha_s \rightarrow \Lambda_{\overline{\rm MS}}^{(3)} \rightarrow m_{\rm hadrons}$ | Les neutrinos ne sont pour l'instant qu'une estimation d'ordre de grandeur issue de la branche capacité ; la chaîne hadronique est complète mais la précision reste limitée par les systématiques lattice | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Branches d'extension / programmatiques | Poids de bord OPH = noyaux de chaleur YM 2D ; expansion de feuille d'univers à grand $N$ (Gross-Taylor) ; matière noire, baryogenèse, trous noirs | Le pont 2D YM/feuille d'univers est mathématiquement établi ; le reste demeure au niveau extension ou phénoménologie programmatique | [Source de dérivation de la théorie des cordes](paper/tex_fragments/STRING_THEORY.tex), [Supplément technique source](paper/tex_fragments/TECHNICAL_SUPPLEMENT.tex) |
 
 **Cibles de fermeture ouvertes (suivies explicitement) :**
 - Dériver les multiplicateurs MaxEnt $t_i$ (donc couplages/calibration pixel) depuis des premiers principes.
@@ -283,38 +306,38 @@ Ces résultats suivent des axiomes centraux (A1-A4) + hypothèses supplémentair
 | Déficit d'entropie de bord = log2 6 bits | Loi de noyau de chaleur + quotient Z6 |
 | Hiérarchie de Yukawa $y_f \propto 6^{-n_f}$ | Suppression de défaut Z6 + charges entières |
 
-### Validations de précision face aux données existantes
+### Sorties quantitatives face aux données existantes
 
 La chaîne complète depuis l'aire de pixel $P = 1.63094$ jusqu'aux masses est documentée dans **[la source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex)**. Les résultats additionnels (matière noire, Koide, baryogenèse, spin du proton) sont dans le **[supplément technique source](paper/tex_fragments/TECHNICAL_SUPPLEMENT.tex)**.
 
-**Masses de particules sous le pour-mille** (depuis une seule constante d'entrée) :
+**Contrôles de cohérence du secteur calibré** (les couplages servent à fixer $P$ ; l'accord est attendu par construction) :
 
-| Particule | OPH (GeV) | PDG (GeV) | Erreur rel. |
-|----------|----------:|----------:|-----------:|
-| Boson W | 80.386 | 80.377 ± 0.012 | +0.012% |
-| Boson Z | 91.220 | 91.188 ± 0.002 | +0.035% |
-| Électron | 5.109 × 10⁻⁴ | 5.110 × 10⁻⁴ | −0.023% |
-| Muon | 0.10564 | 0.10566 | −0.022% |
-| Tau | 1.7766 | 1.7769 | −0.020% |
+| Grandeur | OPH | PDG | Erreur rel. | Statut |
+|----------|----:|----:|-----------:|--------|
+| $\alpha_s(M_Z)$ | 0.1183 | 0.1179 ± 0.0009 | +0.37% | Contrôle de cohérence |
+| $\sin^2\theta_W(M_Z)$ | 0.2307 | 0.23122 ± 0.00004 | −0.21% | Contrôle de cohérence |
+| $\alpha_{\text{em}}^{-1}(M_Z)$ | 128.31 | 127.952 ± 0.009 | +0.28% | Contrôle de cohérence |
+| Boson W | 80.386 GeV | 80.377 ± 0.012 GeV | +0.012% | Contrôle de cohérence |
+| Boson Z | 91.220 GeV | 91.188 ± 0.002 GeV | +0.035% | Contrôle de cohérence |
+| VEV du Higgs | 246.77 GeV | 246.22 GeV | +0.22% | Contrôle de cohérence |
 
-**Prédictions au niveau du pour-cent :**
+**Branche quantitative indépendante** (principales sorties de masse hors calibration) :
 
-| Grandeur | OPH | PDG | Erreur rel. |
-|----------|----:|----:|-----------:|
-| Masse du Higgs | 126.48 GeV | 125.20 ± 0.11 GeV | +1.02% |
-| Quark top (surface critique) | 171.1 GeV | 172.57 ± 0.29 GeV | −0.87% |
-| Quark top (texture Z₆) | 174.5 GeV | 172.57 ± 0.29 GeV | +1.1% |
-| VEV du Higgs | 246.77 GeV | 246.22 GeV | +0.22% |
+| Grandeur | OPH | PDG | Erreur rel. | Origine |
+|----------|----:|----:|-----------:|---------|
+| Masse du Higgs | 126.48 GeV | 125.20 ± 0.11 GeV | +1.02% | Surface critique ($\lambda = \beta_\lambda = 0$) |
+| Quark top (surface critique) | 171.1 GeV | 172.57 ± 0.29 GeV | −0.87% | Surface critique |
 
-**Couplages de jauge à $m_Z$ :**
+**Continuations phénoménologiques** (conservées pour comparaison, mais plus faibles que le paquet de théorèmes et la branche Higgs/top) :
 
-| Grandeur | OPH | PDG | Accord |
-|----------|----:|----:|-----------|
-| $\alpha_s(M_Z)$ | 0.1183 | 0.1179 ± 0.0009 | Dans 0.5σ |
-| $\sin^2\theta_W(M_Z)$ | 0.2307 | 0.23122 ± 0.00004 | −0.21% |
-| $\alpha_{\text{em}}^{-1}(M_Z)$ | 128.31 | 127.952 ± 0.009 | +0.28% |
+| Grandeur | OPH | PDG | Erreur rel. | Origine |
+|----------|----:|----:|-----------:|---------|
+| Électron | 5.109 × 10⁻⁴ GeV | 5.110 × 10⁻⁴ GeV | −0.023% | Continuation Koide ($Q=2/3$, $\delta=2/9$) |
+| Muon | 0.10564 GeV | 0.10566 GeV | −0.022% | Continuation Koide |
+| Tau | 1.7766 GeV | 1.7769 GeV | −0.020% | Continuation Koide |
+| Quark top (texture Z₆) | 174.5 GeV | 172.57 ± 0.29 GeV | +1.1% | Continuation texture $\mathbb{Z}_6$ ($n_t = 0$) |
 
-**Résultats quantitatifs supplémentaires** (voir le [supplément technique source](paper/tex_fragments/TECHNICAL_SUPPLEMENT.tex)) :
+**Continuations de programme / supplémentaires** (voir le [supplément technique source](paper/tex_fragments/TECHNICAL_SUPPLEMENT.tex) ; elles n'ont pas toutes le même statut que les résultats centraux) :
 
 | Grandeur | OPH | Observé | Accord |
 |----------|-----|----------|-----------|
@@ -375,11 +398,11 @@ Ces résultats sont dérivés via l'axiome de sélection MAR :
 | Déficit d'entropie Z₆ = log₂ 6 ≈ 2.585 bits | Mesure d'entropie de secteur de bord (~4.0 bits vs ~6.6 bits pour groupe produit) | Observable de structure globale |
 | Ratios de raies BH $E_k/E_2 = \ln k / \ln 2$ | Analyse gamma de PBH | Motif arithmétique sans paramètres |
 | Largeur de raie fractionnelle indépendante de masse ~3-5% | Profils de raies PBH | Prédiction de forme |
-| Exposants de Yukawa $-\ln y_f / \ln 6$ proches d'entiers | Extraction depuis masses fermioniques | Relie la hiérarchie à Z₆ |
+| Exposants de Yukawa $-\ln y_f / \ln 6$ proches d'entiers | Extraction depuis masses fermioniques | Continuation phénoménologique liée à la structure Z₆ |
 | Unification des couplages sans désintégration du proton | Durée de vie proton + données de couplages de précision | Unification géométrique vs algébrique |
 | Borne de déviation RG via défaut de Markov | Tests de gravité de précision en régime faible CMI | Suppression exponentielle avec largeur de collier |
-| Masses neutrinos : $m_{\nu_3} \approx 3.0$ meV, $m_{\nu_2} \approx 0.50$ meV, $m_{\nu_1} \approx 0.084$ meV | JUNO, DUNE, KATRIN, $\sum m_\nu$ cosmologique | Ordonnancement normal ; $\sum m_\nu \approx 3.6$ meV |
-| Théorie des cordes depuis secteurs de bord | Vérification théorique | Poids OPH = noyaux de chaleur YM 2D -> expansion Gross-Taylor (voir [STRING_THEORY.tex](paper/tex_fragments/STRING_THEORY.tex)) |
+| Masses neutrinos : $m_{\nu_3} \approx 3.0$ meV, $m_{\nu_2} \approx 0.50$ meV, $m_{\nu_1} \approx 0.084$ meV | JUNO, DUNE, KATRIN, $\sum m_\nu$ cosmologique | Estimation actuelle d'ordre de grandeur issue de la branche capacité ; ordonnancement normal avec $\sum m_\nu \approx 3.6$ meV |
+| Théorie des cordes depuis secteurs de bord | Vérification théorique | Pont mathématique vers Yang-Mills 2D / Gross-Taylor établi ; une complétion en supercorde critique reste une extension ouverte |
 
 ### Prédictions dynamiques
 
@@ -390,9 +413,9 @@ Ces prédictions suivent du spectre d'aire discret sous l'hypothèse que les tra
 | Peigne de spectroscopie d'horizon GW | Empiler les événements LIGO/Virgo à $x_k = \ln k / 8\pi$ ; l'absence de pics cohérents contredit | Dominance des transitions en $k$ entier |
 | Peigne de Hawking discret | Les sursauts gamma de PBH doivent montrer $E_k/E_2 = \ln k / \ln 2$ | Dominance des transitions en $k$ entier |
 
-## Signatures de validation empirique
+## Critères empiriques de contradiction
 
-OPH établit des énoncés exacts validés empiriquement. Les observations suivantes le contrediraient.
+L'OPH avance un mélange d'énoncés structurels exacts, de contrôles de cohérence calibrés, et de continuations plus faibles au niveau des branches. Les observations suivantes fournissent des critères de contradiction directe contre le coeur du cadre ou contre les branches indiquées.
 
 ### Contradictions physiques directes
 
@@ -416,7 +439,7 @@ Le cadre OPH prend l'étape suivante : il n'essaie pas de sauver une réalité o
 
 ## Statut actuel
 
-Comme résumé dans la matrice de statut plus haut, le cadre dérive la cinématique de Lorentz, les équations d'Einstein semi-classiques, la symétrie de jauge compacte, le groupe du MS (via MAR), trois générations, trois couleurs, des porteurs de force sans masse, des masses de particules depuis une seule entrée, la stabilité du proton et un pont explicite OPH->cordes via les secteurs de bord YM 2D. Les principaux axes d'ingénierie actifs :
+Comme résumé dans la matrice de statut plus haut, le cadre établit aujourd'hui une cinématique de Lorentz conditionnelle, une branche semi-classique d'Einstein conditionnelle, une symétrie de jauge compacte, le groupe du MS (via MAR), trois générations, trois couleurs, des porteurs de force sans masse, un programme quantitatif à deux entrées avec distinction explicite entre calibration et sorties indépendantes, la stabilité du proton, ainsi qu'un pont explicite OPH->cordes via les secteurs de bord YM 2D. Les principaux axes d'ingénierie actifs :
 
 1. **Microphysique d'écran** : les modèles de liens quantiques réalisent les prémisses de régulateur et donnent automatiquement la complétion bord-centre. Reste : assurer un flot modulaire géométrique conforme dans la limite continue.
 2. **Vérification du pont EFT** : le pont modulaire de surface nulle est dérivé sous deux conditions testables ; il faut les vérifier dans des régulateurs UV explicites.
