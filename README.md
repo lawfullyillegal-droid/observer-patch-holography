@@ -1,6 +1,6 @@
 # Observer Patch Holography: An Observer-Centric Approach to Fundamental Physics
 
-> OPH is an observer-centric framework for fundamental physics. In the current implementation it uses two external inputs (pixel area and screen capacity) together with structural axioms and explicit scaling/regularity premises. OPH develops a conditional scaling-limit gravity branch, conditional compact gauge reconstruction with Standard Model closure under extended MAR, and a quantitative program whose outputs are separated into calibration checks, independent Higgs/top outputs, and weaker phenomenological continuations. The Standard Model, general relativity, and string-theoretic worldsheet descriptions emerge as effective sectors of the underlying structure.
+> OPH is an observer-centric framework for fundamental physics. In the current quantitative implementation it uses two external continuous inputs (pixel area and screen capacity) together with structural axioms and explicit scaling/regularity premises. OPH develops a conditional scaling-limit gravity branch, conditional compact gauge reconstruction with Standard Model closure under extended MAR, and a quantitative program whose outputs are separated into calibration checks, a supplement-backed Higgs/top branch that adds no further continuous fit once the gauge trajectory is fixed, and weaker phenomenological continuations. The Standard Model, general relativity, and string-theoretic worldsheet descriptions emerge as effective sectors of the underlying structure.
 
 > **Status disclaimer:** OPH is an active research program and not yet fully proven. Several derivations remain incomplete, some proofs currently exist only as sketches, and certain auxiliary assumptions still need to be removed. The framework should therefore be regarded as under active development.
 
@@ -40,7 +40,7 @@ The strongest plausible end state is not "proof of OPH" in a metaphysical sense,
 - **PDF (main paper):** [Observers are all you need](paper/observers_are_all_you_need.pdf)
 - **LaTeX source:** [observers_are_all_you_need.tex](paper/observers_are_all_you_need.tex)
 
-**Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency** is the submission-focused compact paper. It concentrates the falsifiable core of OPH: Lorentz kinematics, the conditional scaling-limit Einstein branch, Standard Model gauge closure under the extended MAR admissibility package, hypercharges, three colors, three generations, the two-input parameter economy, and the strongest quantitative branches.
+**Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency** is the submission-focused compact paper. It concentrates the falsifiable core of OPH: Lorentz kinematics in the geometric modular phase, the conditional scaling-limit Einstein branch, Standard Model gauge closure under the extended MAR admissibility package, the hypercharge lattice on the realized one-generation matter package, three colors and three generations on the realized MAR-admissible branch, the two-input current quantitative implementation, and the strongest supplement-backed quantitative branches.
 
 - **PDF (compact submission paper):** [Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf)
 - **LaTeX source:** [recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex)
@@ -60,10 +60,13 @@ python3 tools/generate_paper_release_manifest.py
 
 The canonical paper sources now live under [`paper/`](paper). The old draft tree has been removed from the repository.
 
+When hardening paper claims or running a paper-upgrade release, start with the compact submission paper first. Only after its theorem-status language and release line are coherent should equivalent wording changes be propagated into the main paper, book, README surfaces, websites, and ingestion pipeline.
+
 Across the current paper set, OPH separates claims by status: parameter-free structural outputs
-(Lorentz/gauge/quotient chain, exact hypercharges, $N_c=3$, $N_g=3$, symmetry-protected zeros,
-proton stability), calibration-sector consistency checks ($\alpha_i(m_Z)$, $\sin^2\theta_W$,
-$v$, $m_W$, $m_Z$), the main independent quantitative branch ($m_H$, $m_t$), and weaker
+(Lorentz/gauge/quotient chain, hypercharge lattice on the realized matter package, $N_c=3$ and
+$N_g=3$ on the realized MAR-admissible branch, symmetry-protected zeros, proton stability),
+calibration-sector consistency checks ($\alpha_i(m_Z)$, $\sin^2\theta_W$, $v$, $m_W$), the
+main supplement-backed quantitative branch ($m_H$, $m_t$), and weaker
 phenomenological or downstream numerical continuations (charged-lepton/Koide, quark textures,
 neutrino, hadron, dark-sector, baryogenesis).
 
@@ -164,7 +167,7 @@ The following infographic summarizes the current OPH reconstruction program from
 
 *From axioms to effective physics: the current OPH reconstruction program.*
 
-> **Particle Spectrum Derivation**: The complete derivation from pixel area to particle masses — with comparison against PDG data and a full audit of every constant — is documented in **[the spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex)**. Outputs are classified by epistemic status: gauge couplings and EW boson masses are calibration-sector consistency checks; Higgs and top masses (~1% from the critical-surface condition) are the main independent quantitative outputs; charged-lepton masses (< 0.04% from Koide structure) remain a sharper but weaker phenomenological continuation because their final exponent assignment uses an additional discrete-selection step.
+> **Particle Spectrum Derivation**: The complete derivation from pixel area to particle masses — with comparison against PDG data and a full audit of every constant — is documented in **[the spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex)**. Outputs are classified by epistemic status: gauge couplings and EW boson masses are calibration-sector consistency checks; Higgs and top masses (~1% from the critical-surface condition) come from a supplement-backed branch that adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed; charged-lepton masses (< 0.04% from Koide structure) remain a sharper but weaker phenomenological continuation because their final exponent assignment uses an additional discrete-selection step.
 
 ## The Fundamental Parameters
 
@@ -180,7 +183,7 @@ The geometric area of a single computational element on the holographic screen. 
 | In SI units | $a_{\text{cell}} \approx 4.26 \times 10^{-70}$ m^2 | Physical area per pixel |
 | Pixel "side" | $\sqrt{a_{\text{cell}}} \approx 2.06 \times 10^{-35}$ m | Resolution scale |
 
-**What it determines:** Newton's constant (via $G_{\text{nat}} = a_{\text{cell}}/4\bar{\ell}$ in natural units where $G_{\text{nat}} = \ell_P^2$), the Planck scale, the gauge-coupling calibration sector, and the scale used by the independent Higgs/top branch plus downstream mass continuations.
+**What it determines:** Newton's constant (via $G_{\text{nat}} = a_{\text{cell}}/4\bar{\ell}$ in natural units where $G_{\text{nat}} = \ell_P^2$), the Planck scale, the gauge-coupling calibration sector, and the scale used by the supplement-backed Higgs/top branch plus downstream mass continuations.
 
 ### 2. Screen Capacity: $\log(\dim \mathcal{H}) \sim 10^{122}$
 
@@ -208,14 +211,14 @@ The axiom structure contains no other dimensionful constants. The axioms plus re
 The pixel area and screen capacity are **configuration parameters**, the "settings" of the computation that is our universe. They are not derivable from within the simulation; they are boundary conditions set from "outside."
 
 From inside, these parameters manifest as:
-- **Pixel area** determines Newton's constant, the Planck scale, the gauge-coupling calibration sector, and the scale used by the independent Higgs/top branch plus downstream continuations
+- **Pixel area** determines Newton's constant, the Planck scale, the gauge-coupling calibration sector, and the scale used by the supplement-backed Higgs/top branch plus downstream continuations
 - **Screen capacity** determines observable universe size (but is itself inferred from the observed cosmological constant, which is not predicted)
 
 The same axioms with different settings would produce a universe with different constants but similar physics (Einstein equations, gauge structure). The specific Standard Model gauge group is uniquely selected by the Selection Axiom MAR.
 
 ### Calibration vs Prediction
 
-In the current implementation, the pixel constant P = a_cell/ℓ_P² is *inferred* from measured gauge couplings because the axioms fix the functional relation P = 4ℓ̄_tot(t₂,t₃) but do not fix the MaxEnt Lagrange multipliers t_i (equivalently the couplings) from first principles. This inference step is therefore a calibration, not a claimed prediction of P.
+In the current quantitative implementation, the pixel constant P = a_cell/ℓ_P² is *inferred* from measured gauge couplings because the axioms fix the functional relation P = 4ℓ̄_tot(t₂,t₃) but do not fix the MaxEnt Lagrange multipliers t_i (equivalently the couplings) from first principles. This inference step is therefore a calibration, not a claimed prediction of P.
 
 The nontrivial content is that P provides an additional constraint linking the gravitational coupling to gauge-sector edge entropy, and in a two-input mode (treating P as a fundamental configuration parameter and using only one electroweak datum α(M_Z)) the framework predicts α_s(M_Z) and sin²θ_W(M_Z) simultaneously.
 
@@ -224,18 +227,18 @@ Full non-circular closure would require a UV principle that fixes t without refe
 ### Current Paper Status
 
 The current papers do not treat the quantitative sector as uniform. They separate structural
-theorems, calibration-sector consistency checks, the Higgs/top critical-surface branch, and
-weaker phenomenological or downstream numerical continuations.
+theorems, calibration-sector consistency checks, the supplement-backed Higgs/top critical-surface
+branch, and weaker phenomenological or downstream numerical continuations.
 
 | Tier | Representative outputs | Current status | Primary source |
 |------|------------------------|----------------|----------------|
-| Structural theorems | Conditional Lorentz kinematics, conditional scaling-limit Einstein branch, compact gauge reconstruction, SM quotient chain, exact hypercharges, $N_c=3$, $N_g=3$ | Core theorem package under the stated scaling-limit and categorical premises | [Main paper source](paper/tex_fragments/PAPER.tex), [Gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
+| Structural theorems | Conditional Lorentz kinematics, conditional scaling-limit Einstein branch, compact gauge reconstruction, SM quotient chain, hypercharge lattice on the realized matter package, $N_c=3$, $N_g=3$ on the realized MAR-admissible branch | Core theorem package under the stated scaling-limit and categorical premises | [Main paper source](paper/tex_fragments/PAPER.tex), [Gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
 | Exact structural consequences | Proton stability; $m_\gamma = 0$, $m_g = 0$, $m_{\text{graviton}} = 0$ | Parameter-free structural consequences once the corresponding gauge/diffeomorphism/product-group structure is realized | [Main paper source](paper/tex_fragments/PAPER.tex), [Gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex), [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Calibration sector | $\alpha_s=0.1183$, $\sin^2\theta_W=0.2307$, $\alpha_{\rm em}^{-1}=128.31$, $v$, $W$, $Z$ | Consistency checks after pixel/gauge calibration; not claimed as independent confirmation | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Independent quantitative branch | Higgs $=126.48$ GeV, top(pole) $=171.1$ GeV | Main independent quantitative outputs, currently controlled at roughly the percent level with known loop/scheme limitations | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Calibration sector | $\alpha_s=0.1183$, $\sin^2\theta_W=0.2307$, $\alpha_{\rm em}^{-1}=128.31$, $v$, $W$ | Consistency checks after pixel/gauge calibration; not claimed as independent confirmation | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
+| Independent quantitative branch | Higgs $=126.48$ GeV, top(pole) $=171.1$ GeV | Main supplement-backed quantitative outputs; no extra continuous fit once the gauge trajectory and scale-setting branch are fixed, but still subject to known loop/scheme limitations | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
 | Phenomenological continuations | Charged-lepton / Koide branch; quark textures | Weaker continuation tier: charged leptons are numerically sharp but use an extra discrete-selection step; individual quark masses still carry large scheme/threshold uncertainty | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
 | Capacity / downstream numerical branches | $m_{\nu_3}\approx 3.0$ meV, $m_{\nu_2}\approx 0.50$ meV, $m_{\nu_1}\approx 0.084$ meV; $P \rightarrow \alpha_s \rightarrow \Lambda_{\overline{\rm MS}}^{(3)} \rightarrow m_{\rm hadrons}$ | Neutrinos are currently only an order-of-magnitude capacity-branch estimate; the hadron chain is complete but precision is limited by lattice/systematic effects | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
-| Extension / program-level branches | OPH edge weights = 2D YM heat kernels; large-$N$ worldsheet expansion (Gross-Taylor); dark-sector, baryogenesis, black-hole branches | The 2D YM/worldsheet bridge is mathematically established; the rest remain extension or program-level phenomenology | [String-theory derivation source](paper/tex_fragments/STRING_THEORY.tex), [Technical supplement source](paper/tex_fragments/TECHNICAL_SUPPLEMENT.tex) |
+| Extension / program-level branches | OPH edge weights = 2D YM heat kernels; conditional large-$N$ worldsheet expansion (Gross-Taylor); dark-sector, baryogenesis, black-hole branches | The 2D YM/worldsheet bridge is mathematically established; the rest remain extension or program-level phenomenology | [String-theory derivation source](paper/tex_fragments/STRING_THEORY.tex), [Technical supplement source](paper/tex_fragments/TECHNICAL_SUPPLEMENT.tex) |
 
 **Completion targets (active engineering):**
 - Derive the MaxEnt multipliers $t_i$ (and thus couplings/pixel calibration) from first principles rather than calibration.
@@ -316,7 +319,7 @@ These follow once the Standard Model matter content is assumed:
 | Hypercharges (exact rationals) | SM matter content assumed |
 | Charge quantization | Z6 quotient from realized spectrum |
 | Z6 congruence rule | SM global group structure |
-| Edge entropy deficit = log2 6 bits | Heat-kernel law + Z6 quotient |
+| Conditional center-label entropy = log2 6 bits | Uniform sixfold center-label ensemble on the realized Z6 quotient sectors |
 | Yukawa hierarchy $y_f \propto 6^{-n_f}$ | Z6 defect suppression + integer charges |
 
 ### Quantitative Outputs vs Existing Data
@@ -331,7 +334,6 @@ The complete derivation chain from pixel area $P = 1.63094$ to particle masses i
 | $\sin^2\theta_W(M_Z)$ | 0.2307 | 0.23122 ± 0.00004 | −0.21% | Consistency check |
 | $\alpha_{\text{em}}^{-1}(M_Z)$ | 128.31 | 127.952 ± 0.009 | +0.28% | Consistency check |
 | W boson | 80.386 GeV | 80.377 ± 0.012 GeV | +0.012% | Consistency check |
-| Z boson | 91.220 GeV | 91.188 ± 0.002 GeV | +0.035% | Consistency check |
 | Higgs VEV | 246.77 GeV | 246.22 GeV | +0.22% | Consistency check |
 
 **Independent quantitative branch** (main non-calibration mass outputs):
@@ -355,8 +357,8 @@ The complete derivation chain from pixel area $P = 1.63094$ to particle masses i
 | Quantity | OPH | Observed | Agreement |
 |----------|-----|----------|-----------|
 | MOND acceleration scale $a_0$ | $1.03 \times 10^{-10}$ m/s² | $1.2 \times 10^{-10}$ m/s² | 15% |
-| Koide ratio $Q$ | 2/3 (exact) | 0.666664 | 10⁻⁵ |
-| Koide phase $\delta$ | 2/9 (derived) | 0.222225 | 10⁻⁵ |
+| Koide ratio $Q$ | 2/3 (continuation ansatz) | 0.666664 | 10⁻⁵ |
+| Koide phase $\delta$ | 2/9 (continuation ansatz) | 0.222225 | 10⁻⁵ |
 | Baryon asymmetry $\eta_B$ | $4.6 \times 10^{-10}$ | $6.1 \times 10^{-10}$ | Factor 1.3 |
 | Proton spin fraction $\Delta\Sigma$ | 0.308 | 0.29 ± 0.03 | Within 1σ |
 | MSSM $\beta$-shift ratio $\Delta b_3/\Delta b_2$ | 0.91 | 0.96 (MSSM) | 5% |
@@ -410,7 +412,7 @@ These match known results but were derived elsewhere first:
 | Prediction | How to Test | Status |
 |------------|-------------|--------|
 | Casimir log-gap ratios (9/4, 5/2, 4, 9/2, 6) | Future lattice measurements of SU(3) edge-sector probabilities | Parameter-free from group theory |
-| Z₆ entropy deficit = log₂ 6 ≈ 2.585 bits | Edge-sector entropy measurement (~4.0 bits vs ~6.6 bits for product group) | Global-structure observable |
+| Conditional Z₆ center-label entropy = log₂ 6 ≈ 2.585 bits | Edge-sector entropy measurement under the uniform center-label ensemble ansatz | Global-structure observable |
 | BH emission line ratios $E_k/E_2 = \ln k / \ln 2$ | PBH gamma-ray analysis | Parameter-free arithmetic pattern |
 | Mass-independent fractional linewidth ~3-5% | PBH emission line profiles | Shape prediction, not just positions |
 | Yukawa exponents $-\ln y_f / \ln 6$ near integers | Extract from fermion masses | Phenomenological continuation tied to Z₆ structure |
@@ -448,7 +450,7 @@ OPH makes a mix of exact structural claims, calibrated consistency checks, and w
 
 - **Wrong Casimir ratios in lattice data**: If future precision lattice measurements show $\Delta_8/\Delta_3 \neq 9/4$ (e.g., closer to 2.67 or 5.06), the heat-kernel edge mechanism would be contradicted. The full prediction set is $\Delta_8/\Delta_3 = 9/4$, $\Delta_6/\Delta_3 = 5/2$, $\Delta_{10}/\Delta_3 = 9/2$, $\Delta_{15}/\Delta_3 = 4$, $\Delta_{27}/\Delta_3 = 6$.
 
-- **Wrong Z₆ entropy deficit**: If edge-sector entropy measurements yield ~6.6 bits instead of ~4.0 bits (i.e., no deficit relative to the product group), the Z₆ quotient structure would be contradicted.
+- **Wrong Z₆ center-label entropy**: If edge-sector entropy measurements disagree with the conditional $\log_2 6$ center-label value under the same ensemble ansatz, the Z₆ continuation would be contradicted.
 
 - **Non-integer Yukawa exponents**: If the extracted exponents $-\ln y_f / \ln 6$ show no clustering near integers across fermion generations, the Z₆ defect mechanism for mass hierarchy would be contradicted.
 

@@ -214,7 +214,7 @@ The EFT bridge (null-surface modular additivity) is derived from A1-A4 under two
 
 ### Two Fundamental Parameters: The Configuration of Reality
 
-In the current implementation our universe is characterized by exactly **two external configuration inputs**:
+In the current quantitative implementation our universe is characterized by exactly **two external continuous configuration inputs**:
 
 | Parameter | Value | What It Sets |
 |-----------|-------|--------------|
@@ -244,7 +244,7 @@ From the observed $\Lambda \sim 10^{-52}$ $\text{m}^{-2}$, we infer:
 
 A universe with different configuration parameters would have different absolute scales but the **same structure**: same gauge groups, same charge ratios, same scaling-limit Einstein branch, same Standard Model quotient. The configuration parameters are what make our universe *this* universe rather than another one running the same "operating system."
 
-In the current implementation these parameters are not yet derived from within the system. They are boundary conditions, the fundamental "settings" of the computation that is our universe. Asking "why is $a_{\text{cell}} = 1.63 \, \ell_P^2$?" is, for now, like asking why a simulation was configured with particular settings. Closing or replacing those inputs is part of the remaining program.
+In the current quantitative implementation these parameters are not yet derived from within the system. They are boundary conditions, the fundamental "settings" of the computation that is our universe. Asking "why is $a_{\text{cell}} = 1.63 \, \ell_P^2$?" is, for now, like asking why a simulation was configured with particular settings. Closing or replacing those inputs is part of the remaining program.
 
 **Current status**: The pixel area formula is currently used to *extract* $a_{\text{cell}}$ from measured $G$ and $\alpha_i$. To make it a true prediction, we need to derive gauge couplings from geometry (close the $\alpha_U$ gap). Once complete, the chain would run: $a_{\text{cell}} \to \alpha_U \to \alpha_i(M_Z) \to \Lambda_{\text{QCD}} \to m_{\text{proton}}$.
 
@@ -280,7 +280,7 @@ The Hilbert space is finite-dimensional. The second fundamental parameter, **scr
 
 ## 18.8 The Remaining Frontier
 
-The framework derives the Standard Model gauge group, a two-input quantitative program with calibration checks, an independent Higgs/top branch, and weaker charged-lepton/flavor/neutrino continuations, the conditional scaling-limit Einstein branch, and the absence of gauge-mediated proton decay. The main engineering deliverables are well-scoped:
+The framework derives the Standard Model gauge group, a two-input quantitative program with calibration checks, a supplement-backed Higgs/top branch that adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed, and weaker charged-lepton/flavor/neutrino continuations, the conditional scaling-limit Einstein branch, and the absence of gauge-mediated proton decay. The main engineering deliverables are well-scoped:
 geometric modular flow on caps (BW$_{S^2}$) is derived from Markov + symmetry + refinement assumptions, and the next steps are concrete. Non-central loop defects are classified by a 2-group cocycle; in the EFT limit this obstruction data is structurally analogous to anomaly cancellation, while hypercharges are fixed by the separate anomaly/Yukawa analysis once the SM gauge structure is in place. What remains is to compute those classes in concrete models and to derive the Lagrange multiplier $t$ from UV microphysics.
 
 **Progress on numerical predictions.** The extraction of gauge couplings from

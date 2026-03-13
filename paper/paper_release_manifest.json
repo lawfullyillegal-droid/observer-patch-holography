@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-12T23:14:04.710528Z",
+  "generated_at": "2026-03-13T00:37:56.662603Z",
   "papers": {
     "observers_are_all_you_need": {
       "pdf_path": "paper/observers_are_all_you_need.pdf",
-      "sha256": "f839930d0f5b224a6e4faf37b53afa8845fe225904202b221ee6f150ca487b16",
-      "size_bytes": 693300
+      "sha256": "e2fa4031c29790a485b8e239ac48051c410ce9959d1f27732622af97992be362",
+      "size_bytes": 693971
     },
     "reality_as_consensus_protocol": {
       "pdf_path": "paper/reality_as_consensus_protocol.pdf",
-      "sha256": "e2fbadd55c8d27b767032e4b5fa55f2105da4dd8767b3c9f6b3133cb982524b3",
-      "size_bytes": 113040
+      "sha256": "69ad9b666651cd8712aa4819418aea2352f249667e5a64626a0f3e8d09105843",
+      "size_bytes": 113060
     },
     "recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact": {
       "pdf_path": "paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf",
-      "sha256": "99be642939eff9d4179fe2ccac1c400f0ce28d44734695eeaf2a7857527fa7a1",
-      "size_bytes": 248731
+      "sha256": "4d90064f950a68a115e8b8f2893ef44870426bd35778ecc200b274d4d78785a4",
+      "size_bytes": 257514
     }
   },
   "release_id": "r1337",

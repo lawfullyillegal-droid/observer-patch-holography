@@ -1,6 +1,6 @@
 # Holographie par Patchs d'Observateurs : une approche de la physique fondamentale centrée sur l'observateur
 
-> OPH est un cadre de physique fondamentale centré sur l'observateur. Dans son implémentation actuelle, il utilise deux entrées externes (aire de pixel et capacité d'écran) ainsi que des axiomes structurels et des hypothèses explicites de régularité et de limite d'échelle. OPH développe une branche gravitationnelle conditionnelle dans la limite d'échelle, une reconstruction conditionnelle des groupes de jauge compacts avec clôture du Modèle Standard sous MAR étendu, et un programme quantitatif dont les sorties sont séparées entre contrôles de calibration, sorties indépendantes Higgs/top, et continuations phénoménologiques plus faibles. Le Modèle Standard, la relativité générale et les descriptions de type feuille d'univers en théorie des cordes y émergent comme secteurs effectifs de la structure sous-jacente.
+> OPH est un cadre de physique fondamentale centré sur l'observateur. Dans son implémentation quantitative actuelle, il utilise deux entrées continues externes (aire de pixel et capacité d'écran) ainsi que des axiomes structurels et des hypothèses explicites de régularité et de limite d'échelle. OPH développe une branche gravitationnelle conditionnelle dans la limite d'échelle, une reconstruction conditionnelle des groupes de jauge compacts avec clôture du Modèle Standard sous MAR étendu, et un programme quantitatif dont les sorties sont séparées entre contrôles de calibration, branche Higgs/top adossée à des suppléments numériques sans nouvel ajustement continu une fois la trajectoire de jauge fixée, et continuations phénoménologiques plus faibles. Le Modèle Standard, la relativité générale et les descriptions de type feuille d'univers en théorie des cordes y émergent comme secteurs effectifs de la structure sous-jacente.
 
 > **Avertissement de statut :** l'OPH est un programme de recherche actif et n'est pas encore entièrement démontré. Plusieurs dérivations restent incomplètes, certaines preuves n'existent actuellement qu'à l'état d'esquisse, et certaines hypothèses auxiliaires doivent encore être éliminées. Le cadre doit donc être considéré comme étant en développement actif.
 
@@ -40,9 +40,11 @@ L'état final plausible le plus fort n'est donc pas une "preuve de l'OPH" au sen
 
 **Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency** est
 l'article compact de soumission. Il concentre le coeur falsifiable de l'OPH :
-cinématique de Lorentz, branche d'Einstein conditionnelle dans la limite d'échelle, clôture
-de jauge du Modèle Standard sous le paquet d'admissibilité MAR étendu, hypercharges, trois
-couleurs, trois générations, économie à deux entrées, et branches quantitatives les plus fortes.
+cinématique de Lorentz dans la phase modulaire géométrique, branche d'Einstein conditionnelle
+dans la limite d'échelle, clôture de jauge du Modèle Standard sous le paquet d'admissibilité MAR
+étendu, réseau d'hypercharges sur le paquet de matière réalisé à une génération, trois couleurs
+et trois générations sur la branche MAR réalisée, implémentation quantitative à deux entrées, et
+branches quantitatives les plus fortes adossées à des suppléments numériques.
 
 - **PDF (article compact de soumission) :** [Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf)
 - **Source LaTeX :** [recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex)
@@ -62,12 +64,15 @@ python3 tools/generate_paper_release_manifest.py
 
 Les sources canoniques des articles se trouvent désormais dans [`paper/`](paper). L'ancien arbre de brouillons a été supprimé du dépôt.
 
+Lorsqu'une mise à niveau ou un audit touche plusieurs articles, commencez toujours par l'article compact de soumission. Ce n'est qu'une fois sa ligne de version et son langage de statut cohérents qu'il faut propager les mêmes corrections vers l'article principal, le livre, les README, les sites publics et la pipeline d'ingestion.
+
 Dans l'ensemble actuel des articles, l'OPH sépare explicitement les affirmations par statut :
-sorties structurelles sans paramètre (chaîne Lorentz/jauge/quotient, hypercharges exactes,
-$N_c=3$, $N_g=3$, zéros protégés par symétrie, stabilité du proton), contrôles de cohérence
-du secteur calibré ($\alpha_i(m_Z)$, $\sin^2\theta_W$, $v$, $m_W$, $m_Z$), branche quantitative
-indépendante principale ($m_H$, $m_t$), et continuations phénoménologiques ou numériques en aval
-plus faibles (Koide/leptons chargés, textures de quarks, neutrinos, hadrons, matière noire,
+sorties structurelles sans paramètre (chaîne Lorentz/jauge/quotient, réseau d'hypercharges sur le
+paquet de matière réalisé, $N_c=3$ et $N_g=3$ sur la branche MAR réalisée, zéros protégés par
+symétrie, stabilité du proton), contrôles de cohérence du secteur calibré ($\alpha_i(m_Z)$,
+$\sin^2\theta_W$, $v$, $m_W$), branche quantitative principale adossée à des suppléments
+($m_H$, $m_t$), et continuations phénoménologiques ou numériques en aval plus faibles (Koide /
+leptons chargés, textures de quarks, neutrinos, hadrons, matière noire,
 baryogenèse).
 
 ## Ressources officielles OPH
@@ -410,7 +415,7 @@ Ces résultats sont dérivés via l'axiome de sélection MAR :
 | Prédiction | Comment tester | Statut |
 |------------|-------------|--------|
 | Ratios log-gap de Casimir (9/4, 5/2, 4, 9/2, 6) | Futures mesures lattice des probabilités de secteurs de bord SU(3) | Sans paramètres (théorie des groupes) |
-| Déficit d'entropie Z₆ = log₂ 6 ≈ 2.585 bits | Mesure d'entropie de secteur de bord (~4.0 bits vs ~6.6 bits pour groupe produit) | Observable de structure globale |
+| Échelle conditionnelle d'entropie d'étiquette centrale Z₆ = log₂ 6 ≈ 2.585 bits | Sous l'ansatz d'un ensemble uniforme à six étiquettes centrales | Continuation phénoménologique |
 | Ratios de raies BH $E_k/E_2 = \ln k / \ln 2$ | Analyse gamma de PBH | Motif arithmétique sans paramètres |
 | Largeur de raie fractionnelle indépendante de masse ~3-5% | Profils de raies PBH | Prédiction de forme |
 | Exposants de Yukawa $-\ln y_f / \ln 6$ proches d'entiers | Extraction depuis masses fermioniques | Continuation phénoménologique liée à la structure Z₆ |

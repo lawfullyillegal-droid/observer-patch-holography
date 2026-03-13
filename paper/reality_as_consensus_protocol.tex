@@ -60,7 +60,7 @@ This paper proves four core results:
 \item \textbf{Asynchronous confluence.} Under termination and local confluence, every initial state has a unique normal form, independent of update schedule (Theorem~\ref{thm:confluence}).
 \item \textbf{Cycle obstruction.} For affine overlap constraints over an abelian group, global consistency holds if and only if the holonomy vanishes on every cycle (Theorem~\ref{thm:holonomy}). The parity triangle gives the minimal frustrated example.
 \item \textbf{Gauge quotient.} Under gauge-covariant dynamics, the normal-form map descends to the quotient. Gauge-invariant observables are strictly unique (Theorem~\ref{thm:gauge}).
-\item \textbf{Record-layer convergence.} Commuting closure operators on a finite lattice converge to the least common fixed point under any fair asynchronous schedule (Theorem~\ref{thm:crdt}).
+\item \textbf{Record-layer convergence.} Commuting closure operators on a finite lattice converge to the least common fixed point under any asynchronous schedule that applies each operator at least once (Theorem~\ref{thm:crdt}).
 \end{enumerate}
 
 We also define a fitness functional over the space of candidate reconciliation laws and prove that replicator dynamics monotonically increases mean fitness (Theorem~\ref{thm:replicator}). This gives a clean mathematical model for the selection of physical law.
@@ -297,7 +297,7 @@ For any initial record state $x_0\in L$, define $x^\star := F_1 F_2\cdots F_n(x_
 \item $x^\star$ is independent of the order of composition.
 \item $x^\star$ is a common fixed point of all $F_i$.
 \item $x^\star$ is the least common fixed point above $x_0$.
-\item Any fair asynchronous application of the $F_i$ converges in finitely many steps to $x^\star$.
+\item Any asynchronous application schedule in which each $F_i$ is applied at least once converges in finitely many steps to $x^\star$.
 \end{enumerate}
 \end{theorem}
 
@@ -308,7 +308,7 @@ For any $i$, commutativity and idempotence give $F_i(x^\star) = F_i F_1\cdots F_
 
 If $y\ge x_0$ satisfies $F_i(y)=y$ for all $i$, monotonicity gives $x^\star = F_1\cdots F_n(x_0) \le F_1\cdots F_n(y) = y$. So $x^\star$ is the least common fixed point above $x_0$.
 
-Under any fair schedule, once each operator has been applied at least once, the total effect is $F_1\cdots F_n$ regardless of order and repetitions (by commutativity and idempotence). The state reaches $x^\star$ and stays there.
+Under any asynchronous schedule in which each operator is applied at least once, the total effect after the first full pass is $F_1\cdots F_n$ regardless of order and repetitions (by commutativity and idempotence). The state reaches $x^\star$ at that stage and stays there.
 \end{proof}
 
 This is the record layer of reality. Classical observations, the stuff you can write down and share with other observers, form a lattice of shareable records. The reconciliation operators are closure operators. The classical world is the order-independent closure of the shareable record layer.
@@ -419,7 +419,7 @@ The bridge to physics works as follows. In the full OPH framework:
 \item The record-layer theorem (Theorem~\ref{thm:crdt}) provides the formal basis for the classical observation layer in OPH, where records are implemented by approximately commuting projectors in overlap centers.
 \end{itemize}
 
-The OPH manuscript develops a conditional gravity branch from entanglement equilibrium and modular geometry, the SM gauge-group closure from edge-sector admissibility plus MAR, and a worldsheet/string reorganization from large-$N$ heat-kernel asymptotics. Its quantitative program is organized around two external inputs in the current implementation (the pixel area $a_{\rm cell}\approx 1.63\,\ell_P^2$ and the screen capacity $\log\dim\mathcal{H}_{\rm tot}\sim 10^{122}$), with calibration-sector checks, independent Higgs/top outputs, and weaker phenomenological continuations explicitly separated.
+The OPH manuscript develops a conditional gravity branch from entanglement equilibrium and modular geometry, the SM gauge-group closure from edge-sector admissibility plus MAR, and a worldsheet/string reorganization from large-$N$ heat-kernel asymptotics. Its quantitative program is organized around two external continuous inputs in the current quantitative implementation (the pixel area $a_{\rm cell}\approx 1.63\,\ell_P^2$ and the screen capacity $\log\dim\mathcal{H}_{\rm tot}\sim 10^{122}$), with supplement-backed calibration-sector checks, a Higgs/top branch that adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed, and weaker phenomenological continuations explicitly separated.
 
 The present paper provides the computational foundation. OPH says what the patches are, what the algebras are, and what the reconciliation dynamics looks like at the physical level. This paper proves that any system with the right abstract properties must converge to a unique, schedule-independent, gauge-invariant fixed point. That fixed point is what we call physical law.
 

@@ -1,7 +1,7 @@
 \section{Observer-Patch Holography}\label{observer-patch-holography}
 
 \begin{quote}
-OPH is an observer-centric reconstruction program for fundamental physics. From four core axioms, two external configuration inputs in the current implementation, and an explicit regulator/scaling-limit regularity package, OPH develops a conditional Jacobson-type Einstein branch, conditional compact gauge reconstruction in the bosonic edge-sector branch, and quantitative branches whose status is separated into calibration checks, independent Higgs/top outputs, and phenomenological continuations. The Standard Model, general relativity, and string-theoretic worldsheet descriptions are treated as effective sectors of that underlying structure.
+OPH is an observer-centric reconstruction program for fundamental physics. From four core axioms, two external continuous configuration inputs in the current quantitative implementation, and an explicit regulator/scaling-limit regularity package, OPH develops a conditional Jacobson-type Einstein branch, conditional compact gauge reconstruction in the bosonic edge-sector branch, and quantitative branches whose status is separated into supplement-backed calibration checks, a Higgs/top critical-surface branch that adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed, and phenomenological continuations. The Standard Model, general relativity, and string-theoretic worldsheet descriptions are treated as effective sectors of that underlying structure.
 \end{quote}
 
 \subsection{Abstract}\label{abstract}
@@ -16,13 +16,13 @@ We present an observer-centric model in which fundamental data live on a horizon
 \item
   \textbf{Lorentz kinematics and a conditional scaling-limit Einstein branch} from modular geometry and entanglement equilibrium (Theorems 4.2-4.3, 5.1).
 \item
-  \textbf{Gauge-sector reconstruction with Standard Model closure under the extended admissibility package}: compact gauge symmetry from a refinement-stable edge-sector colimit (Theorem 6.1), then selection of \(SU(3)\times SU(2)\times U(1)/\mathbb{Z}_6\) with \(N_c=3\), \(N_g=3\) under MAR, admissibility, and a single connected abelian charge factor premise (see Part II of this manuscript).
+  \textbf{Gauge-sector reconstruction with Standard Model closure on the realized MAR-admissible branch}: compact gauge symmetry from a refinement-stable edge-sector colimit (Theorem 6.1), then selection of \(SU(3)\times SU(2)\times U(1)/\mathbb{Z}_6\) together with the exact rational hypercharge lattice on the realized one-generation Standard Model chiral matter package with one Higgs doublet, plus \(N_c=3\) and \(N_g=3\) on that realized branch, under MAR, admissibility, and a single connected abelian charge factor premise (see Part II of this manuscript).
 \item
   \textbf{Exact symmetry-protected zero masses}: \(m_\gamma = m_g = m_{\text{graviton}} = 0\), with no gauge-mediated proton decay channels in the derived product-group structure.
 \item
-  \textbf{Quantitative program from OPH inputs}: the current implementation uses the pixel area and screen capacity as external inputs. Gauge couplings and EW boson masses are calibration-sector consistency checks; the Higgs/top critical-surface branch is the main independent quantitative output; charged-lepton, flavor-texture, neutrino, and hadron branches are retained with weaker phenomenological or downstream numerical status (see Part III of this manuscript).
+  \textbf{Quantitative program from OPH inputs}: the current quantitative implementation uses the pixel area and screen capacity as external continuous inputs. Gauge couplings and tree-level electroweak boson masses are supplement-backed calibration-sector consistency checks; the Higgs/top critical-surface branch adds no additional continuous fit once the gauge trajectory and scale-setting branch are fixed; charged-lepton, flavor-texture, neutrino, and hadron branches are retained with weaker phenomenological or downstream numerical status (see Part III of this manuscript).
 \item
-  \textbf{String-theory bridge from OPH first principles}: edge-sector MaxEnt weights are exactly 2D Yang-Mills heat kernels, whose large-\(N\) expansion is the Gross-Taylor worldsheet/string expansion (see Part IV of this manuscript).
+  \textbf{Conditional edge-sector route to worldsheet/string reorganization}: edge-sector MaxEnt weights are exactly 2D Yang-Mills heat kernels, and if a large-\(N_{\mathrm{edge}}\) regime exists their free-energy expansion reproduces the Gross-Taylor worldsheet/string reorganization (see Part IV of this manuscript).
 \item
   \textbf{Supplementary continuations and program-level branches}: Koide structure, \(\mathbb{Z}_6\) hierarchy suppression, black-hole recovery, a modular-anomaly dark-sector branch, baryogenesis scale estimates, and cosmological parameter relations are developed within the same framework, but not all with the same logical status as the structural theorems above (see Part V of this manuscript).
 \end{enumerate}
@@ -33,7 +33,7 @@ The photon and graviton are forced by the axiom chain: once the admissible conne
 
 \textbf{Testable predictions.} The log-integer area spectrum yields a discrete "horizon spectroscopy comb" for gravitational waves: after rescaling by remnant mass and spin, spectral features must stack at universal coordinates \(x_k = \ln k / 8\pi\). This is directly testable with public LIGO/Virgo data. We also derive Newton\textquotesingle s constant as \(G = a_{\rm cell}/4\bar{\ell}(t)\) from edge entropy density. We conclude with precision validations against lattice QCD and PDG bounds and a critical evaluation.
 
-\textbf{Fundamental parameters.} In the current implementation the model uses two external inputs characterizing the holographic screen:
+\textbf{Fundamental parameters.} In the current quantitative implementation the model uses two external continuous inputs characterizing the holographic screen:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -43,7 +43,7 @@ The photon and graviton are forced by the axiom chain: once the admissible conne
   \textbf{Screen capacity}: \(\log(\dim\mathcal{H}_{\rm tot}) \sim 10^{122}\), the total degrees of freedom. Inferred from the observed cosmological constant.
 \end{enumerate}
 
-Everything else (compact gauge reconstruction, charge quantization, scaling-limit Einstein equations, mass ratios) is derived structure. The axioms contain no other dimensionful constants. Quantities flowing directly from the calibrated gauge couplings are consistency checks; the Higgs/top critical-surface branch is the main independent quantitative output; Koide, charged-lepton, flavor-texture, neutrino, and related branches are retained as phenomenological continuations or downstream numerical branches and are labeled accordingly below.
+Everything else (compact gauge reconstruction, charge quantization, scaling-limit Einstein equations, mass ratios) is derived structure. The axioms contain no other dimensionful constants. Gauge couplings and tree-level electroweak masses are supplement-backed calibration-sector consistency checks; the Higgs/top critical-surface branch adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed; Koide, charged-lepton, flavor-texture, neutrino, and related branches are retained as phenomenological continuations or downstream numerical branches and are labeled accordingly below.
 
 \subsection{1. Model and Axioms}\label{1-model-and-axioms}
 
@@ -786,7 +786,7 @@ By Section 4.2, \(K_C = 2\pi B_C + \text{const}\), hence
 
 \subsubsection{5.2 Null-surface modular bridge}\label{52-null-surface-modular-bridge}
 
-We derive an internal route to the stress tensor that avoids assuming a UV CFT on small caps. The key insight is that the "EFT bridge" inputs (N1--N3) are not external assumptions; they follow from the same Markov structure (A4) and geometric modular flow (BW\(_{S^2}\)) already established. This the stress tensor is constructed, not imported.
+We derive an internal route toward the stress tensor that avoids assuming a UV CFT on small caps. The key insight is that much of the "EFT bridge" package (N1--N3) can be reduced to the same Markov structure (A4), geometric modular flow (BW\(_{S^2}\)), and explicit scaling-limit regularity premises used elsewhere in the argument. In that sense the stress-tensor bridge is developed internally rather than imported wholesale, although the relativistic null-stress identification should still be read as a scaling-limit premise rather than a fixed-cutoff theorem.
 
 \textbf{Theorem ladder summary.} The derivation proceeds as a chain of lemmas with explicit hypotheses:
 
@@ -1055,7 +1055,7 @@ Therefore, in the locally Lorentzian scaling regime the modular Hamiltonian is c
 
 \textbf{Proof.} Premises 1-2 yield controlled null modular additivity via the Markov argument. Premise 3 yields half-sided modular inclusion since dilation maps half-lines into themselves. Premise 4 provides the half-line endpoint-differentiation formula. Corollary 5.2e and Lemma 5.2f then identify the resulting half-line density with the positive generator of null translations, and the relativistic scaling-limit premise upgrades that density to \(T_{kk}\) with the displayed error term. The null-to-tensor upgrade is exactly the preceding lemma. QED.
 
-\textbf{Gap closure status.} The theorem shows that the "EFT bridge" follows from the screen axioms, rather than entering as an external assumption. Specifically:
+\textbf{Gap closure status.} The theorem reduces the "EFT bridge" to screen-axiom consequences plus explicit scaling-limit regularity premises, rather than treating the whole bridge as a black-box external postulate. Specifically:
 
 \begin{itemize}
 \item
@@ -3573,9 +3573,9 @@ This is a directly testable prediction: the edge-mode "onset scale" is O(100 TeV
 
 \textbf{What remains.} Currently M\_S ≈ 100 TeV is what the model needs to match data. To convert this into a genuine prediction requires deriving M\_S from the edge physics itself (the gap/decoupling scale of edge excitations in the collar Hamiltonian), rather than solving for it from measured α\_s. This is the sharpest remaining target for closing the precision prediction chain.
 
-\subsubsection{6.18 The Z$_6$ quotient: edge-sector selection rules and entropy deficit}\label{618-the-zux2086-quotient-edge-sector-selection-rules-and-entropy-deficit}
+\subsubsection{6.18 The Z$_6$ quotient: edge-sector selection rules and center-label entropy}\label{618-the-zux2086-quotient-edge-sector-selection-rules-and-center-label-entropy}
 
-The SM global gauge group is the quotient (SU(3) × SU(2) × U(1))/Z₆, rather than the direct product (Proposition 6.6). Combined with the heat-kernel edge-sector law, this yields sharp, testable predictions.
+The SM global gauge group is the quotient (SU(3) × SU(2) × U(1))/Z₆, rather than the direct product (Proposition 6.6). The quotient gives exact edge-sector selection rules. In the later flavor discussion we also use a phenomenological center-label entropy ansatz tied to this sixfold quotient structure.
 
 \textbf{The Z₆ congruence rule.} The identified element is (exp(2πi/3), −1, exp(iπ/3)) ∈ SU(3) × SU(2) × U(1). Label edge sectors by SU(3) triality τ ∈ \{0,1,2\}, SU(2) spin j, and hypercharge Y = n/6 with n ∈ Z. For the representation to descend to the quotient group, the identified element must act trivially:
 
@@ -3625,7 +3625,7 @@ With the electroweak inputs and PDG 2025 EW-fit value α\_s(M\_Z) = 0.1177:
 
 For the U(1) factor with Y = n/6, the effective slope is t\_Y = t₁/36 = 0.0186.
 
-\emph{Normalization note:} The A\_eff = 4π convention gives t = 4π²α, a clean relation used throughout. However, Section 6.14\textquotesingle s lattice extrapolation gives A\_eff → 2, not 4π ≈ 12.6. This factor-of-\textasciitilde6 discrepancy indicates either: (1) the toy UV model\textquotesingle s "g²" differs from the continuum MS-bar convention by a factor of \textasciitilde2π, or (2) additional physics (spin-statistics, vertex factors) enters the lattice↔continuum matching. This normalization ambiguity affects \emph{absolute} t values but not ratios between gauge groups, so predictions depending only on ratios (hypercharge selection rules, entropy deficits) remain stable. Predictions depending on absolute t (like the α\_s pixel-area extraction) require this normalization to be resolved from first principles; currently it is fixed by convention.
+\emph{Normalization note:} The A\_eff = 4π convention gives t = 4π²α, a clean relation used throughout. However, Section 6.14\textquotesingle s lattice extrapolation gives A\_eff → 2, not 4π ≈ 12.6. This factor-of-\textasciitilde6 discrepancy indicates either: (1) the toy UV model\textquotesingle s "g²" differs from the continuum MS-bar convention by a factor of \textasciitilde2π, or (2) additional physics (spin-statistics, vertex factors) enters the lattice↔continuum matching. This normalization ambiguity affects \emph{absolute} t values but not ratios between gauge groups, so predictions depending only on ratios (hypercharge selection rules and center-label entropy estimates) remain stable. Predictions depending on absolute t (like the α\_s pixel-area extraction) require this normalization to be resolved from first principles; currently it is fixed by convention.
 
 \textbf{Full edge-sector probability law.} A sector (R₃, R₂, n) has weight
 
@@ -3649,69 +3649,25 @@ but only if the congruence n ≡ −2τ − 6j (mod 6) holds; otherwise w = 0 ex
 
 At M\_Z, because SU(3) is strongly coupled (t₃ large), triality-zero sectors dominate, so most weight sits in residues 0 and 3 (integer and half-integer hypercharge). The "quark-like residues" (1, 2, 4, 5) are suppressed at the 10⁻³ level.
 
-\textbf{Prediction (log 6 entropy deficit).} The Z₆ quotient produces a universal entropy deficit of exactly log₂ 6 bits in the edge-sector distribution, relative to the naive product group:
+\textbf{Uniform center-label ansatz.} If one assumes a uniform sixfold center-label ensemble on the realized \( \mathbb{Z}_6 \) quotient sectors, the associated center-label entropy is exactly
 
 \textbf{log₂ 6 = 2.584962500721156... bits}
 
 This is a parameter-free constant fixed purely by the Z₆ identification.
 
-\textbf{Derivation.} The quotient restricts each (τ, j) combination to a single residue class r ≡ n (mod 6). Define the residue sums
+\textbf{Interpretation.} The quotient restricts each \((\tau, j)\) combination to a single residue class \(r \equiv n \pmod 6\), so the sixfold quotient structure provides a natural discrete label set for phenomenological continuations. If one further assumes those six center labels are populated uniformly, their Shannon entropy is
+\[
+H_{\mathrm{center}}
+=
+-\sum_{r=0}^{5}\frac{1}{6}\log_2\!\frac{1}{6}
+=
+\log_2 6.
+\]
+Equivalently, in nats one writes \(H_{\mathrm{center}} = \ln 6\).
 
-S\_r(t\_Y) := Σ\_k exp(−t\_Y(6k+r)²)
+\textbf{Status.} The quotient itself and the congruence rule are structural. The use of \(\log_2 6\) as a suppression scale in later flavor discussions is an additional phenomenological ansatz about how the realized center labels are populated. It should therefore not be read as a theorem-level direct observable of the quotient alone.
 
-By Poisson summation, the relative deviation between residue sums is \textasciitilde2 exp(−π²/(36 t\_Y)). At M\_Z with t\_Y = 0.0186:
-
-max\_r \textbar( S\_r − \={S} ) / \={S}\textbar{} ≈ 7.8 × 10⁻⁷
-
-So the residue sums are essentially equal, and each allowed sector loses a factor of ≈6 of available hypercharge residues compared to the product group.
-
-\textbf{Numerical result.} Computing the edge entropy S\_edge = H(p\_α) + ⟨log d\_α⟩:
-
-\begin{itemize}
-\tightlist
-\item
-  S\_edge\^{}prod(M\_Z) = 6.585 bits
-\item
-  S\_edge\^{}Z₆(M\_Z) = 4.000 bits
-\end{itemize}
-
-The deficit is:
-
-ΔS(M\_Z) = 2.58497 bits ≈ log₂ 6
-
-The deviation from log₂ 6 is \textasciitilde4 × 10⁻⁶ bits.
-
-\textbf{Scale dependence.} At the unification scale (t\_U ≈ 1.64 for all factors), nontrivial SU(3) triality sectors become more probable:
-
-\begin{itemize}
-\tightlist
-\item
-  r ≡ 0 (mod 6): P = 0.606 at M\_Z, P = 0.383 at M\_U
-\item
-  r ≡ 3 (mod 6): P = 0.382 at M\_Z, P = 0.204 at M\_U
-\item
-  r ≡ 2 or 4 (mod 6): P = 0.004 at M\_Z, P = 0.134 at M\_U
-\item
-  r ≡ 1 or 5 (mod 6): P = 0.002 at M\_Z, P = 0.072 at M\_U
-\end{itemize}
-
-The framework predicts the congruence rule and how the occupancy of allowed classes runs with scale.
-
-\textbf{Why this is sharp.} The log₂ 6 entropy deficit is:
-
-\begin{itemize}
-\tightlist
-\item
-  Rigidly fixed by the Z₆ identification (not tunable)
-\item
-  Independent of UV completion details
-\item
-  Numerically precise to 10⁻⁶ bits at M\_Z
-\item
-  A direct signature of the global gauge group structure
-\end{itemize}
-
-This provides a "global-structure observable": measuring edge-sector entropies and getting \textasciitilde6.6 bits instead of \textasciitilde4.0 bits would directly contradict the Z₆ quotient.
+\textbf{Toy counting picture.} In the simple residue-sum model above, comparing naive product counting to quotient-restricted counting produces a numerical difference close to \(\log_2 6\) bits at \(M_Z\). We retain that computation only as motivation for the center-label ansatz, not as a model-independent measurement prediction.
 
 \subsubsection{6.19 Electroweak scale from dimensional transmutation}\label{619-electroweak-scale-from-dimensional-transmutation}
 
@@ -3775,7 +3731,7 @@ The measured top mass is m\_t ≈ 172.7 GeV, so the prediction is \textbf{\texta
 
 The Z₆ quotient structure provides a natural explanation for the fermion mass hierarchy without introducing continuous Yukawa parameters.
 
-\textbf{The key observation.} The Z₆ entropy deficit is ΔS = ln 6 nats. Under MaxEnt logic, an insertion that requires resolving one unit of this defect carries a suppression factor:
+\textbf{The key phenomenological observation.} Under the uniform center-label ansatz of Section 6.18, the associated entropy scale is \(H_{\mathrm{center}} = \ln 6\) nats. If one uses that scale as the cost of resolving one unit of quotient-label mismatch, the corresponding suppression factor is:
 
 ε = exp(−ln 6) = 1/6
 
@@ -4235,7 +4191,7 @@ The following questions remain for future work:
 \item
   \textbf{Z₆ congruence rule}: SM global group structure
 \item
-  \textbf{Edge entropy deficit ≈ log₂ 6 bits}: Heat-kernel law + Z₆ quotient
+  \textbf{Conditional Z₆ center-label entropy scale \(\approx \log_2 6\) bits}: uniform sixfold center-label ansatz on quotient sectors
 \item
   \textbf{Yukawa hierarchy y\_f ∝ 6\^{}\{-n\_f\}}: Z₆ defect suppression with integer charges
 \end{itemize}
@@ -4406,7 +4362,7 @@ After rescaling by remnant parameters, all events should stack at universal coor
 
 These exact rationals are fixed entirely by group theory (Casimir eigenvalue ratios), with no adjustable parameters. Any deviation identifies a measurement contradiction with the heat-kernel edge-sector mechanism.
 
-\textbf{Z$_6$ entropy fingerprint (Section 6.18).} The quotient gauge group predicts a universal entropy deficit of exactly \(\log_2 6 \approx 2.585\) bits in the edge-sector distribution. This is a direct "global-structure observable." Measuring edge-sector entropies of \textasciitilde6.6 bits instead of \textasciitilde4.0 bits identifies a measurement contradiction with the \( \mathbb{Z}_6 \) quotient. The prediction is nearly scale-independent and requires no UV completion details.
+\textbf{Conditional Z$_6$ center-label entropy scale (Section 6.18).} Under the uniform sixfold center-label ensemble used in the flavor continuation, the associated entropy scale is \(\log_2 6 \approx 2.585\) bits. This is a phenomenological ansatz tied to the quotient label set, not a theorem-level direct observable of the quotient alone.
 
 \textbf{Black hole spectroscopy secondary structure (Section 5.11).} Beyond the headline log-integer comb, the framework predicts rigid secondary structure:
 
@@ -4426,7 +4382,7 @@ These exact rationals are fixed entirely by group theory (Casimir eigenvalue rat
 
 This propagates into an explicit upper bound on how far the Einstein equation can deviate from GR in regimes where the emergence proof applies. Unlike typical beyond-GR frameworks that postulate corrections, OPH provides a quantitative ceiling: given the information-theoretic primitives, corrections decay exponentially with collar width. This "UV ignorance → rigorous inequality" structure is distinctive.
 
-\textbf{Yukawa hierarchy test (Section 6.20).} The prediction y\_f ∝ 6\^{}\{−n\_f\} with integer defect charges means the extracted exponents −ln(y\_f)/ln(6) should land unusually close to integers across all fermions. The small parameter ε = 1/6 is fixed topologically by the same Z₆ structure that produces the log₂ 6 entropy deficit-this ties hierarchy to a global-group entanglement signature rather than being a chosen Froggatt-Nielsen parameter.
+\textbf{Yukawa hierarchy test (Section 6.21).} The prediction y\_f ∝ 6\^{}\{−n\_f\} with integer defect charges means the extracted exponents −ln(y\_f)/ln(6) should land unusually close to integers across all fermions. The small parameter ε = 1/6 is motivated by the same \( \mathbb{Z}_6 \) structure that underlies the conditional \(\log_2 6\) center-label entropy ansatz; this ties hierarchy to a quotient-label mechanism rather than to a chosen Froggatt-Nielsen parameter.
 
 \textbf{No gauge-mediated proton decay (Section 6.11).} If the gauge group is genuinely a product (from sector factorization), coupling unification is geometric (shared edge diffusion parameter) rather than simple-group embedding. This predicts unification-like coupling relations \emph{without} GUT leptoquark bosons, hence no gauge-mediated proton decay. The combination "coupling unification + no proton decay" is a crisp discriminator against classic GUT predictions.
 
@@ -4512,7 +4468,7 @@ Discrete microscopic models generally break Lorentz symmetry, and many unified p
 
 Many approaches produce emergent geometry/kinematics but stall at dynamics: why Einstein\textquotesingle s equations (with the right coefficient) rather than some other geometric PDE?
 
-\emph{How OPH addresses it:} The framework combines MaxEnt entanglement equilibrium, the derived K\_C = 2πB\_C structure with rigid normalization, and an EFT bridge identifying modular energy with stress-tensor charges. The null modular additivity route (N1-N3 derived from Markov/edge-center mechanisms on null strips) internalizes the EFT bridge rather than importing "assume a UV CFT."
+\emph{How OPH addresses it:} The framework combines MaxEnt entanglement equilibrium, the derived K\_C = 2πB\_C structure with rigid normalization, and an EFT bridge identifying modular energy with stress-tensor charges. The null modular additivity route reduces much of that bridge to Markov/edge-center mechanisms on null strips plus explicit scaling-limit regularity premises, rather than relying only on "assume a UV CFT."
 
 \textbf{5. Gauge symmetry origin and compactness.}
 
