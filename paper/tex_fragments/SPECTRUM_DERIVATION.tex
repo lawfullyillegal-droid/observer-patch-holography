@@ -257,6 +257,8 @@ Heat-kernel truncation & 200 representations & Adding more changes \(\bar{\ell}\
 
 \subsection{1B. Calibration vs.\ Prediction: Epistemic Classification of Outputs}\label{1b-calibration-vs-prediction}
 
+This part is not the recovered core of OPH. In the master ledger of Part~I and the compact note, the recovered core is D1--D5 together with D7--D9. The present spectrum part primarily houses the current supplement-backed numerical implementation (D10--D11) and several D12 continuations. The purpose of this section is therefore not to inflate the quantitative program, but to state exactly which numbers are calibration-sector checks, which are secondary quantitative outputs, and which remain downstream or phenomenological branches.
+
 \subsubsection{1B.1 The Calibration Structure}\label{1b1-the-calibration-structure}
 
 The pixel area constant \(P\) is the external continuous input used by the present particle-physics implementation. In practice it is fixed through the gauge sector via the entropy-matching / pixel-constraint closure. Quantities algebraically entangled with that same closure sit in D10 and are calibration-sector consistency checks rather than independent confirmations. In this file, D10 includes the unified coupling and scale-setting branch, the running gauge couplings at \(m_Z\), \(\alpha_{\mathrm{em}}^{-1}(m_Z)\), \(\sin^2\theta_W(m_Z)\), \(v\), and the tree-level electroweak masses. Agreement there shows that the current implementation is self-consistent once \(P\) and the printed supplement-backed conventions are imposed. It does not by itself promote the whole spectrum program to theorem level.
@@ -267,7 +269,7 @@ Using \(P\) to set an overall energy scale and using an output branch as a recov
 \[
 \lambda(M_U)=0,\qquad \beta_\lambda(M_U)=0
 \]
-adds no new continuous fit, so its failure would challenge the D11 branch rather than the D10 calibration closure. But it is still not part of the recovered core D1--D5 plus D7--D9. By contrast, charged-lepton/Koide fits, texture exponents, neutrino estimates, and downstream hadron extractions use additional ans\"atze, capacity assumptions, or external lattice/QCD machinery. Those belong to D12 or to later downstream numerical layers and must not be read back into the core claim set.
+adds no new continuous fit, so its failure would challenge the D11 branch rather than the D10 calibration closure. But it is still not part of the recovered core D1--D5 plus D7--D9. By contrast, charged-lepton/Koide fits, texture exponents, neutrino estimates, proton-spin bookkeeping, and downstream hadron extractions use additional ans\"atze, capacity assumptions, or external lattice/QCD machinery. Those belong to D12 or to later downstream numerical layers and must not be read back into the core claim set.
 
 Put differently: scale-setting dependence does not erase all distinctions, but neither does it automatically elevate later numerics to theorem level. The correct sync rule is the master ledger: D10 is calibration-sector, D11 is the secondary quantitative branch, and the remaining spectrum branches are deferred continuations unless explicitly promoted elsewhere.
 
@@ -286,15 +288,15 @@ Phase I recovered core inherited from Parts I--II (D1--D5, D7--D9) & conditional
 Phase II input-dependent corollary inherited from Part~I (D6) & \(\Lambda=\frac{3\pi}{G N_{\mathrm{scr}}}\) once the screen-capacity identification is adopted, together with the separate order-of-magnitude neutrino estimate tied to the same capacity input & Separate from the recovered core. It uses the second external continuous input \(N_{\mathrm{scr}}\). \\
 Phase II current implementation: calibration sector (D10) & pixel-closure gauge/electroweak consistency, \(\alpha_i(m_Z)\), \(\alpha_{\mathrm{em}}^{-1}(m_Z)\), \(\sin^2\theta_W(m_Z)\), \(v\), \(m_W\), and the running \(Z\)-mass relation & Supplement-backed consistency checks of the current implementation. Their agreement is expected once \(P\) and the printed running/matching conventions are imposed. \\
 Phase II current implementation: secondary quantitative branch (D11) & Higgs/top critical-surface branch & Main non-calibration numerical branch of the present implementation. It adds no further continuous fit once D10 is fixed, but it remains secondary to the recovered core. \\
-Phase III deferred continuations / downstream numerical branches (D12 and beyond) & charged-lepton/Koide fits, quark-texture branches, neutrino mass/mixing constructions beyond the D6 estimate, hadron extractions, and any use of \(\varepsilon=1/6\) or \(\delta=2/9\) as flavor ans\"atze & Failure retracts the corresponding continuation only. These branches use extra structural choices, capacity assumptions, or external numerical machinery beyond D10--D11. \\
+Phase III deferred continuations / downstream numerical branches (D12 and beyond) & charged-lepton/Koide fits, quark-texture branches, neutrino estimates beyond the D6 boundary, downstream hadron extractions, proton-spin bookkeeping, and any use of \(\varepsilon=1/6\) or \(\delta=2/9\) as flavor ans\"atze & Failure retracts the corresponding continuation only. These branches use extra structural choices, capacity assumptions, or external numerical machinery beyond D10--D11. \\
 \end{longtable}
 }
 
 \subsubsection{1B.4 What This Part Actually Contributes}\label{1b4-what-oph-achieves}
 
-The present spectrum part should therefore be read as follows. Its documentary center of gravity is the D10--D11 implementation layer. The gauge-sector closure and electroweak scale-setting branch are calibration-sector consistency checks. The Higgs/top critical-surface branch is the main secondary quantitative output. Charged-lepton, texture, neutrino, and hadronic branches remain explicitly weaker continuations.
+The present spectrum part should therefore be read as follows. Its documentary center of gravity is the D10--D11 implementation layer. The gauge-sector closure and electroweak scale-setting branch are calibration-sector consistency checks. The Higgs/top critical-surface branch is the main secondary quantitative output. Charged-lepton, texture, neutrino, proton-spin, and hadronic branches remain explicitly weaker continuations.
 
-This means that quantities sometimes reused in these later branches do \emph{not} all have the same claim tier. In particular, \(\varepsilon=1/6\), \(\delta=2/9\), Koide relations, texture exponents, neutrino scales, and hadron fits should not be cited as recovered-core outputs of overlap consistency plus the stated scaling-limit and categorical premises. The correct compact summary is simpler: Parts~I--II carry the recovered relativity-plus-Standard-Model core; this part begins at the D10 implementation layer and keeps everything beyond D11 explicitly non-core.
+This means that quantities sometimes reused in these later branches do \emph{not} all have the same claim tier. In particular, \(\varepsilon=1/6\), \(\delta=2/9\), Koide relations, texture exponents, neutrino scales, proton-spin fits, and hadron fits should not be cited as recovered-core outputs of overlap consistency plus the stated scaling-limit and categorical premises. The correct compact summary is simpler: Parts~I--II carry the recovered relativity-plus-Standard-Model core; this part begins at the D10 implementation layer and keeps everything beyond D11 explicitly non-core.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -938,7 +940,7 @@ This part is a quantitative implementation dossier, not a second statement of th
 \begin{itemize}
 \item \textbf{Phase I recovered core inherited from Parts I--II:} conditional relativity plus the realized Standard Model structural chain. These results are upstream prerequisites for the present file, not outputs newly established here.
 \item \textbf{Phase II input-dependent / implementation layer:} D6 if the screen-capacity identification is adopted; D10 for the supplement-backed gauge/electroweak calibration sector; D11 for the Higgs/top critical-surface branch that adds no new continuous fit once D10 is fixed.
-\item \textbf{Phase III continuation layer:} charged-lepton/Koide fits, texture branches, neutrino estimates, and downstream hadron extractions.
+\item \textbf{Phase III continuation layer:} charged-lepton/Koide fits, texture branches, neutrino estimates beyond D6, downstream hadron extractions, proton-spin bookkeeping, and related phenomenological continuations.
 \end{itemize}
 
 The practical contribution of this part is therefore narrow but useful. It records the current D10 gauge/electroweak closure of the supplement-backed implementation, the D11 critical-surface Higgs/top branch, and a set of D12 continuations that reuse the same structural backdrop without acquiring the same claim tier.
@@ -955,4 +957,4 @@ D11
 \Longrightarrow
 D12.
 \]
-Here D10 uses the external input \(P\), D6 uses the external input \(N_{\mathrm{scr}}\), D11 adds the extra critical-surface condition, and D12 introduces further ans\"atze or downstream numerical machinery. Failure of a Phase-III branch does not by itself falsify the recovered core; failure of D11 challenges that secondary quantitative branch; failure of D10 challenges the current supplement-backed implementation.
+Here \(D10\) uses the external input \(P\), \(D6\) uses the external input \(N_{\mathrm{scr}}\), \(D11\) adds the extra critical-surface condition, and \(D12\) introduces further ans\"atze or downstream numerical machinery. Failure of a Phase-III branch does not by itself falsify the recovered core; failure of D11 challenges that secondary quantitative branch; failure of D10 challenges the current supplement-backed implementation.
