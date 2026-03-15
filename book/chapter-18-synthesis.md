@@ -90,7 +90,7 @@ But there is a deeper possibility—one that emerges from Gödel's insights abou
 
 ### The Strange Loop of Self-Simulation
 
-Here is the derive: **reality evolves a way of simulating itself**.
+Here is the philosophical proposal: **reality may evolve a way of simulating itself.**
 
 The computational substrate produces observers through physical evolution. Observers develop minds through biological evolution. Minds develop ideas through memetic evolution. Among these ideas, the "simulator meme" eventually emerges—the understanding of reality's computational nature.
 
@@ -552,7 +552,7 @@ This doesn't "solve" consciousness in the sense of reducing it to something else
 
 Let's be precise about the question.
 
-**A personal God**—an external being who created the universe, watches over it, answers prayers, and judges souls—does not exist in our model. There is no "outside" from which such a being could create or observe. The system is self-contained.
+**A personal God**—an external being who created the universe, watches over it, answers prayers, and judges souls—does not fit the observer-first interpretation developed in this chapter. This is a philosophical reading rather than part of the compact paper’s Phase-I recovered-core claim set. In this interpretation there is no "outside" from which such a being could create or observe; the system is self-contained.
 
 But the strange loop principle shows something interesting.
 
