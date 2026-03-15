@@ -965,13 +965,14 @@ By Theorem~\ref{thm:bw}, the cap modular groups are identified with the cap-pres
 
 \subsection{The null modular bridge}
 
-The gravity chain still requires a bridge from modular data to a local stress tensor, but the sharp claim boundary is now the following. At fixed regulator scale one can transfer the same edge-center data used in the spatial collar theorem to regulated null strips. What does not follow from that transfer alone is the left/right tensor split of the strip multiplicity spaces needed for exact splice and modular-additivity identities. The null bridge therefore separates three layers:
+The gravity chain still requires a bridge from modular data to a local stress tensor, but the sharp claim boundary is now four-layered. At fixed regulator scale one can transfer the same edge-center data used in the spatial collar theorem to regulated null strips. What does not follow from that transfer alone is the left/right tensor split of the strip multiplicity spaces needed for exact splice and modular-additivity identities, nor the half-line control needed to turn strip statements into genuine translation data. The null bridge therefore separates four layers:
 \begin{enumerate}[leftmargin=2em]
 \item transferred center data at the two null cuts;
 \item an additional decomposition-inheritance hypothesis that upgrades those center sectors to the same left/right block structure used in Theorem~\ref{thm:markovcollar};
-\item exact Markovity, or a controlled family converging to the exact Markov set on one fixed finite-dimensional strip model.
+\item exact Markovity, or a controlled exact-Markov replacement on one fixed inherited strip model, yielding an exact-or-controlled four-term strip relation with an explicit carried defect operator;
+\item endpoint-Lipschitz control for the renormalized half-line modular family, strong enough to define a weak tail generator before any Borchers promotion.
 \end{enumerate}
-Only after all three layers are in place does the null strip use the same HJPW factorization and modular-additivity argument as the spatial collar branch. The later identification of the resulting half-line density with a continuum null stress tensor remains a separate scaling-limit premise under Assumption~\ref{ass:technical}\textbf{T8}.
+Only after all four layers are in place does the null strip support the same HJPW factorization logic as the spatial collar branch. The later promotion of the weak tail generator to a genuine positive translation generator remains the separate half-sided modular inclusion premise \textbf{T6}, and the later identification of that generator with a continuum null stress tensor remains a separate scaling-limit premise under Assumption~\ref{ass:technical}\textbf{T8}.
 
 \begin{proposition}[Null-strip center transfer and inherited split]\label{prop:nullec}
 Fix a null generator \(\Omega\) and a regulated tripartition
@@ -1117,7 +1118,7 @@ If item (iv) holds, substitute the factorization
 to obtain the displayed inherited split and the stated action of the left and right union algebras. Nothing in the Schur-lemma argument itself forces item (iv); it is the additional structural condition required to reproduce the same blockwise tensor pattern as Theorem~\ref{thm:markovcollar}.
 \end{proof}
 
-\begin{corollary}[Controlled null modular additivity on an inherited strip model]\label{cor:n1}
+\begin{corollary}[Exact or controlled four-term null modular relation on an inherited strip model]\label{cor:n1}
 Fix one finite-dimensional regulated strip model satisfying Proposition~\ref{prop:nullec}, and define
 \[
 \mathfrak M_{I_-:J:I_+}
@@ -1136,21 +1137,14 @@ I(I_-:I_+\mid J)_\rho\le \varepsilon
 \]
 If the reference state \(\omega\) is exact Markov on this inherited decomposition, then there exists a central operator
 \[
-K_{\partial,J}\in Z(\mathcal A(J))
+K_{\partial,J}(\omega)\in Z(\mathcal A(J))
 \]
 such that
 \[
-K_{I_-\cup J\cup I_+}
+K_{I_-\cup J\cup I_+}(\omega)
 =
-K_{I_-\cup J}+K_{J\cup I_+}-K_J+K_{\partial,J}.
-\]
-Equivalently,
-\[
-\Delta K_J(\omega)
-:=
-K_{I_-\cup J\cup I_+}-K_{I_-\cup J}-K_{J\cup I_+}+K_J
-\]
-is central.
+K_{I_-\cup J}(\omega)+K_{J\cup I_+}(\omega)-K_J(\omega)+K_{\partial,J}(\omega).
+ \]
 
 If instead \(I(I_-:I_+\mid J)_\omega\le \varepsilon\), then on this fixed strip model one may choose an exact Markov state \(\widetilde\omega_J\in \mathfrak M_{I_-:J:I_+}\) with
 \[
@@ -1158,16 +1152,40 @@ If instead \(I(I_-:I_+\mid J)_\omega\le \varepsilon\), then on this fixed strip 
 \le
 \delta^{\mathrm M}_{I_-:J:I_+}(\varepsilon).
 \]
+Define
+\[
+\Delta K_J(\eta)
+:=
+K_{I_-\cup J\cup I_+}(\eta)-K_{I_-\cup J}(\eta)-K_{J\cup I_+}(\eta)+K_J(\eta),
+\]
+and the carried defect operator
+\[
+\mathfrak D_J(\omega,\widetilde\omega_J)
+:=
+\Delta K_J(\omega)-\Delta K_J(\widetilde\omega_J).
+\]
+Then
+\[
+K_{I_-\cup J\cup I_+}(\omega)
+=
+K_{I_-\cup J}(\omega)+K_{J\cup I_+}(\omega)-K_J(\omega)
++K_{\partial,J}(\widetilde\omega_J)
++\mathfrak D_J(\omega,\widetilde\omega_J),
+\]
+where
+\[
+K_{\partial,J}(\widetilde\omega_J):=\Delta K_J(\widetilde\omega_J)\in Z(\mathcal A(J)).
+\]
 For every bounded observable \(O\) in \(\mathcal A(I_-\cup J)\) or \(\mathcal A(J\cup I_+)\),
 \[
 \bigl|\omega(O)-\widetilde\omega_J(O)\bigr|
 \le
-\|O\|\,
+\|O\|_\infty\,
 \delta^{\mathrm M}_{I_-:J:I_+}(\varepsilon).
 \]
 If the marginals entering \(\Delta K_J\) are uniformly faithful with lower spectral bound \(\lambda_\ast>0\), then
 \[
-\|\Delta K_J(\omega)-\Delta K_J(\widetilde\omega_J)\|_\infty
+\|\mathfrak D_J(\omega,\widetilde\omega_J)\|_\infty
 \le
 4\lambda_\ast^{-1}\,
 \delta^{\mathrm M}_{I_-:J:I_+}(\varepsilon).
@@ -1180,10 +1198,11 @@ r_{\mathrm{FR}}(\varepsilon)
 \le
 2\sqrt{\varepsilon}.
 \]
-Hence exact null modular additivity is available only at exact Markovity, or along a controlled strip family on one fixed inherited strip model for which
+Hence the exact four-term strip relation is available only at exact Markovity, or along a controlled strip family on one fixed inherited strip model for which
 \[
 \delta^{\mathrm M}_{I_-:J:I_+}(\varepsilon_J)\to 0.
 \]
+In the controlled case, \(\mathfrak D_J\) is carried explicitly at each finite stage.
 \end{corollary}
 
 \begin{proof}
@@ -1197,11 +1216,11 @@ p_{\alpha_-,\alpha_+}\,
 \otimes
 \omega_{j_R^{\alpha_-,\alpha_+}\,I_+}^{(\alpha_-,\alpha_+)},
 \]
-and the modular Hamiltonian is additive on each block. The only non-additive remainder is therefore the direct sum of block constants, which is central and gives \(K_{\partial,J}\).
+and the modular Hamiltonian is additive on each block. The only non-additive remainder is therefore the direct sum of block constants, which is central and gives \(K_{\partial,J}(\omega)\).
 
 For the controlled statement, the same compactness argument as Proposition~\ref{prop:controlledmarkov} applies verbatim on this fixed finite-dimensional strip model, with \(A,B,D\) relabeled as \(I_-,J,I_+\). The observable bound is immediate from the trace-norm estimate. If the relevant marginals are bounded below by \(\lambda_\ast\), the operator-logarithm Lipschitz estimate used earlier in Proposition~\ref{prop:approxrecover} yields
 \[
-\|\Delta K_J(\omega)-\Delta K_J(\widetilde\omega_J)\|_\infty
+\|\mathfrak D_J(\omega,\widetilde\omega_J)\|_\infty
 \le
 4\lambda_\ast^{-1}\,
 \|\omega-\widetilde\omega_J\|_1,
@@ -1209,77 +1228,142 @@ For the controlled statement, the same compactness argument as Proposition~\ref{
 which gives the displayed control. The Fawzi--Renner bound provides a constructive recovered comparison state but does not by itself identify an exact Markov state; that exact replacement is measured by the modulus \(\delta^{\mathrm M}_{I_-:J:I_+}\).
 \end{proof}
 
-\begin{proposition}[Weak continuity of null modular Hamiltonians]\label{prop:n3}
-Under the derived quasi-local propagation and bounded-interval endpoint control already internal to Axiom~\ref{ax:maxent}, matrix elements of \(K[I]\) obey the interval-length domination estimate
+\begin{definition}[Renormalized null modular functional]
+For a null interval \(I\) on generator \(\Omega\), write
 \[
-\bigl|\langle \psi,(K[I']-K[I])\phi\rangle\bigr|
-\le
-C_{\psi,\phi}\,\lvert I'\Delta I\rvert
+\widetilde K[I,\Omega]
+:=
+K[I,\Omega]-K_\partial(I,\Omega)
 \]
-on bounded intervals. In particular they vary continuously with interval endpoints and have finite variation there.
+for the full modular Hamiltonian with the central endpoint-label term removed. For a null half-line \(H_a:=(a,\infty)\), abbreviate
+\[
+\widetilde K_a(\Omega):=\widetilde K[H_a,\Omega].
+\]
+\end{definition}
+
+\begin{proposition}[Endpoint-Lipschitz null modular families and weak tail generator]\label{prop:n3}
+Under the derived quasi-local propagation and bounded-interval endpoint control already internal to Axiom~\ref{ax:maxent}, the renormalized interval family obeys the following matrix-element bounds on every fixed local-energy-bounded domain. For bounded intervals
+\[
+I=(a,b),\qquad
+I'=(a',b'),
+\]
+contained in one compact endpoint window,
+\[
+\bigl|\langle \psi,(\widetilde K[I',\Omega]-\widetilde K[I,\Omega])\phi\rangle\bigr|
+\le
+C_{\psi,\phi,\Omega}\,\bigl(|a'-a|+|b'-b|\bigr).
+\]
+In particular the matrix elements of \(\widetilde K[I,\Omega]\) are jointly Lipschitz in the two endpoints and therefore have finite variation there.
+
+For null half-lines \(H_a=(a,\infty)\), one likewise has
+\[
+\bigl|\langle \psi,(\widetilde K_{a'}(\Omega)-\widetilde K_a(\Omega))\phi\rangle\bigr|
+\le
+C_{\psi,\phi,\Omega}\,|a'-a|
+\]
+for \(a,a'\) in every compact window. Hence, for fixed \(\psi,\phi\),
+\[
+f_{\psi,\phi}(a):=\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+\]
+is locally Lipschitz and therefore absolutely continuous. Its distributional derivative defines a locally \(L^\infty\) sesquilinear-form density
+\[
+\langle\psi,q(a,\Omega)\phi\rangle
+:=
+-\frac{1}{2\pi}\,\partial_a f_{\psi,\phi}(a),
+\]
+and for \(a<b\),
+\[
+\langle\psi,(\widetilde K_b(\Omega)-\widetilde K_a(\Omega))\phi\rangle
+=
+-2\pi\int_a^b \langle\psi,q(v,\Omega)\phi\rangle\,dv.
+\]
+The object \(q(a,\Omega)\) is the weak tail generator. At this stage it is not yet asserted to be positive or self-adjointly implemented.
 \end{proposition}
 
 \begin{proof}[Proof sketch]
-Local MaxEnt gives a quasi-local Gibbs form for the regulated state. Quasi-locality together with the finite-velocity propagation bound derived in Section~\ref{sec:premise-ledger} implies that moving an interval endpoint by \(\Delta v\) changes expectation values of local observables by \(O(\Delta v)\) after smearing, while the bounded-interval endpoint control derived in the same section supplies the required Lipschitz estimate. The resulting matrix elements are therefore Lipschitz on bounded intervals and in particular have finite variation.
+The bounded-interval estimate already derived from Axiom~\ref{ax:maxent} gives
+\[
+\bigl|\langle\psi,(K[I']-K[I])\phi\rangle\bigr|
+\le
+C_{\psi,\phi}\,|I'\Delta I|.
+\]
+For bounded intervals \(I=(a,b)\) and \(I'=(a',b')\),
+\[
+|I'\Delta I|
+\le
+|a'-a|+|b'-b|,
+\]
+which yields the displayed joint endpoint-Lipschitz bound after removal of the central endpoint term. For half-lines \(H_a=(a,\infty)\) and \(H_{a'}=(a',\infty)\), removal of the endpoint term leaves a difference supported on the bounded interval between the two endpoints, so
+\[
+|H_{a'}\Delta H_a|=|a'-a|,
+\]
+and the same argument gives the half-line estimate. Lipschitz functions on compact intervals are absolutely continuous, hence possess distributional derivatives in \(L^\infty_{\mathrm{loc}}\). The final integral identity is the fundamental theorem of calculus applied to the matrix-element function \(f_{\psi,\phi}(a)\).
 \end{proof}
 
-\begin{definition}[Renormalized null modular functional]
-For a null interval \(I\), write
+\begin{theorem}[Half-line density upgrade and second-derivative formula]\label{lem:density}
+Fix a null generator \(\Omega\) and the renormalized half-line family \(\widetilde K_a(\Omega)\) of Proposition~\ref{prop:n3}. For fixed vectors \(\psi,\phi\) in a common dense domain, let
 \[
-\widetilde K[I]
-:=
-K[I]-K_\partial(I)
-\]
-for the full modular Hamiltonian with the central endpoint-label term removed.
-\end{definition}
-
-\begin{theorem}[Half-line endpoint-differentiation formula]\label{lem:density}
-Fix a null generator \(\Omega\) and define
-\[
-\widetilde K_a(\Omega)
-:=
-\widetilde K[(a,\infty),\Omega].
-\]
-Assume that for fixed vectors \(\psi,\phi\) in a common dense domain the function
-\[
-f_{\psi,\phi}(a)
-:=
-\langle\psi,\widetilde K_a(\Omega)\phi\rangle
-\]
-is twice weakly differentiable in \(a\) with
-\[
-\lim_{a\to+\infty}f_{\psi,\phi}(a)=0,
+f_{\psi,\phi}(a):=\langle\psi,\widetilde K_a(\Omega)\phi\rangle,
 \qquad
-\lim_{a\to+\infty}\partial_a f_{\psi,\phi}(a)=0.
-\]
-Then there exists a sesquilinear-form density \(p(v,\Omega)\) such that
-\[
-\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+q_{\psi,\phi}(a):=\langle\psi,q(a,\Omega)\phi\rangle
 =
-2\pi\int_a^\infty (v-a)\,\langle\psi,p(v,\Omega)\phi\rangle\,dv,
+-\frac{1}{2\pi}\,\partial_a f_{\psi,\phi}(a).
 \]
-and distributionally
+Assume in addition that \(q_{\psi,\phi}\) is weakly differentiable in \(a\), that
 \[
-\langle\psi,p(a,\Omega)\phi\rangle
-=
-\frac{1}{2\pi}\,\partial_a^2 f_{\psi,\phi}(a).
+\lim_{a\to+\infty} f_{\psi,\phi}(a)=0,
+\qquad
+\lim_{a\to+\infty} q_{\psi,\phi}(a)=0,
 \]
-\end{theorem}
-
-\begin{proof}
-Define the matrix elements of \(p\) distributionally by
+and define distributionally
 \[
 \langle\psi,p(a,\Omega)\phi\rangle
 :=
+-\partial_a q_{\psi,\phi}(a)
+=
 \frac{1}{2\pi}\,\partial_a^2 f_{\psi,\phi}(a).
 \]
-Integrating twice from \(a\) to \(+\infty\) and using the assumed vanishing of \(f_{\psi,\phi}\) and its first derivative at infinity yields
+Then
 \[
-f_{\psi,\phi}(a)
+q_{\psi,\phi}(a)
+=
+\int_a^\infty \langle\psi,p(v,\Omega)\phi\rangle\,dv,
+\]
+and
+\[
+\langle\psi,\widetilde K_a(\Omega)\phi\rangle
 =
 2\pi\int_a^\infty (v-a)\,\langle\psi,p(v,\Omega)\phi\rangle\,dv.
 \]
-This is the desired half-line formula. Unlike a sigma-additive bounded-interval measure statement, it is compatible with later interval-dependent kernels on finite null intervals.
+Thus the weak tail generator of Proposition~\ref{prop:n3} admits a density upgrade precisely under the additional weak differentiability and tail-vanishing conditions.
+\end{theorem}
+
+\begin{proof}
+By definition,
+\[
+q_{\psi,\phi}(a)
+=
+-\frac{1}{2\pi}\,\partial_a f_{\psi,\phi}(a).
+\]
+The additional weak differentiability assumption defines \(p(a,\Omega)\) distributionally by
+\[
+\langle\psi,p(a,\Omega)\phi\rangle
+:=
+-\partial_a q_{\psi,\phi}(a).
+\]
+Integrating this identity from \(a\) to \(+\infty\) and using \(q_{\psi,\phi}(a)\to 0\) gives
+\[
+q_{\psi,\phi}(a)
+=
+\int_a^\infty \langle\psi,p(v,\Omega)\phi\rangle\,dv.
+\]
+Integrating once more and using \(f_{\psi,\phi}(a)\to0\) yields
+\[
+f_{\psi,\phi}(a)
+=
+2\pi\int_a^\infty (v-a)\,\langle\psi,p(v,\Omega)\phi\rangle\,dv,
+\]
+which is the required half-line formula. The second-derivative identity is merely the definition of \(p\) rewritten in terms of \(f_{\psi,\phi}\).
 \end{proof}
 
 \begin{corollary}[Geometric form of the assumed half-sided inclusion]\label{cor:n2}
@@ -1302,8 +1386,8 @@ which is the geometric realization of the assumed half-sided inclusion on null h
 Near a smooth cut, the cap dilation from Theorem~\ref{thm:bw} becomes a Rindler boost in the tangent geometry. Restricting that boost to a null generator gives the stated dilation. For \(t\ge 0\), the half-line \(v>v_0\) maps into itself, which is exactly the geometric form of the assumed half-sided inclusion.
 \end{proof}
 
-\begin{lemma}[Null translation generator]\label{lem:translation}
-Under the half-sided modular inclusion premise of Corollary~\ref{cor:n2}, there exists a one-parameter unitary group \(U(a)=e^{iaP}\) with \(P\ge 0\) such that
+\begin{lemma}[Borchers promotion to a genuine null translation generator]\label{lem:translation}
+Under the half-sided modular inclusion premise of Corollary~\ref{cor:n2}, the weak tail generator of Proposition~\ref{prop:n3} is promoted to a genuine one-parameter unitary group \(U(a)=e^{iaP}\) with \(P\ge 0\) such that
 \[
 \Delta^{it}U(a)\Delta^{-it}=U(e^{-2\pi t}a),
 \qquad
@@ -1312,11 +1396,11 @@ Under the half-sided modular inclusion premise of Corollary~\ref{cor:n2}, there 
 \end{lemma}
 
 \begin{proof}[Proof sketch]
-This is the Borchers--Wiesbrock consequence of half-sided modular inclusion. The modular group of the larger algebra acts by endomorphisms on the smaller one for one sign of modular time, and that structure produces a positive translation generator \(P\) whose affine scaling law is the one written above.
+This is the Borchers--Wiesbrock consequence of half-sided modular inclusion. The modular group of the larger algebra acts by endomorphisms on the smaller one for one sign of modular time, and that structure produces a positive translation generator \(P\) whose affine scaling law is the one written above. The point of Proposition~\ref{prop:n3} is only to define the weak tail derivative prior to this promotion; positivity and unitary implementation first appear here, under \textbf{T6}.
 \end{proof}
 
 \begin{theorem}[Conditional null-stress identification from modular data]\label{thm:stress}
-Assume Axioms~\ref{ax:screen}--\ref{ax:entropy}, Assumption~\ref{ass:technical}, Proposition~\ref{prop:nullec}, the exact-or-controlled Markov strip hypothesis of Corollary~\ref{cor:n1}, Proposition~\ref{prop:n3}, the differentiability hypotheses of Theorem~\ref{lem:density}, the half-sided inclusion premise \textbf{T6}, and the scaling-limit null-stress identification premise of the relativistic EFT branch. Then there exists an operator-valued distribution \(T_{kk}(v,\Omega)\) such that the renormalized modular Hamiltonian on a null half-line takes the form
+Assume Axioms~\ref{ax:screen}--\ref{ax:entropy}, Assumption~\ref{ass:technical}, Proposition~\ref{prop:nullec}, the exact-or-controlled strip hypothesis of Corollary~\ref{cor:n1}, Proposition~\ref{prop:n3}, the density-upgrade hypotheses of Theorem~\ref{lem:density}, the half-sided inclusion premise \textbf{T6}, and the scaling-limit null-stress identification premise of the relativistic EFT branch. Then there exists an operator-valued distribution \(T_{kk}(v,\Omega)\) such that the renormalized modular Hamiltonian on a null half-line takes the form
 \[
 \widetilde K[(a,\infty),\Omega]
 =
@@ -1358,7 +1442,7 @@ with \(K_\partial\) central and boundary-supported. Knowledge of \(T_{kk}\) for 
 \end{theorem}
 
 \begin{proof}[Proof sketch]
-Proposition~\ref{prop:nullec} and Corollary~\ref{cor:n1} supply the precise null-strip statement of the collar factorization package: transferred cut centers, an explicit decomposition-inheritance condition, and exact or controlled modular additivity on one fixed inherited strip model. Proposition~\ref{prop:n3} and Theorem~\ref{lem:density} then give the half-line endpoint-differentiation formula for the renormalized modular family. Corollary~\ref{cor:n2} and Lemma~\ref{lem:translation} identify the resulting half-line density with the positive generator of null translations under the separate half-sided inclusion premise \textbf{T6}. In the relativistic scaling-limit branch, the null-stress identification premise upgrades that generator density to \(T_{kk}\). The three carried remainder sources are the constructive Fawzi--Renner comparison error, the exact-Markov replacement error on the fixed strip model, and the separate EFT/scaling-limit remainder \(\eta_I^{\mathrm{EFT}}\). If bounded null intervals inherit geometric modular action, the same density transports to finite intervals with an interval-dependent affine kernel \(g_I(v)\). The ambiguity
+Proposition~\ref{prop:nullec} and Corollary~\ref{cor:n1} supply the precise null-strip statement of the collar factorization package: transferred cut centers, an explicit decomposition-inheritance condition, and exact or controlled four-term modular additivity on one fixed inherited strip model, with the finite-stage failure carried by the defect operator \(\mathfrak D_J\). Proposition~\ref{prop:n3} defines the weak tail generator of the renormalized half-line family from endpoint-Lipschitz control. Theorem~\ref{lem:density} upgrades that weak generator to a density under the additional differentiability and tail assumptions. Corollary~\ref{cor:n2} and Lemma~\ref{lem:translation} then promote the weak tail generator to the genuine positive Borchers translation generator under the separate half-sided inclusion premise \textbf{T6}. In the relativistic scaling-limit branch, the null-stress identification premise upgrades the resulting density to \(T_{kk}\). The three carried remainder sources are the constructive Fawzi--Renner comparison error, the exact-Markov replacement error on the fixed strip model, and the separate EFT/scaling-limit remainder \(\eta_I^{\mathrm{EFT}}\). If bounded null intervals inherit geometric modular action, the same density transports to finite intervals with an interval-dependent affine kernel \(g_I(v)\). The ambiguity
 \[
 T_{ab}\to T_{ab}+\phi g_{ab}
 \]

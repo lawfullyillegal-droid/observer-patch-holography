@@ -221,9 +221,26 @@ where the carried remainder is controlled on bounded observables by \(r_{\mathrm
 
 \subsection{2.3 Null Modular Bridge (EFT Conditions N1-N3)}\label{23-null-modular-bridge-eft-conditions-n1-n3}
 
-The null-strip package now separates three logically distinct layers: transferred cut-center data, an additional decomposition-inheritance condition on strip multiplicity spaces, and exact or controlled exact-Markovity on one fixed inherited strip model. This is the precise null analogue of the spatial collar factorization theorem.
+This subsection states the precise control package needed before null modular data can be promoted to a bona fide translation generator. The logical order is
+\[
+\begin{aligned}
+\text{center transfer}
+&\Longrightarrow
+\text{decomposition inheritance}
+\Longrightarrow
+\text{exact-or-controlled strip additivity}
+\\
+&\Longrightarrow
+\text{endpoint-Lipschitz half-line family}
+\Longrightarrow
+\text{weak tail generator}
+\\
+&\Longrightarrow
+\text{Borchers promotion under N2}.
+\end{aligned}
+\]
 
-\textbf{Condition N1 (null-strip center transfer, inherited split, and exact-or-controlled additivity).} Fix a regulated null tripartition
+\textbf{Condition N1 (exact or controlled four-term null modular relation).} Fix a regulated null tripartition
 \[
 I_-=(v_1,v_2),\qquad
 J=(v_2,v_3),\qquad
@@ -288,42 +305,123 @@ and the exact-Markov modulus
 I(I_-:I_+\mid J)_\rho\le\varepsilon
 \right\}.
 \]
-Exact Markovity then gives
+If the reference state \(\omega\) is exact Markov, then
 \[
-K_{I_-\cup J\cup I_+}
+K_{I_-\cup J\cup I_+}(\omega)
 =
-K_{I_-\cup J}+K_{J\cup I_+}-K_J+K_{\partial,J},
+K_{I_-\cup J}(\omega)+K_{J\cup I_+}(\omega)-K_J(\omega)+K_{\partial,J}(\omega),
 \qquad
-K_{\partial,J}\in Z(\mathcal A(J)).
+K_{\partial,J}(\omega)\in Z(\mathcal A(J)).
 \]
-If strip CMI is only \(\le \varepsilon\), exact identities require a controlled exact-Markov replacement with carried error
+If instead \(I(I_-:I_+\mid J)_\omega\le\varepsilon\), choose \(\widetilde\omega_J\in\mathfrak M_{I_-:J:I_+}\) with
 \[
-r_{\mathrm{FR}}(\varepsilon)
-+
-4\lambda_\ast^{-1}\delta^{\mathrm M}_{I_-:J:I_+}(\varepsilon),
-\]
-where \(r_{\mathrm{FR}}(\varepsilon)=2\sqrt{1-e^{-\varepsilon}}\le 2\sqrt{\varepsilon}\). Small strip CMI alone is therefore not silently upgraded to exact splice formulas.
-
-\textbf{Condition N2 (half-sided modular inclusion remains a separate scaling-limit premise).} Null half-line algebras satisfy the Borchers--Wiesbrock half-sided inclusion property only as an explicit premise in the scaling regime. The blow-up of geometric cap modular flow near a smooth cut identifies its geometric form,
-\[
-v-v_0 \mapsto e^{-2\pi t}(v-v_0),
-\]
-but does not derive N2 from fixed-cutoff strip factorization.
-
-\textbf{Condition N3 (endpoint control and half-line differentiability).} Bounded-interval modular Hamiltonians obey the endpoint-Lipschitz estimate
-\[
-\bigl|\langle\psi,(K[I']-K[I])\phi\rangle\bigr|
+\|\omega-\widetilde\omega_J\|_1
 \le
-C_{\psi,\phi}\,|I'\Delta I|,
+\delta^{\mathrm M}_{I_-:J:I_+}(\varepsilon),
 \]
-from the branch-internal quasi-local propagation of the local MaxEnt generator. In addition, the renormalized half-line family \(\widetilde K_a(\Omega)\) must satisfy the weak twice-differentiability and vanishing-at-infinity assumptions needed for
+define
+\[
+\Delta K_J(\eta)
+:=
+K_{I_-\cup J\cup I_+}(\eta)-K_{I_-\cup J}(\eta)-K_{J\cup I_+}(\eta)+K_J(\eta),
+\]
+and the carried defect operator
+\[
+\mathfrak D_J(\omega,\widetilde\omega_J)
+:=
+\Delta K_J(\omega)-\Delta K_J(\widetilde\omega_J).
+\]
+Then
+\[
+K_{I_-\cup J\cup I_+}(\omega)
+=
+K_{I_-\cup J}(\omega)+K_{J\cup I_+}(\omega)-K_J(\omega)
++K_{\partial,J}(\widetilde\omega_J)
++\mathfrak D_J(\omega,\widetilde\omega_J),
+\]
+where \(K_{\partial,J}(\widetilde\omega_J)\) is central. If the relevant marginals are uniformly faithful with lower spectral bound \(\lambda_\ast>0\),
+\[
+\|\mathfrak D_J(\omega,\widetilde\omega_J)\|_\infty
+\le
+4\lambda_\ast^{-1}\,\delta^{\mathrm M}_{I_-:J:I_+}(\varepsilon).
+\]
+This is the exact-or-controlled N1 statement. The separate Fawzi--Renner comparison error is
+\[
+r_{\mathrm{FR}}(\varepsilon)=2\sqrt{1-e^{-\varepsilon}}\le 2\sqrt{\varepsilon}.
+\]
+
+\textbf{Condition N2 (half-sided modular inclusion).} Null half-line algebras satisfy the half-sided modular inclusion property, either as an explicit scaling-limit premise or as the geometric blow-up form of cap modular flow near a smooth cut:
+\[
+\sigma_t^\omega(\mathcal A(v>v_0))
+\subseteq
+\mathcal A(v>v_0)
+\qquad
+(t\ge 0).
+\]
+This is the premise that promotes the weak tail generator below to a genuine positive translation generator.
+
+\textbf{Condition N3 (endpoint-Lipschitz control and weak tail generator).} For renormalized modular Hamiltonians
+\[
+\widetilde K[I,\Omega]
+:=
+K[I,\Omega]-K_\partial(I,\Omega),
+\qquad
+\widetilde K_a(\Omega):=\widetilde K[(a,\infty),\Omega],
+\]
+bounded intervals satisfy
+\[
+\bigl|
+\langle\psi,(\widetilde K[(a',b'),\Omega]-\widetilde K[(a,b),\Omega])\phi\rangle
+\bigr|
+\le
+C_{\psi,\phi,\Omega}\bigl(|a'-a|+|b'-b|\bigr),
+\]
+and half-lines satisfy
+\[
+\bigl|
+\langle\psi,(\widetilde K_{a'}(\Omega)-\widetilde K_a(\Omega))\phi\rangle
+\bigr|
+\le
+C_{\psi,\phi,\Omega}|a'-a|.
+\]
+Hence, for fixed \(\psi,\phi\),
+\[
+f_{\psi,\phi}(a):=\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+\]
+is locally Lipschitz and absolutely continuous, and its distributional derivative defines the weak tail generator
+\[
+\langle\psi,q(a,\Omega)\phi\rangle
+:=
+-\frac{1}{2\pi}\,\partial_a f_{\psi,\phi}(a).
+\]
+For \(a<b\),
+\[
+\langle\psi,(\widetilde K_b(\Omega)-\widetilde K_a(\Omega))\phi\rangle
+=
+-2\pi\int_a^b \langle\psi,q(v,\Omega)\phi\rangle\,dv.
+\]
+If, in addition, \(q\) is weakly differentiable and both \(f_{\psi,\phi}(a)\) and \(q_{\psi,\phi}(a)\) vanish at \(+\infty\), then the density
+\[
+\langle\psi,p(a,\Omega)\phi\rangle
+:=
+-\partial_a\langle\psi,q(a,\Omega)\phi\rangle
+=
+\frac{1}{2\pi}\,\partial_a^2 f_{\psi,\phi}(a)
+\]
+exists distributionally and
 \[
 \langle\psi,\widetilde K_a(\Omega)\phi\rangle
 =
 2\pi\int_a^\infty (v-a)\,\langle\psi,p(v,\Omega)\phi\rangle\,dv.
 \]
 
-Under N1--N3 and the relativistic EFT identification premise, the renormalized half-line modular Hamiltonian takes the form
+\textbf{Consequence (translation generator and stress-tensor bridge).} Under N2, Borchers--Wiesbrock promotes the weak tail generator to a genuine one-parameter unitary group \(U(a)=e^{iaP}\) with \(P\ge 0\) and
+\[
+\Delta^{it}U(a)\Delta^{-it}=U(e^{-2\pi t}a),
+\qquad
+[K,P]=i2\pi P.
+\]
+Only after this promotion, and only with the separate relativistic scaling-limit identification premise, does the half-line density become a local null stress tensor:
 \[
 \widetilde K[(a,\infty),\Omega]
 =
@@ -331,25 +429,17 @@ Under N1--N3 and the relativistic EFT identification premise, the renormalized h
 +
 E^{(\eta)}_{(a,\infty),\Omega},
 \]
-with carried error
+with
 \[
 \eta_I
 :=
 r_{\mathrm{FR}}(\varepsilon_I)
 +
-4\lambda_\ast^{-1}\delta^{\mathrm M}_{I}(\varepsilon_I)
+4\lambda_\ast^{-1}\delta_I^{\mathrm M}(\varepsilon_I)
 +
 \eta_I^{\mathrm{EFT}}.
 \]
-If bounded null intervals inherit geometric modular action from the interval-preserving projective flow, then likewise
-\[
-\widetilde K[I,\Omega]
-=
-2\pi\int_I g_I(v)\,T_{kk}(v,\Omega)\,dv
-+
-E^{(\eta)}_{I,\Omega},
-\]
-where \(g_I(v)\) is affine-covariant and vanishes at finite interval endpoints. Thus the supplement now makes explicit that the null bridge uses the same theorematic center decomposition as the spatial collar branch only after center transfer and decomposition inheritance are both imposed, while N2 and the final continuum \(T_{kk}\) identification remain separate scaling-limit premises.
+Thus N1 and N3 provide the fixed-cutoff control statements; N2 is the separate promotion step to a genuine positive translation generator; and the final \(T_{kk}\) identification remains a scaling-limit EFT condition rather than a fixed-cutoff theorem.
 \subsection{2.4 Stress Tensor Reconstruction}\label{24-stress-tensor-reconstruction}
 
 \textbf{Lemma 2.3 (Null Data Ambiguity):} If a symmetric tensor \(X_{ab}\) satisfies \(X_{ab}k^a k^b = 0\) for all null \(k\), then: \[X_{ab} = \phi \, g_{ab}\] for some scalar \(\phi\).
