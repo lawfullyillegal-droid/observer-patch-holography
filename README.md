@@ -346,9 +346,9 @@ The complete derivation chain from pixel area $P = 1.63094$ to particle masses i
 
 | Quantity | OPH | PDG | Rel. Error | Status |
 |----------|----:|----:|-----------:|--------|
-| $\alpha_s(M_Z)$ | 0.1183 | 0.1179 ± 0.0009 | +0.37% | Consistency check |
-| $\sin^2\theta_W(M_Z)$ | 0.2307 | 0.23122 ± 0.00004 | −0.21% | Consistency check |
-| $\alpha_{\text{em}}^{-1}(M_Z)$ | 128.31 | 127.952 ± 0.009 | +0.28% | Consistency check |
+| $\alpha_s(m_{Z,\rm run})$ | 0.1183 | 0.1179 ± 0.0009 | +0.37% | Consistency check |
+| $\sin^2\theta_W(m_{Z,\rm run})$ | 0.2307 | 0.23122 ± 0.00004 | −0.21% | Consistency check |
+| $\alpha_{\text{em}}^{-1}(m_{Z,\rm run})$ | 128.31 | 127.952 ± 0.009 | +0.28% | Consistency check |
 | W boson | 80.386 GeV | 80.377 ± 0.012 GeV | +0.012% | Consistency check |
 | Higgs VEV | 246.77 GeV | 246.22 GeV | +0.22% | Consistency check |
 
