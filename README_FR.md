@@ -299,7 +299,7 @@ Ces résultats suivent de l'absence de référentiel « tiers » privilégié. I
 4. *QNEC/Focalisation* : dérivé en interne via monotonie de l'entropie relative.
 5. *Équilibre d'intrication* : mène aux équations d'Einstein via le mécanisme de Jacobson (1995, 2016).
 
-Les hypothèses explicites restantes sont MaxEnt, les prémisses de limite d'échelle et de branche géométrique OPH derrière l'étape BW, ainsi que les conditions du pont EFT ci-dessus.
+Les hypothèses explicites restantes sont MaxEnt, les prémisses OPH de branche géométrique Bisognano--Wichmann et de limite d'échelle derrière l'étape BW, ainsi que les conditions du pont EFT ci-dessus. Cette prémisse de branche BW fournit directement la dilation conforme standard préservant le cap ; l'article ne revendique plus de théorème d'unicité sans sélecteur à l'intérieur du stabilisateur du cap.
 
 ### Particules et forces
 
@@ -328,7 +328,7 @@ Ces résultats suivent des axiomes centraux (A1-A4) + hypothèses supplémentair
 | Masse du photon = 0 | Redondance de jauge émergente + U(1)_em non brisée -> terme de masse interdit |
 | Masse du graviton = 0 | Équilibre d'intrication + invariance difféomorphe -> terme de masse interdit |
 | Masse du gluon = 0 | Jauge-comme-collage pour SU(3) -> terme de masse interdit |
-| Groupe de Lorentz | A1-A4 + théorème BW sur la branche géométrique OPH -> $\mathrm{Conf}(S^2) \sim SO(3,1)$ |
+| Groupe de Lorentz | A1-A4 + théorème BW sur la branche géométrique Bisognano--Wichmann d'OPH -> $\mathrm{Conf}(S^2) \sim SO(3,1)$ |
 | Invariance CPT | Cinématique de Lorentz + localité via théorème CPT |
 | Conservation de charge | Symétrie de jauge U(1)_em non brisée |
 | Formule de la constante de Newton | $G = a_{\rm cell}/4\bar{\ell}(t)$ depuis la densité d'entropie de bord |

@@ -285,7 +285,7 @@ The conditions are:
 - a controlled refinement/scaling limit
 - the geometric-branch condition: the realized cap net lies in the geometric modular class for caps and their conformal images
 
-When these hold, the BW$_{S^2}$ theorem identifies the modular Hamiltonian with the unique cap-preserving conformal dilation and fixes its normalization:
+When these hold, the BW$_{S^2}$ theorem identifies the modular Hamiltonian with the standard cap-preserving conformal dilation supplied by the BW geometric branch and fixes its normalization:
 
 $$K_C = 2\pi B_C$$
 

@@ -190,7 +190,7 @@ Equivalently, there exists a recovery map from AB to ABC with error controlled b
 
 1. **MaxEnt selection**: local states are chosen by maximum entropy given constraints.
 2. **Refinement-stable local branch**: the same finite local constraint family survives under refinement, so quasi-local propagation and endpoint control are carried internally by the MaxEnt branch rather than imported separately.
-3. **Geometric-branch condition**: in the controlled scaling limit, the realized cap net lies in the geometric modular class for caps and their conformal images, so BW$_{S^2}$ identifies the unique cap-preserving conformal dilation and fixes the \(2\pi\) normalization.
+3. **Geometric-branch condition**: in the controlled scaling limit, the realized cap net lies in the BW geometric modular class for caps and their conformal images, so BW$_{S^2}$ identifies the standard cap-preserving conformal dilation carried by that branch and fixes the \(2\pi\) normalization.
 4. **Gauge-as-gluing and obstruction data**: overlap identifications form a redundancy; loop defects live in a 2-group cocycle, with the central case as a simple truncation. A refinement-stable category of transportable edge sectors then reconstructs a compact gauge group.
 5. **ExtEFT and UV limits**: a low-energy EFT limit exists (for SM contact)
    and either (a) a null-surface modular route is first pushed internally to

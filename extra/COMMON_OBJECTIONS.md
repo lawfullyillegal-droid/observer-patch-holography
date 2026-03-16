@@ -447,9 +447,9 @@ The criticism says OPH has not proved Lorentz invariance. But the published clai
 The key steps in the main paper are:
 
 1. Markov locality localizes the modular generator to the collar around a cap boundary.
-2. Rotational symmetry and refinement restrict the possible geometric action.
-3. Euclidean regularity fixes the KMS normalization to `2pi`.
-4. Therefore cap modular flow is the unique cap-preserving conformal dilation:
+2. The BW geometric-branch premise identifies the cap modular flow with the standard cap-preserving conformal dilation.
+3. The KMS/BW normalization fixes the modular scale to `2pi`.
+4. Therefore cap modular flow takes the form:
 
 `K_C = 2pi B_C`.
 

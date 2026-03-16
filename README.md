@@ -290,7 +290,7 @@ These results follow from the absence of a privileged "third-party" frame. There
 
 5. *Entanglement equilibrium* leads to a conditional scaling-limit Einstein branch via the Jacobson mechanism (1995, 2016).
 
-The remaining explicit assumptions are MaxEnt, the OPH geometric-branch/scaling-limit premises behind the BW step, and the EFT-bridge conditions listed above.
+The remaining explicit assumptions are MaxEnt, the OPH Bisognano--Wichmann geometric-branch/scaling-limit premises behind the BW step, and the EFT-bridge conditions listed above. That BW branch premise supplies the standard cap-preserving conformal dilation directly; the paper no longer claims a selector-free uniqueness theorem inside the cap stabilizer.
 
 ### Particles and Forces
 
@@ -321,7 +321,7 @@ These results follow from the core axioms (A1-A4) plus additional assumptions (M
 | Photon mass = 0 | Given emergent gauge redundancy + unbroken U(1)_em, mass term forbidden |
 | Graviton mass = 0 | Given entanglement equilibrium + diffeo invariance, mass term forbidden |
 | Gluon mass = 0 | Given gauge-as-gluing for SU(3), mass term forbidden |
-| Lorentz group | A1-A4 + BW theorem on the OPH geometric branch gives Conf(S^2) ~ SO(3,1) |
+| Lorentz group | A1-A4 + BW theorem on the OPH Bisognano--Wichmann geometric branch gives Conf(S^2) ~ SO(3,1) |
 | CPT invariance | Lorentz kinematics + locality via CPT theorem |
 | Charge conservation | Unbroken U(1)_em gauge symmetry |
 | Newton's constant formula | $G = a_{\rm cell}/4\bar{\ell}(t)$ from edge entropy density |

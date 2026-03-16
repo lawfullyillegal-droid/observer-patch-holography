@@ -261,7 +261,7 @@ Node & Main-manuscript output & Immediate OPH ingredients & Standard mathematics
 \endlastfoot
 \textbf{D1} & Theorem 3.1: normal-form/objectivity statement & overlap-consistency setup on finite patch nets & Newman's lemma & finite patch net, termination, and local confluence & structural theorem \\
 \textbf{D2} & Section 2.3 and \S5.4: EC/Markov collar and generalized-entropy split & Canonical 1--4 plus R0/R1 when invoked & HJPW; Petz; Fawzi--Renner & exact-Markov or idealized recoverability hypotheses when exact identities are used; coarse-grained \(A/(4G)\) dictionary & structural lemma/proposition layer \\
-\textbf{D3} & Theorems 4.2--4.3: geometric modular flow and Lorentz branch & Canonical 1--4 & Bisognano--Wichmann modular geometry; conformal-group classification & controlled refinement limit together with the OPH geometric-branch hypothesis used in Theorem 4.2 & conditional scaling-limit theorem \\
+\textbf{D3} & Theorems 4.2--4.3: geometric modular flow and Lorentz branch & Canonical 1--4 & Bisognano--Wichmann modular geometry; conformal-group classification & controlled refinement limit together with the OPH Bisognano--Wichmann geometric-branch hypothesis used in Theorem 4.2 & conditional scaling-limit theorem \\
 \textbf{D4} & Section 5.2: null modular bridge & D2+D3 & Borchers--Wiesbrock and endpoint differentiation & the theorem-local inherited-strip decomposition and exact-or-controlled Markov hypotheses of Section 5.2, plus the downstream density-upgrade hypotheses and the relativistic null-stress premise & conditional bridge theorem \\
 \textbf{D5} & Theorem 5.1: Einstein branch & D3+D4 & Jacobson small-ball mathematics; null-to-tensor reconstruction modulo a metric term & fixed-cap stationarity and the locally Lorentzian \(d=4\) scaling regime & conditional scaling-limit theorem \\
 \textbf{D6} & capacity/\(\Lambda\) reduction statements & D5 leaves \(+\Lambda g_{ab}\) undetermined & de Sitter entropy relation and dimensional analysis & external input \(N_{\mathrm{scr}}\) and the screen-capacity identification & input-dependent corollary / estimate \\
@@ -851,11 +851,11 @@ Accordingly, the manuscript's later exact collar formulas should be read in one 
 \end{enumerate}
 \subsubsection{\texorpdfstring{4.2 Theorem: \(\mathrm{BW}_{S^2}\) on the OPH geometric branch}{4.2 Theorem: \textbackslash mathrm\{BW\}\_\{S\^{}2\} on the OPH geometric branch}}\label{42-theorem-mathrmbw_s2-from-markov-locality-symmetry-regularity}
 
-\textbf{Theorem 4.2 (\(\mathrm{BW}_{S^2}\) on the OPH geometric branch).} Let \(C\subset S^2\) be a cap and let \((A_\delta,B_\delta,D_\delta)\) be a shrinking collar family around \(\partial C\). Assume: (i) the collar-control/refinement limit used throughout Section 4, so that exact collar formulas are read either at exact Markovity or along a controlled family with
+\textbf{Theorem 4.2 (\(\mathrm{BW}_{S^2}\) on the OPH Bisognano--Wichmann branch).} Let \(C\subset S^2\) be a cap and let \((A_\delta,B_\delta,D_\delta)\) be a shrinking collar family around \(\partial C\). Assume: (i) the collar-control/refinement limit used throughout Section 4, so that exact collar formulas are read either at exact Markovity or along a controlled family with
 \[
 \delta^{\mathrm M}_{A_\delta:B_\delta:D_\delta}(\varepsilon_\delta)\to 0;
 \]
-(ii) MaxEnt selection with rotationally invariant local constraints; and (iii) the refinement-stable OPH branch for caps is geometric, i.e. the limiting modular action for caps and their conformal images acts by conformal maps of \(S^2\). Then cap modular flow is the unique cap-preserving conformal dilation, and its normalization is fixed to \(2\pi\). Equivalently,
+(ii) MaxEnt selection with rotationally invariant local constraints; and (iii) the refinement-stable OPH branch for caps lies in the Bisognano--Wichmann geometric modular class, i.e. for each cap \(C\) the limiting modular action is implemented by the standard cap-preserving conformal one-parameter subgroup \(\lambda_C(s)\), with geometric parameter \(s\) normalized so that the null blow-up near a smooth cut acts by \(v\mapsto e^{-s}v\). If \(B_C\) denotes the infinitesimal generator of \(\lambda_C(s)\), then cap modular flow is implemented by that subgroup, and its normalization is fixed to \(2\pi\). Equivalently,
 \[
 K_C=2\pi B_C.
 \]
@@ -872,13 +872,13 @@ r_{\mathrm{FR}}(\varepsilon_\delta)
 \]
 and therefore vanishes on every controlled collar family whose faithfulness bound survives the limit.
 
-\textbf{Proof.} Markov locality does one precise job: it reduces the modular problem to the shrinking collar, with the finite-stage deviation from an exact Markov reference carried explicitly by \(r_{\mathrm{FR}}(\varepsilon_\delta)\) and \(4\lambda_\ast^{-1}\delta^{\mathrm M}_{A_\delta:B_\delta:D_\delta}(\varepsilon_\delta)\). On the stated OPH refinement branch, the limiting modular automorphism group is geometric, so it acts by conformal maps preserving \(C\) and fixing its boundary circle. The stabilizer of a circle in \(\mathrm{Conf}^+(S^2)\) has a unique connected noncompact one-parameter subgroup preserving the chosen cap; call its generator \(B_C\). Hence the limiting modular Hamiltonian must be \(K_C=\kappa B_C\) for some \(\kappa>0\). The modular group is KMS by definition, and the geometric Euclidean orbit closes with period \(2\pi\); this fixes \(\kappa=2\pi\). Therefore
+\textbf{Proof.} Markov locality does one precise job: it reduces the modular problem to the shrinking collar, with the finite-stage deviation from an exact Markov reference carried explicitly by \(r_{\mathrm{FR}}(\varepsilon_\delta)\) and \(4\lambda_\ast^{-1}\delta^{\mathrm M}_{A_\delta:B_\delta:D_\delta}(\varepsilon_\delta)\). On the stated OPH Bisognano--Wichmann refinement branch, assumption (iii) already provides the standard cap-preserving conformal subgroup \(\lambda_C(s)\), so the limiting modular Hamiltonian must be \(K_C=\kappa B_C\) for some \(\kappa>0\). No selector-free uniqueness claim inside the cap stabilizer is used here. The modular group is KMS by definition, and because \(s\) is normalized by unit null dilation on the branch, the usual Bisognano--Wichmann relation fixes \(\kappa=2\pi\). Therefore
 \[
 K_C=2\pi B_C,
 \]
 with the displayed \(E_C^{(\delta)}\) as the carried finite-stage remainder. QED.
 
-\textbf{Scope note.} The theorem proves the Bisognano--Wichmann conclusion \emph{once the OPH refinement branch is geometric}. It does \emph{not} claim that quasi-locality plus small collar CMI alone force that branch; that remaining phase-selection burden is stated openly rather than hidden in the theorem packaging.
+\textbf{Scope note.} The theorem proves the Bisognano--Wichmann conclusion \emph{once the OPH refinement branch lies in the stated BW geometric modular class}. It does \emph{not} claim that cap-preservation alone singles out a unique noncompact subgroup, nor that quasi-locality plus small collar CMI alone force the BW branch. Those remaining phase-selection burdens are stated openly rather than hidden in the theorem packaging.
 
 \subsubsection{\texorpdfstring{4.3 Theorem: \(\mathrm{BW}_{S^2}\) implies Lorentz kinematics}{4.3 Theorem: \textbackslash mathrm\{BW\}\_\{S\^{}2\} implies Lorentz kinematics}}\label{43-theorem-mathrmbw_s2-implies-lorentz-kinematics}
 
@@ -888,7 +888,7 @@ with the displayed \(E_C^{(\delta)}\) as the carried finite-stage remainder. QED
 \mathrm{Conf}^+(S^2) \cong \mathrm{PSL}(2,\mathbb C) \cong \mathrm{SO}^+(3,1).
 \]
 
-\textbf{Proof.} Theorem~\ref{42-theorem-mathrmbw_s2-from-markov-locality-symmetry-regularity} identifies cap modular flows with the cap-preserving conformal dilations on \(S^2\). Together with the rotation subgroup already fixed by the screen geometry, these are the standard one-parameter subgroups of the orientation-preserving conformal group of the sphere. But
+\textbf{Proof.} Theorem~\ref{42-theorem-mathrmbw_s2-from-markov-locality-symmetry-regularity}, together with its BW geometric-branch hypothesis, identifies cap modular flows with the standard cap-preserving conformal dilations on \(S^2\). Together with the rotation subgroup already fixed by the screen geometry, these are the standard one-parameter subgroups of the orientation-preserving conformal group of the sphere. But
 \[
 \mathrm{Conf}^+(S^2)=\mathrm{PSL}(2,\mathbb C),
 \]

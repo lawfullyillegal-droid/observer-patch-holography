@@ -160,8 +160,8 @@ Here is the high-level chain we use later:
 
 1. **Markov collars** from the overlap/recovery chapters make the modular
    generator local near cap boundaries.
-2. **BW$_{S^2}$ on the OPH geometric branch** turns that localized modular
-   flow into the unique cap-preserving conformal dilation and fixes the
+2. **BW$_{S^2}$ on the OPH geometric branch** identifies that localized modular
+   flow with the standard cap-preserving conformal dilation on the BW branch and fixes the
    \(2\pi\) normalization.
 3. Geometric modular flow gives **Lorentz kinematics** on the screen.
 4. **Entanglement equilibrium** plus a local stress tensor yields the conditional scaling-limit Einstein branch.
