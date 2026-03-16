@@ -296,9 +296,9 @@ The remaining explicit assumptions are MaxEnt, the OPH geometric-branch/scaling-
 
 The gauge-as-gluing principle (Section above) reconstructs compact gauge groups from edge-sector fusion rules. Specific consequences:
 
-**Massless photon**: The electromagnetic U(1) symmetry emerges as the redundancy structure for charged observables. A photon mass would break this redundancy, making consistent gluing impossible. Therefore the photon mass is exactly zero. Current experiments confirm this to 27 orders of magnitude.
+**Massless photon**: The electromagnetic U(1) symmetry emerges as the redundancy structure for charged observables. A photon mass would break this redundancy, making consistent gluing impossible. Therefore the photon mass is exactly zero. Current experimental upper bounds are consistent with this prediction, constraining any deviation from zero at roughly the 10⁻¹⁸ eV level (often summarized as ~27 orders of magnitude).
 
-**Massless graviton**: Diffeomorphism invariance (the symmetry underlying general relativity) emerges from the fact that bulk spacetime is a compression of screen data. A graviton mass would break this invariance. The graviton mass is exactly zero, confirmed to 22 orders of magnitude.
+**Massless graviton**: Diffeomorphism invariance (the symmetry underlying general relativity) emerges from the fact that bulk spacetime is a compression of screen data. A graviton mass would break this invariance. The graviton mass is exactly zero, with current observational upper bounds consistent with this prediction (e.g. m_g ≲ 1.8×10⁻²³ eV from GW dispersion; often summarized as ~22 orders of magnitude).
 
 **Three colors**: The Witten anomaly requires an odd number of quark colors. Under the Selection Axiom MAR, $N_c = 1$ fails admissibility (trivial color), and MAR selects the minimum: $N_c = 3$.
 
