@@ -495,7 +495,6 @@ Comme résumé dans la matrice de statut plus haut, le cadre établit aujourd'hu
 | [oph_qcd.py](code/particles/oph_qcd.py) | Running QCD MSbar à 4 boucles et extraction de $\Lambda$ |
 | [oph_lattice_su3_quenched_v5.py](code/particles/oph_lattice_su3_quenched_v5.py) | Lattice SU(3) de Wilson trempé pour les ratios de masses hadroniques |
 | [oph_no_cheat_audit.py](code/particles/oph_no_cheat_audit.py) | Audit anti-fuite statique + exécution |
-| [entanglement_first_law.py](code/entanglement_first_law.py) | Vérifie numériquement la première loi d'intrication $\delta S = \delta\langle K\rangle$ |
 
 ### Chapitres du livre
 

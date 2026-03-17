@@ -506,7 +506,6 @@ As summarized in the status matrix above, the framework derives Lorentz kinemati
 | [oph_qcd.py](code/particles/oph_qcd.py) | 4-loop MSbar QCD running and Λ extraction |
 | [oph_lattice_su3_quenched_v5.py](code/particles/oph_lattice_su3_quenched_v5.py) | Quenched Wilson SU(3) lattice for hadron mass ratios |
 | [oph_no_cheat_audit.py](code/particles/oph_no_cheat_audit.py) | Static + runtime anti-leak audit |
-| [entanglement_first_law.py](code/entanglement_first_law.py) | Verifies the entanglement first law δS = δ⟨K⟩ numerically |
 
 ### Book Chapters
 
