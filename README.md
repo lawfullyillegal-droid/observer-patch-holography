@@ -40,7 +40,7 @@ The strongest plausible end state is not "proof of OPH" in a metaphysical sense,
 - **PDF (main paper):** [Observers are all you need](paper/observers_are_all_you_need.pdf)
 - **LaTeX source:** [observers_are_all_you_need.tex](paper/observers_are_all_you_need.tex)
 
-**Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency** is the submission-focused compact paper. It concentrates the falsifiable core of OPH: Lorentz kinematics in the geometric modular phase, the conditional scaling-limit Einstein branch, Standard Model gauge closure under the extended MAR admissibility package, the hypercharge lattice on the realized one-generation matter package, three colors and three generations on the realized MAR-admissible branch, the two-input current quantitative implementation, and the strongest supplement-backed quantitative branches.
+**Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency** is the submission-focused compact paper. It concentrates the falsifiable core of OPH: Lorentz kinematics in the geometric modular phase, the conditional scaling-limit Einstein branch, Standard Model gauge closure under the extended MAR admissibility package, the hypercharge lattice on the realized one-generation matter package under the standard normalization, the realized counting chain $N_g=3$ and then $N_c=3$ on the MAR-admissible branch, the two-input current quantitative implementation, and the strongest supplement-backed quantitative branches.
 
 In the current synchronized paper set, the null-bridge hardening has removed any standalone propagation, endpoint-control, or half-sided modular-inclusion assumption from the fixed-cutoff gravity route: the MaxEnt branch now carries the control estimates internally, and the geometric blow-up argument closes the bridge through the derived positive null-translation stage. What still remains explicit on that route are the downstream density-upgrade and relativistic null-stress premises.
 
@@ -79,8 +79,8 @@ The canonical paper sources now live under [`paper/`](paper). The old draft tree
 When hardening paper claims or running a paper-upgrade release, start with the compact submission paper first. Only after its theorem-status language and release line are coherent should equivalent wording changes be propagated into the main paper, book, README surfaces, websites, and ingestion pipeline.
 
 Across the current paper set, OPH separates claims by status: parameter-free structural outputs
-(Lorentz/gauge/quotient chain, hypercharge lattice on the realized matter package, $N_c=3$ and
-$N_g=3$ on the realized MAR-admissible branch, symmetry-protected zeros, proton stability),
+(Lorentz/gauge/quotient chain, hypercharge lattice on the realized matter package, $N_g=3$ and
+then $N_c=3$ on the realized MAR-admissible branch, symmetry-protected zeros, proton stability),
 calibration-sector consistency checks ($\alpha_i(m_Z)$, $\sin^2\theta_W$, $v$, $m_W$), the
 main supplement-backed quantitative branch ($m_H$, $m_t$), and weaker
 phenomenological or downstream numerical continuations (charged-lepton/Koide, quark textures,
@@ -248,7 +248,7 @@ branch, and weaker phenomenological or downstream numerical continuations.
 
 | Tier | Representative outputs | Current status | Primary source |
 |------|------------------------|----------------|----------------|
-| Structural theorems | Conditional Lorentz kinematics, conditional scaling-limit Einstein branch, compact gauge reconstruction, SM quotient chain, hypercharge lattice on the realized matter package, $N_c=3$, $N_g=3$ on the realized MAR-admissible branch | Core theorem package under the stated scaling-limit and categorical premises | [Main paper source](paper/tex_fragments/PAPER.tex), [Gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
+| Structural theorems | Conditional Lorentz kinematics, conditional scaling-limit Einstein branch, compact gauge reconstruction, SM quotient chain, hypercharge lattice on the realized matter package, $N_g=3$ and then $N_c=3$ on the realized MAR-admissible branch | Core theorem package under the stated scaling-limit and categorical premises | [Main paper source](paper/tex_fragments/PAPER.tex), [Gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
 | Exact structural consequences | Proton stability; $m_\gamma = 0$, $m_g = 0$, $m_{\text{graviton}} = 0$ | Parameter-free structural consequences once the corresponding gauge/diffeomorphism/product-group structure is realized | [Main paper source](paper/tex_fragments/PAPER.tex), [Gauge derivation source](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex), [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
 | Calibration sector | $\alpha_s=0.1183$, $\sin^2\theta_W=0.2307$, $\alpha_{\rm em}^{-1}=128.31$, $v$, $W$ | Consistency checks after pixel/gauge calibration; not claimed as independent confirmation | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
 | Independent quantitative branch | Higgs $=126.48$ GeV, top(pole) $=171.1$ GeV | Main supplement-backed D11 outputs: no extra continuous fit once the gauge trajectory and scale-setting branch are fixed, but the displayed values use UV-synchronized transport and documented low-scale matching conventions | [Spectrum derivation source](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |

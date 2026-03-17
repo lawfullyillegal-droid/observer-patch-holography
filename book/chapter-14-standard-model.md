@@ -401,7 +401,7 @@ The Selection Axiom MAR (Minimal Admissible Realization) acts on admissible sect
 - The commutant of SU(3) × SU(2) inside U(6) is exactly U(1) — no additional factors can appear.
 - Hypercharge quantization in sixths gives the Z₆ quotient.
 
-Within that admissible class, the connected gauge structure is fixed to $SU(3) \times SU(2) \times U(1)$, and the realized hypercharge lattice then fixes the $\mathbb{Z}_6$ quotient. The separate CP/UV admissibility window gives $3 \le N_g \le 5$, and MAR selects the minimal viable value $N_g = 3$. See `paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex` for the complete proof.
+Within that admissible class, the connected gauge structure is fixed to $SU(3) \times SU(2) \times U(1)$, and the realized hypercharge lattice then fixes the $\mathbb{Z}_6$ quotient. The CP/UV admissibility window and MAR first give $3 \le N_g \le 5$ and then select the minimal viable value $N_g = 3$; with that realized generation count in hand, Witten's SU(2) anomaly parity plus exclusion of the trivial $N_c = 1$ case yield $N_c = 3$. See `paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex` for the complete proof.
 
 ## 14.10 Hypercharge from Gluing Consistency
 
@@ -411,7 +411,7 @@ Given the gauge group, what determines the matter content?
 
 Loop-coherent gluing requires trivial obstruction class. In the effective field theory limit, this becomes anomaly cancellation.
 
-Given one generation of chiral fermions with SU(3) x SU(2) x U(1) charges, and requiring Yukawa couplings to a Higgs doublet, the hypercharges are determined.
+Given one generation of chiral fermions with SU(3) x SU(2) x U(1) charges, and requiring Yukawa couplings to a Higgs doublet, the hypercharge ratios are determined. A standard normalization then fixes the absolute lattice.
 
 ### The Derivation
 
@@ -435,29 +435,29 @@ With N_c = 3 and standard normalization:
 
 $$\boxed{Y_Q = \frac{1}{6}, \quad Y_L = -\frac{1}{2}, \quad Y_u = -\frac{2}{3}, \quad Y_d = \frac{1}{3}, \quad Y_e = 1, \quad Y_H = \frac{1}{2}}$$
 
-These are exact rationals, the Standard Model hypercharges, fixed by anomaly freedom + Yukawa invariance + normalization, with no continuous parameters to adjust.
+These are exact rationals, the Standard Model hypercharges, with the ratios fixed by anomaly freedom + Yukawa invariance and the absolute values fixed by standard normalization. There are no continuous parameters to adjust.
 
 ## 14.11 The Number of Colors: Why N_c = 3
 
-Before discussing generations, there's an even more fundamental integer prediction: why are there three colors?
+In the compact-paper theorem chain, the generation count is fixed first and the color count closes afterward. We discuss the color-parity mechanism first here because it is conceptually simple, but its final closure uses the derived value $N_g = 3$ from the next section.
 
 ### The Witten Anomaly
 
-The global SU(2) anomaly (Witten anomaly) requires an even number of left-handed SU(2) doublets per generation. Count them:
+The global SU(2) anomaly (Witten anomaly) requires an even total number of left-handed SU(2) doublets. Count them:
 
-- Quark doublets: N_c copies (one per color)
-- Lepton doublets: 1 copy
-- **Total: N_c + 1**
+- Quark doublets: N_g N_c copies
+- Lepton doublets: N_g copies
+- **Total: N_g(N_c + 1)**
 
-For the total to be even:
+Once the generation-count step below gives $N_g = 3$, this becomes:
 
-$$N_c + 1 \equiv 0 \pmod{2} \implies N_c \text{ is odd}$$
+$$3(N_c + 1) \equiv 0 \pmod{2} \implies N_c \text{ is odd}$$
 
-The minimal nontrivial odd choice is:
+The case $N_c = 1$ is ruled out because the admissibility package requires a genuinely complex nonabelian color sector. The minimal remaining odd choice is:
 
 $$\boxed{N_c = 3}$$
 
-This is a striking structural output. Witten's anomaly forces $N_c$ to be odd, and the admissibility package rules out the trivial $N_c = 1$ case by requiring a genuinely complex nonabelian color sector. That leaves the minimal admissible value $N_c = 3$, with no continuous parameter to tune.
+This is a striking structural output. Witten's anomaly forces $N_c$ to be odd once the realized branch has $N_g = 3$, and the admissibility package rules out the trivial $N_c = 1$ case by requiring a genuinely complex nonabelian color sector. That leaves the minimal admissible value $N_c = 3$, with no continuous parameter to tune.
 
 ## 14.12 Why Three Generations?
 
@@ -484,7 +484,7 @@ $$b_1 = \frac{1}{3}[22 - N_g(N_c + 1)]$$
 
 For b_1 > 0 (asymptotic freedom): N_g(N_c + 1) < 22.
 
-With the derived N_c = 3, we have N_c + 1 = 4:
+Since the color-type requirement already forces $N_c \ge 3$, we have $N_c + 1 \ge 4$:
 
 $$4 N_g < 22 \implies N_g \le 5$$
 
@@ -500,7 +500,7 @@ The Selection Axiom MAR then selects the minimal admissible realization:
 
 $$\boxed{N_g = 3}$$
 
-Refinement stability explains why extra unfixed Yukawa structure is disfavored, but the selector itself is MAR acting on the admissible class. This is a discrete structural output, not a fit to a continuous number.
+Refinement stability explains why extra unfixed Yukawa structure is disfavored, but the selector itself is MAR acting on the admissible class. This is a discrete structural output, not a fit to a continuous number. Feeding this value back into the Witten-parity argument above then closes the color count at $N_c = 3$.
 
 ## 14.13 Why Chirality?
 
@@ -668,7 +668,7 @@ The photon and graviton are particles the theory *forces* upon us. The photon ex
 
 The quarks and leptons aren't arbitrary. Their charges are fixed by the requirement that reality be self-consistent. The generations aren't accidental: the admissible window is $3 \le N_g \le 5$, and MAR selects the minimal viable value. Chirality isn't a quirk; it's the only way to keep fermions light without fine tuning.
 
-The Selection Axiom MAR provides the selector inside the admissible class. Within the connected Lie sector package with one connected abelian charge factor, it picks the Standard Model gauge structure and leaves the realized hypercharge lattice, color count, and generation count as discrete structural outputs. From gauge reconstruction, anomaly analysis, refinement stability, and the current two-input quantitative implementation, the framework derives the specific particles, forces, and mass branches we observe while keeping their epistemic status explicit.
+The Selection Axiom MAR provides the selector inside the admissible class. Within the connected Lie sector package with one connected abelian charge factor, it picks the Standard Model gauge structure and leaves the realized hypercharge lattice and the realized counting chain $N_g = 3$ then $N_c = 3$ as discrete structural outputs. From gauge reconstruction, anomaly analysis, refinement stability, and the current two-input quantitative implementation, the framework derives the specific particles, forces, and mass branches we observe while keeping their epistemic status explicit.
 
 We've now seen how particles emerge from the screen as stable patterns that transform under emergent symmetries. But how does spacetime itself emerge? How does Einstein's relativity fit into this picture?
 

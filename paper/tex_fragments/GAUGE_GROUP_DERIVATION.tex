@@ -7,9 +7,9 @@ OPH is an observer-centric reconstruction program for fundamental physics. In th
 \begin{quote}
 \textbf{Integrated derivation within this manuscript}: this part extends the core OPH framework in Part I.
 
-\textbf{Abstract.} We show that, once Tannaka/DR reconstruction is applied to the refinement-stable edge-sector colimit, the extended gauge-selection package \(T_{\mathrm{ext}}\) , meaning the canonical five axioms together with the explicit transportability premise \([z]=0\) and the gauge-reconstruction hypotheses of Part I , selects the Standard Model connected Lie gauge-sector factors, the number of colors, and the number of generations once the admissible class includes one connected abelian charge factor. The realized hypercharge lattice then fixes the global gauge quotient:
+\textbf{Abstract.} We show that, once Tannaka/DR reconstruction is applied to the refinement-stable edge-sector colimit, the extended gauge-selection package \(T_{\mathrm{ext}}\), meaning the canonical five axioms together with the explicit transportability premise \([z]=0\) and the gauge-reconstruction hypotheses of Part I, selects the Standard Model connected Lie gauge-sector factors once the admissible class includes one connected abelian charge factor. On the realized admissible branch, the CP/UV window and MAR fix the generation count, Witten's \(\mathrm{SU}(2)\) anomaly parity then fixes the color count, and the realized hypercharge lattice fixes the global gauge quotient:
 
-\[G_{\mathrm{phys}} = \frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}, \qquad N_c = 3, \qquad N_g = 3.\]
+\[G_{\mathrm{phys}} = \frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}, \qquad N_g = 3, \qquad N_c = 3.\]
 
 Within the positive-dimensional connected Lie admissible class, no other gauge-sector package, no other color multiplicity, and no other generation count satisfies all admissibility conditions while minimizing the complexity vector \(C(\mathfrak S)\).
 \end{quote}
@@ -145,7 +145,7 @@ Lexicographic minimality means: first minimize \(\chi_{\mathrm{cpl}}\); among ti
 \item
   \emph{It is not "minimalism in general."} MAR only selects among sectors that already pass all six admissibility filters. Plain minimality (smallest \(G\)) would yield \(U(1)\) or \(SU(2)\), which fail conditions (iii)--(v). The admissibility conditions do the heavy lifting; MAR breaks the remaining degeneracy.
 \item
-  \emph{It is powerful.} Product gauge structure, the specific factors \(SU(3) \times SU(2) \times U(1)\), and the values \(N_c = 3\), \(N_g = 3\) all follow from MAR applied to the admissible class.
+  \emph{It is powerful.} Product gauge structure and the specific factors \(SU(3) \times SU(2) \times U(1)\) follow from MAR applied to the admissible class; on the realized branch the CP/UV window and MAR then give \(N_g = 3\), and Witten parity with that realized generation count gives \(N_c = 3\).
 \end{enumerate}
 
 \textbf{Remark (coupled vs. faithful).} Earlier drafts overloaded the first MAR coordinate with the abstract group-theoretic minimal faithful representation dimension. That is not the quantity used in the gauge proof. For \(G_{\mathrm{phys}} \cong S(U(3) \times U(2))\), the block-diagonal action on \(\mathbb{C}^3 \oplus \mathbb{C}^2\) is faithful of dimension \(5\), but it places the complex and pseudoreal charge types on disconnected invariant subspaces. MAR minimizes the coupled carrier dimension \(\chi_{\mathrm{cpl}}\), for which the minimal SM carrier is \(\mathbb{C}^3 \otimes \mathbb{C}^2\) of dimension \(6\).
@@ -156,7 +156,9 @@ Lexicographic minimality means: first minimize \(\chi_{\mathrm{cpl}}\); among ti
 
 \textbf{Theorem (Standard Model closure under extended admissibility).} Under the extended gauge-selection package \(T_{\mathrm{ext}}\), together with the refinement-stable reconstruction hypotheses of Theorem 6.1:
 
-\[G_{\mathrm{phys}} = \frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}, \qquad N_c = 3, \qquad N_g = 3.\]
+\[G_{\mathrm{phys}} = \frac{SU(3) \times SU(2) \times U(1)}{\mathbb{Z}_6}, \qquad N_g = 3, \qquad N_c = 3.\]
+
+The realized counting chain is sequential rather than joint: the CP/UV admissibility window and MAR first select \(N_g = 3\), and Witten's \(\mathrm{SU}(2)\) anomaly parity then fixes \(N_c = 3\).
 
 \emph{The proof is given in §5--§7 below.}
 
@@ -288,15 +290,15 @@ The hypercharge quantization itself follows from anomaly cancellation (condition
 
 \textbf{Proof.} The gauge group derivation (§5) already fixes the color factor as \(SU(3)\) , i.e., \(N_c = 3\) , through the minimal coupled-carrier argument (Lemma 5.2). We give here the independent confirmation from anomaly constraints + MAR.
 
-\textbf{Step 1: Witten anomaly constrains N\_c to be odd.}
+\textbf{Step 1: Witten anomaly constrains N\_c once N\_g is fixed.}
 
-With gauge structure \(SU(N_c) \times SU(2)_L \times U(1)_Y\) and one left-handed quark doublet \(Q\) per color plus one left-handed lepton doublet \(L\) per generation, the total number of \(SU(2)\) doublets per generation is
+With gauge structure \(SU(N_c) \times SU(2)_L \times U(1)_Y\), one left-handed quark doublet \(Q\) per color, and one left-handed lepton doublet \(L\) per generation, the total number of \(SU(2)\) doublets is
 
-\[N_{\mathrm{doublets}} = N_c + 1.\]
+\[N_{\mathrm{doublets}} = N_g(N_c + 1).\]
 
-Witten\textquotesingle s global \(SU(2)\) anomaly (1982) requires the total number of \(SU(2)\) doublets to be even:
+Using \(N_g = 3\) from Section 7, Witten\textquotesingle s global \(SU(2)\) anomaly (1982) requires the total number of \(SU(2)\) doublets to be even:
 
-\[N_c + 1 \equiv 0 \pmod{2} \quad \Longrightarrow \quad N_c \text{ is odd}.\]
+\[3(N_c + 1) \equiv 0 \pmod{2} \quad \Longrightarrow \quad N_c \text{ is odd}.\]
 
 This alone allows \(N_c \in \{1, 3, 5, 7, \ldots\}\).
 
@@ -344,13 +346,13 @@ Asymptotic freedom requires \(b_{SU(2)} > 0\):
 
 \[N_g(N_c + 1) < \frac{43}{2}.\]
 
-With \(N_c = 3\) (from §6): \(4N_g < \frac{43}{2}\), so \(N_g \leq 5\).
+Since the color-type role already forces \(N_c \ge 3\), one has \(N_c + 1 \ge 4\). Therefore \(4N_g < \frac{43}{2}\), so \(N_g \leq 5\).
 
 Combining: \(3 \leq N_g \leq 5\).
 
 \textbf{Step 3: MAR selects N\_g = 3.}
 
-Among the admissible candidates \(\{3, 4, 5\}\), MAR\textquotesingle s complexity vector has \(N_g\) in the fourth (last) slot. Lexicographic minimization selects \(N_g = 3\). \(\square\)
+Among the admissible candidates \(\{3, 4, 5\}\), MAR\textquotesingle s complexity vector has \(N_g\) in the fourth (last) slot. Lexicographic minimization selects \(N_g = 3\). Feeding that value back into Section 6 completes the Witten-parity closure \(N_c = 3\). \(\square\)
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -382,9 +384,9 @@ Among the admissible candidates \(\{3, 4, 5\}\), MAR\textquotesingle s complexit
 
 \subsubsection{Corollary 3: Hypercharge quantization}\label{corollary-3-hypercharge-quantization}
 
-\textbf{Corollary.} The hypercharge assignments are uniquely fixed to the observed values \(Y \in \frac{1}{6}\mathbb{Z}\) by anomaly cancellation within the derived gauge group.
+\textbf{Corollary.} The hypercharge ratios are fixed by anomaly cancellation and Yukawa invariance within the derived gauge group, and the standard normalization then fixes the observed values \(Y \in \frac{1}{6}\mathbb{Z}\).
 
-\emph{Proof.} Theorem 6.13 of Part I of this manuscript derives the unique anomaly-free hypercharge assignment for \(SU(3) \times SU(2) \times U(1)\) with \(N_c = 3\) and \(N_g = 3\), assuming single-Higgs Yukawa completeness (condition iv). The result is the standard sixth-integer lattice. \(\square\)
+\emph{Proof.} Theorem 6.13 of Part I of this manuscript derives the unique anomaly-free hypercharge ratios for \(SU(3) \times SU(2) \times U(1)\) with \(N_c = 3\), assuming single-Higgs Yukawa completeness (condition iv); the standard normalization then gives the sixth-integer lattice. \(\square\)
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -397,7 +399,7 @@ The full logical chain from axioms to the Standard Model gauge sector is:
 
 \(+ \; [z]=0\) \(\xrightarrow{\text{Prop 6.1a}}\) DHR transportable, global gauge symmetry
 
-\(+ \;\text{apply MAR on the admissible class}\) \(\xrightarrow{\text{Thm (this doc)}}\) \(G_{\mathrm{phys}} = SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6\), \(N_c = 3\), \(N_g = 3\)
+\(+ \;\text{apply MAR on the admissible class}\) \(\xrightarrow{\text{Thm (this doc)}}\) connected SM factors with the realized chain \(N_g = 3\) then \(N_c = 3\), and \(G_{\mathrm{phys}} = SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6\)
 
 \(\xrightarrow{\text{Thm 6.13}}\) hypercharges fixed \(\xrightarrow{\text{6.11}}\) photon and graviton inevitable
 

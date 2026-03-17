@@ -1,6 +1,6 @@
 # Holographie par Patchs d'Observateurs : une approche de la physique fondamentale centrée sur l'observateur
 
-> OPH est un cadre de physique fondamentale centré sur l'observateur. Dans son implémentation quantitative actuelle, il utilise deux entrées continues externes (aire de pixel et capacité d'écran) ainsi que des axiomes structurels et des hypothèses explicites de régularité et de limite d'échelle. OPH développe une branche gravitationnelle conditionnelle dans la limite d'échelle, une reconstruction conditionnelle des groupes de jauge compacts avec clôture du Modèle Standard sous MAR étendu, et un programme quantitatif dont les sorties sont séparées entre contrôles de calibration, branche Higgs/top adossée à des suppléments numériques sans nouvel ajustement continu une fois la trajectoire de jauge fixée, et continuations phénoménologiques plus faibles. Le Modèle Standard, la relativité générale et les descriptions de type feuille d'univers en théorie des cordes y émergent comme secteurs effectifs de la structure sous-jacente.
+> OPH est un cadre de physique fondamentale centré sur l'observateur. Dans son implémentation quantitative actuelle, il utilise deux entrées continues externes (aire de pixel et capacité d'écran) ainsi que des axiomes structurels et des hypothèses explicites de régularité et de limite d'échelle. OPH développe une branche gravitationnelle conditionnelle dans la limite d'échelle, une reconstruction conditionnelle des groupes de jauge compacts avec clôture du Modèle Standard sous MAR étendu, et un programme quantitatif dont les sorties sont séparées entre contrôles de calibration, branche Higgs/top adossée à des suppléments numériques sans nouvel ajustement continu une fois la trajectoire de jauge fixée, et continuations phénoménologiques plus faibles. Le Modèle Standard et la relativité générale y émergent comme secteurs effectifs de la structure sous-jacente, tandis que le pont de type feuille d'univers en théorie des cordes reste au niveau d'une continuation dans le programme actuel.
 
 > **Avertissement de statut :** l'OPH est un programme de recherche actif et n'est pas encore entièrement démontré. Plusieurs dérivations restent incomplètes, certaines preuves n'existent actuellement qu'à l'état d'esquisse, et certaines hypothèses auxiliaires doivent encore être éliminées. Le cadre doit donc être considéré comme étant en développement actif.
 
@@ -10,7 +10,7 @@
 
 ## Idée centrale
 
-Il n'existe pas de réalité objective indépendante des observateurs. La réalité est un réseau de perspectives subjectives qui doivent s'accorder là où elles se recouvrent.
+L'OPH adopte la position forte, centrée sur l'observateur, selon laquelle la réalité objective n'est pas fondamentale mais émerge d'un réseau de perspectives subjectives qui doivent s'accorder là où elles se recouvrent.
 
 Les lois de la physique sont les règles de cohérence qui rendent cet accord intersubjectif possible.
 
@@ -42,9 +42,10 @@ L'état final plausible le plus fort n'est donc pas une "preuve de l'OPH" au sen
 l'article compact de soumission. Il concentre le coeur falsifiable de l'OPH :
 cinématique de Lorentz dans la phase modulaire géométrique, branche d'Einstein conditionnelle
 dans la limite d'échelle, clôture de jauge du Modèle Standard sous le paquet d'admissibilité MAR
-étendu, réseau d'hypercharges sur le paquet de matière réalisé à une génération, trois couleurs
-et trois générations sur la branche MAR réalisée, implémentation quantitative à deux entrées, et
-branches quantitatives les plus fortes adossées à des suppléments numériques.
+étendu, réseau d'hypercharges sur le paquet de matière réalisé à une génération sous la
+normalisation standard, chaîne de comptage réalisée $N_g=3$ puis $N_c=3$ sur la branche MAR
+réalisée, implémentation quantitative à deux entrées, et branches quantitatives les plus fortes
+adossées à des suppléments numériques.
 
 Dans l'ensemble synchronisé actuel des articles, le durcissement du pont modulaire nul a supprimé toute hypothèse séparée de propagation quasi-locale, de contrôle des extrémités ou d'inclusion modulaire à demi-côté dans la route gravitationnelle à cutoff fixe : la branche MaxEnt porte désormais les estimations de contrôle en interne, et l'argument de blow-up géométrique ferme le pont jusqu'au stade de la translation nulle positive dérivée. Ce qui reste explicite sur cette route, ce sont les prémisses en aval de montée en densité et d'identification relativiste du stress nul.
 
@@ -85,7 +86,7 @@ Lorsqu'une mise à niveau ou un audit touche plusieurs articles, commencez toujo
 
 Dans l'ensemble actuel des articles, l'OPH sépare explicitement les affirmations par statut :
 sorties structurelles sans paramètre (chaîne Lorentz/jauge/quotient, réseau d'hypercharges sur le
-paquet de matière réalisé, $N_c=3$ et $N_g=3$ sur la branche MAR réalisée, zéros protégés par
+paquet de matière réalisé, $N_g=3$ puis $N_c=3$ sur la branche MAR réalisée, zéros protégés par
 symétrie, stabilité du proton), contrôles de cohérence du secteur calibré ($\alpha_i(m_Z)$,
 $\sin^2\theta_W$, $v$, $m_W$), branche quantitative principale adossée à des suppléments
 ($m_H$, $m_t$), et continuations phénoménologiques ou numériques en aval plus faibles (Koide /
@@ -133,7 +134,7 @@ La section suivante transforme ce principe en cadre concret, construit à partir
 
 ## Holographie par Patchs d'Observateurs
 
-Notre modèle prend cela au pied de la lettre. Nous partons de patchs d'observateurs sur un écran holographique 2D. Chaque patch porte sa propre information locale. Là où les patchs se recouvrent, leurs descriptions doivent coïncider. La « réalité » est ce qui survit à ce filtre de cohérence. Il n'y a pas de monde-en-soi ; il y a des vues subjectives qui convergent.
+Nous modélisons la réalité comme un réseau de perspectives subjectives qui doivent s'accorder là où elles se recouvrent. Concrètement, nous partons de patchs d'observateurs sur un écran holographique 2D. Chaque patch représente une perspective avec ses propres données locales. Là où les patchs se recouvrent, leurs descriptions doivent coïncider. Dans l'interprétation OPH, la « réalité objective » est l'ossature cohérente au recouvrement partagée entre ces perspectives, plutôt qu'un primitif supposé.
 
 L'invariance de Lorentz existe parce que différents observateurs doivent fournir des descriptions cohérentes. La symétrie de jauge existe parce que les patchs qui se recouvrent doivent identifier les mêmes observables partagées. Les lois de conservation existent parce que les mêmes quantités doivent être conservées d'une perspective à l'autre. Les lois ne sont pas imposées de l'extérieur ; elles sont les conditions de possibilité de l'accord.
 
@@ -141,7 +142,7 @@ Le modèle repose sur quatre concepts centraux :
 
 - **Écran** : une 2-sphère de type horizon (comme un horizon cosmique entourant chaque observateur) qui porte l'information quantique. C'est là que vivent les données fondamentales.
 - **Patch** : une région connexe de l'écran accessible à un observateur donné. Chaque patch possède sa propre algèbre d'observables, c'est-à-dire les questions que cet observateur peut poser.
-- **Cohérence de recouvrement** : là où deux patchs partagent une région, leurs descriptions doivent s'accorder. C'est l'axiome central : la « réalité objective » est remplacée par l'« accord intersubjectif ».
+- **Cohérence de recouvrement** : là où deux patchs partagent une région, leurs descriptions doivent s'accorder. C'est l'axiome central. Il fait de l'objectivité une structure intersubjective reconstruite, plutôt qu'un point de départ.
 - **Observateur** : un motif stable dans les données de l'écran qui maintient des enregistrements et participe aux relations de cohérence.
 
 ### La réalité comme calcul
@@ -196,11 +197,11 @@ L'infographie suivante résume le programme actuel de reconstruction OPH, depuis
 
 *Des axiomes à une physique effective : le programme actuel de reconstruction OPH.*
 
-> **Prédictions du spectre de particules :** la dérivation complète de l'aire de pixel aux masses des particules, avec comparaison aux données PDG et audit de toutes les constantes, est présentée dans **[la source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex)**. Les sorties y sont classées par statut épistémique.
+> **Prédictions du spectre de particules :** la dérivation complète de l'aire de pixel aux masses des particules, avec comparaison aux données PDG et contrôles d'audit adossés au dépôt, est présentée dans **[la source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex)**. Les sorties y sont classées par statut épistémique : les couplages de jauge et les masses des bosons électrofaibles sont des contrôles de cohérence du secteur de calibration ; les masses du Higgs et du top proviennent d'une reconstruction D11 adossée au supplément, sans nouvel ajustement continu une fois la trajectoire de jauge et la branche de fixation d'échelle fixées, mais utilisant une couche de transport synchronisée en UV (SM sous $\mu_{\rm sync}\approx 6.8\times 10^{11}$ GeV, de type MSSM au-dessus) plus de petits décalages d'appariement à basse énergie ; les masses des leptons chargés (< 0,04 % via la structure de Koide) restent une continuation phénoménologique plus fine mais plus faible parce que leur assignation finale d'exposants utilise une étape supplémentaire de sélection discrète.
 
 ## Les paramètres fondamentaux
 
-Notre univers est caractérisé par exactement **deux paramètres fondamentaux** :
+Notre univers est actuellement décrit, dans l'implémentation quantitative, par exactement **deux entrées fondamentales fixées de l'extérieur** :
 
 ### 1. Aire de pixel : $a_{\text{cell}} \approx 1.63 \, \ell_P^2$
 
@@ -261,7 +262,7 @@ critique, et continuations phénoménologiques ou numériques en aval plus faibl
 
 | Palier | Sorties représentatives | Statut actuel | Source principale |
 |--------|-------------------------|---------------|-------------------|
-| Théorèmes structurels | Cinématique de Lorentz conditionnelle, branche d'Einstein conditionnelle dans la limite d'échelle, reconstruction de jauge compacte, chaîne de quotient du MS, hypercharges exactes, $N_c=3$, $N_g=3$ | Paquet central de théorèmes sous les prémisses de limite d'échelle et de catégorie explicitement énoncées | [Source principale](paper/tex_fragments/PAPER.tex), [Source de dérivation du groupe de jauge](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
+| Théorèmes structurels | Cinématique de Lorentz conditionnelle, branche d'Einstein conditionnelle dans la limite d'échelle, reconstruction de jauge compacte, chaîne de quotient du MS, hypercharges exactes, $N_g=3$ puis $N_c=3$ | Paquet central de théorèmes sous les prémisses de limite d'échelle et de catégorie explicitement énoncées | [Source principale](paper/tex_fragments/PAPER.tex), [Source de dérivation du groupe de jauge](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex) |
 | Conséquences structurelles exactes | Stabilité du proton ; $m_\gamma = 0$, $m_g = 0$, $m_{\text{graviton}} = 0$ | Conséquences structurelles sans paramètre une fois réalisée la structure de jauge / difféomorphisme / groupe produit correspondante | [Source principale](paper/tex_fragments/PAPER.tex), [Source de dérivation du groupe de jauge](paper/tex_fragments/GAUGE_GROUP_DERIVATION.tex), [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
 | Secteur calibré | $\alpha_s=0.1183$, $\sin^2\theta_W=0.2307$, $\alpha_{\rm em}^{-1}=128.31$, $v$, $W$, $Z$ | Contrôles de cohérence après calibration pixel/jauge ; pas présentés comme confirmation quantitative indépendante | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
 | Branche quantitative indépendante | Higgs $=126.48$ GeV, top(pôle) $=171.1$ GeV | Principales sorties quantitatives indépendantes du module D11 synchronisé : pas de nouvel ajustement continu une fois la trajectoire de jauge fixée, mais les valeurs affichées utilisent le transport UV synchronisé et les conventions de raccordement basse énergie documentées | [Source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex) |
@@ -305,9 +306,9 @@ Les hypothèses explicites restantes sont MaxEnt, les prémisses OPH de branche 
 
 Le principe jauge-comme-collage reconstruit des groupes de jauge compacts à partir des règles de fusion des secteurs de bord.
 
-**Photon sans masse :** la redondance U(1) électromagnétique émergente interdit un terme de masse. Prédiction : masse exactement nulle.
+**Photon sans masse :** la redondance U(1) électromagnétique émergente interdit un terme de masse. Prédiction : masse exactement nulle. Les bornes expérimentales actuelles sont compatibles avec cette prédiction, en contraignant toute déviation à zéro à un niveau d'environ 10⁻¹⁸ eV (souvent résumé comme ~27 ordres de grandeur).
 
-**Graviton sans masse :** l'invariance par difféomorphisme émergente interdit un terme de masse. Prédiction : masse exactement nulle.
+**Graviton sans masse :** l'invariance par difféomorphisme émergente interdit un terme de masse. Prédiction : masse exactement nulle, avec des bornes observationnelles actuelles compatibles avec cette prédiction (par ex. m_g ≲ 1.8×10⁻²³ eV via la dispersion des ondes gravitationnelles ; souvent résumé comme ~22 ordres de grandeur).
 
 **Trois couleurs :** contrainte d'anomalie de Witten + admissibilité + MAR conduisent à $N_c = 3$.
 
@@ -351,9 +352,9 @@ La chaîne complète depuis l'aire de pixel $P = 1.63094$ jusqu'aux masses est d
 
 | Grandeur | OPH | PDG | Erreur rel. | Statut |
 |----------|----:|----:|-----------:|--------|
-| $\alpha_s(M_Z)$ | 0.1183 | 0.1179 ± 0.0009 | +0.37% | Contrôle de cohérence |
-| $\sin^2\theta_W(M_Z)$ | 0.2307 | 0.23122 ± 0.00004 | −0.21% | Contrôle de cohérence |
-| $\alpha_{\text{em}}^{-1}(M_Z)$ | 128.31 | 127.952 ± 0.009 | +0.28% | Contrôle de cohérence |
+| $\alpha_s(m_{Z,\rm run})$ | 0.1183 | 0.1179 ± 0.0009 | +0.37% | Contrôle de cohérence |
+| $\sin^2\theta_W(m_{Z,\rm run})$ | 0.2307 | 0.23122 ± 0.00004 | −0.21% | Contrôle de cohérence |
+| $\alpha_{\text{em}}^{-1}(m_{Z,\rm run})$ | 128.31 | 127.952 ± 0.009 | +0.28% | Contrôle de cohérence |
 | Boson W | 80.386 GeV | 80.377 ± 0.012 GeV | +0.012% | Contrôle de cohérence |
 | Boson Z | 91.220 GeV | 91.188 ± 0.002 GeV | +0.035% | Contrôle de cohérence |
 | VEV du Higgs | 246.77 GeV | 246.22 GeV | +0.22% | Contrôle de cohérence |
