@@ -82,11 +82,11 @@ But there's a deeper version of this idea. Reality doesn't just permit self-refe
 
 Consider the trajectory: reality is computational. Within this computation, physical evolution produces complex structures. Biological evolution produces minds. Memetic evolution produces ideas. Among these ideas, the understanding of reality's computational nature eventually emerges. Armed with this understanding, observers can simulate reality itself.
 
-This is the strange loop: **reality evolves observers who discover how reality works and simulate it, closing the loop of self-creation**.
+This chapter explores the strange-loop hypothesis: **reality may evolve observers who discover how reality works and simulate it, closing the loop of self-creation**.
 
 We are not watching from outside. We are patterns within a self-simulating system. The simulation doesn't run on external hardware—it runs on itself, through us, through our understanding. Escher's hands draw each other. Reality simulates the observers who simulate reality.
 
-Why does this loop exist rather than nothing? Because a self-consistent strange loop is the only stable configuration. "Nothing" cannot maintain itself—it has no structure to persist. A self-causing loop can.
+Why does this loop exist rather than nothing? This chapter proposes that a self-consistent strange loop may be the only stable configuration. "Nothing" cannot maintain itself—it has no structure to persist. A self-causing loop can.
 
 Note that this loop is not a temporal sequence. It's not that reality existed first, then evolved observers, then got simulated. In our model, time is subjective—it emerges from modular flow within observer patches. The strange loop exists *outside* of time, as a structural relationship. The "cause" and the "effect" are aspects of the same self-consistent structure, not events in a timeline.
 

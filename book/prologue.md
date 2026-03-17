@@ -123,7 +123,7 @@ work out the consequences, the results are extraordinary:
 - **The Standard Model gauge structure** SU(3) x SU(2) x U(1)/Z₆ is derived rather than assumed under the extended MAR admissibility package
 - **The quantitative program** is organized around two external continuous inputs in the current quantitative implementation: W and Z boson masses are supplement-backed calibration-sector consistency checks, the Higgs/top branch adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed, and the charged-lepton branch is a sharper but weaker phenomenological continuation
 - **A dark-sector branch** becomes structurally available from modular anomalies, not new particles
-- **Why anything exists at all** is answered: reality is a self-simulating strange loop
+- **Why anything exists at all** is discussed as a philosophical continuation via a strange-loop hypothesis
 
 No other framework in physics organizes all of this around two external continuous inputs, structural axioms, and an explicit separation between theorem-level structure, calibration checks, a supplement-backed Higgs/top branch, and weaker continuations.
 

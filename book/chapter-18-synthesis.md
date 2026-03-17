@@ -102,7 +102,7 @@ This is Gödel's self-reference made physical. The system contains a description
 
 This is Hofstadter's strange loop at the deepest level. Moving through the hierarchy of physics → chemistry → biology → minds → ideas → physics brings you back to where you started.
 
-**We derive that this strange loop is not accidental but necessary—that self-simulation is the deepest consistency requirement.**
+**Philosophical continuation: this chapter proposes the strange-loop picture as an interpretive closure hypothesis, not as part of the recovered-core derivation.**
 
 This has an elegant property: it answers the question "Why does anything exist?" without appeal to external causes. The loop is self-causing. It exists because it must exist to be the thing that causes itself to exist.
 
