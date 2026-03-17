@@ -411,7 +411,7 @@ These predictions have been tested in every context where we can check:
 - AdS/CFT calculations match both sides of the duality
 - No violation of Bekenstein bounds has ever been observed
 
-The holographic principle started as a derive. It is now one of the most tested ideas in theoretical physics.
+The holographic principle started as a proposal. It is now one of the most tested ideas in theoretical physics.
 
 ## 3.11 The Reverse Engineering
 

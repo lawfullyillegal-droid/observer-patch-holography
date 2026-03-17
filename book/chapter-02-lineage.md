@@ -130,7 +130,7 @@ In the 1600s, René Descartes decided to reboot philosophy by doubting everythin
 
 His procedure: doubt everything you can possibly doubt. Keep only what survives.
 
-Can you doubt that you're sitting in a chair? Yes-you is dreaming. Can you doubt that 2 + 2 = 4? Descartes even entertained the possibility of an evil demon systematically deceiving him about mathematics.
+Can you doubt that you're sitting in a chair? Yes, you may be dreaming. Can you doubt that 2 + 2 = 4? Descartes even entertained the possibility of an evil demon systematically deceiving him about mathematics.
 
 What is left?
 

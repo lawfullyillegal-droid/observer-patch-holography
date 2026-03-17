@@ -342,7 +342,7 @@ Page's curve:
 - Entropy falls after Page time
 - Final entropy is zero (pure state)
 
-For decades, no one could derive this from first principles. The Page curve was a derive-a requirement for unitarity, but not a calculation.
+For decades, no one could derive this from first principles. The Page curve was a consistency requirement for unitarity, but not yet a direct calculation.
 
 ### The Recovery Perspective
 
