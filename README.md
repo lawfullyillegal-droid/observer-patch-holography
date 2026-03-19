@@ -81,8 +81,7 @@ When hardening paper claims or running a paper-upgrade release, start with the c
 Across the current paper set, OPH separates claims by status: parameter-free structural outputs
 (Lorentz/gauge/quotient chain, hypercharge lattice on the realized matter package, $N_g=3$ and
 then $N_c=3$ on the realized MAR-admissible branch, symmetry-protected zeros, proton stability),
-calibration-sector consistency checks ($\alpha_i(m_Z)$, $\sin^2\theta_W$, $v$, $m_W$), the
-main supplement-backed quantitative branch ($m_H$, $m_t$), and weaker
+calibration-sector consistency checks ($\alpha_i(m_{Z,\rm run})$, $\sin^2\theta_W(m_{Z,\rm run})$, $v$, $m_W$), the main supplement-backed quantitative branch ($m_H$, $m_t$), and weaker
 phenomenological or downstream numerical continuations (charged-lepton/Koide, quark textures,
 neutrino, hadron, dark-sector, baryogenesis).
 
