@@ -248,7 +248,7 @@ A universe with different configuration parameters would have different absolute
 
 In the current quantitative implementation these parameters are not yet derived from within the system. They are boundary conditions, the fundamental "settings" of the computation that is our universe. Asking "why is $a_{\text{cell}} = 1.63 \, \ell_P^2$?" is, for now, like asking why a simulation was configured with particular settings. Closing or replacing those inputs is part of the remaining program.
 
-**Current status**: The pixel area formula is currently used to *extract* $a_{\text{cell}}$ from measured $G$ and $\alpha_i$. To make it a true prediction, we need to derive gauge couplings from geometry (close the $\alpha_U$ gap). Once complete, the chain would run: $a_{\text{cell}} \to \alpha_U \to \alpha_i(M_Z) \to \Lambda_{\text{QCD}} \to m_{\text{proton}}$.
+**Current status**: The pixel area formula is currently used to *extract* $a_{\text{cell}}$ from measured $G$ and $\alpha_i$. To make it a true prediction, we need to derive gauge couplings from geometry (close the $\alpha_U$ gap). Once complete, the chain would run: $a_{\text{cell}} \to \alpha_U \to \alpha_i(m_{Z,\rm run}) \to \Lambda_{\text{QCD}} \to m_{\text{proton}}$.
 
 ![The Pixel Constant](../assets/pixel-constant.svg)
 
@@ -352,8 +352,8 @@ These predictions have been tested experimentally or computationally:
 | Page curve for black holes | Island calculations (2019-2020) | Confirmed |
 | Electroweak VEV v ≈ 246.77 GeV | Measured: 246.22 GeV | Calibration-sector scale setting; not an independent confirmation |
 | Top pole mass m_t ≈ 171.1 GeV | Measured: 172.6 GeV | 0.9% low; supplement-backed D11 reconstruction with UV-synchronized transport and low-scale matching |
-| Strong coupling α_s(M_Z) ≈ 0.1183 | PDG: 0.1179 | Calibration-sector consistency check |
-| Weak mixing angle sin²θ_W ≈ 0.23119 | PDG: 0.23122 | Calibration-sector consistency check |
+| Strong coupling α_s(m_{Z,\rm run}) ≈ 0.1183 | PDG: 0.1179 | Calibration-sector consistency check |
+| Weak mixing angle sin²θ_W(m_{Z,\rm run}) ≈ 0.2307 | PDG: 0.23122 | Calibration-sector consistency check |
 | QCD scale Λ_MSbar^(5) ≈ 214 MeV | PDG: 213 ± 8 MeV | Calibration/downstream consistency check in the current implementation (scheme + thresholds as in the spectrum codepath) |
 
 ### Derived from Axioms + Assumptions
