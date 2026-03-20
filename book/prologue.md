@@ -3,6 +3,9 @@
 > Core idea, in plain English: there is no single objective camera angle on reality.
 > There are only local, subjective perspectives, and physics is the rulebook that keeps them consistent where they overlap.
 > If you are not a physicist, you are in the right place; this book is written as a reverse-engineering story, not a math-first textbook.
+>
+> Companion video course (third-party): Sriharsha Karamchati has published a chapter-by-chapter OPH playlist on YouTube:
+> https://www.youtube.com/playlist?list=PLff0tYtg64Egc2sTtKgThcPRNRdR6i83O
 
 
 ## The Cosmic Program

@@ -95,6 +95,15 @@ Start with the official OPH website, the interactive OPH Lab, and the web editio
 - **OPH Book (web edition):** [Read the OPH Book online](https://oph-book.floatingpragma.io)
 - **NotebookLM notebook:** [Watch the OPH introduction video and start asking questions](https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a?artifactId=fb7c0ebd-4375-4997-9cae-6558ff8977b4)
 
+## Learning OPH
+
+If you want the easiest path into OPH, use the book, the video course, the lab, and the guided Q&A together:
+
+- **OPH Book (web edition):** [Read the OPH Book online](https://oph-book.floatingpragma.io)
+- **Third-party chapter-by-chapter video course:** [Sriharsha Karamchati's OPH playlist on YouTube](https://www.youtube.com/playlist?list=PLff0tYtg64Egc2sTtKgThcPRNRdR6i83O)
+- **Interactive derivation map:** [OPH Lab at oph-lab.floatingpragma.io](https://oph-lab.floatingpragma.io)
+- **Guided follow-up questions:** [NotebookLM notebook](https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a?artifactId=fb7c0ebd-4375-4997-9cae-6558ff8977b4)
+
 ## IBM Quantum Experiments
 
 A first public IBM Quantum Cloud benchmark bundle is now included in this repo. It summarizes the initial recoverability and exact-ratio tests, the measured hardware outputs, and the public code/data bundle used for the runs.
