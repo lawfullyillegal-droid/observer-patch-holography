@@ -3357,6 +3357,26 @@ This is significant: the normalization factor behaves like a quasi-constant rath
 
 The Z₃ test achieves machine precision because it is exactly overconstrained. The Z₅ and S₃ tests converge to their predicted ratios as coupling decreases. This provides strong internal validation of the mechanism "MaxEnt + Laplacian =\textgreater{} heat-kernel sector weights" before applying it to physical gauge groups.
 
+\subsubsection{6.14a IBM Quantum Cloud hardware benchmarks}\label{614a-ibm-quantum-cloud-hardware-benchmarks}
+
+The lattice calculations above are internal numerical validations. A first IBM Quantum Cloud campaign now adds an external hardware check of whether OPH-motivated reduced-sector structures survive preparation and readout on real superconducting-qubit devices. These runs are still small-sector consistency benchmarks rather than a standalone confirmation of the full framework, but they matter because they probe the same recoverability and heat-kernel observables on physical hardware rather than only in simulation.
+
+Detailed circuits, representative raw outputs, and rerun instructions are public in the project write-up \href{https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/IBM_QUANTUM_CLOUD.md}{\texttt{extra/IBM\_QUANTUM\_CLOUD.md}} and the associated code/data bundle \href{https://github.com/FloatingPragma/observer-patch-holography/tree/main/code/ibm_quantum_cloud}{\texttt{code/ibm\_quantum\_cloud/}}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Stage 1 (Markov/recoverability benchmark).} On \texttt{ibm\_marrakesh} and \texttt{ibm\_fez}, the structured state reconstructs below both controls in conditional mutual information and above both controls in Petz fidelity. On \texttt{ibm\_marrakesh}, the observed ordering is \(0.2309 < 0.3890 < 0.9474\) for CMI and \(0.9297 > 0.8649 > 0.6066\) for Petz fidelity; on \texttt{ibm\_fez}, it is \(0.1498 < 0.4992 < 0.9166\) and \(0.9479 > 0.8117 > 0.6449\). This is the OPH-favored direction on two independent real backends.
+\item
+  \textbf{Z₃ hardware sanity check.} The overconstrained \(Z_3\) extraction passes cleanly on hardware: across prepared \(t = 0.30, 0.60, 0.90\), the mean extracted \(t\) remains within about \(0.02\) of the target, the two independent extractions agree to within \(0.0142\), \(0.0034\), and \(0.0043\), and leakage stays below \(0.1\%\). This shows that the reduced-sector preparation and readout path is internally coherent on-device before sharper ratio claims are interpreted.
+\item
+  \textbf{Z₅ exact-ratio test.} The parameter-free OPH target is \(\Delta_2/\Delta_1 = \varphi^2 \approx 2.618\). Across repeated sweeps on \texttt{ibm\_marrakesh} and one replication on \texttt{ibm\_fez}, the best \texttt{ibm\_marrakesh} points land within \(0.8\%\), \(1.2\%\), and \(1.5\%\) of the target, while a focused high-shot rerun at \(t = 0.90\) lands within \(2.6\%\). The \texttt{ibm\_fez} replication is noisier but remains in the same neighborhood rather than producing a clean contradictory ratio.
+\item
+  \textbf{S₃ nonabelian ratio test.} The first nonabelian hardware run revealed a real layout-dependent bias. After reversing the qubit layout, the mitigated ratio moves from \(1.8724\) to \(2.0299\) against the OPH target \(2.0000\), and a direct confirmation run returns \(2.0657\). This is important because the nonabelian target reappears once the hardware mapping is corrected, indicating an identifiable device/layout effect rather than a structural failure of the OPH prediction.
+\end{itemize}
+
+Taken together, these IBM runs are best read as early hardware evidence for the local OPH edge-sector picture. They show that the OPH-favored recoverability ordering survives on two real backends, the abelian exact-ratio tests land near the predicted parameter-free values, and the first nonabelian test returns to the expected ratio once a diagnosed layout bias is corrected. This does not yet validate the full framework, but it does move the core reduced-sector pattern from pure simulation into real-device experimental support.
+
 \subsubsection{6.15 Particle mass extraction from spectroscopy}\label{615-particle-mass-extraction-from-spectroscopy}
 
 The same lattice models that yield coupling extraction also provide a concrete definition of "particle mass" via standard QFT/lattice spectroscopy.
