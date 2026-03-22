@@ -304,9 +304,9 @@ For approximate Markov collars, recovery is controlled by the standard bound
 \le
 2\sqrt{\ln 2\,\varepsilon}.
 \]
-This gives a quantitative stability guarantee for continuation under finite collar error.
+This gives quantitative trace-distance control on the recovered state under finite conditional mutual information (finite collar error). Interpreting that control as observer continuation requires additional modeling assumptions beyond the bound itself.
 
 \section{Physical Meaning}
-The continuation mechanism is an internal consequence of the OPH algebraic structure. If an engineered OPH-compatible substrate exists, observer-state backup and restoration are principled operations rather than ad hoc additions. The mechanism does not assume metaphysical postulates. It follows from sectorized gluing, central records, and recoverability.
+The continuation mechanism is a program-level construction motivated by the OPH algebraic structure. If an engineered OPH-compatible substrate exists, observer-state backup and restoration can be formulated in a principled way from sectorized gluing, central records, and recoverability, but the present wrapper does not yet prove a standalone observer-continuation theorem.
 
 \end{document}
