@@ -55,7 +55,7 @@ and the total screen capacity
 \[
 N_{\mathrm{scr}} \equiv \log \dim \mathcal H_{\mathrm{tot}} \sim 10^{122}.
 \]
-In the current implementation, $P$ feeds the supplement-backed gauge/electroweak calibration sector and $N_{\mathrm{scr}}$ feeds the capacity branch for $\Lambda$; the D10--D11 numerical branches are reported only as implementation-level checks, not as the recovered core itself. Charged-lepton/Koide, texture, capacity-level neutrino estimates, dark-sector, baryogenesis, black-hole-spectroscopy, proton-spin, proton-lifetime estimates beyond the structural exclusion of gauge-mediated decay, and string/worldsheet discussions are explicitly deferred continuations requiring additional ans\"atze beyond the recovered core and are not claimed as outputs of overlap consistency plus the stated scaling-limit and categorical premises. The purpose of this compact note is therefore to state a clean Phase-I claim set: relativity and Standard Model structure are the recovered core, while all downstream branches are either input-dependent or supplement-backed secondary sectors, or post-Phase-I phenomenology.
+In the current implementation, $P$ feeds a supplement-backed gauge-coupling calibration sector and $N_{\mathrm{scr}}$ feeds the capacity branch for $\Lambda$; these non-core numerical branches are reported only as implementation-level checks, not as the recovered core itself. Charged-lepton/Koide, texture, capacity-level neutrino estimates, dark-sector, baryogenesis, black-hole-spectroscopy, proton-spin, proton-lifetime estimates beyond the structural exclusion of gauge-mediated decay, and string/worldsheet discussions are explicitly deferred continuations requiring additional ans\"atze beyond the recovered core and are not claimed as outputs of overlap consistency plus the stated scaling-limit and categorical premises. The purpose of this compact note is therefore to state a clean Phase-I claim set: relativity and Standard Model structure are the recovered core, while all downstream branches are either input-dependent or supplement-backed secondary sectors, or post-Phase-I phenomenology.
 \end{abstract}
 
 \section{Introduction}
@@ -90,7 +90,7 @@ The results emphasized in this paper are ordered below by a combination of impac
 is recovered in the bosonic compact-gauge branch once the extended MAR admissibility package is imposed.
 \item On the realized one-generation chiral matter plus one-Higgs package, anomaly constraints and Yukawa invariance fix the hypercharge lattice, and on the realized MAR-admissible branch the counting chain yields \(N_g=3\) and then, using Witten's \(\SU(2)\) anomaly parity constraint, \(N_c=3\).
 \item The current quantitative implementation uses two external continuous configuration inputs, $P$ and $N_{\mathrm{scr}}$.
-\item The Higgs/top critical-surface branch adds no extra continuous fit once the gauge trajectory and scale-setting branch are fixed, while the charged-lepton/Koide continuation uses extra phenomenological structure beyond the core theorem package.
+\item Downstream matter-sector continuations, including charged-lepton/Koide structure, remain visible but explicitly outside the compact paper's recovered-core theorem package.
 \item A separate input-dependent capacity corollary ties the cosmological-constant branch to global screen capacity rather than local vacuum energy.
 \item Exclusion of gauge-mediated proton decay follows from product-group structure; any stronger proton-lifetime claim remains UV/EFT/QCD-dependent.
 \item Dark-sector, baryogenesis, string, and spectroscopy branches are kept visible, but only as program-level continuations or, where additional ans\"atze are involved, conjectural phenomenology.
@@ -102,10 +102,10 @@ is recovered in the bosonic compact-gauge branch once the extended MAR admissibi
 This section is the authoritative status ledger for the compact note and the sync rule for mirrored summary surfaces. The three-phase boundary used throughout is
 \[
 \text{Phase I}=(D1\text{--}D5)\cup(D7\text{--}D9),\qquad
-\text{Phase II}=D6\cup D10\cup D11,\qquad
+\text{Phase II}=D6\cup D10,\qquad
 \text{Phase III}=D12.
 \]
-Phase I is the recovered-core claim set. Phase II contains the separate input-dependent capacity corollary and the current supplement-backed numerical implementation. Phase III collects deferred continuations. The canonical five-axiom basis, the two external continuous inputs, and the technical-premise labels used below are fixed in Section~\ref{sec:premise-ledger}. Each row names a node in the reconstruction program, records its immediate OPH-side parents, separates imported standard mathematics from extra non-axiom physical premises or external inputs, and states the resulting claim tier.
+Phase I is the recovered-core claim set. Phase II contains the separate input-dependent capacity corollary and the current supplement-backed gauge-calibration sector. Phase III collects deferred continuations. The canonical five-axiom basis, the two external continuous inputs, and the technical-premise labels used below are fixed in Section~\ref{sec:premise-ledger}. Each row names a node in the reconstruction program, records its immediate OPH-side parents, separates imported standard mathematics from extra non-axiom physical premises or external inputs, and states the resulting claim tier.
 
 \begingroup
 \scriptsize
@@ -127,13 +127,12 @@ Node & Output & Immediate OPH ingredients & Standard mathematics used & Extra no
 \textbf{D7} & Compact gauge reconstruction (Theorem~\ref{thm:compactgauge}) & Axioms~\ref{ax:screen}--\ref{ax:entropy} & Doplicher--Roberts / Tannaka reconstruction & T7 and T10--T11 together with the directed-colimit/fiber clause of T12; the refinement-stable qualifier on that colimit is supplied internally by Axiom~\ref{ax:maxent} & Phase I conditional structural theorem \\
 \textbf{D8} & Product gauge structure up to finite quotient (Lemmas~\ref{lem:mincontent}--\ref{lem:commutant}, Theorem~\ref{thm:sm}) & D7 + Axiom~\ref{ax:mar} & compact Lie representation classification; Schur's lemma & connected positive-dimensional Lie admissible class; one connected abelian factor; faithful action on the minimal coupled carrier; vanishing obstruction \([z]=0\) & Phase I realized-branch theorem \\
 \textbf{D9} & Realized Standard Model quotient, hypercharges, the counting chain \(N_g=3\) then \(N_c=3\), and product-group corollaries (Theorem~\ref{thm:hypercharge}, Corollaries~\ref{cor:ng}, \ref{cor:nc}, Proposition~\ref{prop:z6}) & D8 & anomaly-cancellation algebra; Witten global-anomaly argument; CKM CP counting & realized one-generation chiral matter plus one Higgs package; asymptotic-freedom and MAR admissibility premises & Phase I realized-branch theorem/corollary chain \\
-\textbf{D10} & Gauge/electroweak numerical closure of the current supplement-backed implementation & D9 + external input \(P\) & RG evolution and matching conventions supplied in the supplement & pixel constraint; edge heat-kernel closure; supplement-backed beta-function and threshold conventions & Phase II calibration sector \\
-\textbf{D11} & Higgs/top critical-surface branch of the current supplement-backed implementation & D10 & RG transport and pole-mass conversion supplied in the supplement & critical-surface condition \(\lambda=\beta_\lambda=0\) at \(M_U\), plus the UV synchronization scale \(\mu_{\mathrm{sync}}\) used in the D11 transport; no new continuous fit once D10 is fixed & Phase II supplement-backed quantitative branch \\
-\textbf{D12} & Charged-lepton/Koide, texture, dark-sector, baryogenesis, black-hole spectroscopy, proton-spin, proton-lifetime estimates beyond the gauge-channel exclusion, conditional string/worldsheet reorganizations, conjectural critical-superstring extensions, and other continuations & various subsets of D6, D9, D10, and D11 & branch-specific EFT and phenomenological manipulations & additional ans\"atze such as the uniform \(\mathbb Z_6\) center-label ensemble, discrete texture choices, dark-sector response assumptions, discrete-horizon assumptions, or extra worldsheet/CFT premises & Phase III phenomenological continuation / program-level branch \\
+\textbf{D10} & Gauge-coupling numerical closure of the current supplement-backed implementation & D9 + external input \(P\) & RG evolution and matching conventions supplied in the supplement & pixel constraint; edge heat-kernel closure; supplement-backed beta-function and threshold conventions & Phase II calibration sector \\
+\textbf{D12} & Charged-lepton/Koide, texture, dark-sector, baryogenesis, black-hole spectroscopy, proton-spin, proton-lifetime estimates beyond the gauge-channel exclusion, conditional string/worldsheet reorganizations, conjectural critical-superstring extensions, and other continuations & various subsets of D6, D9, and D10 & branch-specific EFT and phenomenological manipulations & additional ans\"atze such as the uniform \(\mathbb Z_6\) center-label ensemble, discrete texture choices, dark-sector response assumptions, discrete-horizon assumptions, or extra worldsheet/CFT premises & Phase III phenomenological continuation / program-level branch \\
 \end{longtable}
 \endgroup
 
-Accordingly, the recovered-core structural program of the compact note is D1--D5 together with D7--D9. D6 is the separate Phase-II input-dependent corollary; D10--D11 are the current Phase-II supplement-backed numerical implementation; and D12 is the Phase-III continuation layer. The only external continuous inputs are \(N_{\mathrm{scr}}\) in D6 and \(P\) in D10, together with descendants built from those branches.
+Accordingly, the recovered-core structural program of the compact note is D1--D5 together with D7--D9. D6 is the separate Phase-II input-dependent corollary; D10 is the current Phase-II supplement-backed calibration sector; and D12 is the Phase-III continuation layer. The only external continuous inputs are \(N_{\mathrm{scr}}\) in D6 and \(P\) in D10, together with descendants built from those branches.
 \section{Five Axioms, Two External Continuous Inputs in the Current Quantitative Implementation, and Technical Premises}\label{sec:premise-ledger}
 
 This section is the authoritative premise ledger and dependency map for the compact note. The OPH basis used below is exactly the five core axioms, the two external continuous inputs of the current quantitative implementation, and the theorem-local technical premises collected afterward. Older A1--A4 / B / MX / LR / R0--R1 packaging is retained elsewhere only as shorthand for pieces of this canonical package, not as a competing axiom basis. In the present version, the local finite-constraint MaxEnt/refinement branch already internalizes the quasi-local propagation and refinement-stability control that older packaging sometimes carried as separate regularity language, Theorem~\ref{thm:bw} fixes the cap generator and its \(2\pi\) normalization on the OPH Bisognano--Wichmann geometric branch without adding any separate cap-isotropy selector, and Corollary~\ref{cor:n2} derives the null half-sided modular pair inside the synchronized bridge. What remains genuinely theorem-external is the scaling-limit scope clause, the geometric-branch selection burden, the density-upgrade burden, fixed-cap stationarity, the bosonic/fiber-functor fork, the relativistic null-stress identification premise, and the vanishing obstruction premise where invoked.
@@ -273,16 +272,15 @@ Node & Compact theorem labels and output & Immediate OPH ingredients & Standard 
 \textbf{D7} & Theorem~\ref{thm:compactgauge}: compact gauge reconstruction & Axioms~\ref{ax:screen}--\ref{ax:entropy} & Doplicher--Roberts / Tannaka reconstruction & T7 and T10--T11 together with the directed-colimit/fiber clause of T12; the refinement-stable qualifier on that colimit is supplied internally by Axiom~\ref{ax:maxent} & conditional structural theorem \\
 \textbf{D8} & Lemmas~\ref{lem:mincontent}--\ref{lem:commutant}, Theorem~\ref{thm:sm}: product gauge structure up to finite quotient & D7 + Axiom~\ref{ax:mar} & compact Lie representation classification; Schur's lemma & connected positive-dimensional Lie admissible class; one connected abelian factor; faithful action on the minimal coupled carrier; vanishing obstruction \( [z]=0 \) & realized-branch theorem \\
 \textbf{D9} & Theorem~\ref{thm:hypercharge}, Corollaries~\ref{cor:ng}, \ref{cor:nc}, Proposition~\ref{prop:z6}: realized Standard Model quotient, hypercharges, the counting chain \(N_g=3\) then \(N_c=3\), and product-group corollaries & D8 & anomaly-cancellation algebra; Witten global-anomaly argument; CKM CP counting & realized one-generation chiral matter plus one Higgs package; asymptotic-freedom and MAR admissibility premises & realized-branch theorem/corollary chain \\
-\textbf{D10} & quantitative gauge/electroweak closure of Section~7 & D9 + external input \(P\) & RG evolution and matching conventions supplied in the supplement & pixel constraint; edge heat-kernel closure; supplement-backed beta-function and threshold conventions & calibration sector \\
-\textbf{D11} & Higgs/top subsection of Section~7 & D10 & RG transport and pole-mass conversion supplied in the supplement & critical-surface condition \(\lambda=\beta_\lambda=0\) at \(M_U\), plus the UV synchronization scale \(\mu_{\mathrm{sync}}\) used in the D11 transport; no new continuous fit once D10 is fixed & supplement-backed quantitative branch \\
-\textbf{D12} & Sections~8--10 program continuations, including proton-spin and non-gauge proton-lifetime estimates together with the string/worldsheet branch & various subsets of D6, D9, D10, and D11 & branch-specific EFT and phenomenological manipulations & additional ans\"atze such as the uniform \(\mathbb Z_6\) center-label ensemble, texture choices, dark-sector response assumptions, discrete-horizon assumptions, or extra worldsheet/CFT premises & phenomenological continuation / program-level branch \\
+\textbf{D10} & gauge-coupling numerical closure of Section~7 & D9 + external input \(P\) & RG evolution and matching conventions supplied in the supplement & pixel constraint; edge heat-kernel closure; supplement-backed beta-function and threshold conventions & calibration sector \\
+\textbf{D12} & Sections~8--10 program continuations, including charged-lepton/Koide structure, proton-spin and non-gauge proton-lifetime estimates together with the string/worldsheet branch & various subsets of D6, D9, and D10 & branch-specific EFT and phenomenological manipulations & additional ans\"atze such as the uniform \(\mathbb Z_6\) center-label ensemble, texture choices, dark-sector response assumptions, discrete-horizon assumptions, or extra worldsheet/CFT premises & phenomenological continuation / program-level branch \\
 \end{longtable}
 \endgroup
 
 No theorem in the compact note is meant to hide standard mathematical imports or extra physical premises inside the phrase ``from the axioms.'' The authoritative unpacking of every such claim is the dependency DAG above. In particular, quasi-local propagation and the refinement-stable sector-persistence notion are now internal to the local finite-constraint MaxEnt branch, the cap generator and its \(2\pi\) normalization are packaged inside Theorem~\ref{thm:bw} on the OPH geometric branch, the half-sided modular pair is derived inside Corollary~\ref{cor:n2}, and the remaining explicit gravity-side burdens are the downstream density-upgrade, fixed-cap stationarity, and null-stress-identification hypotheses. The only rows that use the two external continuous inputs are D6, D10, the separate order-of-magnitude neutrino estimate attached to D6, and downstream branches built from them.
 
 \begin{theorem}[Summary theorem for the recovered relativity-plus-Standard-Model core]\label{thm:master}
-This theorem packages the recovered-core nodes D1--D5 and D7--D9 of the authoritative dependency DAG above. Node D6 is a separate input-dependent corollary, while D10--D12 remain outside this theorem's scope. Assume Axioms~\ref{ax:screen}--\ref{ax:entropy}, Axiom~\ref{ax:mar}, Assumption~\ref{ass:technical}, and the hypotheses of Theorems~\ref{thm:confluence}, \ref{thm:bw}, \ref{thm:stress}, \ref{thm:einstein}, \ref{thm:compactgauge}, \ref{thm:sm}, and \ref{thm:hypercharge}, together with Corollaries~\ref{cor:ng}, \ref{cor:nc}, and Proposition~\ref{prop:z6}. Then, in the controlled refinement/scaling regime singled out by Assumption~\ref{ass:technical}:
+This theorem packages the recovered-core nodes D1--D5 and D7--D9 of the authoritative dependency DAG above. Node D6 is a separate input-dependent corollary, while D10 and D12 remain outside this theorem's scope. Assume Axioms~\ref{ax:screen}--\ref{ax:entropy}, Axiom~\ref{ax:mar}, Assumption~\ref{ass:technical}, and the hypotheses of Theorems~\ref{thm:confluence}, \ref{thm:bw}, \ref{thm:stress}, \ref{thm:einstein}, \ref{thm:compactgauge}, \ref{thm:sm}, and \ref{thm:hypercharge}, together with Corollaries~\ref{cor:ng}, \ref{cor:nc}, and Proposition~\ref{prop:z6}. Then, in the controlled refinement/scaling regime singled out by Assumption~\ref{ass:technical}:
 \begin{enumerate}[label=(\roman*),leftmargin=2em]
 \item overlap repair admits a unique schedule-independent normal form;
 \item cap modular flow is geometric in the assumed modular phase and yields the connected Lorentz group
@@ -318,7 +316,7 @@ with the exact Standard Model hypercharge lattice on the realized matter package
 Items (i)--(iii) are collected from Theorem~\ref{thm:confluence}, Corollary~\ref{cor:lorentz}, Theorem~\ref{thm:einstein}, and Corollary~\ref{cor:einstein}. The compact gauge reconstruction is Theorem~\ref{thm:compactgauge}; the product gauge structure up to finite quotient is Theorem~\ref{thm:sm}; and the final identification of the exact Standard Model quotient is Theorem~\ref{thm:hypercharge} together with Corollaries~\ref{cor:ng}, \ref{cor:nc}, and Proposition~\ref{prop:z6}.
 \end{proof}
 
-Theorem~\ref{thm:master} therefore packages only the recovered relativity-plus-Standard-Model core: D1--D5 together with D7--D9. The D6 capacity relation is a separate input-dependent corollary; the quantitative calibration sector, Higgs/top branch, and phenomenological continuations remain outside its scope.
+Theorem~\ref{thm:master} therefore packages only the recovered relativity-plus-Standard-Model core: D1--D5 together with D7--D9. The D6 capacity relation is a separate input-dependent corollary; the calibration sector and phenomenological continuations remain outside its scope.
 
 \subsection*{Usually Postulated Elsewhere, Recovered or Continued Here with Explicit Status}
 
@@ -2110,289 +2108,6 @@ There are no mixed $(3,2,\pm 5/6)$ gauge bosons. Hence gauge-mediated proton dec
 The same product-group structure removes the usual grand-unification monopole sector. In the present framework, unification of couplings does not proceed by embedding the gauge group into a simple group that is later broken. It proceeds through a shared geometric origin of the edge heat-kernel parameters. Absence of gauge-mediated proton decay and unification therefore coexist without tension. Any confinement statement is a separate infrared dynamical issue rather than a corollary of the product-group adjoint argument alone.
 \end{remark}
 
-\section{Two-Input Quantitative Sector}
-
-\subsection{Continuous-input count in the current quantitative implementation}
-
-The quantitative program uses the same axiom set together with the two external continuous inputs $P$ and $N_{\mathrm{scr}}$ in its current supplement-backed numerical implementation. In the current implementation, $P$ is calibrated from the gauge sector and $N_{\mathrm{scr}}$ is inferred from the observed cosmological constant. The realized structural discrete data are
-\[
-(\SU(3)\times\SU(2)\times\U(1))/\mathbb Z_6,\quad
-N_g=3,\quad
-N_c=3
-\]
-and are fixed by structural arguments and MAR selection rather than by direct fits. If one later enters specific flavor continuations, additional discrete choices such as \(\varepsilon=1/6\) or \(\delta=2/9\) may be introduced, but those are not part of the recovered structural bundle. On the structural, calibration, and Higgs/top branch alone, this replaces roughly nineteen particle-physics inputs by two external continuous inputs plus structural relations. Later flavor continuations use additional phenomenological branch choices and are not part of that count.
-
-\subsection{Epistemic classification of outputs}
-
-The quantitative sector is not uniform. The paper uses four categories.
-
-\begin{enumerate}[leftmargin=2em]
-\item \textbf{Calibration-sector consistency checks.} These are algebraically entangled with the determination of $P$ from the gauge sector. They include $v$, the gauge couplings at $m_Z$, and tree-level electroweak masses.
-\item \textbf{Independent quantitative outputs.} These use additional structural conditions and add no further continuous fit once the gauge trajectory and scale-setting branch are fixed. In the compact note this category is the Higgs/top critical-surface branch.
-\item \textbf{Parameter-free structural outputs.} These include the gauge quotient, the exact hypercharge lattice on the realized matter package, and the realized counting chain $N_g=3$ then $N_c=3$ on the MAR-admissible branch.
-\item \textbf{Phenomenological continuations.} These include the charged-lepton/Koide construction, quark textures, baryogenesis, dark-sector phenomenology, and any use of the $\mathbb Z_6$ suppression factor as a flavor or entropy ansatz.
-\end{enumerate}
-
-The quark-hierarchy and neutrino branches are not at the same maturity level in the compact note: the former is a texture-pattern continuation, while the latter is currently only an order-of-magnitude capacity-branch estimate.
-
-This classification matters because the framework is not presented as a fit to all observables. Its stronger claim is that a large set of discrete and dimensionless structures are fixed before the overall energy scale is chosen.
-
-\subsection{Fundamental scales}
-
-The unification scale is
-\[
-M_U=\frac{E_P}{e^{2\pi}}\,P^{1/6}\approx 2.474\times 10^{16}\ \mathrm{GeV},
-\]
-and the cell energy is
-\[
-E_{\mathrm{cell}}=\frac{E_P}{\sqrt P}\approx 9.56\times 10^{18}\ \mathrm{GeV}.
-\]
-The factor $e^{2\pi}$ comes from modular geometry. The factor $P^{1/6}$ comes from the cell-area scaling relation.
-
-\subsection{The pixel constraint and gauge closure}
-
-Edge-center completion and MaxEnt produce open-edge Gibbs / Laplacian weights
-\[
-p_R(t)\propto d_R e^{-tC_2(R)},
-\qquad
-\bar\ell_G(t)=\sum_R p_R(t)\log d_R.
-\]
-For the two nonabelian factors, these are explicitly
-\[
-\bar\ell_{\SU(2)}(t)=\sum_{j=0,\frac12,1,\dots} p_j(t)\log(2j+1),
-\qquad
-p_j(t)\propto (2j+1)e^{-t\,j(j+1)},
-\]
-and
-\[
-\bar\ell_{\SU(3)}(t)=\sum_{p,q\ge 0} p_{(p,q)}(t)\log d_{(p,q)},
-\qquad
-p_{(p,q)}(t)\propto d_{(p,q)}e^{-tC_2(p,q)},
-\]
-with
-\[
-d_{(p,q)}=\frac12(p+1)(q+1)(p+q+2),
-\]
-and
-\[
-C_2(p,q)=\frac13(p^2+q^2+pq+3p+3q).
-\]
-Upon gluing or tracing the two boundary indices one obtains the closed heat-kernel partition function
-\[
-Z_{\mathrm{edge}}(t)=\sum_R d_R^2 e^{-tC_2(R)}.
-\]
-For the nonabelian factors one obtains the pixel constraint
-\[
-\frac{P}{4}=\bar\ell_{\SU(2)}(t_2)+\bar\ell_{\SU(3)}(t_3),
-\qquad
-t_i=4\pi^2\alpha_i.
-\]
-
-The framework then solves a supplement-backed self-consistent fixed-point problem:
-\begin{enumerate}[leftmargin=2em]
-\item choose a trial unified coupling $\alpha_U$;
-\item run the three gauge couplings to a trial scale using the derived beta-function shifts;
-\item compute the electroweak scale
-\[
-v=E_{\mathrm{cell}}\exp\!\left(-\frac{2\pi}{\beta_{\mathrm{EW}}\alpha_U}\right),
-\qquad
-\beta_{\mathrm{EW}}=N_c+1=4;
-\]
-\item impose $m_Z(\mu)=\mu$ at the running scale;
-\item solve the pixel constraint by bisection in $\alpha_U$.
-\end{enumerate}
-
-This yields
-\[
-\alpha_U\approx 0.04112,
-\qquad
-\alpha_U^{-1}\approx 24.32.
-\]
-
-The resulting beta-function shifts are numerically close to the MSSM one-loop shifts. In the framework this is not introduced by hand. It comes from the same heat-kernel edge weighting that enters the pixel constraint. The compact note quotes this closure only at the level needed to state the numerical branch; the full beta-function shifts, threshold choices, and matching conventions remain supplement-backed.
-
-\subsection{Calibration-sector electroweak outputs}
-
-We use the convention
-\[
-\alpha_1=\frac53\alpha_Y,
-\qquad
-g_Y^2=4\pi\alpha_Y=4\pi\frac35\alpha_1.
-\]
-The gauge couplings at $\mu=m_Z$ are then
-\[
-\alpha_1(m_Z)\approx 0.01696,\qquad
-\alpha_2(m_Z)\approx 0.03384,\qquad
-\alpha_3(m_Z)\approx 0.1183,
-\]
-which, under the printed conventions of this compact note, give
-\[
-\alpha_{\mathrm{em}}^{-1}(m_Z)\approx 127.82,\qquad
-\sin^2\theta_W(m_Z)\approx 0.23119.
-\]
-With
-\[
-v\approx 246.77\ \mathrm{GeV},
-\]
-the tree-level electroweak masses are
-\[
-m_W=\frac12 v g_2 \approx 80.46\ \mathrm{GeV},
-\]
-and
-\[
-m_{Z,\mathrm{run}}=\frac12v\sqrt{g_2^2+g_Y^2}\approx 91.76\ \mathrm{GeV}.
-\]
-
-These are calibration-sector outputs. Their role in the paper is scale setting, not independent confirmation. A fully reproducible numerical audit requires the beta-function shifts and matching conventions supplied in the repository supplements. The compact note therefore reports the running-$Z$ relation rather than a pole-$Z$ benchmark output.
-
-\begingroup
-\footnotesize
-\begin{longtable}{@{}p{0.28\textwidth}p{0.18\textwidth}p{0.18\textwidth}p{0.23\textwidth}@{}}
-\toprule
-Quantity & OPH output & Experimental value & Status \\
-\midrule
-\endhead
-\bottomrule
-\endfoot
-$\alpha_{\mathrm{em}}^{-1}(m_Z)$ & $127.82$ & $127.952$ & calibration sector \\
-$\sin^2\theta_W(m_Z)$ & $0.23119$ & $0.23122$ & calibration sector \\
-$\alpha_s(m_Z)$ & $0.1183$ & $0.1179$ & calibration sector \\
-$m_W$ & $80.46~\mathrm{GeV}$ & $80.38~\mathrm{GeV}$ & calibration sector \\
-\end{longtable}
-\endgroup
-
-\subsection{Higgs and top from the critical surface}
-
-The independent quantitative branch begins with the refinement-stability condition
-\[
-\lambda(M_U)=0,
-\qquad
-\beta_\lambda(M_U)=0.
-\]
-At one loop, these conditions determine the top Yukawa boundary value
-\[
-y_t(M_U)=
-\left[\frac{1}{16}\left(2g_2^4+(g_2^2+g_Y^2)^2\right)\right]^{1/4}.
-\]
-The logic is simple: once $\lambda(M_U)=0$, the condition $\beta_\lambda(M_U)=0$ removes the final freedom in the top Yukawa boundary value. The low-energy Higgs and top masses then follow inside the synchronized supplement-backed D11 implementation rather than by direct fitting. In the compact note, the displayed one-loop equations record only the low-scale SM part of the transport. The synchronized D11 branch used for the quoted numbers is UV-synchronized: it uses SM running from $m_Z$ up to a synchronization scale $\mu_{\mathrm{sync}}\approx 6.8\times 10^{11}\,\mathrm{GeV}$, the same MSSM-like coefficients as D10 from $\mu_{\mathrm{sync}}$ to $M_U$, and only order-one-GeV low-scale matching corrections afterward. The literal all-SM appendix flow by itself lands much lower, at about $m_t^{\mathrm{pole}}\approx 164.2\,\mathrm{GeV}$ and $m_H\approx 115.2\,\mathrm{GeV}$, so those raw one-loop equations are not the full synchronized D11 implementation.
-
-Within that synchronized supplement-backed D11 implementation, the UV-synchronized transport of the coupled system $(y_t,\lambda,g_Y,g_2,g_3)$ down to $\mu\sim m_t$ yields
-\[
-m_t^{\overline{\mathrm{MS}}}(m_t)\approx 160.6\ \mathrm{GeV},
-\]
-with a core pole value
-\[
-m_t^{\mathrm{pole,core}}\approx 170.3\ \mathrm{GeV},
-\]
-and after the residual low-scale matching correction used in the present implementation,
-\[
-m_t^{\mathrm{pole}}\approx 171.1\ \mathrm{GeV}.
-\]
-The corresponding synchronized core Higgs value is
-\[
-m_H^{\mathrm{core}}\approx 126.6\ \mathrm{GeV},
-\]
-and after the residual Higgs matching shift the displayed value is
-\[
-m_H=\sqrt{2\lambda(m_t)}\,v\approx 126.5\ \mathrm{GeV}.
-\]
-The appendix is therefore not intended as a standalone reproduction recipe for the displayed $126.5$ and $171.1$ GeV outputs; it records only the low-scale SM part of the one-loop flow used inside the broader synchronized D11 implementation.
-
-The critical-surface boundary conditions are not an additional continuous fit once the gauge trajectory and scale-setting branch are fixed. Converting the resulting dimensionless ratios $m_H/v$ and $m_t/v$ to GeV still uses the previously calibrated $v$ and gauge-coupling trajectory, and the critical-surface branch can fail even when the electroweak calibration succeeds.
-
-\begingroup
-\footnotesize
-\begin{tabular}{@{}p{0.28\textwidth}p{0.18\textwidth}p{0.18\textwidth}p{0.23\textwidth}@{}}
-\toprule
-Quantity & OPH output & Experimental value & Status \\
-\midrule
-$m_H$ & $126.5~\mathrm{GeV}$ & $125.2~\mathrm{GeV}$ & independent quantitative \\
-$m_t^{\mathrm{pole}}$ & $171.1~\mathrm{GeV}$ & $172.6~\mathrm{GeV}$ & independent quantitative \\
-\bottomrule
-\end{tabular}
-\endgroup
-
-\section{Phenomenological Flavor Continuations}
-
-Theorem~\ref{thm:master} packages the compact note's recovered core: the D1--D5 relativity chain together with the D7--D9 Standard Model structural chain. D6 is a separate input-dependent capacity corollary, and D10--D11 are supplement-backed numerical branches of the current implementation. Nothing in the present section is part of that recovered core. The role of the section is only to record which flavor ideas have been explored and exactly why they remain outside the proved package.
-
-\subsection{The $\mathbb Z_6$ suppression parameter}\label{subsec:z6-suppression}
-
-If one adds the extra assumption of a \emph{uniform} sixfold center-label ensemble on the realized $\mathbb Z_6$ quotient sectors, then the associated center-label entropy is
-\[
-\Delta S_{\mathrm{center}}=\ln 6.
-\]
-and one may define the phenomenological hierarchy parameter
-\[
-\varepsilon=e^{-\Delta S_{\mathrm{center}}}=\frac16.
-\]
-The crucial scope point is that the quotient
-\[
-(\SU(3)\times\SU(2)\times\U(1))/\mathbb Z_6
-\]
-does \emph{not} by itself force the uniform ensemble. The step from the proved quotient to the numerical suppression factor $\varepsilon=1/6$ is therefore an additional flavor ansatz, not a theorem of the recovered core.
-
-\subsection{Koide, charged-lepton, and texture branches}
-
-Every continuation in which one introduces a circulant generation-space ansatz, a fixed Koide phase such as
-\[
-Q=\frac23,\qquad \delta=\frac29,
-\]
-or additional texture exponents depends on extra phenomenological structure beyond the recovered core.
-These constructions may be interesting as model-building continuations because they reuse discrete data already fixed on the realized Standard Model branch, but they are not derived by overlap consistency, the scaling-limit gravity premises, compact gauge reconstruction, anomaly cancellation, or MAR alone.
-
-Accordingly, the compact note does \emph{not} claim the charged-lepton masses, the Koide relation, or texture exponents as recovered outputs. At present they should be read only as conjectural downstream organizations of flavor data. A failure of any such ansatz would retract that continuation, not Theorem~\ref{thm:master}.
-
-\subsection{Neutrino scale}
-
-The neutrino discussion is weaker still in scope. The present note contains only an input-dependent, order-of-magnitude capacity estimate tied to $N_{\mathrm{scr}}$; it does not provide a benchmark neutrino mass formula, a mixing derivation, or a completed flavor mechanism. The estimate itself sits at the separate D6 boundary, while any fuller neutrino branch remains outside both the recovered core and the supplement-backed D10--D11 quantitative implementation.
-
-Phase I therefore ends \emph{before} flavor is derived. The compact paper recovers spacetime dynamics and Standard Model gauge/matter structure first; flavor remains an explicitly deferred problem rather than a claim hidden inside the packaging.
-
-\section{Program-Level Phenomenology and Further Continuations}
-
-Theorem~\ref{thm:master} marks the end of the compact note's recovered core. The separate input-dependent capacity corollary D6 and the D10--D11 numerical branches are kept visible, but the items below go beyond that scope. They are recorded only to show where the broader OPH program might go next; they are \emph{not} theorem-level outputs of the compact paper.
-
-\subsection{What is already fixed before any continuation is added}
-
-Two points should be separated from the downstream branches. First, the product-group consequence
-\[
-\tau_p^{(\mathrm{gauge})}=\infty
-\]
-for gauge-mediated proton decay is already a corollary of the realized Standard Model structure and does not depend on any dark-sector, baryogenesis, string, or spectroscopy continuation. Second, the relation
-\[
-\Lambda=\frac{3\pi}{G N_{\mathrm{scr}}}
-\]
-is already isolated earlier as the separate input-dependent capacity corollary D6 once the screen-capacity identification is adopted. Neither point should be confused with the conjectural branches below.
-
-That structural proton statement is deliberately narrow: it excludes the simple-GUT gauge-boson channel only. It does not by itself close scalar-mediated or generic higher-dimensional baryon-violating operators, nor does it supply the RG transport and nonperturbative hadronic matrix elements needed for a full proton-lifetime prediction.
-
-\subsection{Dark-sector branch}
-
-The modular-anomaly proposal for an effective dark stress tensor requires more than the recovered gravity branch. The compact note does derive the modular additivity defect
-\[
-\Delta K_\delta = K_{ABD}-K_{AB}-K_{BD}+K_B
-\]
-as a recoverability diagnostic, but it does not prove that a nontrivial cap-local anomaly
-\[
-K_C^{(\mathrm{anom})}:=K_C-2\pi B_C
-\]
-survives with the sign, magnitude, and infrared closure required to explain galaxy-scale phenomenology. Any MOND/RAR-type acceleration law extracted from this idea therefore remains a conjectural response model, not a compact-note prediction.
-
-\subsection{Baryogenesis, spectroscopy, and string/worldsheet branches}
-
-The same scope rule applies to the other downstream topics. Baryogenesis estimates built from powers of a phenomenological suppression factor, black-hole spectroscopy templates built from an additional discrete-horizon branch, and large-$N_{\mathrm{edge}}$ string/worldsheet reorganizations all require premises that are not established by the end of Theorem~\ref{thm:master}. In particular:
-\begin{enumerate}[leftmargin=2em]
-\item baryogenesis needs a concrete out-of-equilibrium mechanism and a justified defect-counting dynamics;
-\item black-hole spectroscopy needs a discrete-horizon branch with its own spacing law and selection rules;
-\item string/worldsheet claims need a controlled large-$N_{\mathrm{edge}}$ regime distinct from the physical color rank $N_c=3$; the further lift to critical superstring structure additionally requires worldsheet supersymmetry, critical dimension, modular invariance, and GSO projection, none of which are derived here.
-\end{enumerate}
-Until those extra premises are proved, these subjects remain program-level continuations only.
-
-\subsection{Reading rule for the compact note}
-
-The compact note should therefore be read with the following boundary in mind: relativity and Standard Model structure are the recovered core; the D6 capacity relation and the supplement-backed D10--D11 quantitative implementation are secondary; dark-sector, baryogenesis, spectroscopy, and string/worldsheet discussions are deferred continuations whose success or failure does not by itself confirm or refute the recovered core.
-
 \section{Relation to Holography and Existing UV Frameworks}
 
 OPH belongs to the holographic family of ideas, but its primitive data are different from those used in asymptotic-boundary constructions. The distinction matters because several of the central claims of the present paper, including the treatment of $\Lambda$, the handling of factorization, and the emergence of gauge structure, depend on it.
@@ -2452,7 +2167,7 @@ This section is the authoritative falsifiability ledger for the three-phase prog
 \[
 (D1\text{--}D5)\cup(D7\text{--}D9),
 \]
-namely the relativity chain together with the realized Standard Model structural chain. D6 is a separate input-dependent capacity corollary, D10--D11 are implementation-level numerical branches of the current supplement-backed realization, and D12 collects deferred continuations.
+namely the relativity chain together with the realized Standard Model structural chain. D6 is a separate input-dependent capacity corollary, D10 is an implementation-level supplement-backed calibration branch, and D12 collects deferred continuations.
 
 \subsection{Prediction audit by claim tier}
 
@@ -2467,8 +2182,7 @@ Tier & Representative outputs & What would actually falsify the tier \\
 \endfoot
 Phase I recovered core (Theorem~\ref{thm:master}; D1--D5, D7--D9) & Confluence of overlap repair, conditional Lorentz kinematics, the conditional Jacobson-type Einstein branch in the stated scaling regime, compact gauge reconstruction in the bosonic branch, the realized Standard Model quotient chain, the exact hypercharge lattice on the realized matter package, the realized counting chain \(N_g=3\) then \(N_c=3\), and the product-group consequence of no gauge-mediated proton decay & A mathematical failure in the derivation chain, or data that require a different realized gauge quotient, different realized hypercharges, a different color or generation count on the admissible branch, or gauge-mediated proton decay \\
 Phase II input-dependent corollary (D6) & \(\Lambda=\frac{3\pi}{G N_{\mathrm{scr}}}\) once the screen-capacity identification is made, together with the separate order-of-magnitude neutrino estimate tied to the same capacity input & Failure of the screen-capacity identification or of the specific global capacity relation. Such a failure would not by itself erase the recovered core \\
-Phase II current implementation: calibration sector (D10) & Pixel-closure gauge/electroweak consistency, \(\alpha_i(m_Z)\), \(\alpha_{\mathrm{em}}^{-1}(m_Z)\), \(\sin^2\theta_W(m_Z)\), \(v\), and tree-level electroweak masses & Failure of the supplement-backed closure of the present implementation once \(P\) and the printed running/matching conventions are imposed \\
-Phase II current implementation: secondary quantitative branch (D11) & Higgs/top critical-surface branch & Failure of the extra critical-surface condition or of the supplement-backed RG transport used in that branch; such a failure does not by itself erase the recovered core \\
+Phase II current implementation: calibration sector (D10) & Pixel-closure gauge-coupling consistency, \(\alpha_i(m_Z)\), \(\alpha_{\mathrm{em}}^{-1}(m_Z)\), and \(\sin^2\theta_W(m_Z)\) & Failure of the supplement-backed closure of the present implementation once \(P\) and the printed running/matching conventions are imposed \\
 Phase III deferred continuations (D12 and beyond) & Flavor ans\"atze, charged-lepton/Koide fits, texture branches, neutrino mass/mixing constructions beyond the D6 estimate, dark-sector response laws, baryogenesis estimates, proton-spin bookkeeping, proton-lifetime estimates beyond the gauge-channel exclusion, black-hole spectroscopy templates, conditional string/worldsheet reorganizations, conjectural critical-superstring extensions, and other downstream phenomenology & Retraction of the corresponding continuation only. These branches are not part of the compact paper's recovered core and their failure is not, by itself, a falsification of relativity-plus-Standard-Model recovery \\
 \end{longtable}
 \endgroup
@@ -2531,25 +2245,15 @@ These are all post-Phase-I, non-core branches. Some are Phase-II input-dependent
 
 \subsection{What the compact paper claims after scope-cleaning}
 
-After the present scope clean, the compact paper claims exactly this: observer-overlap consistency, together with the stated scaling-limit and categorical premises, recovers a conditional relativity branch and the realized Standard Model structural branch. The Phase-II capacity relation and the current Phase-II D10--D11 implementation remain visible but secondary. Everything in Phase III is explicitly non-core.
+After the present scope clean, the compact paper claims exactly this: observer-overlap consistency, together with the stated scaling-limit and categorical premises, recovers a conditional relativity branch and the realized Standard Model structural branch. The Phase-II capacity relation and the current Phase-II D10 calibration sector remain visible but secondary. Everything in Phase III is explicitly non-core.
 
 \section{Common Objections and Clarifications}
 
 \subsection{\texorpdfstring{Is the use of $P$ circular?}{Is the use of P circular?}}
 
-The answer depends on which sector is under discussion. In the current implementation the pixel area $P$ calibrates the overall particle-physics scale through the gauge sector. Quantities that are algebraically entangled with that calibration, such as $v$, $m_W$, $m_Z$, and the gauge couplings at $m_Z$, are consistency checks. The paper treats them as such.
+The answer depends on which sector is under discussion. In the current public formulation the pixel area $P$ calibrates a separate gauge-coupling sector. Quantities algebraically entangled with that calibration are therefore consistency checks for the implementation rather than part of the recovered-core claim set.
 
-The stronger outputs enter only after the scale has been set. The critical-surface condition
-\[
-\lambda(M_U)=0,\qquad \beta_\lambda(M_U)=0
-\]
-fixes the Higgs and top branch without introducing a new continuous fit beyond the calibrated gauge trajectory and scale-setting branch. The Koide continuation is controlled by
-\[
-Q=\frac23,\qquad \delta=\frac29,
-\]
-which are continuation inputs tied to the previously derived discrete data inside that branch. The quark hierarchy depends on the $\mathbb Z_6$ texture ansatz, and the neutrino branch depends on the second input $N_{\mathrm{scr}}$, not on $P$.
-
-Operationally, changing $P$ moves the calibration family $(\alpha_U,\alpha_i(m_Z),v,m_W,m_Z)$ as well as the overall GeV scale. It does not alter the parameter-free structural outputs such as the gauge quotient or hypercharge lattice. The useful distinction is therefore between scale setting, structural determination, and later phenomenological continuations.
+Operationally, changing $P$ moves the calibration family $(\alpha_U,\alpha_i(m_Z),\sin^2\theta_W(m_Z))$. It does not alter the parameter-free structural outputs such as the gauge quotient or hypercharge lattice. Downstream matter-sector continuations, including Koide-style relations, remain outside the compact paper's recovered-core theorem package.
 
 \subsection{Does a fixed UV cell size break Lorentz invariance?}
 
@@ -2583,7 +2287,7 @@ The framework is strongest where the outputs are discrete or structurally rigid:
 \item the compact two-input economy of the present quantitative implementation, kept explicit as a secondary layer rather than as part of Phase I.
 \end{enumerate}
 
-The next strongest sector is the secondary quantitative D11 branch consisting of the Higgs and top masses. The separate D6 cosmological-capacity relation remains visible as an input-dependent corollary rather than as part of the recovered core. The charged-lepton and Koide sectors are promising but should presently be read as phenomenological continuations rather than core theorem outputs.
+The next strongest non-core sector is the supplement-backed D10 calibration branch. The separate D6 cosmological-capacity relation remains visible as an input-dependent corollary rather than as part of the recovered core. The charged-lepton and Koide sectors are promising but should presently be read as phenomenological continuations rather than core theorem outputs.
 
 The weakest part is the light-quark and hadron branch. The hierarchy pattern is robust, but precision control of low-energy QCD effects, scheme dependence, and order-one coefficients is not yet complete.
 
@@ -2593,109 +2297,10 @@ Topics intentionally excluded from the present formulation include simulation na
 
 \section{Conclusion}
 
-Observer-Patch Holography starts from overlap consistency of observer patches and yields, within one framework, several effective structures usually treated separately in modern fundamental physics. The compact note supports a unique schedule-independent normal form for overlap repair, a conditional Lorentz branch in the assumed geometric modular phase, a conditional Jacobson-type Einstein branch under fixed-cap stationarity and the null-stress premise, the Standard Model gauge quotient with exact hypercharges on the realized matter package under the extended MAR admissibility package in the bosonic internal-gauge branch, the realized counting chain \(N_g=3\) then \(N_c=3\) on that branch, a current two-input quantitative implementation whose supplement-backed Higgs/top branch is secondary to the recovered core, and a separate input-dependent cosmological-capacity corollary. It also records several phenomenological continuations whose present status is weaker and is labeled as such in the text.
+Observer-Patch Holography starts from overlap consistency of observer patches and yields, within one framework, several effective structures usually treated separately in modern fundamental physics. The compact note supports a unique schedule-independent normal form for overlap repair, a conditional Lorentz branch in the assumed geometric modular phase, a conditional Jacobson-type Einstein branch under fixed-cap stationarity and the null-stress premise, the Standard Model gauge quotient with exact hypercharges on the realized matter package under the extended MAR admissibility package in the bosonic internal-gauge branch, the realized counting chain \(N_g=3\) then \(N_c=3\) on that branch, a separate supplement-backed gauge-calibration sector that remains secondary to the recovered core, and a separate input-dependent cosmological-capacity corollary. It also records several phenomenological continuations whose present status is weaker and is labeled as such in the text.
 
 Accordingly, the framework functions as a candidate underlying theory from which general relativity and the Standard Model may arise as effective descriptions once the stated scaling-limit and categorical premises are realized. The next technical tasks are sharper quantitative control, a fuller fermionic gauge branch, and explicit UV completions that land in the required modular/geometric phase.
 
 \appendix
-
-\section{One-loop RG Equations Used in the Quantitative Branch}\label{app:rges}
-
-For convenience we record the low-scale SM one-loop system used in the Higgs/top transport branch. This appendix is not by itself a full standalone reproduction recipe for the displayed D11 numbers: the synchronized supplement-backed implementation also fixes the matching scale, the UV synchronization scale, the transition to the MSSM-like UV coefficients inherited from D10, the low-scale extraction conventions, and the pole-mass conversion choices used for the quoted outputs.
-Throughout this appendix, $g_Y$ denotes the SM hypercharge coupling. The GUT-normalized coupling is $g_1$ with $g_1^2=\frac53 g_Y^2$, equivalently $\alpha_1=\frac53\alpha_Y$. Therefore the one-loop coefficient is $41/6$ in the $g_Y$ equation and $41/10$ in the $g_1$ equation.
-\begin{align}
-16\pi^2\frac{dg_Y}{d\ln\mu} &= \frac{41}{6}g_Y^3,\\
-16\pi^2\frac{dg_2}{d\ln\mu} &= -\frac{19}{6}g_2^3,\\
-16\pi^2\frac{dg_3}{d\ln\mu} &= -7g_3^3,\\
-16\pi^2\frac{dy_t}{d\ln\mu} &=
-y_t\left(\frac92 y_t^2-\frac{17}{12}g_Y^2-\frac94 g_2^2-8g_3^2\right),\\
-16\pi^2\frac{d\lambda}{d\ln\mu} &=
-24\lambda^2+\lambda\left(12y_t^2-9g_2^2-3g_Y^2\right)-6y_t^4
-+\frac38\left(2g_2^4+(g_2^2+g_Y^2)^2\right).
-\end{align}
-In the present supplement-backed numerical implementation this system supplies the low-scale part of the transport layer between the UV boundary data and the low-energy Higgs/top outputs. Numerically, the compact note uses one-loop $\overline{\mathrm{MS}}$ transport, the matching scale $\mu=m_Z=91.1876\,\mathrm{GeV}$, a UV synchronization scale $\mu_{\mathrm{sync}}\approx 6.8\times 10^{11}\,\mathrm{GeV}$, the MSSM-like coefficients inherited from D10 for the interval $\mu_{\mathrm{sync}}\le\mu\le M_U$, the unified scale $M_U\approx 2.474\times 10^{16}\,\mathrm{GeV}$ from the main text, the synchronized low-scale extraction convention for $\lambda(m_t)$, and the standard three-loop QCD pole-mass conversion plus order-one-GeV matching corrections for the displayed top/Higgs branch. Higher-loop and threshold refinements are expected to shift the final numbers at the GeV level rather than alter the logic of the branch.
-
-\section{Quantitative Robustness Audit}\label{app:robustness}
-
-\begingroup
-\footnotesize
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.34\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.34\textwidth}@{}}
-\toprule
-Source of variation & Baseline used here & Expected effect on outputs \\
-\midrule
-Critical-surface RG transport & one-loop UV-synchronized SM/MSSM piecewise running with $\mu_{\mathrm{sync}}\approx 6.8\times 10^{11}\,\mathrm{GeV}$ & moving to two loops or changing the synchronization prescription shifts the branch at the GeV level \\
-Pole-mass and threshold matching & standard three-loop top conversion plus leading electroweak corrections & order-one GeV effects in the top branch; sub-GeV to GeV effects in the Higgs branch \\
-Heat-kernel truncation in $\bar\ell_G$ & 200 representations & negligible at displayed precision, with changes below $10^{-12}$ in the entropy sums \\
-Bisection tolerance for the pixel closure & $10^{-10}$ & affects only the last shown digits of $\alpha_U$ and derived calibration outputs \\
-Light-quark scheme matching & not yet implemented at precision level & dominant source of the present 5\% to 20\% uncertainty in the light-quark branch \\
-\bottomrule
-\end{tabular}
-\endgroup
-
-The paper therefore separates the quantitative sector by status. The Higgs and top branches are useful because their errors are controlled at the percent level. The charged-lepton continuation is numerically sharp but rests on a weaker discrete-selection step, while the light-quark and hadronic branch still carries the largest scheme and threshold uncertainty.
-
-\begin{thebibliography}{99}
-
-\bibitem{BW75}
-J.~J.~Bisognano and E.~H.~Wichmann,
-``On the duality condition for a Hermitian scalar field,''
-\emph{J. Math. Phys.} \textbf{16} (1975) 985--1007.
-
-\bibitem{BW76}
-J.~J.~Bisognano and E.~H.~Wichmann,
-``On the duality condition for quantum fields,''
-\emph{J. Math. Phys.} \textbf{17} (1976) 303--321.
-
-\bibitem{LiebRuskai}
-E.~H.~Lieb and M.~B.~Ruskai,
-``Proof of the strong subadditivity of quantum-mechanical entropy,''
-\emph{J. Math. Phys.} \textbf{14} (1973) 1938--1941.
-
-\bibitem{Petz86}
-D.~Petz,
-``Sufficient subalgebras and the relative entropy of states of a von Neumann algebra,''
-\emph{Commun. Math. Phys.} \textbf{105} (1986) 123--131.
-
-\bibitem{Petz88}
-D.~Petz,
-``Sufficiency of channels over von Neumann algebras,''
-\emph{Quart. J. Math.} \textbf{39} (1988) 97--108.
-
-\bibitem{FawziRenner}
-O.~Fawzi and R.~Renner,
-``Quantum conditional mutual information and approximate Markov chains,''
-\emph{Commun. Math. Phys.} \textbf{340} (2015) 575--611.
-
-\bibitem{HJPW}
-P.~Hayden, R.~Jozsa, D.~Petz and A.~Winter,
-``Structure of states which satisfy strong subadditivity of quantum entropy with equality,''
-\emph{Commun. Math. Phys.} \textbf{246} (2004) 359--374.
-
-\bibitem{Jacobson95}
-T.~Jacobson,
-``Thermodynamics of spacetime: the Einstein equation of state,''
-\emph{Phys. Rev. Lett.} \textbf{75} (1995) 1260--1263.
-
-\bibitem{Jacobson16}
-T.~Jacobson,
-``Entanglement equilibrium and the Einstein equation,''
-\emph{Phys. Rev. Lett.} \textbf{116} (2016) 201101.
-
-\bibitem{DR89}
-S.~Doplicher and J.~E.~Roberts,
-``A new duality theory for compact groups,''
-\emph{Invent. Math.} \textbf{98} (1989) 157--218.
-
-\bibitem{DR90}
-S.~Doplicher and J.~E.~Roberts,
-``Why there is a field algebra with a compact gauge group describing the superselection structure in particle physics,''
-\emph{Commun. Math. Phys.} \textbf{131} (1990) 51--107.
-
-\bibitem{Witten82}
-E.~Witten,
-``An SU(2) anomaly,''
-\emph{Phys. Lett. B} \textbf{117} (1982) 324--328.
-
-\end{thebibliography}
 
 \end{document}

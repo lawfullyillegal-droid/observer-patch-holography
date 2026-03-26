@@ -1,6 +1,6 @@
 # Addendum: Philosophical and Practical Consequences of OPH
 
-> OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives the Standard Model gauge group, particle mass hierarchy, and key quantitative outputs.
+> OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives the Standard Model gauge group and other key structural outputs.
 
 
 *If Observer Patch Holography is the correct description of reality, what follows?*

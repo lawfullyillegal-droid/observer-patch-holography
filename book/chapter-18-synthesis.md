@@ -254,7 +254,7 @@ In the current quantitative implementation our universe is characterized by exac
 
 | Parameter | Value | What It Sets |
 |-----------|-------|--------------|
-| **Pixel area** | $a_{\text{cell}} \approx 1.63 \, \ell_P^2$ | Resolution (Planck scale, $G$, gauge calibration, Higgs/top scale) |
+| **Pixel area** | $a_{\text{cell}} \approx 1.63 \, \ell_P^2$ | Resolution (Planck scale, $G$, and gauge calibration) |
 | **Screen capacity** | $\log(\dim \mathcal{H}) \sim 10^{122}$ | Size (cosmological constant, de Sitter horizon, capacity branch) |
 
 The axiom structure contains no dimensionful constants. It is pure mathematics describing how information organizes on holographic screens. These two parameters are the only "settings" that distinguish our universe from other possible universes running the same axiom structure.
@@ -264,11 +264,10 @@ $$a_{\text{cell}} = 4G\bar{\ell}(t) \approx 1.63094 \, \ell_P^2$$
 
 where $\bar{\ell}(t) = \sum_R p_R \log d_R$ is the edge entropy density computed from gauge couplings via the heat-kernel distribution $p_R \propto d_R e^{-t C_2(R)}$.
 
-From this primary particle-physics calibration scale, we derive or organize:
+From this primary calibration scale, we derive or organize:
 - Newton's constant: $G = a_{\text{cell}} / 4\bar{\ell}_{\text{tot}}$
 - Planck length: $\ell_P = \sqrt{\hbar G / c^3}$
 - The gauge-coupling calibration sector (via edge entropy density)
-- The Higgs/top critical-surface branch plus weaker downstream mass continuations
 
 **Screen capacity** determines the size of the computation. The relation
 $$\Lambda = \frac{3\pi}{G \cdot \log(\dim \mathcal{H}_{\text{tot}})}$$
@@ -282,7 +281,7 @@ A universe with different configuration parameters would have different absolute
 
 In the current quantitative implementation these parameters are not yet derived from within the system. They are boundary conditions, the fundamental "settings" of the computation that is our universe. Asking "why is $a_{\text{cell}} = 1.63 \, \ell_P^2$?" is, for now, like asking why a simulation was configured with particular settings. Closing or replacing those inputs is part of the remaining program.
 
-**Current status**: The pixel area formula is currently used to *extract* $a_{\text{cell}}$ from measured $G$ and $\alpha_i$. To make it a true prediction, we need to derive gauge couplings from geometry (close the $\alpha_U$ gap). Once complete, the chain would run: $a_{\text{cell}} \to \alpha_U \to \alpha_i(m_{Z,\rm run}) \to \Lambda_{\text{QCD}} \to m_{\text{proton}}$.
+**Current status**: The pixel area formula is currently used to *extract* $a_{\text{cell}}$ from measured $G$ and $\alpha_i$. To make it a true prediction, we need to derive gauge couplings from geometry (close the $\alpha_U$ gap).
 
 ![The Pixel Constant](../assets/pixel-constant.svg)
 
@@ -316,7 +315,7 @@ The Hilbert space is finite-dimensional. The second fundamental parameter, **scr
 
 ## 18.8 The Remaining Frontier
 
-The framework derives the Standard Model gauge group, a two-input quantitative program with calibration checks, a supplement-backed Higgs/top branch that adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed, and weaker charged-lepton/flavor/neutrino continuations, the conditional scaling-limit Einstein branch, and the absence of gauge-mediated proton decay. The main engineering deliverables are well-scoped: geometric modular flow on caps (BW$_{S^2}$) is established on the OPH geometric branch, while the next tasks are to force or verify that branch in concrete UV models. Non-central loop defects are classified by a 2-group cocycle; in the EFT limit this obstruction data is structurally analogous to anomaly cancellation, while hypercharges are fixed by the separate anomaly/Yukawa analysis once the SM gauge structure is in place. What remains is to compute those classes in concrete models and to derive the Lagrange multiplier $t$ from UV microphysics. On the string-side, the present OPH result is only a conditional worldsheet-like large-$N_{\mathrm{edge}}$ reorganization; any further critical-superstring completion remains conjectural.
+The framework derives the Standard Model gauge group, the conditional scaling-limit Einstein branch, and the absence of gauge-mediated proton decay while keeping input-dependent cosmological statements and later phenomenological continuations explicitly separate from the recovered structural core. The main engineering deliverables are well-scoped: geometric modular flow on caps (BW$_{S^2}$) is established on the OPH geometric branch, while the next tasks are to force or verify that branch in concrete UV models. Non-central loop defects are classified by a 2-group cocycle; in the EFT limit this obstruction data is structurally analogous to anomaly cancellation, while hypercharges are fixed by the separate anomaly/Yukawa analysis once the SM gauge structure is in place. What remains is to compute those classes in concrete models and to derive the Lagrange multiplier $t$ from UV microphysics. On the string-side, the present OPH result is only a conditional worldsheet-like large-$N_{\mathrm{edge}}$ reorganization; any further critical-superstring completion remains conjectural.
 
 **Progress on numerical predictions.** The extraction of gauge couplings from
 edge-sector probabilities has been validated numerically in 2D gauge models.
@@ -384,11 +383,8 @@ These predictions have been tested experimentally or computationally:
 | Conservation of energy, momentum, charge | Precision experiments | Confirmed (10^-18) |
 | CPT invariance | Kaon experiments | Confirmed (10^-18) |
 | Page curve for black holes | Island calculations (2019-2020) | Confirmed |
-| Electroweak VEV v ≈ 246.77 GeV | Measured: 246.22 GeV | Calibration-sector scale setting; not an independent confirmation |
-| Top pole mass m_t ≈ 171.1 GeV | Measured: 172.6 GeV | 0.9% low; supplement-backed D11 reconstruction with UV-synchronized transport and low-scale matching |
 | Strong coupling α_s(m_{Z,\rm run}) ≈ 0.1183 | PDG: 0.1179 | Calibration-sector consistency check |
 | Weak mixing angle sin²θ_W(m_{Z,\rm run}) ≈ 0.2307 | PDG: 0.23122 | Calibration-sector consistency check |
-| QCD scale Λ_MSbar^(5) ≈ 214 MeV | PDG: 213 ± 8 MeV | Calibration/downstream consistency check in the current implementation (scheme + thresholds as in the spectrum codepath) |
 
 ### Derived from Axioms + Assumptions
 
@@ -710,7 +706,7 @@ This addresses both fundamental questions:
 
 Reality produces observers who produce understanding who produce simulation who produce reality. The loop closes. Gödel's self-reference and Hofstadter's strange loops, applied at the deepest level.
 
-The reverse engineering has uncovered the source code: from four axioms and one selection principle, we derive a scaling-limit semiclassical gravity branch, the Standard Model gauge structure, and a tightly constrained quantitative particle-physics program. The strange loop story explains why this source code runs at all.
+The reverse engineering has uncovered the source code: from four axioms and one selection principle, we derive a scaling-limit semiclassical gravity branch, the Standard Model gauge structure, and several downstream continuation programs. The strange loop story explains why this source code runs at all.
 
 ---
 

@@ -1,6 +1,6 @@
 # Holographie par Patchs d'Observateurs : une approche de la physique fondamentale centrée sur l'observateur
 
-> L'OPH est un programme de reconstruction mathématique qui part d'une exigence simple : des descriptions locales d'observateurs qui se recouvrent sur un écran holographique doivent s'accorder là où elles se chevauchent. À partir de ce point de départ, l'OPH développe des voies vers la relativité générale, vers la reconstruction de la structure de jauge du Modèle Standard, vers un programme de masses de particules de premiers principes, et vers l'émergence de descriptions de type feuille d'univers / théorie des cordes à partir du même cadre. Les premiers benchmarks IBM Quantum Cloud fournissent aussi une première indication sur matériel réel en faveur des signatures locales correspondantes dans des secteurs réduits. L'OPH donne désormais aussi un appui de niveau théorème au strange loop : l'univers est expliqué comme une structure causale intemporelle auto-référentielle dans laquelle la reconstruction par les observateurs et les contraintes informationnelles se referment en une seule boucle de cohérence.
+> L'OPH est un programme de reconstruction mathématique qui part d'une exigence simple : des descriptions locales d'observateurs qui se recouvrent sur un écran holographique doivent s'accorder là où elles se chevauchent. À partir de ce point de départ, l'OPH développe des voies vers la relativité générale, vers la reconstruction de la structure de jauge du Modèle Standard, et vers l'émergence de descriptions de type feuille d'univers / théorie des cordes à partir du même cadre. Les premiers benchmarks IBM Quantum Cloud fournissent aussi une première indication sur matériel réel en faveur des signatures locales correspondantes dans des secteurs réduits. L'OPH donne désormais aussi un appui de niveau théorème au strange loop : l'univers est expliqué comme une structure causale intemporelle auto-référentielle dans laquelle la reconstruction par les observateurs et les contraintes informationnelles se referment en une seule boucle de cohérence.
 
 > **Avertissement de statut :** l'OPH est un programme de recherche actif et n'est pas encore entièrement démontré. Plusieurs dérivations restent incomplètes, certaines preuves n'existent actuellement qu'à l'état d'esquisse, et certaines hypothèses auxiliaires doivent encore être éliminées. Le cadre doit donc être considéré comme étant en développement actif.
 
@@ -39,7 +39,6 @@ Les lois de la physique sont les règles de cohérence qui rendent cet accord in
 
 - **Retrouver complètement la relativité générale :** dériver le secteur gravitationnel jusqu'à la description d'Einstein à basse énergie, y compris la branche cosmologique.
 - **Retrouver complètement le Modèle Standard :** dériver la structure réalisée du Modèle Standard, ses interactions et son secteur effectif basse énergie à partir du cadre OPH lui-même.
-- **Retrouver complètement le zoo précis des particules :** dériver de premiers principes le spectre observé des quarks, leptons, neutrinos, hadrons, ainsi que les masses et mélanges associés, au lieu de les traiter comme des entrées.
 - **Retrouver complètement la structure cordes / feuille d'univers :** montrer comment les descriptions de type théorie des cordes et feuille d'univers émergent comme continuation du même substrat de recouvrement entre observateurs, et non comme un second système d'axiomes.
 
 ## Articles
@@ -71,14 +70,6 @@ opérations de synchronisation.
 
 - **PDF :** [Screen Microphysics and Observer Synchronization](paper/screen_microphysics_and_observer_synchronization.pdf)
 - **Source LaTeX :** [screen_microphysics_and_observer_synchronization.tex](paper/screen_microphysics_and_observer_synchronization.tex)
-
-**Toward a Particle-Spectrum Derivation from Observer-Overlap Consistency** est la note actuelle
-sur le programme particulaire. Elle fixe la frontière publique des dépendances pour la branche
-des particules, sépare D10/D11 des continuations ouvertes dans les secteurs chargé, neutrino
-et hadronique, et renvoie vers la surface compacte miroir sous `code/particles/`.
-
-- **PDF :** [Toward a Particle-Spectrum Derivation from Observer-Overlap Consistency](paper/toward_a_particle_spectrum_derivation_from_observer_overlap_consistency.pdf)
-- **Source LaTeX :** [toward_a_particle_spectrum_derivation_from_observer_overlap_consistency.tex](paper/toward_a_particle_spectrum_derivation_from_observer_overlap_consistency.tex)
 
 Les PDF suivis par la release partagent une ligne de version visible, issue de
 [`paper/release_info.tex`](paper/release_info.tex). Les notes supplémentaires peuvent être
@@ -113,7 +104,6 @@ Un premier bundle public d'expériences IBM Quantum Cloud est inclus dans ce dé
 
 Cette section regroupe des réponses aux objections courantes adressées à l'OPH.
 
-- [Dériver `P` à partir des données de jauge puis réutiliser `P` en aval est complètement circulaire](extra/COMMON_OBJECTIONS.md#objection-1-circularity)
 - [Une taille de cellule fixe brise l'invariance de Lorentz, donc l'OPH ne peut retrouver qu'une limite newtonienne](extra/COMMON_OBJECTIONS.md#objection-2-lorentz)
 - [L'OPH aurait une discontinuité Type I / Type III, donc son histoire du temps modulaire serait incohérente en interne](extra/COMMON_OBJECTIONS.md#objection-3-type-i-type-iii)
 
@@ -183,53 +173,24 @@ L'infographie suivante résume l'ensemble de la chaîne de dérivation visée pa
 
 *Cliquez sur le poster pour ouvrir le SVG complet dans le navigateur. La bande supérieure sépare axiomes, constantes primaires et hypothèses de pont destinées à être supprimées ; les bandes inférieures tracent le DAG complet vers la synthèse TOE et la fermeture globale.*
 
-> **Prédictions du spectre de particules :** la dérivation, depuis l'aire de pixel jusqu'au programme de masses de particules, avec comparaison aux données PDG et contrôles d'audit, est présentée dans **[la source de dérivation du spectre](paper/tex_fragments/SPECTRUM_DERIVATION.tex)**.
-
-## Résultats particulaires
-
-Succès particulaires retenus :
-
-| Résultat | Sortie OPH | Référence |
-|------|------|------|
-| Masse du photon | exactement `0` | borne expérimentale `< 1e-18 eV` |
-| Masse des gluons | exactement `0` | secteur de couleur structurellement sans masse |
-| Masse du boson `W` | `80.3863 GeV` | `80.377 GeV` |
-| Masse du Higgs | `126.5 GeV` | `125.20 GeV` |
-| Masse du top | `171.1 GeV` | `172.4 GeV` |
-
-Le ledger particulaire complet, avec les lignes ouvertes et incorrectes, se trouve dans
-[la note dédiée](paper/toward_a_particle_spectrum_derivation_from_observer_overlap_consistency.pdf),
-[le ledger SVG](assets/particle_mass_derivation_graph.svg),
-et [code/particles/RESULTS_STATUS.md](code/particles/RESULTS_STATUS.md).
-
 ## Contenu du dépôt
 
 Ce dépôt est organisé autour de l'ensemble des articles OPH présents dans ce dépôt et de leur matériel d'appui.
 
-- **[`paper/`](paper) :** PDF suivis par la release, notes supplémentaires, sources LaTeX et métadonnées de version. C'est le répertoire canonique de l'article principal, de l'article compact de soumission, de l'article compagnon orienté informatique, de la note de microphysique d'écran et de la note sur le programme particulaire.
-- **[`paper/tex_fragments/`](paper/tex_fragments) :** fragments de dérivation partagés utilisés par les articles longs, notamment pour la jauge, le spectre, le supplément technique et la branche cordes.
+- **[`paper/`](paper) :** PDF suivis par la release, notes supplémentaires, sources LaTeX et métadonnées de version. C'est le répertoire canonique de l'article principal, de l'article compact de soumission, de l'article compagnon orienté informatique et de la note de microphysique d'écran.
+- **[`paper/tex_fragments/`](paper/tex_fragments) :** fragments de dérivation partagés utilisés par les articles longs, notamment pour la jauge, le supplément technique et la branche cordes.
 - **[`book/`](book) :** sources Markdown du livre OPH en version web.
-- **[`code/particles/`](code/particles) :** miroir public compact du programme particulaire actif : fichiers historiques du prédicteur, répertoires de lanes, artefacts figés et surfaces de statut.
 - **[`code/ibm_quantum_cloud/`](code/ibm_quantum_cloud) :** expériences IBM Quantum Cloud, données et utilitaires associés au matériel.
 - **[`extra/`](extra) :** notes complémentaires comme les objections courantes, la note IBM Quantum et des notes d'application.
 - **[`assets/`](assets) :** figures et diagrammes utilisés dans les articles, le README et les surfaces publiques.
 
 ## Code
 
-Le code de ce dépôt est organisé par lanes, artefacts et surfaces de statut liés aux articles. Les points d'entrée les plus utiles sont :
+Le code de ce dépôt est organisé par lanes, artefacts et surfaces de statut liés aux articles. Le point d'entrée public le plus utile est :
 
 | Chemin | Rôle |
 |--------|------|
-| [code/particles/README.md](code/particles/README.md) | Carte du miroir public compact du programme particulaire |
-| [code/particles/RESULTS_STATUS.md](code/particles/RESULTS_STATUS.md) | Ledger public lisible du statut particulaire |
-| [code/particles/results_status.json](code/particles/results_status.json) | Version machine-readable du même ledger |
-| [code/particles/core/particle_masses_paper_d10_d11.py](code/particles/core/particle_masses_paper_d10_d11.py) | Reconstruction D10/D11 synchronisée avec les articles et couche de transport |
-| [code/particles/core/oph_predict_compare.py](code/particles/core/oph_predict_compare.py) | Colonne vertébrale du prédicteur et surface de comparaison du miroir compact |
-| [code/particles/calibration/](code/particles/calibration) | Lane d'audit et d'exactitude D10/D11 |
-| [code/particles/flavor/](code/particles/flavor) | Lane chargé partagé, transport, projecteurs et continuation quark |
-| [code/particles/leptons/](code/particles/leptons) | Lane de continuation des leptons chargés |
-| [code/particles/neutrino/](code/particles/neutrino) | Lane neutrino avec artefacts forward et garde-fous |
-| [code/particles/hadron/](code/particles/hadron) | Lane hadronique debug/systématiques et wrapper lattice fin |
+| [code/ibm_quantum_cloud/](code/ibm_quantum_cloud/) | Expériences IBM Quantum Cloud, utilitaires matériel et bundle public de benchmarks |
 
 ## Livre
 
@@ -243,8 +204,7 @@ Les releases d'articles sont pilotées depuis les fichiers partagés sous [`pape
 2. reconstruire les PDF suivis par la release avec `python3 tools/build_tex_papers.py --release-only`
 3. régénérer [`paper/paper_release_manifest.json`](paper/paper_release_manifest.json)
 
-Pour construire tous les articles TeX du dépôt, y compris les notes supplémentaires comme la
-note sur le programme particulaire, utilisez `python3 tools/build_tex_papers.py`.
+Pour construire tous les articles TeX du dépôt, utilisez `python3 tools/build_tex_papers.py`.
 
 La ligne de version est partagée à l'ensemble courant des articles suivis par la release. L'outillage
 opérationnel local à l'espace de travail utilise ensuite ce manifeste pour publier le papier du livre

@@ -1,6 +1,6 @@
 # Addendum 2: Ethics, Practice, and the Good Life Under OPH
 
-> OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives the Standard Model gauge group, particle mass hierarchy, and key quantitative outputs.
+> OPH is an observer-centric framework for fundamental physics. From one calibrated constant (the pixel area), structural axioms (A1-A4 + MAR), and one cosmological input (screen capacity), OPH derives the Standard Model gauge group and other key structural outputs.
 
 
 *How should you live, knowing that reality is a self-simulating holographic network of observer perspectives?*

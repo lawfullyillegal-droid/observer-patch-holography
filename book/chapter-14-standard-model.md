@@ -550,9 +550,9 @@ For the Standard Model, this reconstructed group includes a U(1) factor, the gau
 
 A gauge boson is the quantum of a gauge field. When U(1)_em emerges from overlap redundancy, its gauge field must exist, and its quantum-the photon-must exist. The photon is the particle that mediates the correlations between charged objects in different patches. It is how the redundancy structure propagates through the algebra net.
 
-Now comes the mass prediction. A photon mass term in the Lagrangian would explicitly break the U(1) gauge symmetry. This symmetry is the structure of overlap identification. Breaking it would mean that different patches could not consistently glue their descriptions of charged objects. The model would become internally inconsistent. Therefore, a photon mass term is forbidden by the architecture of observer consistency.
+Now comes the structural consequence. A photon mass term in the Lagrangian would explicitly break the U(1) gauge symmetry. This symmetry is the structure of overlap identification. Breaking it would mean that different patches could not consistently glue their descriptions of charged objects. The model would become internally inconsistent. Therefore, a photon mass term is forbidden by the architecture of observer consistency.
 
-The prediction is exact: the photon mass is precisely zero. Experimental limits place the photon mass below about 10⁻¹⁸ eV, consistent with exact zero to extraordinary precision. This is a structural necessity.
+The conclusion is exact: a hard photon-mass deformation is incompatible with the overlap-gluing structure. This is a structural necessity.
 
 ## 14.16 Why the Graviton Is Inevitable
 
@@ -566,11 +566,11 @@ But geometry goes further. The entanglement structure of the screen encodes not 
 
 Now consider what it means for the metric to be dynamical. If spacetime geometry fluctuates quantum mechanically, those fluctuations must be described by a quantum field. The quantum of a spin-2 field that couples universally to energy-momentum is, by definition, a graviton. This is a consequence of having dynamical geometry in a quantum theory.
 
-The graviton mass prediction follows from diffeomorphism invariance. In the model, the bulk description-the effective spacetime that observers perceive-is a compressed encoding of screen data. Different coordinate systems for describing this bulk are related by diffeomorphisms, which are the gravitational analog of gauge transformations. They are redundancies in the description, not physical transformations.
+A parallel constraint follows from diffeomorphism invariance. In the model, the bulk description-the effective spacetime that observers perceive-is a compressed encoding of screen data. Different coordinate systems for describing this bulk are related by diffeomorphisms, which are the gravitational analog of gauge transformations. They are redundancies in the description, not physical transformations.
 
 A massive graviton would break diffeomorphism invariance. The mass term would pick out a preferred frame, making different coordinate descriptions physically inequivalent. Diffeomorphism invariance emerges from the fact that the bulk is a compact way of organizing screen correlations. Breaking it would mean the bulk description is an unfaithful compression of the underlying data. The model would be inconsistent.
 
-Therefore, the graviton mass must be exactly zero. Current observational limits from gravitational wave measurements constrain the graviton mass to be below about 10⁻²² eV. Again, this is consistent with exact zero to extraordinary precision.
+Therefore, a hard graviton-mass deformation is incompatible with the bulk-compression redundancy that the model requires.
 
 ## 14.17 Why This Matters: Comparison to String Theory
 
@@ -612,7 +612,7 @@ Similar tests work for nonabelian groups like $S_3$ (the smallest nonabelian gro
 
 This formula isn't just an empirical observation--it can be derived theoretically. The key insight is that the group Laplacian is the *unique* gauge-invariant local quadratic operator on the edge degrees of freedom. Any other choice would either break gauge symmetry or require nonlocal terms. Combined with the MaxEnt principle (which selects the Gibbs state), this uniqueness forces the heat-kernel form. The factor $d_R$ rather than $d_R^2$ arises because entanglement entropy traces over one side of the cut. The derivation requires one additional assumption--that the entropy-maximizing generator is quasi-local--but otherwise follows from the axioms.
 
-Once we can reliably extract gauge couplings from entanglement, the rest follows. Couplings determine the running, running determines the mass scales, mass scales determine particle masses. The proton mass would become a calculable output, difficult to compute but uniquely determined by the screen's structure.
+Once we can reliably extract gauge couplings from entanglement, downstream quantitative branches become better constrained. The exact public claim boundary for those later branches remains narrower than the structural core developed in this chapter.
 
 ## 14.19 Gauge Unification and the Proton
 
@@ -658,17 +658,15 @@ Let's step back and see what the framework actually accounts for.
 
 **Gauge-mediated proton decay.** Gauge-mediated proton decay is forbidden. The gauge group is a product, not embedded in a larger simple group, so no leptoquark generators exist. Current experimental limits ($\tau_p > 10^{34}$ years) are consistent with this prediction.
 
-**Particle masses.** The particle-side success boundary is narrower than "the whole zoo." First, symmetry protects the photon and gluon sectors at exactly zero mass. Second, with the external pixel-area input $P = 1.63094$, the electroweak calibration surface reproduces the gauge couplings, $\alpha_{\rm em}^{-1}$, $\sin^2\theta_W$, $v$, and the $W/Z$ outputs. Third, once that electroweak surface is fixed, a Higgs/top critical-surface branch yields Higgs/top outputs without adding a new continuous fit. The broader dependency ledger, including the open charged-lepton, quark, neutrino, and hadron branches, is collected in the [companion particle note](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/toward_a_particle_spectrum_derivation_from_observer_overlap_consistency.pdf) and the [public particle mirror](https://github.com/FloatingPragma/observer-patch-holography/tree/main/code/particles).
-
 ## 14.21 The Big Picture
 
 The Standard Model looks like the answer to a very specific question: What is the simplest quantum field theory that can emerge from consistent patch gluing and survive under refinement?
 
-The photon and graviton are particles the theory *forces* upon us. The photon exists because U(1) gauge redundancy emerges from how charged patches glue together. The graviton exists because diffeomorphism invariance emerges from the fact that bulk spacetime is a compression of screen data. Both masses are exactly zero because any mass would break the redundancy structures the model requires. This is comparable to string theory's famous claim of "predicting gravity," except here the prediction flows from observer consistency rather than from string dynamics.
+The photon and graviton are particles the theory *forces* upon us. The photon exists because U(1) gauge redundancy emerges from how charged patches glue together. The graviton exists because diffeomorphism invariance emerges from the fact that bulk spacetime is a compression of screen data. In both cases the key point is structural: adding a hard mass term would break a redundancy the model requires. This is comparable to string theory's famous claim of "predicting gravity," except here the result flows from observer consistency rather than from string dynamics.
 
 The quarks and leptons aren't arbitrary. Their charges are fixed by the requirement that reality be self-consistent. The generations aren't accidental: the admissible window is $3 \le N_g \le 5$, and MAR selects the minimal viable value. Chirality isn't a quirk; it's the only way to keep fermions light without fine tuning.
 
-The Selection Axiom MAR provides the selector inside the admissible class. Within the connected Lie sector package with one connected abelian charge factor, it picks the Standard Model gauge structure and leaves the realized hypercharge lattice and the realized counting chain $N_g = 3$ then $N_c = 3$ as discrete structural outputs. From gauge reconstruction, anomaly analysis, refinement stability, and the current two-input quantitative implementation, the framework derives the specific particles, forces, and mass branches we observe while keeping their epistemic status explicit.
+The Selection Axiom MAR provides the selector inside the admissible class. Within the connected Lie sector package with one connected abelian charge factor, it picks the Standard Model gauge structure and leaves the realized hypercharge lattice and the realized counting chain $N_g = 3$ then $N_c = 3$ as discrete structural outputs. From gauge reconstruction, anomaly analysis, and refinement stability, the framework derives a sharply constrained set of particles and forces while keeping later quantitative branches epistemically separate from the structural core.
 
 We've now seen how particles emerge from the screen as stable patterns that transform under emergent symmetries. But how does spacetime itself emerge? How does Einstein's relativity fit into this picture?
 

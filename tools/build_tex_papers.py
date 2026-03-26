@@ -17,9 +17,6 @@ PAPERS = {
         PAPER_DIR / "recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex"
     ),
     "screen_microphysics_and_observer_synchronization": PAPER_DIR / "screen_microphysics_and_observer_synchronization.tex",
-    "toward_a_particle_spectrum_derivation_from_observer_overlap_consistency": (
-        PAPER_DIR / "toward_a_particle_spectrum_derivation_from_observer_overlap_consistency.tex"
-    ),
 }
 
 RELEASE_TRACKED = {

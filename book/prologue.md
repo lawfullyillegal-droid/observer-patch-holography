@@ -130,11 +130,10 @@ work out the consequences, the results are extraordinary:
 
 - **A conditional scaling-limit Einstein branch** emerges from entanglement equilibrium on the screen
 - **The Standard Model gauge structure** SU(3) x SU(2) x U(1)/Z₆ is derived rather than assumed under the extended MAR admissibility package
-- **The quantitative program** is organized around two external continuous inputs in the current quantitative implementation: W and Z boson masses are supplement-backed calibration-sector consistency checks, the Higgs/top branch adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed, and the charged-lepton branch is a sharper but weaker phenomenological continuation
 - **A dark-sector branch** becomes structurally available from modular anomalies, not new particles
 - **Why anything exists at all** is addressed through a theorem-backed strange-loop closure story: the universe is treated as a self-referential timeless causal structure supported by OPH's internal state-and-law and fixed-point machinery
 
-No other framework in physics organizes all of this around two external continuous inputs, structural axioms, and an explicit separation between theorem-level structure, calibration checks, a supplement-backed Higgs/top branch, and weaker continuations.
+No other framework in physics organizes all of this around structural axioms, explicit claim tiers, and a public separation between theorem-level structure, input-dependent corollaries, and weaker continuations.
 
 Once you make this shift, strange features of reality start making sense.
 The "weird" behaviors of physics-the ones that seem bizarre or paradoxical
@@ -174,7 +173,7 @@ This book reverse engineers reality from first principles.
 We start with a minimal assumption: observers exist, they have bounded
 access to information, and they must agree where their observations overlap.
 
-In the current quantitative implementation this framework uses two external continuous inputs: the pixel area $P \approx 1.63$, the geometric size of a single computational element on the holographic screen in Planck units, and the total screen capacity inferred from the observed cosmological constant. Everything else — Newton's constant, the gauge structure, and the effective spacetime branch — follows from the axioms or from stated structural conditions. Gauge couplings and EW boson masses are supplement-backed calibration-sector consistency checks. The Higgs and top masses come from a critical-surface branch that adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed, but whose displayed values are recovered through the synchronized D11 transport layer rather than from the raw appendix flow alone. The charged-lepton, flavor, neutrino, and related mass branches are retained with weaker phenomenological or downstream numerical status. The Standard Model gauge structure is derived under the extended MAR admissibility package.
+In the current quantitative implementation this framework uses two external continuous inputs: the pixel area $P \approx 1.63$, the geometric size of a single computational element on the holographic screen in Planck units, and the total screen capacity inferred from the observed cosmological constant. Everything else — Newton's constant, the gauge structure, and the effective spacetime branch — follows from the axioms or from stated structural conditions. Gauge-coupling calibration remains a supplement-backed non-core sector. Charged-lepton/Koide, flavor, neutrino, and related matter-sector branches are retained with weaker phenomenological or downstream numerical status. The Standard Model gauge structure is derived under the extended MAR admissibility package.
 
 From this starting point, we derive constraints. We show how the mathematical
 structures of quantum mechanics and relativity emerge from consistency
@@ -207,7 +206,7 @@ The structure follows the logic of reverse engineering:
 3. **Test against behavior.** We catalogue predictions, both verified and
    testable. We note what identifies a measurement contradiction with the model.
 
-This model rests on established mathematics and physics, extended by four axioms and one selection principle. The results are striking: a conditional scaling-limit gravity branch, the Standard Model gauge structure, and a quantitative particle-physics program all emerge from the framework. Within that program, charged-lepton masses remain a sharp but weaker continuation, while the Higgs and top masses come from a supplement-backed critical-surface branch that adds no further continuous fit once the gauge trajectory and scale-setting branch are fixed and is now documented as a UV-synchronized D11 reconstruction with small low-scale matching corrections. Our goal is to show you how deep the rabbit hole goes.
+This model rests on established mathematics and physics, extended by four axioms and one selection principle. The results are striking: a conditional scaling-limit gravity branch, the Standard Model gauge structure, and several downstream continuation programs all emerge from the framework. Matter-sector continuations are kept explicitly separate from the recovered core. Our goal is to show you how deep the rabbit hole goes.
 
 ## How This Book Is Organized
 

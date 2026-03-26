@@ -852,7 +852,7 @@
   <rect x="196" y="3109" width="134" height="28" rx="14" fill="rgb(255 255 255 / 0.03)" stroke="#f0cb77" opacity="1" />
   <text x="210" y="3128" fill="#f0cb77" font-size="15" font-family="JetBrains Mono, monospace" font-weight="700" letter-spacing="2" opacity="1">QUANT</text>
   <rect x="198" y="3313" width="227.2" height="3" rx="1.5" fill="#f0cb77" opacity="0.82" />
-  <text x="204" y="3181" fill="#f4f7fb" font-size="30" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="-0.35" opacity="1">D10 Electroweak Closure</text>
+  <text x="204" y="3181" fill="#f4f7fb" font-size="30" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="-0.35" opacity="1">D10 Gauge Calibration</text>
   <text x="204" y="3234" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">gauge couplings, alpha_em, sin^2 theta_W, v</text>
   <text x="204" y="3266" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">calibration surface from P and printed</text>
   <text x="204" y="3298" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">conventions</text>
@@ -863,9 +863,9 @@
   <rect x="936" y="3109" width="134" height="28" rx="14" fill="rgb(255 255 255 / 0.03)" stroke="#f0cb77" opacity="1" />
   <text x="950" y="3128" fill="#f0cb77" font-size="15" font-family="JetBrains Mono, monospace" font-weight="700" letter-spacing="2" opacity="1">QUANT</text>
   <rect x="938" y="3281" width="227.2" height="3" rx="1.5" fill="#f0cb77" opacity="0.82" />
-  <text x="944" y="3181" fill="#f4f7fb" font-size="30" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="-0.35" opacity="1">D11 Higgs / Top Branch</text>
-  <text x="944" y="3234" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">critical-surface branch once D10 is fixed</text>
-  <text x="944" y="3266" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">secondary quantitative closure layer</text>
+  <text x="944" y="3181" fill="#f4f7fb" font-size="30" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="-0.35" opacity="1">Withdrawn Public Mass Branch</text>
+  <text x="944" y="3234" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">previous numerical mass pipeline removed</text>
+  <text x="944" y="3266" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">pending rebuilt derivation chain</text>
 </g>
 <g filter="url(#panelShadow)">
   <rect x="180" y="3362" width="710" height="225" rx="28" fill="rgb(10 14 22 / 0.93)" stroke="#ff8f97" stroke-width="1.6" opacity="1.0" />
@@ -873,10 +873,10 @@
   <rect x="196" y="3374" width="134" height="28" rx="14" fill="rgb(255 255 255 / 0.03)" stroke="#ff8f97" opacity="1" />
   <text x="210" y="3393" fill="#ff8f97" font-size="15" font-family="JetBrains Mono, monospace" font-weight="700" letter-spacing="2" opacity="1">COMPLETION</text>
   <rect x="198" y="3578" width="227.2" height="3" rx="1.5" fill="#ff8f97" opacity="0.82" />
-  <text x="204" y="3446" fill="#f4f7fb" font-size="30" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="-0.35" opacity="1">Particle Lane Objects</text>
-  <text x="204" y="3499" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">charged leptons, quarks, neutrinos, hadrons</text>
-  <text x="204" y="3531" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">explicit missing constructive objects in the</text>
-  <text x="204" y="3563" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">particle note</text>
+  <text x="204" y="3446" fill="#f4f7fb" font-size="30" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="-0.35" opacity="1">Deferred Matter Branches</text>
+  <text x="204" y="3499" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">later matter-sector continuations remain outside</text>
+  <text x="204" y="3531" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">the current recovered-core public paper set</text>
+  <text x="204" y="3563" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">until their constructive closure is ready</text>
 </g>
 <g filter="url(#panelShadow)">
   <rect x="920" y="3362" width="710" height="193" rx="28" fill="rgb(10 14 22 / 0.93)" stroke="#ff8f97" stroke-width="1.6" opacity="1.0" />
@@ -884,9 +884,9 @@
   <rect x="936" y="3374" width="134" height="28" rx="14" fill="rgb(255 255 255 / 0.03)" stroke="#ff8f97" opacity="1" />
   <text x="950" y="3393" fill="#ff8f97" font-size="15" font-family="JetBrains Mono, monospace" font-weight="700" letter-spacing="2" opacity="1">COMPLETION</text>
   <rect x="938" y="3546" width="227.2" height="3" rx="1.5" fill="#ff8f97" opacity="0.82" />
-  <text x="944" y="3446" fill="#f4f7fb" font-size="30" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="-0.35" opacity="1">Full Particle Spectrum Closure</text>
-  <text x="944" y="3499" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">first-principles flavor and mass closure</text>
-  <text x="944" y="3531" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">complete particle-program end-state</text>
+  <text x="944" y="3446" fill="#f4f7fb" font-size="30" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="-0.35" opacity="1">Deferred Quantitative Closure</text>
+  <text x="944" y="3499" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">later quantitative matter-sector completion</text>
+  <text x="944" y="3531" fill="#9ba7b8" font-size="22" font-family="JetBrains Mono, monospace" font-weight="500" opacity="1">kept off the current public surface</text>
 </g>
 <g filter="url(#panelShadow)">
   <rect x="1930" y="2825" width="940" height="193" rx="28" fill="rgb(10 14 22 / 0.93)" stroke="#f0cb77" stroke-width="1.6" opacity="1.0" />
@@ -1037,8 +1037,8 @@
   <text x="4370" y="3788" fill="#ffb8be" font-size="15" font-family="JetBrains Mono, monospace" font-weight="700" letter-spacing="2" opacity="1">ENDPOINT</text>
   <rect x="4358" y="4039" width="1064.0" height="4" rx="1.5" fill="#ffb8be" opacity="0.94" />
   <text x="4364" y="3841" fill="#f4f7fb" font-size="34" font-family="Space Grotesk, sans-serif" font-weight="700" letter-spacing="-0.35" opacity="1">Completed OPH TOE Synthesis</text>
-  <text x="4364" y="3898" fill="#f2f5fb" font-size="32" font-family="JetBrains Mono, monospace" font-weight="560" opacity="1">QM, GR, SM, full particle spectrum, cosmology, string</text>
-  <text x="4364" y="3940" fill="#f2f5fb" font-size="32" font-family="JetBrains Mono, monospace" font-weight="560" opacity="1">theory</text>
+  <text x="4364" y="3898" fill="#f2f5fb" font-size="32" font-family="JetBrains Mono, monospace" font-weight="560" opacity="1">QM, GR, SM structure, cosmology, string theory</text>
+  <text x="4364" y="3940" fill="#f2f5fb" font-size="32" font-family="JetBrains Mono, monospace" font-weight="560" opacity="1">with later quantitative branches completed</text>
   <text x="4364" y="3982" fill="#f2f5fb" font-size="32" font-family="JetBrains Mono, monospace" font-weight="560" opacity="1">why anything exists, why the universe has this shape,</text>
   <text x="4364" y="4024" fill="#f2f5fb" font-size="32" font-family="JetBrains Mono, monospace" font-weight="560" opacity="1">and why observers exist</text>
 </g>
