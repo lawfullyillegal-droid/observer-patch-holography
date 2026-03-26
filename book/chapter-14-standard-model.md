@@ -393,7 +393,7 @@ The gauge group isn't put in by hand. It's reconstructed from how charges combin
 
 Why does the reconstructed group have the form SU(3) x SU(2) x U(1)?
 
-The Selection Axiom MAR (Minimal Admissible Realization) acts on admissible sector packages, not on arbitrary compact gauge groups. In the positive-dimensional connected Lie admissible class, and once one connected abelian charge factor is included, MAR selects the package with the smallest coupled edge capacity. The result:
+Axiom 5 (MAR, Minimal Admissible Realization) acts on admissible sector packages, not on arbitrary compact gauge groups. In the positive-dimensional connected Lie admissible class, and once one connected abelian charge factor is included, MAR selects the package with the smallest coupled edge capacity. The result:
 
 - The minimal coupled carrier is $\mathbb{C}^3 \otimes \mathbb{C}^2$, which forces a product gauge structure (not assumed — derived).
 - The factor acting on $\mathbb{C}^2$ as a pseudoreal doublet is uniquely SU(2).
@@ -496,7 +496,7 @@ In our model, CP violation and weak-sector UV completability define the admissib
 
 $$3 \le N_g \le 5.$$
 
-The Selection Axiom MAR then selects the minimal admissible realization:
+Axiom 5 (MAR) then selects the minimal admissible realization:
 
 $$\boxed{N_g = 3}$$
 
@@ -666,7 +666,7 @@ The photon and graviton are particles the theory *forces* upon us. The photon ex
 
 The quarks and leptons aren't arbitrary. Their charges are fixed by the requirement that reality be self-consistent. The generations aren't accidental: the admissible window is $3 \le N_g \le 5$, and MAR selects the minimal viable value. Chirality isn't a quirk; it's the only way to keep fermions light without fine tuning.
 
-The Selection Axiom MAR provides the selector inside the admissible class. Within the connected Lie sector package with one connected abelian charge factor, it picks the Standard Model gauge structure and leaves the realized hypercharge lattice and the realized counting chain $N_g = 3$ then $N_c = 3$ as discrete structural outputs. From gauge reconstruction, anomaly analysis, and refinement stability, the framework derives a sharply constrained set of particles and forces while keeping later quantitative branches epistemically separate from the structural core.
+Axiom 5 (MAR) provides the selector inside the admissible class. Within the connected Lie sector package with one connected abelian charge factor, it picks the Standard Model gauge structure and leaves the realized hypercharge lattice and the realized counting chain $N_g = 3$ then $N_c = 3$ as discrete structural outputs. From gauge reconstruction, anomaly analysis, and refinement stability, the framework derives a sharply constrained set of particles and forces while keeping later quantitative branches epistemically separate from the structural core.
 
 We've now seen how particles emerge from the screen as stable patterns that transform under emergent symmetries. But how does spacetime itself emerge? How does Einstein's relativity fit into this picture?
 

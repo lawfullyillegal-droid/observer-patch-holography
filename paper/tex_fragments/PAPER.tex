@@ -2363,7 +2363,7 @@ This section has two logically distinct parts:
 
 \textbf{Part I (\S{}6.1):} The mathematical reconstruction machinery. Given edge-center completion (Theorem 2.3), we get fixed-cutoff sector categories and a refinement-stable colimit category. If that colimit satisfies standard categorical properties (rigid, symmetric, \(C^*\)), Tannaka-Krein reconstruction yields \emph{some} compact gauge group \(G\). This part has explicit hypotheses and is unconditional once the refinement-stable category is specified.
 
-\textbf{Part II (Derived from MAR, \S{}6.2 onward):} The Selection Axiom MAR (Minimal Admissible Realization) narrows from "some \(G\)" to the Standard Model gauge group once the admissible class includes one connected abelian charge factor. The former Selectors S1--S3 and the separate minimality steps for \(N_c\) and \(N_g\) are all consequences of MAR applied to the admissible class. The SM derivation follows from the extended gauge-selection package \(T_{\mathrm{ext}}\): the five OPH axioms together with the explicit transportability premise \([z]=0\) and the gauge-reconstruction hypotheses used in Theorem 6.1. See Part II of this manuscript for the complete proof.
+\textbf{Part II (Derived from MAR, \S{}6.2 onward):} Axiom 5 (MAR, Minimal Admissible Realization) narrows from "some \(G\)" to the Standard Model gauge group once the admissible class includes one connected abelian charge factor. The former Selectors S1--S3 and the separate minimality steps for \(N_c\) and \(N_g\) are all consequences of MAR applied to the admissible class. The SM derivation follows from the full gauge-selection package \(T_{\mathrm{ext}}\): the five OPH axioms together with the explicit transportability premise \([z]=0\) and the gauge-reconstruction hypotheses used in Theorem 6.1. See Part II of this manuscript for the complete proof.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -2419,11 +2419,11 @@ Explicitly: the gluing framework gives a gauge-invariant \v{C}ech 2-cocycle clas
 
 \subsubsection{Selecting the SM factors (derived from MAR)}\label{62-selecting-the-sm-factors-derived-from-mar}
 
-Theorem 6.1 yields \emph{some} compact \(G\). The Selection Axiom MAR (Minimal Admissible Realization) uniquely determines which \(G\) is realized.
+Theorem 6.1 yields \emph{some} compact \(G\). Axiom 5 (MAR, Minimal Admissible Realization) uniquely determines which \(G\) is realized.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\textbf{Selection Axiom MAR (Minimal Admissible Realization).} Among all OPH-realizable sector packages \(\mathfrak S\) consisting of the connected Lie gauge-sector image relevant in the low-energy EFT, its admissible light chiral matter content, and one Higgs doublet, and which are (i) loop-coherent / transportable (\([z]=0\)), (ii) anomaly-free, (iii) refinement-stable with light chiral matter, (iv) single-Higgs Yukawa-completable with one connected abelian charge factor acting nontrivially on the coupled carrier, (v) intrinsically CP-capable, (vi) weak-sector UV-completable, the realized low-energy package is the lexicographically minimal one under
+\textbf{Axiom 5 (MAR): Minimal Admissible Realization.} Among all OPH-realizable sector packages \(\mathfrak S\) consisting of the connected Lie gauge-sector image relevant in the low-energy EFT, its admissible light chiral matter content, and one Higgs doublet, and which are (i) loop-coherent / transportable (\([z]=0\)), (ii) anomaly-free, (iii) refinement-stable with light chiral matter, (iv) single-Higgs Yukawa-completable with one connected abelian charge factor acting nontrivially on the coupled carrier, (v) intrinsically CP-capable, (vi) weak-sector UV-completable, the realized low-energy package is the lexicographically minimal one under
 
 \[C(\mathfrak S) = (\chi_{\mathrm{cpl}},\; N_{\mathrm{nonab}},\; N_c,\; N_g).\]
 
@@ -2431,7 +2431,7 @@ See Part II of this manuscript for the complete formal statement, admissibility 
 
 Here \(\chi_{\mathrm{cpl}}\) is the \textbf{coupled edge capacity}: the dimension of the minimal unitary carrier containing a common irreducible block on which the admissible pseudoreal and complex nonabelian charge types both act nontrivially. This is intentionally stronger than the abstract minimal faithful representation dimension. For \(S(U(3)\times U(2))\), the block-diagonal action on \(\mathbb{C}^3 \oplus \mathbb{C}^2\) is faithful of dimension \(5\), but it is not coupled and therefore does not enter MAR. The object minimized by MAR is the sector package \(\mathfrak S\), not the bare tensor category by itself. MAR is thus an explicit structural-economy selector on the admissible class, not a theorem derived from the earlier axioms.
 
-\textbf{Note on {[}z{]}=0.} The loop-coherent gluing condition \([z]=0\) (Proposition 6.1a) is kept as an explicit premise of the extended theory, not hidden inside MAR. It ensures that the reconstructed compact group acts as a genuine global gauge symmetry. By Proposition 6.1a, this is equivalent to DHR transportability.
+\textbf{Note on {[}z{]}=0.} The loop-coherent gluing condition \([z]=0\) (Proposition 6.1a) is kept as an explicit premise of the full gauge-selection package \(T_{\mathrm{ext}}\), not hidden inside MAR. It ensures that the reconstructed compact group acts as a genuine global gauge symmetry. By Proposition 6.1a, this is equivalent to DHR transportability.
 
 \textbf{What MAR derives.} The former Selectors S1 (sector factorization), S2 (minimal sector content), and S (coupled edge-capacity minimality) are all consequences of MAR applied to the admissible class:
 
@@ -2473,7 +2473,7 @@ G_{\mathrm{phys}} = \frac{\mathrm{SU}(3)\times \mathrm{SU}(2)\times \mathrm{U}(1
 
 QED.
 
-\textbf{Proposition 6.6a (SM from MAR).} Under the Selection Axiom MAR:
+\textbf{Proposition 6.6a (SM from MAR).} Under Axiom 5 (MAR):
 
 \begin{itemize}
 \tightlist
@@ -3379,7 +3379,7 @@ Symmetry-protected exact zeros such as the masslessness of the photon, gluons, a
 \item
   \textbf{Dynamics}: The GR chain requires modular covariance plus the null-surface modular bridge (N1-N3). Section 5.2 carries the bridge through the derived positive null-translation stage on the OPH geometric scaling branch. The explicit remaining burdens are modular covariance, the downstream density upgrade, and the relativistic null-stress identification. Verifying those items in explicit UV regulators remains a target for future work.
 \item
-  \textbf{Gauge structure}: The gauge group is reconstructed from sector fusion, and the anomaly/gluing link is precise. The Selection Axiom MAR fixes the SM factors; the CP/UV admissibility window and MAR give \(N_g = 3\), and Witten's parity constraint with that realized generation count gives \(N_c = 3\). Proposition 6.1a gives DHR transportability \(\Leftrightarrow [z]=0\). Justifying the refinement-stability selector for chirality in explicit models remains a target for future work.
+  \textbf{Gauge structure}: The gauge group is reconstructed from sector fusion, and the anomaly/gluing link is precise. Axiom 5 (MAR) fixes the SM factors; the CP/UV admissibility window and MAR give \(N_g = 3\), and Witten's parity constraint with that realized generation count gives \(N_c = 3\). Proposition 6.1a gives DHR transportability \(\Leftrightarrow [z]=0\). Justifying the refinement-stability selector for chirality in explicit models remains a target for future work.
 \item
   \textbf{Microscopic theory}: Quantum link models (Section 2.6) provide an explicit UV realization of R0/R1 and give EC + Markov collars automatically. What remains: (i) a microscopic derivation of Recoverable Generalized Entropy, and (ii) ensuring modular flow becomes geometric in the continuum limit (the modular-covariance / GB gap). The latter likely requires a holographic or relativistic regime, which is not automatic in generic lattice gauge systems.
 \item
