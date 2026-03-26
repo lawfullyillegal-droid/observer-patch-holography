@@ -38,26 +38,26 @@ surface tied to the pixel-area input
 \[
 P \equiv a_{\mathrm{cell}}/\ell_P^2 = 1.63094,
 \]
-not yet an exact closure theorem. The D11 Higgs/top critical-surface branch is
+and exact closure for that lane is still open. The D11 Higgs/top critical-surface branch is
 a secondary quantitative continuation once D10 is fixed. Charged leptons,
 quarks, and neutrinos have explicit forward artifact boundaries and local guard
-tests in the repository; they remain continuation lanes and are not promoted
-theorem-level outputs. The hadron lane remains simulation-dependent
+tests in the repository; they remain continuation lanes in the public ledger.
+The hadron lane remains simulation-dependent
 debug and systematics scaffolding only. The purpose of the note is therefore to
 state the public rule cleanly: OPH exposes a structured particle
-derivation program with sharpened constructive objects, not a completed
+derivation program with sharpened constructive objects. It does not claim
 first-principles closure of the full particle zoo. Accordingly, several public
-mass rows still disagree with experiment, in some sectors substantially, and
-those mismatches should be read as evidence of open constructive work, not as
-hidden claims of completed closure.
+mass rows still disagree with experiment, in some sectors substantially.
+These mismatches mark open constructive work and should not be read as closed
+derivations.
 \end{abstract}
 
 \section{Scope}
 
 This note is a dependency and status surface for the OPH particle program. It
-does not replace the compact submission paper as the authoritative recovered-core
-statement, and it does not promote any sector merely because the code tree
-contains a forward artifact for that sector.
+leaves the compact submission paper as the authoritative recovered-core
+statement. A forward artifact in the code tree does not by itself promote a
+sector.
 
 \begin{definition}[Particle-program claim tiers]
 The public particle program uses the following four-way split.
@@ -99,9 +99,9 @@ lanes. The table below is the public boundary that README, book, and downstream
 publication surfaces should mirror.
 
 \begingroup
-\small
+\footnotesize
 \setlength{\tabcolsep}{3pt}
-\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}@{}}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.21\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.14\textwidth}@{}}
 \caption{Public dependency ledger for the OPH particle program.}\\
 \toprule
 Lane & Public object & Immediate inputs & Smallest stated missing object & Public tier \\
@@ -109,21 +109,21 @@ Lane & Public object & Immediate inputs & Smallest stated missing object & Publi
 \endhead
 \bottomrule
 \endfoot
-D10 electroweak & running-family electroweak closure artifact & compact recovered core plus declared \(P\) and the printed running/matching conventions & one coherent \(\mathrm{EWTransportKernel}_{D10}\) with scalar-provenance equality across the electroweak correction family & calibration sector \\
-D11 Higgs/top & synchronized critical-surface readout candidate & D10 plus the critical-surface synchronization branch & one common \(\mathrm{CriticalSurfaceReadoutKernel}_{D11}\) carrying the shared low-scale Higgs/top readout vector & secondary quantitative branch \\
-Charged leptons & \(C_e^{\wedge} \to g_e \to Y_e\) forward chain & shared charged flavor dictionary plus charged-budget transport artifact & a theorem-level shared charged absolute-scale closure collapsing the remaining norm/gluing gap & continuation lane \\
-Quarks/flavor & transport, projector, odd-response, and forward Yukawa artifacts & shared charged flavor lane plus branch-generator and overlap-edge transport objects & a theorem-level family excitation evaluator and closed odd quark response law that remove the remaining constructive ambiguity & continuation lane \\
-Neutrinos & capacity anchor, family response, Majorana lift, pullback metric, splittings, and PMNS gate & D6-style capacity anchor plus shared flavor basis artifacts & an OPH-only scalar evaluator and the downstream defect-weighted family needed to promote splittings and mixing honestly & continuation lane \\
-Hadrons & quenched wrapper and systematics bookkeeping & legacy lattice reference script plus explicit debug/systematics parameters & non-debug, non-quenched hadron closure with publishable systematics in place of smoke/demo artifacts & simulation-dependent lane \\
+D10 electroweak & running-family electroweak closure & compact recovered core, declared \(P\), and printed running/matching conventions & coherent D10 electroweak transport kernel with shared scalar provenance across the correction family & calibration sector \\
+D11 Higgs/top & synchronized critical-surface readout & D10 and the critical-surface synchronization branch & common D11 critical-surface readout kernel carrying the shared low-scale Higgs/top vector & secondary quantitative branch \\
+Charged leptons & \(C_e^{\wedge} \to g_e \to Y_e\) forward chain & shared charged flavor dictionary and charged-budget transport artifact & theorem-level shared charged absolute-scale closure removing the remaining norm/gluing gap & continuation lane \\
+Quarks/flavor & transport, projector, odd-response, and forward Yukawa artifacts & shared charged flavor lane, branch generator, and overlap-edge transport objects & theorem-level family excitation evaluator and closed odd quark response law removing the remaining constructive ambiguity & continuation lane \\
+Neutrinos & capacity anchor, family response, Majorana lift, pullback metric, splittings, and PMNS gate & D6-style capacity anchor and shared flavor-basis artifacts & OPH-only scalar evaluator and downstream defect-weighted family needed for honest splitting/mixing promotion & continuation lane \\
+Hadrons & quenched wrapper and systematics bookkeeping & legacy lattice reference script and explicit debug/systematics parameters & non-debug, non-quenched hadron closure with publishable systematics instead of smoke/demo artifacts & simulation-dependent lane \\
 \end{longtable}
 \endgroup
 
 \section{Public Code Surface}
 
 The repository carries a compact public mirror of the active particle code
-under \texttt{code/particles/}. Its purpose is not to reproduce the full
-operational sandbox; it is to expose the current mathematical lanes together
-with frozen public artifacts and tests.
+under \texttt{code/particles/}. It exposes the current mathematical lanes
+together with frozen public artifacts and tests. The full operational sandbox
+stays outside this note.
 
 The kept surfaces are:
 \begin{enumerate}[leftmargin=2em]
@@ -133,10 +133,9 @@ D10/D11 predictor surface;
 \texttt{calibration/}, \texttt{flavor/}, \texttt{leptons/},
 \texttt{neutrino/}, and \texttt{hadron/};
 \item the frozen artifact snapshot under \texttt{code/particles/runs/};
-\item the public status ledger
-\texttt{code/particles/RESULTS\_STATUS.md},
-\texttt{code/particles/results\_status.json}, and
-\texttt{code/particles/ledger.yaml}.
+\item the public status ledger files \texttt{RESULTS\_STATUS.md},
+\texttt{results\_status.json}, and \texttt{ledger.yaml} under
+\texttt{code/particles/}.
 \end{enumerate}
 
 The intentionally omitted surfaces are Oracle batch archives, browser profiles,
@@ -152,13 +151,14 @@ distinct claim tiers.
 
 \subsection{D10 exactness}
 
-The electroweak calibration lane is not framed as ``perhaps more digits of
-\(P\) will fix everything.'' The public D10 artifact isolates the common-family
+The electroweak calibration lane still turns on transport/readout closure. The
+public D10 artifact isolates the common-family
 running electroweak surface, treats the active quintet as one shared
 running-family object, and names the remaining burden as one
 \(\mathrm{EWTransportKernel}_{D10}\) with a coherent shared scalar package
 \(\Sigma_{EW,D10}\) beneath the pole/effective boundary. The open question is
-transport/readout closure, not decimal precision.
+transport/readout closure. More decimal places for \(P\) do not address that
+issue.
 
 \subsection{Charged sector}
 
@@ -184,17 +184,16 @@ remaining blocker is named sharply enough to fail.
 
 The hadron branch remains the one lane where the repository is openly
 simulation-dependent. The public wrapper makes that dependence explicit and
-stores systematics/debug artifacts, but those artifacts are not promoted as
-evidence of hadron closure.
+stores systematics/debug artifacts. Those artifacts stay in the
+simulation-dependent tier and do not support a hadron-closure claim.
 
 \section{Status Surfaces and Release Discipline}
 
 The public repository exposes three synchronized particle-status surfaces:
 \begin{enumerate}[leftmargin=2em]
 \item the compact public code mirror in \texttt{code/particles/};
-\item the frozen status ledger in
-\texttt{code/particles/RESULTS\_STATUS.md} and
-\texttt{code/particles/results\_status.json};
+\item the frozen status ledger files \texttt{RESULTS\_STATUS.md} and
+\texttt{results\_status.json} under \texttt{code/particles/};
 \item the SVG overview used by the README and public summary pages.
 \end{enumerate}
 
@@ -204,10 +203,9 @@ main README. If a lane is still tagged \emph{continuation} or
 silently promote it.
 
 \paragraph{Working rule.}
-The public OPH particle story is a sharpened constructive program, not
-a completed theorem-level derivation of the full particle spectrum. When a
-public mass row is still numerically wrong, the intended reading is that the
-named closure object for that lane is still open, not that the published number
-has earned promotion and merely awaits cosmetic tuning.
+The public OPH particle story is a sharpened constructive program. It does not
+claim a completed theorem-level derivation of the full particle spectrum. When
+a public mass row is still numerically wrong, the named closure object for that
+lane is still open. The published number has not earned promotion.
 
 \end{document}
