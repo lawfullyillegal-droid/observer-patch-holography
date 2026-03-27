@@ -13,7 +13,7 @@ That's what physicists do with the universe. We don't have God's source code. We
 
 Physicists are reality's hackers.
 
-This book traces how the hints we've gathered lead to a radical conclusion: **reality is a self-contained computation where observers are the meaning-assigning patterns, and the shape of existence is fully determined by consistency requirements.**
+This book traces how the hints we've gathered lead to a radical conclusion: **reality may be organized as an observer-consistency process in which observers are meaning-assigning patterns and much of effective structure is constrained by consistency requirements.**
 
 There is a second through-line running alongside the “reverse engineering” theme: **primacy of perspective**. We start from observer patches and treat objectivity as an emergent property of their consistency, not a given backdrop.
 
@@ -147,11 +147,11 @@ These questions have haunted physics for a century. Different interpretations of
 
 **The first-principles reframing**: Observers are not outside physics looking in. They are part of the physical system. Reality is not a play we watch but a conversation we participate in.
 
-### The Measurement Problem Dissolved
+### The Measurement Problem Reframed
 
 The "measurement problem" has haunted physics for a century: When does the wave function collapse? What counts as an observer? Why does measurement produce definite outcomes from indefinite superpositions?
 
-Our model dissolves this problem rather than solving it.
+Our model reframes this problem rather than claiming to eliminate every foundations dispute around it.
 
 The puzzle assumes a God's-eye view where the wave function is "really" in superposition, and then something magical happens called "collapse." But there is no God's-eye view. There are only observer patches.
 
@@ -159,7 +159,7 @@ From within a patch, you always see definite outcomes. That's what it means to b
 
 When Alice measures an electron's spin, she gets a definite result. Always. There's no moment where she experiences superposition. The wave function describes the consistency relations between Alice's possible outcomes and Bob's possible outcomes. When they meet and compare, their records must agree. That agreement is what "collapse" describes from the outside.
 
-The measurement problem asks: "When does objective reality become definite?" Our answer: that's the wrong question. Reality was never "indefinite" from any observer's perspective. It was always definite within each patch. The wave function describes how patches must relate, not some ghostly pre-measurement state.
+The measurement problem asks: "When does objective reality become definite?" Our answer is that OPH reorganizes that question around observer patches and record consistency. Reality was never "indefinite" from any observer's perspective. It was always definite within each patch. The wave function describes how patches must relate, not some ghostly pre-measurement state.
 
 This is why Bohr was half right. He insisted that quantum mechanics describes relationships between observers and systems, not systems in isolation. Our model makes this precise: quantum mechanics is the mathematics of patch consistency.
 
@@ -273,7 +273,7 @@ We've now collected the major hints:
 
 What picture explains all these hints?
 
-**There is no objective reality. There is only a network of subjective perspectives that must agree where they overlap.**
+**A strong OPH reading is that what we call objective reality is reconstructed from a network of subjective perspectives that must agree where they overlap.**
 
 This sounds radical, but think about what "reality" actually means operationally. It means agreement. If I see a red car parked on the street, and you look at the same spot and see a blue elephant, we have a problem. If a third person sees a red car, and a fourth person sees a red car, we conclude the red car is "real."
 
@@ -293,9 +293,9 @@ We propose this principle goes deeper than biology. It applies to physics itself
 
 **The laws of physics are what allow observers to agree on what the data means.**
 
-Lorentz invariance exists because different observers must have consistent descriptions of the same events. Gauge symmetry exists because overlapping patches must identify shared observables without ambiguity. Conservation laws exist because the same quantities must be conserved across all perspectives. The laws are not imposed from outside. They are the conditions that make agreement possible.
+In OPH, Lorentz symmetry, gauge structure, and conservation laws are read as emerging from the consistency program rather than being imposed from outside, but the actual recovery statements later in the paper depend on explicit structural and scaling premises.
 
-**The laws of physics are not fixed commands handed down from above. They are survivors of a selection process.**
+**One interpretive OPH continuation is to view the laws of physics not as fixed commands handed down from above, but as survivors of a selection process.**
 
 Think of the early universe as a chaos of competing possibilities: different geometries, different dynamics, different rules. Most configurations were inconsistent. They could not support stable patterns. They could not enable multiple observers to share a coherent reality.
 
@@ -323,17 +323,17 @@ From these hints, we distill **Four Principles** that guide the rest of this boo
 Every observer is finite. You only access a specific patch-bounded by horizons, limited by the speed of light, constrained by your physical capabilities. You cannot store infinite data.
 
 **Principle 2: Consistency**
-If you look at a star and I look at the same star, we have to agree on what we see. Where patches overlap, physics must be consistent. This constraint is so powerful it creates geometry itself.
+If you look at a star and I look at the same star, we have to agree on what we see. Where patches overlap, physics must be consistent. In the OPH program, that constraint strongly shapes the emergent geometric story developed later.
 
 **Principle 3: Area Bound**
 You cannot pack infinite information into a finite region. The information content of a region scales with its boundary area, not its volume. This is the holographic principle.
 
-**Principle 4: Local Recovery**
-If you know what's happening in patch A and patch C, and they're connected by patch B, you can often infer the whole system. Small overlaps are enough to reconstruct the bigger picture.
+**Principle 4: Conditional Local Recovery**
+In the recoverability regimes developed later, overlap data can often be used to reconstruct more of the whole system when the relevant Markov and recovery conditions hold.
 
 ## 1.12 Reality as Computation
 
-These four principles point to a radical conclusion: reality is not "like" a computation. Reality *is* a computation.
+These four principles point toward a radical conclusion: reality can be modeled computationally rather than treated as a pre-given objective stage.
 
 The screen is a quantum system. The degrees of freedom are finite-dimensional (qudits on edges of a triangulated sphere). The dynamics is constrained by gauge laws (Gauss constraints at every vertex). The state is selected by maximum entropy subject to consistency constraints. This is a quantum computation in the most literal sense: qubits, gates, constraints, outputs.
 
