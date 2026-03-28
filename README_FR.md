@@ -49,6 +49,7 @@ main, et non comme une affirmation selon laquelle tout le spectre observé serai
 
 - **Retrouver complètement la relativité générale :** dériver le secteur gravitationnel jusqu'à la description d'Einstein à basse énergie, y compris la branche cosmologique.
 - **Retrouver complètement le Modèle Standard :** dériver la structure réalisée du Modèle Standard, ses interactions et son secteur effectif basse énergie à partir du cadre OPH lui-même.
+- **Retrouver complètement le zoo de particules du Modèle Standard :** dériver tout le spectre mesuré des particules du Modèle Standard, et pas seulement la structure de jauge et des descendants quantitatifs partiels.
 - **Retrouver complètement la structure cordes / feuille d'univers :** montrer comment les descriptions de type théorie des cordes et feuille d'univers émergent comme continuation du même substrat de recouvrement entre observateurs, et non comme un second système d'axiomes.
 
 ## Articles

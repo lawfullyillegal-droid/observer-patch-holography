@@ -67,6 +67,7 @@ At full completion, OPH aims to:
 
 - **Fully recover general relativity:** derive the gravitational sector all the way down to the familiar low-energy Einstein description, including the cosmological branch.
 - **Fully recover the Standard Model:** derive the realized Standard Model structure, interactions, and low-energy effective sector from the OPH framework itself.
+- **Fully recover the Standard Model particle zoo:** derive the full measured Standard Model particle spectrum, not just the gauge structure and partial quantitative descendants.
 - **Fully recover string/worldsheet structure:** show how string-theoretic and worldsheet descriptions emerge as a continuation of the same observer-overlap substrate rather than as a separate axiom system.
 
 ## Papers
