@@ -191,14 +191,14 @@ In each case, the horizon is a boundary that limits what the observer can access
 
 ### Every Observer Has a Screen
 
-Here's the key insight: every observer has a horizon, and therefore every observer has a screen.
+Here's the key motivating insight: finite observer access naturally suggests an effective screen picture.
 
 For an observer in our universe:
 - There's a cosmic horizon at roughly 46 billion light-years
 - If they're near a black hole, there's an event horizon
 - If they're accelerating, there's a Rindler horizon
 
-The horizon is approximately spherical. The area of this sphere bounds the amount of information the observer can access.
+In the simplest symmetric situations, the relevant causal boundary is approximately spherical. The area of this sphere bounds the amount of information the observer can access.
 
 This is a deep shift in perspective. Instead of thinking about space as a fixed container, we think about each observer's horizon as their fundamental interface with reality.
 
@@ -220,7 +220,7 @@ The CMB is light from about 380,000 years after the Big Bang, when the universe 
 
 We're at the center of this sphere, but so is everyone else. Every observer in the universe sees themselves at the center of their own CMB sphere.
 
-The CMB sphere is our screen. Every cosmological observation is, ultimately, a measurement of patterns on this 2D surface.
+The CMB sphere is a useful cosmological proxy for thinking about an observer-centered screen picture. Every cosmological observation is, ultimately, a measurement of patterns on this 2D surface.
 
 ## 3.7 The Geometry of the 2-Sphere
 
@@ -308,7 +308,7 @@ Do observers "move around" on the sphere?
 
 Not in a simple sense. Different patches represent different observers, or the same observer at different moments. "Movement" is actually a sequence of overlapping patches with consistent marginals.
 
-What creates the sense of time? The internal structure of the quantum state provides a natural flow: the **modular flow** from quantum statistical mechanics. For a thermal state, modular flow generates time evolution. The thermal time principle (Connes and Rovelli) shows this is the origin of experienced time.
+What creates the sense of time? The internal structure of the quantum state provides a natural flow: the **modular flow** from quantum statistical mechanics. For a thermal state, modular flow generates time evolution, and the thermal time principle provides an important interpretive-organizational guide.
 
 ### Why This Matters
 
@@ -328,7 +328,7 @@ Imagine the screen as a **gauge-invariant quantum system** on the 2-sphere, some
 
 **Observer patches** are subsystems defined by boundary-gauge-invariant algebras. Each patch is like a computational thread, a connected region where an observer can ask questions and get answers. The algebra $\mathcal{A}(R)$ defines what that observer can measure: the operators that commute with the boundary gauge transformations.
 
-**Overlap consistency** is automatic. Where two patches intersect, they access the same gauge-invariant observables. Both observers are reading the same underlying data, just from different angles. The gauge redundancy at boundaries is what makes gluing non-trivial and gives rise to the "edge modes" that carry geometric information.
+**Overlap consistency** is built into this constructive picture. Where two patches intersect, they access the same gauge-invariant observables. Both observers are reading the same underlying data, just from different angles. The gauge redundancy at boundaries is what makes gluing non-trivial and gives rise to the "edge modes" that carry geometric information.
 
 **The dynamics** comes from MaxEnt: among all states consistent with the constraints, nature selects the maximum entropy state. This is like a Gibbs state $\rho \propto e^{-H}$ where $H$ is a sum of local terms. The system thermalizes at the UV scale, and the macroscopic physics emerges from this equilibrium.
 
@@ -336,7 +336,7 @@ Imagine the screen as a **gauge-invariant quantum system** on the 2-sphere, some
 
 *The screen is the computation. Observer patches are the threads. Reality is what they agree on.*
 
-This computational picture is made rigorous through **quantum link models**, a class of lattice gauge theories with finite-dimensional Hilbert spaces that realize exactly the structure we need. The technical details are in the paper; the intuition is that the sphere is running a quantum computation, and we are processes within it.
+This computational picture is developed concretely through **quantum link models**, a class of lattice gauge theories with finite-dimensional Hilbert spaces that provide an explicit UV realization of key OPH ingredients. The technical details are in the paper; the intuition is that the sphere is running a quantum computation, and we are processes within it.
 
 ## 3.10 Entanglement Creates Depth
 
