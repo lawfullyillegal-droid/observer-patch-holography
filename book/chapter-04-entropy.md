@@ -206,11 +206,11 @@ Points deep inside A are entangled with other inside points, not the outside. Th
 
 The Bekenstein bound says maximum entropy scales with area. The area law of entanglement says actual entropy (in ground states) scales with area too.
 
-This is not coincidence. Gravity enforces the area law. If you try to pack too much entropy into a volume, it collapses into a black hole-whose entropy is set by area.
+This is not coincidence. Gravitational entropy bounds and entanglement area laws point in the same structural direction, even though they arise in different settings.
 
 **The hint**: Both quantum entanglement and gravitational entropy obey area laws.
 
-**The reframing**: This confirms holography from a different angle. Information lives on boundaries because entanglement lives on boundaries. The area law of quantum field theory and the area law of black holes are the same phenomenon.
+**The reframing**: This confirms holography from a different angle. Information and geometry are both strongly boundary-sensitive in these arguments. The area law of quantum field theory and the area scaling of black-hole entropy are closely related clues, not literally the same statement.
 
 ## 4.7 The Generalized Second Law
 
