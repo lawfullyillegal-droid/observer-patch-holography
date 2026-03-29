@@ -80,7 +80,7 @@ This means one of Einstein's assumptions must be wrong:
 1. **Locality**: Distant events can't influence each other faster than light
 2. **Realism**: Particles have definite properties even when not measured
 
-Most physicists accept that realism fails-quantum values genuinely don't exist until measured. The alternative-accepting faster-than-light influences-would wreck the causal structure of the universe.
+Many physicists read the Bell results as strong pressure against naive local realism, but the exact interpretive lesson remains contested. The alternative-accepting faster-than-light influences-would wreck the causal structure of the universe.
 
 **This is the hint**: Quantum correlations exceed what any local hidden variable theory permits. The intuitive picture of pre-existing properties carried from a common past is experimentally contradicted.
 
@@ -141,7 +141,7 @@ Think of it like attention. If you're having a deeply intimate conversation with
 
 ### The Consistency Filter
 
-Now here is the reframing: **Bell-violating correlations are not a bug-they are a feature required by consistency constraints.**
+Now here is the reframing: **Bell-violating correlations are not treated here as a bug, but as a structural feature that may help an observer-consistency framework remain viable.**
 
 Imagine the space of all possible local states-all assignments of density matrices to patches. This space is enormous. Most assignments are inconsistent; different patches disagree on overlaps.
 
@@ -153,7 +153,7 @@ The hardness of the Quantum Marginal Problem tells us the filter is doing real w
 
 And here is the key insight: to satisfy the overlap conditions with fewer pre-existing constraints, nature must permit correlations that exceed classical bounds. Bell-violating correlations are the price of-or the mechanism for-keeping quantum patches consistent.
 
-In a universe built on observer agreement, the nonlocal correlations that so troubled Einstein are not inexplicable. They are required.
+In a universe built on observer agreement, the nonlocal correlations that so troubled Einstein are not inexplicable. OPH treats them as structurally natural rather than accidental.
 
 ## 6.4 Defining the Overlap
 
