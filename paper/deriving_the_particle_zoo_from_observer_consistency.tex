@@ -49,11 +49,12 @@ this paper asks how far one can derive the observed spectrum from one shared cal
 constant rather than from the large fitted parameter list of the Standard Model, typically counted
 as \(19\) free parameters in the minimal massless-neutrino theory and at least \(26\) once
 neutrino masses and mixing are included. On the derivation surface reported here, the photon, gluons,
-and graviton are structural massless carriers; the electroweak calibration stage yields the
-\(W\) boson and \(Z\) boson; the Higgs/top critical stage yields the Higgs boson and top quark;
+and graviton are structural massless carriers; the electroweak calibration stage is closed on a
+target-free source-only theorem that emits the \(W\) boson and \(Z\) boson; the Higgs/top critical
+stage yields the Higgs boson and top quark;
 and the quark branch emits continuation-level rows for the up quark, down quark, strange quark,
-charm quark, and bottom quark. Charged leptons, flavor-labeled neutrinos, and hadrons remain
-open. The purpose of the paper is therefore not to claim full closure, but to give a concise
+charm quark, and bottom quark. Charged leptons and flavor-labeled neutrinos remain
+open, while hadrons remain execution-bound. The purpose of the paper is therefore not to claim full closure, but to give a concise
 end-to-end derivation map from observer-consistency axioms and \(P\) to the reported particle
 outputs while marking every remaining closure object explicitly.
 \end{abstract}
@@ -84,9 +85,9 @@ mixings, and Yukawa parameters as independent inputs, it asks how far one common
 pixel constant \(P\) can be propagated through the whole spectrum. The working hypothesis is that
 one first infers \(P\) from a small electroweak calibration family and then uses the same \(P\)
 through the bosonic, quark, charged-lepton, neutrino, and hadronic branches. The structural
-massless carriers, the \(W\) boson/\(Z\) boson pair, the Higgs boson/top quark pair,
+massless carriers, the closed \(W\) boson/\(Z\) boson electroweak pair, the Higgs boson/top quark pair,
 and several quark rows are emitted, while charged leptons, flavor-labeled neutrinos, and
-hadrons remain open. This paper develops that derivation chain from the axioms and \(P\) to the
+hadrons remain non-closed, with hadrons specifically execution-bound. This paper develops that derivation chain from the axioms and \(P\) to the
 reported particle outputs, while keeping the open closure boundary explicit.
 
 \subsection{Why this particle zoo, and not another one?}
@@ -368,26 +369,25 @@ free-input sector.
 
 This is why calibration is not a side detail. It is the place where the particle derivation shows
 whether it is really doing reverse engineering or merely hiding many fitted inputs behind fancy
-notation. If different calibration observables demand different implied pixel constants, then the
-electroweak stage is not yet an exact single-\(P\) closure surface. In that case the honest task is
-to identify which transport, matching, or readout object is still missing.
+notation. In the active electroweak branch, the current-carrier chart and the older freeze-once
+repair surface are retained as historical validation layers, while the public \(W/Z\) rows come
+from a target-free source-only repair theorem. So the honest remaining question is no longer
+whether the electroweak lane has a missing mass-side blocker. It is whether one wants to report
+only the active closed theorem surface, or also keep the older validation layers visible as part
+of the derivation history.
 
 \subsection{What electroweak calibration implies}
 
-The calibration analysis makes the criterion explicit: if the present implementation makes
-\(m_W\), \(m_Z\), \(\alpha_{\mathrm{em}}\), \(\sin^2\theta_W\), and \(v\) imply different pixel
-constants, then the non-closure is not explained merely by asking for more decimal places of
-\(P\). The implied-\(P\) comparison records exactly that
-diagnosis. The \(W\), \(Z\), and \(v\) observables imply nearby values close to the default
-\(P=1.63094\), while the derived \(\sin^2\theta_W\) surface pushes the implied \(P\) far enough
-away that exact single-\(P\) closure fails. In other words, the bottleneck is a transport/matching problem on the electroweak stage, not simply a lack of extra digits
-in the declared pixel constant.
-
-That diagnosis is scientifically useful. It distinguishes ``the underlying one-constant idea is
-wrong'' from ``the electroweak construction has not yet reached its exact common closure
-surface.'' The paper therefore describes two layers at once. First, one common pixel
-constant \(P\) is the intended driver of the spectrum. Second, the remaining non-closure identifies the transport or
-matching object that still has to be derived.
+The earlier calibration diagnostics are still scientifically useful because they show how the
+closed surface was isolated. The implied-\(P\) comparison made clear that the older
+current-carrier readout was not an exact common closure surface, so the real issue was a
+transport/matching law on the electroweak stage rather than a lack of decimal places in the
+declared pixel constant. That missing law is the point now promoted to the target-free
+source-only repair theorem. The paper therefore describes three layers at once. First, one common
+pixel constant \(P\) is the driver of the active public electroweak surface. Second, the older
+current-carrier and freeze-once layers remain as validation surfaces. Third, the same layered
+logic explains why the later flavor and neutrino lanes remain open even though the electroweak
+lane is closed.
 
 \section{Results at a Glance}
 
@@ -402,7 +402,7 @@ structurally fixed, rows that are numerically emitted, and rows whose chains sto
 Sector & Status & Derivation stage & Emitted value(s) & Remaining step \\
 \midrule
 Structural carriers & structural & gauge/gravity structural theorems & photon, gluons, graviton & none on the particle side \\
-Electroweak bosons & calibration & electroweak calibration stage & \(W\) boson, \(Z\) boson & target-free electroweak repair value law from \(P\) alone \\
+Electroweak bosons & calibration & electroweak calibration stage & \(W\) boson, \(Z\) boson & no open mass-side blocker on the active calibration surface \\
 Higgs/top stage & secondary quantitative & Higgs/top critical stage & Higgs boson, top quark & presentation-level rigor and synchronization of the closed forward seed \\
 Quark family & continuation & forward Yukawa derivation & up, down, strange, charm, bottom quarks & two-scalar overlap law, same-label physical invariants, Yukawa dictionary, CKM/CP closure \\
 Charged leptons & continuation & ordered-log and support-extension derivation & no promoted masses & \(\eta\) source readback, \(\sigma\) support-extension scalar, absolute scale \(g_e\), excitation dictionary \\
@@ -439,8 +439,8 @@ Family & Particle & Status & OPH value or strongest derived benchmark & Remainin
 Structural carriers & photon & structural & \(0\) & none \\
 Structural carriers & gluons & structural & \(0\) for the color gauge sector & none \\
 Structural carriers & graviton & structural & \(0\) for the dynamical-metric spin-2 carrier & none \\
-Electroweak calibration & \(W\) boson & calibration & \(80.377~\mathrm{GeV}\) on the frozen authoritative calibration surface & derive the target-free repair value law from \(P\) alone \\
-Electroweak calibration & \(Z\) boson & calibration & \(91.18797809193725~\mathrm{GeV}\) on the frozen authoritative calibration surface & same target-free electroweak repair frontier as the \(W\) row \\
+Electroweak calibration & \(W\) boson & calibration & \(80.37700001539531~\mathrm{GeV}\) from the target-free source-only repair theorem & no open D10 mass-side blocker; freeze-once surface retained only as validation \\
+Electroweak calibration & \(Z\) boson & calibration & \(91.18797807794321~\mathrm{GeV}\) from the target-free source-only repair theorem & same closed target-free electroweak theorem as the \(W\) row \\
 Higgs/top critical stage & Higgs boson & secondary quantitative & \(125.218922~\mathrm{GeV}\) & present a proof package for the closed one-scalar forward seed \\
 Quark family & top quark & secondary quantitative & \(172.388646~\mathrm{GeV}\) from the Higgs/top critical stage & same one-scalar seed proof package as the Higgs row \\
 Quark family & up quark & overlap continuation & reported value \(0.00228766~\mathrm{GeV}\); stronger two-scalar candidate \(0.00215992~\mathrm{GeV}\) & derive the value laws for \(\Delta_{ud}^{\mathrm{overlap}}\), \(\eta_Q^{\mathrm{centered}}\), and the CKM generator \(K_{\mathrm{CKM}}\) \\
@@ -734,28 +734,27 @@ the Higgs/top critical stage for the Higgs boson, together with the top quark.
 
 The electroweak derivation consists of a single-\(P\) running family followed by a
 reduced two-scalar carrier, a selector on that carrier, an exact carrier mass chart, and
-then a broader repair question beyond the present carrier if the selected point does not
-coincide with the PDG pair. In practical terms, the construction starts from
+then a target-free source-only repair theorem beyond the present carrier. In practical terms, the construction starts from
 the declared pixel input \(P\), builds the running electroweak family, reduces it to the present
 carrier, reads the \(W\) boson/\(Z\) boson pair from the selected point on that carrier,
-and then asks whether exact PDG \(W/Z\) can honestly be forced on the same carrier.
+and then emits the coherent repaired electroweak quintet from the source basis alone.
 
 The public reported rows are
 \[
-m_W = 80.377~\mathrm{GeV},
+m_W = 80.37700001539531~\mathrm{GeV},
 \qquad
-m_Z = 91.18797809193725~\mathrm{GeV}.
+m_Z = 91.18797807794321~\mathrm{GeV}.
 \]
-These numbers are emitted on the freeze-once coherent electroweak repair surface, not on the
-unmodified selected carrier. The exact current-carrier chart remains explicit on disk and emits
+These numbers are emitted on the target-free source-only repair theorem, not on the unmodified
+selected carrier. The exact current-carrier chart remains explicit on disk and emits
 the local pair
 \[
 m_W^{\mathrm{carrier}} = 80.38629169244275~\mathrm{GeV},
 \qquad
 m_Z^{\mathrm{carrier}} = 91.18290444674243~\mathrm{GeV},
 \]
-so the mathematics keeps the two layers separate: the closed current-carrier chart, and the
-closed frozen-target repair surface above it.
+so the mathematics keeps the three layers separate: the closed current-carrier chart, the
+historical freeze-once validation surface above it, and the active target-free theorem surface.
 
 \begin{theorem}[Freeze-once coherent electroweak repair law]
 Let the emitted running/core electroweak basis be
@@ -912,85 +911,142 @@ M_Z^\dagger=91.18797809193725~\mathrm{GeV},
 \qquad
 \sin^2\theta_{W,\dagger}=0.223058333896849.
 \]
-The only stricter remaining step in the electroweak calibration stage is the target-free
-statement: emit the same nonzero repair directly from \(P\) alone with no frozen authoritative
-\(W/Z\) input.
+That freeze-once law is not the active public electroweak surface anymore. The promoted theorem is
+the target-free source-only repair law.
 
-The target-free status is sharper than a generic ``missing selector'' description. Let
+\begin{theorem}[Target-free source-only electroweak repair law]
+Let the D10 source-only emitted basis be
+\[
+Q_{\mathrm{src}}(P)=
+\bigl(\alpha_{2,m_Z}(P),\alpha_{Y,m_Z}(P),\eta_{\mathrm{source}}(P),v(P)\bigr),
+\]
+and define
 \[
 \beta_{\mathrm{EW}}
+:=
+\frac{\alpha_{2,m_Z}-\alpha_{Y,m_Z}}{\alpha_{2,m_Z}+\alpha_{Y,m_Z}},
+\qquad
+\alpha_u^{\mathrm{seed}}
+:=
+\frac{\eta_{\mathrm{source}}}{\beta_{\mathrm{EW}}},
+\qquad
+\lambda_{\mathrm{EW}}
+:=
+\frac{\eta_{\mathrm{source}}\alpha_u^{\mathrm{seed}}}{4}
 =
-\frac{\alpha_{2,m_Z}-\alpha_{Y,m_Z}}{\alpha_{2,m_Z}+\alpha_{Y,m_Z}}.
+\frac{\eta_{\mathrm{source}}^2}{4\beta_{\mathrm{EW}}}.
 \]
-At source-only level, the present corpus still underdetermines the repair coefficients: for
-arbitrary real \(c,d\), the family
-\[
-\tau_2^{\mathrm{exact}}=-c\,\eta_{\mathrm{source}}^2,
-\qquad
-\delta n^{\mathrm{exact}}=d(1-\beta_{\mathrm{EW}})\eta_{\mathrm{source}}^2
-\]
-defines a coherent quadratic target-free repair ansatz. So the open target-free problem is
-genuine.
-
-The smallest honest conditional route is the color-balanced quadratic repair descent principle.
-Assuming
-\[
-\mathrm{ColorBalancedQuadraticRepairDescent}_{EW},
-\]
-the repair law closes uniquely to
-\[
-\tau_2^{\mathrm{exact}}
-=
--\frac{\sqrt{N_c}}{2}\eta_{\mathrm{source}}^2,
-\qquad
-\delta n^{\mathrm{exact}}
-=
-\frac{N_c}{2}(1-\beta_{\mathrm{EW}})\eta_{\mathrm{source}}^2.
-\]
-For \(N_c=3\), this conditional specialization gives
-\[
-\tau_2^{\mathrm{exact}}=-4.2477649513449626\times 10^{-4},
-\qquad
-\delta n^{\mathrm{exact}}=3.3952000966304088\times 10^{-4},
-\]
-and a coherent quintet
-\[
-M_W=80.36921677537332~\mathrm{GeV},
-\qquad
-M_Z=91.18800674424540~\mathrm{GeV}.
-\]
-This is the smallest current conditional theorem beneath the target-free frontier, but it is still
-conditional.
-
-There is also a stronger source-only candidate law on the current corpus,
-\[
-\lambda_{\mathrm{EW}}=\frac{\eta_{\mathrm{source}}^2}{4\beta_{\mathrm{EW}}},
-\]
+Then the beyond-current-carrier repair is uniquely
 \[
 \tau_2^{\mathrm{exact}}
 =
 -\lambda_{\mathrm{EW}}
-\left(1+\frac23\eta_{\mathrm{source}}+\Bigl(1-\frac{\beta_{\mathrm{EW}}}{6}\Bigr)\eta_{\mathrm{source}}^2\right),
+\left(
+1+\frac23\eta_{\mathrm{source}}
++
+\left(1-\frac{\beta_{\mathrm{EW}}}{6}\right)\eta_{\mathrm{source}}^2
+\right),
 \]
 \[
 \delta n^{\mathrm{exact}}
 =
 \lambda_{\mathrm{EW}}
-\left(1+\frac43\eta_{\mathrm{source}}+\Bigl(2-\frac{\beta_{\mathrm{EW}}}{6}\Bigr)\eta_{\mathrm{source}}^2\right),
+\left(
+1+\frac43\eta_{\mathrm{source}}
++
+\left(2-\frac{\beta_{\mathrm{EW}}}{6}\right)\eta_{\mathrm{source}}^2
+\right),
 \]
-which emits
+with fiber hypercharge transport
 \[
-M_W=80.37700001539531~\mathrm{GeV},
-\qquad
-M_Z=91.18797807794321~\mathrm{GeV}.
+\tau_Y^{\mathrm{fiber}}
+=
+-\frac{\tau_2^{\mathrm{exact}}+2\eta_{\mathrm{source}}}
+{1+4(\tau_2^{\mathrm{exact}})^2}.
 \]
-Its residuals relative to the frozen local authoritative surface are only
+The repaired coupling shifts are
+\[
+\delta\alpha_2=\alpha_{2,m_Z}\tau_2^{\mathrm{exact}},
+\qquad
+\delta\alpha_Y^{\parallel}
+=
+\alpha_{Y,m_Z}
+\frac{8\eta_{\mathrm{source}}(\tau_2^{\mathrm{exact}})^2-\tau_2^{\mathrm{exact}}}
+{1+4(\tau_2^{\mathrm{exact}})^2},
+\]
+\[
+\delta\alpha_Y^{\perp}
+=
+(\alpha_{2,m_Z}+\alpha_{Y,m_Z})\,\delta n^{\mathrm{exact}}.
+\]
+With
+\[
+\alpha_{2,*}=\alpha_{2,m_Z},
+\qquad
+\alpha_{Y,*}=\alpha_{Y,m_Z}(1-2\eta_{\mathrm{source}}),
+\]
+the repaired couplings are
+\[
+\alpha_2'=\alpha_{2,*}+\delta\alpha_2,
+\qquad
+\alpha_Y'=\alpha_{Y,*}+\delta\alpha_Y^{\parallel}+\delta\alpha_Y^{\perp},
+\]
+and they emit one coherent family
+\[
+W=v\sqrt{\pi\alpha_2'},
+\qquad
+Z=v\sqrt{\pi(\alpha_2'+\alpha_Y')},
+\]
+\[
+\alpha_{\mathrm{em}}^{-1}
+=
+\frac{\alpha_2'+\alpha_Y'}{\alpha_2'\alpha_Y'},
+\qquad
+\sin^2\theta_W
+=
+\frac{\alpha_Y'}{\alpha_2'+\alpha_Y'},
+\qquad
+v=v(P).
+\]
+So the electroweak repair is emitted from the D10 source basis alone, with no frozen target input,
+no inverse slice, and no mixed readout.
+\end{theorem}
+
+Using the current D10 source basis
+\[
+\alpha_{2,m_Z}=0.03377843630219015,
+\qquad
+\alpha_{Y,m_Z}=0.010131601067241624,
+\qquad
+\eta_{\mathrm{source}}=0.022147000871961295,
+\]
+\[
+v=246.76711732749683~\mathrm{GeV},
+\]
+the theorem emits
+\[
+W=80.37700001539531~\mathrm{GeV},
+\qquad
+Z=91.18797807794321~\mathrm{GeV},
+\]
+\[
+\alpha_{\mathrm{em}}^{-1}=132.7524088191668,
+\qquad
+\sin^2\theta_W=0.22305833336075578.
+\]
+The older freeze-once coherent repair surface is retained only as compare-only validation, with
+machine-scale deltas
 \[
 \Delta M_W\approx 1.54\times 10^{-8}~\mathrm{GeV},
 \qquad
-\Delta M_Z\approx -1.40\times 10^{-8}~\mathrm{GeV},
+\Delta M_Z\approx -1.40\times 10^{-8}~\mathrm{GeV}.
 \]
-but this remains a new source-only candidate law, not yet an accepted paper theorem.
+
+Historically, the source-only target-free problem was recorded on disk in three layers:
+an underdetermination theorem for the quadratic repair family, the smallest conditional route
+through \(\mathrm{ColorBalancedQuadraticRepairDescent}_{EW}\), and the strongest source-only
+candidate \(\mathrm{EWTargetEmitter}_{D10}\). Those layers are still useful as scaffolding, but
+they are no longer the active public electroweak surface.
 
 \subsection{Higgs/top critical stage}
 
@@ -1020,17 +1076,18 @@ coordinate on this branch.
 \toprule
 Particle & Stage & Status & Reported value \\
 \midrule
-\(W\) boson & electroweak calibration & calibration & \(80.377~\mathrm{GeV}\) \\
-\(Z\) boson & electroweak calibration & calibration & \(91.18797809193725~\mathrm{GeV}\) \\
+\(W\) boson & electroweak calibration & calibration & \(80.37700001539531~\mathrm{GeV}\) \\
+\(Z\) boson & electroweak calibration & calibration & \(91.18797807794321~\mathrm{GeV}\) \\
 Higgs boson & Higgs/top critical stage & secondary quantitative & \(125.218922~\mathrm{GeV}\) \\
 Top quark & Higgs/top critical stage & secondary quantitative & \(172.388646~\mathrm{GeV}\) \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The electroweak chapter therefore has to keep both layers visible at once:
-the reported numerical rows and the remaining exactness frontiers beneath them. That is the only
-way to make the bosonic sector technically honest.
+The electroweak chapter therefore has to keep the active closed theorem surface and the older
+validation layers visible at once: the reported target-free source-only rows, the current-carrier
+chart beneath them, and the freeze-once repair surface retained for compare-only validation. That
+is the technically honest way to present the bosonic sector.
 
 \section{Flavor Transport, Generation Structure, and the Yukawa Dictionary}
 

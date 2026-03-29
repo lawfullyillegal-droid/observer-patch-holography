@@ -1,0 +1,81 @@
+{
+  "artifact": "oph_d10_ew_target_free_repair_value_law",
+  "basis": {
+    "alpha2_mz": 0.03377843630219015,
+    "alphaY_mz": 0.010131601067241624,
+    "alpha_sum_mz": 0.043910037369431776,
+    "alpha_u_seed": 0.04112498041477454,
+    "beta_EW": 0.5385291530498766,
+    "eta_source": 0.022147000871961295,
+    "lambda_EW": 0.00022769874427635073,
+    "v_report_gev": 246.76711732749683
+  },
+  "coherent_emitted_quintet": {
+    "MW_pole": 80.37700001539531,
+    "MZ_pole": 91.18797807794321,
+    "alpha2_prime": 0.03377062800115824,
+    "alphaY_prime": 0.009695476921798464,
+    "alpha_em_eff_inv": 132.7524088191668,
+    "sin2w_eff": 0.22305833336075578,
+    "v_report": 246.76711732749683
+  },
+  "compare_only_validation_against_frozen_surface": {
+    "MW_reference_gev": 80.377,
+    "MZ_reference_gev": 91.18797809193725,
+    "alpha2_reference": 0.03377062798822147,
+    "alphaY_reference": 0.009695476948076182,
+    "alpha_em_eff_inv_reference": 132.75240855096686,
+    "delta_MW_gev": 1.5395315244859376e-08,
+    "delta_MZ_gev": -1.3994039704812167e-08,
+    "delta_alpha_em_eff_inv": 2.681999262676982e-07,
+    "delta_sin2w_eff": -5.36093780478808e-10,
+    "reference_surface_kind": "freeze_once_authoritative_target_coherent_repair_surface",
+    "sin2w_eff_reference": 0.22305833389684956
+  },
+  "family_source_id": "d10_running_tree",
+  "generated_utc": "2026-03-29T07:58:19Z",
+  "notes": [
+    "This theorem promotes the prior source-only target-emitter candidate to the active D10 public electroweak surface.",
+    "The freeze-once coherent repair law is retained as compare-only validation beneath the target-free theorem.",
+    "This closes the D10 electroweak mass-side lane on the Phase II calibration tier; it does not promote D10 into the recovered-core tier."
+  ],
+  "object_id": "EWTargetFreeRepairValueLaw_D10",
+  "phase_tier": "phase_ii_calibration",
+  "proof_gate": "single_family_single_P_no_mixed_readout",
+  "repair_chart": {
+    "delta_n_tree_exact": 0.0002346358802434819,
+    "tau2_tree_exact": -0.0002311623001746158,
+    "tauY_fiber": -0.04406283002558085
+  },
+  "repaired_couplings": {
+    "alpha2_prime": 0.03377062800115824,
+    "alpha2_star": 0.03377843630219015,
+    "alphaY_prime": 0.009695476921798464,
+    "alphaY_star": 0.009682831911900495,
+    "delta_alpha2": -7.808301031916019e-06,
+    "delta_alphaY_parallel": 2.3421396282673238e-06,
+    "delta_alphaY_perp": 1.030287026970081e-05
+  },
+  "status": "closed",
+  "theorem": {
+    "formulas": {
+      "MW_pole": "v_report * sqrt(pi * alpha2_prime)",
+      "MZ_pole": "v_report * sqrt(pi * (alpha2_prime + alphaY_prime))",
+      "alpha2_prime": "alpha2_mz + delta_alpha2",
+      "alphaY_prime": "alphaY_star + delta_alphaY_parallel + delta_alphaY_perp",
+      "alphaY_star": "alphaY_mz * (1 - 2 * eta_source)",
+      "alpha_em_eff_inv": "(alpha2_prime + alphaY_prime) / (alpha2_prime * alphaY_prime)",
+      "alpha_u_seed": "eta_source / beta_EW",
+      "delta_alpha2": "alpha2_mz * tau2_tree_exact",
+      "delta_alphaY_parallel": "alphaY_mz * (8 * eta_source * tau2_tree_exact^2 - tau2_tree_exact) / (1 + 4 * tau2_tree_exact^2)",
+      "delta_alphaY_perp": "(alpha2_mz + alphaY_mz) * delta_n_tree_exact",
+      "delta_n_tree_exact": "lambda_EW * (1 + (4/3) * eta_source + (2 - beta_EW/6) * eta_source^2)",
+      "lambda_EW": "eta_source^2 / (4 * beta_EW)",
+      "sin2w_eff": "alphaY_prime / (alpha2_prime + alphaY_prime)",
+      "tau2_tree_exact": "-lambda_EW * (1 + (2/3) * eta_source + (1 - beta_EW/6) * eta_source^2)",
+      "tauY_fiber": "-(tau2_tree_exact + 2 * eta_source) / (1 + 4 * tau2_tree_exact^2)"
+    },
+    "name": "EWTargetFreeRepairValueLaw_D10",
+    "statement": "Let the D10 source-only basis be (alpha2_mz, alphaY_mz, eta_source, v_report). Then the beyond-current-carrier electroweak repair is uniquely emitted by the source-only repair chart (tau2_tree_exact, delta_n_tree_exact) and the repaired coupling pair (alpha2_prime, alphaY_prime), with no frozen target input, no inverse slice, and no mixed readout."
+  }
+}

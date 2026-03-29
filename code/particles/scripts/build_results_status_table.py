@@ -51,11 +51,11 @@ D10_MASS_PAIR_NOTE = (
     "derive_d10_ew_tau2_current_carrier_obstruction.py -> derive_d10_ew_exact_wz_coordinate_beyond_single_tree_identity.py -> "
     "derive_d10_ew_exact_mass_pair_chart_current_carrier.py -> derive_d10_ew_repair_branch_beyond_current_carrier.py -> "
     "derive_d10_ew_repair_target_point_diagnostic.py -> derive_d10_ew_w_anchor_neutral_shear_factorization.py -> "
-    "derive_d10_ew_source_transport_readout.py`. The selected current-carrier chart is closed and remains explicit on disk, "
-    "but the public W/Z surface is the freeze-once coherent D10 repair law on one authoritative frozen target pair. "
-    "That law factors uniquely into an exact W anchor plus one orthogonal neutral-shear scalar "
-    "(`delta_MZ_after_exact_W_anchor`, equivalently `delta_n_dagger` or `delta_alphaY_perp`) and emits one coherent repaired electroweak quintet from one repaired coupling pair. "
-    "So the public D10 W/Z values are exact on the frozen calibration surface. Beneath the stricter target-free step, the current source-only D10 corpus is now split more sharply too: one unconditional theorem says the present source data underdetermine the target-free repair coefficients; the smallest honest conditional theorem route uses `ColorBalancedQuadraticRepairDescent_D10`; and the strongest current source-only candidate is `EWTargetEmitter_D10`, which emits `(W,Z)` within about `(1.54e-08, 1.40e-08)` GeV of the frozen local reference surface without frozen-target input. None of those source-only routes is promoted yet as a corpus theorem."
+    "derive_d10_ew_target_free_repair_value_law.py -> derive_d10_ew_source_transport_readout.py`. "
+    "The selected current-carrier chart is closed and remains explicit on disk, but the active public electroweak surface is now the target-free source-only theorem `EWTargetFreeRepairValueLaw_D10`. "
+    "That theorem emits the repaired chart `(tau2_tree_exact, delta_n_tree_exact)` from the D10 source basis alone using `lambda_EW = eta_source^2 / (4 * beta_EW)`, then emits one coherent electroweak quintet from one repaired coupling pair. "
+    "So the public D10 W/Z values are no longer freeze-once rows. The older freeze-once coherent repair law is retained only as compare-only validation and agrees with the target-free theorem to machine scale: about `+1.54e-08` GeV on `W` and `-1.40e-08` GeV on `Z`. "
+    "This closes the electroweak mass-side lane on the Phase II calibration tier; the earlier source-only underdetermination theorem, minimal conditional route through `ColorBalancedQuadraticRepairDescent_D10`, and former candidate `EWTargetEmitter_D10` remain on disk only as historical scaffolding beneath the promoted theorem."
 )
 CHARGED_CONTINUATION_NOTE = (
     "No public value is emitted yet. The active charged path is "

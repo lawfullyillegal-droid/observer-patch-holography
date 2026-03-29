@@ -543,7 +543,7 @@ The most important synchronization point for this chapter is that OPH does **not
 | Sector | Current status | Strongest live output |
 |---|---|---|
 | Structural carriers | Structural | Photon, gluons, and graviton are exact massless carriers |
-| Electroweak bosons | Calibration | $W$ and $Z$ are emitted on the frozen authoritative calibration surface; a target-free repair law from $P$ alone remains open |
+| Electroweak bosons | Calibration | $W$ and $Z$ are emitted on the closed target-free source-only electroweak theorem surface |
 | Higgs/top stage | Secondary quantitative | Higgs boson and top quark are emitted on the closed one-scalar forward seed |
 | Quark family | Continuation | Continuation-level rows are emitted for up, down, strange, charm, and bottom; CKM/CP and overlap-law closure remain open |
 | Charged leptons | Continuation gap | No promoted charged-lepton masses yet |
@@ -670,7 +670,7 @@ Let's step back and see what the framework actually accounts for.
 
 **The zeros.** The photon and graviton masses are exactly zero, not approximately but exactly. This is a symmetry-protected prediction. The photon's masslessness follows from U(1) gauge invariance being a genuine overlap redundancy; any mass would break the consistency of how charged patches glue together. Similarly, the graviton's masslessness follows from diffeomorphism invariance being the redundancy structure of bulk spacetime. Current experimental/observational upper bounds are consistent with these predictions to extraordinary precision: the photon mass is constrained below ~10⁻¹⁸ eV (often summarized as ~27 orders of magnitude), and the graviton mass is constrained below ~10⁻²³ eV by gravitational-wave dispersion (often summarized as ~22 orders of magnitude).
 
-**The tiered particle rows.** On top of those structural zeros, the current public particle surface is split by derivation tier. The electroweak calibration stage emits the $W$ and $Z$ rows on a frozen authoritative calibration surface. The Higgs/top critical stage emits the Higgs boson and top quark as secondary quantitative rows. The quark branch emits continuation-level rows for the up, down, strange, charm, and bottom quarks. These are all real outputs, but they do **not** sit at one uniform epistemic level.
+**The tiered particle rows.** On top of those structural zeros, the current public particle surface is split by derivation tier. The electroweak calibration stage is closed on a target-free source-only theorem that emits the $W$ and $Z$ rows. The Higgs/top critical stage emits the Higgs boson and top quark as secondary quantitative rows. The quark branch emits continuation-level rows for the up, down, strange, charm, and bottom quarks. These are all real outputs, but they do **not** sit at one uniform epistemic level.
 
 **Charge quantization.** All color-singlet particles have integer electric charge. No fractional charges like $\pm 1/3$ can exist outside hadrons. This follows from the global structure of the gauge group.
 
@@ -688,7 +688,7 @@ The quarks and leptons aren't arbitrary. Their charges are fixed by the requirem
 
 Axiom 5 (MAR) provides the selector inside the admissible class. Within the connected Lie sector package with one connected abelian charge factor, it picks the Standard Model gauge structure and leaves the realized hypercharge lattice and the realized counting chain $N_g = 3$ then $N_c = 3$ as discrete structural outputs. From gauge reconstruction, anomaly analysis, and refinement stability, the framework derives a sharply constrained set of particles and forces while keeping later quantitative branches epistemically separate from the structural core.
 
-That last clause matters. The current OPH particle claim is not "the full Standard Model spectrum is now theorem-closed." The honest claim is narrower: structural carriers are fixed; $W/Z$ live on the calibration surface; Higgs/top live on a secondary quantitative stage; the broader quark family has continuation-level emitted rows; and charged-lepton, flavor-labeled neutrino, and hadron closure remain open or execution-bound. This chapter should be read with that ledger in mind.
+That last clause matters. The current OPH particle claim is not "the full Standard Model spectrum is now theorem-closed." The honest claim is narrower: structural carriers are fixed; the electroweak $W/Z$ lane is closed on its active calibration theorem surface; Higgs/top live on a secondary quantitative stage; the broader quark family has continuation-level emitted rows; and charged-lepton, flavor-labeled neutrino, and hadron closure remain open or execution-bound. This chapter should be read with that ledger in mind.
 
 We've now seen how particles emerge from the screen as stable patterns that transform under emergent symmetries. But how does spacetime itself emerge? How does Einstein's relativity fit into this picture?
 

@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
-"""Map the selected D10 carrier point and frozen-target repair into the public electroweak readout.
+"""Map the selected D10 carrier point and promoted repair laws into the electroweak readout.
 
 Chain role: turn the chosen D10 two-scalar transport point into the emitted
 `W/Z` mass pair and the associated electroweak quintet diagnostics.
 
 Mathematics: factorized shared-scalar readout on top of the baseline D10
 quintet, with explicit separation between the selected carrier point, the
-freeze-once coherent repair surface, and the stricter still-open target-free
-repair problem.
+historical freeze-once coherent repair surface, and the promoted target-free
+source-only repair theorem.
 
 OPH-derived inputs: the D10 observable family plus the selected two-scalar
 carrier from the source transport pair.
 
-Output: the public `W/Z` surface plus the residual data that separates the
-closed current-carrier chart from the stricter target-free repair step.
+Output: the public electroweak quintet plus the residual data that separates
+the closed current-carrier chart from the historical frozen-target validation
+surface.
 """
 
 from __future__ import annotations
@@ -34,6 +35,7 @@ DEFAULT_EXACT_MASS_PAIR_CHART = ROOT / "particles" / "runs" / "calibration" / "d
 DEFAULT_W_ANCHOR_FACTORIZATION = ROOT / "particles" / "runs" / "calibration" / "d10_ew_w_anchor_neutral_shear_factorization_official_pdg_2025_update.json"
 DEFAULT_MINIMAL_CONDITIONAL = ROOT / "particles" / "runs" / "calibration" / "d10_ew_minimal_conditional_theorem.json"
 DEFAULT_TARGET_EMITTER = ROOT / "particles" / "runs" / "calibration" / "d10_ew_target_emitter_candidate.json"
+DEFAULT_TARGET_FREE_REPAIR = ROOT / "particles" / "runs" / "calibration" / "d10_ew_target_free_repair_value_law.json"
 DEFAULT_OUT = ROOT / "particles" / "runs" / "calibration" / "d10_ew_source_transport_readout.json"
 
 
@@ -56,6 +58,7 @@ def build_artifact(
     w_anchor_factorization: dict | None = None,
     minimal_conditional: dict | None = None,
     target_emitter: dict | None = None,
+    target_free_repair: dict | None = None,
 ) -> dict:
     reported = dict(family["reported_outputs"])
     source_slots = dict(source_pair["source_pair"])
@@ -121,13 +124,18 @@ def build_artifact(
     w_anchor_factorization = w_anchor_factorization or {}
     minimal_conditional = minimal_conditional or {}
     target_emitter = target_emitter or {}
+    target_free_repair = target_free_repair or {}
     freeze_once_repair_closed = (
         w_anchor_factorization.get("status") == "closed_freeze_once_coherent_repair_law"
     )
+    target_free_repair_closed = target_free_repair.get("status") == "closed"
     factorization_point = dict(w_anchor_factorization.get("central_target_point") or {})
     factorized_repair_package = dict(w_anchor_factorization.get("repair_law", {}).get("coherent_repair_package", {}))
     factorized_repair_chart = dict(w_anchor_factorization.get("repair_law", {}).get("chart_coordinates", {}))
     factorized_repair_quintet = dict(w_anchor_factorization.get("coherent_repaired_quintet") or {})
+    target_free_chart = dict(target_free_repair.get("repair_chart") or {})
+    target_free_couplings = dict(target_free_repair.get("repaired_couplings") or {})
+    target_free_quintet = dict(target_free_repair.get("coherent_emitted_quintet") or {})
 
     if exact_mass_pair_chart.get("status") == "closed_smaller_primitive":
         current_carrier_builder_local_frontier = (
@@ -144,7 +152,18 @@ def build_artifact(
     else:
         current_carrier_builder_local_frontier = "EWGaugeSourceTransportPairPopulationEvaluator_D10"
 
-    if freeze_once_repair_closed and factorized_repair_quintet:
+    if target_free_repair_closed and target_free_quintet:
+        public_quintet = {
+            "MW_pole": float(target_free_quintet["MW_pole"]),
+            "MZ_pole": float(target_free_quintet["MZ_pole"]),
+            "alpha_em_eff_inv": float(target_free_quintet["alpha_em_eff_inv"]),
+            "sin2w_eff": float(target_free_quintet["sin2w_eff"]),
+            "v_report": float(target_free_quintet["v_report"]),
+        }
+        active_builder_smallest_missing_object = None
+        broader_honest_repair_frontier = None
+        exact_pdg_wz_frontier = TARGET_FREE_REPAIR_FRONTIER
+    elif freeze_once_repair_closed and factorized_repair_quintet:
         public_quintet = {
             "MW_pole": float(factorized_repair_quintet["MW_pole"]),
             "MZ_pole": float(factorized_repair_quintet["MZ_pole"]),
@@ -165,11 +184,19 @@ def build_artifact(
             if exact_mass_pair_chart.get("status") == "closed_smaller_primitive"
             else active_builder_smallest_missing_object
         )
+    public_surface_scope = (
+        ["MW_pole", "MZ_pole", "alpha_em_eff_inv", "sin2w_eff", "v_report"]
+        if target_free_repair_closed
+        else ["MW_pole", "MZ_pole"]
+    )
     return {
         "artifact": "oph_d10_ew_source_transport_readout",
         "generated_utc": _timestamp(),
         "theorem_candidate": "EWTransportReadoutCoherence_D10",
         "proof_status": (
+            "target_free_source_only_repair_law_closed"
+            if target_free_repair_closed
+            else
             "freeze_once_coherent_repair_law_closed"
             if freeze_once_repair_closed
             else
@@ -184,10 +211,13 @@ def build_artifact(
         "current_carrier_builder_local_frontier": current_carrier_builder_local_frontier,
         "broader_honest_repair_frontier": broader_honest_repair_frontier,
         "exact_pdg_wz_frontier": exact_pdg_wz_frontier,
-        "predictive_promotion_allowed": False,
+        "predictive_promotion_allowed": target_free_repair_closed,
         "public_surface_candidate_allowed": True,
-        "public_surface_candidate_scope": ["MW_pole", "MZ_pole"],
+        "public_surface_candidate_scope": public_surface_scope,
         "public_surface_policy": (
+            "target_free_source_only_single_family_repair_surface"
+            if target_free_repair_closed
+            else
             "freeze_once_authoritative_target_coherent_repair_surface"
             if freeze_once_repair_closed
             else "best_available_reference_free_mass_pair_candidate"
@@ -215,7 +245,15 @@ def build_artifact(
         "freeze_once_chart_coordinates": factorized_repair_chart or None,
         "freeze_once_coherent_repaired_quintet": factorized_repair_quintet or None,
         "freeze_once_target_free_residual_object": w_anchor_factorization.get("conclusion", {}).get("stricter_still_open_object"),
+        "target_free_repair_value_law_artifact": target_free_repair.get("artifact"),
+        "target_free_repair_value_law_status": target_free_repair.get("status"),
+        "target_free_repair_value_law_object_id": target_free_repair.get("object_id"),
+        "target_free_repair_chart": target_free_chart or None,
+        "target_free_repaired_couplings": target_free_couplings or None,
+        "target_free_coherent_emitted_quintet": target_free_quintet or None,
         "target_free_repair_status_split": {
+            "status": "closed" if target_free_repair_closed else "open",
+            "theorem": target_free_repair.get("object_id") if target_free_repair_closed else None,
             "unconditional_source_only_status": minimal_conditional.get("unconditional_theorem", {}).get("name"),
             "minimal_conditional_principle": minimal_conditional.get("conditional_principle", {}).get("name"),
             "minimal_conditional_theorem": minimal_conditional.get("conditional_theorem", {}).get("name"),
@@ -249,11 +287,14 @@ def build_artifact(
         "source_pair_reduction": "reopened_two_scalar_source_family",
         "coherent_readout_law_id": "EWTransportReadoutCoherence_D10",
         "best_mass_pair_law_id": (
+            TARGET_FREE_REPAIR_FRONTIER
+            if target_free_repair_closed
+            else
             "freeze_once_coherent_d10_electroweak_repair_law"
             if freeze_once_repair_closed
             else compact_mass_slice["name"]
         ),
-        "predictive_mass_promotion_allowed": False,
+        "predictive_mass_promotion_allowed": target_free_repair_closed,
         "source_transport_pair_artifact": source_pair["artifact"],
         "family_source_id": "d10_running_tree",
         "scheme_id": "freeze_once",
@@ -309,9 +350,24 @@ def build_artifact(
         },
         "transport_entry_values": dict(seed_trial["transport_entry_values"]),
         "reported_readout_assignment": {
-            "MW_pole": "coherent_frozen_target_repair_couplings" if freeze_once_repair_closed else "shared_scalar_package",
-            "MZ_pole": "coherent_frozen_target_repair_couplings" if freeze_once_repair_closed else "shared_scalar_package",
+            "MW_pole": (
+                "coherent_target_free_repair_couplings"
+                if target_free_repair_closed
+                else "coherent_frozen_target_repair_couplings"
+                if freeze_once_repair_closed
+                else "shared_scalar_package"
+            ),
+            "MZ_pole": (
+                "coherent_target_free_repair_couplings"
+                if target_free_repair_closed
+                else "coherent_frozen_target_repair_couplings"
+                if freeze_once_repair_closed
+                else "shared_scalar_package"
+            ),
             "alpha_em_eff_inv": (
+                "coherent_target_free_repair_couplings"
+                if target_free_repair_closed
+                else
                 "coherent_frozen_target_repair_couplings"
                 if freeze_once_repair_closed
                 else
@@ -320,6 +376,9 @@ def build_artifact(
                 else "shared_scalar_package"
             ),
             "sin2w_eff": (
+                "coherent_target_free_repair_couplings"
+                if target_free_repair_closed
+                else
                 "coherent_frozen_target_repair_couplings"
                 if freeze_once_repair_closed
                 else
@@ -376,6 +435,9 @@ def build_artifact(
         },
         "mass_pair_predictive_candidate": {
             "status": (
+                "target_free_source_only_repair_exact"
+                if target_free_repair_closed
+                else
                 "freeze_once_coherent_repair_exact"
                 if freeze_once_repair_closed
                 else
@@ -385,6 +447,14 @@ def build_artifact(
             ),
             "law": (
                 {
+                    "name": TARGET_FREE_REPAIR_FRONTIER,
+                    "equivalent_two_coordinate_chart": "(tau2_tree_exact, delta_n_tree_exact)",
+                    "proof_gate": "single_family_single_P_no_mixed_readout",
+                    "historical_validation_surface": "FreezeOnceCoherentD10ElectroweakRepairLaw_D10",
+                }
+                if target_free_repair_closed
+                else
+                {
                     "name": "freeze_once_coherent_d10_electroweak_repair_law",
                     "equivalent_two_coordinate_chart": "(tau2_w_anchor, delta_n_dagger)",
                     "proof_gate": "single_family_single_P_no_mixed_readout",
@@ -393,29 +463,41 @@ def build_artifact(
                 if freeze_once_repair_closed
                 else dict(compact_mass_slice["law"])
             ),
-            "sigma_EW": float(compact_mass_slice["sigma_EW"]) if not freeze_once_repair_closed else None,
-            "eta_EW": float(compact_mass_slice["eta_EW"]) if not freeze_once_repair_closed else None,
+            "sigma_EW": float(compact_mass_slice["sigma_EW"]) if not (freeze_once_repair_closed or target_free_repair_closed) else None,
+            "eta_EW": float(compact_mass_slice["eta_EW"]) if not (freeze_once_repair_closed or target_free_repair_closed) else None,
             "tau_Y": (
                 float(compact_mass_slice["tau_Y"])
-                if not freeze_once_repair_closed
+                if not (freeze_once_repair_closed or target_free_repair_closed)
+                else float(target_free_chart.get("tauY_fiber"))
+                if target_free_repair_closed
                 else float(factorization_point.get("tauY_fiber_dagger", 0.0))
             ),
             "tau_2": (
                 float(compact_mass_slice["tau_2"])
-                if not freeze_once_repair_closed
+                if not (freeze_once_repair_closed or target_free_repair_closed)
+                else float(target_free_chart.get("tau2_tree_exact", 0.0))
+                if target_free_repair_closed
                 else float(factorized_repair_chart.get("tau2_w_anchor", 0.0))
             ),
             "delta_n_dagger": (
-                None if not freeze_once_repair_closed else float(factorized_repair_chart.get("delta_n_dagger"))
+                float(target_free_chart.get("delta_n_tree_exact"))
+                if target_free_repair_closed
+                else None if not freeze_once_repair_closed else float(factorized_repair_chart.get("delta_n_dagger"))
             ),
             "delta_alpha2_dagger": (
-                None if not freeze_once_repair_closed else float(factorized_repair_package.get("delta_alpha2_dagger"))
+                float(target_free_couplings.get("delta_alpha2"))
+                if target_free_repair_closed
+                else None if not freeze_once_repair_closed else float(factorized_repair_package.get("delta_alpha2_dagger"))
             ),
             "delta_alphaY_parallel": (
-                None if not freeze_once_repair_closed else float(factorized_repair_package.get("delta_alphaY_parallel"))
+                float(target_free_couplings.get("delta_alphaY_parallel"))
+                if target_free_repair_closed
+                else None if not freeze_once_repair_closed else float(factorized_repair_package.get("delta_alphaY_parallel"))
             ),
             "delta_alphaY_perp": (
-                None if not freeze_once_repair_closed else float(factorized_repair_package.get("delta_alphaY_perp"))
+                float(target_free_couplings.get("delta_alphaY_perp"))
+                if target_free_repair_closed
+                else None if not freeze_once_repair_closed else float(factorized_repair_package.get("delta_alphaY_perp"))
             ),
             "MW_pole": float(public_quintet["MW_pole"]),
             "MZ_pole": float(public_quintet["MZ_pole"]),
@@ -450,7 +532,9 @@ def build_artifact(
                 else "The exact W/Z coordinate shell still depends on a stronger unsplit tree identity."
             ),
             (
-                "The freeze-once coherent repair law is closed on one authoritative frozen target pair, so the public W/Z surface comes from one repaired coupling pair and one coherent repaired quintet."
+                "The public electroweak quintet is emitted by the promoted target-free source-only theorem `EWTargetFreeRepairValueLaw_D10`. The earlier freeze-once coherent repair law is retained only as compare-only validation and agrees with the target-free theorem to machine scale."
+                if target_free_repair_closed
+                else "The freeze-once coherent repair law is closed on one authoritative frozen target pair, so the public W/Z surface comes from one repaired coupling pair and one coherent repaired quintet."
                 if freeze_once_repair_closed
                 else "The broader honest exact-PDG W/Z frontier is the repair branch `D10RepairBranchBeyondCurrentCarrier` beyond the present current carrier, not just the builder-local selector shell."
             ),
@@ -462,12 +546,16 @@ def build_artifact(
                 else "The fixed-eta trace evaluator remains useful diagnostically, but the live predictive blocker is now exact electroweak closure beyond the current selected carrier point rather than another selector on the exhausted compact slice."
             ),
             (
-                "The stronger target-free step is still open: emit the same nonzero repair directly from P alone with no frozen authoritative W/Z input."
+                "No stricter D10 W/Z mass-side object remains open on the active Phase II calibration surface."
+                if target_free_repair_closed
+                else "The stronger target-free step is still open: emit the same nonzero repair directly from P alone with no frozen authoritative W/Z input."
                 if freeze_once_repair_closed
                 else "The public W/Z pair still comes from the same selected carrier point."
             ),
             (
-                "The target-free D10 problem is now split more sharply too: the current source-only corpus underdetermines the forward repair coefficients, the smallest honest conditional closure route uses ColorBalancedQuadraticRepairDescent_D10, and the strongest current source-only candidate is EWTargetEmitter_D10."
+                "The earlier target-free D10 split remains visible historically on disk: the source-only underdetermination theorem, the minimal conditional route through ColorBalancedQuadraticRepairDescent_D10, and the stronger source-only candidate EWTargetEmitter_D10 are all retained as promoted/superseded scaffolding beneath the active theorem."
+                if target_free_repair_closed and (minimal_conditional or target_emitter)
+                else "The target-free D10 problem is now split more sharply too: the current source-only corpus underdetermines the forward repair coefficients, the smallest honest conditional closure route uses ColorBalancedQuadraticRepairDescent_D10, and the strongest current source-only candidate is EWTargetEmitter_D10."
                 if minimal_conditional or target_emitter
                 else "No sharper source-only target-free D10 split is attached to this readout."
             ),
@@ -486,6 +574,7 @@ def main() -> int:
     parser.add_argument("--w-anchor-factorization", default=str(DEFAULT_W_ANCHOR_FACTORIZATION))
     parser.add_argument("--minimal-conditional-promotion", default=str(DEFAULT_MINIMAL_CONDITIONAL))
     parser.add_argument("--target-emitter", default=str(DEFAULT_TARGET_EMITTER))
+    parser.add_argument("--target-free-repair", default=str(DEFAULT_TARGET_FREE_REPAIR))
     parser.add_argument("--output", default=str(DEFAULT_OUT))
     args = parser.parse_args()
 
@@ -529,6 +618,12 @@ def main() -> int:
         if target_emitter_path.exists()
         else None
     )
+    target_free_repair_path = Path(args.target_free_repair)
+    target_free_repair = (
+        json.loads(target_free_repair_path.read_text(encoding="utf-8"))
+        if target_free_repair_path.exists()
+        else None
+    )
     artifact = build_artifact(
         family,
         source_pair,
@@ -539,6 +634,7 @@ def main() -> int:
         w_anchor_factorization,
         minimal_conditional,
         target_emitter,
+        target_free_repair,
     )
 
     out_path = Path(args.output)

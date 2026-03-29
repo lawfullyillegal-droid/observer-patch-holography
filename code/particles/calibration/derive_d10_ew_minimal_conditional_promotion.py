@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Record the sharpest current target-free D10 repair split.
+"""Record the historical sharpest target-free D10 repair split.
 
-Chain role: expose the current source-only D10 target-free theorem split
-without pretending that the target-free repair law is already closed.
+Chain role: preserve the sharpest pre-theorem split beneath the promoted
+target-free D10 repair law.
 
 Mathematics: two statements are recorded. First, the current emitted source data
 only determine a two-parameter quadratic repair family, so the target-free
@@ -14,8 +14,8 @@ OPH-derived inputs: the emitted D10 source pair and compact current-carrier
 slice.
 
 Output: a machine-readable artifact containing the unconditional
-underdetermination theorem and the smallest honest conditional promotion
-theorem beneath the open target-free repair problem.
+underdetermination theorem and the smallest historical conditional route
+beneath the promoted target-free repair theorem.
 """
 
 from __future__ import annotations
@@ -66,7 +66,8 @@ def build_artifact(source_pair: dict, *, color_count: int) -> dict:
     return {
         "artifact": "oph_d10_ew_minimal_conditional_promotion",
         "generated_utc": _timestamp(),
-        "status": "conditional_theorem_plus_unconditional_no_go",
+        "status": "historical_split_superseded_by_target_free_repair_theorem",
+        "superseded_by": "EWTargetFreeRepairValueLaw_D10",
         "source_artifact": source_pair.get("artifact"),
         "unconditional_theorem": {
             "name": "current_corpus_underdetermination_of_forward_d10_repair_law",
@@ -125,9 +126,9 @@ def build_artifact(source_pair: dict, *, color_count: int) -> dict:
             },
         },
         "notes": [
-            "This artifact does not claim that the conditional principle is already proved by the present OPH corpus.",
-            "It records the sharpest current split beneath the open target-free D10 repair problem.",
-            "The remaining theorem burden is to derive the color-balanced quadratic repair principle from upstream OPH structure or replace it with a stronger target-free OPH emitter law.",
+            "This artifact is retained as historical scaffolding beneath the promoted target-free D10 repair theorem.",
+            "It records the sharpest earlier split between source-only underdetermination and the smallest honest conditional closure route.",
+            "The target-free theorem now supersedes this split as the active D10 public electroweak surface.",
         ],
     }
 

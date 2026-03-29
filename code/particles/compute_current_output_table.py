@@ -115,6 +115,7 @@ def build_runtime(runtime_root: Path, *, with_hadrons: bool) -> None:
         ["python3", "particles/calibration/derive_d10_ew_w_anchor_neutral_shear_factorization.py"],
         ["python3", "particles/calibration/derive_d10_ew_minimal_conditional_promotion.py"],
         ["python3", "particles/calibration/derive_d10_ew_target_emitter_candidate.py"],
+        ["python3", "particles/calibration/derive_d10_ew_target_free_repair_value_law.py"],
         ["python3", "particles/calibration/derive_d10_ew_source_transport_readout.py"],
         ["python3", "particles/calibration/derive_d10_ew_exactness_audit.py"],
         ["python3", "particles/calibration/derive_d11_critical_surface_readout.py"],

@@ -21,7 +21,8 @@ def test_d10_minimal_conditional_promotion_records_underdetermination_and_smalle
 
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
     assert payload["artifact"] == "oph_d10_ew_minimal_conditional_promotion"
-    assert payload["status"] == "conditional_theorem_plus_unconditional_no_go"
+    assert payload["status"] == "historical_split_superseded_by_target_free_repair_theorem"
+    assert payload["superseded_by"] == "EWTargetFreeRepairValueLaw_D10"
     assert payload["unconditional_theorem"]["name"] == "current_corpus_underdetermination_of_forward_d10_repair_law"
     assert payload["conditional_principle"]["name"] == "ColorBalancedQuadraticRepairDescent_D10"
     assert payload["conditional_theorem"]["name"] == "minimal_conditional_d10_forward_repair_law"

@@ -21,6 +21,9 @@ EXACT_WZ_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_exact_wz_c
 EXACT_CHART_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_exact_mass_pair_chart_current_carrier.py"
 REPAIR_BRANCH_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_repair_branch_beyond_current_carrier.py"
 FACTORIZATION_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_w_anchor_neutral_shear_factorization.py"
+MINIMAL_CONDITIONAL_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_minimal_conditional_promotion.py"
+TARGET_EMITTER_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_target_emitter_candidate.py"
+TARGET_FREE_REPAIR_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_target_free_repair_value_law.py"
 READOUT_OUTPUT = ROOT / "particles" / "runs" / "calibration" / "d10_ew_source_transport_readout.json"
 REPAIR_OUTPUT = ROOT / "particles" / "runs" / "calibration" / "d10_ew_repair_branch_beyond_current_carrier.json"
 
@@ -37,15 +40,19 @@ def test_d10_current_carrier_frontier_split_is_explicit() -> None:
     subprocess.run([sys.executable, str(EXACT_CHART_SCRIPT)], check=True, cwd=ROOT)
     subprocess.run([sys.executable, str(REPAIR_BRANCH_SCRIPT)], check=True, cwd=ROOT)
     subprocess.run([sys.executable, str(FACTORIZATION_SCRIPT)], check=True, cwd=ROOT)
+    subprocess.run([sys.executable, str(MINIMAL_CONDITIONAL_SCRIPT)], check=True, cwd=ROOT)
+    subprocess.run([sys.executable, str(TARGET_EMITTER_SCRIPT)], check=True, cwd=ROOT)
+    subprocess.run([sys.executable, str(TARGET_FREE_REPAIR_SCRIPT)], check=True, cwd=ROOT)
     subprocess.run([sys.executable, str(READOUT_SCRIPT)], check=True, cwd=ROOT)
 
     readout = json.loads(READOUT_OUTPUT.read_text(encoding="utf-8"))
     repair = json.loads(REPAIR_OUTPUT.read_text(encoding="utf-8"))
 
-    assert readout["active_builder_smallest_missing_object"] == "EWTargetFreeRepairValueLaw_D10"
+    assert readout["active_builder_smallest_missing_object"] is None
     assert readout["current_carrier_builder_local_frontier"] == "EWExactMassPairSelector_D10"
-    assert readout["smallest_predictive_missing_object"] == "EWTargetFreeRepairValueLaw_D10"
+    assert readout["smallest_predictive_missing_object"] is None
     assert readout["exact_pdg_wz_frontier"] == "EWTargetFreeRepairValueLaw_D10"
+    assert readout["broader_honest_repair_frontier"] is None
     assert repair["object_id"] == "D10RepairBranchBeyondCurrentCarrier"
     assert repair["replaces_builder_local_frontier"] == "EWExactMassPairSelector_D10"
     assert repair["required_closure_kind"] == "single_family_single_P_no_mixed_readout"

@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Emit the strongest current source-only target-free D10 repair candidate.
+"""Record the historical source-only target-free D10 repair candidate.
 
-Chain role: package the best current source-only target-emitter candidate above
-the freeze-once electroweak repair surface without promoting it to theorem
-status.
+Chain role: preserve the strongest prior source-only target-emitter candidate
+after the target-free D10 repair law has been promoted to theorem status.
 
 Mathematics: build a single scalar `lambda_EW` from the emitted D10 source data
 and use it to emit a coherent target-free candidate for `(tau2_tree_exact,
@@ -12,8 +11,8 @@ delta_n_tree_exact)` and the repaired electroweak quintet.
 OPH-derived inputs: the emitted D10 source pair and compact current-carrier
 slice, with reference W/Z used only for compare-only residual reporting.
 
-Output: a machine-readable candidate artifact for the target-free electroweak
-repair law.
+Output: a machine-readable historical artifact beneath the promoted
+`EWTargetFreeRepairValueLaw_D10` theorem.
 """
 
 from __future__ import annotations
@@ -86,8 +85,9 @@ def build_artifact(source_pair: dict, references: dict) -> dict:
     return {
         "artifact": "oph_d10_ew_target_emitter_candidate",
         "generated_utc": _timestamp(),
-        "status": "new_theorem_candidate_not_yet_in_corpus",
+        "status": "historical_candidate_promoted_to_theorem",
         "object_id": "EWTargetEmitter_D10",
+        "promoted_to": "EWTargetFreeRepairValueLaw_D10",
         "proof_gate": "single_family_single_P_no_mixed_readout",
         "family_source_id": "d10_running_tree",
         "basis": {
@@ -152,8 +152,8 @@ def build_artifact(source_pair: dict, references: dict) -> dict:
             "delta_alphaY_tree_compare_only": comparison_delta_alphaY_parallel + comparison_delta_alphaY_perp,
         },
         "honesty_note": (
-            "This is a newly derived target-emitter candidate using only already-emitted D10 source data; "
-            "it is not yet stated as a theorem in the current papers."
+            "This source-only candidate is retained as historical scaffolding beneath the promoted "
+            "target-free D10 repair theorem."
         ),
     }
 

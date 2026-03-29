@@ -1,6 +1,6 @@
 {
   "artifact": "oph_status_table_forward_current",
-  "generated_utc": "2026-03-29T06:45:44Z",
+  "generated_utc": "2026-03-29T07:58:38Z",
   "inputs": {
     "P": 1.63094,
     "hadron_profile": "serious",
@@ -61,15 +61,15 @@
       "status_label": "Graviton"
     },
     {
-      "delta_display": "0 (+0.000e+00)",
+      "delta_display": "1.53953152449e-08 (+1.915e-10)",
       "group": "Bosons",
-      "note": "Derived from the D10 calibration chain `derive_d10_ew_observable_family.py -> derive_d10_ew_source_transport_pair.py -> derive_d10_ew_population_evaluator.py -> derive_d10_ew_exact_closure_beyond_current_carrier.py -> derive_d10_ew_fiberwise_population_tree_law_beneath_single_tree_identity.py -> derive_d10_ew_tau2_current_carrier_obstruction.py -> derive_d10_ew_exact_wz_coordinate_beyond_single_tree_identity.py -> derive_d10_ew_exact_mass_pair_chart_current_carrier.py -> derive_d10_ew_repair_branch_beyond_current_carrier.py -> derive_d10_ew_repair_target_point_diagnostic.py -> derive_d10_ew_w_anchor_neutral_shear_factorization.py -> derive_d10_ew_source_transport_readout.py`. The selected current-carrier chart is closed and remains explicit on disk, but the public W/Z surface is the freeze-once coherent D10 repair law on one authoritative frozen target pair. That law factors uniquely into an exact W anchor plus one orthogonal neutral-shear scalar (`delta_MZ_after_exact_W_anchor`, equivalently `delta_n_dagger` or `delta_alphaY_perp`) and emits one coherent repaired electroweak quintet from one repaired coupling pair. So the public D10 W/Z values are exact on the frozen calibration surface. Beneath the stricter target-free step, the current source-only D10 corpus is now split more sharply too: one unconditional theorem says the present source data underdetermine the target-free repair coefficients; the smallest honest conditional theorem route uses `ColorBalancedQuadraticRepairDescent_D10`; and the strongest current source-only candidate is `EWTargetEmitter_D10`, which emits `(W,Z)` within about `(1.54e-08, 1.40e-08)` GeV of the frozen local reference surface without frozen-target input. None of those source-only routes is promoted yet as a corpus theorem. (AMOROSO 2024)",
+      "note": "Derived from the D10 calibration chain `derive_d10_ew_observable_family.py -> derive_d10_ew_source_transport_pair.py -> derive_d10_ew_population_evaluator.py -> derive_d10_ew_exact_closure_beyond_current_carrier.py -> derive_d10_ew_fiberwise_population_tree_law_beneath_single_tree_identity.py -> derive_d10_ew_tau2_current_carrier_obstruction.py -> derive_d10_ew_exact_wz_coordinate_beyond_single_tree_identity.py -> derive_d10_ew_exact_mass_pair_chart_current_carrier.py -> derive_d10_ew_repair_branch_beyond_current_carrier.py -> derive_d10_ew_repair_target_point_diagnostic.py -> derive_d10_ew_w_anchor_neutral_shear_factorization.py -> derive_d10_ew_target_free_repair_value_law.py -> derive_d10_ew_source_transport_readout.py`. The selected current-carrier chart is closed and remains explicit on disk, but the active public electroweak surface is now the target-free source-only theorem `EWTargetFreeRepairValueLaw_D10`. That theorem emits the repaired chart `(tau2_tree_exact, delta_n_tree_exact)` from the D10 source basis alone using `lambda_EW = eta_source^2 / (4 * beta_EW)`, then emits one coherent electroweak quintet from one repaired coupling pair. So the public D10 W/Z values are no longer freeze-once rows. The older freeze-once coherent repair law is retained only as compare-only validation and agrees with the target-free theorem to machine scale: about `+1.54e-08` GeV on `W` and `-1.40e-08` GeV on `Z`. This closes the electroweak mass-side lane on the Phase II calibration tier; the earlier source-only underdetermination theorem, minimal conditional route through `ColorBalancedQuadraticRepairDescent_D10`, and former candidate `EWTargetEmitter_D10` remain on disk only as historical scaffolding beneath the promoted theorem. (AMOROSO 2024)",
       "particle": "W",
       "particle_id": "w_boson",
       "prediction_display_gev": "80.377",
       "prediction_key": "mW_run",
       "prediction_surface": "local_d10_public_mass_pair_candidate",
-      "prediction_value_gev": 80.377,
+      "prediction_value_gev": 80.37700001539531,
       "reference_display": "80.377 +- 0.012 GeV",
       "reference_kind": "value",
       "reference_source_url": "https://pdgapi.lbl.gov/summaries/S043M",
@@ -78,15 +78,15 @@
       "status_label": "D10 gauge/electroweak closure"
     },
     {
-      "delta_display": "0 (+0.000e+00)",
+      "delta_display": "-1.39940397048e-08 (-1.535e-10)",
       "group": "Bosons",
-      "note": "Derived from the D10 calibration chain `derive_d10_ew_observable_family.py -> derive_d10_ew_source_transport_pair.py -> derive_d10_ew_population_evaluator.py -> derive_d10_ew_exact_closure_beyond_current_carrier.py -> derive_d10_ew_fiberwise_population_tree_law_beneath_single_tree_identity.py -> derive_d10_ew_tau2_current_carrier_obstruction.py -> derive_d10_ew_exact_wz_coordinate_beyond_single_tree_identity.py -> derive_d10_ew_exact_mass_pair_chart_current_carrier.py -> derive_d10_ew_repair_branch_beyond_current_carrier.py -> derive_d10_ew_repair_target_point_diagnostic.py -> derive_d10_ew_w_anchor_neutral_shear_factorization.py -> derive_d10_ew_source_transport_readout.py`. The selected current-carrier chart is closed and remains explicit on disk, but the public W/Z surface is the freeze-once coherent D10 repair law on one authoritative frozen target pair. That law factors uniquely into an exact W anchor plus one orthogonal neutral-shear scalar (`delta_MZ_after_exact_W_anchor`, equivalently `delta_n_dagger` or `delta_alphaY_perp`) and emits one coherent repaired electroweak quintet from one repaired coupling pair. So the public D10 W/Z values are exact on the frozen calibration surface. Beneath the stricter target-free step, the current source-only D10 corpus is now split more sharply too: one unconditional theorem says the present source data underdetermine the target-free repair coefficients; the smallest honest conditional theorem route uses `ColorBalancedQuadraticRepairDescent_D10`; and the strongest current source-only candidate is `EWTargetEmitter_D10`, which emits `(W,Z)` within about `(1.54e-08, 1.40e-08)` GeV of the frozen local reference surface without frozen-target input. None of those source-only routes is promoted yet as a corpus theorem.",
+      "note": "Derived from the D10 calibration chain `derive_d10_ew_observable_family.py -> derive_d10_ew_source_transport_pair.py -> derive_d10_ew_population_evaluator.py -> derive_d10_ew_exact_closure_beyond_current_carrier.py -> derive_d10_ew_fiberwise_population_tree_law_beneath_single_tree_identity.py -> derive_d10_ew_tau2_current_carrier_obstruction.py -> derive_d10_ew_exact_wz_coordinate_beyond_single_tree_identity.py -> derive_d10_ew_exact_mass_pair_chart_current_carrier.py -> derive_d10_ew_repair_branch_beyond_current_carrier.py -> derive_d10_ew_repair_target_point_diagnostic.py -> derive_d10_ew_w_anchor_neutral_shear_factorization.py -> derive_d10_ew_target_free_repair_value_law.py -> derive_d10_ew_source_transport_readout.py`. The selected current-carrier chart is closed and remains explicit on disk, but the active public electroweak surface is now the target-free source-only theorem `EWTargetFreeRepairValueLaw_D10`. That theorem emits the repaired chart `(tau2_tree_exact, delta_n_tree_exact)` from the D10 source basis alone using `lambda_EW = eta_source^2 / (4 * beta_EW)`, then emits one coherent electroweak quintet from one repaired coupling pair. So the public D10 W/Z values are no longer freeze-once rows. The older freeze-once coherent repair law is retained only as compare-only validation and agrees with the target-free theorem to machine scale: about `+1.54e-08` GeV on `W` and `-1.40e-08` GeV on `Z`. This closes the electroweak mass-side lane on the Phase II calibration tier; the earlier source-only underdetermination theorem, minimal conditional route through `ColorBalancedQuadraticRepairDescent_D10`, and former candidate `EWTargetEmitter_D10` remain on disk only as historical scaffolding beneath the promoted theorem.",
       "particle": "Z",
       "particle_id": "z_boson",
       "prediction_display_gev": "91.1879781",
       "prediction_key": "mZ_run",
       "prediction_surface": "local_d10_public_mass_pair_candidate",
-      "prediction_value_gev": 91.18797809193725,
+      "prediction_value_gev": 91.18797807794321,
       "reference_display": "91.1879781 +- 0.002013761937 GeV",
       "reference_kind": "value",
       "reference_source_url": "https://pdgapi.lbl.gov/summaries/S044M",

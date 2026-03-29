@@ -30,7 +30,7 @@ Les lois de la physique sont les règles de cohérence qui rendent cet accord in
 - **Le coeur à cutoff fixe est explicite.** Le paquet de collerette est constructif et interactif à cutoff fixe, et la branche topologique est fermée sur les cas ordinaire, à défaut central, et vraiment non central de type jauge supérieure.
 - **Il existe une voie disciplinée vers relativité et gravité.** L'OPH dérive une structure de cohérence indépendante de l'ordre des mises à jour et développe une branche conditionnelle Lorentz/null-modulaire/Einstein sous un paquet explicite de prémisses de limite d'échelle.
 - **Il existe une voie disciplinée vers la jauge.** L'OPH développe une reconstruction conditionnelle de la jauge compacte et retrouve, sur la branche réalisée, le quotient du Modèle Standard \(\SU(3)\times\SU(2)\times\U(1)/\mathbb Z_6\) avec la chaîne actuelle de quantification des charges et de comptage.
-- **La branche particules dépasse désormais la pure structure.** Les porteurs structurels sans masse sont fixés ; les étages électrofaible et Higgs/top produisent déjà des lignes quantitatives ; les secteurs quarks élargis, leptons et neutrinos restent explicitement ouverts et hiérarchisés par statut, tandis que les hadrons sont explicitement liés à l'exécution et non présentés comme des sorties déjà dérivées dans l'article.
+- **La branche particules dépasse désormais la pure structure.** Les porteurs structurels sans masse sont fixés ; l'étage de calibration électrofaible ferme désormais un théorème source-only sans cible gelée pour \(W/Z\) au niveau Phase II calibration ; l'étage Higgs/top produit déjà des lignes quantitatives ; les secteurs quarks élargis, leptons et neutrinos restent explicitement ouverts et hiérarchisés par statut, tandis que les hadrons sont explicitement liés à l'exécution et non présentés comme des sorties déjà dérivées dans l'article.
 - **La mesure et les observateurs appartiennent maintenant à la surface théorématique.** L'OPH dispose de paquets fixes-cutoff pour les enregistrements, Born-L\"uders, checkpoint/restauration et l'interface observateur.
 - **Le versant microphysique est suffisamment concret pour être simulé.** L'article de microphysique d'écran fournit une architecture de référence finie avec registres explicites, observables de recouvrement, couches d'enregistrement, mouvements de réparation et tests de synchronisation.
 - **La voie feuille d'univers / cordes est intégrée sans être sur-vendue.** L'OPH relie le théorème de noyau de chaleur des secteurs de bord à une réorganisation de type feuille d'univers, tout en gardant cette branche hors du coeur reconstruit.
@@ -43,7 +43,7 @@ actuel sur le spectre doit être lu comme un document de dérivation avec de vra
 main, et non comme une affirmation selon laquelle tout le spectre observé serait terminé.
 
 - **Sorties structurelles exactes déjà présentes sur la surface actuelle :** photon, gluons, graviton.
-- **Lignes quantitatives actuellement les plus fortes :** bosons \(W\) et \(Z\) sur l'étage de calibration électrofaible, plus boson de Higgs et quark top sur l'étage critique Higgs/top.
+- **Lignes quantitatives actuellement les plus fortes :** bosons \(W\) et \(Z\) sur le théorème fermé de calibration électrofaible sans cible gelée, plus boson de Higgs et quark top sur l'étage critique Higgs/top.
 - **Toujours inachevé :** la famille plus large des quarks reste au niveau continuation ; les leptons chargés et les neutrinos à saveur étiquetée restent des fronts théorématiques ouverts ; et les hadrons sont liés à l'exécution, car des lignes promouvables exigent un calcul non perturbatif de production et un contrôle systématique réel, pas seulement une fermeture symbolique supplémentaire.
 
 ## Objectifs du programme
@@ -72,11 +72,10 @@ supérieure.
 - **Source LaTeX :** [recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex)
 
 **Deriving the Particle Zoo from Observer Consistency** est l'article de statut sur le spectre de
-particules. Il demande jusqu'où une échelle de calibration commune peut être poussée dans le
-spectre observé, enregistre les sorties actuelles pour les bosons, Higgs/top et plusieurs quarks,
-garde explicites les frontières théorématiques encore ouvertes pour les leptons chargés et les
-neutrinos, et indique que les hadrons restent liés à l'exécution plutôt qu'à des lignes de sortie
-déjà dérivées dans l'article.
+particules. Il enregistre le théorème fermé de calibration électrofaible pour \(W/Z\), suit les
+sorties actuelles pour Higgs/top et plusieurs quarks, garde explicites les frontières
+théorématiques encore ouvertes pour les leptons chargés et les neutrinos, et indique que les
+hadrons restent liés à l'exécution plutôt qu'à des lignes de sortie déjà dérivées dans l'article.
 
 - **PDF :** [Deriving the Particle Zoo from Observer Consistency](paper/deriving_the_particle_zoo_from_observer_consistency.pdf)
 - **Source LaTeX :** [deriving_the_particle_zoo_from_observer_consistency.tex](paper/deriving_the_particle_zoo_from_observer_consistency.tex)

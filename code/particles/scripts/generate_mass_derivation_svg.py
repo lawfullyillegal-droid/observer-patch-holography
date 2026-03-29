@@ -151,7 +151,7 @@ LANES: List[Dict[str, Any]] = [
     {
         "key": "d10",
         "title": "D10 Electroweak Calibration",
-        "summary": "The D10 lane implements the single-P running family, the reduced two-scalar carrier, the exact current-carrier chart, and the freeze-once coherent electroweak repair law on one authoritative target pair.",
+        "summary": "The D10 lane implements the single-P running family, the reduced two-scalar carrier, the exact current-carrier chart, the historical freeze-once validation surface, and the promoted target-free source-only electroweak repair theorem.",
         "logic": (
             "From P the code builds M_U, solves alpha_U from the pixel constraint, gets the electroweak "
             "scale v, runs couplings to mZ_run, emits the running-family observables, reduces them to the "
@@ -159,16 +159,14 @@ LANES: List[Dict[str, Any]] = [
             "mass pair of the selected carrier remains explicit on disk, and the neutral running pair closes through "
             "the derived source-normalized hypercharge readout `chi_Y_EW`. The emitted fiberwise tree law isolates "
             "the charged-leg coordinate `tau2_tree_exact`, and the exact current-carrier mass chart closes on "
-            "`(tau2_tree_exact, delta_n_tree_exact)`. On top of that chart, the freeze-once coherent repair law "
-            "factors exact electroweak repair into one W anchor plus one orthogonal neutral-shear scalar, producing "
-            "one repaired coupling pair and one coherent repaired quintet. The public W/Z rows use that frozen-target "
-            "coherent repair surface. The stricter source-only target-free step is now split explicitly too: the current "
-            "corpus underdetermines the repair coefficients, the smallest honest conditional route uses "
-            "`ColorBalancedQuadraticRepairDescent_D10`, and the strongest current source-only candidate is "
-            "`EWTargetEmitter_D10`."
+            "`(tau2_tree_exact, delta_n_tree_exact)`. On top of that chart, the promoted theorem "
+            "`EWTargetFreeRepairValueLaw_D10` emits the same repaired chart directly from the D10 source basis "
+            "through `lambda_EW = eta_source^2 / (4 * beta_EW)`, then emits one repaired coupling pair and one "
+            "coherent electroweak quintet. The older freeze-once coherent repair law is retained only as compare-only "
+            "validation and agrees with the target-free theorem to machine scale."
         ),
-        "tasks_text": "Open task: derive the same nonzero repair directly from P alone with no frozen authoritative W/Z input, either by proving the missing source-only target-emitter law or by deriving the conditional repair principle from upstream OPH structure.",
-        "prediction_surface": "Freeze-once coherent D10 repaired electroweak quintet, with the exact current-carrier chart retained as a separate local object.",
+        "tasks_text": "No open electroweak mass-side blocker remains on the active D10 calibration surface. The remaining work is audit, presentation, and synchronization of the promoted target-free theorem across the OPH papers.",
+        "prediction_surface": "Target-free source-only D10 repaired electroweak quintet, with the exact current-carrier chart and the freeze-once repair law retained as separate historical validation objects.",
         "particles": ["w_boson", "z_boson"],
         "tasks": [
             "particles.calibration.02-separate-p-resolution-from-d10-transport-mismatch",

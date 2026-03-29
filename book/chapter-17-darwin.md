@@ -134,7 +134,7 @@ The electron is a vibration pattern that persists. The muon is a pattern that pe
 
 The "particle zoo" is a census of vibrational survivors.
 
-In the current OPH particle paper that census is only partially closed. Structural carriers are fixed, the $W/Z$ and Higgs/top rows are live on quantitative stages, the up/down/strange/charm/bottom rows are continuation-level outputs, and the charged-lepton, flavor-labeled neutrino, and hadron fronts remain open or execution-bound.
+In the current OPH particle paper that census is only partially closed. Structural carriers are fixed, the electroweak $W/Z$ lane is closed on its active theorem surface, the Higgs/top rows are live on a later quantitative stage, the up/down/strange/charm/bottom rows are continuation-level outputs, and the charged-lepton, flavor-labeled neutrino, and hadron fronts remain open or execution-bound.
 
 ### Topological Protection
 

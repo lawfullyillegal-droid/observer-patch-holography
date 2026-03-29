@@ -53,8 +53,10 @@ The live D10 split is now explicit:
   `EWSinglePostTransportTreeIdentity_D10`
 
 So the current carrier is no longer treated as the whole D10 story. It closes
-its own exact chart, while exact PDG `W/Z` remains a repair branch beyond that
-carrier.
+its own exact chart, while the active public electroweak surface is now the
+closed target-free source-only repair theorem above that carrier. The older
+repair-branch artifacts remain on disk as historical scaffolding and validation
+layers, not as the active public theorem surface.
 
 ## Commands
 

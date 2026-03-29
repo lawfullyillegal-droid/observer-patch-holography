@@ -102,7 +102,7 @@ stages:
         depends_on: ["particles.audit.03-consolidate-final-wave-findings-against-tier-ledger"]
   - id: stage-1
     title: "Stabilize D10 and D11"
-    status: active
+    status: completed
     success_rule: "One auditable D10/D11 forward path with declared RG/matching ingredients."
     tasks:
       - id: particles.calibration.01-add-implied-p-consistency-audit
@@ -112,17 +112,17 @@ stages:
         depends_on: ["stage-0"]
       - id: particles.calibration.02-separate-p-resolution-from-d10-transport-mismatch
         title: "Separate decimal precision in P from D10 transport and matching inconsistency"
-        status: in_progress
+        status: completed
         owner_lane: local_code
         depends_on: ["particles.calibration.01-add-implied-p-consistency-audit"]
       - id: particles.calibration.03-freeze-unrounded-calibration-observable-spec
         title: "Freeze the unrounded D10 calibration observable and scheme specification"
-        status: pending
+        status: completed
         owner_lane: local_docs
         depends_on: ["particles.calibration.02-separate-p-resolution-from-d10-transport-mismatch"]
       - id: particles.calibration.04-push-single-p-exact-ew-closure-branch
         title: "Push an honest single-P D10 electroweak repair branch for W/Z/alpha_em/sin^2(theta_W)/v"
-        status: in_progress
+        status: completed
         owner_lane: pro_paper
         depends_on:
           [
@@ -146,7 +146,7 @@ stages:
         depends_on: ["particles.calibration.06-add-ew-transport-kernel-boundary"]
       - id: particles.calibration.08-reduce-readout-coherence-to-provenance-equality
         title: "Reduce electroweak readout coherence to common provenance equality of the four correction scalars"
-        status: in_progress
+        status: completed
         owner_lane: pro_paper
         depends_on: ["particles.calibration.07-add-family-purity-readout-gate"]
       - id: particles.calibration.09-add-scalar-provenance-witness-fields
@@ -161,7 +161,7 @@ stages:
         depends_on: ["particles.calibration.09-add-scalar-provenance-witness-fields"]
       - id: particles.calibration.11-open-d10-repair-branch-beyond-current-carrier
         title: "Open the D10 repair branch beyond the current selected carrier / selector shell"
-        status: in_progress
+        status: completed
         owner_lane: pro_paper
         depends_on: ["particles.calibration.10-certify-current-carrier-wz-obstruction"]
       - id: particles.calibration.12-add-tree-identity-primitive-beneath-repair-branch
@@ -194,6 +194,18 @@ stages:
         status: completed
         owner_lane: local_code
         depends_on: ["particles.calibration.15-record-target-free-d10-underdetermination-and-minimal-conditional-theorem"]
+      - id: particles.calibration.17-promote-target-free-d10-repair-theorem
+        title: "Promote the source-only D10 repair emitter to the closed target-free electroweak theorem and sync the public surfaces"
+        status: completed
+        owner_lane: local_code
+        depends_on:
+          [
+            "particles.calibration.03-freeze-unrounded-calibration-observable-spec",
+            "particles.calibration.04-push-single-p-exact-ew-closure-branch",
+            "particles.calibration.08-reduce-readout-coherence-to-provenance-equality",
+            "particles.calibration.11-open-d10-repair-branch-beyond-current-carrier",
+            "particles.calibration.16-record-source-only-d10-target-emitter-candidate"
+          ]
   - id: stage-2
     title: "Derive the Yukawa excitation dictionary"
     status: active

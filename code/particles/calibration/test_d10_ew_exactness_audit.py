@@ -21,6 +21,9 @@ EXACT_WZ_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_exact_wz_c
 EXACT_CHART_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_exact_mass_pair_chart_current_carrier.py"
 REPAIR_BRANCH_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_repair_branch_beyond_current_carrier.py"
 FACTORIZATION_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_w_anchor_neutral_shear_factorization.py"
+MINIMAL_CONDITIONAL_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_minimal_conditional_promotion.py"
+TARGET_EMITTER_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_target_emitter_candidate.py"
+TARGET_FREE_REPAIR_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_target_free_repair_value_law.py"
 AUDIT_SCRIPT = ROOT / "particles" / "calibration" / "derive_d10_ew_exactness_audit.py"
 OUTPUT = ROOT / "particles" / "runs" / "calibration" / "d10_ew_exactness_audit.json"
 
@@ -37,6 +40,9 @@ def test_d10_exactness_audit_records_mass_ratio_identity_obstruction() -> None:
     subprocess.run([sys.executable, str(EXACT_CHART_SCRIPT)], check=True, cwd=ROOT)
     subprocess.run([sys.executable, str(REPAIR_BRANCH_SCRIPT)], check=True, cwd=ROOT)
     subprocess.run([sys.executable, str(FACTORIZATION_SCRIPT)], check=True, cwd=ROOT)
+    subprocess.run([sys.executable, str(MINIMAL_CONDITIONAL_SCRIPT)], check=True, cwd=ROOT)
+    subprocess.run([sys.executable, str(TARGET_EMITTER_SCRIPT)], check=True, cwd=ROOT)
+    subprocess.run([sys.executable, str(TARGET_FREE_REPAIR_SCRIPT)], check=True, cwd=ROOT)
     subprocess.run([sys.executable, str(READOUT_SCRIPT)], check=True, cwd=ROOT)
     subprocess.run([sys.executable, str(AUDIT_SCRIPT)], check=True, cwd=ROOT)
 
@@ -57,14 +63,16 @@ def test_d10_exactness_audit_records_mass_ratio_identity_obstruction() -> None:
     assert abs(current_pair["MW_pole"] - 80.38629169244275) < 1.0e-12
     assert abs(current_pair["MZ_pole"] - 91.18290444674243) < 1.0e-12
     assert payload["current_carrier_closure_summary"]["current_carrier_builder_local_frontier"] == "EWExactMassPairSelector_D10"
+    assert payload["target_free_source_only_repair_theorem"]["status"] == "closed"
     freeze_once = payload["freeze_once_coherent_repair_summary"]
     assert freeze_once["status"] == "closed_freeze_once_coherent_repair_law"
-    assert abs(freeze_once["public_mass_pair"]["MW_pole"] - 80.377) < 1.0e-12
-    assert abs(freeze_once["public_mass_pair"]["MZ_pole"] - 91.18797809193725) < 1.0e-12
-    assert payload["active_builder_smallest_missing_object"] == "EWTargetFreeRepairValueLaw_D10"
-    assert payload["broader_honest_repair_frontier"] == "EWTargetFreeRepairValueLaw_D10"
+    assert abs(freeze_once["frozen_surface_mass_pair"]["MW_pole"] - 80.377) < 1.0e-12
+    assert abs(freeze_once["frozen_surface_mass_pair"]["MZ_pole"] - 91.18797809193725) < 1.0e-12
+    assert payload["active_builder_smallest_missing_object"] is None
+    assert payload["broader_honest_repair_frontier"] is None
     assert payload["exact_pdg_wz_frontier"] == "EWTargetFreeRepairValueLaw_D10"
-    assert payload["smallest_constructive_missing_object"] == "EWTargetFreeRepairValueLaw_D10"
+    assert payload["smallest_constructive_missing_object"] is None
+    assert payload["smallest_exact_obstruction"] is None
     assert payload["d10_repair_branch_beyond_current_carrier"]["object_id"] == "D10RepairBranchBeyondCurrentCarrier"
     assert payload["d10_repair_branch_beyond_current_carrier"]["replaces_builder_local_frontier"] == "EWExactMassPairSelector_D10"
     assert payload["d10_repair_branch_beyond_current_carrier"]["stronger_residual_object"] == "EWSinglePostTransportTreeIdentity_D10"
@@ -72,4 +80,6 @@ def test_d10_exactness_audit_records_mass_ratio_identity_obstruction() -> None:
         payload["target_free_source_only_underdetermination"]["unconditional_theorem"]["name"]
         == "current_corpus_underdetermination_of_forward_d10_repair_law"
     )
+    assert payload["target_free_source_only_underdetermination"]["status"] == "superseded_by_target_free_repair_theorem"
     assert payload["target_free_source_only_candidate"]["object_id"] == "EWTargetEmitter_D10"
+    assert payload["target_free_source_only_candidate"]["status"] == "promoted"
