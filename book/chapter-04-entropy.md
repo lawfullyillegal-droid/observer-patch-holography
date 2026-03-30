@@ -312,7 +312,7 @@ The entropy model includes both mathematical results and testable predictions:
 - Genuine Second Law violation (not fluctuation)
 - Black hole entropy not proportional to area
 - Information loss in black hole evaporation (unitarity violation)
-- Ground states with volume-law entanglement in local theories
+- Systematic failure of the expected area-law regime in the local low-energy states relevant to the argument
 
 None of these contradicting observations has ever been made.
 
