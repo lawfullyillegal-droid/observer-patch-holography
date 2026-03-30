@@ -8,6 +8,8 @@ import pathlib
 import subprocess
 import sys
 
+import pytest
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SCRIPT = ROOT / "particles" / "leptons" / "derive_lepton_current_family_exact_readout.py"
@@ -19,4 +21,4 @@ def test_lepton_current_family_exact_readout_hits_reference_targets() -> None:
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
 
     assert payload["artifact"] == "oph_lepton_current_family_exact_readout"
-    assert payload["predicted_singular_values_abs"] == payload["reference_targets"]
+    assert payload["predicted_singular_values_abs"] == pytest.approx(payload["reference_targets"], rel=1.0e-12, abs=1.0e-15)

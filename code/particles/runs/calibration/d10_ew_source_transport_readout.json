@@ -114,7 +114,7 @@
     "source_label": "PDG 2025 API"
   },
   "freeze_once_target_free_residual_object": "EWTargetFreeRepairValueLaw_D10",
-  "generated_utc": "2026-03-29T13:33:53Z",
+  "generated_utc": "2026-03-30T00:40:21Z",
   "mass_pair_predictive_candidate": {
     "MW_pole": 80.37700001539531,
     "MZ_pole": 91.18797807794321,

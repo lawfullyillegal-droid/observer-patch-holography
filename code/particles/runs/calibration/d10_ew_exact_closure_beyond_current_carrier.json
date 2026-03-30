@@ -30,7 +30,7 @@
   },
   "exactness_surface_kind": "split_mass_neutral_readout",
   "extra_invariant_required": false,
-  "generated_utc": "2026-03-29T13:33:53Z",
+  "generated_utc": "2026-03-30T00:40:21Z",
   "minimal_carrier_enlargement_required": false,
   "minimality_certificate": {
     "one_derived_hypercharge_compensator_suffices": true,

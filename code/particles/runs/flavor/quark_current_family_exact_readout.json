@@ -10,12 +10,35 @@
     5.39845088512568
   ],
   "artifact": "oph_quark_current_family_exact_readout",
-  "g_d": 0.1224989720863351,
-  "g_u": 0.7796501962057191,
-  "generated_utc": "2026-03-26T08:37:24Z",
+  "candidate_scale_residuals_d": [
+    -2.9675905950811605e-05,
+    -0.0005903611077449217,
+    -0.026411556296229932
+  ],
+  "candidate_scale_residuals_u": [
+    2.468252560134526e-07,
+    0.00014546692171513165,
+    0.01969486769831974
+  ],
+  "exact_fit_residuals_d": [
+    1.734723475976807e-18,
+    -1.3877787807814457e-17,
+    -6.217248937900877e-15
+  ],
+  "exact_fit_residuals_u": [
+    -4.336808689942018e-19,
+    -4.440892098500626e-16,
+    -1.1368683772161603e-13
+  ],
+  "g_d": 0.12249897208633505,
+  "g_d_candidate_from_mean_split": 0.12172551081512113,
+  "g_u": 0.7796501962057188,
+  "g_u_candidate_from_mean_split": 0.7797392875757557,
+  "generated_utc": "2026-03-30T00:40:24Z",
   "notes": [
     "This current-family exact witness uses the already-fixed simple three-point ordered spectrum and promotes only the sector-even quadratic readout coefficients.",
-    "It does not reopen a richer ray family or add a third scalar beyond the compact sector-mean split."
+    "It does not reopen a richer ray family or add a third scalar beyond the compact sector-mean split.",
+    "The exact witness uses the geometric means implied by the current-family reference targets; the mean-split candidate scales are retained separately for audit and residual reporting only."
   ],
   "ordered_coordinate_x": [
     -1.0,
@@ -23,14 +46,14 @@
     1.0
   ],
   "predicted_singular_values_d": [
-    0.004700000000000004,
-    0.09350000000000003,
-    4.182999999999995
+    0.004700000000000002,
+    0.09349999999999999,
+    4.182999999999994
   ],
   "predicted_singular_values_u": [
-    0.00216,
-    1.273,
-    172.35235532883112
+    0.0021599999999999996,
+    1.2729999999999995,
+    172.3523553288311
   ],
   "proof_status": "current_family_exact_witness",
   "quadratic_basis": {

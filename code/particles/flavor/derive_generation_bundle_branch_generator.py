@@ -203,6 +203,9 @@ def build_artifact(payload: dict[str, Any]) -> dict[str, Any]:
             "actual_proxy_centered_residual_kind": "compression_descendant_commutator",
             "first_order_residual_after_central_split": "vanishes_if_commutator_zero",
             "descended_commutator_control_mode": "exact_zero_or_uniform_quadratic",
+            "exact_vanishing_proved": False,
+            "uniform_quadratic_smallness_proved": False,
+            "current_strength_statement": "neither exact vanishing nor uniform quadratic smallness is proved on the live corpus",
             "desired_outcome": "commutator vanishes exactly or is uniformly quadratic-small on realized refinement arrows",
             "quadratic_residual_bound_candidate": "||[C_actual_centered,C_proxy_centered]|| <= O(defect^2)",
             "quadratic_factorization_claim": "all surviving centered P->P corrections factor through P->Q->P",
@@ -218,11 +221,14 @@ def build_artifact(payload: dict[str, Any]) -> dict[str, Any]:
             "exact_missing_ingredient": "OPH proof that the actual compressed branch generator satisfies the same defect-vs-gap estimate as the current proxy",
             "exact_transfer_bridge": "central split plus compression-descendant commutator control",
             "smaller_exact_missing_clause": "compression_descendant_commutator_vanishes_or_is_uniformly_quadratic_small_after_central_split",
+            "exact_vanishing_proved": False,
+            "uniform_quadratic_smallness_proved": False,
+            "current_strength_statement": "neither exact vanishing nor uniform quadratic smallness is proved on the live corpus",
         },
         "latest_refinement_level": level,
         "metadata": {
             "transport_artifact": payload.get("artifact"),
-            "note": "This artifact promotes the flavor origin from a vague missing transport functor to a concrete centered compressed branch-generator candidate on the realized three-generation charged bundle. The standard Kato/Riesz persistence shell is now explicit on the current proxy; the remaining OPH-only burden is proving that the actual compressed branch generator satisfies the same defect-vs-gap estimate, with the current constructive bridge being a central split plus compression-descendant commutator control where the first surviving residual vanishes when the descended commutator vanishes and otherwise is treated as uniformly quadratic through P->Q->P factorization. On the charged side, this same centered operator is only the latent candidate C_hat_e^{cand}; theorem-grade declaration remains blocked by the upstream promotion theorem.",
+            "note": "This artifact promotes the flavor origin from a vague missing transport functor to a concrete centered compressed branch-generator candidate on the realized three-generation charged bundle. The standard Kato/Riesz persistence shell is now explicit on the current proxy; the remaining OPH-only burden is proving that the actual compressed branch generator satisfies the same defect-vs-gap estimate, with the current constructive bridge being a central split plus compression-descendant commutator control where the first surviving residual vanishes when the descended commutator vanishes and otherwise is treated as uniformly quadratic through P->Q->P factorization. On the live corpus, neither exact vanishing nor uniform quadratic smallness of the descended commutator is proved yet. On the charged side, this same centered operator is only the latent candidate C_hat_e^{cand}; theorem-grade declaration remains blocked by the upstream promotion theorem.",
         },
     }
 

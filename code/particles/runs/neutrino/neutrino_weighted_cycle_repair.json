@@ -2,10 +2,13 @@
   "absolute_normalization_status": "open_one_positive_scale",
   "artifact": "oph_neutrino_weighted_cycle_repair",
   "compare_only_atmospheric_anchor": {
+    "adapter_formula": "lambda_nu_cmp = sqrt(Delta m32^2_anchor / Delta_hat_32)",
+    "adapter_status": "hard_separated_compare_only_adapter",
     "delta_m21_sq_eV2": 7.688870300464483e-05,
     "delta_m31_sq_eV2": 0.0025098887030046446,
     "delta_m32_sq_eV2": 0.002433,
     "delta_m32_sq_input_eV2": 0.002433,
+    "lambda_nu_cmp": 1.784113126943906,
     "m0": 1.784113126943906,
     "masses_eV": [
       0.0173038239577873,
@@ -39,15 +42,16 @@
     "psi23": 0.009151812121696877,
     "psi31": 0.003999026148685999
   },
-  "final_verdict": "current_branch_impossible_repair_required",
+  "final_verdict": "scale_free_physical_branch_closed_absolute_normalization_open",
   "gamma": 0.30236566025890826,
   "gamma_times_eps": 0.03162277660168382,
-  "generated_utc": "2026-03-29T11:42:09Z",
+  "generated_utc": "2026-03-30T00:40:08Z",
   "holonomy_orientation": "021",
   "neutrino_branch_status": "repaired_shared_basis_weighted_cycle_lift",
   "notes": [
     "The repaired weighted-cycle branch closes PMNS angles and the neutrino splitting hierarchy from live OPH artifacts.",
-    "Absolute neutrino masses and absolute delta m^2 values still require one overall positive normalization; the atmospheric-anchored numbers are compare-only.",
+    "The theorem-grade repaired branch is scale-free: it emits PMNS observables, J, the hierarchy ratio, and one symbolic positive absolute family parameterized by lambda_nu > 0.",
+    "Absolute neutrino masses and absolute delta m^2 values still require one overall positive normalization; the atmospheric-anchored numbers are hard-separated compare-only outputs.",
     "This artifact supersedes the old isotropic continuation branch as the strongest honest neutrino branch on disk."
   ],
   "old_isotropic_no_go": {
@@ -164,6 +168,7 @@
     "tau"
   ],
   "remaining_object": "one_positive_neutrino_mass_normalization_scalar",
+  "remaining_object_contract": "emit_one_internal_positive_normalization_scalar_lambda_nu_without_external_oscillation_anchor",
   "repaired_cycle_matrix_imag": [
     [
       0.0,
@@ -198,6 +203,24 @@
       -0.010108950276794223
     ]
   ],
+  "scale_free_dm2_normal_form": {
+    "dm2": {
+      "21": 2.415559601940881e-05,
+      "31": 0.0007885145046574088,
+      "32": 0.000764358908638
+    },
+    "notation": "Delta_hat",
+    "ratio_21_over_32": 0.031602426224679334
+  },
+  "scale_free_mass_normal_form": {
+    "masses": [
+      0.009698837868777897,
+      0.010873042445619763,
+      0.029708281011567278
+    ],
+    "normalization_convention": "internal_weighted_cycle_branch_normal_form",
+    "notation": "m_hat"
+  },
   "selector_phases_absolute": {
     "psi12": 0.31893255645006824,
     "psi23": 0.4734879499188133,
@@ -208,6 +231,19 @@
     "overlap_edge_transport_cocycle": "/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/flavor/overlap_edge_transport_cocycle.json",
     "same_label_scalar_certificate": "/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/neutrino/same_label_scalar_certificate.json",
     "selector_phase_source": "/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/neutrino/intrinsic_neutrino_mass_eigenstate_bundle_from_scalar_certificate.json"
+  },
+  "symbolic_absolute_family": {
+    "absolute_dm2": {
+      "21": "Delta m21^2 = lambda_nu^2 * 2.415559601940881e-05",
+      "31": "Delta m31^2 = lambda_nu^2 * 7.885145046574088e-04",
+      "32": "Delta m32^2 = lambda_nu^2 * 7.64358908638e-04"
+    },
+    "absolute_masses": [
+      "m1 = lambda_nu * 0.009698837868777897",
+      "m2 = lambda_nu * 0.010873042445619763",
+      "m3 = lambda_nu * 0.029708281011567278"
+    ],
+    "family_parameter": "lambda_nu > 0"
   },
   "theorem_status": "dimensionless_physical_branch_closed_absolute_normalization_open",
   "weight_exponent": 1.406950210550122

@@ -6,14 +6,17 @@
     "bridge_strategy": "control the compression-descendant commutator after the central split",
     "candidate_id": "centered_branch_generator_commutator_transfer",
     "central_split_rule": "K_actual = K_centered + c*I with the central term removed before comparison",
+    "current_strength_statement": "neither exact vanishing nor uniform quadratic smallness is proved on the live corpus",
     "descended_commutator_control_mode": "exact_zero_or_uniform_quadratic",
     "desired_outcome": "commutator vanishes exactly or is uniformly quadratic-small on realized refinement arrows",
+    "exact_vanishing_proved": false,
     "first_order_residual_after_central_split": "vanishes_if_commutator_zero",
     "quadratic_factorization_claim": "all surviving centered P->P corrections factor through P->Q->P",
     "quadratic_residual_bound_candidate": "||[C_actual_centered,C_proxy_centered]|| <= O(defect^2)",
     "smaller_exact_missing_clause": "compression_descendant_commutator_vanishes_or_is_uniformly_quadratic_small_after_central_split",
     "status": "candidate_only",
-    "transfer_if_closed_effect": "proxy_defect_vs_gap_estimate_lifts_to_actual_generator"
+    "transfer_if_closed_effect": "proxy_defect_vs_gap_estimate_lifts_to_actual_generator",
+    "uniform_quadratic_smallness_proved": false
   },
   "artifact": "oph_intrinsic_generation_bundle_branch_generator",
   "boundary_action_kind": "compact_unitary_groupoid_or_central_extension",
@@ -278,11 +281,11 @@
       }
     }
   ],
-  "generated_utc": "2026-03-29T12:28:06Z",
+  "generated_utc": "2026-03-30T00:21:38Z",
   "generation_bundle_projector_kind": "realized_ng_equals_3_bundle",
   "latest_refinement_level": 1,
   "metadata": {
-    "note": "This artifact promotes the flavor origin from a vague missing transport functor to a concrete centered compressed branch-generator candidate on the realized three-generation charged bundle. The standard Kato/Riesz persistence shell is now explicit on the current proxy; the remaining OPH-only burden is proving that the actual compressed branch generator satisfies the same defect-vs-gap estimate, with the current constructive bridge being a central split plus compression-descendant commutator control where the first surviving residual vanishes when the descended commutator vanishes and otherwise is treated as uniformly quadratic through P->Q->P factorization. On the charged side, this same centered operator is only the latent candidate C_hat_e^{cand}; theorem-grade declaration remains blocked by the upstream promotion theorem.",
+    "note": "This artifact promotes the flavor origin from a vague missing transport functor to a concrete centered compressed branch-generator candidate on the realized three-generation charged bundle. The standard Kato/Riesz persistence shell is now explicit on the current proxy; the remaining OPH-only burden is proving that the actual compressed branch generator satisfies the same defect-vs-gap estimate, with the current constructive bridge being a central split plus compression-descendant commutator control where the first surviving residual vanishes when the descended commutator vanishes and otherwise is treated as uniformly quadratic through P->Q->P factorization. On the live corpus, neither exact vanishing nor uniform quadratic smallness of the descended commutator is proved yet. On the charged side, this same centered operator is only the latent candidate C_hat_e^{cand}; theorem-grade declaration remains blocked by the upstream promotion theorem.",
     "transport_artifact": "oph_family_transport_kernel"
   },
   "noncentrality_certificate": {
@@ -319,10 +322,13 @@
     ]
   },
   "promotion_gate": {
+    "current_strength_statement": "neither exact vanishing nor uniform quadratic smallness is proved on the live corpus",
     "exact_missing_ingredient": "OPH proof that the actual compressed branch generator satisfies the same defect-vs-gap estimate as the current proxy",
     "exact_transfer_bridge": "central split plus compression-descendant commutator control",
+    "exact_vanishing_proved": false,
     "proof_status": "candidate_only",
-    "smaller_exact_missing_clause": "compression_descendant_commutator_vanishes_or_is_uniformly_quadratic_small_after_central_split"
+    "smaller_exact_missing_clause": "compression_descendant_commutator_vanishes_or_is_uniformly_quadratic_small_after_central_split",
+    "uniform_quadratic_smallness_proved": false
   },
   "proof_status": "candidate_only",
   "readout_status": "line_lift_is_downstream_serialization",

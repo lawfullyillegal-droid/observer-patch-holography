@@ -183,7 +183,7 @@
       "Pi_WW"
     ]
   },
-  "generated_utc": "2026-03-26T11:57:34Z",
+  "generated_utc": "2026-03-30T00:40:22Z",
   "kernel_id": "EWTransportKernel_D10",
   "neutral_transport": {
     "basis": [
@@ -204,12 +204,12 @@
     "The next live mover is the populated shared scalar package Sigma_EW_D10 with one zero-normalized readout family beneath EWTransportKernel_D10 rather than another per-observable family split.",
     "The running-family base quintet is now exported explicitly so a future populated Sigma_EW_D10 package can read directly from one fixed running source rather than a partially implicit benchmark.",
     "The smallest constructive object beneath the public package boundary is now the zero-normalized affine relative emitter EWSharedScalarEmitter_D10.",
-    "At the current honest boundary, the actually emitted scalar tuple is the zero benchmark Sigma_EW_D10 = (0,0,0,0), which keeps the coherent emitted quintet equal to the running-family quintet until the first non-zero populated package is justified.",
+    "At the current boundary, the emitted scalar tuple is the zero benchmark Sigma_EW_D10 = (0,0,0,0), which keeps the coherent emitted quintet equal to the running-family quintet until the first non-zero populated package is justified.",
     "A frozen non-zero calibration-readout candidate is now recorded on the same emitter formulas, but it is not promoted to OPH-only status because the local transport-entry preimage on (Pi_AA, Pi_AZ, Pi_ZZ, Pi_WW) is still unpopulated.",
     "Any non-zero future scalar package must still be emitted on the same fixed running-family base quintet and the same transport-entry support (Pi_AA, Pi_AZ, Pi_ZZ, Pi_WW).",
     "The four-entry A/Z/W shell is no longer the smallest exact source-side object; beneath it the reduced missing source is the D10 gauge source transport pair Tau_EW_D10 = (tau_Y, tau_2).",
     "The strict smallest live missing object is therefore the source-side pair EWGaugeSourceTransportPair_D10 rather than the full Pi-shell itself.",
-    "The current source-pair artifact now records the simplest honest augmentation beyond the tested anti-diagonal seed: the two-scalar family (sigma_EW, eta_EW) on that same pair together with its first nonzero OPH seed trial.",
+    "The current source-pair artifact now records the simplest augmentation beyond the tested anti-diagonal seed: the two-scalar family (sigma_EW, eta_EW) on that same pair together with its first nonzero OPH seed trial.",
     "The smaller exact missing clause is EWTransportReadoutCoherence_D10: either W, Z, alpha_em, and sin^2(theta_W) all stay on the running family or all move together to one common pole/effective family with one shared kernel and scheme.",
     "Inside that criterion, the strictly smaller exact subclause is EWScalarProvenanceEquality_D10: delta_alpha, delta_kappa, delta_rho, and delta_rW must expose one common family source, one frozen scheme, and one origin kernel.",
     "A singleton Z-only surrogate is formally non-promotable under this artifact."
@@ -351,7 +351,7 @@
       "Pi_ZZ": 0.001061110070225287
     }
   },
-  "source_pair_population_status": "candidate_only",
+  "source_pair_population_status": "closed_current_carrier",
   "source_pair_special_slices": {
     "common_scale_slice": {
       "constraint": "eta_EW = 0.0"

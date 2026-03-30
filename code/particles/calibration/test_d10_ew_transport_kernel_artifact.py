@@ -27,7 +27,7 @@ def test_d10_ew_transport_kernel_boundary() -> None:
     assert payload["promotion_gate"]["z_only_surrogate_forbidden"] is True
     assert payload["family_purity_gate"]["no_run_pole_mix"] is True
     assert payload["family_purity_gate"]["common_readout_certified"] is False
-    assert payload["source_pair_population_status"] == "candidate_only"
+    assert payload["source_pair_population_status"] == "closed_current_carrier"
     assert payload["source_pair_two_scalar_family"]["tau_Y_formula"] == "sigma_EW - eta_EW"
     assert payload["source_pair_first_nonzero_trial"]["tau_Y"] is not None
     assert payload["readout_assignments"]["MW_pole"]["origin_kernel_id"] == "EWTransportKernel_D10"

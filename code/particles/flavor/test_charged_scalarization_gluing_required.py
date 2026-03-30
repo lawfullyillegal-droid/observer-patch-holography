@@ -14,4 +14,4 @@ def test_shared_charged_budget_stays_open_without_gluing_theorem() -> None:
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
     assert payload["proof_status"] == "candidate_only"
     assert payload["functional_equalizer_closed"] is False
-    assert payload["minimal_missing_bridge_object"] == "charged_dirac_scalarization_gluing_certificate"
+    assert payload["minimal_missing_bridge_object"] == "charged_dirac_common_refinement_gluing_certificate"

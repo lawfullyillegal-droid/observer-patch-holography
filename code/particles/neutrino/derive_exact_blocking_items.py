@@ -233,6 +233,19 @@ def build_exact_blockers(
                         "so no unique absolute scale is emitted without one further OPH theorem fixing lambda_nu."
                     ),
                     "absolute_family_parameter": "lambda_nu > 0",
+                    "scale_free_mass_normal_form": {
+                        "notation": "m_hat",
+                        "masses": [
+                            0.009698837868777897,
+                            0.010873042445619763,
+                            0.029708281011567278,
+                        ],
+                    },
+                    "scale_free_dm2_normal_form_eV2": {
+                        "21": 2.415559601940881e-05,
+                        "31": 7.885145046574088e-04,
+                        "32": 7.64358908638e-04,
+                    },
                     "dimensionless_mass_family": [
                         "m1 = 0.009698837868777897 * lambda_nu",
                         "m2 = 0.010873042445619763 * lambda_nu",
@@ -247,6 +260,22 @@ def build_exact_blockers(
                         "name": "atmospheric_delta_m32_sq",
                         "value_eV2": 2.433e-3,
                         "reason": "compare_only_external_oscillation_anchor",
+                    },
+                    "hard_separated_compare_only_adapter": {
+                        "allowed_formula": "lambda_nu_cmp = sqrt(Delta m32^2_anchor / Delta_hat_32)",
+                        "forbidden_feedback": "compare_only_anchor_must_not_feed_back_into_theorem_state_or_lambda_nu_emission",
+                    },
+                    "symbolic_absolute_outputs": {
+                        "masses": [
+                            "m1 = lambda_nu * mhat_1",
+                            "m2 = lambda_nu * mhat_2",
+                            "m3 = lambda_nu * mhat_3",
+                        ],
+                        "splittings": {
+                            "21": "Delta m21^2 = lambda_nu^2 * Delta_hat_21",
+                            "31": "Delta m31^2 = lambda_nu^2 * Delta_hat_31",
+                            "32": "Delta m32^2 = lambda_nu^2 * Delta_hat_32",
+                        },
                     },
                     "minimal_missing_object": (
                         "one_OPH_theorem_fixing_lambda_nu_from_an_internal_dimensionful_invariant_without_oscillation_data"

@@ -71,6 +71,7 @@ def build_artifact(shape_payload: dict, references: dict) -> dict:
         "Y_e_shape_exact": y_shape,
         "predicted_singular_values_abs": predicted,
         "reference_targets": target,
+        "exact_fit_residuals_abs": [predicted[idx] - target[idx] for idx in range(3)],
         "smallest_constructive_missing_object": "charged_quadratic_shape_readout_theorem",
         "notes": [
             "Current-family exact witness on the same ordered charged eigenvalue triple.",

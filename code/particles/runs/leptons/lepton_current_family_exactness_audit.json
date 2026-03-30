@@ -168,11 +168,13 @@
   },
   "charged_sector_response_operator_candidate": {
     "artifact": "oph_intrinsic_generation_bundle_branch_generator",
+    "current_strength_statement": "neither exact vanishing nor uniform quadratic smallness is proved on the live corpus",
     "declaration_missing_theorem": "oph_generation_bundle_branch_generator_splitting",
     "declaration_status": "candidate_only",
     "declared_operator_name": null,
     "eta_current": 2.220446049250313e-16,
     "eta_formula_on_current_family": "x2 * sigma(C_hat_e^{cand}) - 3 * lambda_mid(C_hat_e^{cand})",
+    "exact_vanishing_proved": false,
     "latent_in_flavor_chain": true,
     "matrix": {
       "imag": [
@@ -225,7 +227,8 @@
     "sigma_current": 1.2535534645451878,
     "sigma_formula": "lambda_max(C_hat_e^{cand}) - lambda_min(C_hat_e^{cand})",
     "smallest_missing_clause": "compression_descendant_commutator_vanishes_or_is_uniformly_quadratic_small_after_central_split",
-    "status": "candidate_only"
+    "status": "candidate_only",
+    "uniform_quadratic_smallness_proved": false
   },
   "common_shift_audit": {
     "best_common_scale": 0.04958899556862701,
@@ -271,12 +274,15 @@
   "exact_waiting_set": {
     "mandatory_package_a": {
       "blocked_candidate_object": "C_hat_e^{cand}",
+      "current_strength_statement": "neither exact vanishing nor uniform quadratic smallness is proved on the live corpus",
+      "exact_vanishing_proved": false,
       "id": "charged_sector_response_pushforward_to_C_hat_e",
       "immediate_downstream_effect": "If the upstream splitting theorem closes and C_hat_e^{cand} is promoted to theorem-grade C_hat_e, then eta and sigma become charged spectral invariants rather than independent primitive theorem objects.",
       "linked_issue": "papers.compact.e.29-derive-the-yukawa-excitation-dictionary",
       "smallest_missing_clause": "compression_descendant_commutator_vanishes_or_is_uniformly_quadratic_small_after_central_split",
       "status": "blocked_by_upstream_promotion_theorem",
       "summary": "Promote the latent charged operator candidate C_hat_e^{cand} to theorem-grade declaration by closing the quotient-natural charged sector-response functor on the shared OPH flavor dictionary.",
+      "uniform_quadratic_smallness_proved": false,
       "upstream_missing_theorem": "oph_generation_bundle_branch_generator_splitting"
     },
     "mandatory_package_b": {
@@ -293,7 +299,7 @@
       "summary": "Retain a charged holonomy bridge only if the older delta = 2/9 D12 benchmark is kept as a theorem-grade bridge instead of a diagnostic continuation."
     }
   },
-  "generated_utc": "2026-03-29T13:33:46Z",
+  "generated_utc": "2026-03-30T00:40:27Z",
   "notes": [
     "The current charged-lepton builder now exposes the two-scalar ordered-gap family in formula form plus one common shift.",
     "A common shift rescales all three masses together and cannot fix a large hierarchy mismatch.",
@@ -304,6 +310,7 @@
     "The stronger same-carrier source-scalar pair readback is also now explicit on disk, collecting those eta and sigma invariants into one ordered primitive beneath the full completion shell.",
     "At theorem level, eta and sigma are no longer the deepest honest waiting set. The live builder still exposes eta then sigma as the first same-carrier residuals, but the paper-facing exact burden is first to promote the latent candidate C_hat_e^{cand} by closing the branch-generator splitting theorem, and then to derive one theorem-grade affine-covariant absolute anchor A_ch for the charged common-shift quotient.",
     "The charged sector-response operator remains undeclared: only the latent candidate C_hat_e^{cand} is on disk, and its promotion is blocked by the upstream theorem oph_generation_bundle_branch_generator_splitting together with the smaller clause compression_descendant_commutator_vanishes_or_is_uniformly_quadratic_small_after_central_split.",
+    "On the live corpus, the commutator-transfer bridge proves neither exact vanishing nor uniform quadratic smallness after the central split; only the desired conditional bridge is recorded.",
     "The present charged theorem determines only the centered charged log class modulo a common additive shift, so no theorem-grade g_e, Delta_e_abs, or charged absolute equalizer exists on the live theorem lane.",
     "The eta-only extension acts at fixed current span, so it preserves the endpoint ratio tau/e and can only move the middle state against that fixed endpoint pair.",
     "A rigid eta candidate can be written from the current ordered-gap ratio alone, but it lands far from the charged targets; the remaining charged burden then shifts to the still-open total source span.",

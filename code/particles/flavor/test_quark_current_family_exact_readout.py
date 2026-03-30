@@ -8,6 +8,8 @@ import pathlib
 import subprocess
 import sys
 
+import pytest
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SPREAD_SCRIPT = ROOT / "particles" / "flavor" / "derive_quark_spread_map.py"
@@ -24,5 +26,5 @@ def test_quark_current_family_exact_readout_hits_reference_targets() -> None:
 
     assert payload["artifact"] == "oph_quark_current_family_exact_readout"
     assert payload["proof_status"] == "current_family_exact_witness"
-    assert payload["predicted_singular_values_u"] == payload["reference_targets_u"]
-    assert payload["predicted_singular_values_d"] == payload["reference_targets_d"]
+    assert payload["predicted_singular_values_u"] == pytest.approx(payload["reference_targets_u"], rel=1.0e-12, abs=1.0e-15)
+    assert payload["predicted_singular_values_d"] == pytest.approx(payload["reference_targets_d"], rel=1.0e-12, abs=1.0e-15)

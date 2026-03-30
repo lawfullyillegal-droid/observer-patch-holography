@@ -185,6 +185,15 @@ def main() -> int:
                 ],
             },
         },
+        "disqualified_existing_local_scan": {
+            "status": "not_sigma_ud_orbit",
+            "grid_kind": "np.linspace(-0.4, 0.4, 4001)",
+            "scan_coordinate": "Delta_ud_overlap",
+            "score": "RMS log error against reference_targets",
+            "same_sheet_only": True,
+            "uses_reference_targets": True,
+            "why_disqualified": "The only finite scan currently exposed in local code is a same-sheet target-mass comparison scan over Delta_ud_overlap. It neither enumerates Sigma_ud nor emits a relative-sheet sigma->CKM evaluator, so it cannot honestly serve as branch repair.",
+        },
         "relative_sheet_scan": {
             "status": "not_available_from_current_local_solver",
             "reason": (
@@ -197,6 +206,7 @@ def main() -> int:
             "This artifact sharpens the quark CKM boundary: the current D12 sheet is transport-closed but wrong-branch.",
             "The exact next object is discrete rather than continuous: one relative up/down sheet selector sigma_ud.",
             "The current surface is formally insufficient to identify sigma_ud; the minimal extension is a finite sigma_ud orbit with per-candidate CKM tuples.",
+            "The only finite local scan on disk is a same-sheet Delta_ud_overlap scan against reference targets; it is comparison-only and cannot be repurposed as a Sigma_ud scan.",
             "Mass-side scale fixing remains a separate issue after the physical branch is selected; no scalar t1 can repair CKM on the present sheet.",
         ],
     }

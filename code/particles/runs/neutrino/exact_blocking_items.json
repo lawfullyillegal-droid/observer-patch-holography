@@ -78,7 +78,7 @@
     }
   ],
   "fully_completed": false,
-  "generated_utc": "2026-03-29T13:11:35Z",
+  "generated_utc": "2026-03-30T00:40:08Z",
   "live_continuation_branch_status": {
     "absolute_scale_no_go": {
       "absolute_family_parameter": "lambda_nu > 0",
@@ -97,17 +97,49 @@
         "reason": "compare_only_external_oscillation_anchor",
         "value_eV2": 0.002433
       },
+      "hard_separated_compare_only_adapter": {
+        "allowed_formula": "lambda_nu_cmp = sqrt(Delta m32^2_anchor / Delta_hat_32)",
+        "forbidden_feedback": "compare_only_anchor_must_not_feed_back_into_theorem_state_or_lambda_nu_emission"
+      },
       "minimal_missing_object": "one_OPH_theorem_fixing_lambda_nu_from_an_internal_dimensionful_invariant_without_oscillation_data",
       "proof_obstruction": "positive_rescaling_nonidentifiability",
+      "scale_free_dm2_normal_form_eV2": {
+        "21": 2.415559601940881e-05,
+        "31": 0.0007885145046574088,
+        "32": 0.000764358908638
+      },
+      "scale_free_mass_normal_form": {
+        "masses": [
+          0.009698837868777897,
+          0.010873042445619763,
+          0.029708281011567278
+        ],
+        "notation": "m_hat"
+      },
       "statement": "The repaired weighted-cycle branch fixes only the dimensionless hierarchy and PMNS pattern. For every lambda_nu > 0, the family m_i(lambda_nu) = lambda_nu * mhat_i and Delta m^2_ij(lambda_nu) = lambda_nu^2 * Delta_hat_ij has the same dimensionless observables, so no unique absolute scale is emitted without one further OPH theorem fixing lambda_nu.",
       "status": "closed",
+      "symbolic_absolute_outputs": {
+        "masses": [
+          "m1 = lambda_nu * mhat_1",
+          "m2 = lambda_nu * mhat_2",
+          "m3 = lambda_nu * mhat_3"
+        ],
+        "splittings": {
+          "21": "Delta m21^2 = lambda_nu^2 * Delta_hat_21",
+          "31": "Delta m31^2 = lambda_nu^2 * Delta_hat_31",
+          "32": "Delta m32^2 = lambda_nu^2 * Delta_hat_32"
+        }
+      },
       "theorem": "neutrino_weighted_cycle_absolute_scale_no_go"
     },
     "compare_only_atmospheric_anchor": {
+      "adapter_formula": "lambda_nu_cmp = sqrt(Delta m32^2_anchor / Delta_hat_32)",
+      "adapter_status": "hard_separated_compare_only_adapter",
       "delta_m21_sq_eV2": 7.688870300464483e-05,
       "delta_m31_sq_eV2": 0.0025098887030046446,
       "delta_m32_sq_eV2": 0.002433,
       "delta_m32_sq_input_eV2": 0.002433,
+      "lambda_nu_cmp": 1.784113126943906,
       "m0": 1.784113126943906,
       "masses_eV": [
         0.0173038239577873,

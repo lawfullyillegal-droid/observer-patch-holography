@@ -229,7 +229,7 @@ LANES: List[Dict[str, Any]] = [
             "The live scalar order beneath the public charged rows is eta first and sigma second on the same carrier. "
             "At theorem level, though, the deeper exact waiting set starts with the latent candidate "
             "`C_hat_e^{cand}`. Promoting it is blocked by the branch-generator splitting theorem and its "
-            "commutator clause. On the absolute side the equalizer route is no-go under common-shift "
+            "commutator clause, and the local corpus proves neither exact vanishing nor uniform quadratic smallness of that descended commutator yet. On the absolute side the equalizer route is no-go under common-shift "
             "symmetry, so the future slot is one affine-covariant absolute anchor `A_ch`."
         ),
         "tasks_text": "Open task: close `oph_generation_bundle_branch_generator_splitting`, in particular `compression_descendant_commutator_vanishes_or_is_uniformly_quadratic_small_after_central_split`, so the latent candidate `C_hat_e^{cand}` can be promoted; then derive one affine-covariant absolute charged anchor `A_ch` with `A_ch(logm + c*(1,1,1)) = A_ch(logm) + c`. The common-refinement equalizer route is currently a no-go.",
@@ -261,7 +261,7 @@ LANES: List[Dict[str, Any]] = [
             "rephasing cannot change the CKM invariants, and the emitted angles are too small. So the exact next "
             "quark object is not a continuous mass scalar but one discrete relative sheet selector "
             "`quark_relative_sheet_selector`; the current local surface is formally insufficient because it exposes only one "
-            "reference-sheet representative and no finite `sigma_ud_orbit`. Only after branch selection does a selected-branch mass-side scale law "
+            "reference-sheet representative and no finite `sigma_ud_orbit`. The only finite local scan on disk is a same-sheet 4001-point `Delta_ud_overlap` scan against `reference_targets`, and that route is comparison-only rather than a valid `Sigma_ud` orbit. Only after branch selection does a selected-branch mass-side scale law "
             "become relevant."
         ),
         "tasks_text": "Open task: emit a finite `sigma_ud_orbit` and then one discrete `quark_relative_sheet_selector` that leaves the wrong-branch D12 no-go class. After the physical branch is selected, derive a selected-branch intrinsic mass-side scale law independent of target masses and independent of CKM/CP. CKM/CP transport closure on the current D12 sheet is already explicit.",

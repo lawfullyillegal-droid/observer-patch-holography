@@ -41,8 +41,11 @@ def test_repaired_weighted_cycle_branch_matches_expected_live_numbers() -> None:
         )
         payload = json.loads(out.read_text(encoding="utf-8"))
         assert payload["artifact"] == "oph_neutrino_weighted_cycle_repair"
+        assert payload["final_verdict"] == "scale_free_physical_branch_closed_absolute_normalization_open"
         assert payload["theorem_status"] == "dimensionless_physical_branch_closed_absolute_normalization_open"
         assert payload["physical_window_status"] == "pmns_and_hierarchy_repaired"
+        assert payload["symbolic_absolute_family"]["family_parameter"] == "lambda_nu > 0"
+        assert payload["compare_only_atmospheric_anchor"]["adapter_status"] == "hard_separated_compare_only_adapter"
         assert abs(payload["weight_exponent"] - 1.406950210550122) < 1.0e-15
         assert abs(payload["diag_loading"] - 1.1045845502912137) < 1.0e-15
         assert abs(payload["pmns_observables"]["theta12_deg"] - 33.97561492020461) < 1.0e-10

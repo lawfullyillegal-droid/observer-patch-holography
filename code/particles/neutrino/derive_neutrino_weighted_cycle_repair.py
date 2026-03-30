@@ -19,7 +19,9 @@ intrinsic eta branch.
 
 Output: a repaired neutrino branch artifact that is physically good at the
 dimensionless oscillation-pattern level, while keeping the overall positive
-mass normalization explicit as still open unless supplied externally.
+mass normalization explicit as still open unless supplied externally. The
+canonical theorem surface is scale-free; any absolute eV-scale readout is
+carried only by a hard-separated compare-only adapter.
 """
 
 from __future__ import annotations
@@ -197,7 +199,7 @@ def main() -> int:
     payload = {
         "artifact": "oph_neutrino_weighted_cycle_repair",
         "generated_utc": _timestamp(),
-        "final_verdict": "current_branch_impossible_repair_required",
+        "final_verdict": "scale_free_physical_branch_closed_absolute_normalization_open",
         "neutrino_branch_status": "repaired_shared_basis_weighted_cycle_lift",
         "theorem_status": "dimensionless_physical_branch_closed_absolute_normalization_open",
         "source_artifacts": {
@@ -226,10 +228,24 @@ def main() -> int:
         "repaired_cycle_matrix_real": np.real(cycle_matrix).tolist(),
         "repaired_cycle_matrix_imag": np.imag(cycle_matrix).tolist(),
         "dimensionless_masses": [float(x) for x in masses_dimless],
+        "scale_free_mass_normal_form": {
+            "notation": "m_hat",
+            "normalization_convention": "internal_weighted_cycle_branch_normal_form",
+            "masses": [float(x) for x in masses_dimless],
+        },
         "dimensionless_dm2": {
             "21": dm21,
             "31": dm31,
             "32": dm32,
+        },
+        "scale_free_dm2_normal_form": {
+            "notation": "Delta_hat",
+            "dm2": {
+                "21": dm21,
+                "31": dm31,
+                "32": dm32,
+            },
+            "ratio_21_over_32": ratio_21_32,
         },
         "dimensionless_ratio_dm21_over_dm32": ratio_21_32,
         "gamma_times_eps": gamma * eps,
@@ -251,10 +267,26 @@ def main() -> int:
             "within_window": pdg_window,
         },
         "absolute_normalization_status": "open_one_positive_scale",
+        "symbolic_absolute_family": {
+            "family_parameter": "lambda_nu > 0",
+            "absolute_masses": [
+                "m1 = lambda_nu * 0.009698837868777897",
+                "m2 = lambda_nu * 0.010873042445619763",
+                "m3 = lambda_nu * 0.029708281011567278",
+            ],
+            "absolute_dm2": {
+                "21": "Delta m21^2 = lambda_nu^2 * 2.415559601940881e-05",
+                "31": "Delta m31^2 = lambda_nu^2 * 7.885145046574088e-04",
+                "32": "Delta m32^2 = lambda_nu^2 * 7.64358908638e-04",
+            },
+        },
         "compare_only_atmospheric_anchor": {
             "status": "compare_only",
+            "adapter_status": "hard_separated_compare_only_adapter",
             "normalization_kind": "atmospheric_anchor",
             "delta_m32_sq_input_eV2": anchor_dm32,
+            "lambda_nu_cmp": scale_m0,
+            "adapter_formula": "lambda_nu_cmp = sqrt(Delta m32^2_anchor / Delta_hat_32)",
             "m0": scale_m0,
             "masses_eV": masses_eV,
             "sum_masses_eV": float(sum(masses_eV)),
@@ -263,9 +295,13 @@ def main() -> int:
             "delta_m32_sq_eV2": anchored_dm32,
         },
         "remaining_object": "one_positive_neutrino_mass_normalization_scalar",
+        "remaining_object_contract": (
+            "emit_one_internal_positive_normalization_scalar_lambda_nu_without_external_oscillation_anchor"
+        ),
         "notes": [
             "The repaired weighted-cycle branch closes PMNS angles and the neutrino splitting hierarchy from live OPH artifacts.",
-            "Absolute neutrino masses and absolute delta m^2 values still require one overall positive normalization; the atmospheric-anchored numbers are compare-only.",
+            "The theorem-grade repaired branch is scale-free: it emits PMNS observables, J, the hierarchy ratio, and one symbolic positive absolute family parameterized by lambda_nu > 0.",
+            "Absolute neutrino masses and absolute delta m^2 values still require one overall positive normalization; the atmospheric-anchored numbers are hard-separated compare-only outputs.",
             "This artifact supersedes the old isotropic continuation branch as the strongest honest neutrino branch on disk.",
         ],
     }

@@ -7,7 +7,7 @@
     "transport_identity_tau_ratio": true,
     "transport_identity_tau_sum_half_delta": true
   },
-  "generated_utc": "2026-03-29T13:33:50Z",
+  "generated_utc": "2026-03-30T00:40:24Z",
   "mass_side_object_count_reduction": {
     "broader_mass_side_value_laws": [
       "Delta_ud_overlap_value_law",

@@ -261,6 +261,16 @@ def main() -> int:
             for key, value in candidate.items()
             if key not in {"U_u_left", "U_d_left", "V_CKM_forward"}
         },
+        "same_sheet_mass_comparison_scan": {
+            "status": "comparison_only_not_a_relative_sheet_scan",
+            "grid_kind": "np.linspace(-0.4, 0.4, 4001)",
+            "scan_coordinate": "Delta_ud_overlap",
+            "score": "RMS log error against reference_targets",
+            "same_sheet_only": True,
+            "uses_reference_targets": True,
+            "disqualified_for_sigma_ud_selection": True,
+            "reason": "This finite scan varies only the same-sheet mass-side overlap coordinate against target masses, so it cannot enumerate Sigma_ud or emit quark_relative_sheet_selector.",
+        },
         "comparison_only_best_same_family_point": dict(best, status="comparison_only_not_promotable"),
         "forward_same_label_transport": {
             "definition": "V_CKM^fwd = U_u_left(candidate)^dagger @ U_d_left(candidate)",
@@ -327,6 +337,7 @@ def main() -> int:
             "This artifact records the strongest current D12 continuation sample point for the light-quark split without overriding the recovered-core no-go.",
             "On the D12 continuation branch the CKM/CP lane closes honestly once the forward Yukawa step is reached, because the same-label transport unitary is already V_CKM^fwd = U_u^dagger U_d.",
             "But the current D12 sheet is not the physical quark branch: same-sheet rephasing leaves CKM invariants frozen, and the emitted angles on this sheet undershoot the comparison shell substantially.",
+            "The only finite local scan on disk is a same-sheet Delta_ud_overlap scan against reference targets; it is comparison-only and cannot be repurposed as a Sigma_ud orbit scan.",
             "The exact next object is therefore one discrete quark_relative_sheet_selector; mass-side scale fixing on the selected branch remains a separate issue after that branch shift.",
         ],
     }

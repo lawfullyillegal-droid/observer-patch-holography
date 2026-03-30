@@ -17,6 +17,6 @@ OUTPUT = ROOT / "particles" / "runs" / "calibration" / "d11_critical_surface_rea
 def test_d11_sidecar_is_diagnostic_only() -> None:
     subprocess.run([sys.executable, str(SCRIPT)], check=True, cwd=ROOT)
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
-    assert payload["predictive_status"] == "diagnostic_only_until_forward_seed_artifact_exists"
+    assert payload["predictive_status"] == "diagnostic_sidecar_only__live_forward_path_closed_elsewhere"
     assert payload["predictive_promotion_allowed"] is False
     assert payload["readout_kernel"]["exact_center_promotion"]["status"] == "diagnostic_only"

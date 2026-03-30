@@ -24,6 +24,6 @@ def test_charged_budget_exports_seed_formula_candidate() -> None:
     assert cert["smaller_exact_missing_clause"] == "common_refinement_preserves_mean_eigenvalue_and_min_gap"
     assert cert["mean_gap_invariance_candidate"]["candidate_id"] == "common_refinement_mean_and_min_gap_invariance"
     assert cert["strictly_smaller_next_subclause"] == "common_refinement_preserves_mean_eigenvalue"
-    assert cert["mean_side_support_status"] == "tightest_remaining_clause"
+    assert cert["mean_side_support_status"] == "independent_scalar_readback_complete"
     assert cert["gap_side_support_status"] == "proxy_supported_on_current_family"
     assert cert["current_proxy_support"]["same_label_only"] is True

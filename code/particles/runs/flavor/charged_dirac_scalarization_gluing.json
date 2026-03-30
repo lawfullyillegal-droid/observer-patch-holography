@@ -33,7 +33,7 @@
   ],
   "functional_equalizer_closed": false,
   "gap_side_support_status": "proxy_supported_on_current_family",
-  "generated_utc": "2026-03-25T23:51:12Z",
+  "generated_utc": "2026-03-30T00:40:23Z",
   "generator_kind": "centered_compressed_generation_bundle_branch_generator",
   "generatorwise_reduction_status": "common_refinement_only_missing",
   "generatorwise_status": {
@@ -59,17 +59,18 @@
     "candidate_id": "common_refinement_mean_and_min_gap_invariance",
     "mean_formula": "mean(family_eigenvalues)",
     "min_gap_formula": "min(spectral_gaps)",
-    "status": "candidate_only"
+    "status": "mean_readback_complete__min_gap_proxy_supported"
   },
-  "mean_side_support_status": "tightest_remaining_clause",
+  "mean_side_support_status": "independent_scalar_readback_complete",
   "minimal_missing_bridge_object": "charged_dirac_common_refinement_gluing_certificate",
-  "minimal_missing_witness": "charged_common_refinement_mean_eigenvalue_certificate",
+  "minimal_missing_witness": "common_refinement_transport_equalizer",
   "notes": [
     "This artifact tracks the exact gluing bridge still missing on the charged shared-budget side.",
     "The current sharp candidate is a common-refinement seed-rigidity theorem built on projective polar-Riesz same-label eigenline transport.",
     "On the current family, the min-gap side is already proxy-supported while the mean-eigenvalue side is the tighter remaining clause.",
     "Conjugation and pre-normal-form moves are now reduced to metadata-closed steps on the current family; common-refinement transport is the only remaining live witness.",
-    "Metadata matching across u/d/e is not enough; the sector scalarization certificates must descend from one common intrinsic evaluator."
+    "Metadata matching across u/d/e is not enough; the sector scalarization certificates must descend from one common intrinsic evaluator.",
+    "This gluing artifact is not itself a theorem route to the charged absolute scale; the later charged no-go theorem keeps the absolute normalization quotient-only until an affine-covariant anchor A_ch exists."
   ],
   "presentation_equalizer_kind": "sector_projected_sigma_seed_equalizer",
   "proof_status": "candidate_only",
@@ -166,7 +167,7 @@
   "strictly_smaller_next_subclause": "common_refinement_preserves_mean_eigenvalue",
   "telescoping_descent_proof_mode": "generator_chain",
   "transport_kind": "projective_polar_riesz_same_label_eigenline_transport",
-  "transported_ordered_spectral_package_evidence_status": "serialization_only_not_independent_witness",
+  "transported_ordered_spectral_package_evidence_status": "independent_scalar_readback_complete",
   "transported_ordered_spectral_package_left_at_common": {
     "family_eigenvalues": [
       1.3557137562771555,

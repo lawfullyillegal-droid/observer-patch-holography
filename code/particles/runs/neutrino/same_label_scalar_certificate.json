@@ -1,6 +1,6 @@
 {
   "artifact": "oph_neutrino_same_label_scalar_certificate",
-  "base_mu_nu": 0.02671877920542088,
+  "base_mu_nu": 0.000957040214227042,
   "builder_facing_exact_object": "centered_log_pullback_class_[log_q_e]",
   "certificate_residuals": {
     "max_projector_identity_residual": 0.0
@@ -22,12 +22,12 @@
     "psi23": 0.3124848080685916,
     "psi31": 0.3124848080685916
   },
-  "generated_utc": "2026-03-29T09:28:51Z",
+  "generated_utc": "2026-03-30T00:40:08Z",
   "insufficient_for_pmns_or_public_flavor_rows": true,
   "mu_e": {
-    "psi12": 0.03873422208374146,
-    "psi23": 0.026634683530340906,
-    "psi31": 0.014787432002180275
+    "psi12": 0.0013874214804477558,
+    "psi23": 0.000954027990417139,
+    "psi31": 0.0005296711718162312
   },
   "notes": [
     "This is the smallest proof-facing scalar artifact the downstream intrinsic neutrino lane needs.",

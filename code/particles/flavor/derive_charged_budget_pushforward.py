@@ -244,7 +244,7 @@ def build_artifact(payload: dict[str, Any]) -> dict[str, Any]:
             ],
             "smaller_exact_missing_clause": "common_refinement_preserves_mean_eigenvalue_and_min_gap",
             "strictly_smaller_next_subclause": "common_refinement_preserves_mean_eigenvalue",
-            "strict_next_clause": "stored_shared_absolute_scale",
+            "strict_next_clause": "common_refinement_transport_equalizer",
             "mean_clause": {
                 "left_common": mean_eigenvalue,
                 "right_common": mean_eigenvalue,
@@ -298,10 +298,10 @@ def build_artifact(payload: dict[str, Any]) -> dict[str, Any]:
             "telescoping_descent_proof_mode": "generator_chain",
             "remaining_theorem_object": None if scalarization_closed else "charged_dirac_scalarization_law",
             "minimal_missing_bridge_object": None if functional_equalizer_closed else ("charged_dirac_common_refinement_gluing_certificate" if common_refinement_only_missing else "charged_dirac_scalarization_gluing_certificate"),
-            "minimal_missing_witness": None if functional_equalizer_closed else ("stored_shared_absolute_scale" if common_refinement_only_missing else "sector_projected_sigma_seed_equalizer"),
+            "minimal_missing_witness": None if functional_equalizer_closed else ("common_refinement_transport_equalizer" if common_refinement_only_missing else "sector_projected_sigma_seed_equalizer"),
             "exact_blocking_clause": None if functional_equalizer_closed else ("ordered_common_refinement_seed_rigidity" if common_refinement_only_missing else None),
             "generatorwise_reduction_status": "common_refinement_only_missing" if common_refinement_only_missing else "full_generator_set_open",
-            "stored_shared_absolute_scale_status": "promotion_ready_after_mean_readback",
+            "stored_shared_absolute_scale_status": "historical_compare_only_shell_not_a_theorem_route",
             "sector_isolation_required_for_base_closure": False,
             "budget_shape_separation": {
                 "budget_inputs_only": [
@@ -349,7 +349,7 @@ def build_artifact(payload: dict[str, Any]) -> dict[str, Any]:
         "budget_certificate": budget_certificate,
         "metadata": {
             "sector_response_artifact": payload.get("artifact", "unknown"),
-            "note": "Shared charged-sector budget artifact. The current constructive candidate is the charged_common_refinement_sigma_seed_equalizer: the monoidal completion of the common family spectral seed sigma_seed = mean(family_eigenvalues) + min(spectral_gaps) on the canonical decomposable charged direct-sum family. The current repo state now carries an explicit witness-grade common-mean readback with left_common_mean = right_common_mean = current_mean_eigenvalue and zero residual, while the min-gap side remains proxy-supported on the current family. The next live step is not a broader new theorem but promotion of the stored shared absolute scale on top of this completed mean-side readback.",
+            "note": "Shared charged-sector budget artifact. The current constructive candidate is the charged_common_refinement_sigma_seed_equalizer: the monoidal completion of the common family spectral seed sigma_seed = mean(family_eigenvalues) + min(spectral_gaps) on the canonical decomposable charged direct-sum family. The current repo state carries an explicit witness-grade common-mean readback with left_common_mean = right_common_mean = current_mean_eigenvalue and zero residual, while the min-gap side remains proxy-supported on the current family. The immediate missing witness inside this candidate route is still the common-refinement transport equalizer. This artifact must not be read as a theorem route to the charged absolute scale: the later live charged theorem records that absolute normalization is quotient-only under common-shift symmetry until an affine-covariant anchor A_ch exists.",
         },
     }
 
@@ -412,6 +412,7 @@ def build_gluing_artifact(charged_budget: dict[str, Any]) -> dict[str, Any]:
             "On the current family, the min-gap side is already proxy-supported while the mean-eigenvalue side is the tighter remaining clause.",
             "Conjugation and pre-normal-form moves are now reduced to metadata-closed steps on the current family; common-refinement transport is the only remaining live witness.",
             "Metadata matching across u/d/e is not enough; the sector scalarization certificates must descend from one common intrinsic evaluator.",
+            "This gluing artifact is not itself a theorem route to the charged absolute scale; the later charged no-go theorem keeps the absolute normalization quotient-only until an affine-covariant anchor A_ch exists.",
         ],
     }
 

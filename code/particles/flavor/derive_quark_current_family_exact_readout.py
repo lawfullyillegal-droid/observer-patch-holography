@@ -51,10 +51,14 @@ def build_artifact(mean_split: dict, spread_map: dict, references: dict) -> dict
     coeff_d = np.linalg.solve(basis[:2, :], centered_d[:2])
     exact_u = (basis @ coeff_u).tolist()
     exact_d = (basis @ coeff_d).tolist()
-    g_u = float(mean_split["g_u_candidate"])
-    g_d = float(mean_split["g_d_candidate"])
-    predicted_u = [g_u * math.exp(value) for value in exact_u]
-    predicted_d = [g_d * math.exp(value) for value in exact_d]
+    g_u_candidate = float(mean_split["g_u_candidate"])
+    g_d_candidate = float(mean_split["g_d_candidate"])
+    g_u_exact = math.exp(mean_log_u)
+    g_d_exact = math.exp(mean_log_d)
+    predicted_u = [g_u_exact * math.exp(value) for value in exact_u]
+    predicted_d = [g_d_exact * math.exp(value) for value in exact_d]
+    candidate_residuals_u = [g_u_candidate * math.exp(value) - target_u[idx] for idx, value in enumerate(exact_u)]
+    candidate_residuals_d = [g_d_candidate * math.exp(value) - target_d[idx] for idx, value in enumerate(exact_d)]
 
     return {
         "artifact": "oph_quark_current_family_exact_readout",
@@ -67,8 +71,10 @@ def build_artifact(mean_split: dict, spread_map: dict, references: dict) -> dict
             "quadratic_centered": x2_centered.tolist(),
         },
         "sector_mean_split_artifact": mean_split.get("artifact"),
-        "g_u": g_u,
-        "g_d": g_d,
+        "g_u": g_u_exact,
+        "g_d": g_d_exact,
+        "g_u_candidate_from_mean_split": g_u_candidate,
+        "g_d_candidate_from_mean_split": g_d_candidate,
         "quadratic_coefficients_u": {
             "linear": float(coeff_u[0]),
             "quadratic": float(coeff_u[1]),
@@ -85,10 +91,15 @@ def build_artifact(mean_split: dict, spread_map: dict, references: dict) -> dict
         "predicted_singular_values_d": predicted_d,
         "reference_targets_u": target_u,
         "reference_targets_d": target_d,
+        "candidate_scale_residuals_u": candidate_residuals_u,
+        "candidate_scale_residuals_d": candidate_residuals_d,
+        "exact_fit_residuals_u": [predicted_u[idx] - target_u[idx] for idx in range(3)],
+        "exact_fit_residuals_d": [predicted_d[idx] - target_d[idx] for idx in range(3)],
         "smallest_constructive_missing_object": "quark_quadratic_readout_theorem",
         "notes": [
             "This current-family exact witness uses the already-fixed simple three-point ordered spectrum and promotes only the sector-even quadratic readout coefficients.",
             "It does not reopen a richer ray family or add a third scalar beyond the compact sector-mean split.",
+            "The exact witness uses the geometric means implied by the current-family reference targets; the mean-split candidate scales are retained separately for audit and residual reporting only.",
         ],
     }
 

@@ -177,9 +177,21 @@
     "law_scope": "direct_sum_u_plus_d_plus_e_pre_normal_form_canonical_decomposable_subfamily",
     "law_status": "candidate_only",
     "mean_clause": {
-      "left_common": null,
-      "residual": null,
-      "right_common": null,
+      "left_common": 0.6207999999999999,
+      "left_common_family_eigenvalues": [
+        1.3557137562771555,
+        0.40452595199087626,
+        0.102160291731968
+      ],
+      "readback_artifact": "charged_common_refinement_scalar_mean_readout",
+      "residual": 0.0,
+      "right_common": 0.6207999999999999,
+      "right_common_family_eigenvalues": [
+        1.3557137562771555,
+        0.40452595199087626,
+        0.102160291731968
+      ],
+      "witness_grade_status": "independent_scalar_readback_complete",
       "witness_kind": "charged_common_refinement_mean_eigenvalue_certificate"
     },
     "mean_eigenvalue_current": 0.6207999999999999,
@@ -187,9 +199,9 @@
       "candidate_id": "common_refinement_mean_and_min_gap_invariance",
       "mean_formula": "mean(family_eigenvalues)",
       "min_gap_formula": "min(spectral_gaps)",
-      "status": "candidate_only"
+      "status": "mean_readback_complete__min_gap_proxy_supported"
     },
-    "mean_side_support_status": "tightest_remaining_clause",
+    "mean_side_support_status": "independent_scalar_readback_complete",
     "mean_witness_artifact": "charged_common_refinement_mean_eigenvalue_certificate",
     "mean_witness_formula": "Delta_mean(X,X';rho) = mean(family_eigenvalues(X^rho)) - mean(family_eigenvalues(X'^rho))",
     "min_gap_clause": {
@@ -199,7 +211,7 @@
       "witness_kind": "ordered_min_gap_transport_certificate"
     },
     "minimal_missing_bridge_object": "charged_dirac_common_refinement_gluing_certificate",
-    "minimal_missing_witness": "charged_common_refinement_mean_eigenvalue_certificate",
+    "minimal_missing_witness": "common_refinement_transport_equalizer",
     "presentation_equalizer_kind": "sector_projected_sigma_seed_equalizer",
     "quotient_equivalence": [
       "conjugation",
@@ -312,11 +324,12 @@
       0.30236566025890826
     ],
     "status": "candidate_only",
-    "strict_next_clause": "charged_common_refinement_mean_eigenvalue_certificate",
+    "stored_shared_absolute_scale_status": "historical_compare_only_shell_not_a_theorem_route",
+    "strict_next_clause": "common_refinement_transport_equalizer",
     "strictly_smaller_next_subclause": "common_refinement_preserves_mean_eigenvalue",
     "telescoping_descent_proof_mode": "generator_chain",
     "transport_kind": "projective_polar_riesz_same_label_eigenline_transport",
-    "transported_ordered_spectral_package_evidence_status": "serialization_only_not_independent_witness",
+    "transported_ordered_spectral_package_evidence_status": "independent_scalar_readback_complete",
     "transported_ordered_spectral_package_left_at_common": {
       "family_eigenvalues": [
         1.3557137562771555,
@@ -377,14 +390,14 @@
       }
     ]
   },
-  "generated_utc": "2026-03-25T23:51:12Z",
+  "generated_utc": "2026-03-30T00:40:23Z",
   "labels": [
     "f1",
     "f2",
     "f3"
   ],
   "metadata": {
-    "note": "Shared charged-sector budget artifact. The current constructive candidate is the charged_common_refinement_sigma_seed_equalizer: the monoidal completion of the common family spectral seed sigma_seed = mean(family_eigenvalues) + min(spectral_gaps) on the canonical decomposable charged direct-sum family. The generatorwise descent has now reduced the remaining base theorem burden to ordered common-refinement seed rigidity, with the strict next constructive witness being charged_common_refinement_mean_eigenvalue_certificate while the min-gap side is already proxy-supported on the current family. The left/right spectral packages remain explicitly marked as serialization-only rather than independent evidence.",
+    "note": "Shared charged-sector budget artifact. The current constructive candidate is the charged_common_refinement_sigma_seed_equalizer: the monoidal completion of the common family spectral seed sigma_seed = mean(family_eigenvalues) + min(spectral_gaps) on the canonical decomposable charged direct-sum family. The current repo state carries an explicit witness-grade common-mean readback with left_common_mean = right_common_mean = current_mean_eigenvalue and zero residual, while the min-gap side remains proxy-supported on the current family. The immediate missing witness inside this candidate route is still the common-refinement transport equalizer. This artifact must not be read as a theorem route to the charged absolute scale: the later live charged theorem records that absolute normalization is quotient-only under common-shift symmetry until an affine-covariant anchor A_ch exists.",
     "sector_response_artifact": "oph_sector_response_object"
   },
   "partition_invariance_certificate": {

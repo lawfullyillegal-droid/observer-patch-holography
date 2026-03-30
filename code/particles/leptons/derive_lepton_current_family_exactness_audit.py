@@ -372,6 +372,9 @@ def main() -> int:
                 "smallest_missing_clause",
                 generation_bundle.get("promotion_gate", {}).get("smaller_exact_missing_clause"),
             ),
+            "exact_vanishing_proved": generation_bundle.get("promotion_gate", {}).get("exact_vanishing_proved"),
+            "uniform_quadratic_smallness_proved": generation_bundle.get("promotion_gate", {}).get("uniform_quadratic_smallness_proved"),
+            "current_strength_statement": generation_bundle.get("promotion_gate", {}).get("current_strength_statement"),
             "matrix": generation_bundle.get("charged_sector_response_operator_candidate", {}).get("matrix"),
             "ordered_spectrum": generation_bundle.get("charged_sector_response_operator_candidate", {}).get("ordered_spectrum"),
             "same_label_overlap_amplitudes": generation_bundle.get("projective_readout_certificate", {}).get("same_label_overlap_amplitudes"),
@@ -394,6 +397,9 @@ def main() -> int:
                 "blocked_candidate_object": "C_hat_e^{cand}",
                 "upstream_missing_theorem": generation_bundle.get("remaining_missing_theorem") if generation_bundle is not None else None,
                 "smallest_missing_clause": generation_bundle.get("promotion_gate", {}).get("smaller_exact_missing_clause") if generation_bundle is not None else None,
+                "exact_vanishing_proved": generation_bundle.get("promotion_gate", {}).get("exact_vanishing_proved") if generation_bundle is not None else None,
+                "uniform_quadratic_smallness_proved": generation_bundle.get("promotion_gate", {}).get("uniform_quadratic_smallness_proved") if generation_bundle is not None else None,
+                "current_strength_statement": generation_bundle.get("promotion_gate", {}).get("current_strength_statement") if generation_bundle is not None else None,
             },
             "mandatory_package_b": {
                 "id": "charged_absolute_anchor_A_ch",
@@ -482,6 +488,11 @@ def main() -> int:
                 "The charged sector-response operator remains undeclared: only the latent candidate C_hat_e^{cand} is on disk, and its promotion is blocked by the upstream theorem oph_generation_bundle_branch_generator_splitting together with the smaller clause compression_descendant_commutator_vanishes_or_is_uniformly_quadratic_small_after_central_split."
                 if generation_bundle is not None
                 else "No latent charged sector-response candidate is attached to this audit yet."
+            ),
+            (
+                "On the live corpus, the commutator-transfer bridge proves neither exact vanishing nor uniform quadratic smallness after the central split; only the desired conditional bridge is recorded."
+                if generation_bundle is not None
+                else "No commutator-transfer strength statement is attached to this audit yet."
             ),
             (
                 "The present charged theorem determines only the centered charged log class modulo a common additive shift, so no theorem-grade g_e, Delta_e_abs, or charged absolute equalizer exists on the live theorem lane."

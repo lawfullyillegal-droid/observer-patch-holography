@@ -18,9 +18,9 @@
     0.102160291731968
   ],
   "current_mean_eigenvalue": 0.6207999999999999,
-  "first_promotion_target": "stored_shared_absolute_scale",
+  "first_promotion_target": "common_refinement_transport_equalizer",
   "gap_side_support_status": "proxy_supported_on_current_family",
-  "generated_utc": "2026-03-26T04:57:22Z",
+  "generated_utc": "2026-03-30T00:40:07Z",
   "generator_kind": "centered_compressed_generation_bundle_branch_generator",
   "gluing_norm_formula": "abs(E_u) + abs(E_d) + abs(E_e)",
   "left_common_family_eigenvalues": [
@@ -41,17 +41,15 @@
     "The exact witness-grade readback fields are now populated directly on the existing common-refinement package: left_common_mean, right_common_mean, and mean_residual no longer remain null.",
     "The transported left/right spectral packages are now treated as witness-grade scalar readback rather than serialization-only placeholders.",
     "The realized common-mean readback is left_common_mean = right_common_mean = current_mean_eigenvalue with zero residual.",
-    "With the mean side now explicit and the min-gap side already proxy-supported on the current family, the next live mover is promotion of the stored shared absolute scale rather than a broader new theorem family.",
-    "No new outer theorem is introduced here: the live burden is witness-grade readback under the existing charged_common_refinement_sigma_seed_equalizer route.",
+    "With the mean side now explicit and the min-gap side already proxy-supported on the current family, the next live mover inside this candidate route is still the common-refinement transport equalizer rather than an absolute-scale promotion.",
+    "No new outer theorem is introduced here: this witness lives strictly beneath the charged_common_refinement_sigma_seed_equalizer candidate and does not emit the charged absolute scale.",
     "Once the mean witness closes on the same-label common-refinement package, the existing seed-defect law collapses to zero on the current family and the sector gluing norm should vanish."
   ],
   "parent_candidate": "charged_common_refinement_sigma_seed_equalizer",
   "promotion_targets": [
     "functional_equalizer_closed",
     "decomposition_independence_status",
-    "proof_status",
-    "g_e",
-    "g_ch"
+    "proof_status"
   ],
   "proof_status": "witness_grade_common_mean_readback_complete",
   "readback_artifact": "charged_common_refinement_scalar_mean_readout",
@@ -71,7 +69,7 @@
   "sectorwise_collapse_condition": "Delta_mean = 0 with proxy-supported min-gap side",
   "seed_defect_formula": "abs(mean_left-mean_right) + abs(min_gap_left-min_gap_right)",
   "seed_formula": "sigma_seed = mean(family_eigenvalues) + min(spectral_gaps)",
-  "smallest_constructive_missing_object": "stored_shared_absolute_scale",
+  "smallest_constructive_missing_object": "common_refinement_transport_equalizer",
   "trace_readout_formula": "mu = trace(Lambda_ord_common) / 3",
   "transport_kind": "projective_polar_riesz_same_label_eigenline_transport",
   "transported_left_spectral_package_status": "independent_scalar_readback_complete",

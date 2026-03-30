@@ -1,6 +1,6 @@
 {
   "artifact": "oph_realized_same_label_gap_defect_readback",
-  "base_mu_nu": 0.02671877920542088,
+  "base_mu_nu": 0.000957040214227042,
   "complete_by_arrow": {
     "psi12": true,
     "psi23": true,
@@ -27,7 +27,7 @@
     "psi23": 0.3124848080685916,
     "psi31": 0.3124848080685916
   },
-  "generated_utc": "2026-03-29T09:28:33Z",
+  "generated_utc": "2026-03-30T00:40:07Z",
   "kernel_choice": "1-cos",
   "metadata": {
     "note": "The live same-label pullback has been compressed from flavor-side overlap and spectral-gap certificates on the realized ordered labels f1,f2,f3.",
@@ -43,9 +43,9 @@
     "psi31": []
   },
   "mu_e": {
-    "psi12": 0.03873422208374146,
-    "psi23": 0.026634683530340906,
-    "psi31": 0.014787432002180275
+    "psi12": 0.0013874214804477558,
+    "psi23": 0.000954027990417139,
+    "psi31": 0.0005296711718162312
   },
   "mu_e_rule": "mu_e = base_mu_nu * exp(delta_e) / mean_f(exp(delta_f))",
   "neutrino_only_isotropy_obstruction": false,
