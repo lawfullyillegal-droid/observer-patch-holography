@@ -440,21 +440,21 @@ Summary of this chapter:
 
 | Intuitive Picture | Surprising Hint | First-Principles Reframing |
 |---|---|---|
-| Correlations come from shared causes or hidden variables | Bell's theorem: quantum correlations violate Bell inequalities, exceeding what any local hidden variable theory permits | Consistency conditions across observer patches *require* nonlocal correlations; they are not a bug but a feature of a universe built on agreement |
+| Correlations come from shared causes or hidden variables | Bell's theorem: quantum correlations violate Bell inequalities, exceeding what any local hidden variable theory permits | In OPH, consistency conditions across observer patches make Bell-violating correlations structurally natural rather than accidental |
 
-**The key reverse engineering insight**: We started with the intuition that distant correlations must have local explanations. Bell's theorem revealed by showing nature permits correlations that exceed classical bounds. Our model explains why: in a universe where reality emerges from observer consistency, the constraints on overlapping patches are so stringent that nonlocal correlations become necessary. The seemingly "spooky" correlations are the price paid for a consistent, shared reality.
+**The key reverse engineering insight**: We started with the intuition that distant correlations must have local explanations. Bell's theorem revealed that nature permits correlations that exceed classical bounds. OPH reads this as evidence that a consistency-built reality naturally favors genuinely quantum correlation structure rather than classical hidden-variable bookkeeping.
 
-**Why Bell violations are REQUIRED, not just permitted**: This deserves emphasis. The Quantum Marginal Problem is QMA-complete-checking whether local states are globally consistent is computationally hard. This hardness is a feature, not a bug. If consistency were easy, any random assignment of local states would work. There would be no constraint, no selection, no physics.
+**Why Bell violations matter here**: This deserves emphasis. The Quantum Marginal Problem is QMA-complete-checking whether local states are globally consistent is computationally hard. This hardness is a feature, not a bug. It shows that overlap consistency is a real constraint, and OPH interprets Bell-violating correlations as part of the quantum structure that helps satisfy it.
 
 The Bell-violating correlations are precisely what allows quantum marginals to satisfy overlap conditions with minimal pre-coordination. Einstein wanted particles to carry "instruction sets" from their common past. But instruction sets create combinatorial explosions as you add more observers. The quantum solution-entanglement that exceeds classical bounds-is more parsimonious. It achieves consistency with less information.
 
-Put differently: Bell violations are the universe's compression algorithm for maintaining consistency across patches.
+Put differently: OPH treats Bell-violating correlations as an efficient part of the quantum bookkeeping needed to maintain consistency across patches.
 
 **Additional lessons**:
 
 1. **Objectivity is Agreement**: Things are "real" because observers agree on them. The red Ferrari exists because everyone who looks agrees it's red and it's a Ferrari.
 
-2. **Bell's Theorem**: Local hidden variables cannot reproduce quantum correlations. Nature violates Bell inequalities. Either locality or realism fails-most physicists accept that realism fails.
+2. **Bell's Theorem**: Local hidden variables cannot reproduce quantum correlations. Nature violates Bell inequalities, so any viable interpretation must relax at least one classical assumption.
 
 3. **Overlap Condition**: When observers share access to a region, their restricted states must agree on the shared overlap algebra.
 
