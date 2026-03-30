@@ -400,7 +400,7 @@ The bulk is decoded from the boundary. Depth-the sense of being "inside" 3D spac
 
 The holographic principle makes sharp, testable predictions:
 
-**1. Area law vs. volume law**: If the holographic principle is correct, entanglement entropy in gravitational systems must scale with area, not volume. Tensor network models that respect the holographic bound produce area-law scaling. Generic quantum field theory states produce volume-law scaling. This is a discriminating test.
+**1. Area law vs. volume law**: Holographic arguments emphasize strong area-sensitive entropy structure rather than naive volume scaling. Tensor network models that respect the holographic bound produce area-law scaling. Highly excited or random-state regimes can produce volume-law scaling instead. This is part of the structural contrast the holographic picture tries to explain.
 
 **2. Black holes saturate the gravitational area law**: Black holes realize $S = A/(4\ell_P^2)$ and are maximally entropic for their size in this gravitational sense. Any clear violation of the associated entropy bounds would identify a measurement contradiction with the model.
 
