@@ -220,7 +220,7 @@ The CMB is light from about 380,000 years after the Big Bang, when the universe 
 
 We're at the center of this sphere, but so is everyone else. Every observer in the universe sees themselves at the center of their own CMB sphere.
 
-The CMB sphere is a useful cosmological proxy for thinking about an observer-centered screen picture. Every cosmological observation is, ultimately, a measurement of patterns on this 2D surface.
+The CMB sphere is a useful cosmological proxy for thinking about an observer-centered screen picture. It is one especially vivid example of how observer-accessible information can be organized on an apparent 2D sky.
 
 ## 3.7 The Geometry of the 2-Sphere
 
