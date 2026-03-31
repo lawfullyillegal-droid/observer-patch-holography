@@ -379,7 +379,7 @@ If Alice and Bob agree on their overlap (AB), and Bob and Carol agree on their o
 
 But beware of loops. Go from Alice to Bob to Carol and back to Alice-you should return with the same state on shared overlaps. If not, you have **frustration**: local assignments can't all be true simultaneously.
 
-This is exactly like gauge theory in physics. Move a vector around a loop; if it comes back rotated, there's curvature. A loop that doesn't close cleanly tells you there's no global assignment fitting the local data-or equivalently, that spacetime itself is curved.
+This is analogous to gauge theory and geometry. Move a vector around a loop; if it comes back rotated, there is nontrivial holonomy. Likewise, a loop that does not close cleanly signals an obstruction to global gluing rather than a simple globally consistent assignment.
 
 ## 6.11 Formal Statement
 
