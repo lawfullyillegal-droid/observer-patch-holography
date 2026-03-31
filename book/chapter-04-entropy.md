@@ -255,11 +255,11 @@ The modern semiclassical picture strongly suggests that information is not simpl
 
 Now let's connect to our model.
 
-Each observer has a finite patch on the holographic screen. The entropy bound says:
+Each observer has a finite patch on the holographic screen. In this screen-language summary, the entropy budget is tied to the patch area:
 
-$$S(P) \leq \frac{\text{Area}(\partial P)}{4\ell_P^2}$$
+$$S(P) \leq \frac{\text{Area}(P)}{4\ell_P^2}$$
 
-The observer cannot store more information than their patch boundary allows.
+The observer cannot store more information than their patch area allows.
 
 When two observers compare notes, they share information across patch boundaries. The size of the overlap limits how much they can agree on.
 
@@ -359,7 +359,7 @@ The universe had to start in a special state for any of this to work. But this n
 
 7. **Black-hole information recovery has strong semiclassical support**: The Page curve is reproduced by including islands in important controlled settings.
 
-8. **Observers have an entropy budget**: Patch boundaries limit accessible information. Laws must be compressible. Memory costs free energy.
+8. **Observers have an entropy budget**: Patch size limits accessible information. Laws must be compressible. Memory costs free energy.
 
 Entropy is not a villain. It's the rulebook telling us what can be remembered, what can be shared, and what must be left as noise.
 
