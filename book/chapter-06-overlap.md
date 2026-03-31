@@ -72,7 +72,7 @@ Alain Aspect in Paris performed the definitive early tests in 1981-82. His team 
 
 But there were loopholes. What if the particles somehow communicated with each other? (Communication loophole.) What if only certain particles got detected? (Detection loophole.) What if the measurement choices weren't truly random? (Freedom-of-choice loophole.)
 
-Over the following decades, experimenters closed these loopholes one by one. The 2015 "loophole-free" Bell tests by teams in Delft, Vienna, and Colorado closed them all simultaneously. The particles were separated by large distances, the measurements were completed before any signal could travel between them, and the detection efficiency was high enough to rule out selection effects.
+Over the following decades, experimenters closed the major loopholes one by one. The 2015 "loophole-free" Bell tests by teams in Delft, Vienna, and Colorado closed the locality and detection loopholes simultaneously, while using fast random setting choices that strongly constrained freedom-of-choice concerns. The particles were separated by large distances, the measurements were completed before any signal could travel between them, and the detection efficiency was high enough to rule out selection effects.
 
 **The result: nature violates Bell's inequality. Every time.**
 
