@@ -82,15 +82,15 @@ The table below contains the strongest current results.
 | Z boson | `91.18797807794321` | `91.1879781` | `-2.205679e-08` | `GeV` | emitted on the same closed electroweak calibration theorem |
 | Higgs boson | `125.218922` | `125.19953` | `+0.019392` | `GeV` | secondary quantitative row on the Higgs/top critical stage |
 | top quark | `172.388646` | `172.352355` | `+0.036291` | `GeV` | secondary quantitative row on the Higgs/top critical stage |
-| Neutrino solar splitting `Δm21²` | `7.489806641884242e-5` | `7.49e-5` | `-1.933581e-9` | `eV^2` | compare-only absolute splitting; `lambda_nu` still open |
+| Neutrino solar splitting `Δm21²` | `7.489806641884242e-5` | `7.49e-5` | `-1.933581e-9` | `eV^2` | compare-only absolute splitting; residual bridge law `B_nu` still open |
 | Neutrino atmospheric splitting `Δm32²` | `2.438e-3` | `2.438e-3` | `0` | `eV^2` | compare-only atmospheric anchor used to place the branch on an eV scale |
-| Neutrino normal-order splitting `Δm31²` | `2.5128980664188426e-3` | `2.5129e-3` | `-1.933581e-9` | `eV^2` | compare-only absolute splitting; `lambda_nu` still open |
+| Neutrino normal-order splitting `Δm31²` | `2.5128980664188426e-3` | `2.5129e-3` | `-1.933581e-9` | `eV^2` | compare-only absolute splitting; residual bridge law `B_nu` still open |
 | Neutrino hierarchy ratio `Δm21² / Δm32²` | `0.030721110097966534` | `0.030721903199343724` | `-7.931014e-7` | `dimensionless` | theorem-grade scale-free hierarchy ratio on the weighted-cycle branch |
 
 Electroweak calibration fixes one shared pixel constant `P` on the source-side running/matching surface; once `P` is fixed, the target-free electroweak basis emits one coherent quintet `(W, Z, alpha_em^-1, sin^2 theta_W, v)` without separately fitting `W` and `Z`.
 
 - Already achieved: [3](#ref-3) already emits structural zeros for photon, gluons, and graviton, and numerical outputs for `W`, `Z`, Higgs, and top.
-- Current frontier: the Yukawa dictionary, the finite same-label left-handed quark orbit together with its provider/evaluator and selector, the charged-lepton refinement-stable uncentered trace lift beneath the determinant-line route to `A_ch`, the neutrino residual bridge scalar `B_nu` and `lambda_nu`, and real unquenched hadron execution with declared systematics.
+- Current frontier: the Yukawa dictionary, the finite same-label left-handed quark orbit together with its provider/evaluator and selector, the charged-lepton branch-generator splitting clause for `C_hat_e^{cand}` followed by the refinement-stable uncentered trace lift beneath the determinant-line route to `A_ch`, the neutrino residual bridge scalar `B_nu` with `lambda_nu` induced after exact `q_mean^p_nu` factorization, and real unquenched hadron execution with declared systematics.
 
 ## Why String Theory Can Reappear as an Effective Description
 

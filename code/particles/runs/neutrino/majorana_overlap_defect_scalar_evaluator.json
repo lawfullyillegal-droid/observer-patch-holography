@@ -22,7 +22,7 @@
   "defect_weight_rule": "mu_e = base_mu_nu * exp(delta_e) / mean_f(exp(delta_f))",
   "defect_weighted_mu_e_family_candidate_id": "oph_defect_weighted_majorana_edge_weight_family",
   "defect_weighted_mu_e_family_role": "breaks isotropic 1_2 near_degeneracy while preserving the centered edge-norm route",
-  "defect_weighted_mu_e_family_status": "candidate_only",
+  "defect_weighted_mu_e_family_status": "closed_constructive_subbridge_object",
   "defect_weighted_mu_e_normalizer_candidate": "oph_same_label_overlap_defect_weight_normalizer",
   "direct_sum_transport_equation": "T_vu = direct_sum_e U_vu_e",
   "direct_sum_weight_matrix": [
@@ -70,7 +70,7 @@
   "formula_affine_candidate": "sum_e mu_e*(1-cos(psi_e-psi_e_star))",
   "formula_family": "S_G(psi)=sum_e mu_e*G(psi_e-psi_e_star)",
   "formula_residual_candidate": "0.000957040214227041961*(3-cos(u+v)-cos(u)-cos(v))",
-  "generated_utc": "2026-03-31T07:07:05Z",
+  "generated_utc": "2026-03-31T10:46:52Z",
   "hessian_anchor_matrix_3x3": [
     [
       0.000957040214227042,

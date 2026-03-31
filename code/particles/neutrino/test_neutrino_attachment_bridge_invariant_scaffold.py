@@ -34,6 +34,6 @@ def test_neutrino_attachment_bridge_invariant_scaffold() -> None:
     assert payload["qbar_only_collapse_status"] == "refuted_on_current_attached_stack_by_attachment_irreducibility_theorem"
     constructive = payload["best_constructive_subbridge_object"]
     assert constructive["artifact"] == "oph_defect_weighted_majorana_edge_weight_family"
-    assert constructive["status"] == "candidate_only"
+    assert constructive["status"] == "closed_constructive_subbridge_object"
     assert constructive["raw_edge_score_rule"] == "q_e = sqrt(gap_e * defect_e)"
     assert "B_nu = lambda_nu * q_mean^p_nu / m_star_eV" in payload["residual_attachment_quotient_theorem"]

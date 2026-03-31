@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export the defect-weighted Majorana edge-weight family candidate."""
+"""Export the defect-weighted Majorana edge-weight family."""
 
 from __future__ import annotations
 
@@ -45,6 +45,12 @@ def main() -> int:
     raw_edge_score = dict(readback.get("q_e") or {})
     defect_log_centered = dict(readback.get("eta_e") or {})
     edge_weights = dict(readback.get("mu_e") or {})
+
+    proof_status = (
+        "closed_constructive_subbridge_object"
+        if readback_complete
+        else "candidate_only"
+    )
 
     artifact = {
         "artifact": "oph_defect_weighted_majorana_edge_weight_family",
@@ -96,13 +102,17 @@ def main() -> int:
         "first_order_solar_response_formula": "delta_m21_sq ~= 4 * m0 * sigma_q",
         "first_order_solar_response_coefficient_gev": 4.0 * m0 if m0 is not None else None,
         "ordering_expected_status": "normal_like_stable_for_small_defect_anisotropy",
-        "proof_status": "candidate_only",
+        "proof_status": proof_status,
         "notes": [
             "This is the first local mass-moving object that can lift the current 1-2 near-degeneracy without changing the centered selector, kernel choice, or edge-character origin candidate.",
             "The current forward neutrino bundle is S_3-isotropic, so any same-label scalar readback built only from the neutrino payload is forced to stay edge-constant.",
             "The best reduced family is a realized-arrow readback of same-label gap and defect witnesses, followed by the canonical raw score q_e = sqrt(gap_e * defect_e), centered-log lift, and mean-preserving mu_e family.",
             "The current canonical no-new-parameter point is q_e = sqrt(gap_e * defect_e), but the actual next mover is the realized flavor-side same-label gap/defect readback that feeds that rule.",
-            "The exact theorem blocker remains on same-label overlap / edge-bundle normalization.",
+            (
+                "The same-label overlap-nonvanishing subclause is discharged by the live flavor-side gap/defect readback, so this family is closed as a constructive sub-bridge object beneath the remaining attachment scalar."
+                if readback_complete
+                else "The exact theorem blocker remains on same-label overlap / edge-bundle normalization."
+            ),
             (
                 "On the live corpus the realized same-label gap/defect readback is already complete from flavor-side certificates, "
                 "so this family no longer treats that readback as the next missing constructive object."

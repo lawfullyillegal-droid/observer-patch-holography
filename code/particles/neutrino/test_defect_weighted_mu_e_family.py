@@ -19,6 +19,7 @@ def test_defect_weighted_mu_e_family_tracks_live_readback_status() -> None:
 
     assert payload["artifact"] == "oph_defect_weighted_majorana_edge_weight_family"
     assert payload["realized_same_label_gap_defect_readback_status"] == "complete_from_live_flavor_artifacts"
+    assert payload["proof_status"] == "closed_constructive_subbridge_object"
     assert payload["smallest_constructive_missing_object"] is None
     assert payload["strict_repo_missing_object"] is None
     assert payload["upstream_exact_clause"] == "same_label_overlap_nonzero_on_realized_refinement_arrows"

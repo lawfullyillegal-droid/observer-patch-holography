@@ -479,7 +479,7 @@
       "value": 6.996900200580784
     }
   ],
-  "generated_utc": "2026-03-31T07:07:05Z",
+  "generated_utc": "2026-03-31T10:46:52Z",
   "hard_guard": {
     "reason": "This search runs only on low-complexity residual monomials. It does not prove that the current corpus emits the residual amplitude bridge, and it must not be turned into a theorem-grade lambda_nu or A_nu law without an honest OPH derivation.",
     "status": "do_not_promote"

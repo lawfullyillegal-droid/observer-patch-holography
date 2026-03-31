@@ -33,7 +33,7 @@ def test_neutrino_lambda_nu_bridge_candidate() -> None:
     assert payload["bridge_factor_schema"] == "B_nu = lambda_nu * q_mean^p_nu / m_star_eV"
     constructive = payload["best_constructive_subbridge_object"]
     assert constructive["artifact"] == "oph_defect_weighted_majorana_edge_weight_family"
-    assert constructive["status"] == "candidate_only"
+    assert constructive["status"] == "closed_constructive_subbridge_object"
     assert constructive["raw_edge_score_rule"] == "q_e = sqrt(gap_e * defect_e)"
     assert constructive["mu_family_rule"] == "mu_e = mu_nu * exp(eta_e) / mean_f(exp(eta_f))"
     assert constructive["anisotropy_diagnostics"]["max_mu_over_min_mu"] > 2.0

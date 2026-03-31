@@ -70,9 +70,9 @@ Statut / réserve :
 - Boson Z : émis sur le même théorème fermé de calibration électrofaible.
 - Boson de Higgs : ligne quantitative secondaire sur l'étage critique Higgs/top.
 - Quark top : ligne quantitative secondaire sur l'étage critique Higgs/top.
-- Écart solaire des neutrinos `Δm21²` : écart absolu compare-only ; `lambda_nu` reste ouvert.
+- Écart solaire des neutrinos `Δm21²` : écart absolu compare-only ; la loi de pont résiduelle `B_nu` reste ouverte.
 - Écart atmosphérique des neutrinos `Δm32²` : ancre atmosphérique compare-only utilisée pour fixer l'échelle en eV.
-- Écart d'ordre normal des neutrinos `Δm31²` : écart absolu compare-only ; `lambda_nu` reste ouvert.
+- Écart d'ordre normal des neutrinos `Δm31²` : écart absolu compare-only ; la loi de pont résiduelle `B_nu` reste ouverte.
 - Rapport hiérarchique des neutrinos `Δm21² / Δm32²` : rapport hiérarchique sans échelle au niveau théorématique sur la branche pondérée.
 
 La calibration électrofaible fixe d'abord une constante de pixel partagée `P` sur la surface source de running/matching ; une fois `P` fixé, la base électrofaible target-free émet un quintette cohérent `(W, Z, alpha_em^-1, sin^2 theta_W, v)` sans ajuster séparément `W` et `Z`.
@@ -109,13 +109,14 @@ quarks, précise explicitement que la feuille quark actuelle est fermée du côt
 reste une mauvaise branche pour la coquille CKM physique et attend donc d'abord l'orbite finie
 relative de même étiquette ainsi que le provider/evaluator qui l'expose, avant tout sélecteur
 discret et toute loi d'échelle de masse sur la branche choisie, explique que la voie des leptons
-chargés ne fixe pour l'instant que la classe de logs centrés tant que la route non centrée via la
+chargés ne fixe pour l'instant que la classe de logs centrés tant que `C_hat_e^{cand}` n'est pas promu par le
+théorème de branch-generator splitting et que la remontée de trace non centrée sous la route via la
 ligne déterminant ne s'est pas refermée, enregistre la branche neutrino
 pondérée actuelle avec `theta12 = 34.2259°`, `theta23 = 49.7228°`, `theta13 = 8.68636°`,
 `delta = 305.581°` et `Delta m21^2 / Delta m32^2 = 0.03072111`, compare ces nombres directement
 à la surface oscillatoire PDG, explique que la section normalisée des poids de défaut de
 recouvrement est déjà fermée tandis que le spectre neutrino absolu attend encore le scalaire de pont résiduel
-`B_nu` ainsi que `lambda_nu`, et indique que les hadrons restent
+`B_nu`, qui induit ensuite `lambda_nu` après la factorisation exacte `q_mean^p_nu`, et indique que les hadrons restent
 liés à l'exécution plutôt qu'à des lignes de sortie déjà dérivées dans l'article.
 
 - **PDF :** [Deriving the Particle Zoo from Observer Consistency](paper/deriving_the_particle_zoo_from_observer_consistency.pdf)

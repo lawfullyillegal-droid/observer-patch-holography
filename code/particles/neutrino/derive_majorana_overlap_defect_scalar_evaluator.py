@@ -46,6 +46,11 @@ def main() -> int:
     phase_clause = "selector_overlap_phase_coboundary_trivializes_same_label_edge_transport"
     bundle_clause = "selector_centered_unitary_common_refinement_descent_on_edge_bundle"
     overlap_status = "closed_from_live_flavor_readback" if readback_complete else "candidate_only"
+    defect_family_status = (
+        "closed_constructive_subbridge_object"
+        if readback_complete
+        else "candidate_only"
+    )
 
     payload = {
         "artifact": "oph_majorana_overlap_defect_scalar_evaluator",
@@ -106,7 +111,7 @@ def main() -> int:
         "remaining_numerical_defect": "exact_1_2_near_degeneracy_from_isotropic_mu_nu",
         "next_forward_object": "defect_weighted_mu_e_family",
         "defect_weighted_mu_e_family_candidate_id": "oph_defect_weighted_majorana_edge_weight_family",
-        "defect_weighted_mu_e_family_status": "candidate_only",
+        "defect_weighted_mu_e_family_status": defect_family_status,
         "defect_weighted_mu_e_normalizer_candidate": "oph_same_label_overlap_defect_weight_normalizer",
         "attachment_normalizer_candidate_id": "oph_same_label_overlap_defect_weight_normalizer",
         "attachment_normalizer_status": (

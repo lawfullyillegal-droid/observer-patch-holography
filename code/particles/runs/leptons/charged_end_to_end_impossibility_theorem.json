@@ -61,7 +61,7 @@
       "m_tau": "exp(A_ch + tau_log_centered)"
     }
   },
-  "generated_utc": "2026-03-31T07:07:03Z",
+  "generated_utc": "2026-03-31T10:46:50Z",
   "minimal_operator_extension": {
     "current_corpus_contains_theorem": false,
     "effect_if_internalized": "promote_C_hat_e_only",

@@ -546,8 +546,8 @@ The most important synchronization point for this chapter is that OPH does **not
 | Electroweak bosons | Calibration | $W$ and $Z$ are emitted on the closed target-free source-only electroweak theorem surface after fixing the shared scale $P$ on the electroweak calibration branch |
 | Higgs/top stage | Secondary quantitative | Higgs boson and top quark are emitted on the closed one-scalar forward seed |
 | Quark family | Continuation | Continuation-level rows are emitted for up, down, strange, charm, and bottom; CKM/CP is closed on the current quark sheet, but that sheet is a strict no-go for the physical quark branch, so the next object is the finite same-label left-handed orbit together with the provider/evaluator that exposes it, and only then a discrete selector and mass-side scale law |
-| Charged leptons | Continuation gap | No promoted charged-lepton masses yet; the centered hierarchy is fixed, but the remaining route is \(\widehat C_e\) promotion, then a refinement-stable uncentered trace lift, then the determinant-line anchor |
-| Flavor-labeled neutrinos | Continuation gap | No promoted flavor rows yet; the weighted-cycle branch lands in the observed PMNS/hierarchy window, and one overall positive normalization scalar remains open before absolute masses and absolute \(\Delta m^2\) become theorem-grade |
+| Charged leptons | Continuation gap | No promoted charged-lepton masses yet; the centered hierarchy is fixed, but the remaining route is \(\widehat C_e\) promotion by branch-generator splitting, then a refinement-stable uncentered trace lift, then the determinant-line anchor |
+| Flavor-labeled neutrinos | Continuation gap | No promoted flavor rows yet; the weighted-cycle branch lands in the observed PMNS/hierarchy window, and the residual bridge scalar \(B_\nu\) remains open before the induced absolute normalization and absolute \(\Delta m^2\) become theorem-grade |
 | Hadrons | Execution-bound | No paper-derived hadron masses yet; real production correlator dumps and production systematics are still required |
 
 ## 14.15 Why the Photon Is Inevitable
