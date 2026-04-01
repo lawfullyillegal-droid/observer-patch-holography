@@ -544,8 +544,8 @@ For the book, the picture is this:
 | Structural carriers | Photon, gluons, and graviton are forced and exactly massless |
 | Electroweak sector | The $W$ and $Z$ are derived |
 | Next layer | The Higgs, the top quark, and several quark masses are already on the current particle branch |
-| Still being finished | Charged leptons and the overall neutrino mass scale, although the neutrino mixing pattern is already in the observed ballpark |
-| Hard frontier | Hadrons, because bound states require full nonperturbative strong-dynamics calculations |
+| Still being finished | Charged leptons and the reduced neutrino bridge-correction invariant `C_nu` above the emitted proxy, although the neutrino mixing pattern is already in the observed ballpark |
+| Hard frontier | Hadrons, because bound states now wait on a production backend export bundle and then full nonperturbative strong-dynamics calculations |
 
 That is enough to tell a clear story without pretending every particle sits at exactly the same stage of completion.
 
@@ -669,13 +669,13 @@ Let's step back and see what the framework actually accounts for.
 
 **The zeros.** The photon and graviton masses are exactly zero. This is a symmetry-protected prediction. The photon's masslessness follows from U(1) gauge invariance being a genuine overlap redundancy; any mass would break the consistency of how charged patches glue together. Similarly, the graviton's masslessness follows from diffeomorphism invariance being the redundancy structure of bulk spacetime. Current experimental and observational upper bounds are consistent with these predictions to extraordinary precision: the photon mass is constrained below ~10⁻¹⁸ eV, often summarized as ~27 orders of magnitude, and the graviton mass is constrained below ~10⁻²³ eV by gravitational-wave dispersion, often summarized as ~22 orders of magnitude.
 
-**The particle story.** On top of those structural zeros, the framework already reaches the $W$ and $Z$, the Higgs, the top quark, and several quark masses. Charged leptons, the absolute neutrino scale, and the hadron spectrum are the main remaining pieces.
+**The particle story.** On top of those structural zeros, the framework already reaches the $W$ and $Z$, the Higgs, the top quark, and several quark masses. Charged leptons, the reduced neutrino bridge-correction invariant `C_nu` that would fix the absolute neutrino scale, and the hadron spectrum are the main remaining pieces.
 
 **Charge quantization.** All color-singlet particles have integer electric charge. No fractional charges like $\pm 1/3$ can exist outside hadrons. This follows from the global structure of the gauge group.
 
 **Gauge-mediated proton decay.** Gauge-mediated proton decay is forbidden. The gauge group is a product, not embedded in a larger simple group, so no leptoquark generators exist. Current experimental limits ($\tau_p > 10^{34}$ years) are consistent with this prediction.
 
-**The open frontier.** The remaining hard work is finishing the charged-lepton scale, fixing the overall neutrino mass scale, and doing the full nonperturbative strong-dynamics calculation needed for hadrons.
+**The open frontier.** The remaining hard work is finishing the charged-lepton scale, deriving the reduced neutrino bridge-correction invariant `C_nu` above the emitted proxy, and landing the production backend bundle plus nonperturbative strong-dynamics calculation needed for hadrons.
 
 ## 14.21 The Big Picture
 

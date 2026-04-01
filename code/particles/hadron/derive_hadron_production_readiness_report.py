@@ -40,6 +40,12 @@ DEFAULT_DUMP = ROOT / "particles" / "runs" / "hadron" / "backend_correlator_dump
 DEFAULT_EVALUATION = ROOT / "particles" / "runs" / "hadron" / "stable_channel_sequence_evaluation.json"
 DEFAULT_CLOSURE = ROOT / "particles" / "runs" / "hadron" / "hadron_production_closure_validation_report.json"
 DEFAULT_OUT = ROOT / "particles" / "runs" / "hadron" / "hadron_production_readiness_report.json"
+REQUIRED_PRODUCTION_CHANNELS = ("pi_iso", "N_iso_direct", "N_iso_exchange")
+REQUIRED_LOCAL_PRODUCTS = (
+    "backend_correlator_dump.production.json",
+    "stable_channel_sequence_evaluation.json",
+    "hadron_production_closure_validation_report.json",
+)
 
 
 def _timestamp() -> str:
@@ -124,6 +130,7 @@ def _dump_array_status(dump: dict[str, Any] | None) -> dict[str, Any]:
             "dump_present": False,
             "production_execution": False,
             "all_required_arrays_finite": False,
+            "required_channels": list(REQUIRED_PRODUCTION_CHANNELS),
             "missing_or_nonfinite_arrays": [],
         }
     missing: list[str] = []
@@ -131,7 +138,7 @@ def _dump_array_status(dump: dict[str, Any] | None) -> dict[str, Any]:
         for cfg_id, cfg in ((ensemble.get("cfgs") or {}).items()):
             for src_id, source in ((cfg.get("sources") or {}).items()):
                 expected_len = source.get("expected_t_extent")
-                for channel in ("pi_iso", "N_iso_direct", "N_iso_exchange"):
+                for channel in REQUIRED_PRODUCTION_CHANNELS:
                     values = source.get(channel)
                     field = f"{ensemble_id}.{cfg_id}.{src_id}.{channel}"
                     if not isinstance(values, list) or not values:
@@ -149,6 +156,7 @@ def _dump_array_status(dump: dict[str, Any] | None) -> dict[str, Any]:
         "dump_present": True,
         "production_execution": bool(dump.get("production_execution") is True),
         "all_required_arrays_finite": not missing,
+        "required_channels": list(REQUIRED_PRODUCTION_CHANNELS),
         "missing_or_nonfinite_arrays": missing,
     }
 
@@ -198,6 +206,24 @@ def build_readiness_report(
     else:
         smallest_residual = None
 
+    exact_remaining_runtime_object = None
+    if smallest_residual is not None:
+        exact_remaining_runtime_object = {
+            "name": "production_backend_export_bundle",
+            "status": "open" if not publication_bundle_ready else "closed",
+            "definition": (
+                "production backend export bundle on the seeded family with publication-complete manifest provenance "
+                "and real correlator arrays"
+            ),
+            "required_channels": list(REQUIRED_PRODUCTION_CHANNELS),
+            "required_local_products_after_normalization": list(REQUIRED_LOCAL_PRODUCTS),
+            "runtime_receipt_contract": {
+                "N_therm": n_therm,
+                "N_sep": n_sep,
+            },
+            "runner_path": "particles/hadron/run_production_backend_writeback.py",
+        }
+
     return {
         "artifact": "oph_hadron_production_readiness_report",
         "generated_utc": _timestamp(),
@@ -229,6 +255,7 @@ def build_readiness_report(
         },
         "publication_bundle_ready": publication_bundle_ready,
         "smallest_backend_residual_object": smallest_residual,
+        "exact_remaining_runtime_object": exact_remaining_runtime_object,
         "notes": [
             "This report sharpens the backend-side hadron frontier beyond the older generic dump wording.",
             "Numeric stable-channel closure and publication/provenance readiness are tracked separately on purpose.",

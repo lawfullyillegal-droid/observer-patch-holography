@@ -53,6 +53,7 @@ def classify_pipeline(
     readiness_report: dict[str, Any] | None,
 ) -> dict[str, Any]:
     blockers: list[str] = []
+    lane_status = "closure_candidate"
     stable_channels_ready = bool((closure_report or {}).get("public_unsuppression_ready"))
     publication_bundle_ready = (
         True if readiness_report is None else bool(readiness_report.get("publication_bundle_ready"))
@@ -69,6 +70,7 @@ def classify_pipeline(
     if publicly_ready:
         blockers.extend(["finite_volume_resonance_and_spectrum_readout"])
         effective_next_missing_object = "rho_resonance_extraction"
+        lane_status = "stable_channel_public_ready"
     elif stable_channels_ready and not publication_bundle_ready:
         blockers.extend(["production_backend_publication_provenance"])
         effective_next_missing_object = (
@@ -76,6 +78,7 @@ def classify_pipeline(
             if readiness_report is not None
             else "publication-complete backend manifest provenance on the seeded family"
         )
+        lane_status = "stable_channel_numeric_closure_waiting_publication_bundle"
     elif evaluation_status == "awaiting_measure_evaluation" or payload_status == "law_closed_waiting_measure_realization":
         blockers.extend(
             [
@@ -90,6 +93,9 @@ def classify_pipeline(
         )
         closure_residual = None if closure_report is None else closure_report.get("smallest_live_residual_object")
         effective_next_missing_object = (
+            readiness_report.get("smallest_backend_residual_object")
+            if runtime_receipt_emitted and readiness_report is not None
+            else
             str(closure_residual)
             if closure_residual
             else "backend_correlator_dump.production.json from real production RHMC/HMC execution on the theorem-emitted seeded family"
@@ -98,15 +104,23 @@ def classify_pipeline(
             if cfg_source_payload is not None
             else "runtime_schedule_receipt_N_therm_and_N_sep"
         )
+        lane_status = (
+            "execution_contract_frozen_waiting_backend_bundle"
+            if runtime_receipt_emitted
+            else "assembly_in_progress"
+        )
     elif sequence_status == "law_closed_waiting_measure_evaluation":
         blockers.append("stable_channel_sequence_evaluation")
         effective_next_missing_object = "stable_channel_sequence_evaluation"
+        lane_status = "assembly_in_progress"
     elif next_missing_object:
         blockers.append(str(next_missing_object))
         effective_next_missing_object = str(next_missing_object)
+        lane_status = "assembly_in_progress"
     else:
         blockers.append("stable_channel_sequence_population")
         effective_next_missing_object = "stable_channel_sequence_population"
+        lane_status = "assembly_in_progress"
     if not contraction_ready:
         blockers.append("full_baryon_contractions")
     if not stable_channels_ready:
@@ -118,15 +132,7 @@ def classify_pipeline(
         )
 
     return {
-        "lane_status": (
-            "stable_channel_public_ready"
-            if publicly_ready
-            else "stable_channel_numeric_closure_waiting_publication_bundle"
-            if stable_channels_ready and not publication_bundle_ready
-            else "assembly_in_progress"
-            if blockers
-            else "closure_candidate"
-        ),
+        "lane_status": lane_status if blockers or publicly_ready else "closure_candidate",
         "blockers": blockers,
         "current_frontier": blockers[:2],
         "smallest_constructive_missing_object": effective_next_missing_object,
@@ -154,6 +160,11 @@ def classify_pipeline(
             "publication_bundle_ready": publication_bundle_ready,
             "smallest_backend_residual_object": (
                 readiness_report.get("smallest_backend_residual_object")
+                if readiness_report is not None
+                else None
+            ),
+            "exact_remaining_runtime_object": (
+                readiness_report.get("exact_remaining_runtime_object")
                 if readiness_report is not None
                 else None
             ),
@@ -235,6 +246,7 @@ def build_audit(
                 "artifact": readiness_report.get("artifact"),
                 "publication_bundle_ready": readiness_report.get("publication_bundle_ready"),
                 "smallest_backend_residual_object": readiness_report.get("smallest_backend_residual_object"),
+                "exact_remaining_runtime_object": readiness_report.get("exact_remaining_runtime_object"),
                 "backend_manifest_publication_status": readiness_report.get("backend_manifest_publication_status"),
                 "production_dump_status": readiness_report.get("production_dump_status"),
             }
@@ -270,7 +282,9 @@ def build_audit(
                 "rho_phase_shift_fit.json"
                 if stable_channels_ready
                 else
-                "backend_correlator_dump.production.json"
+                "production_backend_export_bundle"
+                if measure_realization_open and schedule_emitted
+                else "backend_correlator_dump.production.json"
                 if measure_realization_open
                 else ("oph_hadron_stable_channel_sequence_population" if seeded else "oph_hadron_full_unquenched_correlator")
             ),
@@ -283,7 +297,7 @@ def build_audit(
                 "The stable channels are promotable on the executed seeded family, so the remaining hadron work is the separate rho finite-volume scattering readout."
                 if stable_channels_ready
                 else
-                "The sequence-emission, cfg/source jackknife law, runtime receipt, and frozen execution schema are all explicit, so the next productive move is the real backend correlator dump on the seeded 2+1 family before forward-window convergence and production systematics."
+                "The sequence-emission, cfg/source jackknife law, runtime receipt, and frozen execution schema are all explicit, so the next productive move is one production backend export bundle on the seeded 2+1 family, with publication-complete manifest provenance and real correlator arrays, before forward-window convergence and production systematics."
                 if measure_realization_open and schedule_emitted
                 else
                 "The sequence-emission and cfg/source jackknife laws are fixed on the seeded ensemble family, so the next productive move is realizing the per-ensemble cfg/source arrays on that family before the forward-window convergence theorem."
@@ -393,7 +407,7 @@ def build_audit(
                 "The closure validator is necessary but no longer sufficient on its own: publication also requires a provenance-complete backend manifest bundle."
                 if stable_channels_ready and not publication_bundle_ready
                 else
-                "The runtime receipt `(N_therm, N_sep)` is the emitted execution-and-systematics contract. With that contract explicit, the first honest live residual object is the production backend correlator dump on the seeded 2+1 family."
+                "The runtime receipt `(N_therm, N_sep)` is the emitted execution-and-systematics contract. With that contract explicit, the first honest live residual object is one production backend export bundle on the seeded 2+1 family with publication-complete manifest provenance and real correlator arrays."
                 if measure_realization_open
                 else "The stable-channel cfg/source arrays are not yet the live blocker on this branch."
             ),
@@ -403,7 +417,7 @@ def build_audit(
                 else "No surrogate execution-bridge diagnostic is attached to this audit."
             ),
             (
-                "The backend readiness report now sharpens the backend-side residual further: after the filled receipt, the live publication boundary is a production bundle with publication-complete manifest provenance plus real correlator arrays, not just an unnamed dump."
+                "The backend readiness report now sharpens the backend-side residual further: after the filled receipt, the live publication boundary is a production backend export bundle with publication-complete manifest provenance plus real correlator arrays, not just an unnamed dump."
                 if readiness_report is not None
                 else "No backend readiness report is attached to this audit."
             ),

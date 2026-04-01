@@ -43,7 +43,7 @@ main, et non comme une affirmation selon laquelle tout le spectre observé serai
 
 - **Sorties structurelles exactes déjà présentes sur la surface actuelle :** photon, gluons, graviton.
 - **Lignes quantitatives actuellement les plus fortes :** bosons \(W\) et \(Z\) sur le théorème fermé de calibration électrofaible sans cible gelée, plus boson de Higgs et quark top sur l'étage critique Higgs/top. La branche neutrino pondérée reproduit aussi très précisément la hiérarchie d'oscillation une fois l'ancre atmosphérique compare-only fournie.
-- **Toujours inachevé :** la famille plus large des quarks reste au niveau continuation et la feuille quark actuelle est maintenant connue comme une mauvaise branche stricte pour la coquille CKM physique, mais le sélecteur local de même étiquette est désormais fermé sur le singleton `sigma_ref`, de sorte que la branche choisie est fixée tout en restant la mauvaise branche D12 ; le prochain objet exact est donc la loi d'échelle intrinsèque sur le rayon de masse D12 déjà émis, et non plus un nouveau théorème de sélection ; la voie des leptons chargés ferme déjà la forme centrée mais laisse encore ouverte la normalisation absolue, la frontière vivante passant par la promotion de `C_hat_e^{cand}` puis par la fermeture affine physique `A_ch = mu_phys(Y_e)` dont découlent canoniquement la remontée non centrée, la ligne déterminant et l'ancre affine ; la branche neutrino pondérée actuelle reproduit le motif physique PMNS/hiérarchie, ne laisse plus de branche discrète cachée supplémentaire, et attend encore la loi de pont résiduelle `B_nu`, dont la fenêtre compare-only actuelle contenant la cible est `[6.69600, 6.71040]` ; et les hadrons sont liés à l'exécution, car des lignes promouvables exigent un calcul non perturbatif de production et un contrôle systématique réel, pas seulement une fermeture symbolique supplémentaire.
+- **Toujours inachevé :** la famille plus large des quarks reste au niveau continuation et la feuille quark actuelle est maintenant connue comme une mauvaise branche stricte pour la coquille CKM physique, mais le sélecteur local de même étiquette est désormais fermé sur le singleton `sigma_ref`, de sorte que la branche choisie est fixée tout en restant la mauvaise branche D12 ; le prochain objet exact est donc la loi d'échelle intrinsèque sur le rayon de masse D12 déjà émis, et non plus un nouveau théorème de sélection ; la voie des leptons chargés ferme déjà la forme centrée mais laisse encore ouverte la normalisation absolue, la frontière vivante passant par la promotion de `C_hat_e^{cand}` puis par la fermeture affine physique `A_ch = mu_phys(Y_e)` dont découlent canoniquement la remontée non centrée, la ligne déterminant et l'ancre affine ; la branche neutrino pondérée actuelle reproduit le motif physique PMNS/hiérarchie, ne laisse plus de branche discrète cachée supplémentaire, et attend encore l'invariant de correction réduit `C_nu` au-dessus du proxy déjà émis `P_nu`, la fenêtre compare-only actuelle contenant la cible étant `C_nu in [0.9994296, 1.0015784]` et induisant `B_nu in [6.69600, 6.71040]` ; et les hadrons sont maintenant gelés par contrat d'exécution : des lignes promouvables exigent un bundle backend de production avec provenance de manifeste complète, vrais tableaux de corrélateurs, puis un contrôle systématique réel, pas seulement une fermeture symbolique supplémentaire.
 
 Le tableau ci-dessous contient les résultats les plus forts à ce stade. Les notes de statut / réserve sont placées juste après pour garder les colonnes de comparaison lisibles dans les différents rendus markdown.
 
@@ -70,9 +70,9 @@ Statut / réserve :
 - Boson Z : émis sur le même théorème fermé de calibration électrofaible.
 - Boson de Higgs : ligne quantitative secondaire sur l'étage critique Higgs/top.
 - Quark top : ligne quantitative secondaire sur l'étage critique Higgs/top.
-- Écart solaire des neutrinos `Δm21²` : écart absolu compare-only ; la loi de pont résiduelle `B_nu` reste ouverte.
+- Écart solaire des neutrinos `Δm21²` : écart absolu compare-only ; l'invariant de correction réduit `C_nu` reste ouvert au-dessus du proxy déjà émis.
 - Écart atmosphérique des neutrinos `Δm32²` : ancre atmosphérique compare-only utilisée pour fixer l'échelle en eV.
-- Écart d'ordre normal des neutrinos `Δm31²` : écart absolu compare-only ; la loi de pont résiduelle `B_nu` reste ouverte.
+- Écart d'ordre normal des neutrinos `Δm31²` : écart absolu compare-only ; l'invariant de correction réduit `C_nu` reste ouvert au-dessus du proxy déjà émis.
 - Rapport hiérarchique des neutrinos `Δm21² / Δm32²` : rapport hiérarchique sans échelle au niveau théorématique sur la branche pondérée.
 
 La calibration électrofaible fixe d'abord une constante de pixel partagée `P` sur la surface source de running/matching ; une fois `P` fixé, la base électrofaible target-free émet un quintette cohérent `(W, Z, alpha_em^-1, sin^2 theta_W, v)` sans ajuster séparément `W` et `Z`.
@@ -117,9 +117,9 @@ dont découlent canoniquement la remontée non centrée, la ligne déterminant e
 pondérée actuelle avec `theta12 = 34.2259°`, `theta23 = 49.7228°`, `theta13 = 8.68636°`,
 `delta = 305.581°` et `Delta m21^2 / Delta m32^2 = 0.03072111`, compare ces nombres directement
 à la surface oscillatoire PDG, explique que la section normalisée des poids de défaut de
-recouvrement est déjà fermée tandis que le spectre neutrino absolu attend encore le scalaire de pont résiduel
-`B_nu`, avec fenêtre compare-only actuelle `[6.69600, 6.71040]`, qui induit ensuite `lambda_nu` après la factorisation exacte `q_mean^p_nu`, et indique que les hadrons restent
-liés à l'exécution plutôt qu'à des lignes de sortie déjà dérivées dans l'article.
+recouvrement est déjà fermée tandis que le spectre neutrino absolu attend encore l'invariant de correction réduit
+`C_nu` au-dessus du proxy déjà émis `P_nu`, avec fenêtre compare-only actuelle `[0.9994296, 1.0015784]` qui induit ensuite `B_nu in [6.69600, 6.71040]` puis `lambda_nu` après la factorisation exacte `q_mean^p_nu`, et indique que les hadrons restent
+gelés par contrat d'exécution plutôt qu'à des lignes de sortie déjà dérivées dans l'article.
 
 - **PDF :** [Deriving the Particle Zoo from Observer Consistency](paper/deriving_the_particle_zoo_from_observer_consistency.pdf)
 - **Source LaTeX :** [deriving_the_particle_zoo_from_observer_consistency.tex](paper/deriving_the_particle_zoo_from_observer_consistency.tex)

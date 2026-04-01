@@ -32,3 +32,13 @@ def test_hadron_production_readiness_report_tracks_backend_bundle_boundary() -> 
         "production backend export bundle on the seeded family with publication-complete manifest provenance "
         "and real correlator arrays"
     )
+    exact = payload["exact_remaining_runtime_object"]
+    assert exact["name"] == "production_backend_export_bundle"
+    assert exact["status"] == "open"
+    assert exact["required_channels"] == ["pi_iso", "N_iso_direct", "N_iso_exchange"]
+    assert exact["required_local_products_after_normalization"] == [
+        "backend_correlator_dump.production.json",
+        "stable_channel_sequence_evaluation.json",
+        "hadron_production_closure_validation_report.json",
+    ]
+    assert exact["runtime_receipt_contract"] == {"N_therm": 2048.0, "N_sep": 512.0}

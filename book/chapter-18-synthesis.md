@@ -207,7 +207,7 @@ Under the bridge assumptions above, the model yields:
 3. **The Standard Model gauge group** $SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6$, reconstructed from edge-sector fusion rules and a minimality principle
 4. **Three generations, three colors**: fixed by anomaly cancellation and the minimality principle
 5. **Massless gauge bosons and graviton**: forced by emergent gauge and diffeomorphism invariance, which forbid mass terms
-6. **A particle story with clear landmarks**: photon, gluons, graviton, W, and Z are fixed; the Higgs, top quark, and several quark masses are already in play; charged leptons, neutrino masses, and hadrons are the hard remaining pieces
+6. **A particle story with clear landmarks**: photon, gluons, graviton, W, and Z are fixed; the Higgs, top quark, and several quark masses are already in play; charged leptons, the reduced neutrino bridge-correction invariant `C_nu`, and hadrons are the hard remaining pieces
 
 The photon and graviton are forced by the axiom chain. The framework is already deep into particle physics, and it is far beyond a vague gesture in that direction.
 
@@ -287,7 +287,7 @@ The Hilbert space is finite-dimensional. The second fundamental parameter, **scr
 
 ## 18.8 The Remaining Frontier
 
-The core picture is now sharp enough to feel like physics. The framework recovers the Standard Model gauge group, three generations, three colors, massless photon/gluons/graviton, and the absence of gauge-mediated proton decay. On top of that, it already reaches the W and Z, places the Higgs and top on a short follow-on branch, produces several quark masses on the current flavor branch, and lands near the observed neutrino mixing pattern. The remaining difficult jobs are to finish the charged-lepton scale, pin down the overall neutrino mass scale, bring flavor mixing onto a fully physical branch, and do the full nonperturbative work needed for hadrons. On the gravity side, the big open task is to derive the smooth geometric spacetime limit from an explicit microscopic screen model instead of treating it as the right branch of the theory.
+The core picture is now sharp enough to feel like physics. The framework recovers the Standard Model gauge group, three generations, three colors, massless photon/gluons/graviton, and the absence of gauge-mediated proton decay. On top of that, it already reaches the W and Z, places the Higgs and top on a short follow-on branch, produces several quark masses on the current flavor branch, and lands near the observed neutrino mixing pattern. The remaining difficult jobs are to finish the charged-lepton scale, derive the reduced neutrino bridge-correction invariant `C_nu` that would fix the absolute neutrino scale, bring flavor mixing onto a fully physical branch, and land the production backend bundle plus the nonperturbative work needed for hadrons. On the gravity side, the big open task is to derive the smooth geometric spacetime limit from an explicit microscopic screen model instead of treating it as the right branch of the theory.
 
 **Progress on numerical predictions.** The extraction of gauge couplings from
 edge-sector probabilities has been validated numerically in 2D gauge models.
@@ -314,7 +314,7 @@ a consequence of Peter-Weyl structure plus the distinction between entropy
 The main open directions are:
 
 1. **Screen microphysics**: What exactly are the degrees of freedom on S²?
-2. **Finish the particle story**: complete charged-lepton masses, fix the overall neutrino mass scale, finish the physical flavor-mixing branch, and push hadrons through full nonperturbative computation.
+2. **Finish the particle story**: complete charged-lepton masses, derive the reduced neutrino bridge-correction invariant `C_nu`, finish the physical flavor-mixing branch, and push hadrons through the backend-bundle gate into full nonperturbative computation.
 3. **Dynamics and gravity**: Can local horizon thermodynamics be made fully internal?
 4. **Cosmology**: What fixes Λ and the initial low‑entropy condition?
 5. **Numerical predictions**: Implement SU(2)/SU(3) quantum link models and
@@ -390,7 +390,7 @@ For the book, the particle story currently looks like this:
 | Structural carriers | Photon, gluons, and graviton come out as exactly massless. |
 | Electroweak bosons | The $W$ and $Z$ are derived. |
 | Next layer | The Higgs, the top quark, and several quark masses are already on the current particle branch. |
-| Still being finished | Charged leptons and the absolute neutrino mass scale. |
+| Still being finished | Charged leptons and the reduced neutrino bridge-correction invariant `C_nu` above the emitted proxy. |
 | Hardest frontier | Hadrons, because they require full nonperturbative strong-dynamics calculations. |
 
 ### Key Physical Arguments We Inherit

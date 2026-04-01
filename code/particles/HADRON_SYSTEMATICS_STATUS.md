@@ -41,7 +41,7 @@ prediction path separately from the main particle table.
 | `qcd_2p1_seed_n2` | `N_iso` | `pending` | `pending` | `pending` | `pending` | `no` |
 
 ## Residual Open Object
-- current: `backend_correlator_dump.production.json from real production RHMC/HMC execution on the theorem-emitted seeded family`
+- current: `production backend export bundle on the seeded family with publication-complete manifest provenance and real correlator arrays`
 - after-execution: `StableChannelForwardWindowConvergence`
 - after-convergence: `oph_hadron_rho_scattering_readout`
 

@@ -11,7 +11,7 @@ frontier is production execution:
 - the seeded `N_f = 2+1`, QED-off family is fixed
 - the runtime receipt exists
 - the payload and evaluation schemas exist
-- the missing object is the real production backend correlator dump
+- the missing object is one production backend export bundle with publication-complete manifest provenance and real correlator arrays
 
 So the first promotable outputs on the current branch are isospin-symmetric
 `pi_iso` and `N_iso`, not fully physical `p`, `n`, or `pi^0`.

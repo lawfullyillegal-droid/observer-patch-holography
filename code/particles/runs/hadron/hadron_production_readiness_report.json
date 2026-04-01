@@ -40,7 +40,27 @@
     "closure_grade": "execution_incomplete",
     "public_unsuppression_ready": false
   },
-  "generated_utc": "2026-04-01T00:30:53Z",
+  "exact_remaining_runtime_object": {
+    "definition": "production backend export bundle on the seeded family with publication-complete manifest provenance and real correlator arrays",
+    "name": "production_backend_export_bundle",
+    "required_channels": [
+      "pi_iso",
+      "N_iso_direct",
+      "N_iso_exchange"
+    ],
+    "required_local_products_after_normalization": [
+      "backend_correlator_dump.production.json",
+      "stable_channel_sequence_evaluation.json",
+      "hadron_production_closure_validation_report.json"
+    ],
+    "runner_path": "particles/hadron/run_production_backend_writeback.py",
+    "runtime_receipt_contract": {
+      "N_sep": 512,
+      "N_therm": 2048
+    },
+    "status": "open"
+  },
+  "generated_utc": "2026-04-01T01:40:19Z",
   "notes": [
     "This report sharpens the backend-side hadron frontier beyond the older generic dump wording.",
     "Numeric stable-channel closure and publication/provenance readiness are tracked separately on purpose.",
@@ -56,7 +76,12 @@
     "all_required_arrays_finite": false,
     "dump_present": false,
     "missing_or_nonfinite_arrays": [],
-    "production_execution": false
+    "production_execution": false,
+    "required_channels": [
+      "pi_iso",
+      "N_iso_direct",
+      "N_iso_exchange"
+    ]
   },
   "publication_bundle_ready": false,
   "runner_available": true,
