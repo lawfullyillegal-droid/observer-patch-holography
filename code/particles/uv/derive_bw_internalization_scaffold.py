@@ -128,12 +128,12 @@ def build_artifact() -> dict[str, object]:
         "reason_current_corpus_fails": (
             "The current corpus already packages the reference cap-local test system, the projectively "
             "compatible transported cap marginal family, and the asymptotic transport-equivalence certificate. "
-            "What is still missing is the two-term carried-collar emitted frontier on fixed local collar models; "
-            "without those lower witnesses that generate the schedule the canonical scaling-limit observer cap algebra/state realization is not promoted. "
-            "That combined witness itself reduces one level lower to a fixed-local-collar Markov/faithfulness datum: "
-            "collarwise CMI vanishing plus an eventual positive lower spectral bound. "
-            "Inside that datum, the constructive recovery witness, the exact-Markov comparison modulus, and the "
-            "faithful modular-defect term are now split as separate lower local scaffolds. "
+            "What is still missing is the carried-collar schedule on fixed local collar models; without the lower witness "
+            "that closes the faithfulness side, the canonical scaling-limit observer cap algebra/state realization is not promoted. "
+            "That schedule reduces one level lower to a fixed-local-collar Markov/faithfulness datum: collarwise CMI vanishing "
+            "plus an eventual positive lower spectral bound. On the local-Gibbs plus exponential-mixing pullback branch, the "
+            "Markov/recovery side is already latent once epsilon -> 0 on each fixed collar model, so the live missing clause "
+            "inside that raw datum is the eventual lower spectral bound feeding the faithful modular-defect term. "
             "Without either emitted schedule or emitted raw datum, all theorem-grade null geometric action currently "
             "on disk remains downstream of the BW branch itself."
         ),

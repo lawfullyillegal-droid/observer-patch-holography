@@ -21,5 +21,4 @@ def test_neutrino_absolute_scale_orbit_audit_records_only_positive_scale_freedom
     assert payload["no_hidden_discrete_branch"]["status"] == "closed"
     assert payload["no_hidden_discrete_branch"]["open_discrete_blockers"] == []
     assert payload["remaining_positive_scale_orbit"]["group"] == "R_{>0}"
-    assert payload["remaining_object"] == "one_positive_neutrino_mass_normalization_scalar"
-
+    assert payload["remaining_object"] == "one_positive_neutrino_bridge_correction_invariant"

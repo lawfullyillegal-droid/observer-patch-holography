@@ -18,7 +18,7 @@
   "derived_missing_witness": "vanishing_carried_collar_schedule_on_fixed_local_collars",
   "derived_missing_witness_artifact": "/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/uv/bw_carried_collar_schedule_scaffold.json",
   "exact_missing_object": "vanishing_carried_collar_schedule_on_fixed_local_collars",
-  "generated_utc": "2026-04-01T02:06:49Z",
+  "generated_utc": "2026-04-01T03:11:01Z",
   "honesty_gate": {
     "closure_artifact": "/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/uv/bw_carried_collar_schedule_scaffold.json",
     "derived_witness_chain": [

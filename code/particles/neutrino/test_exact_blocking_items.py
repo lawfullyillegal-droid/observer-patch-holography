@@ -299,7 +299,7 @@ def test_exact_blocking_items_reduce_to_one_absolute_normalization_after_repair(
         exact_payload = json.loads(exact_out.read_text(encoding="utf-8"))
         summary_payload = json.loads(summary_out.read_text(encoding="utf-8"))
         assert exact_payload["artifact"] == "oph_exact_neutrino_blocker_audit_v8"
-        assert exact_payload["live_continuation_branch_status"]["status"] == "physically_repaired_up_to_one_positive_scale"
+        assert exact_payload["live_continuation_branch_status"]["status"] == "physically_repaired_up_to_one_reduced_bridge_correction_invariant"
         assert exact_payload["no_hidden_discrete_branch"]["status"] == "closed"
         assert exact_payload["no_hidden_discrete_branch"]["open_discrete_blockers"] == []
         assert exact_payload["remaining_positive_scale_orbit"]["group"] == "R_{>0}"
@@ -308,10 +308,10 @@ def test_exact_blocking_items_reduce_to_one_absolute_normalization_after_repair(
         assert exact_payload["live_continuation_branch_status"]["absolute_scale_no_go"]["absolute_family_parameter"] == "lambda_nu > 0"
         assert exact_payload["live_continuation_branch_status"]["absolute_scale_no_go"]["hard_separated_compare_only_adapter"]["allowed_formula"].startswith("lambda_nu_cmp")
         assert [item["name"] for item in exact_payload["exact_blockers"]] == [
-            "one_positive_neutrino_mass_normalization_scalar"
+            "one_positive_neutrino_bridge_correction_invariant"
         ]
         assert summary_payload["exact_remaining_blockers"] == [
-            "one_positive_neutrino_mass_normalization_scalar"
+            "one_positive_neutrino_bridge_correction_invariant"
         ]
         corridor = summary_payload["strongest_compare_only_bridge_scalar_corridor"]
         assert corridor["strongest_target_containing_bridge_scalar_corridor"]["contains_compare_only_target"] is True

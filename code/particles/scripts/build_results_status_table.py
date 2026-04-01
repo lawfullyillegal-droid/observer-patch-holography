@@ -515,8 +515,20 @@ def _neutrino_public_candidate_allowed(bundle: Dict[str, Any]) -> bool:
 
 def _neutrino_repaired_branch_waiting_absolute_scale(blockers: Dict[str, Any]) -> bool:
     status = dict(blockers.get("live_continuation_branch_status", {}))
+    exact_blockers = list(blockers.get("exact_blockers") or [])
+    blocker_names = {item.get("name") for item in exact_blockers}
+    blocker_kinds = {item.get("kind") for item in exact_blockers}
+    repaired_status = status.get("status") in {
+        "physically_repaired_up_to_one_positive_scale",
+        "physically_repaired_up_to_one_reduced_bridge_correction_invariant",
+    }
+    repaired_blocker_surface = not exact_blockers or (
+        "one_positive_neutrino_bridge_correction_invariant" in blocker_names
+        and "reduced_bridge_correction_invariant" in blocker_kinds
+    )
     return (
-        status.get("status") == "physically_repaired_up_to_one_positive_scale"
+        repaired_status
+        and repaired_blocker_surface
         and bool(status.get("same_label_scalar_certificate_present"))
         and bool(status.get("shared_charged_left_basis_present"))
         and bool(status.get("repair_artifact_present"))

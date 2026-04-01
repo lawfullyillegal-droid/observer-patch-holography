@@ -36,7 +36,7 @@
     "markov_component": "epsilon_{n,m,delta} = I(A_{m,delta}:D_{m,delta}|B_{m,delta})_{omega_{n->m}} -> 0"
   },
   "exact_missing_object": "fixed_local_collar_markov_faithfulness_datum",
-  "generated_utc": "2026-04-01T02:06:49Z",
+  "generated_utc": "2026-04-01T03:11:01Z",
   "honesty_gate": {
     "closure_artifact": "/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/uv/bw_carried_collar_schedule_scaffold.json",
     "derived_witness_chain": [

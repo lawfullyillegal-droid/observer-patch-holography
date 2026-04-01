@@ -359,14 +359,16 @@ def load_sigma_ud_singleton_uniqueness_witness(
             "branch_key": ["D12", REFERENCE_SHEET_SIGMA_ID],
         },
         "theorem_statement": (
-            "On the emitted local solver surface, the same-label left-handed quark orbit collapses to the singleton "
-            "{sigma_ref}. The local chirality-basis diagnostic leaves only the ordered L/L choice physically admissible, "
-            "and the published standard CKM gauge with V_ud, V_us, V_cs, V_cb, V_tb real-positive fixes the remaining "
-            "diagonal rephasing to the trivial global phase."
+            "On the emitted local solver surface, the only currently exposed same-label left-handed orbit representative is "
+            "sigma_ref. The local chirality-basis diagnostic leaves only the ordered L/L choice physically admissible, and "
+            "the published standard CKM gauge with V_ud, V_us, V_cs, V_cb, V_tb real-positive fixes the remaining diagonal "
+            "rephasing to the trivial global phase. A separate ordered-basis-to-sheet identification witness is not yet "
+            "surfaced beyond that emitted reference representative."
         ),
         "selection_reason": (
-            "Exactly one chirality-basis choice is physically admissible on the current corpus and the published "
-            "five-anchor standard CKM gauge removes every residual diagonal rephasing except the trivial global phase."
+            "The current emitted local same-label left-handed solver surface exposes only sigma_ref, the chirality-basis "
+            "diagnostic leaves only the ordered L/L side physically admissible, and the published five-anchor standard CKM "
+            "gauge removes residual diagonal rephasing except the trivial global phase."
             if theorem_grade_select
             else "Either a non-left chirality basis remains admissible or the published five-anchor standard CKM gauge does not uniquely fix the reference representative."
         ),
@@ -387,6 +389,7 @@ def load_sigma_ud_singleton_uniqueness_witness(
         "limitations": [
             "This closes the emitted local same-label left-handed orbit only.",
             "It does not manufacture any nonlocal sheet provider beyond the current solver surface.",
+            "It does not yet expose a separate ordered-basis-to-sheet identification witness between the L/L diagnostic basis and the emitted sigma_ref representative.",
             "The selected singleton remains the current D12 reference sheet, so the physical CKM-shell no-go still applies.",
         ],
     }

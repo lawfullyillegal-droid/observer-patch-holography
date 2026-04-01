@@ -123,7 +123,7 @@
     "schedule_scalars_source": "external_runtime_input",
     "trajectory_stop_derivation": "execution_contract.stop_time_formula"
   },
-  "generated_utc": "2026-03-29T06:08:46Z",
+  "generated_utc": "2026-04-01T03:09:07Z",
   "notes": [
     "This receipt is the final honest bridge between theorem-side hadron preparation and executed runtime/systematics work.",
     "It does not emit N_therm or N_sep itself; those remain external execution inputs on the present hadron surface.",

@@ -205,7 +205,7 @@
       "stable_channel_sequence_population_status": "awaiting_sequence_population"
     }
   ],
-  "generated_utc": "2026-03-29T03:08:44Z",
+  "generated_utc": "2026-04-01T03:09:07Z",
   "light_mass_rule": "m_l=(m_u+m_d)/2",
   "measure_formula": "dmu_e(U)=Z_e^{-1} exp(-S_g(U;beta_e)) det D_l(U;am_l^(e))^2 det D_s(U;am_s^(e)) dU",
   "missing_physics": [

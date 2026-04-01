@@ -70,6 +70,11 @@ def build_exact_blockers(
     repair_scale_free_mass = dict(repair.get("scale_free_mass_normal_form") or {})
     repair_scale_free_dm2 = dict((repair.get("scale_free_dm2_normal_form") or {}).get("dm2") or {})
     repair_symbolic_family = dict(repair.get("symbolic_absolute_family") or {})
+    reduced_bridge_object = dict(
+        (irreducibility or {}).get("reduced_remaining_object")
+        or (bridge_candidate or {}).get("smallest_exact_missing_object")
+        or {}
+    )
     physical_branch_closed = bool(pmns.get("physical_branch_closed", False)) or (
         repair_present and repair_shape_closed and not absolute_normalization_open
     )
@@ -113,10 +118,20 @@ def build_exact_blockers(
     if same_label_present and charged_basis_present and repair_shape_closed and absolute_normalization_open:
         exact_blockers.append(
             {
-                "name": "one_positive_neutrino_mass_normalization_scalar",
-                "kind": "absolute_scale_coordinate",
-                "current_snapshot_status": "open",
-                "required_contract": "emit_one_OPH_normalization_scalar_that_upgrades_the_repaired_weighted_cycle_branch_from_dimensionless_hierarchy_to_absolute_masses_and_splittings_without_external_anchor",
+                "name": reduced_bridge_object.get("name", "one_positive_neutrino_bridge_correction_invariant"),
+                "kind": "reduced_bridge_correction_invariant",
+                "symbol": reduced_bridge_object.get("symbol", "C_nu"),
+                "definition": reduced_bridge_object.get(
+                    "definition",
+                    "C_nu = B_nu / (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1)",
+                ),
+                "bridge_reconstruction": reduced_bridge_object.get(
+                    "bridge_reconstruction",
+                    "B_nu = (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1) * C_nu",
+                ),
+                "equivalence_theorem": reduced_bridge_object.get("equivalence_theorem"),
+                "current_snapshot_status": reduced_bridge_object.get("status", "irreducible_on_current_corpus"),
+                "required_contract": "emit_one_positive_neutrino_bridge_correction_invariant_above_the_emitted_proxy",
                 "insufficiency_theorem": "neutrino_weighted_cycle_absolute_scale_no_go",
             }
         )
@@ -127,7 +142,8 @@ def build_exact_blockers(
         if same_label_present and charged_basis_present and repair_shape_closed and absolute_normalization_open:
             reason_not_fully_completed = (
                 "The old isotropic branch has been repaired at the physical-pattern level: the weighted-cycle branch lands in the observed PMNS window and gives the right splitting hierarchy. "
-                "But one overall positive neutrino normalization is still open, so the absolute masses and absolute delta m^2 values remain compare-only unless an external atmospheric anchor is supplied."
+                "The remaining exact attachment object is the reduced bridge-correction invariant C_nu above the already-emitted positive proxy P_nu. "
+                "Until that reduced correction scalar is emitted, the branch still carries one positive absolute orbit, so absolute masses and absolute delta m^2 values remain compare-only unless an external atmospheric anchor is supplied."
             )
         elif branch_repair_required:
             reason_not_fully_completed = (
@@ -240,7 +256,7 @@ def build_exact_blockers(
             "pmns_present": pmns_present,
             "repair_artifact_present": repair_present,
             "status": (
-                "physically_repaired_up_to_one_positive_scale"
+                "physically_repaired_up_to_one_reduced_bridge_correction_invariant"
                 if repair_shape_closed and absolute_normalization_open
                 else (
                     "numerically_closed_but_quantitatively_wrong_branch"
@@ -313,9 +329,7 @@ def build_exact_blockers(
                     "sharper_attachment_object": (
                         bridge_candidate.get("exact_next_theorem_object") if bridge_candidate else None
                     ),
-                    "smallest_exact_missing_object": (
-                        irreducibility.get("reduced_remaining_object") if irreducibility else None
-                    ),
+                    "smallest_exact_missing_object": reduced_bridge_object or None,
                     "current_attached_stack_irreducibility_theorem": (
                         {
                             "artifact": irreducibility.get("artifact"),

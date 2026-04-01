@@ -1262,7 +1262,7 @@ def build_svg(results: Dict[str, Any], tasks: Dict[str, Dict[str, Any]]) -> str:
         "Start with the OPH axioms plus the declared live scalar P and the extra input surface used by the neutrino estimate lane.",
         "Then read each lane from top to bottom: what the lane already does, what is still missing, what prediction surface it produces, and which particle rows are currently publishable.",
         f"The badge reports {closedish} of {total_rows} tracked rows above continuation / simulation status. In plain terms: those are the rows that are already beyond the merely exploratory stage.",
-        "The broader UV/BW premise boundary still sits above the particle lanes. Three cap-pair extraction witnesses are already explicit on disk; the first remaining emitted witness is the vanishing carried-collar schedule on fixed local collar models, and that schedule itself reduces one level lower to the fixed-local-collar Markov/faithfulness datum, after which ordered null cut-pair rigidity remains.",
+        "The broader UV/BW premise boundary still sits above the particle lanes. Three cap-pair extraction witnesses are already explicit on disk; the remaining local gap is now sharper: on the local-Gibbs pullback branch the Markov/recovery side is already latent, so the live missing clause inside the fixed-local-collar Markov/faithfulness datum is the eventual lower spectral bound feeding the faithful modular-defect term, after which ordered null cut-pair rigidity remains.",
     ]
     scaffold_h = estimate_box_height(
         title="How to read the mass derivation chart",

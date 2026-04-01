@@ -4,7 +4,7 @@
     "stable_channel_sequence_evaluation",
     "stable_channel_cfg_source_measure_payload"
   ],
-  "generated_utc": "2026-04-01T00:30:53Z",
+  "generated_utc": "2026-04-01T03:09:07Z",
   "latest_external_hints": [
     {
       "source": "e131_hadron_binding_emitter_push.response.md",
@@ -50,9 +50,9 @@
     "Exact quark masses are not sufficient by themselves because hadron masses depend dominantly on nonperturbative QCD binding energy.",
     "The current hadron pipeline is anchored on the unquenched correlator producer, the stable-channel readout, and the rho scattering readout.",
     "The ensemble seed is now fixed from Lambda_MSbar^(3) and the quark descendants; the sequence-emission and jackknife evaluation laws are fixed too, so the next local move is executing the fixed RHMC/HMC support schedule and writing the resulting per-ensemble stable-channel cfg/source payload arrays.",
-    "The runtime receipt `(N_therm, N_sep)` is the emitted execution-and-systematics contract. With that contract explicit, the first honest live residual object is the production backend correlator dump on the seeded 2+1 family.",
+    "The runtime receipt `(N_therm, N_sep)` is the emitted execution-and-systematics contract. With that contract explicit, the first honest live residual object is one production backend export bundle on the seeded 2+1 family with publication-complete manifest provenance and real correlator arrays.",
     "A separate surrogate HMC/RHMC execution bridge is now recorded too: it closes the receipt/writeback/evaluation/convergence/systematics path on the emitted schema, but it is diagnostic only and does not replace production unquenched execution.",
-    "The backend readiness report now sharpens the backend-side residual further: after the filled receipt, the live publication boundary is a production bundle with publication-complete manifest provenance plus real correlator arrays, not just an unnamed dump.",
+    "The backend readiness report now sharpens the backend-side residual further: after the filled receipt, the live publication boundary is a production backend export bundle with publication-complete manifest provenance plus real correlator arrays, not just an unnamed dump.",
     "The runtime receipt should now be treated as an execution-and-systematics contract: once it is filled, the honest remaining work is executed unquenching, array writeback, and published continuum/volume/chiral/statistical budgets.",
     "After the evaluator is populated, the next stable-channel theorem is forward-window convergence of the ground-state extraction.",
     "The public table should stay suppressed until that pipeline emits stable-channel masses on its own path."
@@ -68,14 +68,34 @@
       "stable_channel_sequence_evaluation",
       "stable_channel_cfg_source_measure_payload"
     ],
-    "lane_status": "assembly_in_progress",
-    "smallest_constructive_missing_object": "backend_correlator_dump.production.json from real production RHMC/HMC execution on the theorem-emitted seeded family",
+    "lane_status": "execution_contract_frozen_waiting_backend_bundle",
+    "smallest_constructive_missing_object": "production backend export bundle on the seeded family with publication-complete manifest provenance and real correlator arrays",
     "summary": {
       "cfg_source_payload_status": "law_closed_waiting_measure_realization",
       "contraction_plan_status": "formula_closed",
+      "exact_remaining_runtime_object": {
+        "definition": "production backend export bundle on the seeded family with publication-complete manifest provenance and real correlator arrays",
+        "name": "production_backend_export_bundle",
+        "required_channels": [
+          "pi_iso",
+          "N_iso_direct",
+          "N_iso_exchange"
+        ],
+        "required_local_products_after_normalization": [
+          "backend_correlator_dump.production.json",
+          "stable_channel_sequence_evaluation.json",
+          "hadron_production_closure_validation_report.json"
+        ],
+        "runner_path": "particles/hadron/run_production_backend_writeback.py",
+        "runtime_receipt_contract": {
+          "N_sep": 512,
+          "N_therm": 2048
+        },
+        "status": "open"
+      },
       "full_unquenched_status": "predictive_ensemble_seeded_candidate",
       "lambda_msbar3_status": "consumed_from_secondary_qcd_descendant",
-      "next_missing_object": "backend_correlator_dump.production.json from real production RHMC/HMC execution on the theorem-emitted seeded family",
+      "next_missing_object": "production backend export bundle on the seeded family with publication-complete manifest provenance and real correlator arrays",
       "population_status": "predictive_ensemble_seeded_candidate",
       "production_closure_grade": "execution_incomplete",
       "production_geometry_summary_artifact": "oph_hadron_production_geometry_summary",
@@ -124,11 +144,36 @@
         "contractions"
       ]
     },
+    "exact_remaining_runtime_object": {
+      "definition": "production backend export bundle on the seeded family with publication-complete manifest provenance and real correlator arrays",
+      "name": "production_backend_export_bundle",
+      "required_channels": [
+        "pi_iso",
+        "N_iso_direct",
+        "N_iso_exchange"
+      ],
+      "required_local_products_after_normalization": [
+        "backend_correlator_dump.production.json",
+        "stable_channel_sequence_evaluation.json",
+        "hadron_production_closure_validation_report.json"
+      ],
+      "runner_path": "particles/hadron/run_production_backend_writeback.py",
+      "runtime_receipt_contract": {
+        "N_sep": 512,
+        "N_therm": 2048
+      },
+      "status": "open"
+    },
     "production_dump_status": {
       "all_required_arrays_finite": false,
       "dump_present": false,
       "missing_or_nonfinite_arrays": [],
-      "production_execution": false
+      "production_execution": false,
+      "required_channels": [
+        "pi_iso",
+        "N_iso_direct",
+        "N_iso_exchange"
+      ]
     },
     "publication_bundle_ready": false,
     "smallest_backend_residual_object": "production backend export bundle on the seeded family with publication-complete manifest provenance and real correlator arrays"
@@ -150,12 +195,12 @@
     "reason": "hadron_pipeline_not_closed"
   },
   "recommended_next_predictive_artifact": {
-    "name": "backend_correlator_dump.production.json",
+    "name": "production_backend_export_bundle",
     "scope": [
       "pi_iso",
       "N_iso"
     ],
-    "why": "The sequence-emission, cfg/source jackknife law, runtime receipt, and frozen execution schema are all explicit, so the next productive move is the real backend correlator dump on the seeded 2+1 family before forward-window convergence and production systematics."
+    "why": "The sequence-emission, cfg/source jackknife law, runtime receipt, and frozen execution schema are all explicit, so the next productive move is one production backend export bundle on the seeded 2+1 family, with publication-complete manifest provenance and real correlator arrays, before forward-window convergence and production systematics."
   },
   "reference_targets_gev": {
     "neutral_pion": 0.13497682776768472,
@@ -163,11 +208,11 @@
     "proton": 0.93827208816,
     "rho_770_0": 0.7752611563582926
   },
-  "smallest_constructive_missing_object": "backend_correlator_dump.production.json from real production RHMC/HMC execution on the theorem-emitted seeded family",
+  "smallest_constructive_missing_object": "production backend export bundle on the seeded family with publication-complete manifest provenance and real correlator arrays",
   "smallest_missing_theorem_after_full_unquenched": "StableChannelForwardWindowConvergence",
   "strict_missing_program": [
     "nonperturbative_hadron_closure_law",
-    "backend_correlator_dump.production.json from real production RHMC/HMC execution on the theorem-emitted seeded family",
+    "production backend export bundle on the seeded family with publication-complete manifest provenance and real correlator arrays",
     "StableChannelForwardWindowConvergence",
     "rho_resonance_extraction"
   ],

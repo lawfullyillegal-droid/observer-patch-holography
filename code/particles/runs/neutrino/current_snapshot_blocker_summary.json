@@ -2,9 +2,9 @@
   "artifact": "oph_current_snapshot_blocker_summary_v8",
   "charged_left_basis_artifact_dof_before_phase_quotients": 9,
   "exact_remaining_blockers": [
-    "one_positive_neutrino_mass_normalization_scalar"
+    "one_positive_neutrino_bridge_correction_invariant"
   ],
-  "generated_utc": "2026-04-01T02:06:50Z",
+  "generated_utc": "2026-04-01T03:09:07Z",
   "live_same_label_scalar_certificate_present": true,
   "physical_branch_closed": false,
   "pmns_present": true,

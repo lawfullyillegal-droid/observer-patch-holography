@@ -369,7 +369,7 @@
       "local_orbit_uniqueness_theorem": {
         "proof_status": "same_label_left_handed_local_orbit_singleton_closed",
         "scope": "emitted_local_solver_surface_only",
-        "selection_reason": "Exactly one chirality-basis choice is physically admissible on the current corpus and the published five-anchor standard CKM gauge removes every residual diagonal rephasing except the trivial global phase."
+        "selection_reason": "The current emitted local same-label left-handed solver surface exposes only sigma_ref, the chirality-basis diagnostic leaves only the ordered L/L side physically admissible, and the published five-anchor standard CKM gauge removes residual diagonal rephasing except the trivial global phase."
       },
       "local_solver_limit": "same_label_left_handed_local_orbit_singleton_closed",
       "quark_relative_sheet_selector": {
@@ -614,7 +614,7 @@
     "tau_d_best_fit": 0.08831017354133808,
     "tau_u_best_fit": 0.05214018144630117
   },
-  "generated_utc": "2026-04-01T02:06:40Z",
+  "generated_utc": "2026-04-01T03:10:50Z",
   "mean_split_audit": {
     "current_log_shift_d": -2.0281337286007872,
     "current_log_shift_u": -0.16973941452778685,

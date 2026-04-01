@@ -99,9 +99,10 @@ def main() -> int:
             "simple-spectrum D12 sheet. Every admissible same-sheet lift change is only "
             "U_u -> U_u P_u and U_d -> U_d P_d with P_u, P_d in diagonal U(1)^3, so "
             "V_CKM = U_u^dagger U_d changes only by left/right diagonal rephasing. Therefore all rephasing "
-            "invariants |V_ij|, theta_12, theta_23, theta_13, and J are frozen on the current D12 sheet. "
-            "Since the current sheet already has the wrong invariant magnitudes, no same-sheet rephase, local "
-            "convention change, scalar rescaling, or compare-fit mass choice can move it to the physical CKM shell."
+            "invariants |V_ij|, theta_12, theta_23, theta_13, and J are frozen under same-sheet rephasing on the "
+            "current D12 sheet. Since the current sheet already has the wrong invariant magnitudes, no same-sheet "
+            "rephase or local convention change can move it to the physical CKM shell. The current corpus does not "
+            "yet emit a theorem-grade rigidity law for CKM under ray_modulus motion on D12_ud_mass_ray."
         ),
         "current_d12_sheet": {
             "branch_label": "D12",
@@ -154,7 +155,8 @@ def main() -> int:
                         "the emitted local same-label left-handed orbit is the singleton {sigma_ref}",
                         "the selected-branch invariants equal the current D12 same-sheet invariants",
                         "those invariants remain far below the physical CKM shell",
-                        "mass-side scale fixing cannot repair CKM on the selected singleton branch",
+                        "same-sheet rephasing cannot repair CKM on the selected singleton branch",
+                        "the current corpus does not yet emit a theorem-grade CKM rigidity law under ray_modulus motion on D12_ud_mass_ray",
                     ]
                     if bool(uniqueness.get("theorem_grade_select"))
                     else [
@@ -349,7 +351,7 @@ def main() -> int:
             ),
             "The only finite local scan on disk is a same-sheet Delta_ud_overlap scan against reference targets; it is comparison-only and cannot be repurposed as a Sigma_ud scan.",
             "A smaller finite local basis orbit is already extractable from the current forward Yukawa surface, but it is diagnostic-only because its nontrivial elements leave the ordered same-label left-eigenframe domain.",
-            "Mass-side scale fixing remains a separate issue after the physical branch is selected; no scalar t1 can repair CKM on the present sheet.",
+            "Mass-side scale fixing remains a separate issue after the physical branch is selected; same-sheet rephasing is known not to repair CKM, but the current corpus does not yet emit a theorem-grade CKM rigidity law under ray_modulus motion on D12_ud_mass_ray.",
         ],
     }
 

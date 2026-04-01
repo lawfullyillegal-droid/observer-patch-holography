@@ -64,7 +64,7 @@ OPH is active research. Some parts are already strong, some are conditional, and
 ### What is still open
 
 - Parts of the refinement and continuum story that would complete the relativity branch from a fully explicit microscopic screen model.
-- Large parts of the mass program, especially the charged-lepton absolute scale, the reduced neutrino bridge-correction invariant `C_nu` above the emitted proxy, the final physical flavor branch, and the production-backend bundle needed before hadron rows can be promoted.
+- Large parts of the mass program, especially the charged-lepton absolute scale, the reduced neutrino bridge-correction invariant `C_nu` above the emitted proxy, the still-open physical quark branch after the local selector has already closed to `sigma_ref`, and the production-backend bundle needed before hadron rows can be promoted.
 - Several proof completions and cleanup steps across the paper stack.
 
 ### Selected current particle outputs
@@ -93,7 +93,7 @@ If you only read one paper, start with **Observers Are All You Need**. It is the
 - **PDF:** [Recovering Relativity and Standard Model Structure from Observer-Overlap Consistency](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf)
 - **LaTeX source:** [recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex)
 
-**Deriving the Particle Zoo from Observer Consistency** is the current particle-status paper. It covers the massless carriers, the derived `W` and `Z`, and the present quantitative status for the Higgs, the top quark, several quark masses, and the neutrino hierarchy pattern. It also makes clear which pieces remain unfinished, especially the charged-lepton absolute scale, the reduced neutrino bridge-correction invariant `C_nu` above the emitted proxy, and the production-backend bundle plus systematics still required for hadrons.
+**Deriving the Particle Zoo from Observer Consistency** is the current particle-status paper. It covers the massless carriers, the derived `W` and `Z`, and the present quantitative status for the Higgs, the top quark, several quark masses, and the neutrino hierarchy pattern. It also makes clear which pieces remain unfinished, especially the charged-lepton absolute scale, the still-open physical quark branch after the local selector has already closed to `sigma_ref` with `intrinsic_scale_law_D12` next on the emitted D12 mass ray, the reduced neutrino bridge-correction invariant `C_nu` above the emitted proxy, and the production-backend bundle plus systematics still required for hadrons.
 
 - **PDF:** [Deriving the Particle Zoo from Observer Consistency](paper/deriving_the_particle_zoo_from_observer_consistency.pdf)
 - **LaTeX source:** [deriving_the_particle_zoo_from_observer_consistency.tex](paper/deriving_the_particle_zoo_from_observer_consistency.tex)

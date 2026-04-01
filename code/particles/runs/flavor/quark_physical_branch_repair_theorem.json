@@ -27,7 +27,7 @@
     "local_orbit_uniqueness_theorem": {
       "proof_status": "same_label_left_handed_local_orbit_singleton_closed",
       "scope": "emitted_local_solver_surface_only",
-      "selection_reason": "Exactly one chirality-basis choice is physically admissible on the current corpus and the published five-anchor standard CKM gauge removes every residual diagonal rephasing except the trivial global phase."
+      "selection_reason": "The current emitted local same-label left-handed solver surface exposes only sigma_ref, the chirality-basis diagnostic leaves only the ordered L/L side physically admissible, and the published five-anchor standard CKM gauge removes residual diagonal rephasing except the trivial global phase."
     },
     "local_solver_limit": "same_label_left_handed_local_orbit_singleton_closed",
     "quark_relative_sheet_selector": {
@@ -57,14 +57,15 @@
     "uses_reference_targets": true,
     "why_disqualified": "The only finite scan currently exposed in local code is a same-sheet target-mass comparison scan over Delta_ud_overlap. It neither enumerates Sigma_ud nor emits a relative-sheet sigma->CKM evaluator, so it cannot honestly serve as branch repair."
   },
-  "generated_utc": "2026-04-01T02:06:42Z",
+  "generated_utc": "2026-04-01T03:10:51Z",
   "insufficiency_theorem": {
     "id": "D12_local_selector_closure_still_wrong_branch",
     "proof_obstruction": [
       "the emitted local same-label left-handed orbit is the singleton {sigma_ref}",
       "the selected-branch invariants equal the current D12 same-sheet invariants",
       "those invariants remain far below the physical CKM shell",
-      "mass-side scale fixing cannot repair CKM on the selected singleton branch"
+      "same-sheet rephasing cannot repair CKM on the selected singleton branch",
+      "the current corpus does not yet emit a theorem-grade CKM rigidity law under ray_modulus motion on D12_ud_mass_ray"
     ],
     "statement": "On the emitted local solver surface, sigma_ud closes to sigma_ref and the selected-branch CKM invariants are exactly the current D12 sheet invariants. Those invariants still miss the physical shell, so local branch repair is impossible on the present corpus."
   },
@@ -85,6 +86,7 @@
     "limitations": [
       "This closes the emitted local same-label left-handed orbit only.",
       "It does not manufacture any nonlocal sheet provider beyond the current solver surface.",
+      "It does not yet expose a separate ordered-basis-to-sheet identification witness between the L/L diagnostic basis and the emitted sigma_ref representative.",
       "The selected singleton remains the current D12 reference sheet, so the physical CKM-shell no-go still applies."
     ],
     "local_basis_admissibility": {
@@ -116,7 +118,7 @@
       "canonical_token": "D12::same_label_left::reference_sheet",
       "sigma_id": "sigma_ref"
     },
-    "selection_reason": "Exactly one chirality-basis choice is physically admissible on the current corpus and the published five-anchor standard CKM gauge removes every residual diagonal rephasing except the trivial global phase.",
+    "selection_reason": "The current emitted local same-label left-handed solver surface exposes only sigma_ref, the chirality-basis diagnostic leaves only the ordered L/L side physically admissible, and the published five-anchor standard CKM gauge removes residual diagonal rephasing except the trivial global phase.",
     "standard_rephasing_gauge_uniqueness": {
       "anchors": [
         {
@@ -182,7 +184,7 @@
       "standard_gauge_representative_unique": true
     },
     "theorem_grade_select": true,
-    "theorem_statement": "On the emitted local solver surface, the same-label left-handed quark orbit collapses to the singleton {sigma_ref}. The local chirality-basis diagnostic leaves only the ordered L/L choice physically admissible, and the published standard CKM gauge with V_ud, V_us, V_cs, V_cb, V_tb real-positive fixes the remaining diagonal rephasing to the trivial global phase."
+    "theorem_statement": "On the emitted local solver surface, the only currently exposed same-label left-handed orbit representative is sigma_ref. The local chirality-basis diagnostic leaves only the ordered L/L choice physically admissible, and the published standard CKM gauge with V_ud, V_us, V_cs, V_cb, V_tb real-positive fixes the remaining diagonal rephasing to the trivial global phase. A separate ordered-basis-to-sheet identification witness is not yet surfaced beyond that emitted reference representative."
   },
   "minimal_branch_shift_repair_theorem": {
     "branch_key_after_repair": [
@@ -247,7 +249,7 @@
     "That closure is negative for branch repair: sigma_ref is just the current D12 reference sheet, so the selected branch still misses the physical CKM shell and the next honest object is the intrinsic D12 scale law on the emitted mass ray.",
     "The only finite local scan on disk is a same-sheet Delta_ud_overlap scan against reference targets; it is comparison-only and cannot be repurposed as a Sigma_ud scan.",
     "A smaller finite local basis orbit is already extractable from the current forward Yukawa surface, but it is diagnostic-only because its nontrivial elements leave the ordered same-label left-eigenframe domain.",
-    "Mass-side scale fixing remains a separate issue after the physical branch is selected; no scalar t1 can repair CKM on the present sheet."
+    "Mass-side scale fixing remains a separate issue after the physical branch is selected; same-sheet rephasing is known not to repair CKM, but the current corpus does not yet emit a theorem-grade CKM rigidity law under ray_modulus motion on D12_ud_mass_ray."
   ],
   "physical_shell_mismatch": {
     "absolute_misses": {
@@ -292,5 +294,5 @@
     "status": "singleton_closed_by_uniqueness_theorem"
   },
   "scope": "D12_continuation_only",
-  "theorem_statement": "Fix the current emitted ordered, nondegenerate up- and down-sector spectra together with the simple-spectrum D12 sheet. Every admissible same-sheet lift change is only U_u -> U_u P_u and U_d -> U_d P_d with P_u, P_d in diagonal U(1)^3, so V_CKM = U_u^dagger U_d changes only by left/right diagonal rephasing. Therefore all rephasing invariants |V_ij|, theta_12, theta_23, theta_13, and J are frozen on the current D12 sheet. Since the current sheet already has the wrong invariant magnitudes, no same-sheet rephase, local convention change, scalar rescaling, or compare-fit mass choice can move it to the physical CKM shell."
+  "theorem_statement": "Fix the current emitted ordered, nondegenerate up- and down-sector spectra together with the simple-spectrum D12 sheet. Every admissible same-sheet lift change is only U_u -> U_u P_u and U_d -> U_d P_d with P_u, P_d in diagonal U(1)^3, so V_CKM = U_u^dagger U_d changes only by left/right diagonal rephasing. Therefore all rephasing invariants |V_ij|, theta_12, theta_23, theta_13, and J are frozen under same-sheet rephasing on the current D12 sheet. Since the current sheet already has the wrong invariant magnitudes, no same-sheet rephase or local convention change can move it to the physical CKM shell. The current corpus does not yet emit a theorem-grade rigidity law for CKM under ray_modulus motion on D12_ud_mass_ray."
 }

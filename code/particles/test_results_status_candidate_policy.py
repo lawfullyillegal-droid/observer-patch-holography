@@ -37,8 +37,14 @@ def test_d10_and_d11_public_candidate_policy_is_explicit() -> None:
 def test_neutrino_repaired_branch_policy_is_explicit() -> None:
     module = _load_module()
     blockers = {
+        "exact_blockers": [
+            {
+                "name": "one_positive_neutrino_bridge_correction_invariant",
+                "kind": "reduced_bridge_correction_invariant",
+            }
+        ],
         "live_continuation_branch_status": {
-            "status": "physically_repaired_up_to_one_positive_scale",
+            "status": "physically_repaired_up_to_one_reduced_bridge_correction_invariant",
             "same_label_scalar_certificate_present": True,
             "shared_charged_left_basis_present": True,
             "repair_artifact_present": True,

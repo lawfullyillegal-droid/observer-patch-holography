@@ -29,7 +29,7 @@
       "forbidden_feedback": "compare_only_anchor_must_not_feed_back_into_theorem_state_or_lambda_nu_emission"
     }
   },
-  "generated_utc": "2026-04-01T02:06:46Z",
+  "generated_utc": "2026-04-01T03:10:57Z",
   "next_breaking_contract": "neutrino_weighted_cycle_absolute_attachment",
   "no_hidden_discrete_branch": {
     "closed_discrete_witnesses": [
@@ -340,7 +340,7 @@
           "normalization_convention": "internal_weighted_cycle_branch_normal_form",
           "notation": "m_hat"
         },
-        "sharper_attachment_object": "oph_neutrino_attachment_bridge_invariant",
+        "sharper_attachment_object": "one_positive_neutrino_bridge_correction_invariant",
         "smallest_exact_missing_object": {
           "bridge_reconstruction": "B_nu = (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1) * C_nu",
           "compare_only_target": 0.9995473560046991,
@@ -401,11 +401,15 @@
       },
       "exact_blockers": [
         {
-          "current_snapshot_status": "open",
+          "bridge_reconstruction": "B_nu = (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1) * C_nu",
+          "current_snapshot_status": "irreducible_on_current_corpus",
+          "definition": "C_nu = B_nu / (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1)",
+          "equivalence_theorem": "Because the proxy P_nu is already internal to the current attached stack and strictly positive on the live branch, the current stack emits B_nu if and only if it emits C_nu := B_nu / P_nu.",
           "insufficiency_theorem": "neutrino_weighted_cycle_absolute_scale_no_go",
-          "kind": "absolute_scale_coordinate",
-          "name": "one_positive_neutrino_mass_normalization_scalar",
-          "required_contract": "emit_one_OPH_normalization_scalar_that_upgrades_the_repaired_weighted_cycle_branch_from_dimensionless_hierarchy_to_absolute_masses_and_splittings_without_external_anchor"
+          "kind": "reduced_bridge_correction_invariant",
+          "name": "one_positive_neutrino_bridge_correction_invariant",
+          "required_contract": "emit_one_positive_neutrino_bridge_correction_invariant_above_the_emitted_proxy",
+          "symbol": "C_nu"
         }
       ]
     },
@@ -441,9 +445,9 @@
       "smallest_constructive_missing_object": null
     }
   },
-  "remaining_object": "one_positive_neutrino_mass_normalization_scalar",
-  "remaining_object_contract": "emit_one_OPH_normalization_scalar_that_upgrades_the_repaired_weighted_cycle_branch_from_dimensionless_hierarchy_to_absolute_masses_and_splittings_without_external_anchor",
-  "remaining_object_kind": "absolute_scale_coordinate",
+  "remaining_object": "one_positive_neutrino_bridge_correction_invariant",
+  "remaining_object_contract": "emit_one_positive_neutrino_bridge_correction_invariant_above_the_emitted_proxy",
+  "remaining_object_kind": "reduced_bridge_correction_invariant",
   "remaining_positive_scale_orbit": {
     "action_on_lambda_nu": "lambda_nu -> s * lambda_nu, s > 0",
     "action_on_masses": "m_i -> s * m_i",
@@ -484,5 +488,5 @@
   },
   "status": "closed",
   "theorem": "repaired_weighted_cycle_no_hidden_discrete_branch_and_positive_scale_orbit",
-  "theorem_statement": "On the current repaired weighted-cycle neutrino lane, all remaining open freedom is the positive rescaling orbit lambda_nu -> s * lambda_nu with s > 0. No unresolved discrete branch remains."
+  "theorem_statement": "On the current repaired weighted-cycle neutrino lane, no unresolved discrete branch remains, and the exact remaining theorem object is the reduced bridge-correction invariant C_nu above the emitted proxy P_nu. Equivalently, the branch still carries one positive absolute-rescaling orbit lambda_nu -> s * lambda_nu with s > 0."
 }

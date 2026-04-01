@@ -45,8 +45,8 @@ def build_audit(repair: dict[str, Any], blockers: dict[str, Any], certificate: d
     exact_blockers = list(blockers.get("exact_blockers") or [])
     _require(len(exact_blockers) == 1, f"expected exactly one open exact blocker, got {len(exact_blockers)}")
     only = exact_blockers[0]
-    _require(only.get("name") == "one_positive_neutrino_mass_normalization_scalar", "wrong remaining blocker name")
-    _require(only.get("kind") == "absolute_scale_coordinate", "wrong remaining blocker kind")
+    _require(only.get("name") == "one_positive_neutrino_bridge_correction_invariant", "wrong remaining blocker name")
+    _require(only.get("kind") == "reduced_bridge_correction_invariant", "wrong remaining blocker kind")
 
     live = dict(blockers.get("live_continuation_branch_status") or {})
     no_go = dict(live.get("absolute_scale_no_go") or {})
@@ -73,8 +73,9 @@ def build_audit(repair: dict[str, Any], blockers: dict[str, Any], certificate: d
         "status": "closed",
         "theorem": THEOREM_NAME,
         "theorem_statement": (
-            "On the current repaired weighted-cycle neutrino lane, all remaining open freedom is the positive rescaling orbit "
-            "lambda_nu -> s * lambda_nu with s > 0. No unresolved discrete branch remains."
+            "On the current repaired weighted-cycle neutrino lane, no unresolved discrete branch remains, and the exact remaining "
+            "theorem object is the reduced bridge-correction invariant C_nu above the emitted proxy P_nu. Equivalently, the branch "
+            "still carries one positive absolute-rescaling orbit lambda_nu -> s * lambda_nu with s > 0."
         ),
         "proof_primitives": {
             "repair_artifact": {
@@ -165,4 +166,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

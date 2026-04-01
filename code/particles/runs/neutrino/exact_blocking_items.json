@@ -71,15 +71,19 @@
   },
   "exact_blockers": [
     {
-      "current_snapshot_status": "open",
+      "bridge_reconstruction": "B_nu = (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1) * C_nu",
+      "current_snapshot_status": "irreducible_on_current_corpus",
+      "definition": "C_nu = B_nu / (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1)",
+      "equivalence_theorem": "Because the proxy P_nu is already internal to the current attached stack and strictly positive on the live branch, the current stack emits B_nu if and only if it emits C_nu := B_nu / P_nu.",
       "insufficiency_theorem": "neutrino_weighted_cycle_absolute_scale_no_go",
-      "kind": "absolute_scale_coordinate",
-      "name": "one_positive_neutrino_mass_normalization_scalar",
-      "required_contract": "emit_one_OPH_normalization_scalar_that_upgrades_the_repaired_weighted_cycle_branch_from_dimensionless_hierarchy_to_absolute_masses_and_splittings_without_external_anchor"
+      "kind": "reduced_bridge_correction_invariant",
+      "name": "one_positive_neutrino_bridge_correction_invariant",
+      "required_contract": "emit_one_positive_neutrino_bridge_correction_invariant_above_the_emitted_proxy",
+      "symbol": "C_nu"
     }
   ],
   "fully_completed": false,
-  "generated_utc": "2026-04-01T02:06:50Z",
+  "generated_utc": "2026-04-01T03:09:07Z",
   "live_continuation_branch_status": {
     "absolute_scale_no_go": {
       "absolute_amplitude_bridge_summary": {
@@ -458,7 +462,7 @@
     },
     "same_label_scalar_certificate_present": true,
     "shared_charged_left_basis_present": true,
-    "status": "physically_repaired_up_to_one_positive_scale"
+    "status": "physically_repaired_up_to_one_reduced_bridge_correction_invariant"
   },
   "neutrino_only_isotropy_obstruction": {
     "closed": true,
@@ -476,7 +480,7 @@
     "statement": "The repaired weighted-cycle branch leaves only positive rescaling freedom; no unresolved discrete branch remains.",
     "status": "closed"
   },
-  "reason_not_fully_completed": "The old isotropic branch has been repaired at the physical-pattern level: the weighted-cycle branch lands in the observed PMNS window and gives the right splitting hierarchy. But one overall positive neutrino normalization is still open, so the absolute masses and absolute delta m^2 values remain compare-only unless an external atmospheric anchor is supplied.",
+  "reason_not_fully_completed": "The old isotropic branch has been repaired at the physical-pattern level: the weighted-cycle branch lands in the observed PMNS window and gives the right splitting hierarchy. The remaining exact attachment object is the reduced bridge-correction invariant C_nu above the already-emitted positive proxy P_nu. Until that reduced correction scalar is emitted, the branch still carries one positive absolute orbit, so absolute masses and absolute delta m^2 values remain compare-only unless an external atmospheric anchor is supplied.",
   "remaining_positive_scale_orbit": {
     "family_parameter": "lambda_nu > 0",
     "group": "R_{>0}",

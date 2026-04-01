@@ -235,7 +235,7 @@
       },
       "provider_status": "singleton_reference_sheet_only",
       "selection_proof": {
-        "reason": "Exactly one chirality-basis choice is physically admissible on the current corpus and the published five-anchor standard CKM gauge removes every residual diagonal rephasing except the trivial global phase.",
+        "reason": "The current emitted local same-label left-handed solver surface exposes only sigma_ref, the chirality-basis diagnostic leaves only the ordered L/L side physically admissible, and the published five-anchor standard CKM gauge removes residual diagonal rephasing except the trivial global phase.",
         "theorem_artifact": "code/particles/runs/flavor/quark_sigma_ud_singleton_uniqueness_theorem.json",
         "theorem_grade_select": true
       },
@@ -262,7 +262,7 @@
     "evaluate_relative_sheet(token)"
   ],
   "exact_missing_solver_interface": "sigma_ud_orbit_provider_interface",
-  "generated_utc": "2026-04-01T00:06:00Z",
+  "generated_utc": "2026-04-01T03:09:07Z",
   "input_contract": {
     "must_not_use": [
       "CKM target fitting inside the theorem artifact",
@@ -323,7 +323,7 @@
     "uniqueness_theorem": {
       "proof_status": "same_label_left_handed_local_orbit_singleton_closed",
       "scope": "emitted_local_solver_surface_only",
-      "selection_reason": "Exactly one chirality-basis choice is physically admissible on the current corpus and the published five-anchor standard CKM gauge removes every residual diagonal rephasing except the trivial global phase."
+      "selection_reason": "The current emitted local same-label left-handed solver surface exposes only sigma_ref, the chirality-basis diagnostic leaves only the ordered L/L side physically admissible, and the published five-anchor standard CKM gauge removes residual diagonal rephasing except the trivial global phase."
     },
     "why_transport_frame_diagnostic_orbit_is_insufficient": "The self-overlap F0^dagger F1 is a genuine already-local compare-only witness, but it lives on common-refinement transport frames rather than on emitted left-handed quark sheet evaluations. It therefore cannot populate Sigma_ud_orbit.elements = [{sigma_id, canonical_token, U_u_left, U_d_left, V_CKM, ckm_invariants}] or emit sigma_ud."
   },
@@ -357,6 +357,7 @@
     "limitations": [
       "This closes the emitted local same-label left-handed orbit only.",
       "It does not manufacture any nonlocal sheet provider beyond the current solver surface.",
+      "It does not yet expose a separate ordered-basis-to-sheet identification witness between the L/L diagnostic basis and the emitted sigma_ref representative.",
       "The selected singleton remains the current D12 reference sheet, so the physical CKM-shell no-go still applies."
     ],
     "local_basis_admissibility": {
@@ -388,7 +389,7 @@
       "canonical_token": "D12::same_label_left::reference_sheet",
       "sigma_id": "sigma_ref"
     },
-    "selection_reason": "Exactly one chirality-basis choice is physically admissible on the current corpus and the published five-anchor standard CKM gauge removes every residual diagonal rephasing except the trivial global phase.",
+    "selection_reason": "The current emitted local same-label left-handed solver surface exposes only sigma_ref, the chirality-basis diagnostic leaves only the ordered L/L side physically admissible, and the published five-anchor standard CKM gauge removes residual diagonal rephasing except the trivial global phase.",
     "standard_rephasing_gauge_uniqueness": {
       "anchors": [
         {
@@ -454,7 +455,7 @@
       "standard_gauge_representative_unique": true
     },
     "theorem_grade_select": true,
-    "theorem_statement": "On the emitted local solver surface, the same-label left-handed quark orbit collapses to the singleton {sigma_ref}. The local chirality-basis diagnostic leaves only the ordered L/L choice physically admissible, and the published standard CKM gauge with V_ud, V_us, V_cs, V_cb, V_tb real-positive fixes the remaining diagonal rephasing to the trivial global phase."
+    "theorem_statement": "On the emitted local solver surface, the only currently exposed same-label left-handed orbit representative is sigma_ref. The local chirality-basis diagnostic leaves only the ordered L/L choice physically admissible, and the published standard CKM gauge with V_ud, V_us, V_cs, V_cb, V_tb real-positive fixes the remaining diagonal rephasing to the trivial global phase. A separate ordered-basis-to-sheet identification witness is not yet surfaced beyond that emitted reference representative."
   },
   "status": "same_label_left_handed_local_orbit_singleton_closed",
   "theorem_grade_selection": {

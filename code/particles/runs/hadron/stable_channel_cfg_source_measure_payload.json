@@ -4489,7 +4489,7 @@
       ]
     }
   ],
-  "generated_utc": "2026-03-29T03:08:44Z",
+  "generated_utc": "2026-04-01T03:09:07Z",
   "next_theorem_after_measure_realization": "StableChannelForwardWindowConvergence",
   "notes": [
     "This artifact fixes the cfg/source payload law for the stable-channel measure arrays on each seeded ensemble.",
