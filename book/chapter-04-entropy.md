@@ -106,13 +106,13 @@ We exist in a brief window when entropy is high enough for complexity but low en
 
 **The hint**: The microscopic laws are time-symmetric. Irreversibility is statistical, not fundamental. The arrow traces to the low-entropy initial condition.
 
-**The reframing**: Here is where our model offers something surprising. The Past principle is usually taken as a brute fact-an unexplained initial condition. But the OPH viewpoint suggests a possible consistency-based explanation for why low-entropy beginnings are structurally important.
+**The reframing**: Here is where our model offers something surprising. The Past principle is usually taken as a brute fact-an unexplained initial condition. But this picture suggests a possible consistency-based explanation for why low-entropy beginnings are structurally important.
 
 Consider: for observers to exist at all, they must be able to form consistent records. Records require entropy gradients-you can only write information by pushing entropy somewhere else. A universe in thermal equilibrium has no observers, no records, no consistency-checking, no reality in the sense we've been developing.
 
 The MaxEnt principle tells us to assign the maximum-entropy state *given our constraints*. But what are the constraints? If one of them is "observers exist to apply MaxEnt," then equilibrium states are ruled out by construction. The very act of asking "what state should I assign?" presupposes a questioner embedded in an entropy gradient.
 
-This doesn't derive the specific low entropy of the Big Bang from pure logic. But it does suggest that the Past principle is not an arbitrary input; it is structurally important in the OPH reading. A universe with durable observers checking for consistency appears to require a significant departure from equilibrium. The low-entropy past can then be read as a structural precondition for the consistency-building present, not yet as a fully derived theorem of the framework.
+This doesn't derive the specific low entropy of the Big Bang from pure logic. But it does suggest that the Past principle is not an arbitrary input; it is structurally important in this picture. A universe with durable observers checking for consistency appears to require a significant departure from equilibrium. The low-entropy past can then be read as a structural precondition for the consistency-building present, not yet as a fully derived theorem of the framework.
 
 ## 4.4 Information is Physical
 
@@ -140,7 +140,7 @@ This sounds technical. It's revolutionary. It means **information is physical**.
 
 In 1867, Maxwell imagined a demon operating a door between two gas chambers. By selectively letting fast molecules through one way and slow molecules the other, the demon could create a temperature difference without work-seemingly violating the Second Law.
 
-The modern resolution is subtler than one sentence, but Landauer-style memory erasure is a central part of it: the demon must observe and remember each molecule's velocity, and resetting that memory carries a thermodynamic cost that preserves the Second Law bookkeeping.
+The modern resolution is subtler than one sentence, but Landauer-style memory erasure is a central part of it: the demon must observe and remember each molecule's velocity, and resetting that memory carries a thermodynamic cost that preserves the Second Law.
 
 **The hint**: Information processing has thermodynamic costs. You cannot observe, remember, or compute for free.
 
@@ -338,10 +338,10 @@ Let's trace the logic explicitly.
 2. The information they can access is bounded by their patch area
 3. Entanglement patterns on the screen determine both entropy and geometry
 4. The consistency process that makes observations agree costs energy and generates entropy
-5. In the OPH reading, durable observers and records require entropy gradients, so a robust arrow of time becomes structurally important
+5. Durable observers and records require entropy gradients, so a robust arrow of time becomes structurally important
 6. The Past principle may be structurally favored by consistency constraints, even though the specific low-entropy beginning is not yet derived from OPH alone
 
-On this reading, the universe appears to require a special low-entropy state for any of this to work. But this need not be left as an unexplained miracle. Consistency constraints require observers, observers require records, records require entropy gradients, and entropy gradients point back toward a low-entropy past. OPH therefore offers a consistency-based reason to view the Past principle as structurally motivated, even though the exact initial condition is not yet derived from the framework alone.
+This suggests that the universe required a special low-entropy state for any of this to work. But this need not be left as an unexplained miracle. Consistency constraints require observers, observers require records, records require entropy gradients, and entropy gradients point back toward a low-entropy past. The Past principle is therefore structurally motivated here, even though the exact initial condition is not yet derived from the framework alone.
 
 ## 4.11 Summary: The Entropy Budget
 
@@ -349,7 +349,7 @@ On this reading, the universe appears to require a special low-entropy state for
 
 2. **The Second Law is statistics**: High-entropy states dominate because there are more of them.
 
-3. **The arrow of time is cosmological**: It traces to the low-entropy Big Bang. OPH offers a consistency-based reason to regard such low-entropy beginnings as structurally important because observers need entropy gradients to form records.
+3. **The arrow of time is cosmological**: It traces to the low-entropy Big Bang. Low-entropy beginnings are structurally important here because observers need entropy gradients to form records.
 
 4. **Information is physical**: Landauer's principle says erasing a bit costs energy.
 

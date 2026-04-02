@@ -150,11 +150,11 @@ Now apply the overlap consistency condition. Any assignment where patches disagr
 
 **Reality is the collection of local states that survives the consistency filter.**
 
-The hardness of the Quantum Marginal Problem tells us the filter is doing real work. The constraints are genuinely restrictive. This helps explain why overlap consistency is a nontrivial structural requirement rather than a vacuous one. In the OPH reading, that hardness is part of why the allowed state-space is highly structured rather than arbitrary.
+The hardness of the Quantum Marginal Problem tells us the filter is doing real work. The constraints are genuinely restrictive. This helps explain why overlap consistency is a nontrivial structural requirement rather than a vacuous one. It also suggests that the allowed state-space is highly structured rather than arbitrary.
 
-And here is the key insight: in the OPH reading, overlap conditions favor allowing correlations that exceed classical bounds. Bell-violating correlations are then interpreted as part of the quantum structure that helps keep patches consistent without a large hidden-variable bookkeeping overhead.
+And here is the key insight: overlap conditions favor allowing correlations that exceed classical bounds. Bell-violating correlations can then be read as part of the quantum structure that helps keep patches consistent without a large hidden-variable overhead.
 
-In a universe built on observer agreement, the nonlocal correlations that so troubled Einstein are not inexplicable. OPH treats them as structurally natural rather than accidental.
+In a universe built on observer agreement, the nonlocal correlations that so troubled Einstein are not inexplicable. They become part of the consistency structure rather than an unexplained add-on.
 
 ## 6.4 Defining the Overlap
 
@@ -353,15 +353,15 @@ Classical objectivity is quantum redundancy. The facts everyone agrees on are th
 
 Let's step back and consider the big picture.
 
-We've been building toward a radical view of reality. OPH does not begin by requiring a single, global "state of the universe." A useful mathematical analogy is a sheaf-like gluing picture in which local data are stitched together by consistency conditions.
+We've been building toward a radical view of reality. We do not begin by requiring a single, global "state of the universe." A useful mathematical analogy is a sheaf-like gluing picture in which local data are stitched together by consistency conditions.
 
 ### The Internet Analogy
 
 Think of the internet. There's no single file called "The Internet" stored somewhere. There are billions of computers, each with its own memory. They communicate via protocols. When my computer sends a packet to yours, we "agree" on the content. The "internet" is the emergent consistency of all these local interactions.
 
-Reality need not be organized for us as a single quantum state observed from a God's-eye view. Instead, it can be treated as a collection of local states-one for each observer-constrained to agree on overlaps.
+Reality need not be organized for us as a single quantum state observed from a God's-eye view. It can instead be treated as a collection of local states-one for each observer-constrained to agree on overlaps.
 
-When a global state exists, great. But we don't require one. Local states satisfying consistency conditions are enough for physics.
+When a global state exists, that is useful. But we do not require one. Local states satisfying consistency conditions are enough for physics.
 
 ### Living Without a Global Wavefunction
 
@@ -441,15 +441,15 @@ Summary of this chapter:
 
 | Intuitive Picture | Surprising Hint | First-Principles Reframing |
 |---|---|---|
-| Correlations come from shared causes or hidden variables | Bell's theorem: quantum correlations violate Bell inequalities, exceeding what any local hidden variable theory permits | In OPH, consistency conditions across observer patches make Bell-violating correlations structurally natural rather than accidental |
+| Correlations come from shared causes or hidden variables | Bell's theorem: quantum correlations violate Bell inequalities, exceeding what any local hidden variable theory permits | Consistency conditions across observer patches make Bell-violating correlations structurally natural rather than accidental |
 
-**The key reverse engineering insight**: We started with the intuition that distant correlations must have local explanations. Bell's theorem revealed that nature permits correlations that exceed classical bounds. OPH reads this as evidence that a consistency-built reality naturally favors genuinely quantum correlation structure rather than classical hidden-variable bookkeeping.
+**The key reverse engineering insight**: We started with the intuition that distant correlations must have local explanations. Bell's theorem revealed that nature permits correlations that exceed classical bounds. This points toward a consistency-built reality that naturally favors genuinely quantum correlation structure rather than classical hidden-variable stories.
 
-**Why Bell violations matter here**: This deserves emphasis. The Quantum Marginal Problem is QMA-complete-checking whether local states are globally consistent is computationally hard. This hardness is a feature, not a bug. It shows that overlap consistency is a real constraint, and OPH interprets Bell-violating correlations as part of the quantum structure that helps satisfy it.
+**Why Bell violations matter here**: This deserves emphasis. The Quantum Marginal Problem is QMA-complete-checking whether local states are globally consistent is computationally hard. This hardness is a feature, not a bug. It shows that overlap consistency is a real constraint, and Bell-violating correlations may be part of the quantum structure that helps satisfy it.
 
-OPH treats Bell-violating correlations as part of the quantum structure that can help satisfy overlap conditions with less classical pre-coordination. Einstein wanted particles to carry "instruction sets" from their common past. But instruction sets create combinatorial explosions as you add more observers. On this reading, entanglement that exceeds classical bounds is more parsimonious and reduces the bookkeeping burden.
+Bell-violating correlations can be seen as part of the quantum structure that helps satisfy overlap conditions with less classical pre-coordination. Einstein wanted particles to carry "instruction sets" from their common past. But instruction sets create combinatorial explosions as you add more observers. Entanglement that exceeds classical bounds is more parsimonious and reduces the bookkeeping burden.
 
-Put differently: OPH treats Bell-violating correlations as an efficient part of the quantum bookkeeping needed to maintain consistency across patches.
+Put differently: Bell-violating correlations can be read as an efficient part of the quantum structure needed to maintain consistency across patches.
 
 **Additional lessons**:
 
@@ -467,7 +467,7 @@ Put differently: OPH treats Bell-violating correlations as an efficient part of 
 
 7. **Quantum Darwinism**: Classical objectivity emerges when quantum information gets redundantly copied into the environment, making it accessible through multiple overlapping channels.
 
-8. **Reality as a Sheaf-Like Gluing Picture**: OPH need not begin from a single global state; it can instead be organized as local states glued together by consistency conditions-like the internet, not like a centralized database.
+8. **Reality as a Sheaf-Like Gluing Picture**: The framework need not begin from a single global state; it can instead be organized as local states glued together by consistency conditions-like the internet, not like a centralized database.
 
 ---
 

@@ -66,7 +66,7 @@ is just... there.
 
 **Information can't be destroyed.** Throw something into a black hole, and
 modern quantum-gravity arguments suggest the information is not simply
-erased. It is thought to be encoded in horizon bookkeeping, though the
+erased. It is thought to be encoded at the horizon, though the
 detailed recovery story remains subtle.
 
 **Black holes put information under pressure.** Throw something into a black
@@ -75,7 +75,7 @@ is not simply lost, even though the detailed recovery story remains subtle
 and framework-dependent.
 
 **Holography is a major clue.** The information needed to describe a volume
-of space may admit a boundary-first encoding. The three-dimensional
+of space may be encoded on its boundary. The three-dimensional
 world can then be read as an emergent bulk description.
 
 If a human engineer wrote a program with these specifications, we'd assume

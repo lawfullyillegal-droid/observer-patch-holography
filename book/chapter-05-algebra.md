@@ -66,7 +66,7 @@ Heisenberg started with observations (spectral lines) and reverse-engineered the
 
 ### Why Non-Commutativity Is Not Arbitrary
 
-Here is the OPH reading developed in this chapter: non-commutativity is part of what makes overlap consistency nontrivial.
+The working idea in this chapter is that non-commutativity is part of what makes overlap consistency nontrivial.
 
 Consider the overlap condition. When two observers compare notes, they must agree on their shared observables. In a commutative world-where all measurements are compatible-the problem is much closer to the classical marginal setting. Pre-existing values can often be assigned more straightforwardly, especially on simple overlap structures, but compatibility is not automatic on arbitrary overlap graphs.
 
@@ -74,7 +74,7 @@ But the Quantum Marginal Problem shows this doesn't work. Pairwise-consistent ma
 
 Here's the deeper point: **non-commutativity is what makes the quantum consistency problem especially hard.** If measurements all commuted, the overlap conditions would be much closer to the classical case. Physics could still have rich laws and dynamics, but it would miss the specifically quantum constraint structure highlighted here.
 
-Non-commutativity creates a tension between local freedom and global consistency. In the OPH reading, specific patterns of entanglement help resolve that tension and are part of what we read as physical law. OPH interprets quantum non-commutativity as deeply connected to the difficulty of global consistency instead of treating it as an arbitrary extra feature.
+Non-commutativity creates a tension between local freedom and global consistency. Specific patterns of entanglement can help resolve that tension and are part of what we read as physical law. On this view, quantum non-commutativity is deeply connected to the difficulty of global consistency instead of being treated as an arbitrary extra feature.
 
 ## 5.3 The Order of Questions
 
@@ -170,7 +170,7 @@ An observable is represented by a Hermitian operator A. The possible measurement
 
 $$P(a) = |\langle a|\psi\rangle|^2$$
 
-In the standard textbook projection-postulate picture, an ideal measurement updates the state to the eigenstate corresponding to the measured value.
+In the standard textbook update rule, an ideal measurement updates the state to the eigenstate corresponding to the measured value.
 
 ### The Density Matrix
 

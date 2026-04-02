@@ -74,7 +74,7 @@ The entropy of a black hole is proportional to its surface area, measured in Pla
 
 **The lesson**: The intuitive picture-that information content scales with the size of a container-is fundamentally wrong. Black-hole entropy and related bounds push strongly toward a boundary-sensitive description.
 
-**The first-principles reframing**: The 3D world we experience may not be the fundamental level. In the holographic reading developed here, the bulk is emergent and reconstructed from boundary data.
+**The first-principles reframing**: The 3D world we experience may not be the fundamental level. The bulk may be emergent and reconstructed from boundary data.
 
 ## 3.3 Entropy for Normal People
 
@@ -120,7 +120,7 @@ Shannon's entropy is closely related to the Gibbs/Shannon form, while Boltzmann'
 
 And in 1961, Rolf Landauer showed that erasing information costs energy-at least $k_B T \ln 2$ per bit. Information is physical. Bits are thermodynamic objects.
 
-This is why the Bekenstein-Hawking formula is so important. It connects information (entropy) to geometry (area) and strongly motivates a boundary-first bookkeeping picture.
+This is why the Bekenstein-Hawking formula is so important. It connects information (entropy) to geometry (area) and strongly points toward a boundary description.
 
 ## 3.4 The Holographic Principle
 
@@ -146,7 +146,7 @@ This is weird. It means the interior of a region is somehow redundant. All the i
 
 In the early 1990s, Gerard 't Hooft and Leonard Susskind took this reasoning to its logical conclusion.
 
-If the maximum information in a region scales with surface area, then **a boundary-first description becomes a very strong candidate for the fundamental bookkeeping**. On that reading, the three-dimensional interior is not fundamental-it is emergent, reconstructed from boundary data.
+If the maximum information in a region scales with surface area, then **a boundary-first description becomes a very strong candidate for the fundamental organization of the data**. On that reading, the three-dimensional interior is not fundamental-it is emergent, reconstructed from boundary data.
 
 't Hooft called this the **holographic principle**, by analogy with holograms. A hologram is a two-dimensional film that encodes a three-dimensional image. When you illuminate it, you see depth that isn't really there-the depth is computed from the 2D pattern.
 
@@ -316,7 +316,7 @@ This definition of observers resolves several puzzles:
 
 **No external reference frame**: Observers are internal to the system, so there's no need for an external "God's-eye view."
 
-**Measurement is physical**: When an observer measures something, correlations form between subsystems within the horizon data and stable records are created. In the OPH reading, that record formation captures the main physical content behind textbook collapse language.
+**Measurement is physical**: When an observer measures something, correlations form between subsystems within the horizon data and stable records are created. That record formation captures the main physical content behind textbook collapse language.
 
 **Consistency follows from structure**: In the constructive screen picture, if two observers are modeled as patterns in the same underlying state, their reduced descriptions must agree on overlaps. The more general gluing story is subtler and is developed later.
 
@@ -421,7 +421,7 @@ Let's trace the reverse engineering explicitly.
 
 **The hint**: Black hole entropy scales with area, and gravitational entropy bounds point toward boundary-limited information.
 
-**The lesson**: A boundary-first description becomes a strong candidate. On that reading, the boundary is primary and the bulk is emergent.
+**The lesson**: A boundary-first description becomes a strong candidate. The boundary is primary and the bulk emergent.
 
 **The first-principles reframing**:
 
@@ -451,7 +451,7 @@ In the finite-resolution screen picture used here, continuous space is an effect
 ## 3.13 Where We Go Next
 
 We have established that:
-- Gravitational entropy bounds and holographic arguments push strongly toward horizon/boundary-sensitive bookkeeping rather than naive volume counting
+- Gravitational entropy bounds and holographic arguments push strongly toward horizon-sensitive information organization rather than naive volume counting
 - In the symmetric light-cone constructions used here, the effective screens are spherical as a consequence of causality
 - The amount of information is finite, bounded by area
 - Entanglement patterns on the screen create emergent 3D geometry

@@ -230,7 +230,7 @@ Quantum field theory provides a modern analogue to Aristotle's emphasis on form 
 
 Particles are not fundamental objects. They are excitations of fields-ripples in an underlying substrate. An electron is not a tiny ball. It is a stable vibration of the electron field.
 
-And now, with the information-theoretic view, we see the ultimate revenge of Aristotle. The universe is best read here not as little hard atoms alone, but as structured information-relations, distinctions, and quantum degrees of freedom.
+And now, with the information-theoretic view, we see the ultimate revenge of Aristotle. The universe is best read not as little hard atoms alone, but as structured information-relations, distinctions, and quantum degrees of freedom.
 
 What we call "particles" are patterns of information on the holographic screen. The pattern is real; the "stuff" is emergent.
 
@@ -292,7 +292,7 @@ Hofstadter argued that consciousness itself is a strange loop, a pattern that pe
 
 This has profound implications for our model. If reality is computational, and observers are patterns within that computation that model reality, then we have a strange loop: reality contains observers that understand reality.
 
-But Hofstadter and related strange-loop thinkers argue for something deeper: the loop may not just *exist* within reality; it may be part of how reality closes on itself. On that reading, self-reference is not merely possible but structurally important.
+But strange-loop thinkers argue for something deeper: the loop may not just *exist* within reality; it may be part of how reality closes on itself. Self-reference becomes not merely possible but structurally important.
 
 We will return to this idea in Chapter 18, where we consider the possibility that reality evolves toward producing observers capable of understanding and simulating it, closing the loop of self-creation.
 
@@ -338,9 +338,9 @@ But what if they are not?
 
 ### The Right Question
 
-Our framework supports a different perspective. Reality is not merely compared to computation; OPH treats computation as a candidate organizing picture for reality. The screen is a quantum system processing information according to gauge constraints. Observers are patterns within that computation. The laws of physics are the rules that allow consistent information processing across patches.
+Our framework supports a different perspective. Reality is not merely compared to computation; computation becomes a serious candidate organizing picture for reality. The screen is a quantum system processing information according to gauge constraints. Observers are patterns within that computation. The laws of physics are the rules that allow consistent information processing across patches.
 
-From this view, asking "are we in a simulation?" becomes less useful than asking what kind of computational organization reality may instantiate. OPH does not treat computation as a loose metaphor; it treats it as a serious candidate organizing picture for reality.
+From this view, asking "are we in a simulation?" becomes less useful than asking what kind of computational organization reality may instantiate. Computation is not being used here as a loose metaphor; it is being treated as a serious candidate organizing picture for reality.
 
 ### The Strange Loop of Self-Simulation
 
@@ -350,7 +350,7 @@ If reality is computational, then observers can evolve within that computation, 
 
 This would be the strange loop: **reality evolves observers who discover how reality works and build simulations of it, closing the loop of self-creation**.
 
-On this speculative continuation, we are not programs running on someone else's hardware. We are patterns within a self-simulating system. The simulation would run through us, through our understanding, and through our eventual construction of the very computational substrate that gives rise to us.
+In this speculative continuation, we are not programs running on someone else's hardware. We are patterns within a self-simulating system. The simulation would run through us, through our understanding, and through our eventual construction of the very computational substrate that gives rise to us.
 
 This is the book's most speculative thread. It is not needed for the physics developed so far, but it gives the story a striking philosophical closure.
 
@@ -405,10 +405,10 @@ This is not coincidence. The intuitive picture-objective 3D reality independent 
 
 The philosophers gave us hints. Now we need the machinery.
 
-The key claim moving forward is that black-hole entropy and holographic arguments push strongly toward a boundary-first description rather than naive volume bookkeeping. The holographic principle suggests that 3D physics may admit an encoding on 2D surfaces.
+The key claim moving forward is that black-hole entropy and holographic arguments push strongly toward a boundary-first description rather than naive volume counting. The holographic principle suggests that 3D physics may admit an encoding on 2D surfaces.
 
-In the next chapter, we make this concrete. We introduce the **holographic screen** as the boundary-first bookkeeping surface used in this program. We explain *why* a region's boundary is the natural place to organize the accessible data.
+In the next chapter, we make this concrete. We introduce the **holographic screen** as the surface on which the accessible data is organized. We explain *why* a region's boundary is the natural place to do that.
 
-This isn't meant as loose metaphor. It is the bookkeeping picture the next chapter develops and defends.
+This isn't meant as loose metaphor. It is the organizing picture the next chapter develops and defends.
 
 The reverse engineering continues.
