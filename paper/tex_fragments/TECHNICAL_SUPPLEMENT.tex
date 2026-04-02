@@ -306,7 +306,7 @@ By Theorem~\ref{thm:bw}, on the \textbf{T1} branch the realized scaling-limit ca
 \end{proof}
 \subsection{Null Modular Bridge at Fixed Cutoff}\label{23-null-modular-bridge-eft-conditions-n1-n3}
 
-The fixed-cutoff null bridge reaches the derived half-sided-inclusion step. What is established here is: transferred cut-center data on null strips, exact-or-controlled strip additivity on one inherited strip model, endpoint-Lipschitz control of the renormalized half-line family, and the geometric blow-up argument that turns the null half-line net into a half-sided modular pair, so that Borchers--Wiesbrock yields an explicit positive null-translation generator on its Stone domain~\cite{wiesbrock93}. What is not established here is the downstream density upgrade or the relativistic null-stress identification. This theorem-local package should therefore be read with the following split.
+The fixed-cutoff null bridge reaches the derived half-sided-inclusion step and the exact half-line generator/charge identification. What is established here is: transferred cut-center data on null strips, exact-or-controlled strip additivity on one inherited strip model, endpoint-Lipschitz control of the renormalized half-line family, and the geometric blow-up argument that turns the null half-line net into a half-sided modular pair, so that Borchers--Wiesbrock yields an explicit positive null-translation generator on its Stone domain~\cite{wiesbrock93}. What remains downstream is only bounded-interval transport through the separate projective branch and the later tensor upgrade modulo the null-invisible metric term. This theorem-local package should therefore be read with the following split.
 
 \textbf{Fixed-cutoff null-strip bridge.} For consecutive null strips
 \[
@@ -528,48 +528,192 @@ K_a(\Omega)=K_0(\Omega)-2\pi a\,P_\Omega
 \]
 as a quadratic-form identity on \(D(K_0(\Omega))\cap D(P_\Omega)\).
 
-\textbf{Consequence.} This theorem-local package proves the fixed-cutoff strip bridge through the weak tail generator \(q(a,\Omega)\), derives half-sided modular inclusion on the null half-line blow-up net, and therefore identifies an explicit positive null-translation generator \(P_\Omega\) together with its Stone domain and half-line modular-Hamiltonian relation. The remaining downstream burdens are the density-upgrade hypotheses and the relativistic EFT null-stress premise. Those later steps are explicit rather than hidden inside an additional labeled premise package.
-\subsection{Stress Tensor Reconstruction}\label{24-stress-tensor-reconstruction}
+\textbf{Consequence.} This theorem-local package proves the fixed-cutoff strip bridge through the weak tail generator \(q(a,\Omega)\), derives half-sided modular inclusion on the null half-line blow-up net, and therefore identifies an explicit positive null-translation generator \(P_\Omega\) together with its Stone domain and half-line modular-Hamiltonian relation. The effective null-stress charge on that same half-line family is identified with \(P_\Omega\) in the next subsection. The remaining downstream burdens are the separate bounded-interval projective branch and the tensor upgrade modulo the null-invisible metric term.
+\subsection{2.4 Stress Tensor Reconstruction}\label{24-stress-tensor-reconstruction}
 
-\textbf{Lemma 2.3 (Null Data Ambiguity):} If a symmetric tensor \(X_{ab}\) satisfies \(X_{ab}k^a k^b = 0\) for all null \(k\), then: \[X_{ab} = \phi \, g_{ab}\] for some scalar \(\phi\).
+\textbf{Generator/charge identification.} The null bridge identifies the positive OPH half-line generator with the effective null-stress charge itself. On the OPH side,
+\[
+\langle\psi,P_\Omega\phi\rangle
+=
+-\frac{1}{2\pi}\frac{d}{da}\Big|_{a=0+}
+\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+\]
+on \(D(K_0(\Omega))\cap D(P_\Omega)\). In the effective spacetime description of that same renormalized half-line family, the local null-stress charge is defined by the identical endpoint derivative,
+\[
+Q_{kk}(\Omega)
+:=
+-\frac{1}{2\pi}\frac{d}{da}\Big|_{a=0+}\widetilde K^{\mathrm{eff}}_a(\Omega).
+\]
+Hence
+\[
+P_\Omega = Q_{kk}(\Omega)
+\]
+as a quadratic-form identity on the common domain. The only imported continuum input is the standard local null modular-Hamiltonian formula for the same half-line family; there is no longer a separate null-stress identification premise. The remaining tensor-level issue is the standard null-invisible metric ambiguity described below. Accordingly, any later appeal in the supplement to a ``null-stress identification'' should be read only as this local modular-Hamiltonian input for the same half-line family, not as an extra operator-level assumption.
 
-\emph{Proof:} Decompose \(X_{ab} = Y_{ab} + \phi g_{ab}\) with \(Y\) traceless. For null \(k = (1, \hat{n})\): \[X_{kk} = Y_{kk} + \phi g_{kk} = Y_{kk}\] since \(g_{kk} = 0\). Expanding: \[Y_{kk} = Y_{00} + 2\hat{n}^i Y_{0i} + \hat{n}^i \hat{n}^j Y_{ij}\]
+\textbf{Lemma 2.3 (Null Data Ambiguity):} If a symmetric tensor \(X_{ab}\) satisfies
+\[
+X_{ab}k^a k^b = 0
+\]
+for all null \(k\), then
+\[
+X_{ab} = \phi\, g_{ab}
+\]
+for some scalar \(\phi\).
 
-If this vanishes for all \(\hat{n} \in S^2\), each angular moment (scalar, vector, traceless tensor) vanishes independently, so \(Y_{ab} = 0\). \(\square\)
+\emph{Proof:} Decompose
+\[
+X_{ab}=Y_{ab}+\phi g_{ab}
+\]
+with \(Y\) traceless. For null \(k=(1,\hat n)\),
+\[
+X_{kk}=Y_{kk}+\phi g_{kk}=Y_{kk}
+\]
+since \(g_{kk}=0\). Expanding,
+\[
+Y_{kk}=Y_{00}+2\hat n^iY_{0i}+\hat n^i\hat n^jY_{ij}.
+\]
+If this vanishes for all \(\hat n\in S^2\), each angular moment (scalar, vector, traceless tensor) vanishes independently, so \(Y_{ab}=0\). Hence \(X_{ab}=\phi g_{ab}\). \(\square\)
 
 \textbf{Corollary 2.4:} Null modular data determine \(T_{ab}\) only up to \(\phi g_{ab}\). Consequently, the Einstein equation is fixed only up to \(\Lambda g_{ab}\).
 
-\textbf{Reconstruction Formulas:} From \(f(\hat{n}) := T_{kk}(\hat{n})\): \[T_{0i} = \frac{3}{2}\langle \hat{n}_i f \rangle_{S^2}\] \[T_{ij} - \frac{\delta_{ij}}{3}T^{(\text{spatial})}_{kk} = \frac{15}{2}\left\langle \left(\hat{n}_i \hat{n}_j - \frac{\delta_{ij}}{3}\right) f \right\rangle_{S^2}\]
+\textbf{Reconstruction Formulas:} From
+\[
+f(\hat n):=T_{kk}(\hat n),
+\]
+one obtains
+\[
+T_{0i}=\frac{3}{2}\langle \hat n_i f\rangle_{S^2},
+\]
+and
+\[
+T_{ij}-\frac{\delta_{ij}}{3}T^{(\mathrm{spatial})}_{kk}
+=
+\frac{15}{2}
+\left\langle
+\left(
+\hat n_i\hat n_j-\frac{\delta_{ij}}{3}
+\right)f
+\right\rangle_{S^2}.
+\]
+
+Thus the directional modular/null charges determine the effective stress tensor up to the unique null-invisible term \(\phi g_{ab}\). That metric ambiguity is the only residual tensor-level freedom carried into the Einstein step; the half-line generator/charge identification itself is exact.
 
 \subsection{Entanglement Equilibrium and Einstein\textquotesingle s Equation}\label{25-entanglement-equilibrium-and-einsteins-equation}
 
-\textbf{Theorem 2.5 (Conditional Jacobson-type Derivation):} In the same local Lorentzian scaling regime, under MaxEnt state selection with generalized entropy stationarity, the null-stress identification premise of the relativistic EFT branch, and admissible first variations about a maximally symmetric reference state~\cite{jacobson95,jacobson16},
-\[\delta S_{\text{gen}} = 0\]
-
-implies the rest-frame first-variation relation
+\textbf{Internal small-ball bridge.} In the local Lorentzian d=4 scaling regime, the small-ball kernel is supplied by the OPH gravity chain itself. On the BW branch, a sufficiently small cap is the tangent causal diamond D_\ell, whose preserving conformal Killing field is
 \[
-\delta\!\left(G_{00} + \Lambda g_{00}\right) = 8\pi G \,\delta\langle T_{00} \rangle.
+\xi_{D_\ell}
+=
+\frac{1}{2\ell}
+\Bigl((\ell^2-r^2-t^2)\,\partial_t-2t\,x^i\partial_i\Bigr).
+\]
+On the t=0 slice,
+\[
+\xi_{D_\ell}\!\cdot n=\frac{\ell^2-r^2}{2\ell}.
+\]
+The bounded-interval formula from the null modular bridge gives the same affine-covariant quadratic weight on each null generator of the diamond, so no separate EFT small-ball first law is imported. The bulk first-law term therefore obeys
+\[
+\delta S_{\mathrm{bulk}}(C)
+=
+2\pi\int_{B_\ell}\frac{\ell^2-r^2}{2\ell}\,\delta\langle T_{00}\rangle\,d^3x
++
+\delta\langle E^{(\eta)}_{C,\ell}\rangle.
+\]
+If \(\delta\langle T_{00}\rangle\) is approximately constant across the ball and
+\[
+\delta\langle E^{(\eta)}_{C,\ell}\rangle=o(\ell^4),
+\]
+then
+\[
+\delta S_{\mathrm{bulk}}(C)
+=
+\frac{8\pi^2\ell^4}{15}\,\delta\langle T_{00}\rangle
++O(\ell^5\partial T)+o(\ell^4).
 \]
 
-If this first-variation relation holds for all local directions and reference states in the scaling regime, overlap consistency upgrades it to the full tensor equation
+\textbf{Theorem 2.5 (Conditional Jacobson-type rest-frame relation).} In the same local Lorentzian scaling regime, under generalized-entropy stationarity, the half-line generator/charge identification of the null bridge together with the bounded-interval transport input used in the local Lorentzian regime, the internal small-ball bridge above, and admissible first variations about a maximally symmetric reference state, one obtains
 \[
-G_{ab} + \Lambda g_{ab} = 8\pi G \langle T_{ab} \rangle
+\delta\!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr]
+=
+8\pi G\,u^a u^b\,\delta\langle T_{ab}\rangle,
 \]
-modulo the expected \(\Lambda g_{ab}\) ambiguity.
+where \(u^a\) is the future-directed unit tangent of the local diamond rest frame. In the adapted frame \(u^a=(1,0,0,0)\), this is
+\[
+\delta\!\left(G_{00}+\Lambda g_{00}\right)=8\pi G\,\delta\langle T_{00}\rangle.
+\]
 
 \textbf{Derivation sketch:}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
- Raychaudhuri equation relates area change to \(R_{kk}\): \[\frac{d\theta}{d\lambda} = -\frac{1}{2}\theta^2 - \sigma^2 - R_{kk}\]
+Use the edge-center split to write
+\[
+\delta S_{\mathrm{gen}}(C)
+=
+\delta S_{\mathrm{bulk}}(C)+\frac{\delta A}{4G}.
+\]
 \item
- Recoverable Generalized Entropy implies: \[\frac{d}{d\lambda}\left(\frac{A}{4G} + S_{\text{bulk}}\right) \leq 0\]
+Insert the internal small-ball bridge:
+\[
+\delta S_{\mathrm{bulk}}(C)
+=
+\frac{8\pi^2\ell^4}{15}\,u^a u^b\,\delta\langle T_{ab}\rangle
++O(\ell^5\partial T)+o(\ell^4).
+\]
 \item
- Stationarity at MaxEnt gives: \[R_{kk} = 8\pi G \langle T_{kk} \rangle\]
+Use the standard fixed-volume area-variation identity for a d=4 geodesic ball:
+\[
+\delta A\big|_{V,\Lambda}
+=
+-\frac{4\pi\ell^4}{15}\,
+\delta\!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr].
+\]
 \item
- By Lemma 2.3, this fixes Einstein\textquotesingle s equation up to \(\Lambda g_{ab}\).
+Impose \delta S_{\mathrm{gen}}(C)=0, divide by \ell^4, and let \ell\to0. The derivative remainders vanish, leaving the displayed rest-frame relation.
 \end{enumerate}
+
+\textbf{Internal tensor upgrade.} Define
+\[
+Y_{ab}:=G_{ab}+\Lambda g_{ab}-8\pi G\,\langle T_{ab}\rangle.
+\]
+Overlap consistency plus the Lorentz branch imply that overlapping observer frames through the same point realize every local timelike unit vector u. The rest-frame relation therefore gives
+\[
+u^a u^b\,\delta Y_{ab}=0
+\qquad
+\text{for every unit timelike }u^a.
+\]
+In local inertial coordinates,
+\[
+u^a=\gamma(1,v^i),
+\qquad
+|\vec v|<1,
+\]
+so
+\[
+0
+=
+u^a u^b\,\delta Y_{ab}
+=
+\gamma^2\Bigl(\delta Y_{00}+2v^i\delta Y_{0i}+v^iv^j\delta Y_{ij}\Bigr)
+\]
+for all \(|\vec v|<1\). The polynomial vanishes on an open ball, so its coefficients vanish:
+\[
+\delta Y_{00}=0,\qquad
+\delta Y_{0i}=0,\qquad
+\delta Y_{ij}=0.
+\]
+Hence
+\[
+\delta Y_{ab}=0
+\]
+as a full tensor.
+
+Along any connected scaling branch of reference states, \(Y_{ab}\) is therefore constant. By Lemma 2.3, the only purely local ambiguity left by null reconstruction is a metric term. Fixing that term on one maximally symmetric reference state gives
+\[
+G_{ab}+\Lambda g_{ab}=8\pi G\,\langle T_{ab}\rangle.
+\]
+So the scalar-to-tensor upgrade is internal to OPH once the geometric branch, the null bridge, and the overlap-complete timelike family are in place.
 
 \subsection{Newton\textquotesingle s Constant from Edge Entropy}\label{26-newtons-constant-from-edge-entropy}
 

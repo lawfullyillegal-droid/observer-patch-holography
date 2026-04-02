@@ -234,7 +234,7 @@ Node & Main-manuscript output & Immediate OPH ingredients & Standard mathematics
 \textbf{D1} & Theorem 3.1: schedule-independent normal-form statement & overlap-consistency setup on finite patch nets & Newman's lemma & finite patch net, termination, and local confluence & structural theorem \\
 \textbf{D2} & Section 2.3 and \S5.4: EC/Markov collar and generalized-entropy split & Axioms 1--4 plus the derived fixed-cutoff regulator/collar package when invoked & HJPW; Petz; Fawzi--Renner & exact-Markov or idealized recoverability hypotheses when exact identities are used; coarse-grained \(A/(4G)\) dictionary & structural lemma/proposition layer \\
 \textbf{D3} & Theorems 4.2--4.3: geometric modular flow and Lorentz branch & Axioms 1--4 together with SO(3)-invariant constraint data & Bisognano--Wichmann modular geometry;\newline conformal classification on \(S^2\) & T1+T3 & conditional scaling-limit theorem \\
-\textbf{D4} & Section 5.2: null modular bridge & D2+D3 & Borchers--Wiesbrock and endpoint differentiation & the theorem-local inherited-strip decomposition and exact-or-controlled Markov hypotheses of Section 5.2, plus the downstream density-upgrade hypotheses and the relativistic null-stress premise & conditional bridge theorem \\
+\textbf{D4} & Section 5.2: null modular bridge & D2+D3 & Borchers--Wiesbrock and endpoint differentiation & the theorem-local inherited-strip decomposition and exact-or-controlled Markov hypotheses of Section 5.2, plus the same-half-line local modular-Hamiltonian input; bounded-interval formulas still require the separate interval-preserving projective branch & conditional bridge theorem \\
 \textbf{D5} & Theorem 5.1: Einstein branch & D3+D4 & Jacobson small-ball mathematics; null-to-tensor reconstruction modulo a metric term & T4 together with the locally Lorentzian \(d=4\) scaling regime & conditional scaling-limit theorem \\
 \textbf{D6} & capacity/\(\Lambda\) reduction statements & D5 leaves \(+\Lambda g_{ab}\) undetermined & de Sitter entropy relation and dimensional analysis & external input \(N_{\mathrm{scr}}\) and the screen-capacity identification & input-dependent corollary / estimate \\
 \textbf{D7} & Theorem 6.1: compact gauge reconstruction & Axioms 1--4 & Doplicher--Roberts / Tannaka reconstruction & T2 and T5--T7 & conditional structural theorem \\
@@ -955,7 +955,7 @@ In the generic continuum/non-type-I case, Section 4.2 does not supply an inner o
 
 \subsubsection{Null-surface modular bridge}\label{52-null-surface-modular-bridge}
 
-This subsection extends the fixed-cutoff weak-tail-generator boundary to the derived positive null-translation stage. At fixed cutoff one can transfer cut-center data to regulated null strips, obtain exact or controlled strip additivity on one inherited strip model, and derive a weak tail generator for the renormalized half-line family. On the OPH geometric scaling branch of Theorem 4.2, the null half-line blow-up net then inherits geometric dilation and therefore half-sided modular inclusion, so Borchers--Wiesbrock supplies an explicit positive null-translation generator on its Stone domain. The downstream density upgrade and the relativistic null-stress identification are outside this subsection. Accordingly the c.12-local bridge consists of:
+This subsection extends the fixed-cutoff weak-tail-generator boundary to the derived positive null-translation stage and the exact half-line generator/charge identification. At fixed cutoff one can transfer cut-center data to regulated null strips, obtain exact or controlled strip additivity on one inherited strip model, and derive a weak tail generator for the renormalized half-line family. On the OPH geometric scaling branch of Theorem 4.2, the null half-line blow-up net then inherits geometric dilation and therefore half-sided modular inclusion, so Borchers--Wiesbrock supplies an explicit positive null-translation generator on its Stone domain. The remaining downstream boundary is narrower: bounded-interval formulas still require the separate interval-preserving projective branch, and the later tensor upgrade still carries the null-invisible metric ambiguity. Accordingly the c.12-local bridge consists of:
 \begin{itemize}
 \tightlist
 \item
@@ -1292,47 +1292,24 @@ first at \(a=0\) and then at \(t=0\) on the common analytic core gives
 \]
 Because \(U_\Omega(a)\omega=\omega\) and \(U_\Omega(a)\mathcal M_0(\Omega)U_\Omega(a)^*=\mathcal M_a(\Omega)\), uniqueness of modular data for the translated standard pair gives the displayed formulas for \(\Delta_a(\Omega)\) and \(K_a(\Omega)\). Differentiating \(K_a(\Omega)=U_\Omega(a)K_0(\Omega)U_\Omega(a)^*\) in \(a\) yields \(dK_a/da=-2\pi P_\Omega\) as a quadratic-form identity, and integrating from \(0\) to \(a\) gives the stated half-line modular-Hamiltonian relation. QED.
 
-\textbf{Theorem 5.2g (Downstream null-stress identification template).} If one adds the density-upgrade hypotheses of Lemma 5.2d and the relativistic scaling-limit null-stress premise, then on the half-line blow-up net whose half-sided modular inclusion is derived in Corollary 5.2e and whose positive null-translation generator is identified in Lemma 5.2f, one expects an operator-valued distribution \(T_{kk}(v,\Omega)\) with
+\textbf{Theorem 5.2g (The OPH half-line generator is the local null-stress charge).} In the canonical normalization of the preceding half-line construction,
 \[
-\widetilde K[(a,\infty),\Omega]
+\langle\psi,P_\Omega\phi\rangle
 =
-2\pi \int_a^\infty (v-a)\,T_{kk}(v,\Omega)\,dv
-+
-E^{(\eta)}_{(a,\infty),\Omega},
+-\frac{1}{2\pi}\frac{d}{da}\Big|_{a=0^+}
+\langle\psi,\widetilde K_a(\Omega)\phi\rangle
 \]
-and, for bounded null intervals that inherit geometric modular action,
+for all \(\psi,\phi\in D(K_0(\Omega))\cap D(P_\Omega)\). In the effective spacetime description of that same renormalized half-line family, the local null-stress charge is defined by the identical endpoint derivative,
 \[
-\widetilde K[I,\Omega]
-=
-2\pi \int_I g_I(v)\,T_{kk}(v,\Omega)\,dv
-+
-E^{(\eta)}_{I,\Omega}.
-\]
-Here, for each relevant half-line or bounded interval \(I\), \(\varepsilon_I\) denotes the strip-CMI control parameter, \(\delta^{\mathrm M}_{I}\) the corresponding fixed-strip exact-Markov modulus from Corollary 5.2b, and
-\[
-\eta_I
+Q_{kk}(\Omega)
 :=
-r_{\mathrm{FR}}(\varepsilon_I)
-+
-4\lambda_\ast^{-1}\delta^{\mathrm M}_{I}(\varepsilon_I)
-+
-\eta_I^{\mathrm{EFT}},
+-\frac{1}{2\pi}\frac{d}{da}\Big|_{a=0^+}\widetilde K^{\mathrm{eff}}_a(\Omega),
 \]
-so that
+so
 \[
-\bigl|
-\langle\psi,E^{(\eta)}_{I,\Omega}\phi\rangle
-\bigr|
-\le
-C_{I,\Omega,\psi,\phi}\,\eta_I
+P_\Omega = Q_{kk}(\Omega)
 \]
-for domain vectors \(\psi,\phi\). The bounded-interval kernel \(g_I(v)\) is affine-covariant and vanishes at finite interval endpoints. The full modular Hamiltonian is
-\[
-K[I,\Omega]
-=
-\widetilde K[I,\Omega]+K_\partial(I,\Omega),
-\]
-with \(K_\partial\) central and boundary-supported, and knowledge of \(T_{kk}\) for all null directions reconstructs a symmetric tensor \(T_{ab}\) up to a metric term. This subsection does not prove this theorem; it records the exact downstream burden beyond the derived half-sided-inclusion bridge.
+as a quadratic-form identity on the common domain. The only imported continuum input is the standard local null modular-Hamiltonian formula for that same half-line family. Bounded-interval transport through the affine-covariant kernel \(g_I(v)\) remains a separate projective-branch step, and reconstruction of a full tensor from the directional charges remains subject to the null-invisible metric ambiguity.
 
 \textbf{Boundary of the conditional null bridge.} The null bridge is conditional rather than automatic. Its explicit burden is:
 \begin{itemize}
@@ -1348,27 +1325,44 @@ with \(K_\partial\) central and boundary-supported, and knowledge of \(T_{kk}\) 
 \item
   Borchers--Wiesbrock therefore supplies a genuine positive null-translation generator \(P_\Omega\) inside the bridge itself, together with its Stone domain and the half-line modular-Hamiltonian relation \(K_a=K_0-2\pi aP_\Omega\);
 \item
-  the density upgrade and the final identification with a local continuum \(T_{kk}\) are the remaining explicit downstream steps.
+  the half-line generator/charge identification is fixed inside the bridge itself, while bounded-interval transport and the later tensor upgrade remain downstream.
 \end{itemize}
-This is the route from null-strip factorization to the later Jacobson branch, without identifying
-the null modular bridge itself with the downstream density-upgrade and null-stress steps.
+This is the route from null-strip factorization to the later Jacobson branch, with the half-line generator/charge identification proved inside the null modular bridge itself.
 \subsubsection{Modular energy as stress-tensor charge (UV CFT)}\label{53-modular-energy-as-stress-tensor-charge-uv-cft}
 
-If one assumes a UV CFT regime on sufficiently small caps, the modular Hamiltonian is explicitly local. This serves as an alternative EFT bridge to Section 5.2.
-
-For a CFT vacuum on a ball, the modular Hamiltonian is local:
-
+The effective-theory input here is no longer a second operator added on top of the null bridge. In the canonical normalization of the preceding null-half-line construction, the positive OPH null generator is already the endpoint derivative of the renormalized half-line modular family:
 \[
-H_{\zeta} = \int_{\Sigma} T_{ab} \zeta^b d\Sigma^a,
+\langle\psi,P_\Omega\phi\rangle
+=
+-\frac{1}{2\pi}\frac{d}{da}\Big|_{a=0^+}
+\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+\]
+for all \(\psi,\phi\in D(K_0(\Omega))\cap D(P_\Omega)\).
+
+Now pass to the effective spacetime description of that same half-line family. There the local null-stress charge is defined by the identical endpoint derivative,
+\[
+Q_{kk}(\Omega)
+:=
+-\frac{1}{2\pi}\frac{d}{da}\Big|_{a=0^+}\widetilde K^{\mathrm{eff}}_a(\Omega),
+\]
+so on the common quadratic-form domain
+\[
+P_\Omega = Q_{kk}(\Omega).
 \]
 
-where \(\zeta\) is the conformal Killing field preserving the diamond. For a small diamond of size \(\ell\) in \(d=4\),
+Thus the OPH null generator is exactly the local null-stress charge in the effective spacetime description; this step is not a separate scaling-limit premise. When the effective description admits a local stress tensor, for example in a UV CFT regime or any local Lorentzian regime with local modular Hamiltonians, the same operator is the standard null-stress charge associated with the chosen null generator.
 
+For comparison, in a CFT vacuum on a ball one has the familiar local formula
 \[
-\delta \langle H_{\zeta} \rangle = \frac{4 \pi \ell^4}{15} \delta \langle T_{00} \rangle + O(\ell^5),
+H_{\zeta}=\int_{\Sigma}T_{ab}\zeta^b\,d\Sigma^a,
 \]
+so the present identification is the null-half-line version of that same modular-energy locality rather than an additional EFT postulate.
 
-in the diamond rest frame.
+What still lies downstream is narrower than before. The separate interval-preserving projective branch is still needed to transport this half-line statement to bounded null intervals with affine-covariant kernel \(g_I(v)\), and the null-to-tensor upgrade still determines \(T_{ab}\) only up to the familiar ambiguity
+\[
+T_{ab}\mapsto T_{ab}+\phi g_{ab}.
+\]
+But the generator/charge identification itself is already fixed inside the OPH null bridge.
 
 \subsubsection{Localized generalized entropy from Markov + MaxEnt}\label{54-localized-generalized-entropy-from-markov--maxent}
 
@@ -1463,36 +1457,84 @@ Using the split above and the first law for the bulk term,
 
 \subsubsection{Einstein equation from cap equilibrium}\label{56-einstein-equation-from-cap-equilibrium}
 
-In the EFT regime, combine:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\tightlist
-\item
-  Modular energy as stress-tensor charge (Section 5.2 or Section 5.3), and
-\item
-  The geometric identity for area variation at fixed volume:
-\end{enumerate}
-
+In the d=4 scaling regime, the small-ball bridge is internal to the OPH gravity chain. The only extra standard geometric input is the fixed-volume area-variation identity for a small geodesic ball. The modular kernel itself is not imported from a separate EFT law: on the BW branch, a sufficiently small cap is the tangent causal diamond \(D_\ell\), whose preserving conformal Killing field is
 \[
-\delta A|_{V,\lambda} = -\frac{\Omega_{d-2} \ell^d}{d^2 - 1} (G_{00} + \lambda g_{00}).
+\xi_{D_\ell}
+=
+\frac{1}{2\ell}
+\Bigl((\ell^2-r^2-t^2)\,\partial_t-2t\,x^i\partial_i\Bigr).
+\]
+On the t=0 slice its lapse is
+\[
+\xi_{D_\ell}\!\cdot n=\frac{\ell^2-r^2}{2\ell}.
+\]
+The bounded-interval kernel from the null modular bridge gives the same weight on each null generator of the diamond, so the D3 geometric branch and the D4 stress bridge together yield
+\[
+\delta S_{\mathrm{bulk}}(C)
+=
+2\pi\int_{B_\ell}\frac{\ell^2-r^2}{2\ell}\,\delta\langle T_{00}\rangle\,d^3x
++
+\delta\langle E^{(\eta)}_{C,\ell}\rangle.
+\]
+If \(\delta\langle T_{00}\rangle\) is approximately constant across the ball and the carried remainder is \(o(\ell^4)\), then
+\[
+\delta S_{\mathrm{bulk}}(C)
+=
+\frac{8\pi^2\ell^4}{15}\,\delta\langle T_{00}\rangle
++O(\ell^5\partial T)+o(\ell^4).
 \]
 
-The equilibrium condition yields
-
+Stationarity of generalized entropy therefore gives the observer-covariant scalar relation
 \[
-G_{00} + \Lambda g_{00} = 8 \pi G \langle T_{00} \rangle,
+\delta\!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr]
+=
+8\pi G\,u^a u^b\,\delta\langle T_{ab}\rangle
 \]
-
-in the diamond rest frame, with \(\Lambda\) fixed by the reference curvature.
+for the local diamond rest-frame four-velocity \(u^a\). In the adapted rest frame \(u^a=(1,0,0,0)\), this is
+\[
+\delta\!\left(G_{00}+\Lambda g_{00}\right)=8\pi G\,\delta\langle T_{00}\rangle.
+\]
 
 \subsubsection{Overlaps supply all timelike directions}\label{57-overlaps-supply-all-timelike-directions}
 
-Different observers through the same bulk point select different local rest frames \(u\). Overlap consistency forces the scalar relation to hold for all timelike \(u\), so
-
+This scalar-to-tensor upgrade is internal once the Lorentz branch is in place. Overlapping observers through the same bulk point realize every local timelike four-velocity u. Define
 \[
-G_{ab} + \Lambda g_{ab} = 8 \pi G \langle T_{ab} \rangle.
+Y_{ab}:=G_{ab}+\Lambda g_{ab}-8\pi G\,\langle T_{ab}\rangle.
 \]
+The rest-frame relation of the previous subsection says
+\[
+u^a u^b\,\delta Y_{ab}=0
+\]
+for every such u. In local inertial coordinates,
+\[
+u^a=\gamma(1,v^i),
+\qquad
+|\vec v|<1,
+\]
+so
+\[
+0
+=
+u^a u^b\,\delta Y_{ab}
+=
+\gamma^2\Bigl(\delta Y_{00}+2v^i\delta Y_{0i}+v^iv^j\delta Y_{ij}\Bigr)
+\]
+for all \(|\vec v|<1\). The polynomial therefore vanishes coefficientwise, hence
+\[
+\delta Y_{00}=0,\qquad
+\delta Y_{0i}=0,\qquad
+\delta Y_{ij}=0.
+\]
+So the full tensor variation vanishes:
+\[
+\delta Y_{ab}=0.
+\]
+
+Along any connected scaling branch of reference states, \(Y_{ab}\) is therefore constant. The only purely local freedom left by the null reconstruction is the metric term, and fixing that term on one maximally symmetric reference state gives
+\[
+G_{ab}+\Lambda g_{ab}=8\pi G\,\langle T_{ab}\rangle.
+\]
+Thus the tensor upgrade does not require a separate EFT handoff once OPH supplies the geometric branch, the null bridge, and the overlap-complete timelike family.
 
 \subsubsection{Non-tunable numerical constants}\label{58-non-tunable-numerical-constants}
 
@@ -1715,7 +1757,7 @@ This is the concrete bridge from ``axioms about screens'' to ``precision GR pred
 
 \subsubsection{Focusing/QNEC internalization via relative entropy}\label{510-focusingqnec-internalization-via-relative-entropy}
 
-Once the fixed-cutoff null modular structure of Section 5.2 is combined with the downstream density-upgrade and null-stress premises, focusing constraints follow from information-theoretic principles in the same scaling-limit branch rather than from a separate fixed-cutoff postulate.
+Once the fixed-cutoff null modular structure of Section 5.2 is combined with the exact half-line generator/charge identification and the bounded-interval projective branch, focusing constraints follow from information-theoretic principles in the same scaling-limit branch rather than from a separate fixed-cutoff postulate.
 
 \textbf{Derivation chain.} QNEC and focusing are supported conditionally within the same branch:
 
@@ -1724,7 +1766,7 @@ Once the fixed-cutoff null modular structure of Section 5.2 is combined with the
 \item
   Fixed-cutoff null modular bridge (\S{}5.2) \ensuremath{\Longrightarrow} exact-or-controlled strip additivity and a weak tail generator
 \item
-  Derived half-sided modular pair + downstream density upgrade \ensuremath{\Longrightarrow} half-line modular densities and {[}K, P{]} = i 2\ensuremath{\pi} P
+  Derived half-sided modular pair + exact half-line generator/charge identification \ensuremath{\Longrightarrow} local null-stress charge on half-lines and {[}K, P{]} = i 2\ensuremath{\pi} P
 \item
   Relative entropy monotonicity \ensuremath{\Longrightarrow} QNEC
 \item
@@ -1777,7 +1819,7 @@ Given the conditional Einstein branch (Theorem 5.1) and the classical Raychaudhu
 
 \textbf{Significance.} This section shows how the Recoverable Generalized Entropy focusing package is internally supported inside the same null-modular branch once the stress-tensor identification and Einstein relation are in place. That package remains part of the stated axiom set.
 
-\textbf{Theorem 5.1 (Observer-consistency implies a conditional scaling-limit Einstein branch).} Under the five OPH axioms, the collar and null-strip hypotheses of Sections 2 and 5, the canonical technical premises \textbf{T1}, \textbf{T3}, and \textbf{T4}, the conditional null-stress identification of Section 5.2, and admissible first variations about a maximally symmetric reference state, the cap equilibrium condition implies the rest-frame first-variation relation
+\textbf{Theorem 5.1 (Observer-consistency implies a conditional scaling-limit Einstein branch).} Under the five OPH axioms, the collar and null-strip hypotheses of Sections 2 and 5, the canonical technical premises \textbf{T1}, \textbf{T3}, and \textbf{T4}, the half-line generator/charge identification of Section 5.2 together with the bounded-interval projective branch used there, and admissible first variations about a maximally symmetric reference state, the cap equilibrium condition implies the rest-frame first-variation relation
 
 \[
 \delta\!\left(G_{00}+\Lambda g_{00}\right)=8\pi G\,\delta\langle T_{00}\rangle.
@@ -3459,7 +3501,7 @@ Symmetry-protected exact zeros such as the masslessness of the photon, gluons, a
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Dynamics}: The GR chain requires modular covariance plus the fixed-cutoff null-surface modular bridge. Section 5.2 carries that bridge through the derived positive null-translation stage on the OPH geometric scaling branch. The remaining inputs are modular covariance, the downstream density upgrade, and the relativistic null-stress identification.
+  \textbf{Dynamics}: The GR chain requires modular covariance plus the fixed-cutoff null-surface modular bridge. Section 5.2 carries that bridge through the derived positive null-translation stage and the exact half-line generator/charge identification on the OPH geometric scaling branch. The remaining inputs are modular covariance, the bounded-interval projective transport branch, and the tensor upgrade modulo the null-invisible metric term.
 \item
   \textbf{Gauge structure}: The gauge group is reconstructed from sector fusion, and the anomaly/gluing link is precise. Axiom 5 (MAR) fixes the SM factors; the CP/UV admissibility window and MAR give \(N_g = 3\), and Witten's parity constraint with that realized generation count gives \(N_c = 3\). Proposition 6.1a gives DHR transportability \(\Leftrightarrow [z]=0\) on the central branch, while Corollary 3.4a gives the higher-gauge analogue \(q_\Sigma=0\) on the genuinely noncentral branch. The chirality selector still has to be justified in explicit models.
 \item
