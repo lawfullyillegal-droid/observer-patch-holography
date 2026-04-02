@@ -133,7 +133,7 @@ The mere act of observation changes the outcome.
 
 ### The Measurement Problem
 
-This has nothing to do with technological limitations or clumsy detectors disturbing the electrons. The mathematics of quantum mechanics says that before measurement, the electron genuinely doesn't have a definite position. It exists in a "superposition" of going through both slits.
+This has nothing to do with technological limitations or clumsy detectors disturbing the electrons. In the standard textbook reading of quantum mechanics, before measurement the electron is described by a superposition rather than by a single definite path through one slit.
 
 The wave function $|\psi\rangle$ describes probabilities, not definite properties. When you measure, the wave function "collapses" to a definite state. But what counts as a measurement? Who is the observer? When exactly does collapse happen?
 
@@ -143,7 +143,7 @@ These questions have haunted physics for a century. Different interpretations of
 
 **The hint**: Measurement affects outcomes. The act of observation is not passive recording-it's an active intervention that changes the system.
 
-**The lesson**: The intuitive picture-where objects have definite properties whether or not we observe them-doesn't work at the quantum level. Properties like "position" and "momentum" don't exist independently of measurement contexts.
+**The lesson**: The intuitive picture-where objects carry a full set of classical-style definite properties whether or not we observe them-doesn't work at the quantum level. Which properties can be treated as definite depends on the measurement context and the interpretation.
 
 **The first-principles reframing**: Observers are not outside physics looking in. They are part of the physical system. Reality is a conversation we participate in.
 

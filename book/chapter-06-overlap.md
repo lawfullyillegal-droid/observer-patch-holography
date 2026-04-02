@@ -279,7 +279,7 @@ Imagine trying to create a "cheat sheet" for a quantum system-a list saying "if 
 
 Kochen-Specker says: no such cheat sheet exists.
 
-It's not that we don't know the values. It's that the values can't exist simultaneously. The act of measurement doesn't reveal a pre-existing fact; it participates in creating that fact.
+The sharp lesson is narrower and more precise: there is no single noncontextual cheat sheet assigning pre-existing values to all observables at once. Any viable hidden-variable picture must therefore be contextual, and the measurement setting cannot be treated as irrelevant bookkeeping.
 
 ### The Peres-Mermin Magic Square
 
