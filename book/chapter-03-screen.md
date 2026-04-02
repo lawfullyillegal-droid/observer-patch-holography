@@ -421,7 +421,7 @@ Let's trace the reverse engineering explicitly.
 
 **The hint**: Black hole entropy scales with area, and gravitational entropy bounds point toward boundary-limited information.
 
-**The lesson**: A boundary-first description becomes a strong candidate. The boundary is primary and the bulk emergent.
+**The lesson**: A boundary-first description becomes a strong candidate. On that reading, the boundary is primary and the bulk emergent.
 
 **The first-principles reframing**:
 

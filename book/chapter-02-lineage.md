@@ -42,7 +42,7 @@ The shadows on the wall are 2D projections of 3D objects. The prisoners think th
 
 In 1993, Gerard 't Hooft proposed the holographic principle, motivated by black-hole entropy and related entropy-bound arguments. Leonard Susskind developed this into a more precise boundary-first formulation: everything that happens in a volume of space may be describable by data on its boundary.
 
-The 3D world is like a hologram-it looks solid and three-dimensional, but the information that creates it lives on a 2D surface.
+The 3D world is like a hologram-it looks solid and three-dimensional, but the information that generates that appearance may be organized on a 2D surface.
 
 $$S_{max} = \frac{A}{4\ell_P^2}$$
 
