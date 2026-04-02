@@ -194,7 +194,7 @@ In each case, the horizon is a boundary that limits what the observer can access
 Here's the key motivating insight: finite observer access naturally suggests an effective screen picture.
 
 For an observer in our universe:
-- There's a cosmic horizon at roughly 46 billion light-years
+- There is an observer-dependent cosmological horizon scale
 - If they're near a black hole, there's an event horizon
 - If they're accelerating, there's a Rindler horizon
 
@@ -425,7 +425,7 @@ Let's trace the reverse engineering explicitly.
 
 **The first-principles reframing**:
 
-1. Each observer has a horizon-a spherical screen bounding their accessible information
+1. In the symmetric constructions used here, each observer has an effective horizon that is naturally modeled by a spherical screen bounding accessible information
 2. The screen carries the fundamental data, limited by $S \leq A/(4\ell_P^2)$
 3. Entanglement patterns on the screen create the geometry of the emergent 3D bulk
 4. Different observers have different screens, but consistency on overlaps makes the emergent 3D world shared and stable
@@ -452,7 +452,7 @@ In the finite-resolution screen picture used here, continuous space is an effect
 
 We have established that:
 - Information lives on horizons, not in volumes
-- Horizons are spherical, a consequence of causality
+- In the symmetric light-cone constructions used here, the effective screens are spherical as a consequence of causality
 - The amount of information is finite, bounded by area
 - Entanglement patterns on the screen create emergent 3D geometry
 
