@@ -4,7 +4,7 @@
 
 **French version:** [README_FR.md](README_FR.md)
 
-**Quick links:** [website](https://floatingpragma.io/oph/) | [Paper 1: synthesis](paper/observers_are_all_you_need.pdf) | [Paper 2: SM/GR derivation](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf) | [Paper 3: particle derivation](paper/deriving_the_particle_zoo_from_observer_consistency.pdf) | [OPH Book](https://oph-book.floatingpragma.io) | [OPH Textbooks](https://learn.floatingpragma.io/) | [OPH Lab](https://oph-lab.floatingpragma.io) | [challenge](https://challenge.floatingpragma.io)
+**Quick links:** [website](https://floatingpragma.io/oph/) | [OPH Textbooks](https://learn.floatingpragma.io/) | [OPH Lab](https://oph-lab.floatingpragma.io)
 
 OPH is a reconstruction program for fundamental physics. Spacetime, gauge structure, particles, records, and observer synchronization are treated as consequences of overlap consistency on a finite holographic screen.
 
@@ -67,10 +67,6 @@ Public Higgs/top rows are carried by the closed one-scalar D11 forward seed. The
   and `Δm21² / Δm32² = 0.03072111`.
 - The exact non-hadron surface is collected in
   [code/particles/EXACT_NONHADRON_MASSES.md](code/particles/EXACT_NONHADRON_MASSES.md).
-
-### Brief gap summary
-
-The remaining particle gaps are narrow and explicit: charged leptons wait on `C_hat_e^{cand}` and the post-promotion lift whose descended scalar is `mu_phys(Y_e)`, with `charged_physical_identity_mode_equalizer` as the smaller forcing object beneath that scalar; the quark lane theorem-emits a maximal restricted package consisting of the D12 mass ray, the negative selector `sigma_ref`, and the affine mean package with `g_ch = 0.9231656602589082` on `shared_budget_only` and `(g_u, g_d) = (0.7797392875757557, 0.12172551081512113)` on `current_family_only`, while the stronger physical closure objects remain absent on the present ledger; the exact minimal extension above that package is `H_mass : ell_ud = log(c_d / c_u)`, `H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys`, and `H_abs : A_q^phys : Sigma_ud^phys -> R`; the weighted-cycle neutrino lane carries the emitted theorem pair `C_nu = sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5 = 0.9994295999075177` and `B_nu = P_nu * C_nu = 6.696004159297337`, with the older exact adapter, bridge corridor, and correction audit retained only as diagnostic sidecars; and hadrons sit outside the current roadmap.
 
 ## Papers
 

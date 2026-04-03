@@ -4,7 +4,7 @@
 
 **Version anglaise :** [README.md](README.md)
 
-**Liens rapides :** [site](https://floatingpragma.io/oph/) | [Papier 1 : synthèse](paper/observers_are_all_you_need.pdf) | [Papier 2 : dérivation relativité/MS](paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf) | [Papier 3 : dérivation particules](paper/deriving_the_particle_zoo_from_observer_consistency.pdf) | [livre OPH](https://oph-book.floatingpragma.io) | [OPH Textbooks](https://learn.floatingpragma.io/) | [OPH Lab](https://oph-lab.floatingpragma.io) | [challenge](https://challenge.floatingpragma.io)
+**Liens rapides :** [site](https://floatingpragma.io/oph/) | [OPH Textbooks](https://learn.floatingpragma.io/) | [OPH Lab](https://oph-lab.floatingpragma.io)
 
 L'OPH est un programme de reconstruction. Espace-temps, structure de jauge, particules, enregistrements et synchronisation des observateurs y apparaissent comme des conséquences de la cohérence de recouvrement sur un écran holographique fini.
 
@@ -67,10 +67,6 @@ Les lignes publiques Higgs/top sont portées par la graine forward D11 scalaire 
   et `Δm21² / Δm32² = 0.03072111`.
 - La surface exacte non hadronique est regroupée dans
   [code/particles/EXACT_NONHADRON_MASSES.md](code/particles/EXACT_NONHADRON_MASSES.md).
-
-### Résumé bref des écarts restants
-
-Les écarts restants sont étroits et explicites : les leptons chargés attendent `C_hat_e^{cand}` et la levée post-promotion dont le scalaire descendu est `mu_phys(Y_e)`, avec `charged_physical_identity_mode_equalizer` comme plus petit objet forçant sous ce scalaire ; la voie des quarks émet un paquet théorème maximal mais restreint, constitué du rayon de masse D12, du sélecteur négatif `sigma_ref`, et de la loi affine moyenne avec `g_ch = 0.9231656602589082` sur `shared_budget_only` et `(g_u, g_d) = (0.7797392875757557, 0.12172551081512113)` sur `current_family_only`, tandis que les objets de fermeture physique plus forts restent absents du registre présent ; le triple d’extension minimale exact au-dessus de ce paquet est `H_mass : ell_ud = log(c_d / c_u)`, `H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys`, et `H_abs : A_q^phys : Sigma_ud^phys -> R` ; la voie neutrino à cycle pondéré porte la paire de théorèmes émise `C_nu = sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5 = 0.9994295999075177` et `B_nu = P_nu * C_nu = 6.696004159297337`, tandis que l’ancien adaptateur exact, le corridor de pont, et l’audit de correction restent de simples sidecars diagnostiques ; et les hadrons se trouvent hors de la feuille de route actuelle.
 
 ## Articles
 
