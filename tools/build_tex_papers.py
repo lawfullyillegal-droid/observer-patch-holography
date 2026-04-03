@@ -22,13 +22,14 @@ PAPERS = {
     "screen_microphysics_and_observer_synchronization": PAPER_DIR / "screen_microphysics_and_observer_synchronization.tex",
 }
 
-RELEASE_TRACKED = {
-    "deriving_the_particle_zoo_from_observer_consistency",
+RELEASE_TRACKED = (
+    "recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact",
     "observers_are_all_you_need",
     "reality_as_consensus_protocol",
-    "recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact",
     "screen_microphysics_and_observer_synchronization",
-}
+    "deriving_the_particle_zoo_from_observer_consistency",
+)
+RELEASE_TRACKED_SET = set(RELEASE_TRACKED)
 
 
 def parse_args() -> argparse.Namespace:
@@ -64,7 +65,7 @@ def resolve_targets(args: argparse.Namespace) -> list[str]:
 
     if args.list:
         for paper_id in sorted(PAPERS):
-            marker = "release" if paper_id in RELEASE_TRACKED else "supplemental"
+            marker = "release" if paper_id in RELEASE_TRACKED_SET else "supplemental"
             print(f"{paper_id}\t{marker}")
         raise SystemExit(0)
 
@@ -75,9 +76,9 @@ def resolve_targets(args: argparse.Namespace) -> list[str]:
         return args.papers
 
     if args.release_only:
-        return sorted(RELEASE_TRACKED)
+        return list(RELEASE_TRACKED)
     if args.supplemental_only:
-        return sorted(set(PAPERS) - RELEASE_TRACKED)
+        return sorted(set(PAPERS) - RELEASE_TRACKED_SET)
     return sorted(PAPERS)
 
 
