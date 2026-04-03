@@ -567,7 +567,7 @@ stages:
   - id: stage-4
     title: "Close the physical quark branch"
     status: active
-    success_rule: "Either the quark lane escapes the selected wrong-branch sigma_ref sheet and reaches a theorem-grade physical CKM branch, or every surface states the sharper current boundary: sigma_ref is already selected, the active builder still waits on the pure-B payload pair, the broader honest quark frontier is the light-quark overlap-defect scalar Delta_ud_overlap, and on D12_ud_mass_ray this is equivalently quark_d12_t1_value_law, with intrinsic_scale_law_D12 surviving only as the derived wrapper."
+    success_rule: "Either the quark lane escapes the selected wrong-branch sigma_ref sheet and reaches a theorem-grade physical CKM branch, or every surface states the strict present-premise no-go and the exact minimal extension triple: the current corpus emits neither the D12 scalar value law, nor a sector-attached same-label left-handed lift to the physical CKM shell, nor a target-free physical-sheet readout (g_u, g_d); the exact next objects are H_mass : ell_ud = log(c_d / c_u), H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys, and H_abs : A_q^phys : Sigma_ud^phys -> R."
     tasks:
       - id: papers.compact.e.31-derive-quark-textures-ckm-mixing-and-cp-from-overlap-defects
         title: "Search for a genuine quark branch-changing closure beyond the selected wrong-branch sigma_ref sheet"

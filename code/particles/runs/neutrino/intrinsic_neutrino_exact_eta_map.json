@@ -38,7 +38,7 @@
     "p_invariant_gev4": 2.931760022551886e-49,
     "q_invariant_gev6": 2.6841028959275748e-74
   },
-  "generated_utc": "2026-04-02T13:46:26Z",
+  "generated_utc": "2026-04-03T03:30:46Z",
   "h_shift_eigenvalues_gev2_sorted": [
     -3.977645123985104e-25,
     -2.188659296286065e-25,
@@ -49,7 +49,7 @@
     "nu_2": 2.4192891505715804e-12,
     "nu_3": 2.5862050123161317e-12
   },
-  "isotropic_reference_bundle": "/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/neutrino/forward_neutrino_closure_bundle.json",
+  "isotropic_reference_bundle": "/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/neutrino/forward_majorana_matrix.json",
   "majorana_matrix_imag": [
     [
       0.0,

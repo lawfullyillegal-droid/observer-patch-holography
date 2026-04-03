@@ -170,40 +170,40 @@
       "supporting_theorem_artifact": "code/particles/runs/flavor/quark_current_family_quadratic_readout_theorem.json"
     },
     {
-      "exact_kind": "exact_two_observable_compare_only_segment_adapter",
+      "exact_kind": "theorem_grade_weighted_cycle_absolute_attachment",
       "label": "Electron Neutrino",
-      "mass_eV": 0.01745663294772044,
-      "note": "Exact compare-only neutrino mass from the two-parameter positive-segment adapter, with the same branch carrying explicit compare-only bridge coordinates `B_nu = 6.69675975` and `C_nu = 0.99952948`.",
+      "mass_eV": 0.017454720257976796,
+      "note": "Theorem-grade weighted-cycle absolute neutrino mass from the emitted bridge-rigidity and absolute-attachment pair, with `C_nu = 0.9994295999075177`, `P_nu = 6.699825740519345`, and `B_nu = 6.696004159297337`.",
       "particle_id": "electron_neutrino",
-      "promotable": false,
-      "scope": "compare_only_two_parameter_segment_adapter",
-      "source_artifact": "code/particles/runs/neutrino/neutrino_two_parameter_exact_adapter.json",
-      "supporting_bridge_coordinate_artifact": "code/particles/runs/neutrino/neutrino_exact_adapter_bridge_coordinate.json"
+      "promotable": true,
+      "scope": "weighted_cycle_bridge_rigid_absolute_family",
+      "source_artifact": "code/particles/runs/neutrino/neutrino_absolute_attachment_theorem.json",
+      "supporting_bridge_rigidity_artifact": "code/particles/runs/neutrino/neutrino_bridge_rigidity_theorem.json"
     },
     {
-      "exact_kind": "exact_two_observable_compare_only_segment_adapter",
+      "exact_kind": "theorem_grade_weighted_cycle_absolute_attachment",
       "label": "Muon Neutrino",
-      "mass_eV": 0.019484199595350048,
-      "note": "Exact compare-only neutrino mass from the two-parameter positive-segment adapter, with the same branch carrying explicit compare-only bridge coordinates `B_nu = 6.69675975` and `C_nu = 0.99952948`.",
+      "mass_eV": 0.019481987935919015,
+      "note": "Theorem-grade weighted-cycle absolute neutrino mass from the emitted bridge-rigidity and absolute-attachment pair, with `C_nu = 0.9994295999075177`, `P_nu = 6.699825740519345`, and `B_nu = 6.696004159297337`.",
       "particle_id": "muon_neutrino",
-      "promotable": false,
-      "scope": "compare_only_two_parameter_segment_adapter",
-      "source_artifact": "code/particles/runs/neutrino/neutrino_two_parameter_exact_adapter.json",
-      "supporting_bridge_coordinate_artifact": "code/particles/runs/neutrino/neutrino_exact_adapter_bridge_coordinate.json"
+      "promotable": true,
+      "scope": "weighted_cycle_bridge_rigid_absolute_family",
+      "source_artifact": "code/particles/runs/neutrino/neutrino_absolute_attachment_theorem.json",
+      "supporting_bridge_rigidity_artifact": "code/particles/runs/neutrino/neutrino_bridge_rigidity_theorem.json"
     },
     {
-      "exact_kind": "exact_two_observable_compare_only_segment_adapter",
+      "exact_kind": "theorem_grade_weighted_cycle_absolute_attachment",
       "label": "Tau Neutrino",
-      "mass_eV": 0.053081390655025595,
-      "note": "Exact compare-only neutrino mass from the two-parameter positive-segment adapter, with the same branch carrying explicit compare-only bridge coordinates `B_nu = 6.69675975` and `C_nu = 0.99952948`.",
+      "mass_eV": 0.05307522145074924,
+      "note": "Theorem-grade weighted-cycle absolute neutrino mass from the emitted bridge-rigidity and absolute-attachment pair, with `C_nu = 0.9994295999075177`, `P_nu = 6.699825740519345`, and `B_nu = 6.696004159297337`.",
       "particle_id": "tau_neutrino",
-      "promotable": false,
-      "scope": "compare_only_two_parameter_segment_adapter",
-      "source_artifact": "code/particles/runs/neutrino/neutrino_two_parameter_exact_adapter.json",
-      "supporting_bridge_coordinate_artifact": "code/particles/runs/neutrino/neutrino_exact_adapter_bridge_coordinate.json"
+      "promotable": true,
+      "scope": "weighted_cycle_bridge_rigid_absolute_family",
+      "source_artifact": "code/particles/runs/neutrino/neutrino_absolute_attachment_theorem.json",
+      "supporting_bridge_rigidity_artifact": "code/particles/runs/neutrino/neutrino_bridge_rigidity_theorem.json"
     }
   ],
   "excluded_lane": "hadrons_compute_bound",
-  "generated_utc": "2026-04-02T03:08:12Z",
+  "generated_utc": "2026-04-03T03:29:28Z",
   "status": "exact_output_lane_closed_nonhadron_only"
 }

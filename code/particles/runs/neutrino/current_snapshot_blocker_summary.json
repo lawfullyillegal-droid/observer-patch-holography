@@ -1,12 +1,10 @@
 {
   "artifact": "oph_current_snapshot_blocker_summary_v8",
   "charged_left_basis_artifact_dof_before_phase_quotients": 9,
-  "exact_remaining_blockers": [
-    "one_positive_neutrino_bridge_correction_invariant"
-  ],
-  "generated_utc": "2026-04-01T03:59:41Z",
+  "exact_remaining_blockers": [],
+  "generated_utc": "2026-04-03T03:08:45Z",
   "live_same_label_scalar_certificate_present": true,
-  "physical_branch_closed": false,
+  "physical_branch_closed": true,
   "pmns_present": true,
   "repair_artifact_present": true,
   "same_label_builder_facing_centered_eta_dof": 2,
@@ -101,17 +99,17 @@
       "contains_compare_only_target": true,
       "definition": "B_nu = (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1) * C_nu",
       "interval": [
-        6.696004159297337,
+        6.691787915662661,
         6.710401019972258
       ],
-      "midpoint": 6.703202589634797,
+      "midpoint": 6.701094467817459,
       "narrowing_vs_primary_cross_route_corridor": {
         "is_narrower": true,
-        "relative_half_width_ratio": 0.7405657590000583
+        "relative_half_width_ratio": 0.9577479745301027
       },
       "proxy_formula": "I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1",
       "proxy_value": 6.699825740519345,
-      "relative_half_width": 0.0010738792750484857,
+      "relative_half_width": 0.0013888107680758454,
       "source": "oph_neutrino_bridge_correction_candidate_audit"
     }
   }

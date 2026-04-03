@@ -93,24 +93,22 @@ entries:
       ["papers.compact.e.31-derive-quark-textures-ckm-mixing-and-cp-from-overlap-defects"]
   - id: continuation.neutrinos.d6_estimate
     output_keys: ["m_nu_e", "m_nu_mu", "m_nu_tau", "rho_Lambda_1_4"]
-    label: "Repaired weighted-cycle neutrino continuation"
+    label: "Weighted-cycle bridge-rigid neutrino theorem branch"
     tier: continuation
     branch: repair
-    oph_derived_piece: "same-label scalar certificate plus shared-basis weighted-cycle repair"
+    oph_derived_piece: "same-label scalar certificate plus shared-basis weighted-cycle repair, bridge rigidity, and absolute attachment"
     borrowed_qft_piece: null
-    extra_ansatz: "one positive absolute normalization scalar still open"
-    blocked_by:
-      ["papers.compact.e.32-derive-neutrino-masses-from-screen-capacity-as-a-theorem", "particles.e.32b-close-neutrino-splittings-and-mixing"]
+    extra_ansatz: "no additional absolute-scale adapter on the proof-facing lane"
+    blocked_by: []
   - id: open.neutrinos.full_sector
     output_keys: ["neutrino_splittings", "pmns_structure"]
-    label: "Full neutrino masses, splittings, and mixing"
-    tier: open
-    branch: open
-    oph_derived_piece: "not closed"
-    borrowed_qft_piece: "not fixed"
-    extra_ansatz: "not yet bounded"
-    blocked_by:
-      ["papers.compact.e.32-derive-neutrino-masses-from-screen-capacity-as-a-theorem", "particles.e.32b-close-neutrino-splittings-and-mixing"]
+    label: "Weighted-cycle neutrino masses, splittings, and mixing"
+    tier: continuation
+    branch: repair
+    oph_derived_piece: "closed on the weighted-cycle bridge-rigid branch"
+    borrowed_qft_piece: null
+    extra_ansatz: "no additional proof-facing adapter"
+    blocked_by: []
   - id: secondary.qcd.lambda_msbar
     output_keys: ["Lambda_MSbar_3", "Lambda_MSbar"]
     label: "Lambda_MSbar descendant from D10 alpha_s"

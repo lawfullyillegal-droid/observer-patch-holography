@@ -22,6 +22,8 @@ def test_two_parameter_exact_adapter_hits_both_representative_central_splittings
     assert payload["artifact"] == "oph_neutrino_two_parameter_exact_adapter"
     assert payload["scope"] == "compare_only_two_parameter_segment_adapter"
     assert payload["promotable"] is False
+    assert payload["proof_chain_role"] == "diagnostic_only_retired_from_theorem_lane"
+    assert payload["must_not_feed_back"] is True
     assert payload["exact_solution"]["tau_nu"] == pytest.approx(0.49717065800809745, abs=1.0e-15)
     assert payload["exact_solution"]["lambda_nu"] == pytest.approx(1.723958214811294, abs=1.0e-12)
     assert payload["exact_outputs"]["masses_eV"] == pytest.approx(

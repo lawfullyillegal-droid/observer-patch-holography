@@ -45,7 +45,7 @@ L'OPH est un programme de reconstruction. Espace-temps, structure de jauge, part
 | Sidecar exact Higgs/top | `(H, t) = (125.1995304097179, 172.3523553288311) GeV` | tranche inverse D11 exacte mais compare-only |
 | Témoin chargé | `(e, mu, tau) = (0.00051099895, 0.1056583755, 1.7769324651340912) GeV` | témoin exact sur une chaîne de lecture quadratique fermée à trois points |
 | Témoin quark | `(u, d, s, c, b, t) = (0.00216, 0.00470, 0.0935, 1.273, 4.183, 172.3523553288311) GeV` | témoin exact sur une chaîne de lecture quadratique fermée à trois points |
-| Adaptateur neutrino | `(m1, m2, m3) = (0.01745663295, 0.01948419960, 0.05308139066) eV` avec `Δm21²`, `Δm31²`, `Δm32²` exacts | adaptateur exact compare-only |
+| Branche théorème neutrino | `(m1, m2, m3) = (0.017454720257976796, 0.019481987935919015, 0.05307522145074924) eV` avec `Δm21²`, `Δm31²`, `Δm32²` émis sur la branche à cycle pondéré | famille absolue à cycle pondéré de rang théorème |
 
 Les lignes publiques Higgs/top sont portées par la graine forward D11 scalaire unique fermée. La paire inverse exacte ci-dessus reste un sidecar compare-only sur le même Jacobien et ne remplace pas la branche forward publique.
 
@@ -70,7 +70,7 @@ Les lignes publiques Higgs/top sont portées par la graine forward D11 scalaire 
 
 ### Résumé bref des écarts restants
 
-Les écarts restants sont étroits et explicites : les leptons chargés attendent `C_hat_e^{cand}` et la levée post-promotion dont le scalaire descendu est `mu_phys(Y_e)`, avec `charged_physical_identity_mode_equalizer` comme plus petit objet forçant sous ce scalaire ; les quarks attendent le scalaire de défaut de recouvrement des quarks légers `Delta_ud_overlap`, qui sur le rayon de masse D12 émis est équivalent à la loi scalaire descendante `quark_d12_t1_value_law`, avec `intrinsic_scale_law_D12` comme enveloppe dérivée ; un sidecar interne de rétrolecture D12, limité à la continuation, fixe numériquement le paquet scalaire du côté masse, mais ne remplace pas la frontière théorème publique et ne supprime pas la mauvaise branche CKM ; les neutrinos attendent `C_nu` ; et les hadrons attendent le bundle backend de production et les systématiques complètes.
+Les écarts restants sont étroits et explicites : les leptons chargés attendent `C_hat_e^{cand}` et la levée post-promotion dont le scalaire descendu est `mu_phys(Y_e)`, avec `charged_physical_identity_mode_equalizer` comme plus petit objet forçant sous ce scalaire ; la voie des quarks porte un théorème d’impossibilité strict sur l’ensemble de prémisses présent, car le corpus n’émet ni la loi scalaire D12, ni une levée gauche même-étiquette attachée au secteur vers la coquille CKM physique, ni une lecture absolue sans cible `(g_u, g_d)` sur la feuille physique ; les prochains objets exacts à calculer sont donc le triple d’extension minimale `H_mass : ell_ud = log(c_d / c_u)`, `H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys`, et `H_abs : A_q^phys : Sigma_ud^phys -> R` ; la voie neutrino à cycle pondéré porte la paire de théorèmes émise `C_nu = sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5 = 0.9994295999075177` et `B_nu = P_nu * C_nu = 6.696004159297337`, tandis que l’ancien adaptateur exact, le corridor de pont, et l’audit de correction restent de simples sidecars diagnostiques ; et les hadrons se trouvent hors de la feuille de route actuelle.
 
 ## Articles
 

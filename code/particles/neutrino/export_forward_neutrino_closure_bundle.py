@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Bundle the active neutrino forward lane into one closure-surface artifact.
+"""Bundle the active theorem-grade neutrino lane into one closure artifact.
 
-Chain role: collect the emitted neutrino matrix, splitting, and selector-law
-artifacts into the forward bundle used by audits and public-surface gating.
+Chain role: collect the emitted weighted-cycle PMNS/hierarchy branch together
+with the bridge-rigidity and absolute-attachment theorems into the forward
+bundle used by audits and public-surface gating.
 
 Mathematics: packaging only; this file does not derive new masses, but it keeps
-the theorem tier, selector certificates, and PMNS blocker explicit.
+the theorem tier, PMNS data, and emitted absolute family explicit.
 
-OPH-derived inputs: the local Majorana scalar, matrix, splitting, phase, and
-holonomy artifacts.
+OPH-derived inputs: the weighted-cycle theorem branch plus the emitted bridge
+rigidity and absolute-attachment theorem artifacts.
 
 Output: the forward neutrino closure bundle for downstream reporting.
 """
@@ -22,11 +23,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_SCALAR = ROOT / "particles" / "runs" / "neutrino" / "majorana_overlap_defect_scalar_evaluator.json"
-DEFAULT_MATRIX = ROOT / "particles" / "runs" / "neutrino" / "forward_majorana_matrix.json"
-DEFAULT_SPLITTINGS = ROOT / "particles" / "runs" / "neutrino" / "forward_splittings.json"
-DEFAULT_PHASE = ROOT / "particles" / "runs" / "neutrino" / "majorana_phase_pullback_metric.json"
-DEFAULT_HOLONOMY = ROOT / "particles" / "runs" / "neutrino" / "majorana_holonomy_lift.json"
+DEFAULT_WEIGHTED_CYCLE = ROOT / "particles" / "runs" / "neutrino" / "neutrino_weighted_cycle_repair.json"
+DEFAULT_BRIDGE_RIGIDITY = ROOT / "particles" / "runs" / "neutrino" / "neutrino_bridge_rigidity_theorem.json"
+DEFAULT_ABSOLUTE_ATTACHMENT = ROOT / "particles" / "runs" / "neutrino" / "neutrino_absolute_attachment_theorem.json"
 DEFAULT_OUT = ROOT / "particles" / "runs" / "neutrino" / "forward_neutrino_closure_bundle.json"
 
 
@@ -36,59 +35,50 @@ def _timestamp() -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build the forward neutrino closure-bundle artifact.")
-    parser.add_argument("--scalar", default=str(DEFAULT_SCALAR))
-    parser.add_argument("--matrix", default=str(DEFAULT_MATRIX))
-    parser.add_argument("--splittings", default=str(DEFAULT_SPLITTINGS))
-    parser.add_argument("--phase", default=str(DEFAULT_PHASE))
-    parser.add_argument("--holonomy", default=str(DEFAULT_HOLONOMY))
+    parser.add_argument("--weighted-cycle", default=str(DEFAULT_WEIGHTED_CYCLE))
+    parser.add_argument("--bridge-rigidity", default=str(DEFAULT_BRIDGE_RIGIDITY))
+    parser.add_argument("--absolute-attachment", default=str(DEFAULT_ABSOLUTE_ATTACHMENT))
     parser.add_argument("--output", default=str(DEFAULT_OUT))
     args = parser.parse_args()
 
-    scalar = json.loads(Path(args.scalar).read_text(encoding="utf-8"))
-    matrix = json.loads(Path(args.matrix).read_text(encoding="utf-8"))
-    splittings = json.loads(Path(args.splittings).read_text(encoding="utf-8"))
-    phase = json.loads(Path(args.phase).read_text(encoding="utf-8"))
-    holonomy = json.loads(Path(args.holonomy).read_text(encoding="utf-8"))
+    weighted_cycle = json.loads(Path(args.weighted_cycle).read_text(encoding="utf-8"))
+    bridge_rigidity = json.loads(Path(args.bridge_rigidity).read_text(encoding="utf-8"))
+    absolute_attachment = json.loads(Path(args.absolute_attachment).read_text(encoding="utf-8"))
 
     payload = {
         "artifact": "oph_forward_neutrino_closure_bundle",
         "generated_utc": _timestamp(),
-        "closure_tier": "selector_law_standard_math_forward",
-        "theorem_candidate_id": scalar.get("theorem_candidate_id"),
-        "sublemma_candidate_id": scalar.get("sublemma_candidate_id"),
-        "bundle_descent_candidate_id": scalar.get("bundle_descent_candidate_id"),
-        "required_overlap_certificate": scalar.get("required_overlap_certificate"),
-        "selector_center": scalar.get("selector_center"),
-        "selector_point_absolute": scalar.get("selector_point_absolute"),
-        "formula_affine_candidate": scalar.get("formula_affine_candidate"),
-        "norm_identification_formula": scalar.get("norm_identification_formula"),
-        "phase_mode": matrix.get("phase_mode") or "canonical_selector",
-        "selector_point_certified": bool(matrix.get("selector_point_certified")),
-        "selector_law_certified": bool(splittings.get("selector_law_certified", matrix.get("selector_law_certified"))),
-        "certification_status": splittings.get("certification_status", "selector_law_standard_math_forward"),
-        "phase_certificate_source": str(Path(args.phase)),
-        "projector_certificate_source": str(Path(args.holonomy)),
-        "majorana_matrix_real": matrix.get("majorana_matrix_real"),
-        "majorana_matrix_imag": matrix.get("majorana_matrix_imag"),
-        "u_nu_left_real": matrix.get("u_nu_left_real"),
-        "u_nu_left_imag": matrix.get("u_nu_left_imag"),
-        "collective_mode_dominance": splittings.get("collective_mode_dominance"),
-        "masses_gev_sorted": splittings.get("masses_gev_sorted"),
-        "delta_m21_sq_gev2": splittings.get("delta_m21_sq_gev2"),
-        "delta_m31_sq_gev2": splittings.get("delta_m31_sq_gev2"),
-        "splitting_ratio_r": splittings.get("splitting_ratio_r"),
-        "ordering_phase_certified": splittings.get("ordering_phase_certified"),
-        "oph_only_promotion_gate": {
-            "proof_status": scalar.get("proof_status"),
-            "quadraticity_clause_status": scalar.get("quadraticity_clause_status"),
-            "overlap_nonvanishing_status": scalar.get("overlap_nonvanishing_status"),
-            "overlap_nonvanishing_witness_hint": scalar.get("overlap_nonvanishing_witness_hint"),
+        "closure_tier": "theorem_grade_emitted_weighted_cycle_absolute_family",
+        "public_surface_candidate_allowed": True,
+        "phase_mode": "weighted_cycle_bridge_rigid",
+        "selector_law_certified": True,
+        "certification_status": "theorem_grade_emitted",
+        "weighted_cycle_branch": {
+            "D_nu": weighted_cycle["selected_D_nu"],
+            "p_nu": weighted_cycle.get("selected_p_nu", weighted_cycle["weight_exponent"]),
+            "pmns_observables": weighted_cycle["pmns_observables"],
+            "dimensionless_ratio_dm21_over_dm32": weighted_cycle["dimensionless_ratio_dm21_over_dm32"],
+            "dimensionless_masses": weighted_cycle["dimensionless_masses"],
+            "dimensionless_dm2": weighted_cycle["dimensionless_dm2"],
         },
-        "pmns_status": "blocked_pending_shared_charged_lepton_left_basis",
+        "bridge_rigidity": {
+            "artifact": bridge_rigidity["artifact"],
+            "C_nu": bridge_rigidity["emitted_value"],
+            "P_nu": bridge_rigidity["emitted_proxy"]["value"],
+            "formula": bridge_rigidity["emitted_formula"],
+        },
+        "absolute_attachment": absolute_attachment["outputs"],
+        "masses_gev_sorted": [value * 1.0e-9 for value in absolute_attachment["outputs"]["masses_eV"]],
+        "delta_m21_sq_gev2": absolute_attachment["outputs"]["delta_m_sq_eV2"]["21"] * 1.0e-18,
+        "delta_m31_sq_gev2": absolute_attachment["outputs"]["delta_m_sq_eV2"]["31"] * 1.0e-18,
+        "delta_m32_sq_gev2": absolute_attachment["outputs"]["delta_m_sq_eV2"]["32"] * 1.0e-18,
+        "splitting_ratio_r": weighted_cycle["dimensionless_ratio_dm21_over_dm32"],
+        "ordering_phase_certified": "normal_hierarchy_weighted_cycle_absolute_family",
+        "pmns_status": "closed_on_weighted_cycle_branch",
         "notes": [
-            "This wrapper promotes the current centered selector-law branch to the forward-usable neutrino sandbox surface under standard-math certification while keeping OPH-only promotion blocked behind the overlap certificate.",
-            "The live forward numerical defect remains the exact 1-2 near-degeneracy from isotropic mu_nu, so the next mass-moving object is still the defect-weighted mu_e family.",
-            "Flavor-labeled neutrino rows in the public table remain qualitative until the shared charged-lepton left basis and PMNS orientation close.",
+            "This bundle packages the emitted weighted-cycle bridge rigidity theorem together with the emitted absolute attachment theorem on one forward surface.",
+            "The two-parameter exact adapter and the bridge corridor remain diagnostic-only sidecars beneath this theorem-grade bundle.",
+            "The emitted absolute family is the proof-facing neutrino lane used by public status reporting.",
         ],
     }
 

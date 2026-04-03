@@ -46,7 +46,7 @@ def test_exact_nonhadron_mass_bundle_is_complete() -> None:
         assert entries["higgs"]["mass_gev"] == pytest.approx(125.1995304097179, abs=1.0e-12)
         assert entries["electron"]["mass_gev"] == pytest.approx(0.00051099895, abs=1.0e-15)
         assert entries["top_quark"]["mass_gev"] == pytest.approx(172.3523553288312, abs=1.0e-10)
-        assert entries["tau_neutrino"]["mass_eV"] == pytest.approx(0.053081390655025595, abs=1.0e-15)
+        assert entries["tau_neutrino"]["mass_eV"] == pytest.approx(0.05307522145074924, abs=1.0e-15)
         markdown = md.read_text(encoding="utf-8")
         assert "Exact Non-Hadron Masses" in markdown
         assert "Bottom Quark" in markdown

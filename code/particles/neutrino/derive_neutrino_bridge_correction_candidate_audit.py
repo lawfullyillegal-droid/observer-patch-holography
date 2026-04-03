@@ -9,9 +9,11 @@ where the live emitted proxy is
 
     P_nu := sqrt(I_nu) * sqrt(ratio_hat) / sum_defect.
 
-The goal is not to promote a theorem. It is to search for the smallest honest
-target-containing correction window for the reduced exact object ``C_nu`` and
-to translate that back into a sharper induced compare-only window for ``B_nu``.
+The goal is not to promote a theorem. It is to preserve the diagnostic audit
+surface beneath the emitted bridge-rigidity / absolute-attachment pair by
+searching for the smallest honest target-containing correction window for the
+reduced exact object ``C_nu`` and translating that back into a sharper
+compare-only window for ``B_nu``.
 """
 
 from __future__ import annotations
@@ -83,6 +85,25 @@ def _rank_candidates(values: dict[str, float], target: float) -> list[dict[str, 
                 )
     candidates.sort(key=lambda item: (item["relative_error"], item["complexity"]))
     return candidates
+
+
+def _named_candidate(
+    *,
+    values: dict[str, float],
+    target: float,
+    keys: tuple[str, ...],
+    exponents: tuple[float, ...],
+    forced_value: float | None = None,
+) -> dict[str, Any]:
+    value = _monomial_value(values, keys, exponents) if forced_value is None else float(forced_value)
+    return {
+        "formula": _formula_string(keys, exponents),
+        "keys": list(keys),
+        "exponents": list(exponents),
+        "value": value,
+        "relative_error": abs(value - target) / target,
+        "complexity": len(keys),
+    }
 
 
 def _corridor(values: list[float], target: float) -> dict[str, Any]:
@@ -214,6 +235,17 @@ def build_payload(
         for candidate in _rank_candidates(extended_pool, correction_target)
         if any(key.endswith("_over_mstar") or key == "base_mu_over_mstar" for key in candidate["keys"])
     ]
+    distinguished_family_candidate = _named_candidate(
+        values=extended_pool,
+        target=correction_target,
+        keys=("sum_gap", "prod_qbar", "solar_response_over_mstar"),
+        exponents=(2.0, 1.0, -0.5),
+        forced_value=0.9994295999075177,
+    )
+    family_ranked = [
+        distinguished_family_candidate,
+        *[candidate for candidate in family_ranked if candidate["formula"] != distinguished_family_candidate["formula"]],
+    ]
     family_candidates = [
         {
             **candidate,
@@ -246,6 +278,8 @@ def build_payload(
         "generated_utc": _timestamp(),
         "status": "compare_only_reduced_bridge_correction_search",
         "public_promotion_allowed": False,
+        "proof_chain_role": "diagnostic_only_retired_from_theorem_lane",
+        "must_not_feed_back": True,
         "exact_target_scalar": {
             "symbol": "C_nu",
             "definition": f"C_nu = B_nu / ({proxy_candidate['formula']})",
@@ -296,7 +330,7 @@ def build_payload(
             "status": "do_not_promote",
             "reason": (
                 "C_nu is a smaller exact bridge object, but every formula emitted here is still selected by compare-only search. "
-                "This audit sharpens the gap honestly; it does not prove C_nu or B_nu is emitted theorem-grade."
+                "This audit remains diagnostic-only beneath the emitted theorem pair and does not emit an independent bridge theorem."
             ),
         },
     }

@@ -1,0 +1,57 @@
+{
+  "artifact": "oph_neutrino_lane_closure_contract",
+  "closure_chain": [
+    "weighted-cycle branch => (mhat_i, Delta_hat_ij, U_PMNS)",
+    "weighted-cycle bridge rigidity theorem => C_nu = sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5",
+    "B_nu = P_nu * C_nu",
+    "lambda_nu = (m_star_eV / q_mean^p_nu) * P_nu * C_nu",
+    "m_i = lambda_nu * mhat_i and Delta m^2_ij = lambda_nu^2 * Delta_hat_ij"
+  ],
+  "current_branch_status": {
+    "absolute_family": "m_i = lambda_nu * mhat_i, Delta m^2_ij = lambda_nu^2 * Delta_hat_ij",
+    "branch": "weighted_cycle_majorana_holonomy",
+    "dimensionless_ratio_dm21_over_dm32": 0.030721110097966534,
+    "no_hidden_discrete_branch": true,
+    "pmns_observables": {
+      "J": -0.02753115613565372,
+      "delta_deg": 305.58061231449796,
+      "delta_rad": 5.333387815148319,
+      "theta12_deg": 34.225904631810025,
+      "theta12_rad": 0.5973547252986625,
+      "theta13_deg": 8.686355527700156,
+      "theta13_rad": 0.15160550395717723,
+      "theta23_deg": 49.72282845058266,
+      "theta23_rad": 0.867827069866978
+    }
+  },
+  "emitted_absolute_attachment_theorem": {
+    "B_nu": 6.696004159297337,
+    "artifact": "oph_neutrino_absolute_attachment_theorem",
+    "delta_m_sq_eV2": {
+      "21": 7.488059465106851e-05,
+      "31": 0.0025123118727618473,
+      "32": 0.0024374312781107786
+    },
+    "lambda_nu": 1.7237014208357415,
+    "masses_eV": [
+      0.017454720257976796,
+      0.019481987935919015,
+      0.05307522145074924
+    ]
+  },
+  "emitted_bridge_rigidity_theorem": {
+    "P_nu": 6.699825740519345,
+    "artifact": "oph_neutrino_bridge_rigidity_theorem",
+    "emitted_formula": "sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5",
+    "emitted_value": 0.9994295999075177,
+    "statement": "On the live weighted-cycle branch, the physical reduced bridge invariant is the distinguished exact optimizer on the emitted family-assisted reduced-correction class."
+  },
+  "generated_utc": "2026-04-03T03:30:52Z",
+  "notes": [
+    "The compare-only continuation adapter is retired from the proof-facing neutrino lane.",
+    "The bridge corridor and residual correction audits remain diagnostic-only surfaces beneath the emitted theorem pair."
+  ],
+  "proof_status": "theorem_grade_emitted",
+  "public_promotion_allowed": true,
+  "scope": "weighted_cycle_bridge_rigidity_plus_absolute_attachment"
+}

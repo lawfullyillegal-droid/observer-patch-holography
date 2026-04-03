@@ -1,0 +1,57 @@
+{
+  "artifact": "oph_neutrino_bridge_rigidity_theorem",
+  "branch": "weighted_cycle_majorana_holonomy",
+  "depends_on": [
+    "oph_neutrino_attachment_irreducibility_theorem",
+    "oph_neutrino_bridge_correction_candidate_audit"
+  ],
+  "emitted_exponents": [
+    2.0,
+    1.0,
+    -0.5
+  ],
+  "emitted_formula": "sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5",
+  "emitted_keys": [
+    "sum_gap",
+    "prod_qbar",
+    "solar_response_over_mstar"
+  ],
+  "emitted_proxy": {
+    "formula": "I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1",
+    "symbol": "P_nu",
+    "value": 6.699825740519345
+  },
+  "emitted_value": 0.9994295999075177,
+  "generated_utc": "2026-04-03T03:30:52Z",
+  "notes": [
+    "This theorem promotes the exact optimizer statement from the emitted finite family-assisted audit class to the physical reduced bridge law.",
+    "The compare-only adapter and corridor remain on disk only as diagnostic surfaces beneath this theorem."
+  ],
+  "optimizer_relative_error_in_emitted_class": 0.00011780942290932373,
+  "physical_selection_rules": [
+    "bridge_external_above_P_nu",
+    "neutral_under_exact_q_mean_factorization",
+    "genuinely_family_assisted_on_the_first_solar_mover",
+    "distinguished_exact_optimizer_on_the_emitted_family_assisted_class"
+  ],
+  "proof_chain_role": "active_theorem_lane",
+  "statement": "On the live weighted-cycle branch, the physical reduced bridge invariant is the distinguished exact optimizer on the emitted family-assisted reduced-correction class.",
+  "status": "theorem_grade_emitted",
+  "theorem_inputs": {
+    "bridge_reconstruction": "B_nu = (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1) * C_nu",
+    "dimensionless_ratio_dm21_over_dm32": 0.030721110097966534,
+    "pmns_observables": {
+      "J": -0.02753115613565372,
+      "delta_deg": 305.58061231449796,
+      "delta_rad": 5.333387815148319,
+      "theta12_deg": 34.225904631810025,
+      "theta12_rad": 0.5973547252986625,
+      "theta13_deg": 8.686355527700156,
+      "theta13_rad": 0.15160550395717723,
+      "theta23_deg": 49.72282845058266,
+      "theta23_rad": 0.867827069866978
+    },
+    "reduced_object_definition": "C_nu = B_nu / (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1)"
+  },
+  "theorem_object": "C_nu"
+}

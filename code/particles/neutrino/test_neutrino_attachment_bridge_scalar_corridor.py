@@ -32,6 +32,8 @@ def test_neutrino_attachment_bridge_scalar_corridor() -> None:
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
     assert payload["artifact"] == "oph_neutrino_attachment_bridge_scalar_corridor"
     assert payload["status"] == "compare_only_cross_route_corridor"
+    assert payload["proof_chain_role"] == "diagnostic_only_retired_from_theorem_lane"
+    assert payload["must_not_feed_back"] is True
     assert payload["exact_target_scalar"]["symbol"] == "B_nu"
     assert payload["best_constructive_subbridge_object"]["artifact"] == "oph_defect_weighted_majorana_edge_weight_family"
     representatives = payload["primary_route_representatives"]

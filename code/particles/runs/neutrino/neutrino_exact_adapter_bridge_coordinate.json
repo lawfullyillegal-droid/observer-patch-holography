@@ -53,11 +53,11 @@
     "ratio_21_over_32": 0.03072190319934374,
     "tau_nu": 0.49717065800809745
   },
-  "generated_utc": "2026-04-02T13:46:29Z",
+  "generated_utc": "2026-04-03T03:30:51Z",
   "notes": [
     "The exact adapter moves only one selector coordinate and one positive rescaling on the already-emitted positive selector segment.",
     "The same emitted phase and defect stack is reused here; the only exact-adapter-dependent bridge ingredient is ratio_hat, taken from the exact two-parameter fit.",
-    "This sidecar strengthens the explicit exact branch description without changing the open theorem object C_nu."
+    "This sidecar strengthens the explicit exact branch description without changing the emitted theorem pair (C_nu, B_nu)."
   ],
   "promotable": false,
   "proof_status": "exact_compare_only_bridge_coordinate_on_exact_segment_adapter",

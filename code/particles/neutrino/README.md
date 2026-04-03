@@ -67,18 +67,25 @@ promotion questions.
 - [`build_pmns_from_shared_flavor_basis.py`](/Users/muellerberndt/Projects/oph-meta/particles/neutrino/build_pmns_from_shared_flavor_basis.py)
   Builds PMNS only if a charged-lepton left basis is supplied.
 - [`derive_neutrino_attachment_bridge_scalar_corridor.py`](/Users/muellerberndt/Projects/oph-meta/particles/neutrino/derive_neutrino_attachment_bridge_scalar_corridor.py)
-  Fuses the strongest current compare-only routes for the remaining bridge
-  scalar `B_nu`, including the best defect-weighted `mu_e`-assisted route,
-  exposes the smaller exact correction scalar `C_nu` above the best emitted
-  proxy, and records a narrower shortlist-consensus window without promoting an
-  attachment theorem.
+  Fuses the strongest current compare-only routes for the diagnostic bridge
+  scalar sidecar `B_nu`, including the best defect-weighted `mu_e`-assisted
+  route, exposes the smaller exact correction scalar `C_nu` above the best
+  emitted proxy, and records a narrower shortlist-consensus window beneath the
+  emitted theorem pair.
 - [`derive_neutrino_bridge_correction_candidate_audit.py`](/Users/muellerberndt/Projects/oph-meta/particles/neutrino/derive_neutrino_bridge_correction_candidate_audit.py)
   Audits the reduced correction scalar `C_nu` directly and induces a narrower
   target-containing compare-only `B_nu` window than the older direct bridge
-  corridor.
+  corridor, as a diagnostic surface beneath the theorem lane.
 - [`derive_neutrino_bridge_correction_invariant_scaffold.py`](/Users/muellerberndt/Projects/oph-meta/particles/neutrino/derive_neutrino_bridge_correction_invariant_scaffold.py)
-  Promotes `C_nu` to the formal smallest exact missing object, below the raw
-  bridge scalar `B_nu` and above the internal positive proxy `P_nu`.
+  Records the reduced correction geometry `C_nu` below the raw bridge scalar
+  `B_nu` and above the internal positive proxy `P_nu` on the scaffold beneath
+  the emitted theorem pair.
+- [`derive_neutrino_bridge_rigidity_theorem.py`](/Users/muellerberndt/Projects/oph-meta/particles/neutrino/derive_neutrino_bridge_rigidity_theorem.py)
+  Emits the weighted-cycle bridge-rigidity theorem
+  `C_nu = sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5`.
+- [`derive_neutrino_absolute_attachment_theorem.py`](/Users/muellerberndt/Projects/oph-meta/particles/neutrino/derive_neutrino_absolute_attachment_theorem.py)
+  Emits `B_nu`, `lambda_nu`, and the absolute weighted-cycle neutrino family
+  from the bridge-rigidity theorem and the internal proxy `P_nu`.
 
 ## Guards
 
@@ -114,6 +121,10 @@ python3 particles/neutrino/derive_majorana_phase_pullback_metric.py
 python3 particles/neutrino/build_forward_majorana_matrix.py
 python3 particles/neutrino/build_majorana_phase_envelope.py
 python3 particles/neutrino/build_forward_splittings.py
+python3 particles/neutrino/derive_neutrino_weighted_cycle_repair.py
+python3 particles/neutrino/derive_neutrino_bridge_rigidity_theorem.py
+python3 particles/neutrino/derive_neutrino_absolute_attachment_theorem.py
+python3 particles/neutrino/export_forward_neutrino_closure_bundle.py
 python3 particles/neutrino/export_blind_forward_artifact.py
 python3 particles/neutrino/test_no_pmns_import.py
 python3 particles/neutrino/test_no_oscillation_import.py
@@ -150,17 +161,16 @@ Current closure split:
   `majorana_overlap_defect_hessian.json`, and
   `majorana_deformation_bilinear_form.json` now separate the local quadratic
   theorem from the exact missing scalar-evaluator object
-- the remaining attachment scalar now has a sharper compare-only corridor
-  object that sits above the defect-weighted `mu_e` family but still below any
-  theorem-grade emission of `B_nu`; the same surface now also tracks the
-  near-unity correction scalar `C_nu`, a stricter route-consensus window, and a
-  direct correction audit that induces a narrower target-containing `B_nu`
-  interval
-- the irreducibility theorem now transfers exactly to the reduced correction
-  invariant `C_nu`, so the smallest exact missing object is no longer phrased
-  only as a raw bridge scalar
-- PMNS stays blocked until the charged-lepton left basis arrives with the same
-  family labels and orientation certificate
+- the weighted-cycle bridge-rigidity theorem emits
+  `C_nu = sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5`
+- the absolute-attachment theorem emits `B_nu`, `lambda_nu`, the absolute
+  neutrino masses, and the absolute splittings on that weighted-cycle branch
+- the exact positive-segment adapter, bridge corridor, and correction audit are
+  retained only as diagnostic sidecars beneath the theorem lane
+- the weighted-cycle theorem branch emits the PMNS/hierarchy shape and the
+  absolute neutrino family on its declared surface
+- the separate shared-basis PMNS constructor remains a distinct diagnostic
+  surface tied to the charged-lepton left-basis artifact
 
 The outputs stay under `particles/runs/neutrino/` until an actual OPH-derived
 family-response and Majorana phase theorem exists.

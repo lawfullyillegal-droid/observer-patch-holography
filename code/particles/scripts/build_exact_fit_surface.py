@@ -207,12 +207,12 @@ def build_entries() -> list[dict[str, Any]]:
             "supporting_bridge_coordinate_artifact": _repo_ref(NEUTRINO_BRIDGE_COORDINATE_JSON),
             "note": (
                 "Exact compare-only fit to both representative PDG central splittings by moving along the already-explicit "
-                "positive selector segment and then rescaling with one positive `lambda_nu`. It remains non-promotable "
-                "because the theorem lane still waits on the reduced bridge-correction invariant `C_nu`. On that same "
+                "positive selector segment and then rescaling with one positive `lambda_nu`. It remains diagnostic-only "
+                "after the emitted weighted-cycle bridge-rigidity and absolute-attachment theorems. On that same "
                 "exact compare-only branch, the explicit bridge coordinates are "
                 f"`B_nu = {neutrino_bridge_coordinate['bridge_coordinates']['paper_facing_amplitude']['value']:.8f}` and "
                 f"`C_nu = {neutrino_bridge_coordinate['bridge_coordinates']['reduced_correction_invariant']['value']:.8f}`, "
-                "but they remain sidecars and do not promote the theorem lane."
+                "but they remain sidecars and must not feed back into theorem state."
             ),
         },
     ]

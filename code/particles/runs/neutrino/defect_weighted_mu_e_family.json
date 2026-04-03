@@ -3,10 +3,10 @@
   "base_mu_nu": 0.000957040214227042,
   "canonical_alpha": 0.5,
   "centered_log_rule": "eta_e = 0.5 * ((log g_e + log d_e) - mean_f(log g_f + log d_f))",
-  "current_delta_m21_sq_gev2": 2.204051907791789e-39,
-  "current_delta_m31_sq_gev2": 9.54986497185585e-25,
-  "current_doublet_center_gev": 2.3986448447627204e-12,
-  "current_heavy_light_gap_gev": 1.91429206011187e-13,
+  "current_delta_m21_sq_gev2": 7.488059465106852e-23,
+  "current_delta_m31_sq_gev2": 2.5123118727618474e-21,
+  "current_doublet_center_gev": 1.846835409694791e-11,
+  "current_heavy_light_gap_gev": 3.4606867353801334e-11,
   "defect_log_centered": {
     "psi12": 0.4458183707200445,
     "psi23": 0.07130912844682102,
@@ -18,45 +18,13 @@
     "psi23": 0.000954027990417139,
     "psi31": 0.0005296711718162312
   },
-  "first_order_solar_response_coefficient_gev": 9.594579379050882e-12,
+  "first_order_solar_response_coefficient_gev": 7.387341638779164e-11,
   "first_order_solar_response_formula": "delta_m21_sq ~= 4 * m0 * sigma_q",
-  "generated_utc": "2026-04-02T13:46:26Z",
+  "generated_utc": "2026-04-03T03:30:46Z",
   "isotropic_limit_recovered": true,
   "kernel_choice": "1-cos",
-  "majorana_matrix_imag": [
-    [
-      0.0,
-      4.207803231450853e-14,
-      4.207803231450853e-14
-    ],
-    [
-      4.207803231450853e-14,
-      0.0,
-      4.207803231450853e-14
-    ],
-    [
-      4.207803231450853e-14,
-      4.207803231450853e-14,
-      0.0
-    ]
-  ],
-  "majorana_matrix_real": [
-    [
-      2.4617526608923523e-12,
-      6.347691976012981e-14,
-      6.347691976012981e-14
-    ],
-    [
-      6.347691976012981e-14,
-      2.4617526608923523e-12,
-      6.347691976012981e-14
-    ],
-    [
-      6.347691976012981e-14,
-      6.347691976012981e-14,
-      2.4617526608923523e-12
-    ]
-  ],
+  "majorana_matrix_imag": null,
+  "majorana_matrix_real": null,
   "mean_preserved": true,
   "neutrino_only_isotropy_obstruction": true,
   "normalizer_artifact": "oph_same_label_overlap_defect_weight_normalizer",

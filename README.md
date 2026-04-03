@@ -45,7 +45,7 @@ OPH is a reconstruction program for fundamental physics. Spacetime, gauge struct
 | Higgs/top exact sidecar | `(H, t) = (125.1995304097179, 172.3523553288311) GeV` | exact compare-only D11 inverse slice |
 | Charged witness | `(e, mu, tau) = (0.00051099895, 0.1056583755, 1.7769324651340912) GeV` | exact same-family witness |
 | Quark witness | `(u, d, s, c, b, t) = (0.00216, 0.00470, 0.0935, 1.273, 4.183, 172.3523553288311) GeV` | exact same-family witness |
-| Neutrino adapter | `(m1, m2, m3) = (0.01745663295, 0.01948419960, 0.05308139066) eV` with exact representative `Δm21²`, `Δm31²`, `Δm32²` | exact compare-only adapter |
+| Neutrino theorem branch | `(m1, m2, m3) = (0.017454720257976796, 0.019481987935919015, 0.05307522145074924) eV` with emitted weighted-cycle `Δm21²`, `Δm31²`, `Δm32²` | theorem-grade weighted-cycle bridge-rigid absolute family |
 
 Public Higgs/top rows are carried by the closed one-scalar D11 forward seed. The exact inverse pair above is a compare-only sidecar on the same Jacobian and does not replace the public forward branch.
 
@@ -70,7 +70,7 @@ Public Higgs/top rows are carried by the closed one-scalar D11 forward seed. The
 
 ### Brief gap summary
 
-The remaining particle gaps are narrow and explicit: charged leptons wait on `C_hat_e^{cand}` and the post-promotion lift whose descended scalar is `mu_phys(Y_e)`, with `charged_physical_identity_mode_equalizer` as the smaller forcing object beneath that scalar; quarks wait on the light-quark overlap-defect scalar `Delta_ud_overlap`, which on the emitted D12 mass ray is equivalently the downstream one-scalar law `quark_d12_t1_value_law` with `intrinsic_scale_law_D12` as the derived wrapper; a separate continuation-only D12 internal backread sidecar fixes the mass-side scalar package numerically, but it does not replace the public theorem frontier and does not remove the wrong-sheet CKM boundary; neutrinos wait on `C_nu`; and hadrons wait on the production backend bundle plus full production systematics.
+The remaining particle gaps are narrow and explicit: charged leptons wait on `C_hat_e^{cand}` and the post-promotion lift whose descended scalar is `mu_phys(Y_e)`, with `charged_physical_identity_mode_equalizer` as the smaller forcing object beneath that scalar; the quark lane carries a strict present-premise no-go for full physical closure, because the current corpus emits neither the D12 scalar value law, nor a sector-attached same-label left-handed lift to the physical CKM shell, nor a target-free physical-sheet readout `(g_u, g_d)`; the exact next quark objects are the minimal extension triple `H_mass : ell_ud = log(c_d / c_u)`, `H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys`, and `H_abs : A_q^phys : Sigma_ud^phys -> R`; the weighted-cycle neutrino lane carries the emitted theorem pair `C_nu = sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5 = 0.9994295999075177` and `B_nu = P_nu * C_nu = 6.696004159297337`, with the older exact adapter, bridge corridor, and correction audit retained only as diagnostic sidecars; and hadrons sit outside the current roadmap.
 
 ## Papers
 

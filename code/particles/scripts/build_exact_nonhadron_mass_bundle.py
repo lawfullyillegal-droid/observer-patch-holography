@@ -4,8 +4,8 @@
 This bundle consolidates the strongest exact non-hadron mass outputs currently
 on disk into one deduplicated surface: structural zeros, exact electroweak
 sidecar masses, exact Higgs readout, exact charged-lepton current-family
-witness, exact quark current-family witness, and exact neutrino compare-only
-adapter masses.
+witness, exact quark current-family witness, and the theorem-grade weighted-cycle
+absolute neutrino family.
 """
 
 from __future__ import annotations
@@ -26,8 +26,8 @@ CHARGED_THEOREM_JSON = ROOT / "particles" / "runs" / "leptons" / "lepton_current
 QUARK_THEOREM_JSON = ROOT / "particles" / "runs" / "flavor" / "quark_current_family_quadratic_readout_theorem.json"
 CHARGED_AFFINE_JSON = ROOT / "particles" / "runs" / "leptons" / "lepton_current_family_affine_anchor_theorem.json"
 QUARK_CLOSURE_JSON = ROOT / "particles" / "runs" / "flavor" / "quark_current_family_selected_sheet_closure.json"
-NEUTRINO_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_two_parameter_exact_adapter.json"
-NEUTRINO_BRIDGE_COORDINATE_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_exact_adapter_bridge_coordinate.json"
+NEUTRINO_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_absolute_attachment_theorem.json"
+NEUTRINO_BRIDGE_RIGIDITY_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_bridge_rigidity_theorem.json"
 DEFAULT_MD_OUT = ROOT / "particles" / "EXACT_NONHADRON_MASSES.md"
 DEFAULT_JSON_OUT = ROOT / "particles" / "exact_nonhadron_masses.json"
 DEFAULT_FORWARD_OUT = ROOT / "particles" / "runs" / "status" / "exact_nonhadron_masses_current.json"
@@ -53,7 +53,7 @@ def build_entries() -> list[dict[str, Any]]:
     charged_affine = _load_json(CHARGED_AFFINE_JSON)
     quark_closure = _load_json(QUARK_CLOSURE_JSON)
     neutrino = _load_json(NEUTRINO_JSON)
-    neutrino_bridge_coordinate = _load_json(NEUTRINO_BRIDGE_COORDINATE_JSON)
+    neutrino_bridge_rigidity = _load_json(NEUTRINO_BRIDGE_RIGIDITY_JSON)
 
     return [
         {
@@ -227,49 +227,49 @@ def build_entries() -> list[dict[str, Any]]:
         {
             "particle_id": "electron_neutrino",
             "label": "Electron Neutrino",
-            "mass_eV": neutrino["exact_outputs"]["masses_eV"][0],
-            "exact_kind": "exact_two_observable_compare_only_segment_adapter",
-            "scope": neutrino["scope"],
-            "promotable": False,
+            "mass_eV": neutrino["outputs"]["masses_eV"][0],
+            "exact_kind": "theorem_grade_weighted_cycle_absolute_attachment",
+            "scope": "weighted_cycle_bridge_rigid_absolute_family",
+            "promotable": True,
             "source_artifact": _repo_ref(NEUTRINO_JSON),
-            "supporting_bridge_coordinate_artifact": _repo_ref(NEUTRINO_BRIDGE_COORDINATE_JSON),
+            "supporting_bridge_rigidity_artifact": _repo_ref(NEUTRINO_BRIDGE_RIGIDITY_JSON),
             "note": (
-                "Exact compare-only neutrino mass from the two-parameter positive-segment adapter, with the same branch "
-                f"carrying explicit compare-only bridge coordinates `B_nu = "
-                f"{neutrino_bridge_coordinate['bridge_coordinates']['paper_facing_amplitude']['value']:.8f}` and "
-                f"`C_nu = {neutrino_bridge_coordinate['bridge_coordinates']['reduced_correction_invariant']['value']:.8f}`."
+                "Theorem-grade weighted-cycle absolute neutrino mass from the emitted bridge-rigidity and absolute-attachment pair, "
+                f"with `C_nu = {neutrino_bridge_rigidity['emitted_value']:.16f}`, "
+                f"`P_nu = {neutrino_bridge_rigidity['emitted_proxy']['value']:.15f}`, and "
+                f"`B_nu = {neutrino['outputs']['B_nu']:.15f}`."
             ),
         },
         {
             "particle_id": "muon_neutrino",
             "label": "Muon Neutrino",
-            "mass_eV": neutrino["exact_outputs"]["masses_eV"][1],
-            "exact_kind": "exact_two_observable_compare_only_segment_adapter",
-            "scope": neutrino["scope"],
-            "promotable": False,
+            "mass_eV": neutrino["outputs"]["masses_eV"][1],
+            "exact_kind": "theorem_grade_weighted_cycle_absolute_attachment",
+            "scope": "weighted_cycle_bridge_rigid_absolute_family",
+            "promotable": True,
             "source_artifact": _repo_ref(NEUTRINO_JSON),
-            "supporting_bridge_coordinate_artifact": _repo_ref(NEUTRINO_BRIDGE_COORDINATE_JSON),
+            "supporting_bridge_rigidity_artifact": _repo_ref(NEUTRINO_BRIDGE_RIGIDITY_JSON),
             "note": (
-                "Exact compare-only neutrino mass from the two-parameter positive-segment adapter, with the same branch "
-                f"carrying explicit compare-only bridge coordinates `B_nu = "
-                f"{neutrino_bridge_coordinate['bridge_coordinates']['paper_facing_amplitude']['value']:.8f}` and "
-                f"`C_nu = {neutrino_bridge_coordinate['bridge_coordinates']['reduced_correction_invariant']['value']:.8f}`."
+                "Theorem-grade weighted-cycle absolute neutrino mass from the emitted bridge-rigidity and absolute-attachment pair, "
+                f"with `C_nu = {neutrino_bridge_rigidity['emitted_value']:.16f}`, "
+                f"`P_nu = {neutrino_bridge_rigidity['emitted_proxy']['value']:.15f}`, and "
+                f"`B_nu = {neutrino['outputs']['B_nu']:.15f}`."
             ),
         },
         {
             "particle_id": "tau_neutrino",
             "label": "Tau Neutrino",
-            "mass_eV": neutrino["exact_outputs"]["masses_eV"][2],
-            "exact_kind": "exact_two_observable_compare_only_segment_adapter",
-            "scope": neutrino["scope"],
-            "promotable": False,
+            "mass_eV": neutrino["outputs"]["masses_eV"][2],
+            "exact_kind": "theorem_grade_weighted_cycle_absolute_attachment",
+            "scope": "weighted_cycle_bridge_rigid_absolute_family",
+            "promotable": True,
             "source_artifact": _repo_ref(NEUTRINO_JSON),
-            "supporting_bridge_coordinate_artifact": _repo_ref(NEUTRINO_BRIDGE_COORDINATE_JSON),
+            "supporting_bridge_rigidity_artifact": _repo_ref(NEUTRINO_BRIDGE_RIGIDITY_JSON),
             "note": (
-                "Exact compare-only neutrino mass from the two-parameter positive-segment adapter, with the same branch "
-                f"carrying explicit compare-only bridge coordinates `B_nu = "
-                f"{neutrino_bridge_coordinate['bridge_coordinates']['paper_facing_amplitude']['value']:.8f}` and "
-                f"`C_nu = {neutrino_bridge_coordinate['bridge_coordinates']['reduced_correction_invariant']['value']:.8f}`."
+                "Theorem-grade weighted-cycle absolute neutrino mass from the emitted bridge-rigidity and absolute-attachment pair, "
+                f"with `C_nu = {neutrino_bridge_rigidity['emitted_value']:.16f}`, "
+                f"`P_nu = {neutrino_bridge_rigidity['emitted_proxy']['value']:.15f}`, and "
+                f"`B_nu = {neutrino['outputs']['B_nu']:.15f}`."
             ),
         },
     ]

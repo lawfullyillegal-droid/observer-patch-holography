@@ -26,7 +26,7 @@
   },
   "exact_missing_object": "oph_neutrino_attachment_bridge_invariant",
   "exact_residual_moduli_space": "R_{>0}",
-  "generated_utc": "2026-04-02T13:46:28Z",
+  "generated_utc": "2026-04-03T03:30:49Z",
   "immediate_theorem_gate": null,
   "no_hidden_discrete_branch": true,
   "notes": [
@@ -197,25 +197,25 @@
     "primary_cross_route_corridor": {
       "contains_compare_only_target": true,
       "interval": [
-        6.693146681168985,
+        6.696544562711253,
         6.712586060296284
       ],
-      "midpoint": 6.702866370732634,
-      "relative_half_width": 0.0014500795668685531
+      "midpoint": 6.704565311503769,
+      "relative_half_width": 0.0011963115310031501
     },
     "shortlist_route_consensus_window": {
-      "compare_only_target_offset_over_midpoint": -0.001776734590193806,
+      "compare_only_target_offset_over_midpoint": -0.0017382063382801994,
       "contains_compare_only_target": false,
       "interval": [
-        6.704839352803188,
+        6.704321502726554,
         6.712586060296284
       ],
-      "midpoint": 6.708712706549736,
+      "midpoint": 6.70845378151142,
       "narrowing_vs_primary_cross_route_corridor": {
         "is_narrower": true,
-        "relative_half_width_ratio": 0.39815863159438786
+        "relative_half_width_ratio": 0.5149000010846018
       },
-      "relative_half_width": 0.0005773616960473658,
+      "relative_half_width": 0.0006159808086110436,
       "selected_candidates": [
         {
           "complexity": 2,
@@ -256,21 +256,21 @@
         {
           "complexity": 3,
           "exponents": [
-            -2.0,
-            2.0,
-            -2.0
+            -0.5,
+            -0.5,
+            -0.5
           ],
-          "formula": "I_nu^-2 * doublet_center_over_mstar^2 * solar_response_over_mstar^-2",
+          "formula": "I_nu^-0.5 * ratio_hat^-0.5 * doublet_center_over_mstar^-0.5",
           "keys": [
             "I_nu",
-            "doublet_center_over_mstar",
-            "solar_response_over_mstar"
+            "ratio_hat",
+            "doublet_center_over_mstar"
           ],
-          "relative_error": 0.0015527520591701914,
+          "relative_error": 0.0011241795857504062,
           "route_id": "family_assisted_top_5",
           "route_kind": "direct_search_using_defect_weighted_mu_e_family_scales_in_the_residual_B_nu_pool",
           "source_artifact": "oph_neutrino_residual_amplitude_candidate_audit",
-          "value": 6.707191563911385
+          "value": 6.704321502726554
         }
       ],
       "selection_rule": "Within the already-admitted top candidates of each route family, choose one candidate per route that minimizes cross-route relative half-width; total algebraic complexity and route-local compare-only error break ties.",
@@ -288,7 +288,7 @@
       "midpoint": 6.703202589634797,
       "narrowing_vs_primary_cross_route_corridor": {
         "is_narrower": true,
-        "relative_half_width_ratio": 0.7405657590000583
+        "relative_half_width_ratio": 0.8976585506519356
       },
       "proxy_formula": "I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1",
       "proxy_value": 6.699825740519345,

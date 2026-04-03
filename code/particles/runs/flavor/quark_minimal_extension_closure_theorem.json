@@ -1,0 +1,26 @@
+{
+  "artifact": "oph_quark_minimal_extension_closure_theorem",
+  "status": "theorem_grade_extension_contract",
+  "premise_set": "P := p_a + Axioms 1-5 + Assumption 6 + emitted OPH nodes D1-D10 + current public D12 quark objects",
+  "added_data": {
+    "H_mass": "ell_ud := log(c_d / c_u)",
+    "H_phys": "s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys",
+    "H_abs": "A_q^phys : Sigma_ud^phys -> R"
+  },
+  "derived_closure_chain": [
+    "t1 = (5 / 6) * ell_ud",
+    "Delta_ud_overlap = t1 / 5",
+    "eta_Q_centered = -((1 - x2^2) / 27) * t1",
+    "kappa_Q = -t1 / 54",
+    "Sigma_ud^phys = s_ud^phys([F0^dagger F1])",
+    "log g_u = A_q^phys - (A_ud * sigma_seed_ud - B_ud * eta_ud)",
+    "log g_d = A_q^phys - (A_ud * sigma_seed_ud + B_ud * eta_ud)",
+    "(m_u, m_d, m_s, m_c, m_b, m_t) follow from the ordered three-point quadratic readout"
+  ],
+  "theorem_statement": "P + H_mass + H_phys + H_abs implies Theta_ud^mass, Theta_ud^phys, Theta_ud^abs, and therefore the physical quark sextet.",
+  "next_objects_are_exactly": [
+    "H_mass",
+    "H_phys",
+    "H_abs"
+  ]
+}

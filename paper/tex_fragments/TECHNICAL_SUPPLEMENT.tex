@@ -1333,7 +1333,7 @@ Generic phases violate this \(\Rightarrow\) CP-odd overlap data are generically 
 
 \section{Generation Structure and Flavor Continuations}\label{12-generation-structure-and-yukawa-hierarchy}
 
-This section keeps one imported structural corollary and the D12 flavor claim-tier boundary on one surface. The structural corollary is the realized D9 counting chain \(N_g=3\). The D12 advance is narrower: the corpus puts the quark mass-side continuation, the charged same-carrier readback theorem, and the intrinsic neutrino eta-chain on one common excitation dictionary. What remains open are named continuation closures above that dictionary. They are not independent Yukawa parameters, and they do not belong to the recovered-core theorem surface.
+This section keeps one imported structural corollary and the D12 flavor claim-tier boundary on one surface. The structural corollary is the realized D9 counting chain \(N_g=3\). The D12 advance is narrower: the corpus puts the quark mass-side continuation, the charged same-carrier readback theorem, and the intrinsic neutrino eta-chain on one common excitation dictionary. The current boundary consists of named continuation closures above that dictionary. They are not independent Yukawa parameters, and they do not belong to the recovered-core theorem surface.
 
 \subsection{Imported structural corollary: three generations}\label{121-why-three-generations}
 
@@ -1401,15 +1401,176 @@ D12_{ud}^{\mathrm{mass}}
 \equiv
 \mathcal R_{D12}^{ud}.
 \]
-That ray is the exact same-family mass object emitted by the corpus. The mass-facing frontier is layered. On the broader D12 continuation branch, the smaller honest theorem-side primitive is the light-quark isospin-breaking / overlap-defect scalar \(\Delta_{ud}^{\mathrm{overlap}}\): once that scalar is emitted, odd-budget neutrality fixes the light-sector pure-\(B\) payload pair and the \(\tau\)-pair algebraically on the ordered three-point family. On the emitted ray this same scalar is equivalently the downstream one-scalar law \ophid{quark_d12_t1_value_law}, which identifies the ray modulus as \(t_1\) on \(D12_{ud}^{\mathrm{mass}}\); until that law is emitted, any numerical scale choice on the ray remains compare-only. The larger object \ophid{intrinsic_scale_law_D12} is retained only as the derived wrapper around that scalar law.
-This frontier is therefore a one-scalar value-law contract on the emitted ray: once sector-attached data emit the modulus \(t_1\), the mass-side pair \((\Delta_{ud}^{\mathrm{overlap}},\eta_Q^{\mathrm{centered}})\) follows functorially. Conditional on the pure-\(B\) readback payload law, the builder-facing pure-\(B\) amplitudes reduce that same scalar constructively beneath the public ray law.
-
-The mixing-side transport
+That ray is the exact same-family mass object emitted by the corpus. The mass-side theorem boundary is the scalar law
 \[
-V_{\mathrm{CKM}}^{\mathrm{fwd}}=U_u^\dagger U_d
+\Theta_{ud}^{\mathrm{mass}}
+:=
+\text{\ophid{quark_d12_t1_value_law}}.
 \]
-is also closed on the same selected D12 sheet, but that does not produce a physical branch change. On the emitted same-label left-handed solver surface the selector problem is closed in the negative sense: the local orbit collapses to the singleton \(\sigma_{\mathrm{ref}}\) (\ophid{sigma_ref}), and \(\sigma_{\mathrm{ref}}\) is the wrong D12 CKM sheet. The corpus emits no sector-attached left-handed same-label branch-changing transport from that selected sheet to the physical CKM shell. CKM and CP closure are therefore downstream of the wrong-sheet no-go rather than a second open selector task on the emitted surface. Separately, the builder-facing pure-\(B\) payload pair beneath the reported quark rows remains open.
-A target-anchored same-family exact witness reproduces the six quark reference masses exactly on the same ordered three-point family, and within that same-family scope the selected-sheet exact readout closes through \ophid{oph_quark_current_family_selected_sheet_exact_closure}, built on \ophid{oph_quark_current_family_quadratic_readout_theorem}; it does not remove the wrong-branch CKM boundary or emit the one-scalar law.
+On the minimal light branch
+\[
+y_u=c_u\,\varepsilon^6,
+\qquad
+y_d=c_d\,\varepsilon^6,
+\qquad
+\varepsilon=\frac16,
+\]
+one has
+\[
+\Delta_{ud}^{\mathrm{overlap}}
+=
+\frac16\log\frac{c_d}{c_u},
+\qquad
+\Delta_{ud}^{\mathrm{overlap}}=\frac{t_1}{5},
+\qquad
+t_1=5\,\Delta_{ud}^{\mathrm{overlap}}=\frac56\log\frac{c_d}{c_u}.
+\]
+So the D12 mass-side package is functorial:
+\[
+\eta_Q^{\mathrm{centered}}=-\frac{1-x_2^2}{27}\,t_1,
+\qquad
+\kappa_Q=-\frac{t_1}{54},
+\qquad
+x_2=-0.5175863354681689,
+\]
+\[
+\beta_{u,\mathrm{diag},B}^{\mathrm{source}}=\frac{t_1}{10},
+\qquad
+\beta_{d,\mathrm{diag},B}^{\mathrm{source}}=-\frac{t_1}{10},
+\]
+\[
+\tau_u=\frac{\sigma_d}{10(\sigma_u+\sigma_d)}\,t_1,
+\qquad
+\tau_d=\frac{\sigma_u}{10(\sigma_u+\sigma_d)}\,t_1
+\]
+with \((\sigma_u,\sigma_d)=(5.5905,3.3049)\). The builder-facing pure-\(B\) payload pair is the smaller constructive object beneath this theorem, and \ophid{intrinsic_scale_law_D12} is the derived wrapper above \(\Theta_{ud}^{\mathrm{mass}}\).
+
+The physical-sheet theorem boundary is the lift
+\[
+\Theta_{ud}^{\mathrm{phys}}
+\]
+to the same-label left-handed carrier
+\[
+\Sigma_{ud}^{\mathrm{phys}}
+:=
+\left\{
+(\sigma_{\mathrm{id}},\tau,U_{u,L},U_{d,L},V_{\mathrm{CKM}},I_{\mathrm{CKM}})
+:
+V_{\mathrm{CKM}}=U_{u,L}^\dagger U_{d,L}
+\right\}/\!\sim,
+\]
+with diagonal rephasing equivalence
+\[
+(U_{u,L},U_{d,L},V)\sim
+(U_{u,L}D_u,\ U_{d,L}D_d,\ D_u^\dagger V D_d).
+\]
+The emitted same-label left-handed solver surface closes to the singleton \(\sigma_{\mathrm{ref}}\) (\ophid{sigma_ref}), and \(\sigma_{\mathrm{ref}}\) is the wrong D12 CKM sheet. Same-sheet rephasing preserves CKM moduli, so the missing physical object is a sector-attached section of the common-refinement frame-overlap quotient into \(\Sigma_{ud}^{\mathrm{phys}}\), not a second local selector search.
+
+The absolute-readout theorem boundary is
+\[
+\Theta_{ud}^{\mathrm{abs}},
+\]
+the target-free promotion of the affine sector-mean split to the physical sheet. On the current-family selected sheet, its formula package is
+\[
+\sigma_{\mathrm{seed}}^{ud}=\frac{\sigma_u+\sigma_d}{2},
+\qquad
+\eta_{ud}=\frac{\sigma_u-\sigma_d}{2},
+\]
+\[
+A_{ud}=\frac{1}{2(1+\rho_{\mathrm{ord}}-x_2^2)},
+\qquad
+B_{ud}=\frac{1}{2\!\left(1-x_2^2-\frac{x_2^2}{1+\rho_{\mathrm{ord}}}\right)},
+\qquad
+\rho_{\mathrm{ord}}=1.294284936377706,
+\]
+\[
+g_u
+=
+g_{\mathrm{ch}}
+\exp\!\bigl(-(A_{ud}\sigma_{\mathrm{seed}}^{ud}-B_{ud}\eta_{ud})\bigr),
+\qquad
+g_d
+=
+g_{\mathrm{ch}}
+\exp\!\bigl(-(A_{ud}\sigma_{\mathrm{seed}}^{ud}+B_{ud}\eta_{ud})\bigr).
+\]
+Once \((g_u,g_d)\) are emitted on the physical sheet, the ordered three-point quadratic readout emits the sextet algebraically.
+
+The exact closure package is therefore three-step:
+\[
+\Theta_{ud}^{\mathrm{mass}}
+\Longrightarrow
+\bigl(\Delta_{ud}^{\mathrm{overlap}},\eta_Q^{\mathrm{centered}},\kappa_Q,\tau_u,\tau_d\bigr),
+\]
+\[
+\Theta_{ud}^{\mathrm{phys}}
+\Longrightarrow
+\Sigma_{ud}^{\mathrm{phys}},
+\]
+\[
+\Theta_{ud}^{\mathrm{abs}}
+\Longrightarrow
+(g_u,g_d)
+\Longrightarrow
+(m_u,m_d,m_s,m_c,m_b,m_t).
+\]
+
+\textbf{Current-premise no-go theorem.} Let
+\[
+P:=p_a+\text{(Axioms 1--5)}+\text{Assumption 6}
++\text{the emitted OPH nodes D1--D10}
++\text{the current public D12 quark objects}.
+\]
+Then the present corpus does not emit \(\Theta_{ud}^{\mathrm{mass}}\), \(\Theta_{ud}^{\mathrm{phys}}\), or \(\Theta_{ud}^{\mathrm{abs}}\). The D12 mass side emits only the one-parameter ray \(D12_{ud}^{\mathrm{mass}}=\mathcal R_{D12}^{ud}\), not a theorem-grade nonzero \(t_1\). The emitted same-label left-handed selector is fixed negatively to \(\sigma_{\mathrm{ref}}\), and same-sheet rephasing preserves CKM moduli, so the corpus emits no sector-attached same-label left-handed lift from \(\sigma_{\mathrm{ref}}\) to the physical CKM shell. The affine sector-mean split is formula-complete on the selected sheet, but the exact sextet witness remains target-anchored and \texttt{current\_family\_only}, so the corpus emits no target-free physical-sheet pair \((g_u,g_d)\). Therefore the exact same-family sextet and the D12 internal backread scalar package are sidecar representatives on their declared surfaces, not \(P\)-emitted theorem outputs.
+
+\textbf{Minimal-extension closure theorem.} The exact minimal extension triple is
+\[
+H_{\mathrm{mass}}
+\;:\;
+\ell_{ud}:=\log\frac{c_d}{c_u},
+\qquad
+H_{\mathrm{phys}}
+\;:\;
+s_{ud}^{\mathrm{phys}}:\mathfrak M_{ud}^{\mathrm{CR,phys}}\to\Sigma_{ud}^{\mathrm{phys}},
+\qquad
+H_{\mathrm{abs}}
+\;:\;
+A_q^{\mathrm{phys}}:\Sigma_{ud}^{\mathrm{phys}}\to\mathbb R.
+\]
+With these three objects adjoined, the quark lane closes formally. First,
+\[
+t_1=\frac56\,\ell_{ud}
+\]
+emits \(\Theta_{ud}^{\mathrm{mass}}\) and therefore fixes \(\Delta_{ud}^{\mathrm{overlap}}\), \(\eta_Q^{\mathrm{centered}}\), \(\kappa_Q\), and the odd package. Second,
+\[
+\Sigma_{ud}^{\mathrm{phys}}
+:=
+s_{ud}^{\mathrm{phys}}([F_0^\dagger F_1])
+\]
+emits \(\Theta_{ud}^{\mathrm{phys}}\). Third,
+\[
+\log g_u
+=
+A_q^{\mathrm{phys}}-(A_{ud}\sigma_{\mathrm{seed}}^{ud}-B_{ud}\eta_{ud}),
+\qquad
+\log g_d
+=
+A_q^{\mathrm{phys}}-(A_{ud}\sigma_{\mathrm{seed}}^{ud}+B_{ud}\eta_{ud})
+\]
+emit \((g_u,g_d)\), hence \(\Theta_{ud}^{\mathrm{abs}}\), and the ordered three-point quadratic readout then emits the physical sextet. So
+\[
+P+H_{\mathrm{mass}}+H_{\mathrm{phys}}+H_{\mathrm{abs}}
+\Longrightarrow
+\Theta_{ud}^{\mathrm{mass}},\Theta_{ud}^{\mathrm{phys}},\Theta_{ud}^{\mathrm{abs}}
+\Longrightarrow
+(m_u,m_d,m_s,m_c,m_b,m_t).
+\]
+
+A target-anchored same-family exact witness reproduces the six running quark reference masses exactly on the same ordered three-point family,
+\[
+(u,d,s,c,b,t)=(0.00216,0.00470,0.0935,1.273,4.183,172.3523553288311)\,\mathrm{GeV},
+\]
+and within that same-family scope the selected-sheet exact readout closes through \ophid{oph_quark_current_family_selected_sheet_exact_closure}, built on \ophid{oph_quark_current_family_quadratic_readout_theorem}. The exact closure package above that sidecar has three missing theorem objects: \ophid{quark_d12_t1_value_law}; a sector-attached same-label left-handed lift to the physical CKM shell; and a target-free absolute sector readout theorem emitting \((g_u,g_d)\) on that physical sheet. The same-family exact witness does not remove the wrong-branch CKM boundary, does not emit the one-scalar law, and does not emit target-free physical-sector scales.
 A separate D12 internal backread sidecar is also on disk. On that continuation-only surface, feeding the emitted reference-free forward light-quark pair through the coefficient-ratio identification \(c_u/c_d=y_u/y_d=m_u/m_d\) and the D12 normalization \(\Delta_{ud}^{\mathrm{overlap}}=\tfrac16\log(c_d/c_u)\) fixes \(\Delta_{ud}^{\mathrm{overlap}}=0.13431740757663183\), \(t_1=0.6715870378831591\), \(\eta_Q^{\mathrm{centered}}=-0.018210067243314802\), and \(\kappa_Q=-0.012436796997836279\). That sidecar closes the D12 mass-side scalar package numerically on its own continuation surface, but it does not replace the public theorem frontier and does not remove the wrong-sheet CKM boundary.
 
 \subsection{Charged and neutrino continuation boundary}
@@ -1442,9 +1603,19 @@ above the closed normalizer, while the best emitted proxy is
 \[
 P_\nu:=I_\nu^{1/2}\,\widehat{\mathrm{ratio}}^{\,1/2}\,\mathrm{sum\_defect}^{-1}.
 \]
-Because that proxy is internal to the emitted stack, the smallest exact remaining object is the reduced bridge-correction invariant
+On the weighted-cycle bridge-rigid branch, the physical reduced bridge invariant is
 \[
-C_\nu:=\frac{B_\nu}{P_\nu}.
+C_\nu=G^2\,Q\,S^{-1/2}=0.9994295999075177,
+\]
+with
+\[
+G:=\mathrm{sum\_gap},\qquad
+Q:=\mathrm{prod\_qbar},\qquad
+S:=\mathrm{solar\_response\_over\_mstar}.
+\]
+The emitted proxy is
+\[
+P_\nu=6.699825740519345.
 \]
 Equivalently,
 \[
@@ -1457,10 +1628,23 @@ If \(\hat m_i\) and \(\widehat{\Delta m_{ij}^2}\) denote the branch-fixed scale-
 m_i=\lambda_\nu\,\hat m_i,
 \qquad
 \Delta m_{ij}^2=\lambda_\nu^2\,\widehat{\Delta m_{ij}^2},
-\qquad
-\lambda_\nu>0,
 \]
-so every PMNS observable and every dimensionless hierarchy ratio is fixed below the remaining scalar \(C_\nu\).
+so every PMNS observable and every dimensionless hierarchy ratio propagate to one emitted absolute family. Numerically,
+\[
+B_\nu=6.696004159297337,
+\qquad
+\lambda_\nu=1.7237014208357415.
+\]
+The emitted absolute family is
+\[
+(m_1,m_2,m_3)=(0.017454720257976796,0.019481987935919015,0.05307522145074924)\,\mathrm{eV},
+\]
+with
+\[
+\Delta m_{21}^2=7.488059465106851\times10^{-5}\,\mathrm{eV}^2,\qquad
+\Delta m_{31}^2=2.5123118727618473\times10^{-3}\,\mathrm{eV}^2,\qquad
+\Delta m_{32}^2=2.4374312781107786\times10^{-3}\,\mathrm{eV}^2.
+\]
 The best closed constructive local object beneath that reduced scalar is the defect-weighted same-label edge family
 \[
 q_e=\sqrt{g_e d_e},
@@ -1469,7 +1653,7 @@ q_e=\sqrt{g_e d_e},
 \qquad
 \mu_e=\mu_\nu\,\frac{e^{\eta_e}}{\frac13\sum_f e^{\eta_f}},
 \]
-but that family does not emit \(C_\nu\) or the induced \(B_\nu\) by itself. The compare-only value is \(C_\nu^\ast=0.9995473560\). A direct correction audit gives the target-containing reduced window \(C_\nu\in[0.9994296,1.0015784]\), which induces the sharpened paper-facing corridor \(B_\nu\in[6.69600,6.71040]\) with midpoint \(6.70320\); the earlier three-route bridge corridor \([6.69315,6.71259]\) remains as a wider comparison envelope, and the shortlist-consensus window \([6.70484,6.71259]\) remains diagnostic-only because it misses the compare-only target. A compare-only two-parameter continuation adapter on the explicit positive selector segment is on disk and hits the representative central splittings exactly, with \((m_1,m_2,m_3)=(0.01745663295,0.01948419960,0.05308139066)\,\mathrm{eV}\), but it remains non-promotable while \(C_\nu\) stays open. So the charged and neutrino lanes remain open for different reasons: charged leptons miss an emitter upgrade and one descended physical affine scalar, while neutrinos miss one reduced positive bridge scalar above the emitted proxy after the shape closure.
+but that family does not emit \(C_\nu\) or the induced \(B_\nu\) by itself. The exact two-parameter positive-segment adapter, the bridge corridor, and the reduced-correction candidate audit remain on disk only as diagnostic surfaces beneath the theorem pair \((C_\nu,B_\nu)\). The direct correction audit continues to record the target-containing reduced window \(C_\nu\in[0.9994296,1.0015784]\), which induces the sharpened paper-facing corridor \(B_\nu\in[6.69600,6.71040]\) with midpoint \(6.70320\); the earlier three-route bridge corridor \([6.69315,6.71259]\) remains as a wider comparison envelope, and the shortlist-consensus window \([6.70484,6.71259]\) remains diagnostic-only because it misses the compare-only target. So the charged and neutrino lanes split cleanly for different reasons: charged leptons miss an emitter upgrade and one descended physical affine scalar, while the weighted-cycle neutrino branch carries an emitted theorem-grade absolute family and retains only diagnostic sidecars beneath that theorem lane.
 
 \subsection{Compare-only texture benchmarks}\label{123-the-yukawa-spectrum}
 

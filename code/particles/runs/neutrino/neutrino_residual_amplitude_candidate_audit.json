@@ -19,34 +19,34 @@
   "best_extended_compare_only_candidate": {
     "complexity": 3,
     "exponents": [
-      0.5,
-      0.5,
-      -1.0
+      -1.0,
+      -0.5,
+      -0.5
     ],
-    "formula": "I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1",
+    "formula": "gamma^-1 * sum_defect^-0.5 * solar_response_over_mstar^-0.5",
     "keys": [
-      "I_nu",
-      "ratio_hat",
-      "sum_defect"
+      "gamma",
+      "sum_defect",
+      "solar_response_over_mstar"
     ],
-    "relative_error": 0.00045284897467005544,
-    "value": 6.699825740519345
+    "relative_error": 3.711357260117588e-05,
+    "value": 6.696544562711253
   },
   "best_family_assisted_compare_only_candidate": {
     "complexity": 3,
     "exponents": [
-      -0.5,
       -1.0,
+      -0.5,
       -0.5
     ],
-    "formula": "gamma^-0.5 * doublet_center_over_mstar^-1 * heavy_light_gap_over_mstar^-0.5",
+    "formula": "gamma^-1 * sum_defect^-0.5 * solar_response_over_mstar^-0.5",
     "keys": [
       "gamma",
-      "doublet_center_over_mstar",
-      "heavy_light_gap_over_mstar"
+      "sum_defect",
+      "solar_response_over_mstar"
     ],
-    "relative_error": 0.0005445029288468986,
-    "value": 6.693146681168985
+    "relative_error": 3.711357260117588e-05,
+    "value": 6.696544562711253
   },
   "excluded_trivial_scalars_from_search": {
     "sum_qbar": {
@@ -58,18 +58,30 @@
     "I_nu": 0.0965316330845031,
     "base_mu_over_mstar": 388763757.3955654,
     "chi": 1.1045845502912137,
-    "doublet_center_over_mstar": 0.9743646804440719,
+    "doublet_center_over_mstar": 7.502116029095051,
     "gamma": 0.30236566025890826,
-    "heavy_light_gap_over_mstar": 0.07776134826713114,
+    "heavy_light_gap_over_mstar": 14.057816572545843,
     "prod_qbar": 0.7998071945087601,
     "ratio_hat": 0.030721110097966534,
-    "solar_response_over_mstar": 3.8974587217762875,
+    "solar_response_over_mstar": 30.008464116380203,
     "sum_defect": 0.008128113736742382,
     "sum_gap": 1.5706478772884154,
     "sum_mu": 0.0028711206426811258,
     "sum_qbar": 3.0
   },
   "extended_top_single_factor_candidates": [
+    {
+      "complexity": 1,
+      "exponents": [
+        1.0
+      ],
+      "formula": "doublet_center_over_mstar",
+      "keys": [
+        "doublet_center_over_mstar"
+      ],
+      "relative_error": 0.12025501040343228,
+      "value": 7.502116029095051
+    },
     {
       "complexity": 1,
       "exponents": [
@@ -85,26 +97,26 @@
     {
       "complexity": 1,
       "exponents": [
-        1.0
+        0.5
       ],
-      "formula": "solar_response_over_mstar",
+      "formula": "solar_response_over_mstar^0.5",
       "keys": [
         "solar_response_over_mstar"
       ],
-      "relative_error": 0.4180111792489681,
-      "value": 3.8974587217762875
+      "relative_error": 0.18199680062499465,
+      "value": 5.477998185138454
     },
     {
       "complexity": 1,
       "exponents": [
-        -0.5
+        0.5
       ],
-      "formula": "heavy_light_gap_over_mstar^-0.5",
+      "formula": "heavy_light_gap_over_mstar^0.5",
       "keys": [
         "heavy_light_gap_over_mstar"
       ],
-      "relative_error": 0.4645101698731659,
-      "value": 3.586064601991982
+      "relative_error": 0.44012373797044957,
+      "value": 3.749375491004581
     },
     {
       "complexity": 1,
@@ -145,6 +157,18 @@
     {
       "complexity": 1,
       "exponents": [
+        0.5
+      ],
+      "formula": "doublet_center_over_mstar^0.5",
+      "keys": [
+        "doublet_center_over_mstar"
+      ],
+      "relative_error": 0.5909984003124973,
+      "value": 2.738999092569227
+    },
+    {
+      "complexity": 1,
+      "exponents": [
         2.0
       ],
       "formula": "sum_gap^2",
@@ -165,33 +189,41 @@
       ],
       "relative_error": 0.6333083594976053,
       "value": 10.937928159615383
-    },
-    {
-      "complexity": 1,
-      "exponents": [
-        -0.5
-      ],
-      "formula": "sum_defect^-0.5",
-      "keys": [
-        "sum_defect"
-      ],
-      "relative_error": 0.6562970647636309,
-      "value": 11.091878762525237
-    },
-    {
-      "complexity": 1,
-      "exponents": [
-        0.5
-      ],
-      "formula": "solar_response_over_mstar^0.5",
-      "keys": [
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.7052024428713463,
-      "value": 1.974198247840446
     }
   ],
   "extended_top_three_factor_candidates": [
+    {
+      "complexity": 3,
+      "exponents": [
+        -1.0,
+        -0.5,
+        -0.5
+      ],
+      "formula": "gamma^-1 * sum_defect^-0.5 * solar_response_over_mstar^-0.5",
+      "keys": [
+        "gamma",
+        "sum_defect",
+        "solar_response_over_mstar"
+      ],
+      "relative_error": 3.711357260117588e-05,
+      "value": 6.696544562711253
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        2.0,
+        -0.5,
+        2.0
+      ],
+      "formula": "I_nu^2 * sum_gap^-0.5 * solar_response_over_mstar^2",
+      "keys": [
+        "I_nu",
+        "sum_gap",
+        "solar_response_over_mstar"
+      ],
+      "relative_error": 0.00018293401739372217,
+      "value": 6.695568033362052
+    },
     {
       "complexity": 3,
       "exponents": [
@@ -212,65 +244,65 @@
       "complexity": 3,
       "exponents": [
         -0.5,
-        -1.0,
-        -0.5
-      ],
-      "formula": "gamma^-0.5 * doublet_center_over_mstar^-1 * heavy_light_gap_over_mstar^-0.5",
-      "keys": [
-        "gamma",
-        "doublet_center_over_mstar",
-        "heavy_light_gap_over_mstar"
-      ],
-      "relative_error": 0.0005445029288468986,
-      "value": 6.693146681168985
-    },
-    {
-      "complexity": 3,
-      "exponents": [
         -0.5,
-        -2.0,
-        0.5
+        1.0
       ],
-      "formula": "I_nu^-0.5 * doublet_center_over_mstar^-2 * solar_response_over_mstar^0.5",
+      "formula": "sum_gap^-0.5 * prod_qbar^-0.5 * doublet_center_over_mstar",
       "keys": [
-        "I_nu",
-        "doublet_center_over_mstar",
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.0005847136926809044,
-      "value": 6.692877398003009
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        -1.0,
-        -1.0,
-        0.5
-      ],
-      "formula": "gamma^-1 * doublet_center_over_mstar^-1 * solar_response_over_mstar^0.5",
-      "keys": [
-        "gamma",
-        "doublet_center_over_mstar",
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.000621616529366835,
-      "value": 6.7009559419159235
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        -0.5,
-        -1.0,
-        2.0
-      ],
-      "formula": "sum_defect^-0.5 * sum_gap^-1 * doublet_center_over_mstar^2",
-      "keys": [
-        "sum_defect",
         "sum_gap",
+        "prod_qbar",
         "doublet_center_over_mstar"
       ],
-      "relative_error": 0.001157641076643224,
-      "value": 6.7045455874080355
+      "relative_error": 0.0004953338850747345,
+      "value": 6.693475956082279
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        -2.0,
+        -1.0,
+        -2.0
+      ],
+      "formula": "ratio_hat^-2 * prod_qbar^-1 * heavy_light_gap_over_mstar^-2",
+      "keys": [
+        "ratio_hat",
+        "prod_qbar",
+        "heavy_light_gap_over_mstar"
+      ],
+      "relative_error": 0.001009635033983336,
+      "value": 6.7035544215621075
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "formula": "I_nu^-0.5 * ratio_hat^-0.5 * doublet_center_over_mstar^-0.5",
+      "keys": [
+        "I_nu",
+        "ratio_hat",
+        "doublet_center_over_mstar"
+      ],
+      "relative_error": 0.0011241795857504062,
+      "value": 6.704321502726554
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        0.5,
+        -2.0,
+        1.0
+      ],
+      "formula": "gamma^0.5 * sum_gap^-2 * solar_response_over_mstar",
+      "keys": [
+        "gamma",
+        "sum_gap",
+        "solar_response_over_mstar"
+      ],
+      "relative_error": 0.0011840791540720852,
+      "value": 6.688863571514013
     },
     {
       "complexity": 3,
@@ -291,6 +323,22 @@
     {
       "complexity": 3,
       "exponents": [
+        1.0,
+        1.0,
+        2.0
+      ],
+      "formula": "ratio_hat * chi * heavy_light_gap_over_mstar^2",
+      "keys": [
+        "ratio_hat",
+        "chi",
+        "heavy_light_gap_over_mstar"
+      ],
+      "relative_error": 0.0013934170526993062,
+      "value": 6.706124530338725
+    },
+    {
+      "complexity": 3,
+      "exponents": [
         -1.0,
         -2.0,
         2.0
@@ -303,57 +351,51 @@
       ],
       "relative_error": 0.0014716817638291515,
       "value": 6.686937556340118
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        -2.0,
-        2.0,
-        -2.0
-      ],
-      "formula": "I_nu^-2 * doublet_center_over_mstar^2 * solar_response_over_mstar^-2",
-      "keys": [
-        "I_nu",
-        "doublet_center_over_mstar",
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.0015527520591701914,
-      "value": 6.707191563911385
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        -0.5,
-        2.0,
-        -1.0
-      ],
-      "formula": "ratio_hat^-0.5 * gamma^2 * heavy_light_gap_over_mstar^-1",
-      "keys": [
-        "ratio_hat",
-        "gamma",
-        "heavy_light_gap_over_mstar"
-      ],
-      "relative_error": 0.0016495892579849098,
-      "value": 6.707840062596679
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        -1.0,
-        -1.0,
-        -0.5
-      ],
-      "formula": "doublet_center_over_mstar^-1 * heavy_light_gap_over_mstar^-1 * solar_response_over_mstar^-0.5",
-      "keys": [
-        "doublet_center_over_mstar",
-        "heavy_light_gap_over_mstar",
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.0017092633972406708,
-      "value": 6.685346521295702
     }
   ],
   "extended_top_two_factor_candidates": [
+    {
+      "complexity": 2,
+      "exponents": [
+        0.5,
+        1.0
+      ],
+      "formula": "prod_qbar^0.5 * doublet_center_over_mstar",
+      "keys": [
+        "prod_qbar",
+        "doublet_center_over_mstar"
+      ],
+      "relative_error": 0.0018657920657118659,
+      "value": 6.709287928068666
+    },
+    {
+      "complexity": 2,
+      "exponents": [
+        2.0,
+        0.5
+      ],
+      "formula": "chi^2 * solar_response_over_mstar^0.5",
+      "keys": [
+        "chi",
+        "solar_response_over_mstar"
+      ],
+      "relative_error": 0.00194854690907741,
+      "value": 6.683744089123582
+    },
+    {
+      "complexity": 2,
+      "exponents": [
+        2.0,
+        0.5
+      ],
+      "formula": "sum_gap^2 * doublet_center_over_mstar^0.5",
+      "keys": [
+        "sum_gap",
+        "doublet_center_over_mstar"
+      ],
+      "relative_error": 0.008980260886814077,
+      "value": 6.756932053812917
+    },
     {
       "complexity": 2,
       "exponents": [
@@ -367,6 +409,20 @@
       ],
       "relative_error": 0.010458351912983919,
       "value": 6.626755685651689
+    },
+    {
+      "complexity": 2,
+      "exponents": [
+        -1.0,
+        1.0
+      ],
+      "formula": "chi^-1 * doublet_center_over_mstar",
+      "keys": [
+        "chi",
+        "doublet_center_over_mstar"
+      ],
+      "relative_error": 0.014186745693742748,
+      "value": 6.791798805367309
     },
     {
       "complexity": 2,
@@ -399,100 +455,44 @@
     {
       "complexity": 2,
       "exponents": [
-        -1.0,
-        0.5
+        2.0,
+        -1.0
       ],
-      "formula": "gamma^-1 * solar_response_over_mstar^0.5",
-      "keys": [
-        "gamma",
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.02502963836493279,
-      "value": 6.529174795014714
-    },
-    {
-      "complexity": 2,
-      "exponents": [
-        -0.5,
-        -0.5
-      ],
-      "formula": "gamma^-0.5 * heavy_light_gap_over_mstar^-0.5",
-      "keys": [
-        "gamma",
-        "heavy_light_gap_over_mstar"
-      ],
-      "relative_error": 0.02616586397819484,
-      "value": 6.5215657271625185
-    },
-    {
-      "complexity": 2,
-      "exponents": [
-        -1.0,
-        -0.5
-      ],
-      "formula": "heavy_light_gap_over_mstar^-1 * solar_response_over_mstar^-0.5",
+      "formula": "heavy_light_gap_over_mstar^2 * solar_response_over_mstar^-1",
       "keys": [
         "heavy_light_gap_over_mstar",
         "solar_response_over_mstar"
       ],
-      "relative_error": 0.02730076543977515,
-      "value": 6.513965526880175
+      "relative_error": 0.016611568907590364,
+      "value": 6.585548864510927
     },
     {
       "complexity": 2,
       "exponents": [
         -0.5,
-        2.0
+        -0.5
       ],
-      "formula": "ratio_hat^-0.5 * chi^2",
+      "formula": "sum_mu^-0.5 * doublet_center_over_mstar^-0.5",
       "keys": [
-        "ratio_hat",
-        "chi"
+        "sum_mu",
+        "doublet_center_over_mstar"
       ],
-      "relative_error": 0.039471520194058536,
-      "value": 6.961125708893106
+      "relative_error": 0.01745569979601414,
+      "value": 6.813690314658746
     },
     {
       "complexity": 2,
       "exponents": [
-        -2.0,
-        -1.0
+        -0.5,
+        0.5
       ],
-      "formula": "gamma^-2 * sum_gap^-1",
+      "formula": "gamma^-0.5 * heavy_light_gap_over_mstar^0.5",
       "keys": [
         "gamma",
-        "sum_gap"
-      ],
-      "relative_error": 0.03989467220200101,
-      "value": 6.963959470342105
-    },
-    {
-      "complexity": 2,
-      "exponents": [
-        -2.0,
-        2.0
-      ],
-      "formula": "ratio_hat^-2 * heavy_light_gap_over_mstar^2",
-      "keys": [
-        "ratio_hat",
         "heavy_light_gap_over_mstar"
       ],
-      "relative_error": 0.04327555027515265,
-      "value": 6.4069856979466975
-    },
-    {
-      "complexity": 2,
-      "exponents": [
-        -2.0,
-        2.0
-      ],
-      "formula": "gamma^-2 * prod_qbar^2",
-      "keys": [
-        "gamma",
-        "prod_qbar"
-      ],
-      "relative_error": 0.0448135534820443,
-      "value": 6.996900200580784
+      "relative_error": 0.018182951828468363,
+      "value": 6.818560571055013
     }
   ],
   "family_assisted_scale_keys": [
@@ -501,7 +501,7 @@
     "heavy_light_gap_over_mstar",
     "solar_response_over_mstar"
   ],
-  "generated_utc": "2026-04-02T13:46:30Z",
+  "generated_utc": "2026-04-03T03:30:52Z",
   "hard_guard": {
     "reason": "This search runs only on low-complexity residual monomials. It does not prove that the current corpus emits the residual amplitude bridge, and it must not be turned into a theorem-grade lambda_nu or A_nu law without an honest OPH derivation.",
     "status": "do_not_promote"
@@ -555,66 +555,114 @@
     {
       "complexity": 3,
       "exponents": [
-        -0.5,
         -1.0,
+        -0.5,
         -0.5
       ],
-      "formula": "gamma^-0.5 * doublet_center_over_mstar^-1 * heavy_light_gap_over_mstar^-0.5",
+      "formula": "gamma^-1 * sum_defect^-0.5 * solar_response_over_mstar^-0.5",
       "keys": [
         "gamma",
-        "doublet_center_over_mstar",
-        "heavy_light_gap_over_mstar"
-      ],
-      "relative_error": 0.0005445029288468986,
-      "value": 6.693146681168985
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        -0.5,
-        -2.0,
-        0.5
-      ],
-      "formula": "I_nu^-0.5 * doublet_center_over_mstar^-2 * solar_response_over_mstar^0.5",
-      "keys": [
-        "I_nu",
-        "doublet_center_over_mstar",
+        "sum_defect",
         "solar_response_over_mstar"
       ],
-      "relative_error": 0.0005847136926809044,
-      "value": 6.692877398003009
+      "relative_error": 3.711357260117588e-05,
+      "value": 6.696544562711253
     },
     {
       "complexity": 3,
       "exponents": [
-        -1.0,
-        -1.0,
-        0.5
-      ],
-      "formula": "gamma^-1 * doublet_center_over_mstar^-1 * solar_response_over_mstar^0.5",
-      "keys": [
-        "gamma",
-        "doublet_center_over_mstar",
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.000621616529366835,
-      "value": 6.7009559419159235
-    },
-    {
-      "complexity": 3,
-      "exponents": [
+        2.0,
         -0.5,
-        -1.0,
         2.0
       ],
-      "formula": "sum_defect^-0.5 * sum_gap^-1 * doublet_center_over_mstar^2",
+      "formula": "I_nu^2 * sum_gap^-0.5 * solar_response_over_mstar^2",
       "keys": [
-        "sum_defect",
+        "I_nu",
         "sum_gap",
+        "solar_response_over_mstar"
+      ],
+      "relative_error": 0.00018293401739372217,
+      "value": 6.695568033362052
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        -0.5,
+        -0.5,
+        1.0
+      ],
+      "formula": "sum_gap^-0.5 * prod_qbar^-0.5 * doublet_center_over_mstar",
+      "keys": [
+        "sum_gap",
+        "prod_qbar",
         "doublet_center_over_mstar"
       ],
-      "relative_error": 0.001157641076643224,
-      "value": 6.7045455874080355
+      "relative_error": 0.0004953338850747345,
+      "value": 6.693475956082279
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        -2.0,
+        -1.0,
+        -2.0
+      ],
+      "formula": "ratio_hat^-2 * prod_qbar^-1 * heavy_light_gap_over_mstar^-2",
+      "keys": [
+        "ratio_hat",
+        "prod_qbar",
+        "heavy_light_gap_over_mstar"
+      ],
+      "relative_error": 0.001009635033983336,
+      "value": 6.7035544215621075
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "formula": "I_nu^-0.5 * ratio_hat^-0.5 * doublet_center_over_mstar^-0.5",
+      "keys": [
+        "I_nu",
+        "ratio_hat",
+        "doublet_center_over_mstar"
+      ],
+      "relative_error": 0.0011241795857504062,
+      "value": 6.704321502726554
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        0.5,
+        -2.0,
+        1.0
+      ],
+      "formula": "gamma^0.5 * sum_gap^-2 * solar_response_over_mstar",
+      "keys": [
+        "gamma",
+        "sum_gap",
+        "solar_response_over_mstar"
+      ],
+      "relative_error": 0.0011840791540720852,
+      "value": 6.688863571514013
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        1.0,
+        1.0,
+        2.0
+      ],
+      "formula": "ratio_hat * chi * heavy_light_gap_over_mstar^2",
+      "keys": [
+        "ratio_hat",
+        "chi",
+        "heavy_light_gap_over_mstar"
+      ],
+      "relative_error": 0.0013934170526993062,
+      "value": 6.706124530338725
     },
     {
       "complexity": 3,
@@ -629,88 +677,36 @@
         "doublet_center_over_mstar",
         "solar_response_over_mstar"
       ],
-      "relative_error": 0.0015527520591701914,
-      "value": 6.707191563911385
+      "relative_error": 0.0015527520591704566,
+      "value": 6.707191563911387
     },
     {
-      "complexity": 3,
-      "exponents": [
-        -0.5,
-        2.0,
-        -1.0
-      ],
-      "formula": "ratio_hat^-0.5 * gamma^2 * heavy_light_gap_over_mstar^-1",
-      "keys": [
-        "ratio_hat",
-        "gamma",
-        "heavy_light_gap_over_mstar"
-      ],
-      "relative_error": 0.0016495892579849098,
-      "value": 6.707840062596679
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        -1.0,
-        -1.0,
-        -0.5
-      ],
-      "formula": "doublet_center_over_mstar^-1 * heavy_light_gap_over_mstar^-1 * solar_response_over_mstar^-0.5",
-      "keys": [
-        "doublet_center_over_mstar",
-        "heavy_light_gap_over_mstar",
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.0017092633972406708,
-      "value": 6.685346521295702
-    },
-    {
-      "complexity": 3,
+      "complexity": 2,
       "exponents": [
         0.5,
-        -2.0,
+        1.0
+      ],
+      "formula": "prod_qbar^0.5 * doublet_center_over_mstar",
+      "keys": [
+        "prod_qbar",
+        "doublet_center_over_mstar"
+      ],
+      "relative_error": 0.0018657920657118659,
+      "value": 6.709287928068666
+    },
+    {
+      "complexity": 2,
+      "exponents": [
+        2.0,
         0.5
       ],
-      "formula": "I_nu^0.5 * gamma^-2 * solar_response_over_mstar^0.5",
-      "keys": [
-        "I_nu",
-        "gamma",
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.001829402835411669,
-      "value": 6.709044236922109
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        -1.0,
-        -2.0,
-        -0.5
-      ],
-      "formula": "ratio_hat^-1 * sum_gap^-2 * solar_response_over_mstar^-0.5",
-      "keys": [
-        "ratio_hat",
-        "sum_gap",
-        "solar_response_over_mstar"
-      ],
-      "relative_error": 0.001960366661032314,
-      "value": 6.683664934690192
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        -2.0,
-        -1.0,
-        -1.0
-      ],
-      "formula": "chi^-2 * sum_gap^-1 * heavy_light_gap_over_mstar^-1",
+      "formula": "chi^2 * solar_response_over_mstar^0.5",
       "keys": [
         "chi",
-        "sum_gap",
-        "heavy_light_gap_over_mstar"
+        "solar_response_over_mstar"
       ],
-      "relative_error": 0.00205734457086775,
-      "value": 6.710570715564368
+      "relative_error": 0.00194854690907741,
+      "value": 6.683744089123582
     }
   ],
   "top_single_factor_candidates": [
@@ -1139,5 +1135,5 @@
       "value": 7.09538110013145
     }
   ],
-  "working_observation": "After stripping off the exact q_mean^p_nu homogeneity, the residual compare-only target A_nu_star / m_star is numerically much smaller and cleaner than the raw bridge factor lambda_nu / m_star. On the core residual scalar pool the strongest simple clue is sqrt(I_nu) * sqrt(ratio_hat) / sum_defect. On the extended pool that also includes defect-weighted mu_e family scales normalized by m_star, the strongest genuinely family-assisted clue is `gamma^-0.5 * doublet_center_over_mstar^-1 * heavy_light_gap_over_mstar^-0.5`. It lands very close to the same target but still does not beat the core clue `sqrt(I_nu) * sqrt(ratio_hat) / sum_defect`. Both remain compare-only audit signals."
+  "working_observation": "After stripping off the exact q_mean^p_nu homogeneity, the residual compare-only target A_nu_star / m_star is numerically much smaller and cleaner than the raw bridge factor lambda_nu / m_star. On the core residual scalar pool the strongest simple clue is sqrt(I_nu) * sqrt(ratio_hat) / sum_defect. On the extended pool that also includes defect-weighted mu_e family scales normalized by m_star, the strongest genuinely family-assisted clue is `gamma^-1 * sum_defect^-0.5 * solar_response_over_mstar^-0.5`. It lands very close to the same target but still does not beat the core clue `sqrt(I_nu) * sqrt(ratio_hat) / sum_defect`. Both remain compare-only audit signals."
 }

@@ -26,6 +26,8 @@ DEFAULT_RUNTIME_ROOT = WORKSPACE_ROOT / "temp" / "particles_runtime"
 NEUTRINO_COMPARE_ONLY_FIT = Path("runs/neutrino/neutrino_compare_only_scale_fit.json")
 NEUTRINO_TWO_PARAMETER_EXACT_ADAPTER = Path("runs/neutrino/neutrino_two_parameter_exact_adapter.json")
 NEUTRINO_EXACT_ADAPTER_BRIDGE_COORDINATE = Path("runs/neutrino/neutrino_exact_adapter_bridge_coordinate.json")
+NEUTRINO_BRIDGE_RIGIDITY_THEOREM = Path("runs/neutrino/neutrino_bridge_rigidity_theorem.json")
+NEUTRINO_ABSOLUTE_ATTACHMENT_THEOREM = Path("runs/neutrino/neutrino_absolute_attachment_theorem.json")
 
 EXCLUDE_NAMES = {
     "__pycache__",
@@ -44,6 +46,8 @@ RUNTIME_SURFACED_ARTIFACTS = (
     Path("runs/flavor/quark_current_family_exact_readout.json"),
     Path("runs/flavor/quark_current_family_selected_sheet_closure.json"),
     Path("runs/flavor/quark_current_family_quadratic_readout_theorem.json"),
+    Path("runs/flavor/quark_current_premise_no_go_theorem.json"),
+    Path("runs/flavor/quark_minimal_extension_closure_theorem.json"),
     Path("runs/flavor/light_quark_isospin_overlap_defect_selector_law.json"),
     Path("runs/flavor/quark_d12_t1_value_law.json"),
     Path("runs/flavor/quark_physical_branch_repair_theorem.json"),
@@ -54,10 +58,29 @@ RUNTIME_SURFACED_ARTIFACTS = (
     Path("runs/leptons/lepton_current_family_exact_readout.json"),
     Path("runs/leptons/lepton_current_family_quadratic_readout_theorem.json"),
     Path("runs/neutrino/forward_neutrino_closure_bundle.json"),
+    Path("runs/neutrino/neutrino_bridge_rigidity_theorem.json"),
+    Path("runs/neutrino/neutrino_absolute_attachment_theorem.json"),
     Path("runs/neutrino/exact_blocking_items.json"),
+    Path("runs/neutrino/neutrino_weighted_cycle_theorem_object.json"),
+    Path("runs/neutrino/realized_same_label_gap_defect_readback.json"),
+    Path("runs/neutrino/same_label_overlap_defect_weight_normalizer.json"),
     Path("runs/neutrino/same_label_scalar_certificate.json"),
+    Path("runs/neutrino/pmns_from_shared_basis.json"),
+    Path("runs/neutrino/shared_charged_lepton_left_basis.json"),
+    Path("runs/neutrino/intrinsic_neutrino_eta_demo_payload.json"),
+    Path("runs/neutrino/intrinsic_neutrino_exact_eta_map.json"),
+    Path("runs/neutrino/intrinsic_neutrino_exact_mixing_law_validation.json"),
     Path("runs/neutrino/intrinsic_neutrino_mass_eigenstate_bundle_from_scalar_certificate.json"),
+    Path("runs/neutrino/majorana_overlap_defect_hessian.json"),
+    Path("runs/neutrino/majorana_overlap_defect_scalar_evaluator.json"),
+    Path("runs/neutrino/neutrino_absolute_attachment_scaffold.json"),
+    Path("runs/neutrino/neutrino_compare_only_scale_fit.json"),
+    Path("runs/neutrino/neutrino_scale_anchor.json"),
+    Path("runs/neutrino/defect_weighted_mu_e_family.json"),
+    Path("runs/neutrino/neutrino_attachment_normalizer_candidate_audit.json"),
+    Path("runs/neutrino/neutrino_residual_amplitude_candidate_audit.json"),
     Path("runs/neutrino/neutrino_weighted_cycle_repair.json"),
+    Path("runs/neutrino/neutrino_weighted_cycle_absolute_amplitude_bridge.json"),
     Path("runs/neutrino/neutrino_lambda_nu_bridge_candidate.json"),
     Path("runs/neutrino/neutrino_exact_adapter_bridge_coordinate.json"),
     Path("runs/uv/bw_fixed_local_collar_modular_transport_common_floor_scaffold.json"),
@@ -122,6 +145,8 @@ def _copy_outputs(work_particles: Path, current_dir: Path) -> None:
         "runs/neutrino/neutrino_compare_only_scale_fit.json",
         "runs/neutrino/neutrino_two_parameter_exact_adapter.json",
         "runs/neutrino/neutrino_exact_adapter_bridge_coordinate.json",
+        "runs/neutrino/neutrino_bridge_rigidity_theorem.json",
+        "runs/neutrino/neutrino_absolute_attachment_theorem.json",
         "runs/uv/bw_internalization_scaffold.json",
     ]
     for rel in outputs:
@@ -463,6 +488,12 @@ def build_runtime(runtime_root: Path, *, with_hadrons: bool, verbose: bool) -> P
     _run(["python3", "particles/uv/derive_bw_internalization_scaffold.py"], cwd=work_code, verbose=verbose)
     _run(["python3", "particles/neutrino/derive_neutrino_compare_only_scale_fit.py"], cwd=work_code, verbose=verbose)
     _run(["python3", "particles/neutrino/derive_neutrino_two_parameter_exact_adapter.py"], cwd=work_code, verbose=verbose)
+    _run(["python3", "particles/neutrino/derive_neutrino_bridge_correction_candidate_audit.py"], cwd=work_code, verbose=verbose)
+    _run(["python3", "particles/neutrino/derive_neutrino_attachment_irreducibility.py"], cwd=work_code, verbose=verbose)
+    _run(["python3", "particles/neutrino/derive_neutrino_bridge_rigidity_theorem.py"], cwd=work_code, verbose=verbose)
+    _run(["python3", "particles/neutrino/derive_neutrino_absolute_attachment_theorem.py"], cwd=work_code, verbose=verbose)
+    _run(["python3", "particles/neutrino/derive_exact_blocking_items.py"], cwd=work_code, verbose=verbose)
+    _run(["python3", "particles/neutrino/export_forward_neutrino_closure_bundle.py"], cwd=work_code, verbose=verbose)
     _run(
         ["python3", "particles/leptons/derive_lepton_current_family_affine_anchor_theorem.py"],
         cwd=work_code,

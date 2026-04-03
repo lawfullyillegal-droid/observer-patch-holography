@@ -36,6 +36,8 @@ AMPLITUDE_BRIDGE_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_wei
 BRIDGE_CANDIDATE_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_lambda_nu_bridge_candidate.json"
 IRREDUCIBILITY_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_attachment_irreducibility_theorem.json"
 BRIDGE_SCALAR_CORRIDOR_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_attachment_bridge_scalar_corridor.json"
+BRIDGE_RIGIDITY_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_bridge_rigidity_theorem.json"
+ABSOLUTE_ATTACHMENT_JSON = ROOT / "particles" / "runs" / "neutrino" / "neutrino_absolute_attachment_theorem.json"
 DEFAULT_EXACT_OUT = ROOT / "particles" / "runs" / "neutrino" / "exact_blocking_items.json"
 DEFAULT_SUMMARY_OUT = ROOT / "particles" / "runs" / "neutrino" / "current_snapshot_blocker_summary.json"
 
@@ -67,6 +69,9 @@ def build_exact_blockers(
     bridge_candidate: dict | None,
     irreducibility: dict | None,
     bridge_scalar_corridor: dict | None,
+    bridge_rigidity: dict | None,
+    absolute_attachment: dict | None,
+    ignore_emitted_theorem_pair: bool,
 ) -> tuple[dict, dict]:
     same_label_present = bool(certificate.get("sufficient_for_intrinsic_mass_eigenstates"))
     charged_basis_present = charged_left.get("status") == "closed"
@@ -83,9 +88,18 @@ def build_exact_blockers(
         or (bridge_candidate or {}).get("smallest_exact_missing_object")
         or {}
     )
+    theorem_pair_emitted = (
+        not ignore_emitted_theorem_pair
+        and bridge_rigidity is not None
+        and absolute_attachment is not None
+        and bridge_rigidity.get("status") == "theorem_grade_emitted"
+        and absolute_attachment.get("status") == "theorem_grade_emitted"
+    )
     physical_branch_closed = bool(pmns.get("physical_branch_closed", False)) or (
         repair_present and repair_shape_closed and not absolute_normalization_open
     )
+    if theorem_pair_emitted:
+        physical_branch_closed = True
     eta_payload = dict(eta_demo.get("eta_e") or {})
     exact_blockers = []
     if not same_label_present:
@@ -123,7 +137,7 @@ def build_exact_blockers(
                 "required_contract": "emit_a_physically_correct_flavor_branch_or_prove_a_no_go_for_the_current_continuation_branch",
             }
         )
-    if same_label_present and charged_basis_present and repair_shape_closed and absolute_normalization_open:
+    if same_label_present and charged_basis_present and repair_shape_closed and absolute_normalization_open and not theorem_pair_emitted:
         exact_blockers.append(
             {
                 "name": reduced_bridge_object.get("name", "one_positive_neutrino_bridge_correction_invariant"),
@@ -173,6 +187,36 @@ def build_exact_blockers(
                     else "."
                 )
             )
+
+    emitted_mass_splittings_gev2 = None
+    emitted_family_payload = None
+    emitted_theorem_pair_payload = None
+    if theorem_pair_emitted:
+        outputs = dict(absolute_attachment.get("outputs") or {})
+        emitted_mass_splittings_gev2 = {
+            "delta_m21_sq_gev2": float((outputs.get("delta_m_sq_eV2") or {}).get("21", 0.0)) * 1.0e-18,
+            "delta_m31_sq_gev2": float((outputs.get("delta_m_sq_eV2") or {}).get("31", 0.0)) * 1.0e-18,
+            "delta_m32_sq_gev2": float((outputs.get("delta_m_sq_eV2") or {}).get("32", 0.0)) * 1.0e-18,
+        }
+        emitted_family_payload = {
+            "lambda_nu": float(outputs.get("lambda_nu")),
+            "masses_eV": list(outputs.get("masses_eV") or []),
+            "delta_m_sq_eV2": dict(outputs.get("delta_m_sq_eV2") or {}),
+        }
+        emitted_theorem_pair_payload = {
+            "bridge_rigidity": {
+                "artifact": bridge_rigidity.get("artifact"),
+                "status": bridge_rigidity.get("status"),
+                "emitted_formula": bridge_rigidity.get("emitted_formula"),
+                "emitted_value": bridge_rigidity.get("emitted_value"),
+                "emitted_proxy": bridge_rigidity.get("emitted_proxy"),
+            },
+            "absolute_attachment": {
+                "artifact": absolute_attachment.get("artifact"),
+                "status": absolute_attachment.get("status"),
+                "outputs": outputs,
+            },
+        }
 
     exact_payload = {
         "artifact": "oph_exact_neutrino_blocker_audit_v8",
@@ -253,10 +297,14 @@ def build_exact_blockers(
             ),
         },
         "remaining_positive_scale_orbit": {
-            "status": "open" if repair_shape_closed and absolute_normalization_open else "not_applicable",
-            "group": "R_{>0}" if repair_shape_closed and absolute_normalization_open else None,
-            "family_parameter": "lambda_nu > 0" if repair_shape_closed and absolute_normalization_open else None,
-            "proof_obstruction": "positive_rescaling_nonidentifiability" if repair_shape_closed and absolute_normalization_open else None,
+            "status": (
+                "closed_by_emitted_absolute_attachment_theorem"
+                if theorem_pair_emitted
+                else ("open" if repair_shape_closed and absolute_normalization_open else "not_applicable")
+            ),
+            "group": None if theorem_pair_emitted else ("R_{>0}" if repair_shape_closed and absolute_normalization_open else None),
+            "family_parameter": None if theorem_pair_emitted else ("lambda_nu > 0" if repair_shape_closed and absolute_normalization_open else None),
+            "proof_obstruction": None if theorem_pair_emitted else ("positive_rescaling_nonidentifiability" if repair_shape_closed and absolute_normalization_open else None),
         },
         "live_continuation_branch_status": {
             "same_label_scalar_certificate_present": same_label_present,
@@ -264,12 +312,16 @@ def build_exact_blockers(
             "pmns_present": pmns_present,
             "repair_artifact_present": repair_present,
             "status": (
-                "physically_repaired_up_to_one_reduced_bridge_correction_invariant"
-                if repair_shape_closed and absolute_normalization_open
+                "weighted_cycle_bridge_rigid_absolute_family_emitted"
+                if theorem_pair_emitted
                 else (
-                    "numerically_closed_but_quantitatively_wrong_branch"
-                    if branch_repair_required
-                    else "waiting_on_missing_upstream_artifacts"
+                    "physically_repaired_up_to_one_reduced_bridge_correction_invariant"
+                    if repair_shape_closed and absolute_normalization_open
+                    else (
+                        "numerically_closed_but_quantitatively_wrong_branch"
+                        if branch_repair_required
+                        else "waiting_on_missing_upstream_artifacts"
+                    )
                 )
             ),
             "physical_branch_closed": physical_branch_closed,
@@ -283,34 +335,49 @@ def build_exact_blockers(
                 ),
             },
             "remaining_positive_scale_orbit": {
-                "status": "open" if repair_shape_closed and absolute_normalization_open else "not_applicable",
-                "group": "R_{>0}" if repair_shape_closed and absolute_normalization_open else None,
-                "family_parameter": "lambda_nu > 0" if repair_shape_closed and absolute_normalization_open else None,
+                "status": (
+                    "closed_by_emitted_absolute_attachment_theorem"
+                    if theorem_pair_emitted
+                    else ("open" if repair_shape_closed and absolute_normalization_open else "not_applicable")
+                ),
+                "group": None if theorem_pair_emitted else ("R_{>0}" if repair_shape_closed and absolute_normalization_open else None),
+                "family_parameter": None if theorem_pair_emitted else ("lambda_nu > 0" if repair_shape_closed and absolute_normalization_open else None),
             },
             "current_pmns_parameters": dict(
                 (repair.get("pmns_observables") if repair_shape_closed else pmns.get("standard_pmns_parameters")) or {}
             ),
             "current_mass_splittings_gev2": (
                 {
-                    "status": "not_emitted_without_absolute_anchor",
-                    "delta_m21_sq_gev2": None,
-                    "delta_m31_sq_gev2": None,
-                    "reason": (
-                        "The repaired weighted-cycle branch closes only the dimensionless splitting pattern until "
-                        "one positive reduced bridge-correction invariant is emitted."
-                    ),
+                    "status": "emitted_on_weighted_cycle_theorem_branch",
+                    **(emitted_mass_splittings_gev2 or {}),
                 }
-                if repair_shape_closed and absolute_normalization_open
-                else {
-                    "status": "builder_intrinsic_snapshot",
-                    **intrinsic_builder_mass_splittings,
-                }
+                if theorem_pair_emitted
+                else (
+                    {
+                        "status": "not_emitted_without_absolute_anchor",
+                        "delta_m21_sq_gev2": None,
+                        "delta_m31_sq_gev2": None,
+                        "reason": (
+                            "The repaired weighted-cycle branch closes only the dimensionless splitting pattern until "
+                            "one positive reduced bridge-correction invariant is emitted."
+                        ),
+                    }
+                    if repair_shape_closed and absolute_normalization_open
+                    else {
+                        "status": "builder_intrinsic_snapshot",
+                        **intrinsic_builder_mass_splittings,
+                    }
+                )
             ),
             "intrinsic_builder_mass_splittings_gev2": intrinsic_builder_mass_splittings,
             "repaired_branch_dimensionless_dm2": dict(repair.get("dimensionless_dm2") or {}),
             "compare_only_atmospheric_anchor": dict(repair.get("compare_only_atmospheric_anchor") or {}),
+            "emitted_theorem_pair": emitted_theorem_pair_payload,
+            "emitted_absolute_family": emitted_family_payload,
             "absolute_scale_no_go": (
-                {
+                None
+                if theorem_pair_emitted
+                else {
                     "status": "closed",
                     "theorem": "neutrino_weighted_cycle_absolute_scale_no_go",
                     "proof_obstruction": "positive_rescaling_nonidentifiability",
@@ -443,6 +510,9 @@ def main() -> int:
     parser.add_argument("--bridge-candidate", default=str(BRIDGE_CANDIDATE_JSON))
     parser.add_argument("--irreducibility", default=str(IRREDUCIBILITY_JSON))
     parser.add_argument("--bridge-scalar-corridor", default=str(BRIDGE_SCALAR_CORRIDOR_JSON))
+    parser.add_argument("--bridge-rigidity", default=str(BRIDGE_RIGIDITY_JSON))
+    parser.add_argument("--absolute-attachment", default=str(ABSOLUTE_ATTACHMENT_JSON))
+    parser.add_argument("--ignore-emitted-theorem-pair", action="store_true")
     parser.add_argument("--exact-output", default=str(DEFAULT_EXACT_OUT))
     parser.add_argument("--summary-output", default=str(DEFAULT_SUMMARY_OUT))
     args = parser.parse_args()
@@ -459,6 +529,9 @@ def main() -> int:
         _load_json(Path(args.bridge_candidate)) if Path(args.bridge_candidate).exists() else None,
         _load_json(Path(args.irreducibility)) if Path(args.irreducibility).exists() else None,
         _load_json(Path(args.bridge_scalar_corridor)) if Path(args.bridge_scalar_corridor).exists() else None,
+        _load_json(Path(args.bridge_rigidity)) if Path(args.bridge_rigidity).exists() else None,
+        _load_json(Path(args.absolute_attachment)) if Path(args.absolute_attachment).exists() else None,
+        args.ignore_emitted_theorem_pair,
     )
 
     exact_out = Path(args.exact_output)

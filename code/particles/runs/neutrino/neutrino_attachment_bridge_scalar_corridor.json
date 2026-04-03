@@ -157,23 +157,24 @@
     "exact_residual_moduli_space": "R_{>0}",
     "symbol": "B_nu"
   },
-  "generated_utc": "2026-04-02T13:46:29Z",
+  "generated_utc": "2026-04-03T03:30:52Z",
+  "must_not_feed_back": true,
   "notes": [
     "The corridor sits strictly above the defect-weighted mu_e family and strictly below any theorem-grade emission of B_nu.",
     "The family-assisted route is included so the current defect-weighted mu_e family contributes explicitly to the sharpened compare-only bridge picture.",
     "The representative corridor and the wider envelope both contain the live compare-only target B_nu_star.",
-    "The reduced correction scalar C_nu isolates the remaining exact gap above the best emitted residual-amplitude proxy and makes the open bridge a near-unity positive factor on the live branch.",
-    "A direct C_nu audit now yields a narrower target-containing induced B_nu window than the old three-route bridge corridor.",
+    "The reduced correction scalar C_nu isolates the diagnostic bridge geometry above the best emitted residual-amplitude proxy and makes the retired bridge sidecar a near-unity positive factor on the weighted-cycle branch.",
+    "A direct C_nu audit yields a narrower target-containing induced B_nu window than the old three-route bridge corridor.",
     "The shortlist consensus window is narrower than the primary three-point corridor, but it is a route-agreement diagnostic only and need not contain the live compare-only target."
   ],
   "primary_cross_route_corridor": {
     "contains_compare_only_target": true,
     "interval": [
-      6.693146681168985,
+      6.696544562711253,
       6.712586060296284
     ],
-    "midpoint": 6.702866370732634,
-    "relative_half_width": 0.0014500795668685531
+    "midpoint": 6.704565311503769,
+    "relative_half_width": 0.0011963115310031501
   },
   "primary_route_representatives": [
     {
@@ -215,27 +216,28 @@
     {
       "complexity": 3,
       "exponents": [
-        -0.5,
         -1.0,
+        -0.5,
         -0.5
       ],
-      "formula": "gamma^-0.5 * doublet_center_over_mstar^-1 * heavy_light_gap_over_mstar^-0.5",
+      "formula": "gamma^-1 * sum_defect^-0.5 * solar_response_over_mstar^-0.5",
       "keys": [
         "gamma",
-        "doublet_center_over_mstar",
-        "heavy_light_gap_over_mstar"
+        "sum_defect",
+        "solar_response_over_mstar"
       ],
-      "relative_error": 0.0005445029288468986,
+      "relative_error": 3.711357260117588e-05,
       "route_id": "defect_family_assisted_residual_route",
       "route_kind": "direct_search_using_defect_weighted_mu_e_family_scales_in_the_residual_B_nu_pool",
       "source_artifact": "oph_neutrino_residual_amplitude_candidate_audit",
-      "value": 6.693146681168985
+      "value": 6.696544562711253
     }
   ],
   "promotion_guard": {
     "reason": "This corridor is an honest numerical narrowing of the remaining bridge scalar, not an emitted OPH attachment law. It must not be fed back into lambda_nu emission.",
     "status": "do_not_promote"
   },
+  "proof_chain_role": "diagnostic_only_retired_from_theorem_lane",
   "public_promotion_allowed": false,
   "route_selection_rule": {
     "converted_normalizer_route": "Use the best symmetric F_nu candidate and apply the exact factorization B_nu = F_nu * q_mean^p_nu.",
@@ -247,18 +249,18 @@
     "why_not_a_theorem": "Every route in this corridor is a compare-only search clue selected against the current target. The attachment irreducibility theorem still leaves one positive bridge invariant external to the emitted stack."
   },
   "shortlist_route_consensus_window": {
-    "compare_only_target_offset_over_midpoint": -0.001776734590193806,
+    "compare_only_target_offset_over_midpoint": -0.0017382063382801994,
     "contains_compare_only_target": false,
     "interval": [
-      6.704839352803188,
+      6.704321502726554,
       6.712586060296284
     ],
-    "midpoint": 6.708712706549736,
+    "midpoint": 6.70845378151142,
     "narrowing_vs_primary_cross_route_corridor": {
       "is_narrower": true,
-      "relative_half_width_ratio": 0.39815863159438786
+      "relative_half_width_ratio": 0.5149000010846018
     },
-    "relative_half_width": 0.0005773616960473658,
+    "relative_half_width": 0.0006159808086110436,
     "selected_candidates": [
       {
         "complexity": 2,
@@ -299,21 +301,21 @@
       {
         "complexity": 3,
         "exponents": [
-          -2.0,
-          2.0,
-          -2.0
+          -0.5,
+          -0.5,
+          -0.5
         ],
-        "formula": "I_nu^-2 * doublet_center_over_mstar^2 * solar_response_over_mstar^-2",
+        "formula": "I_nu^-0.5 * ratio_hat^-0.5 * doublet_center_over_mstar^-0.5",
         "keys": [
           "I_nu",
-          "doublet_center_over_mstar",
-          "solar_response_over_mstar"
+          "ratio_hat",
+          "doublet_center_over_mstar"
         ],
-        "relative_error": 0.0015527520591701914,
+        "relative_error": 0.0011241795857504062,
         "route_id": "family_assisted_top_5",
         "route_kind": "direct_search_using_defect_weighted_mu_e_family_scales_in_the_residual_B_nu_pool",
         "source_artifact": "oph_neutrino_residual_amplitude_candidate_audit",
-        "value": 6.707191563911385
+        "value": 6.704321502726554
       }
     ],
     "selection_rule": "Within the already-admitted top candidates of each route family, choose one candidate per route that minimizes cross-route relative half-width; total algebraic complexity and route-local compare-only error break ties.",
@@ -331,7 +333,7 @@
     "midpoint": 6.703202589634797,
     "narrowing_vs_primary_cross_route_corridor": {
       "is_narrower": true,
-      "relative_half_width_ratio": 0.7405657590000583
+      "relative_half_width_ratio": 0.8976585506519356
     },
     "proxy_formula": "I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1",
     "proxy_value": 6.699825740519345,
@@ -384,25 +386,25 @@
         "value": 6.686937556340118
       },
       {
-        "formula": "gamma^-0.5 * doublet_center_over_mstar^-1 * heavy_light_gap_over_mstar^-0.5",
-        "relative_error": 0.0005445029288468986,
+        "formula": "gamma^-1 * sum_defect^-0.5 * solar_response_over_mstar^-0.5",
+        "relative_error": 3.711357260117588e-05,
         "route_class": "defect_family_assisted_residual_pool",
         "route_id": "family_assisted_top_1",
-        "value": 6.693146681168985
+        "value": 6.696544562711253
       },
       {
-        "formula": "I_nu^-0.5 * doublet_center_over_mstar^-2 * solar_response_over_mstar^0.5",
-        "relative_error": 0.0005847136926809044,
+        "formula": "I_nu^2 * sum_gap^-0.5 * solar_response_over_mstar^2",
+        "relative_error": 0.00018293401739372217,
         "route_class": "defect_family_assisted_residual_pool",
         "route_id": "family_assisted_top_2",
-        "value": 6.692877398003009
+        "value": 6.695568033362052
       },
       {
-        "formula": "gamma^-1 * doublet_center_over_mstar^-1 * solar_response_over_mstar^0.5",
-        "relative_error": 0.000621616529366835,
+        "formula": "sum_gap^-0.5 * prod_qbar^-0.5 * doublet_center_over_mstar",
+        "relative_error": 0.0004953338850747345,
         "route_class": "defect_family_assisted_residual_pool",
         "route_id": "family_assisted_top_3",
-        "value": 6.7009559419159235
+        "value": 6.693475956082279
       }
     ],
     "contains_compare_only_target": true,

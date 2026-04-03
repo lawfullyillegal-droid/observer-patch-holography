@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Emit the strongest current compare-only corridor for the remaining bridge scalar.
+"""Emit the strongest current compare-only corridor for the bridge scalar sidecar.
 
-This does not emit the missing theorem object. It fuses the live compare-only
-routes for
+This does not emit the proof-facing theorem object. It fuses the live
+compare-only routes for
 
     B_nu = lambda_nu * q_mean^p_nu / m_star_eV,
 
-so the remaining bridge scalar is numerically narrowed on the current branch
-without pretending the irreducibility gap has closed.
+so the diagnostic bridge scalar is numerically narrowed on the current branch
+without feeding back into the emitted theorem pair.
 """
 
 from __future__ import annotations
@@ -248,6 +248,8 @@ def build_payload(
         "generated_utc": _timestamp(),
         "status": "compare_only_cross_route_corridor",
         "public_promotion_allowed": False,
+        "proof_chain_role": "diagnostic_only_retired_from_theorem_lane",
+        "must_not_feed_back": True,
         "exact_missing_object": "oph_neutrino_attachment_bridge_invariant",
         "exact_target_scalar": {
             "symbol": "B_nu",
@@ -354,8 +356,8 @@ def build_payload(
             "The corridor sits strictly above the defect-weighted mu_e family and strictly below any theorem-grade emission of B_nu.",
             "The family-assisted route is included so the current defect-weighted mu_e family contributes explicitly to the sharpened compare-only bridge picture.",
             "The representative corridor and the wider envelope both contain the live compare-only target B_nu_star.",
-            "The reduced correction scalar C_nu isolates the remaining exact gap above the best emitted residual-amplitude proxy and makes the open bridge a near-unity positive factor on the live branch.",
-            "A direct C_nu audit now yields a narrower target-containing induced B_nu window than the old three-route bridge corridor.",
+            "The reduced correction scalar C_nu isolates the diagnostic bridge geometry above the best emitted residual-amplitude proxy and makes the retired bridge sidecar a near-unity positive factor on the weighted-cycle branch.",
+            "A direct C_nu audit yields a narrower target-containing induced B_nu window than the old three-route bridge corridor.",
             "The shortlist consensus window is narrower than the primary three-point corridor, but it is a route-agreement diagnostic only and need not contain the live compare-only target.",
         ],
     }

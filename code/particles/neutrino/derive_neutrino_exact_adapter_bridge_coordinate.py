@@ -151,7 +151,7 @@ def build_payload(
         "notes": [
             "The exact adapter moves only one selector coordinate and one positive rescaling on the already-emitted positive selector segment.",
             "The same emitted phase and defect stack is reused here; the only exact-adapter-dependent bridge ingredient is ratio_hat, taken from the exact two-parameter fit.",
-            "This sidecar strengthens the explicit exact branch description without changing the open theorem object C_nu.",
+            "This sidecar strengthens the explicit exact branch description without changing the emitted theorem pair (C_nu, B_nu).",
         ],
     }
 

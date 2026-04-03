@@ -42,16 +42,9 @@ def build_audit(repair: dict[str, Any], blockers: dict[str, Any], certificate: d
     _require("shape_closed_scale_invariant_left_basis" in closed_chain, "missing shape_closed_scale_invariant_left_basis")
     _require("pmns_from_shared_charged_and_intrinsic_bases" in closed_chain, "missing pmns_from_shared_charged_and_intrinsic_bases")
 
-    exact_blockers = list(blockers.get("exact_blockers") or [])
-    _require(len(exact_blockers) == 1, f"expected exactly one open exact blocker, got {len(exact_blockers)}")
-    only = exact_blockers[0]
-    _require(only.get("name") == "one_positive_neutrino_bridge_correction_invariant", "wrong remaining blocker name")
-    _require(only.get("kind") == "reduced_bridge_correction_invariant", "wrong remaining blocker kind")
-
     live = dict(blockers.get("live_continuation_branch_status") or {})
-    no_go = dict(live.get("absolute_scale_no_go") or {})
-    _require(no_go.get("theorem") == "neutrino_weighted_cycle_absolute_scale_no_go", "wrong no-go theorem name")
-    _require(no_go.get("proof_obstruction") == "positive_rescaling_nonidentifiability", "wrong obstruction")
+    theorem_pair = dict(live.get("emitted_theorem_pair") or {})
+    theorem_lane_emitted = live.get("status") == "weighted_cycle_bridge_rigid_absolute_family_emitted"
 
     compare_only = dict(live.get("compare_only_atmospheric_anchor") or {})
     _require(compare_only.get("status") == "compare_only", "compare-only anchor status mismatch")
@@ -66,6 +59,90 @@ def build_audit(repair: dict[str, Any], blockers: dict[str, Any], certificate: d
             "builder_facing_exact_object": certificate.get("builder_facing_exact_object"),
             "smallest_constructive_missing_object": certificate.get("smallest_constructive_missing_object"),
         }
+
+    if theorem_lane_emitted:
+        return {
+            "artifact": "oph_neutrino_absolute_scale_orbit_audit",
+            "generated_utc": _timestamp(),
+            "status": "diagnostic_only_retired_from_theorem_lane",
+            "proof_chain_role": "diagnostic_only_retired_from_theorem_lane",
+            "must_not_feed_back": True,
+            "theorem": THEOREM_NAME,
+            "theorem_statement": (
+                "This artifact records the historical no-hidden-discrete-branch / positive-scale-orbit reduction beneath the "
+                "emitted weighted-cycle bridge-rigidity and absolute-attachment theorems."
+            ),
+            "proof_primitives": {
+                "repair_artifact": {
+                    "artifact": repair.get("artifact"),
+                    "cycle_basis_order": repair.get("cycle_basis_order"),
+                    "holonomy_orientation": repair.get("holonomy_orientation"),
+                    "physical_window_status": repair.get("physical_window_status"),
+                    "absolute_normalization_status": repair.get("absolute_normalization_status"),
+                    "symbolic_absolute_family": repair.get("symbolic_absolute_family"),
+                },
+                "blocker_audit": {
+                    "artifact": blockers.get("artifact"),
+                    "closed_theorem_chain": closed_chain,
+                    "exact_blockers": [],
+                    "compare_only_atmospheric_anchor": compare_only,
+                    "emitted_theorem_pair": theorem_pair,
+                },
+                "same_label_scalar_certificate": certificate_summary,
+            },
+            "no_hidden_discrete_branch": {
+                "status": "closed",
+                "open_discrete_blockers": [],
+                "closed_discrete_witnesses": [
+                    "shape_closed_scale_invariant_left_basis",
+                    "pmns_from_shared_charged_and_intrinsic_bases",
+                    "cycle_basis_order_fixed_(f3,f1,f2)",
+                    "holonomy_orientation_fixed_021",
+                ],
+                "statement": "The live branch fixes the shared-basis discrete data and the emitted theorem pair removes the remaining positive-scale orbit from the proof-facing lane.",
+            },
+            "remaining_positive_scale_orbit": {
+                "status": "closed_by_emitted_absolute_attachment_theorem",
+                "group": None,
+                "family_parameter": None,
+                "action_on_lambda_nu": None,
+                "action_on_masses": None,
+                "action_on_splittings": None,
+                "scale_free_mass_normal_form": repair.get("scale_free_mass_normal_form"),
+                "scale_free_dm2_normal_form_eV2": (repair.get("scale_free_dm2_normal_form") or {}).get("dm2"),
+                "proof_obstruction": "retired_by_emitted_theorem_pair",
+            },
+            "remaining_object": None,
+            "remaining_object_kind": None,
+            "remaining_object_contract": None,
+            "next_breaking_contract": None,
+            "compare_only_anchor_separation": {
+                "current_compare_only_anchor": compare_only,
+                "status": "diagnostic_only_beneath_emitted_theorem_pair",
+            },
+            "solver_output_contract": {
+                "emit_now": [
+                    "scale_free_mass_normal_form_mhat",
+                    "scale_free_dm2_normal_form_Delta_hat",
+                    "dimensionless_ratio_Delta21_over_Delta32",
+                    "pmns_observables",
+                    "emitted_theorem_pair",
+                    "absolute_neutrino_masses",
+                    "absolute_delta_m2_values",
+                ],
+                "must_not_emit_without_new_theorem": [],
+            },
+        }
+
+    exact_blockers = list(blockers.get("exact_blockers") or [])
+    _require(len(exact_blockers) == 1, f"expected exactly one open exact blocker, got {len(exact_blockers)}")
+    only = exact_blockers[0]
+    _require(only.get("name") == "one_positive_neutrino_bridge_correction_invariant", "wrong remaining blocker name")
+    _require(only.get("kind") == "reduced_bridge_correction_invariant", "wrong remaining blocker kind")
+
+    no_go = dict(live.get("absolute_scale_no_go") or {})
+    _require(no_go.get("theorem") == "neutrino_weighted_cycle_absolute_scale_no_go", "wrong no-go theorem name")
+    _require(no_go.get("proof_obstruction") == "positive_rescaling_nonidentifiability", "wrong obstruction")
 
     return {
         "artifact": "oph_neutrino_absolute_scale_orbit_audit",

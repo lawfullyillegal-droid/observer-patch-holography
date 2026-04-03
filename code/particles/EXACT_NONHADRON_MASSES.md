@@ -1,6 +1,6 @@
 # Exact Non-Hadron Masses
 
-Generated: `2026-04-02T03:08:12Z`
+Generated: `2026-04-03T03:29:28Z`
 
 This bundle gives one exact mass output for every non-hadron particle currently covered by the OPH particle stack.
 It closes the exact-output lane, not the theorem-grade derivation lane.
@@ -22,6 +22,6 @@ It closes the exact-output lane, not the theorem-grade derivation lane.
 | Down Quark | `0.004700000000000002 GeV` | `exact_target_anchored_current_family_witness` | `current_family_only` | `code/particles/runs/flavor/quark_current_family_exact_readout.json` |
 | Strange Quark | `0.09349999999999999 GeV` | `exact_target_anchored_current_family_witness` | `current_family_only` | `code/particles/runs/flavor/quark_current_family_exact_readout.json` |
 | Bottom Quark | `4.182999999999994 GeV` | `exact_target_anchored_current_family_witness` | `current_family_only` | `code/particles/runs/flavor/quark_current_family_exact_readout.json` |
-| Electron Neutrino | `0.01745663294772044 eV` | `exact_two_observable_compare_only_segment_adapter` | `compare_only_two_parameter_segment_adapter` | `code/particles/runs/neutrino/neutrino_two_parameter_exact_adapter.json` |
-| Muon Neutrino | `0.019484199595350048 eV` | `exact_two_observable_compare_only_segment_adapter` | `compare_only_two_parameter_segment_adapter` | `code/particles/runs/neutrino/neutrino_two_parameter_exact_adapter.json` |
-| Tau Neutrino | `0.053081390655025595 eV` | `exact_two_observable_compare_only_segment_adapter` | `compare_only_two_parameter_segment_adapter` | `code/particles/runs/neutrino/neutrino_two_parameter_exact_adapter.json` |
+| Electron Neutrino | `0.017454720257976796 eV` | `theorem_grade_weighted_cycle_absolute_attachment` | `weighted_cycle_bridge_rigid_absolute_family` | `code/particles/runs/neutrino/neutrino_absolute_attachment_theorem.json` |
+| Muon Neutrino | `0.019481987935919015 eV` | `theorem_grade_weighted_cycle_absolute_attachment` | `weighted_cycle_bridge_rigid_absolute_family` | `code/particles/runs/neutrino/neutrino_absolute_attachment_theorem.json` |
+| Tau Neutrino | `0.05307522145074924 eV` | `theorem_grade_weighted_cycle_absolute_attachment` | `weighted_cycle_bridge_rigid_absolute_family` | `code/particles/runs/neutrino/neutrino_absolute_attachment_theorem.json` |

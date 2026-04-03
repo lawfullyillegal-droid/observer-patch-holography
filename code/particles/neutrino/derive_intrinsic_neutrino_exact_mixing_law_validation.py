@@ -29,7 +29,7 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_ISOTROPIC = ROOT / "particles" / "runs" / "neutrino" / "forward_neutrino_closure_bundle.json"
+DEFAULT_ISOTROPIC = ROOT / "particles" / "runs" / "neutrino" / "forward_majorana_matrix.json"
 DEFAULT_EXACT_MAP = ROOT / "particles" / "runs" / "neutrino" / "intrinsic_neutrino_exact_eta_map.json"
 DEFAULT_OUT = ROOT / "particles" / "runs" / "neutrino" / "intrinsic_neutrino_exact_mixing_law_validation.json"
 EDGE_ORDER = ("psi12", "psi23", "psi31")
@@ -41,6 +41,15 @@ def _timestamp() -> str:
 
 def _load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _sorted_masses_gev(payload: dict[str, Any]) -> np.ndarray:
+    masses = payload.get("masses_gev_sorted")
+    if masses is None:
+        masses = payload.get("masses_sorted_gev")
+    if masses is None:
+        raise KeyError("expected masses_gev_sorted or masses_sorted_gev")
+    return np.array(masses, dtype=float)
 
 
 def _centered_eta(payload: dict[str, Any]) -> np.ndarray:
@@ -133,8 +142,8 @@ def main() -> int:
         / (2.0 * a_value * math.cos(phi) + rho_value)
     )
 
-    m2_iso = np.array(isotropic["masses_gev_sorted"], dtype=float) ** 2
-    m2_ani = np.array(exact_map["masses_gev_sorted"], dtype=float) ** 2
+    m2_iso = _sorted_masses_gev(isotropic) ** 2
+    m2_ani = _sorted_masses_gev(exact_map) ** 2
     solar_actual = float(m2_ani[1] - m2_ani[0])
     dm31_actual = float(m2_ani[2] - m2_ani[0])
     dm32_actual = float(m2_ani[2] - m2_ani[1])

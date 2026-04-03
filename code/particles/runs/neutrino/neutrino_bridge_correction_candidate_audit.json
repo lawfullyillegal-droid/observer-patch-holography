@@ -65,9 +65,9 @@
     "exact_residual_moduli_space": "R_{>0}",
     "symbol": "C_nu"
   },
-  "generated_utc": "2026-04-02T13:46:29Z",
+  "generated_utc": "2026-04-03T03:30:51Z",
   "hard_guard": {
-    "reason": "C_nu is a smaller exact bridge object, but every formula emitted here is still selected by compare-only search. This audit sharpens the gap honestly; it does not prove C_nu or B_nu is emitted theorem-grade.",
+    "reason": "C_nu is a smaller exact bridge object, but every formula emitted here is still selected by compare-only search. This audit remains diagnostic-only beneath the emitted theorem pair and does not emit an independent bridge theorem.",
     "status": "do_not_promote"
   },
   "induced_target_containing_bridge_scalar_window": {
@@ -82,6 +82,7 @@
     "proxy_value": 6.699825740519345,
     "relative_half_width": 0.0010738792750484857
   },
+  "must_not_feed_back": true,
   "primary_target_containing_correction_window": {
     "candidate_count": 2,
     "contains_compare_only_target": true,
@@ -133,6 +134,7 @@
     ],
     "selection_rule": "Choose one candidate per route family that still contains the live compare-only target while minimizing relative half-width; total algebraic complexity and route-local compare-only error break ties."
   },
+  "proof_chain_role": "diagnostic_only_retired_from_theorem_lane",
   "public_promotion_allowed": false,
   "route_selection_rule": {
     "core_correction_route": "Search directly on the core residual scalar pool for C_nu.",
@@ -317,78 +319,78 @@
     {
       "complexity": 3,
       "exponents": [
-        -1.0,
-        -0.5,
-        0.5
+        0.5,
+        -2.0,
+        1.0
       ],
-      "formula": "chi^-1 * prod_qbar^-0.5 * doublet_center_over_mstar^0.5",
+      "formula": "ratio_hat^0.5 * sum_gap^-2 * heavy_light_gap_over_mstar",
       "keys": [
-        "chi",
-        "prod_qbar",
-        "doublet_center_over_mstar"
+        "ratio_hat",
+        "sum_gap",
+        "heavy_light_gap_over_mstar"
       ],
-      "relative_error": 0.0003090189365055033,
+      "relative_error": 0.0007474008659781744,
       "route_id": "family_correction_top_2",
       "route_kind": "direct_search_using_family_assisted_scales_for_C_nu",
       "source_artifact": "oph_neutrino_residual_amplitude_candidate_audit",
-      "value": 0.9992384769437597
-    },
-    {
-      "complexity": 3,
-      "exponents": [
-        2.0,
-        -0.5,
-        -1.0
-      ],
-      "formula": "chi^2 * sum_gap^-0.5 * doublet_center_over_mstar^-1",
-      "keys": [
-        "chi",
-        "sum_gap",
-        "doublet_center_over_mstar"
-      ],
-      "relative_error": 0.0003830640594283923,
-      "route_id": "family_correction_top_3",
-      "route_kind": "direct_search_using_family_assisted_scales_for_C_nu",
-      "source_artifact": "oph_neutrino_residual_amplitude_candidate_audit",
-      "value": 0.999164465336917
+      "value": 0.998800293445235
     },
     {
       "complexity": 3,
       "exponents": [
         -2.0,
         0.5,
-        -0.5
+        -1.0
       ],
-      "formula": "gamma^-2 * sum_defect^0.5 * doublet_center_over_mstar^-0.5",
+      "formula": "gamma^-2 * doublet_center_over_mstar^0.5 * solar_response_over_mstar^-1",
       "keys": [
         "gamma",
-        "sum_defect",
-        "doublet_center_over_mstar"
+        "doublet_center_over_mstar",
+        "solar_response_over_mstar"
       ],
-      "relative_error": 0.0005390936613063848,
-      "route_id": "family_correction_top_4",
+      "relative_error": 0.0011970596435218464,
+      "route_id": "family_correction_top_3",
       "route_kind": "direct_search_using_family_assisted_scales_for_C_nu",
       "source_artifact": "oph_neutrino_residual_amplitude_candidate_audit",
-      "value": 0.9990085063609014
+      "value": 0.9983508382030369
     },
     {
       "complexity": 3,
       "exponents": [
-        0.5,
         -0.5,
-        -0.5
+        2.0,
+        -1.0
       ],
-      "formula": "gamma^0.5 * heavy_light_gap_over_mstar^-0.5 * solar_response_over_mstar^-0.5",
+      "formula": "ratio_hat^-0.5 * sum_gap^2 * heavy_light_gap_over_mstar^-1",
+      "keys": [
+        "ratio_hat",
+        "sum_gap",
+        "heavy_light_gap_over_mstar"
+      ],
+      "relative_error": 0.0016545404925089498,
+      "route_id": "family_correction_top_4",
+      "route_kind": "direct_search_using_family_assisted_scales_for_C_nu",
+      "source_artifact": "oph_neutrino_residual_amplitude_candidate_audit",
+      "value": 1.0012011475793892
+    },
+    {
+      "complexity": 3,
+      "exponents": [
+        2.0,
+        -0.5,
+        1.0
+      ],
+      "formula": "gamma^2 * doublet_center_over_mstar^-0.5 * solar_response_over_mstar",
       "keys": [
         "gamma",
-        "heavy_light_gap_over_mstar",
+        "doublet_center_over_mstar",
         "solar_response_over_mstar"
       ],
-      "relative_error": 0.0007130738026744994,
+      "relative_error": 0.002105483053849524,
       "route_id": "family_correction_top_5",
       "route_kind": "direct_search_using_family_assisted_scales_for_C_nu",
       "source_artifact": "oph_neutrino_residual_amplitude_candidate_audit",
-      "value": 0.9988346049705996
+      "value": 1.0016518860242871
     }
   ],
   "top_normalizer_quotient_candidates": [

@@ -60,7 +60,11 @@ part of this canonical tree.
   neutrino/derive_majorana_holonomy_lift.py ->
   neutrino/derive_majorana_phase_pullback_metric.py ->
   neutrino/build_forward_majorana_matrix.py ->
-  neutrino/build_forward_splittings.py`
+  neutrino/build_forward_splittings.py ->
+  neutrino/derive_neutrino_weighted_cycle_repair.py ->
+  neutrino/derive_neutrino_bridge_rigidity_theorem.py ->
+  neutrino/derive_neutrino_absolute_attachment_theorem.py ->
+  neutrino/export_forward_neutrino_closure_bundle.py`
 - hadrons:
   `qcd/derive_lambda_msbar_descendant.py ->
   hadron/derive_full_unquenched_correlator.py ->
@@ -94,6 +98,20 @@ part of this canonical tree.
 - derivation graph:
   [particle_mass_derivation_graph.svg](/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/particle_mass_derivation_graph.svg)
 
+## Current Quark Boundary
+
+- present-premise no-go artifact:
+  [quark_current_premise_no_go_theorem.json](/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/flavor/quark_current_premise_no_go_theorem.json)
+- minimal-extension closure artifact:
+  [quark_minimal_extension_closure_theorem.json](/Users/muellerberndt/Projects/oph-meta/reverse-engineering-reality/code/particles/runs/flavor/quark_minimal_extension_closure_theorem.json)
+
+These two artifacts fix the current quark theorem boundary. On the present
+premise set, the corpus does not emit the three closure objects
+`Theta_ud^mass`, `Theta_ud^phys`, and `Theta_ud^abs`. The exact next objects to
+compute are the minimal extension triple `H_mass : ell_ud = log(c_d / c_u)`,
+`H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys`, and
+`H_abs : A_q^phys : Sigma_ud^phys -> R`.
+
 ## Typical Rebuild
 
 From `reverse-engineering-reality/code/particles`:
@@ -103,6 +121,10 @@ python3 calibration/derive_d10_ew_w_anchor_neutral_shear_factorization.py
 python3 calibration/derive_d10_ew_source_transport_readout.py
 python3 calibration/derive_d10_ew_exactness_audit.py
 python3 calibration/derive_d11_reference_exact_adapter.py
+python3 neutrino/derive_neutrino_weighted_cycle_repair.py
+python3 neutrino/derive_neutrino_bridge_rigidity_theorem.py
+python3 neutrino/derive_neutrino_absolute_attachment_theorem.py
+python3 neutrino/export_forward_neutrino_closure_bundle.py
 python3 neutrino/derive_neutrino_two_parameter_exact_adapter.py
 python3 hadron/derive_runtime_schedule_receipt_n_therm_and_n_sep.py
 python3 hadron/derive_stable_channel_sequence_evaluation.py

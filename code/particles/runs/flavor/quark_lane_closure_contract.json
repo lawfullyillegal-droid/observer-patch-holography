@@ -1,0 +1,212 @@
+{
+  "artifact": "oph_quark_lane_closure_contract",
+  "closure_chain": [
+    "(axioms + light-data transport) => Theta_ud^mass = quark_d12_t1_value_law => t1 => (Delta_ud_overlap, eta_Q_centered, kappa_Q, tau_u, tau_d)",
+    "(axioms + same-label left-handed sector data) => Theta_ud^phys = quark_physical_sigma_ud_lift => Sigma_ud^phys = (sigma_id, tau, U_uL, U_dL, V_CKM, I_CKM)",
+    "(axioms + Sigma_ud^phys) => Theta_ud^abs = quark_absolute_sector_readout_theorem => (g_u, g_d) => (m_u, m_d, m_s, m_c, m_b, m_t)"
+  ],
+  "continuation_only_mass_sidecar": {
+    "artifact": "oph_quark_d12_internal_backread_continuation_closure",
+    "closed_mass_side_package": {
+      "Delta_ud_overlap": 0.13431740757663183,
+      "eta_Q_centered": -0.018210067243314802,
+      "kappa_Q": -0.012436796997836279,
+      "t1": 0.6715870378831591
+    },
+    "closed_source_side_package": {
+      "B_ord": [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "J_B_source_d": -0.06715870378831591,
+      "J_B_source_u": 0.06715870378831591,
+      "beta_d_diag_B_source": -0.06715870378831591,
+      "beta_u_diag_B_source": 0.06715870378831591,
+      "source_readback_d_log_per_side": [
+        0.06715870378831591,
+        -0.0,
+        -0.06715870378831591
+      ],
+      "source_readback_u_log_per_side": [
+        -0.06715870378831591,
+        0.0,
+        0.06715870378831591
+      ],
+      "tau_d_log_per_side": -0.06715870378831591,
+      "tau_u_log_per_side": 0.06715870378831591
+    },
+    "scope": "D12_continuation_internal_backread_only",
+    "theorem_boundary_note": "This sidecar closes the D12 mass-side scalar package numerically on an internal backread continuation surface. It does not replace the public theorem-grade frontier quark_d12_t1_value_law, does not alter the active builder's primary-path open payload pair, and does not repair the wrong-sheet CKM boundary."
+  },
+  "exact_missing_theorems": [
+    {
+      "builder_reduction_beneath_public_frontier": {
+        "conditional_on": "pure_B_readback_payload_law",
+        "source_readback_d_log_per_side": "(+t1/10, 0, -t1/10)",
+        "source_readback_u_log_per_side": "(-t1/10, 0, +t1/10)"
+      },
+      "equivalently_emits": [
+        "ray_modulus",
+        "Delta_ud_overlap",
+        "eta_Q_centered",
+        "kappa_Q"
+      ],
+      "id": "quark_d12_t1_value_law",
+      "induced_formulas": {
+        "Delta_ud_overlap": "t1 / 5",
+        "eta_Q_centered": "-((1 - x2^2) / 27) * t1",
+        "kappa_Q": "-t1 / 54"
+      },
+      "mathematical_name": "Theta_ud^mass",
+      "minimal_light_branch": {
+        "epsilon": "1/6",
+        "light_isospin_breaking_scalar": "Delta_ud_overlap = (1/6) * log(c_d / c_u)",
+        "textures": [
+          "y_u = c_u * epsilon^6",
+          "y_d = c_d * epsilon^6"
+        ]
+      },
+      "must_emit": "t1",
+      "must_not_use_ckm_cp": true,
+      "must_not_use_target_masses": true,
+      "odd_source_pair_forced_by_mass_scalar": {
+        "beta_d_diag_B_source": "-t1 / 10",
+        "beta_u_diag_B_source": "t1 / 10",
+        "source_readback_d_log_per_side": "(+t1/10, 0, -t1/10)",
+        "source_readback_u_log_per_side": "(-t1/10, 0, +t1/10)",
+        "tau_d": "sigma_u * t1 / (10 * (sigma_u + sigma_d))",
+        "tau_u": "sigma_d * t1 / (10 * (sigma_u + sigma_d))"
+      },
+      "role": "mass_side_value_law_on_emitted_D12_mass_ray",
+      "same_family_d12_hypercharge_law": {
+        "C1": "C_1(Y) = (3/5) * Y^2",
+        "difference": "C_1(u^c) - C_1(d^c) = 1/5",
+        "equivalent_scalar_identities": [
+          "log(c_d / c_u) = (6/5) * t1",
+          "t1 = 5 * Delta_ud_overlap = (5/6) * log(c_d / c_u)"
+        ],
+        "ray_identity": "Delta_ud_overlap = t1 / 5"
+      },
+      "step": 1,
+      "target_free_map": {
+        "codomain": "R_{>= 0}",
+        "domain": "G_ud^light",
+        "formula": "Theta_ud^mass(OPH light data) = t1"
+      }
+    },
+    {
+      "current_exact_obstruction": "No sector-attached lift or equivalence currently identifies the common-refinement self-overlap matrix with an emitted same-label left-handed Sigma_ud element.",
+      "current_negative_closure": {
+        "selected_sigma": "sigma_ref",
+        "statement": "On the emitted local solver surface, sigma_ud closes to sigma_ref and the selected-branch CKM invariants are exactly the current D12 sheet invariants. Those invariants still miss the physical shell, so local branch repair is impossible on the present corpus."
+      },
+      "id": "quark_physical_sigma_ud_lift",
+      "mathematical_name": "Theta_ud^phys",
+      "must_emit": "{sigma_id, canonical_token, U_u_left, U_d_left, V_CKM, ckm_invariants}",
+      "must_not_use_compare_fit_masses": true,
+      "physical_carrier": {
+        "definition": "{(sigma_id, tau, U_uL, U_dL, V_CKM, I_CKM) : V_CKM = U_uL^dagger U_dL} / ~",
+        "equivalence_relation": "(U_uL, U_dL, V) ~ (U_uL D_u, U_dL D_d, D_u^dagger V D_d) for diagonal D_u, D_d in U(1)^3",
+        "name": "Sigma_ud^phys"
+      },
+      "quotient_section_form": {
+        "compare_only_frame_signal": "[F_0^dagger F_1]",
+        "missing_theorem": "a sector-attached section s_phys with pi o s_phys = id on the physical frame class",
+        "projection": "pi: Sigma_ud^phys -> F_ud / (U(1)^3 x U(1)^3), sending a same-label left-handed datum to its frame-overlap class [V_CKM]"
+      },
+      "role": "sector_attached_same_label_left_handed_lift_to_physical_ckm_shell",
+      "step": 2
+    },
+    {
+      "affine_mean_split_law": {
+        "A_ud": "1 / (2 * (1 + rho_ord - x2^2))",
+        "B_ud": "1 / (2 * (1 - x2^2 - x2^2 / (1 + rho_ord)))",
+        "eta_ud": "(sigma_u - sigma_d) / 2",
+        "g_d": "g_ch * exp(-(A_ud * sigma_seed_ud + B_ud * eta_ud))",
+        "g_u": "g_ch * exp(-(A_ud * sigma_seed_ud - B_ud * eta_ud))",
+        "rho_ord": 1.2942849363777058,
+        "sigma_seed_ud": "(sigma_u + sigma_d) / 2",
+        "x2": -0.5175863354681689
+      },
+      "current_candidate_surface": {
+        "artifact": "oph_quark_sector_mean_split",
+        "candidate_formulas": {
+          "g_d": "g_ch * exp(-(A_ud * sigma_seed_ud + B_ud * eta_ud))",
+          "g_u": "g_ch * exp(-(A_ud * sigma_seed_ud - B_ud * eta_ud))"
+        },
+        "g_d_candidate": 0.12172551081512113,
+        "g_u_candidate": 0.7797392875757557,
+        "theorem_scope": "current_family_only"
+      },
+      "current_exact_obstruction": {
+        "certification_status": "placeholder_unpromotable",
+        "forward_artifact": "oph_forward_yukawas",
+        "promotion_blockers": [
+          "quark_even_excitation_candidate_only",
+          "quark_source_mode_unresolved",
+          "quark_b_odd_source_values_open"
+        ],
+        "reason": "The current absolute sector scales live only on a current-family candidate surface; the forward Yukawa artifact remains non-promotable until the spread emitter is theorem-fed."
+      },
+      "id": "quark_absolute_sector_readout_theorem",
+      "mathematical_name": "Theta_ud^abs",
+      "must_be_on_physical_sheet": true,
+      "must_be_target_free": true,
+      "must_emit": [
+        "g_u",
+        "g_d"
+      ],
+      "ordered_three_point_readout": {
+        "d_sector": "(m_d, m_s, m_b) = g_d * (exp(E_d,1^log), exp(E_d,2^log), exp(E_d,3^log))",
+        "u_sector": "(m_u, m_c, m_t) = g_u * (exp(E_u,1^log), exp(E_u,2^log), exp(E_u,3^log))"
+      },
+      "role": "target_free_absolute_sector_scales_on_physical_sheet",
+      "selected_sheet_alignment": {
+        "g_d_candidate": 0.12172551081512113,
+        "g_d_exact_selected_sheet": 0.12249897208633505,
+        "g_u_candidate": 0.7797392875757557,
+        "g_u_exact_selected_sheet": 0.7796501962057188
+      },
+      "step": 3
+    }
+  ],
+  "exact_sidecar_mass_surface": {
+    "artifact": "oph_quark_current_family_exact_readout",
+    "closure_statement": "On the emitted same-label left-handed selected sheet sigma_ref and the fixed ordered three-point family, the target-anchored quadratic readout together with the exact sector geometric means g_u and g_d emit one exact same-family quark sextet. This closes the selected-sheet exact readout chain on current_family_only.",
+    "exact_outputs_gev": {
+      "b": 4.182999999999994,
+      "c": 1.2729999999999995,
+      "d": 0.004700000000000002,
+      "s": 0.09349999999999999,
+      "t": 172.3523553288311,
+      "u": 0.0021599999999999996
+    },
+    "exact_sector_geometric_means": {
+      "g_d": 0.12249897208633505,
+      "g_u": 0.7796501962057188
+    },
+    "scope": "current_family_only",
+    "selected_sheet": "sigma_ref"
+  },
+  "generated_utc": "2026-04-03T03:30:38Z",
+  "mass_comparison_surface": {
+    "kind": "running_mass_comparison_surface",
+    "note": "Quark references are running masses, not asymptotic free-particle pole masses."
+  },
+  "notes": [
+    "The exact current-family witness and the D12 internal backread sidecar exhibit the mass data on sidecar surfaces, but they do not promote the public quark theorem lane.",
+    "The selected local same-label left-handed sheet closes negatively to sigma_ref; the remaining physical quark burden is not another local selector search.",
+    "Full end-to-end physical quark closure waits on three exact theorem objects: the D12 one-scalar value law, a sector-attached physical CKM lift, and a target-free absolute sector readout on that physical sheet."
+  ],
+  "proof_status": "three_exact_missing_theorems_identified_exact_sidecar_masses_recorded",
+  "public_promotion_allowed": false,
+  "scope": "quark_lane_theorem_boundary_plus_exact_sidecars",
+  "selected_local_sheet_status": {
+    "proof_status": "closed_current_family_selected_sheet_exact_readout",
+    "sigma_id": "sigma_ref",
+    "theorem_scope": "current_family_only",
+    "why_not_enough": "On the emitted local solver surface, sigma_ud closes to sigma_ref and the selected-branch CKM invariants are exactly the current D12 sheet invariants. Those invariants still miss the physical shell, so local branch repair is impossible on the present corpus.",
+    "wrong_branch_for_physical_ckm_shell": true
+  }
+}

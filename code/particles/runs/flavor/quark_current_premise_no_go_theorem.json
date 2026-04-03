@@ -1,0 +1,33 @@
+{
+  "artifact": "oph_quark_current_premise_no_go_theorem",
+  "status": "theorem_grade_boundary_emitted",
+  "premise_set": "P := p_a + Axioms 1-5 + Assumption 6 + emitted OPH nodes D1-D10 + current public D12 quark objects",
+  "theorem_statement": "On the present premise set P, the corpus does not emit Theta_ud^mass, Theta_ud^phys, or Theta_ud^abs.",
+  "non_derivable_objects": [
+    {
+      "id": "Theta_ud^mass",
+      "artifact": "quark_d12_t1_value_law",
+      "reason": "P emits the D12 one-parameter mass ray but not a theorem-grade nonzero modulus t1."
+    },
+    {
+      "id": "Theta_ud^phys",
+      "artifact": "sector_attached_same_label_left_handed_lift_to_physical_ckm_shell",
+      "reason": "P emits the negative selector closure sigma_ref and no sector-attached same-label left-handed lift from sigma_ref to the physical CKM shell."
+    },
+    {
+      "id": "Theta_ud^abs",
+      "artifact": "target_free_physical_sheet_sector_readout",
+      "reason": "P carries the affine mean split only on a target-anchored current_family_only witness and does not emit target-free physical-sheet scales (g_u, g_d)."
+    }
+  ],
+  "sidecar_status": {
+    "selected_sheet_exact_witness": "current_family_only",
+    "d12_internal_backread_scalar_package": "continuation_only",
+    "transport_frame_overlap_witness": "compare_only_not_sector_attached"
+  },
+  "next_exact_objects_to_compute": [
+    "H_mass : ell_ud = log(c_d / c_u)",
+    "H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys",
+    "H_abs : A_q^phys : Sigma_ud^phys -> R"
+  ]
+}

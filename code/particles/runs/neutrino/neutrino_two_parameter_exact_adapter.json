@@ -32,13 +32,15 @@
     "relative_tau_shift_from_live_midpoint": -0.0028293419919025453,
     "tau_nu": 0.49717065800809745
   },
-  "generated_utc": "2026-04-02T13:46:30Z",
+  "generated_utc": "2026-04-03T03:30:52Z",
+  "must_not_feed_back": true,
   "notes": [
     "The exact fit is achieved on the existing positive selector segment; no new theorem object is claimed.",
     "The exact match uses two compare-only degrees of freedom: tau_nu fixes the dimensionless ratio and lambda_nu fixes the overall positive scale.",
-    "This exact adapter is stronger than the older one-observable atmospheric-only and solar-only slices, but it remains non-promotable until the live theorem lane emits C_nu."
+    "This exact adapter is stronger than the older one-observable atmospheric-only and solar-only slices, but it remains diagnostic-only beneath the emitted theorem pair."
   ],
   "promotable": false,
+  "proof_chain_role": "diagnostic_only_retired_from_theorem_lane",
   "proof_status": "compare_only_exact_two_parameter_continuation_adapter",
   "reference_central_values": {
     "delta_m21_sq_eV2": 7.49e-05,
@@ -68,7 +70,7 @@
   },
   "theorem_boundary": {
     "forbidden_feedback": "compare_only_segment_adapter_must_not_feed_back_into_theorem_state_or_C_nu_emission",
-    "statement": "This adapter solves exact representative PDG central splittings only by moving along the already-explicit positive selector segment and then rescaling the resulting scale-free branch. The live theorem lane still waits on the reduced bridge-correction invariant C_nu and therefore does not emit a theorem-grade absolute neutrino spectrum.",
+    "statement": "This adapter solves exact representative PDG central splittings only by moving along the already-explicit positive selector segment and then rescaling the resulting scale-free branch. The proof-facing theorem lane runs through the emitted bridge-rigidity and absolute-attachment pair, so this segment adapter remains diagnostic-only and does not emit an independent neutrino theorem.",
     "status": "non_promotable_compare_only_segment_and_scale_inverse_adapter"
   }
 }

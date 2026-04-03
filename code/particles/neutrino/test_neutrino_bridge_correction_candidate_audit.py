@@ -25,6 +25,8 @@ def test_neutrino_bridge_correction_candidate_audit() -> None:
     payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
     assert payload["artifact"] == "oph_neutrino_bridge_correction_candidate_audit"
     assert payload["status"] == "compare_only_reduced_bridge_correction_search"
+    assert payload["proof_chain_role"] == "diagnostic_only_retired_from_theorem_lane"
+    assert payload["must_not_feed_back"] is True
     exact = payload["exact_target_scalar"]
     assert exact["symbol"] == "C_nu"
     assert exact["bridge_reconstruction"] == "B_nu = (I_nu^0.5 * ratio_hat^0.5 * sum_defect^-1) * C_nu"
