@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-04-04T09:29:51.444256Z",
+  "generated_at": "2026-04-04T09:48:26.391010Z",
   "papers": {
     "deriving_the_particle_zoo_from_observer_consistency": {
       "pdf_path": "paper/deriving_the_particle_zoo_from_observer_consistency.pdf",
-      "sha256": "486bac19a65a8b53895fda5dc4f6ab3b58f3a2e7f01ff5788b10a2d90aeb15c9",
-      "size_bytes": 294526
+      "sha256": "c7e824820810db9914a63fadc1dec95e9a4b038c2014f4ded4069a62e4089b23",
+      "size_bytes": 294605
     },
     "observers_are_all_you_need": {
       "pdf_path": "paper/observers_are_all_you_need.pdf",
-      "sha256": "0b85fcf4892254dec871f67c7936f35d42783ec0e54e6a60ce212d9844bbfb79",
+      "sha256": "0376a64685e086036a575624119e863caa2b43b8ab35be4465d6964672a578e9",
       "size_bytes": 466590
     },
     "reality_as_consensus_protocol": {
       "pdf_path": "paper/reality_as_consensus_protocol.pdf",
-      "sha256": "0721873261219e51c61ecf202037769f870bebcb1b1f18bd26eecfd8b8b93ce6",
-      "size_bytes": 117378
+      "sha256": "95c70134e32dccc860eadf068f174b29d1e1ddd6ed02281a7affa508340d0134",
+      "size_bytes": 117455
     },
     "recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact": {
       "pdf_path": "paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf",
-      "sha256": "b1681a39d05006300194a9d522265da1f29d624fe051a5b5b57ea335e4721b37",
-      "size_bytes": 419479
+      "sha256": "edd3db5fd18b5cf45965408c9f4043c1f4455836a9631c7f42a88c6577574aa0",
+      "size_bytes": 419477
     },
     "screen_microphysics_and_observer_synchronization": {
       "pdf_path": "paper/screen_microphysics_and_observer_synchronization.pdf",
-      "sha256": "e8da06d0160dd3e6ee766e767245ae2124e7d0dd4e8904da404354df163cb9e2",
+      "sha256": "0020628f5ebf3076417d5073d630ce3eae993d1c0f3beec4091f3bc2de844e0a",
       "size_bytes": 212977
     }
   },
-  "release_id": "r1373",
+  "release_id": "r1374",
   "released_at": "April 4, 2026"
 }

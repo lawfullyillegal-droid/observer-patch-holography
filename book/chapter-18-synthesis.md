@@ -207,7 +207,7 @@ Under the bridge assumptions above, the model yields:
 3. **The Standard Model gauge group** $SU(3) \times SU(2) \times U(1)/\mathbb{Z}_6$, reconstructed from edge-sector fusion rules and a minimality principle
 4. **Three generations, three colors**: fixed by anomaly cancellation and the minimality principle
 5. **Massless gauge bosons and graviton**: forced by emergent gauge and diffeomorphism invariance, which forbid mass terms
-6. **A particle story with clear landmarks**: photon, gluons, graviton, W, and Z are fixed; the Higgs, top quark, and several quark masses sit on explicit quantitative lanes; the weighted-cycle neutrino branch carries an emitted theorem-grade absolute family; charged leptons, the minimal quark extension triple beyond the local `sigma_ref` selector closure, and hadrons are the hard remaining pieces
+6. **A particle story with clear landmarks**: photon, gluons, graviton, W, and Z are fixed; the Higgs, top quark, and several quark masses sit on explicit quantitative lanes; the weighted-cycle neutrino branch carries an emitted theorem-grade absolute family; charged leptons, the remaining three-object quark extension beyond the selected continuation branch, and hadrons are the hard remaining pieces
 
 The photon and graviton are forced by the axiom chain. The framework reaches deep into particle physics and goes far beyond a vague gesture in that direction.
 
@@ -257,19 +257,19 @@ The pixel area is *extracted* from measured constants. A genuine prediction woul
 
 ![The Pixel Constant](../assets/pixel-constant.svg)
 
-That same local calibration surface organizes the numerical unification story. The bosonic route is `P -> alpha_U -> (t_U, t_tr) -> v -> (M_W, M_Z)`, and the D11 Higgs/top seed adds `$\\sigma_{D11,HT} = \\alpha_U \\cos(2\\theta_{W0}) / \\sqrt{\\pi}$` and then `M_H`. The gravity route is `$\\bar\\ell_{SU(2)}(t_{2,\\mathrm{run}}) + \\bar\\ell_{SU(3)}(t_{3,\\mathrm{run}}) = P/4$` together with `G = a_cell / (4 ellbar_shared)`. The invariant causal speed belongs to the Lorentz branch and receives its SI display through the local readout package.
+That same local calibration surface organizes the numerical unification story. The bosonic route is `P -> alpha_U -> (t_U, t_tr) -> v -> (M_W, M_Z)`, and the closed one-scalar Higgs/top seed adds the Higgs-side scalar and then `M_H`. The gravity route is `$\\bar\\ell_{SU(2)}(t_{2,\\mathrm{run}}) + \\bar\\ell_{SU(3)}(t_{3,\\mathrm{run}}) = P/4$` together with `G = a_cell / (4 ellbar_shared)`. The invariant causal speed belongs to the Lorentz branch and receives its SI display through the local readout package.
 
 | Quantity | OPH chain | Display value | Claim surface |
 | --- | --- | --- | --- |
-| `c` | Lorentz branch + `LocalFamiliarUnitReadoutPackage` | `299792458 m/s` | structural causal-speed output with SI readout |
+| `c` | Lorentz branch + local SI readout | `299792458 m/s` | structural causal-speed output with SI readout |
 | `G` | `P -> a_cell`, `ellbar_shared`, `G = a_cell / (4 ellbar_shared)` | `6.674299995910528e-11 m^3 kg^-1 s^-2` | exact emitted branch value on the declared local exact-release surface |
-| `W` | `P -> alpha_U -> (t_U, t_tr) -> v -> M_W` | `80.377 GeV` | exact codomain on the D10 chart-identity surface |
-| `Z` | `P -> alpha_U -> (t_U, t_tr) -> v -> M_Z` | `91.18797809193725 GeV` | exact codomain on the D10 chart-identity surface |
-| `H` | `P -> alpha_U -> (t_U, t_tr) -> sigma_D11,HT -> M_H` | `125.1995304097179 GeV` | exact codomain on the D11 live-forward exactification surface |
+| `W` | `P -> alpha_U -> (t_U, t_tr) -> v -> M_W` | `80.377 GeV` | exact codomain on the target-free electroweak identity surface |
+| `Z` | `P -> alpha_U -> (t_U, t_tr) -> v -> M_Z` | `91.18797809193725 GeV` | exact codomain on the target-free electroweak identity surface |
+| `H` | `P -> alpha_U -> (t_U, t_tr) -> Higgs scalar -> M_H` | `125.1995304097179 GeV` | exact codomain on the closed one-scalar Higgs/top surface |
 
 ![OPH unification diagram](../assets/OPH_Unification_Diagram.svg)
 
-The boundary of this local package consists of five explicit objects: `LocalFamiliarUnitReadoutPackage`, `SharedEdgeEntropyBridge`, `StrictClassicalBranchReleaseClause`, `EWTargetFreeRepairChartIdentity_D10`, and `D11LiveForwardExactHiggsPromotion`. The same calibrated local input therefore organizes the classical gravity coupling and the electroweak boson/Higgs mass scale within one diagrammatic surface, while `c` enters as the structural Lorentz output displayed in local SI units.
+The boundary of this local package consists of five explicit pieces: the local SI readout package, the shared-edge entropy bridge, the strict classical branch clause, the target-free electroweak identity surface, and the closed one-scalar Higgs/top promotion surface. The same calibrated local input therefore organizes the classical gravity coupling and the electroweak boson/Higgs mass scale within one diagrammatic surface, while `c` enters as the structural Lorentz output displayed in local SI units.
 
 ### The Measurement Problem
 
@@ -301,9 +301,9 @@ The Hilbert space is finite-dimensional. The second fundamental parameter, **scr
 
 ## 18.8 The Remaining Frontier
 
-The core picture has definite physical content. The framework recovers the Standard Model gauge group, three generations, three colors, massless photon/gluons/graviton, and the absence of gauge-mediated proton decay. On top of that, it has a full exact non-hadron output lane on disk: exact `W/Z` on the frozen-repair surface, a closed Higgs/top forward seed together with a compare-only exact inverse pair on the same D11 Jacobian, an exact same-family charged witness with its affine coordinate closed on the fixed witness, an exact same-family quark witness on the selected `sigma_ref` sheet, and an emitted weighted-cycle neutrino theorem branch with `C_nu = sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5 = 0.9994295999075177`, `P_nu = 6.699825740519345`, `B_nu = 6.696004159297337`, and `(m1, m2, m3) = (0.017454720257976796, 0.019481987935919015, 0.05307522145074924) eV`. The charged-lepton boundary sits at `C_hat_e^{cand}` and the post-promotion lift whose descended scalar is `mu_phys(Y_e)`, with `charged_physical_identity_mode_equalizer` beneath that scalar. The maximal theorem-emitted quark package on the present ledger is the D12 mass ray, the negative selector `sigma_ref`, and the restricted-scope affine mean package with `g_ch = 0.9231656602589082` on `shared_budget_only` and `(g_u, g_d) = (0.7797392875757557, 0.12172551081512113)` on `current_family_only`; the exact minimal extension triple above that package is `H_mass : ell_ud = log(c_d / c_u)`, `H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys`, and `H_abs : A_q^phys : Sigma_ud^phys -> R`. Hadron masses sit outside the current roadmap because the remaining step is a production backend export bundle plus nonperturbative execution and systematics work rather than an additional realistic symbolic theorem target. On the gravity side, the UV/BW internalization frontier is explicit: first the canonical scaling-limit geometric cap-pair realization from transported cap marginals on the geometric subnet, then ordered cut-pair rigidity on that realized limit. Beneath the first object, the smallest lower blocker is the eventual fixed-local-collar modular-transport common floor.
+The core picture has definite physical content. The framework recovers the Standard Model gauge group, three generations, three colors, massless photon/gluons/graviton, and the absence of gauge-mediated proton decay. On top of that, it has a full exact non-hadron output lane on disk: exact `W/Z` on the frozen-repair surface, a closed Higgs/top forward seed together with a compare-only exact inverse pair on the same Jacobian, an exact same-family charged witness with its affine coordinate closed on the fixed witness, an exact same-family quark witness on the selected continuation branch, and an emitted weighted-cycle neutrino theorem branch with `(m1, m2, m3) = (0.017454720257976796, 0.019481987935919015, 0.05307522145074924) eV`. The charged-lepton boundary has been reduced to the final promotion and absolute-normalization step. The maximal theorem-emitted quark package on the present ledger consists of a continuation ray, a selected negative-sign branch, and restricted-scope affine-mean data; the remaining exact minimal extension is a three-object package that fixes the mass-ratio, physical-sheet, and absolute-normalization data. Hadron masses sit outside the current roadmap because the remaining step is a production backend export bundle plus nonperturbative execution and systematics work rather than an additional realistic symbolic theorem target. On the gravity side, the UV/BW internalization frontier is explicit: first the canonical scaling-limit geometric cap-pair realization from transported cap marginals on the geometric subnet, then ordered cut-pair rigidity on that realized limit. Beneath the first object, the smallest lower blocker is the eventual fixed-local-collar modular-transport common floor.
 
-**Progress on numerical predictions.** The extraction of gauge couplings from
+**Numerical predictions.** The extraction of gauge couplings from
 edge-sector probabilities has been validated numerically in 2D gauge models.
 The key insight: sector probabilities follow a heat-kernel law weighted by
 Laplacian eigenvalues (for $\mathbb{Z}_n$: $\lambda_q = 4\sin^2(\pi q/n)$ ).
@@ -328,7 +328,7 @@ a consequence of Peter-Weyl structure plus the distinction between entropy
 The main open directions are:
 
 1. **Screen microphysics**: What exactly are the degrees of freedom on S²?
-2. **Finish the particle story**: complete charged-lepton masses, compute the minimal quark extension triple `(H_mass, H_phys, H_abs)` after the negative `sigma_ref` selector closure, and push hadrons through the backend-bundle gate into full nonperturbative computation only if hadron closure returns to scope.
+2. **Finish the particle story**: complete charged-lepton masses, compute the remaining three-object quark extension after the selected negative-sign continuation branch, and push hadrons through the backend-bundle gate into full nonperturbative computation only if hadron closure returns to scope.
 3. **Dynamics and gravity**: Can local horizon thermodynamics be made fully internal?
 4. **Cosmology**: What fixes Λ and the initial low‑entropy condition?
 5. **Numerical predictions**: Implement SU(2)/SU(3) quantum link models and
@@ -402,10 +402,10 @@ For the book, the particle story looks like this:
 | Lane | Exact outputs | Caveat |
 | --- | --- | --- |
 | Structural carriers | Photon, gluons, and graviton are exact zeros. | Theorem-grade structural exactness. |
-| Electroweak exact sidecar | Exact frozen-repair `W/Z` pair. | Compare-only beneath the target-free D10 theorem. |
-| Higgs/top D11 branch | Closed one-scalar forward seed for the public Higgs/top rows, plus an exact Higgs/top inverse pair. | The public D11 rows are secondary-quantitative forward outputs; the inverse pair is compare-only. |
-| Charged exact witness | Exact same-family `(e, μ, τ)` triple, with the affine coordinate closed on that fixed witness. | Same-family-only; the theorem lane runs through `C_hat_e^{cand}` and the post-promotion lift whose descended scalar is `mu_phys(Y_e)`, with `charged_physical_identity_mode_equalizer` beneath that scalar. |
-| Quark exact witness | Exact same-family `(u, d, s, c, b, t)` sextet on the selected `sigma_ref` sheet. | Same-family-only. The maximal theorem-emitted quark package on the present ledger is the D12 mass ray, the negative selector `sigma_ref`, and the restricted-scope affine mean package with `g_ch = 0.9231656602589082` on `shared_budget_only` and `(g_u, g_d) = (0.7797392875757557, 0.12172551081512113)` on `current_family_only`; the exact minimal extension triple above that package is `H_mass : ell_ud = log(c_d / c_u)`, `H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys`, and `H_abs : A_q^phys : Sigma_ud^phys -> R`; a continuation-only D12 internal backread sidecar fixes the mass-side scalar package numerically without removing the wrong CKM branch. |
+| Electroweak exact sidecar | Exact frozen-repair `W/Z` pair. | Compare-only beneath the target-free electroweak theorem. |
+| Higgs/top forward branch | Closed one-scalar forward seed for the public Higgs/top rows, plus an exact Higgs/top inverse pair. | The public Higgs/top rows are secondary quantitative forward outputs; the inverse pair is compare-only. |
+| Charged exact witness | Exact same-family `(e, μ, τ)` triple, with the affine coordinate closed on that fixed witness. | Same-family-only; the remaining public boundary is the final charged-lepton promotion and absolute-normalization step. |
+| Quark exact witness | Exact same-family `(u, d, s, c, b, t)` sextet on the selected continuation branch. | Same-family-only. The public theorem surface already emits a continuation ray together with restricted-scope affine-mean data, and the remaining closure is the explicit three-object extension that fixes the mass-ratio, physical-sheet, and absolute-normalization data; a continuation-only internal backread sidecar fixes the scalar package numerically without removing the wrong CKM branch. |
 | Neutrino theorem branch | Emitted weighted-cycle `(m1, m2, m3)` and emitted weighted-cycle splittings. | The theorem lane is carried by the bridge-rigidity and absolute-attachment pair; the older exact adapter remains diagnostic-only. |
 | Hardest frontier | Hadrons. | Still compute-bound behind the production backend bundle. |
 

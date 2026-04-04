@@ -18,7 +18,7 @@ OPH is a reconstruction program for fundamental physics. Spacetime, gauge struct
 
 ## Local Unification Surface
 
-OPH places a local unification surface around the calibrated local UV input. The same `P`-driven scale carries the D10/D11 bosonic lane and the gravity-side entropy lane, while the Lorentz branch supplies the invariant causal speed and the local readout package supplies the SI display.
+OPH places a local unification surface around the calibrated local UV input. The same `P`-driven scale carries the electroweak boson and Higgs lane together with the gravity-side entropy lane, while the Lorentz branch supplies the invariant causal speed and the local readout package supplies the SI display.
 
 <p align="center">
   <a href="assets/OPH_Unification_Diagram.svg" target="_blank" rel="noopener noreferrer">
@@ -26,17 +26,7 @@ OPH places a local unification surface around the calibrated local UV input. The
   </a>
 </p>
 
-<p align="center"><sub>The local UV calibration surface linking `P`, `c`, `G`, and the `W/Z/H` lane. Click to open the full SVG.</sub></p>
-
-| Quantity | OPH chain | Value on the stated surface | Status note |
-| --- | --- | --- | --- |
-| `c` | `Lorentz branch -> LocalFamiliarUnitReadoutPackage` | `299792458 m/s` | structural causal-speed output with SI readout |
-| `G` | `P -> a_cell`, `ellbar_shared`, `G = a_cell / (4 ellbar_shared)` | `6.674299995910528e-11 m^3 kg^-1 s^-2` | exact emitted branch value on the local exact-release surface |
-| `M_W` | `P -> alpha_U -> (t_U, t_tr) -> v -> M_W` | `80.377 GeV` | exact codomain on `EWTargetFreeRepairChartIdentity_D10`; public target-free row `80.377000015 GeV` |
-| `M_Z` | `P -> alpha_U -> (t_U, t_tr) -> v -> M_Z` | `91.18797809193725 GeV` | exact codomain on `EWTargetFreeRepairChartIdentity_D10`; public target-free row `91.187978078 GeV` |
-| `M_H` | `P -> alpha_U -> (t_U, t_tr) -> sigma_D11,HT -> M_H` | `125.1995304097179 GeV` | exact codomain on `D11LiveForwardExactHiggsPromotion`; public forward row `125.218922060 GeV` |
-
-The local exact-release boundary consists of `LocalFamiliarUnitReadoutPackage`, `SharedEdgeEntropyBridge`, `StrictClassicalBranchReleaseClause`, `EWTargetFreeRepairChartIdentity_D10`, and `D11LiveForwardExactHiggsPromotion`. The detailed constants/status ledger is [extra/OPH_PHYSICS_CONSTANTS.md](extra/OPH_PHYSICS_CONSTANTS.md).
+Constants, theorem chains, and open proof fronts for this surface are tracked in [extra/OPH_PHYSICS_CONSTANTS.md](extra/OPH_PHYSICS_CONSTANTS.md).
 
 **Overall theorem and derivation stack**
 
@@ -53,7 +43,7 @@ The local exact-release boundary consists of `LocalFamiliarUnitReadoutPackage`, 
 ### Theorem-grade and structural hits
 
 - Exact structural zeros for the photon, gluons, and graviton.
-- Electroweak closure on the D10 calibration chain, with target-free public `W/Z` rows and an exact frozen pair
+- Electroweak closure on the target-free calibration chain, with target-free public `W/Z` rows and an exact frozen pair
   `W = 80.377 GeV`, `Z = 91.18797809193725 GeV`.
 - A quantitative Higgs/top stage downstream of the electroweak core, with a closed one-scalar forward seed carrying the public rows
   `H = 125.218922 GeV`, `t = 172.388646 GeV`.
@@ -64,12 +54,12 @@ The local exact-release boundary consists of `LocalFamiliarUnitReadoutPackage`, 
 | --- | --- | --- |
 | Structural carriers | `m_photon = m_gluon = m_graviton = 0` | theorem-grade structural exactness |
 | Electroweak sidecar | `W = 80.377 GeV`, `Z = 91.18797809193725 GeV` | exact frozen repair surface |
-| Higgs/top exact sidecar | `(H, t) = (125.1995304097179, 172.3523553288311) GeV` | exact compare-only D11 inverse slice |
+| Higgs/top exact sidecar | `(H, t) = (125.1995304097179, 172.3523553288311) GeV` | exact compare-only inverse slice on the same Higgs/top Jacobian |
 | Charged witness | `(e, mu, tau) = (0.00051099895, 0.1056583755, 1.7769324651340912) GeV` | exact same-family witness |
 | Quark witness | `(u, d, s, c, b, t) = (0.00216, 0.00470, 0.0935, 1.273, 4.183, 172.3523553288311) GeV` | exact same-family witness |
 | Neutrino theorem branch | `(m1, m2, m3) = (0.017454720257976796, 0.019481987935919015, 0.05307522145074924) eV` with emitted weighted-cycle `Δm21²`, `Δm31²`, `Δm32²` | theorem-grade weighted-cycle bridge-rigid absolute family |
 
-Public Higgs/top rows are carried by the closed one-scalar D11 forward seed. The exact inverse pair above is a compare-only sidecar on the same Jacobian and does not replace the public forward branch.
+Public Higgs/top rows are carried by the closed one-scalar forward seed. The exact inverse pair above is a compare-only sidecar on the same Jacobian and does not replace the public forward branch.
 
 **Particle derivation stack**
 
@@ -83,7 +73,7 @@ Public Higgs/top rows are carried by the closed one-scalar D11 forward seed. The
 
 ### Continuation-grade particle successes
 
-- The quark continuation lane emits public rows for `u`, `d`, `s`, `c`, and `b` on the selected D12 sheet.
+- The quark continuation lane emits public rows for `u`, `d`, `s`, `c`, and `b` on the selected continuation branch.
 - The neutrino weighted-cycle branch reaches the observed PMNS and hierarchy regime with
   `theta12 = 34.2259°`, `theta23 = 49.7228°`, `theta13 = 8.68636°`, `delta = 305.581°`,
   and `Δm21² / Δm32² = 0.03072111`.

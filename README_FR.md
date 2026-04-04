@@ -18,7 +18,7 @@ L'OPH est un programme de reconstruction. Espace-temps, structure de jauge, part
 
 ## Surface locale d'unification
 
-L'OPH place une surface locale d'unification autour de l'entrée UV locale calibrée. La même échelle pilotée par `P` porte la voie bosonique D10/D11 et la voie entropique gravitationnelle, tandis que la branche lorentzienne fournit la vitesse causale invariante et que le paquet local de lecture fournit l'affichage SI.
+L'OPH place une surface locale d'unification autour de l'entrée UV locale calibrée. La même échelle pilotée par `P` porte la voie bosonique électrofaible et Higgs ainsi que la voie entropique gravitationnelle, tandis que la branche lorentzienne fournit la vitesse causale invariante et que le paquet local de lecture fournit l'affichage SI.
 
 <p align="center">
   <a href="assets/OPH_Unification_Diagram.svg" target="_blank" rel="noopener noreferrer">
@@ -26,17 +26,7 @@ L'OPH place une surface locale d'unification autour de l'entrée UV locale calib
   </a>
 </p>
 
-<p align="center"><sub>La surface locale de calibration UV qui relie `P`, `c`, `G` et la voie `W/Z/H`. Cliquez pour ouvrir le SVG complet.</sub></p>
-
-| Grandeur | Chaîne OPH | Valeur sur la surface indiquée | Note de statut |
-| --- | --- | --- | --- |
-| `c` | `Branche lorentzienne -> LocalFamiliarUnitReadoutPackage` | `299792458 m/s` | sortie structurelle de vitesse causale avec lecture SI |
-| `G` | `P -> a_cell`, `ellbar_shared`, `G = a_cell / (4 ellbar_shared)` | `6.674299995910528e-11 m^3 kg^-1 s^-2` | valeur exacte émise par branche sur la surface locale d'exact-release |
-| `M_W` | `P -> alpha_U -> (t_U, t_tr) -> v -> M_W` | `80.377 GeV` | codomaine exact sur `EWTargetFreeRepairChartIdentity_D10`; ligne publique target-free `80.377000015 GeV` |
-| `M_Z` | `P -> alpha_U -> (t_U, t_tr) -> v -> M_Z` | `91.18797809193725 GeV` | codomaine exact sur `EWTargetFreeRepairChartIdentity_D10`; ligne publique target-free `91.187978078 GeV` |
-| `M_H` | `P -> alpha_U -> (t_U, t_tr) -> sigma_D11,HT -> M_H` | `125.1995304097179 GeV` | codomaine exact sur `D11LiveForwardExactHiggsPromotion`; ligne publique forward `125.218922060 GeV` |
-
-La frontière locale d'exact-release consiste en `LocalFamiliarUnitReadoutPackage`, `SharedEdgeEntropyBridge`, `StrictClassicalBranchReleaseClause`, `EWTargetFreeRepairChartIdentity_D10` et `D11LiveForwardExactHiggsPromotion`. Le registre détaillé des constantes et statuts se trouve dans [extra/OPH_PHYSICS_CONSTANTS.md](extra/OPH_PHYSICS_CONSTANTS.md).
+Les constantes, chaînes de théorèmes et fronts de preuve encore ouverts pour cette surface sont suivis dans [extra/OPH_PHYSICS_CONSTANTS.md](extra/OPH_PHYSICS_CONSTANTS.md).
 
 **Pile générale des théorèmes et dérivations**
 
@@ -53,7 +43,7 @@ La frontière locale d'exact-release consiste en `LocalFamiliarUnitReadoutPackag
 ### Résultats théorématiques et structurels
 
 - Zéros structurels exacts pour le photon, les gluons et le graviton.
-- Fermeture électrofaible sur la chaîne de calibration D10, avec lignes publiques target-free pour `W/Z` et paire gelée exacte
+- Fermeture électrofaible sur la chaîne de calibration target-free, avec lignes publiques target-free pour `W/Z` et paire gelée exacte
   `W = 80.377 GeV`, `Z = 91.18797809193725 GeV`.
 - Étage quantitatif Higgs/top en aval du coeur électrofaible, avec une graine forward scalaire unique fermée qui porte les lignes publiques
   `H = 125.218922 GeV`, `t = 172.388646 GeV`.
@@ -64,12 +54,12 @@ La frontière locale d'exact-release consiste en `LocalFamiliarUnitReadoutPackag
 | --- | --- | --- |
 | Porteurs structurels | `m_photon = m_gluon = m_graviton = 0` | exactitude structurelle de rang théorème |
 | Sidecar électrofaible | `W = 80.377 GeV`, `Z = 91.18797809193725 GeV` | surface de réparation gelée exacte |
-| Sidecar exact Higgs/top | `(H, t) = (125.1995304097179, 172.3523553288311) GeV` | tranche inverse D11 exacte mais compare-only |
+| Sidecar exact Higgs/top | `(H, t) = (125.1995304097179, 172.3523553288311) GeV` | tranche inverse exacte mais compare-only sur le même Jacobien Higgs/top |
 | Témoin chargé | `(e, mu, tau) = (0.00051099895, 0.1056583755, 1.7769324651340912) GeV` | témoin exact sur une chaîne de lecture quadratique fermée à trois points |
 | Témoin quark | `(u, d, s, c, b, t) = (0.00216, 0.00470, 0.0935, 1.273, 4.183, 172.3523553288311) GeV` | témoin exact sur une chaîne de lecture quadratique fermée à trois points |
 | Branche théorème neutrino | `(m1, m2, m3) = (0.017454720257976796, 0.019481987935919015, 0.05307522145074924) eV` avec `Δm21²`, `Δm31²`, `Δm32²` émis sur la branche à cycle pondéré | famille absolue à cycle pondéré de rang théorème |
 
-Les lignes publiques Higgs/top sont portées par la graine forward D11 scalaire unique fermée. La paire inverse exacte ci-dessus reste un sidecar compare-only sur le même Jacobien et ne remplace pas la branche forward publique.
+Les lignes publiques Higgs/top sont portées par la graine forward scalaire unique fermée. La paire inverse exacte ci-dessus reste un sidecar compare-only sur le même Jacobien et ne remplace pas la branche forward publique.
 
 **Pile de dérivation des particules**
 
@@ -83,7 +73,7 @@ Les lignes publiques Higgs/top sont portées par la graine forward D11 scalaire 
 
 ### Succès de continuation
 
-- La voie de continuation quark émet des lignes publiques pour `u`, `d`, `s`, `c` et `b` sur la feuille D12 sélectionnée.
+- La voie de continuation quark émet des lignes publiques pour `u`, `d`, `s`, `c` et `b` sur la branche de continuation sélectionnée.
 - La branche neutrino à cycle pondéré atteint le régime PMNS et hiérarchie observé avec
   `theta12 = 34.2259°`, `theta23 = 49.7228°`, `theta13 = 8.68636°`, `delta = 305.581°`,
   et `Δm21² / Δm32² = 0.03072111`.
