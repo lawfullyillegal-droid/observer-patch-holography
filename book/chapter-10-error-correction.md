@@ -246,7 +246,7 @@ To summarize:
 
 **Additional lessons**:
 
-1. **Shannon's Channel Capacity**: Perfect reliability is possible below capacity through redundant encoding.
+1. **Shannon's Channel Capacity**: Arbitrarily reliable communication is possible below capacity through redundant encoding.
 
 2. **Quantum Error Correction**: Information spreads across entangled correlations, enabling detection and correction without measuring the data directly.
 

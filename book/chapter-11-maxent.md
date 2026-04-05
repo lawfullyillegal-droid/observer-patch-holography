@@ -56,7 +56,7 @@ What is a modular Hamiltonian? In ordinary quantum mechanics, the Hamiltonian H 
 4. This Hamiltonian generates a flow: sigma_s(A) = e^{iKs} A e^{-iKs}
 5. **The Thermal Time principle**: This flow is proposed as what we experience as time.
 
-Time isn't a coordinate on a manifold. Time is the modular flow of the statistical state.
+On the thermal-time proposal, time is the modular flow of the statistical state rather than a fundamental coordinate on a manifold.
 
 Here is the reframing: **Time flows because we are in a state of incomplete knowledge.** The thermal-time program ties experienced time to state restriction and coarse-graining, rather than treating time as a primitive external parameter.
 
@@ -337,13 +337,13 @@ Recap:
 
 3. **Jaynes**: Entropy measures ignorance. In the Jaynes program, MaxEnt gives the least-biased probability distribution consistent with the stated constraints.
 
-4. **Thermal Time principle**: Time is the modular flow of our statistical state.
+4. **Thermal Time principle**: Time is proposed to arise from the modular flow of our statistical state.
 
-5. **Tomita-Takesaki**: Any algebra-state pair generates its own time evolution.
+5. **Tomita-Takesaki**: In the appropriate algebra-state setting, modular theory generates its own intrinsic time flow.
 
 6. **Jacobson**: Einstein's equations follow from thermodynamics. Gravity is an equation of state.
 
-7. **Complexity**: The growth of wormhole interiors tracks computational complexity. Time flows because the universe is still computing.
+7. **Complexity**: Interior growth has been conjecturally linked to computational complexity. This is a suggestive bridge, not a settled account of time.
 
 8. **Records**: We remember the past because records require entropy flow from a low-entropy origin.
 

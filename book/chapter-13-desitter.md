@@ -187,9 +187,9 @@ The picture so far:
 
 | Intuitive Picture | Surprising Hint | First-Principles Reframing |
 |---|---|---|
-| The universe is static or decelerating; gravity should slow expansion | 1998 supernova observations: the universe is accelerating; positive cosmological constant Lambda | De Sitter horizon is the natural holographic screen; the static patch is the observer's arena; finite entropy and horizon complementarity fit our model perfectly |
+| The universe is static or decelerating; gravity should slow expansion | 1998 supernova observations: the universe is accelerating; positive cosmological constant Lambda | De Sitter horizon is the natural holographic screen; the static patch is the observer's arena; finite entropy and horizon complementarity fit our model naturally |
 
-**The key reverse engineering insight**: We started with the intuition that gravity should slow cosmic expansion. The 1998 supernova observations revealed that the universe is accelerating-pushed apart by a positive cosmological constant. Our model explains why de Sitter space is natural: the cosmological horizon serves as the holographic screen. The static patch is the natural arena for observer physics. The finite entropy, observer-dependent time, and horizon complementarity all fit our observer-centric picture. Far from being a problem, de Sitter space is exactly what we should expect.
+**The key reverse engineering insight**: We started with the intuition that gravity should slow cosmic expansion. The 1998 supernova observations revealed that the universe is accelerating-pushed apart by a positive cosmological constant. Our model explains why de Sitter space is natural: the cosmological horizon serves as the holographic screen. The static patch is the natural arena for observer physics. The finite entropy, observer-dependent time, and horizon complementarity all fit our observer-centric picture naturally. Far from being a problem, de Sitter space is a natural target for the framework.
 
 **Additional lessons**:
 

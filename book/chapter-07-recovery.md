@@ -483,7 +483,7 @@ What we found:
 
 3. **Area Bounds**: Information capacity scales with boundary area, not volume.
 
-4. **Local Recoverability**: The universe is a Markov network. Boundaries screen interiors. Nearby regions carry redundant information. Lost data can be reconstructed.
+4. **Local Recoverability**: In the regimes where the relevant Markov and recovery conditions hold, boundaries screen interiors and lost data can sometimes be reconstructed.
 
 5. **Shannon's Channel Capacity**: Every noisy channel has a capacity below which arbitrarily reliable transmission is achievable through redundant encoding.
 

@@ -272,7 +272,7 @@ Chapter summary:
 |---|---|---|
 | Space is a passive container; the vacuum is empty | The vacuum is entangled across every boundary; entanglement entropy obeys an area law; the Ryu-Takayanagi formula connects entanglement to geometry | Space emerges from entanglement; distance is a measure of shared correlations; cutting entanglement cuts spatial connectivity |
 
-**The key reverse engineering insight**: We started with the intuition that space is a fixed stage-a container for physics. Quantum mechanics showed by revealing that the vacuum is a web of entanglement, that entanglement entropy scales with area not volume, and that this entropy equals the area of minimal surfaces in the bulk. Our model explains why: space is not fundamental. It emerges as the pattern of correlations that enables observers to agree on shared observations. Two regions are "close" when they share many quantum correlations. The Ryu-Takayanagi formula makes this quantitative: geometry encodes entanglement.
+**The key reverse engineering insight**: We started with the intuition that space is a fixed stage-a container for physics. Quantum mechanics showed by revealing that the vacuum is a web of entanglement, that entanglement entropy often scales with area rather than volume, and that in holographic settings this entropy is linked to the area of minimal surfaces in the bulk. Our model explains why: space is not fundamental. It emerges as the pattern of correlations that enables observers to agree on shared observations. Two regions are "close" when they share many quantum correlations. The Ryu-Takayanagi formula makes this quantitative in the holographic regime: geometry encodes entanglement.
 
 **Additional lessons**:
 
@@ -280,9 +280,9 @@ Chapter summary:
 
 2. **Bell's theorem**: Entanglement is real and irreducible. No hidden variables can explain quantum correlations.
 
-3. **Area law**: Entanglement entropy scales with boundary area, not volume-the foundation of holography.
+3. **Area law**: Many low-energy states show entanglement entropy scaling with boundary area rather than volume-a major structural clue behind holography.
 
-4. **Ryu-Takayanagi**: Entanglement entropy equals minimal surface area divided by 4G. Geometry encodes entanglement.
+4. **Ryu-Takayanagi**: In holographic settings, entanglement entropy is given by minimal/extremal surface area divided by 4G. Geometry encodes entanglement.
 
 5. **ER = EPR**: Certain entangled states admit wormhole dual descriptions, and the proposal treats geometry as a language for quantum correlations.
 
