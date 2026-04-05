@@ -55,7 +55,7 @@ Here is the reframing: **The de Sitter horizon is the natural holographic screen
 | Framework Element | De Sitter Property |
 |-------------------|-------------------|
 | Observers have finite patches | The static patch is bounded by horizon |
-| Patch boundary is S squared | The horizon is topologically a 2-sphere |
+| Patch boundary is \(S^2\) | The horizon is topologically a 2-sphere |
 | Finite entropy | Gibbons-Hawking entropy S = A/4G |
 | No "God's eye view" | No observer sees beyond their horizon |
 | Observer equivalence | De Sitter is maximally symmetric |

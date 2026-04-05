@@ -54,7 +54,7 @@ Conservation laws are the simplest form of this agreement. If I measure total en
 
 ## 12.4 Why Symmetry Lives on the Screen
 
-Our fundamental object is the holographic screen S squared. The screen is a sphere. Therefore, the natural symmetry group is **SO(3)**.
+Our fundamental object is the holographic screen \(S^2\). The screen is a sphere. Therefore, the natural symmetry group is **SO(3)**.
 
 This has immediate consequences. Whatever physics lives on the screen must organize itself into **representations** of SO(3)-ways that fields can transform under rotations.
 
@@ -119,7 +119,7 @@ Where do these internal symmetries come from?
 
 ### Extra Dimensions
 
-Maybe the screen is S squared times K, where K is a tiny internal manifold.
+Maybe the screen is \(S^2 \times K\), where K is a tiny internal manifold.
 
 If K is a circle, you get U(1). If K is more complex (like a Calabi-Yau space), you can get non-Abelian groups like SU(3).
 
@@ -205,7 +205,7 @@ Together, these form the **stress-energy tensor**:
 
 $$T^{\mu\nu} = \frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}\partial^\nu\phi - \eta^{\mu\nu}\mathcal{L}$$
 
-This proves mathematically that "stuff" (energy, momentum) is just "geometry" (symmetry) in disguise.
+This is the precise sense in which conserved "stuff" (energy, momentum) is tied to symmetry.
 
 ## 12.11 Testable Predictions and Rigorous Results
 
@@ -227,7 +227,7 @@ The symmetry-consistency model includes both rigorous mathematical results and t
 
 **2. CPT invariance is unbreakable**: CPT symmetry (combined charge-parity-time reversal) must hold in any Lorentz-invariant local quantum field theory. No CPT violation has ever been observed. Precision: tested to 1 part in 10^18 in kaon systems.
 
-**3. Spin-statistics connection**: Particles with integer spin must be bosons; particles with half-integer spin must be fermions. This follows from symmetry under particle exchange. No violation has ever been observed.
+**3. Spin-statistics connection**: In relativistic local quantum field theory, particles with integer spin are bosons and particles with half-integer spin are fermions. No violation has ever been observed.
 
 **Empirical validation signatures**:
 - Violation of any conservation law (energy, momentum, charge)
@@ -250,7 +250,7 @@ Summary:
 
 1. **Noether's Theorem**: Every symmetry corresponds to a conserved quantity. Energy, momentum, charge are all shadows of geometric symmetries.
 
-2. **Representations**: Particles organize into representations of symmetry groups. Spin is quantized because spherical harmonics are labeled by integers.
+2. **Representations**: Particles organize into representations of symmetry groups. Orbital angular modes on the sphere are integer-labeled, while intrinsic spin requires the separate spinor structure.
 
 3. **Spinors**: Half-integer spin exists because quantum mechanics allows projective representations.
 

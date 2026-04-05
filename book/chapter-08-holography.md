@@ -118,9 +118,9 @@ In the mid-1990s, Joseph Polchinski discovered **D-branes**-surfaces where open 
 
 In 1996, Andrew Strominger and Cumrun Vafa counted the microscopic quantum states of certain black holes using D-branes. They compared the state count to the Bekenstein-Hawking formula.
 
-**They matched perfectly.**
+**They matched in that controlled setting.**
 
-The area law wasn't just dimensional analysis. It was counting real quantum states. The information of a black hole really is encoded on a surface.
+The area law wasn't just dimensional analysis. In that supersymmetric class of black holes, it was counting real quantum states. The information of a black hole really is encoded on a surface.
 
 ### Maldacena's Breakthrough
 
