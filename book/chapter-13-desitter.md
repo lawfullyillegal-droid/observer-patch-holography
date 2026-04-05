@@ -169,7 +169,7 @@ $$t_{scrambling} \sim \frac{1}{H}\ln S \sim \frac{280}{H}$$
 
 For our universe, this is about 4 trillion years. Black holes are the standard saturators of the chaos bound in holographic settings, and de Sitter is often discussed as a fast-scrambling horizon with analogous scaling.
 
-The smooth, empty appearance of the de Sitter vacuum is actually maximally scrambled information.
+The smooth, empty appearance of the de Sitter vacuum can be read as highly scrambled information in this perspective.
 
 ## 13.8 The Swampland and Anthropic Selection
 
@@ -205,7 +205,7 @@ The picture so far:
 
 6. **Fast Scrambling**: De Sitter is often discussed as a fast-scrambling horizon with scaling analogous to the black-hole case.
 
-7. **Swampland and Anthropics**: The small value of Lambda is selected anthropically or dynamically determined.
+7. **Swampland and Anthropics**: The small value of Lambda remains open; anthropic and dynamical ideas are both discussed in the literature.
 
 ## 13.10 Dark Sector as a Modular-Anomaly Branch
 
