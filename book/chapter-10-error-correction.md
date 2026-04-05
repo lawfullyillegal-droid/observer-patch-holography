@@ -148,7 +148,7 @@ The answer: after roughly the scrambling time, plus enough outgoing radiation to
 
 Don Page argued that if evaporation is unitary, radiation entropy should rise until Page time, then decrease as later quanta become correlated with earlier ones.
 
-In 2019, the "island formula" showed how to derive this from first principles. After Page time, an **island** appears inside the black hole that is encoded in the radiation. Including the island contribution, radiation entropy decreases exactly as unitarity requires.
+In 2019, the "island formula" showed how to derive this in explicit semiclassical models. After Page time, an **island** appears inside the black hole that is encoded in the radiation. Including the island contribution, radiation entropy follows the expected Page-curve turn and decreases.
 
 This is error correction in action. The black hole is the encoder. Hawking radiation is the noisy output. The island formula says the radiation can encode interior information in a recoverable way, without requiring a literal duplicate copy of an unknown quantum state.
 
@@ -212,7 +212,7 @@ The error correction model includes both rigorous mathematical results and testa
 
 **2. Holographic codes reproduce RT formula**: Tensor network codes with holographic structure exactly reproduce the Ryu-Takayanagi entropy formula. Confirmed in HaPPY code and subsequent constructions.
 
-**3. Bulk reconstruction from boundary**: In holographic systems, erasing part of the boundary doesn't destroy bulk information if the remaining boundary's entanglement wedge contains it. Confirmed in all AdS/CFT calculations.
+**3. Bulk reconstruction from boundary**: In holographic systems, erasing part of the boundary doesn't destroy bulk information if the remaining boundary's entanglement wedge contains it. This is supported across standard AdS/CFT examples and toy-code constructions.
 
 **4. Information preserved in quantum processes**: Unitary quantum evolution preserves information by construction. Experiments then test whether observed quantum processes continue to follow unitary dynamics to high precision.
 

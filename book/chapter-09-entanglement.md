@@ -158,7 +158,7 @@ Break the entanglement and the wormhole collapses. Maintain the entanglement and
 
 In 2017, Gao, Jafferis, and Wall showed that with a small coupling between the two boundaries, the wormhole becomes **traversable**. You can send a message from one side to the other.
 
-The same protocol, in quantum information language, is **quantum teleportation**. Teleportation = sending a signal through a wormhole.
+In the dual setting, the same protocol can be read in quantum-information language as **quantum teleportation** and in bulk language as sending a signal through the wormhole.
 
 ## 9.6 Bit Threads: A Flow Picture
 
@@ -250,13 +250,13 @@ The entanglement-geometry correspondence makes sharp, testable predictions:
 
 **3. Subadditivity and strong subadditivity**: If entanglement = geometry, then entropy inequalities become geometric constraints. Strong subadditivity $S(AB) + S(BC) \geq S(B) + S(ABC)$ constrains which bulk geometries can exist. These inequalities are provably satisfied by any quantum state.
 
-**4. Page curve and islands**: The model predicts that black hole evaporation follows the Page curve: entropy rises then falls. Recent island calculations (2019-2020) confirmed this in explicit models, resolving the information paradox.
+**4. Page curve and islands**: The model predicts that black hole evaporation follows the Page curve: entropy rises then falls. Recent island calculations (2019-2020) reproduced this behavior in explicit models, clarifying the semiclassical side of the information paradox.
 
 **5. Entanglement wedge reconstruction**: Bulk operators in the entanglement wedge can be reconstructed from boundary data. This has been verified in toy models and provides a concrete test of the holographic dictionary.
 
 **Empirical validation signatures**:
 - Violation of the RT formula in any AdS/CFT calculation
-- Ground states with volume-law entanglement
+- Systematic volume-law entanglement in the local ground-state regimes where the area-law argument is supposed to apply
 - Black hole evaporation violating unitarity (information loss)
 - Bulk physics that cannot be reconstructed from boundary entanglement
 

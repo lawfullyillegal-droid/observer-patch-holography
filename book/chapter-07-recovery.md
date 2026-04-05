@@ -373,7 +373,7 @@ Before Page time, no island contributes. Radiation entropy equals naive Hawking 
 
 After Page time, an island appears. The interior of the black hole-the **island**-is encoded in the radiation. Including the island contribution, radiation entropy decreases.
 
-The island formula reproduces the Page curve exactly. Information is preserved. Unitarity survives.
+The island formula reproduces the expected Page-curve behavior in explicit semiclassical models. Information preservation is consistent with the calculation, and unitarity survives.
 
 Alice's diary is physically inside the black hole, but her information is in the radiation cloud outside. Bob, with a sufficiently powerful quantum computer, could run the Petz recovery map and reconstruct the diary from radiation alone.
 
@@ -427,7 +427,7 @@ The recovery model includes both rigorous mathematical results and testable pred
 
 **1. Unitarity is exact**: Quantum evolution preserves information-always. Any genuine information loss would violate the model. No information loss has ever been observed (precision tests in quantum optics, condensed matter).
 
-**2. Black hole information is preserved**: The Page curve-radiation entropy rising then falling-follows from unitarity. Confirmed via island formula calculations (2019-2020). Direct tests await quantum computers capable of simulating black hole evaporation.
+**2. Black hole information is preserved**: The Page curve-radiation entropy rising then falling-follows from unitarity. This is supported by island-formula calculations in explicit models (2019-2020). Direct tests await quantum computers capable of simulating black hole evaporation.
 
 **3. Entanglement wedge reconstruction**: In holographic systems, bulk operators can be reconstructed from any boundary region whose entanglement wedge contains them. Confirmed in all AdS/CFT calculations.
 
