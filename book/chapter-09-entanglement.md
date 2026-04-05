@@ -74,7 +74,7 @@ where c is the central charge and epsilon is a UV cutoff.
 
 In AdS_3, the minimal "surface" is a geodesic-a shortest path through the bulk. Compute its length using the AdS metric. Divide by 4G.
 
-**They match exactly.** Two completely different calculations-one from quantum field theory, one from geometry-give the same answer.
+**With the standard cutoff identification, they match.** Two completely different calculations-one from quantum field theory, one from geometry-give the same answer.
 
 ## 9.4 Bell's Theorem: The Reality of Entanglement
 
@@ -270,7 +270,7 @@ Chapter summary:
 
 | Intuitive Picture | Surprising Hint | First-Principles Reframing |
 |---|---|---|
-| Space is a passive container; the vacuum is empty | The vacuum is entangled across every boundary; entanglement entropy obeys an area law; the Ryu-Takayanagi formula connects entanglement to geometry | Space emerges from entanglement; distance is a measure of shared correlations; cutting entanglement cuts spatial connectivity |
+| Space is a passive container; the vacuum is empty | The vacuum is entangled across boundaries; many low-energy states show area-law entanglement; the Ryu-Takayanagi formula connects entanglement to geometry in holographic settings | Space emerges from entanglement; distance is a measure of shared correlations; cutting entanglement cuts spatial connectivity |
 
 **The key reverse engineering insight**: We started with the intuition that space is a fixed stage-a container for physics. Quantum mechanics showed by revealing that the vacuum is a web of entanglement, that entanglement entropy often scales with area rather than volume, and that in holographic settings this entropy is linked to the area of minimal surfaces in the bulk. Our model explains why: space is not fundamental. It emerges as the pattern of correlations that enables observers to agree on shared observations. Two regions are "close" when they share many quantum correlations. The Ryu-Takayanagi formula makes this quantitative in the holographic regime: geometry encodes entanglement.
 

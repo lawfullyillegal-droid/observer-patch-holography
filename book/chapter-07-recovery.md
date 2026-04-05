@@ -381,7 +381,7 @@ So the black-hole lesson here is best read as a recovery-and-encoding perspectiv
 
 ## 7.11 Spacetime as Error Correction
 
-The black hole resolution points to a deeper truth: spacetime itself is a quantum error-correcting code.
+The black hole resolution points to a deeper truth: spacetime may have the structure of a quantum error-correcting code.
 
 ### Quantum Error Correction
 
@@ -425,9 +425,9 @@ The recovery model includes both rigorous mathematical results and testable pred
 
 **Testable predictions**:
 
-**1. Unitarity is exact**: Quantum evolution preserves information-always. Any genuine information loss would violate the model. No information loss has ever been observed (precision tests in quantum optics, condensed matter).
+**1. Ordinary quantum evolution is unitary**: In standard quantum theory, information-preserving evolution is built into the formalism. Any genuine information loss would violate the model. Experiments continue to test whether observed quantum processes follow unitary dynamics to high precision.
 
-**2. Black hole information is preserved**: The Page curve-radiation entropy rising then falling-follows from unitarity. This is supported by island-formula calculations in explicit models (2019-2020). Direct tests await quantum computers capable of simulating black hole evaporation.
+**2. Black hole information appears preserved in the modern unitarity picture**: The Page curve-radiation entropy rising then falling-follows from unitarity. This is supported by island-formula calculations in explicit models (2019-2020). Direct tests await quantum computers capable of simulating black hole evaporation.
 
 **3. Entanglement wedge reconstruction**: In holographic systems, bulk operators can be reconstructed from any boundary region whose entanglement wedge contains them. Supported by explicit AdS/CFT examples and by holographic code constructions.
 
@@ -445,7 +445,7 @@ None of these contradicting observations has ever been made.
 
 ## 7.13 The Indestructible Past
 
-The recovery rule has a startling implication: nothing is ever truly lost.
+The recovery rule has a startling implication: in this recoverability picture, nothing is ever truly lost.
 
 If the universe is unitary and holographic encoding is robust, information is not simply destroyed; it is redistributed into increasingly nonlocal correlations of the full quantum state.
 
@@ -453,7 +453,7 @@ The Library of Alexandria? The scrolls burned, but the information scrambled int
 
 We already use weak versions of this. Paleontology recovers information about creatures from millions of years ago-from fossils, the degraded remnants of organisms. Astronomy observes light from billions of years ago-information that traveled across the universe to reach our telescopes. The cosmic microwave background is one vivid example of very old information preserved in radiation.
 
-The recovery rule says this is not accident or luck. It's fundamental. The past is encoded in the present, always.
+The recovery rule says this is not accident or luck. It's structural: the past is encoded in the present in increasingly scrambled form.
 
 ### The Structural Constraint
 

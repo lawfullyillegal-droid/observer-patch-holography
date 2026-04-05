@@ -108,7 +108,7 @@ Why was the Big Bang low entropy? Standard physics treats this as an unexplained
 
 The MaxEnt principle says: assign the maximum-entropy state consistent with your constraints. But one constraint is that someone must exist to apply MaxEnt. This rules out equilibrium. The very existence of observers selecting MaxEnt states presupposes a universe far from equilibrium.
 
-This doesn't derive the specific numerical entropy of the Big Bang. But it reframes the question: the Past principle isn't an arbitrary input to be explained by some deeper theory. It's a consistency requirement. A universe containing observers who check for consistency must have started with low entropy. The arrow of time points in the direction that allows records to be made.
+This doesn't derive the specific numerical entropy of the Big Bang. But it reframes the question: the Past principle isn't an arbitrary input to be explained by some deeper theory. It can be read as a consistency requirement. A universe containing observers who check for consistency appears to require a low-entropy beginning. The arrow of time points in the direction that allows records to be made.
 
 ## 11.5 Jaynes: Entropy as Ignorance
 
@@ -186,7 +186,7 @@ $$R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu} = 8\pi G T_{\mu\nu}$$
 
 Jacobson inverted the logic of physics. Usually we think of gravity as fundamental, implying thermodynamic properties for horizons. Jacobson showed the reverse: **if you assume thermodynamics is fundamental, gravity is derived.**
 
-**Gravity is not a fundamental force. Gravity is what happens when the vacuum tries to maintain local thermodynamic equilibrium.**
+**On Jacobson's thermodynamic reading, gravity is not fundamental in the usual force-law sense; it is what local thermodynamic equilibrium looks like geometrically.**
 
 ## 11.8 Complexity and the Growth of Interiors
 
@@ -325,7 +325,7 @@ Recap:
 
 | Intuitive Picture | Surprising Hint | First-Principles Reframing |
 |---|---|---|
-| Time is a fundamental external parameter flowing from past to future | No preferred time in GR; the Wheeler-DeWitt equation \(H\Psi = 0\) points toward a fundamentally timeless description; microscopic laws are largely time-symmetric | Time emerges from modular flow of thermal states; the arrow of time is the direction of increasing entropy, driven by incomplete knowledge |
+| Time is a fundamental external parameter flowing from past to future | No preferred time in GR; the Wheeler-DeWitt equation \(H\Psi = 0\) points toward a fundamentally timeless description; microscopic laws are largely time-symmetric | On the thermal-time proposal, time arises from modular flow of restricted states; the arrow of time is the direction of increasing entropy, driven by incomplete knowledge |
 
 **The key reverse engineering insight**: We started with the intuition that time flows fundamentally, carrying the universe from past to future. General relativity showed that there is no preferred time; different observers slice spacetime differently. Quantum gravity pushed the issue further with the Wheeler-DeWitt equation, pointing toward a fundamentally timeless or "frozen" description. Our model explains how time emerges: through the modular flow of density matrices. Time is what incomplete knowledge looks like. The arrow of time points in the direction of consistency-building, the direction where records can be made and compared.
 
@@ -333,7 +333,7 @@ Recap:
 
 1. **Boltzmann**: Entropy measures the number of microstates compatible with a macrostate. Entropy increases because high-entropy states vastly outnumber low-entropy states.
 
-2. **Past principle**: The arrow of time exists because the Big Bang was a low-entropy state. Our model argues this is not merely an arbitrary input but can be read as a consistency requirement: observers need entropy gradients to form records, so a universe with observers must start far from equilibrium.
+2. **Past principle**: The arrow of time exists because the Big Bang was a low-entropy state. Our model argues this is not merely an arbitrary input but can be read as a consistency requirement: observers need entropy gradients to form records, so a universe with observers appears to require a beginning far from equilibrium.
 
 3. **Jaynes**: Entropy measures ignorance. In the Jaynes program, MaxEnt gives the least-biased probability distribution consistent with the stated constraints.
 
@@ -341,7 +341,7 @@ Recap:
 
 5. **Tomita-Takesaki**: In the appropriate algebra-state setting, modular theory generates its own intrinsic time flow.
 
-6. **Jacobson**: Einstein's equations follow from thermodynamics. Gravity is an equation of state.
+6. **Jacobson**: In Jacobson's framework, Einstein's equations can be derived from thermodynamic assumptions; gravity can be read as equation-of-state-like.
 
 7. **Complexity**: Interior growth has been conjecturally linked to computational complexity. This is a suggestive bridge, not a settled account of time.
 

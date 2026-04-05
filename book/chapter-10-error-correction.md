@@ -210,7 +210,7 @@ The error correction model includes both rigorous mathematical results and testa
 
 **1. Error-corrected qubits outperform physical qubits**: Below threshold, adding redundancy improves reliability. Confirmed experimentally-Google's Willow chip (2024) demonstrated logical error rates decreasing exponentially with code distance.
 
-**2. Holographic codes reproduce RT formula**: Tensor network codes with holographic structure exactly reproduce the Ryu-Takayanagi entropy formula. Confirmed in HaPPY code and subsequent constructions.
+**2. Holographic codes reproduce RT-like entropy formulas**: Tensor-network codes with holographic structure reproduce the expected minimal-cut / area-entropy relation in toy models such as the HaPPY code and related constructions.
 
 **3. Bulk reconstruction from boundary**: In holographic systems, erasing part of the boundary doesn't destroy bulk information if the remaining boundary's entanglement wedge contains it. This is supported across standard AdS/CFT examples and toy-code constructions.
 
@@ -240,9 +240,9 @@ To summarize:
 
 | Intuitive Picture | Surprising Hint | First-Principles Reframing |
 |---|---|---|
-| Information is either fragile (destroyed by noise) or requires copying for protection | No-cloning forbids copying, yet quantum error correction is possible; the Petz recovery map and holographic codes show information can be recovered | Reality is error-corrected; the consistency we observe requires robust encoding; spacetime itself is a quantum error-correcting code |
+| Information is either fragile (destroyed by noise) or requires copying for protection | No-cloning forbids copying, yet quantum error correction is possible; the Petz recovery map and holographic codes show information can be recovered | Reality requires robust encoding; spacetime can be read as quantum-error-correction structure rather than as bare local storage |
 
-**The key reverse engineering insight**: We started with the intuition that protecting information requires either isolation or copying. Quantum mechanics revealed with no-cloning (copying is forbidden) while simultaneously revealing that quantum error correction is possible through entanglement. The discovery that AdS/CFT has the structure of an error-correcting code shows this isn't just an engineering technique-it's fundamental to how spacetime works. Our model explains why: observer consistency requires robust shared information. The universe is built as a code because that's how you maintain stable, consistent facts across many observers in a noisy quantum world.
+**The key reverse engineering insight**: We started with the intuition that protecting information requires either isolation or copying. Quantum mechanics revealed with no-cloning (copying is forbidden) while simultaneously revealing that quantum error correction is possible through entanglement. The discovery that AdS/CFT has the structure of an error-correcting code shows this is not just an engineering technique-it is deeply relevant to how spacetime can be organized. Our model explains why: observer consistency requires robust shared information. The universe can then be read as code-like because that is how stable, consistent facts are maintained across many observers in a noisy quantum world.
 
 **Additional lessons**:
 

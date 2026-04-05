@@ -114,7 +114,7 @@ Leonard Susskind and collaborators proposed **de Sitter complementarity**: opera
 
 Alice describes physics in her patch using her Hilbert space. Bob describes physics in his patch using his Hilbert space. Where their patches overlap, their descriptions must be consistent. In the complementarity reading adopted here, patch-relative descriptions are primary.
 
-This fits perfectly with our model. Reality is a collection of consistent patches. You can't step outside and view the universe from nowhere.
+This fits naturally with our model. Reality is a collection of consistent patches. You can't step outside and view the universe from nowhere.
 
 ## 13.6 Static Patch Holography
 
@@ -155,7 +155,7 @@ We don't predict Lambda. We use the observed Lambda to infer screen capacity. La
 
 ### Many Observers, One Lambda
 
-The philosophical stance of our model-"no objective reality, only subjective perspectives that must agree on overlaps"-maps perfectly onto de Sitter static patch intuition. Each timelike observer has their own horizon, their own patch. There's no operational access to a single global description.
+The philosophical stance of our model-"no objective reality, only subjective perspectives that must agree on overlaps"-maps naturally onto de Sitter static patch intuition. Each timelike observer has their own horizon, their own patch. There's no operational access to a single global description.
 
 But Lambda is the one thing that **can** be shared across overlaps. It's a global capacity constraint that all consistent overlapping descriptions inherit. Different observers see different patches, but they all see the same Lambda-encoded in the finite size of their horizons.
 
@@ -269,7 +269,7 @@ where $g_b$ is the Newtonian acceleration from baryons. For a galaxy, this would
 
 $$V^4 = G \cdot M_b \cdot a_0^{(\text{OPH})}$$
 
-This is the observed Tully-Fisher relation, with the normalization benchmark determined by screen capacity.
+This has the observed Tully-Fisher form, with the normalization benchmark determined by screen capacity in the ansatz.
 
 **No new particles are required at the level of the ansatz.** The "dark matter" would be an effective correction to gravity at large scales, not a new species of particle.
 

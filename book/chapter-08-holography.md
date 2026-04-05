@@ -293,7 +293,7 @@ Under Jacobson's assumptions, requiring thermodynamic consistency for local
 horizons recovers the relationship between matter and geometry. That
 relationship is Einstein's equation.
 
-**Gravity is not a force. It's an equation of state.**
+**On Jacobson's thermodynamic reading, gravity behaves like an equation-of-state output rather than a fundamental force.**
 
 Just as PV = nRT follows from statistical mechanics without knowing molecular details, Einstein's equation can be recovered from horizon thermodynamics without knowing the Planck-scale structure of spacetime.
 
@@ -421,7 +421,7 @@ The pattern:
 
 5. **UV/IR Connection**: Radial position corresponds to energy scale. The bulk geometrizes the renormalization group.
 
-6. **Ryu-Takayanagi**: Entanglement entropy equals minimal surface area. Geometry emerges from information.
+6. **Ryu-Takayanagi**: In holographic settings, entanglement entropy is linked to minimal/extremal surface area. Geometry emerges from information.
 
 7. **HKLL Reconstruction**: Local bulk physics is encoded nonlocally on the boundary-with redundancy enabling recovery.
 
