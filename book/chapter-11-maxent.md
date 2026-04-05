@@ -18,7 +18,7 @@ And yet, nature gave us hints that shattered this picture.
 
 Physics has a scandal.
 
-Almost all our fundamental laws are time-reversible. Newton's F = ma works the same forward and backward. Maxwell's equations are reversible. Schrodinger's equation is reversible. Einstein's General Relativity is reversible.
+Almost all our fundamental laws are time-reversible. Newton's F = ma works the same forward and backward. Maxwell's equations are reversible. Schroedinger's equation is reversible. Einstein's General Relativity is reversible.
 
 Film a planet orbiting a star and play it backward-it looks perfectly physical. But film an egg breaking and play it backward? Absurd.
 
@@ -28,11 +28,11 @@ This is the **Arrow of Time**. Where does it come from? It's not in the microsco
 
 In general relativity, there's no preferred time coordinate. Different observers slice spacetime differently; none is privileged.
 
-The Wheeler-DeWitt equation-the analog of Schrodinger's equation for the universe-is:
+The Wheeler-DeWitt equation-the analog of Schroedinger's equation for the universe-is:
 
 $$H\Psi = 0$$
 
-The Hamiltonian acting on the wavefunction of the universe gives zero. There's no time derivative. The universe, at the fundamental level, is *frozen*.
+The Hamiltonian acting on the wavefunction of the universe gives zero. There is no explicit external time derivative in this formalism, so the universe can look *frozen* at the fundamental level.
 
 This is the **problem of time** in quantum gravity. If the fundamental description has no time, where does time come from?
 
@@ -327,13 +327,13 @@ Recap:
 |---|---|---|
 | Time is a fundamental external parameter flowing from past to future | No preferred time in GR; the Wheeler-DeWitt equation \(H\Psi = 0\) points toward a fundamentally timeless description; microscopic laws are largely time-symmetric | Time emerges from modular flow of thermal states; the arrow of time is the direction of increasing entropy, driven by incomplete knowledge |
 
-**The key reverse engineering insight**: We started with the intuition that time flows fundamentally, carrying the universe from past to future. General relativity showed that there is no preferred time; different observers slice spacetime differently. Quantum gravity shocked us further with the Wheeler-DeWitt equation, showing the universe is fundamentally frozen. Our model explains how time emerges: through the modular flow of density matrices. Time is what incomplete knowledge looks like. The arrow of time points in the direction of consistency-building, the direction where records can be made and compared.
+**The key reverse engineering insight**: We started with the intuition that time flows fundamentally, carrying the universe from past to future. General relativity showed that there is no preferred time; different observers slice spacetime differently. Quantum gravity pushed the issue further with the Wheeler-DeWitt equation, pointing toward a fundamentally timeless or "frozen" description. Our model explains how time emerges: through the modular flow of density matrices. Time is what incomplete knowledge looks like. The arrow of time points in the direction of consistency-building, the direction where records can be made and compared.
 
 **Additional lessons**:
 
 1. **Boltzmann**: Entropy measures the number of microstates compatible with a macrostate. Entropy increases because high-entropy states vastly outnumber low-entropy states.
 
-2. **Past principle**: The arrow of time exists because the Big Bang was a low-entropy state. Our model shows this isn't an arbitrary input; it's a consistency requirement. Observers need entropy gradients to form records, so a universe with observers must start far from equilibrium.
+2. **Past principle**: The arrow of time exists because the Big Bang was a low-entropy state. Our model argues this is not merely an arbitrary input but can be read as a consistency requirement: observers need entropy gradients to form records, so a universe with observers must start far from equilibrium.
 
 3. **Jaynes**: Entropy measures ignorance. In the Jaynes program, MaxEnt gives the least-biased probability distribution consistent with the stated constraints.
 
