@@ -281,7 +281,7 @@ Given a quantum state on a patch, the Tomita-Takesaki theorem says that the stat
 
 ### The Black Hole Information Paradox
 
-The "island formula" says that, after enough evaporation, part of the black-hole interior must be counted as belonging to the radiation's information budget. Information isn't destroyed; it's scrambled into holographic correlations.
+The "island formula" shows that in specific semiclassical holographic models, an island inside the black hole is encoded in the radiation after Page time. This is strong evidence for holographic information encoding, but it is not by itself an OPH evaporation theorem.
 
 ### Anomalies as Loop-Gluing Obstructions
 
@@ -311,19 +311,20 @@ This has been confirmed to essentially exact precision in $\mathbb{Z}_2$ and
 $\mathbb{Z}_3$ models, where the extracted "modular time" $t$ agrees across
 different charge sectors to numerical noise level.
 
-**Peter-Weyl second-index mechanism for β-coefficients.** The MSSM-like beta
-coefficient shifts $\Delta b \approx (2.50, 4.17, 4.00)$ follow from the
-edge-sector heat-kernel distribution using a structural
-argument from the Peter-Weyl decomposition. The key insight: entropy (MaxEnt
-selection) traces over one side of the entanglement cut, giving the factor $d_R$
-in the probability $p_R \propto d_R e^{-t C_2(R)}$. But vacuum polarization loops
-run over both indices of the $V_R \otimes V_R^*$ block, restoring the second $d_R$.
-Therefore the effective multiplicity for RG running is $N_{\text{eff}} = d \cdot p$,
-not just $p$. At $t_U \approx 1.64$, this gives $\Delta b_{\text{edge}} \approx
-(2.49, 4.38, 3.97)$, matching the MSSM target to within 5% with **no fitted
-constants**. This reduces "MSSM-like spectrum" from an external assumption to
-a consequence of Peter-Weyl structure plus the distinction between entropy
-(one index) and vacuum polarization (both indices).
+**Peter-Weyl second-index mechanism for β-coefficients.** A narrower Phase II result:
+the edge-sector heat-kernel branch reproduces MSSM-like one-loop beta coefficient
+shifts only on a declared D10 calibration package consisting of external input $P$,
+the printed running/matching conventions, the printed threshold conventions, and,
+for the near-MSSM benchmark, an added fermionic-grading restriction to half-integer
+SU(2) sectors, using a structural argument from the Peter-Weyl decomposition. The
+key insight: entropy (MaxEnt selection) traces over one side of the entanglement
+cut, giving the factor $d_R$ in the probability $p_R \propto d_R e^{-t C_2(R)}$.
+But vacuum polarization loops run over both indices of the $V_R \otimes V_R^*$ block,
+restoring the second $d_R$. Therefore the effective multiplicity for RG running is
+$N_{\text{eff}} = d \cdot p$, not just $p$. At $t_U \approx 1.64$, this gives
+$\Delta b_{\text{edge}} \approx (2.49, 4.38, 3.97)$, matching the MSSM target to
+within 5% only on that calibration branch. This supports MSSM-like running behavior
+without promoting an MSSM particle spectrum into the recovered core.
 
 The main open directions are:
 
@@ -367,7 +368,7 @@ These predictions have been tested experimentally or computationally:
 | Ryu-Takayanagi formula | AdS/CFT calculations | Confirmed (exact match) |
 | Conservation of energy, momentum, charge | Precision experiments | Confirmed (10^-18) |
 | CPT invariance | Kaon experiments | Confirmed (10^-18) |
-| Page curve for black holes | Island calculations (2019-2020) | Confirmed |
+| Page curve for black holes in semiclassical holographic models | Island calculations (2019-2020) | Confirmed in those models |
 | Strong coupling α_s(m_{Z,\rm run}) ≈ 0.1183 | PDG: 0.1179 | Calibration-sector consistency check |
 | Weak mixing angle sin²θ_W(m_{Z,\rm run}) ≈ 0.2307 | PDG: 0.23122 | Calibration-sector consistency check |
 
