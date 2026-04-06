@@ -22,7 +22,7 @@ OPH places a local unification surface around the calibrated local UV input. The
 
 <p align="center">
   <a href="assets/OPH_Unification_Diagram.svg" target="_blank" rel="noopener noreferrer">
-    <img src="assets/OPH_Unification_Diagram.png" alt="OPH unification diagram" width="92%">
+    <img src="assets/OPH_Unification_Diagram.svg" alt="OPH unification diagram" width="92%">
   </a>
 </p>
 
