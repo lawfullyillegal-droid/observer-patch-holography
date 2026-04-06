@@ -1,0 +1,163 @@
+\section{Formal Measurement / Markov / Born-Luders Ledger}
+\label{app:microphysics-measurement-ledger}
+
+This appendix rehouses the formal measurement-theory block that had been stranded in the former
+technical supplement. It belongs in the microphysics paper because it sharpens the fixed-cutoff
+record interface already used in the main theorem packages above.
+
+\subsection{Records as Central Variables}
+
+\textbf{Definition.} A \emph{record} in patch \(P\) is a family of orthogonal projectors
+\(\{\Pi_r\}\subset\mathcal A(P)\) such that:
+\begin{enumerate}[leftmargin=2em]
+\item \textbf{Classicality:} \(\mathcal R:=\mathrm{vN}(\{\Pi_r\})\) is approximately abelian.
+\item \textbf{Stability:} the \(\Pi_r\) are stable under the effective fixed-cutoff dynamics.
+\item \textbf{Shareability:} each \(\Pi_r\) lies in the center of the relevant overlap algebra.
+\end{enumerate}
+
+\subsection{Markov Structure and Recoverability}
+
+\paragraph{\textbf{Theorem 3.1 (Quantum Markov chain structure on a fixed EC collar).}}
+If \(I(A:C\mid B)=0\) for a tripartite state \(\rho_{ABC}\), then
+\[
+\mathcal H_B
+\cong
+\bigoplus_j
+\left(
+\mathcal H_{b_L^{(j)}}\otimes \mathcal H_{b_R^{(j)}}
+\right)
+\]
+and the state decomposes as
+\[
+\rho_{ABC}
+=
+\bigoplus_j
+q_j\,
+\rho^{(j)}_{A b_L^{(j)}}\otimes \rho^{(j)}_{b_R^{(j)} C}.
+\]
+The label \(j\) is a classical variable living in the center of \(\mathcal A(B)\).
+
+On the fixed finite-dimensional collar Hilbert space supplied by EC, let
+\[
+\mathfrak M_{A:B:C}
+:=
+\left\{
+\sigma_{ABC}: I(A:C\mid B)_\sigma=0
+\right\}
+\]
+and define the exact-Markov distance modulus
+\[
+\delta^{\mathrm M}_{A:B:C}(\varepsilon)
+:=
+\sup\left\{
+\inf_{\sigma\in\mathfrak M_{A:B:C}}\|\rho-\sigma\|_1:
+I(A:C\mid B)_\rho\le\varepsilon
+\right\}.
+\]
+Because the state space is compact and conditional mutual information is continuous in finite
+dimension,
+\[
+\delta^{\mathrm M}_{A:B:C}(\varepsilon)\longrightarrow0
+\qquad
+(\varepsilon\downarrow0).
+\]
+Approximate collars therefore converge to the exact HJPW normal form on one fixed
+finite-dimensional collar model or on a compatible pulled-back family. This appendix does not
+claim a universal dimension-free one-shot trace-norm bound from small \(I(A:C\mid B)\) directly
+to an exact Markov state.
+
+\paragraph{\textbf{Theorem 3.2 (Fawzi--Renner recovery).}}
+If
+\[
+I(A:C\mid B)_\rho\le\varepsilon,
+\]
+then there exists a CPTP map \(\mathcal R:\mathcal A(B)\to\mathcal A(BC)\) such that the
+recovered comparison state
+\[
+\rho^{\mathrm{rec}}_{ABC}
+:=
+(\mathrm{id}_A\otimes\mathcal R)(\rho_{AB})
+\]
+obeys
+\[
+\|\rho_{ABC}-\rho^{\mathrm{rec}}_{ABC}\|_1
+\le
+2\sqrt{1-e^{-\varepsilon}}
+\le
+2\sqrt{\varepsilon}.
+\]
+If \(\varepsilon\) is quoted in bits rather than nats, this bound is equivalently written as
+\(2\sqrt{\ln 2\,\varepsilon}\).
+
+The recovered state is a constructive comparison state and need not be exact Markov. To connect
+approximate recoverability to the exact splice or additivity formulas used later, one combines the
+recovery theorem with the fixed-collar modulus above. Concretely, if
+\(\sigma_\varepsilon\in\mathfrak M_{A:B:C}\) is chosen so that
+\[
+\|\rho-\sigma_\varepsilon\|_1
+\le
+\delta^{\mathrm M}_{A:B:C}(\varepsilon),
+\]
+then every bounded observable supported on the left side of the collar differs from its exact
+Markov splice value by at most
+\[
+\|X\|_\infty\,\delta^{\mathrm M}_{A:B:C}(\varepsilon),
+\]
+and, under uniform faithfulness with lower spectral bound \(\lambda_\ast>0\), the corresponding
+modular-additivity defect differs from the exact Markov value by at most
+\[
+4\lambda_\ast^{-1}\,\delta^{\mathrm M}_{A:B:C}(\varepsilon).
+\]
+So the microphysics paper keeps two distinct errors visible:
+\[
+r_{\mathrm{FR}}(\varepsilon)=O(\varepsilon^{1/2}),
+\qquad
+\delta^{\mathrm M}_{A:B:C}(\varepsilon)\to0.
+\]
+
+\subsection{Definiteness, Born, and Conditioning}
+
+\paragraph{\textbf{Theorem 3.3 (Collapse from EC structure).}}
+Under EC, the post-measurement physical state is exactly a convex mixture over sector labels
+\(\alpha\):
+\[
+\rho=\bigoplus_\alpha p_\alpha\,\rho^{(\alpha)}.
+\]
+For any observer whose accessible observables lie in either side algebra:
+\begin{enumerate}[leftmargin=2em]
+\item there are no interference observables between different \(\alpha\)-blocks; and
+\item each observer-instance has a definite \(\alpha\) in the classical sense.
+\end{enumerate}
+Cross-block operators \(|i\rangle\langle j|\) for \(i\in\alpha\), \(j\in\alpha'\), and
+\(\alpha\neq\alpha'\) are not gauge-invariant and therefore do not belong to the physical algebra.
+
+\paragraph{\textbf{Theorem 3.4 (Gleason).}}
+For \(\dim \mathcal H\ge 3\), any measure \(\mu\) on projectors satisfying:
+\begin{enumerate}[leftmargin=2em]
+\item noncontextuality: \(\mu(P)\) depends only on \(P\);
+\item additivity: \(\mu(P\vee Q)=\mu(P)+\mu(Q)\) for \(P\perp Q\); and
+\item normalization: \(\mu(\mathbf 1)=1\),
+\end{enumerate}
+must have the form
+\[
+\mu(P)=\operatorname{Tr}(\rho P)
+\]
+for some density operator \(\rho\).
+
+\paragraph{\textbf{Corollary 3.5 (Born uniqueness on the fixed-cutoff record surface).}}
+Within OPH's fixed-cutoff type-I regulator presentation, Born's rule is the unique
+overlap-consistent probability assignment on the record algebra.
+
+\paragraph{\textbf{Proposition 3.6 (Luders update).}}
+For record projectors \(\{\Pi_r\}\) and state \(\omega\),
+\[
+p_r=\omega(\Pi_r),
+\qquad
+\omega_r(X)=\frac{\omega(\Pi_r X \Pi_r)}{\omega(\Pi_r)}.
+\]
+Then for all \(X\) commuting with the record algebra \(\mathcal R\),
+\[
+\omega(X)=\sum_r p_r\,\omega_r(X).
+\]
+So collapse on the observer-facing fixed-cutoff surface is simply classical conditioning on the
+commuting record algebra.

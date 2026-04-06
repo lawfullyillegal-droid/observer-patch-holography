@@ -1,0 +1,202 @@
+\section{Cosmology, Horizons, and Modular-Anomaly Continuations}
+\label{app:observers-cosmology-port}
+
+This appendix rehouses the cosmology- and continuation-facing technical statements that had been
+living in the former standalone technical supplement. They do not enlarge the recovered core; they
+make the structural continuation boundary explicit on the live synthesis surface.
+
+\subsection{Cosmological Principle}
+
+\paragraph{\textbf{Lemma 4.1 (MaxEnt symmetry inheritance).}}
+Let \(G\) act on the screen by automorphisms \(\alpha_g\). If the constraint set is
+\(G\)-invariant and von Neumann entropy is \(G\)-invariant, then the MaxEnt optimizer \(\omega\)
+can be taken \(G\)-invariant. If the optimizer is unique, it is automatically \(G\)-invariant.
+
+\paragraph{\textbf{Theorem 4.2 (Isotropy from SO(3)-invariant constraints).}}
+Under SO(3)-invariant constraints and MaxEnt uniqueness, the reference state satisfies
+\[
+\omega\circ\alpha_g=\omega
+\qquad
+\forall g\in \mathrm{SO}(3).
+\]
+The corresponding stress tensor has perfect-fluid form:
+\[
+\langle T_{ab}\rangle=\rho\,u_au_b+p(g_{ab}+u_au_b).
+\]
+
+\paragraph{\textbf{Theorem 4.3 (Schur-type homogeneity).}}
+Let \((\Sigma,h_{ij})\) be a three-dimensional Riemannian manifold. If at every point
+\(p\in\Sigma\), the curvature tensor is SO(3)-invariant, then
+\[
+R_{ijkl}(p)=K(p)(h_{ik}h_{jl}-h_{il}h_{jk}),
+\]
+and the second Bianchi identity forces \(\nabla_m K=0\), so \(K\) is constant.
+
+\paragraph{\textbf{Corollary 4.4.}}
+If OPH supplies isotropy for all observers, spatial geometry is a constant-curvature space form:
+\(S^3\), \(\mathbb R^3\), or \(H^3\).
+
+\paragraph{\textbf{Theorem 4.5 (FLRW emergence).}}
+With the semiclassical Einstein equation from recoverable generalized entropy / entanglement
+equilibrium, a perfect-fluid stress tensor from SO(3)-invariant MaxEnt, and positive \(\Lambda\)
+from finite screen capacity, the emergent geometry is FLRW:
+\[
+ds^2=-dt^2+a(t)^2\left(\frac{dr^2}{1-kr^2}+r^2d\Omega^2\right),
+\]
+with Friedmann equations
+\[
+H^2+\frac{k}{a^2}=\frac{8\pi G}{3}\rho+\frac{\Lambda}{3},
+\qquad
+\dot H-\frac{k}{a^2}=-4\pi G(\rho+p).
+\]
+
+\subsection{Horizon-Problem Control}
+
+\paragraph{\textbf{Theorem 6.1 (Anisotropy bound from Markov control).}}
+For a tripartition \(A\)-\(B\)-\(D\) with collar width \(\delta\), the Markov error satisfies
+\[
+I(A:D\mid B)\lesssim c\cdot |\partial C|_{\mathrm{UV}}\cdot e^{-\delta/\xi},
+\]
+where \(\xi\) is the correlation length.
+
+\paragraph{\textbf{Corollary 6.2.}}
+For bounded observable \(O\) with \(\|O\|\sim1\),
+\[
+|\Delta\langle O\rangle|\le 2\sqrt{\ln 2\cdot \varepsilon}.
+\]
+On the CMB anisotropy target \(\delta T/T\lesssim 10^{-5}\), this gives the familiar
+\(\varepsilon\)-scale bound used in the horizon-problem bookkeeping:
+\[
+\varepsilon\lesssim 3.61\times 10^{-11}\ \text{bits},
+\qquad
+\frac{\delta}{\xi}\gtrsim
+\ln\!\left(\frac{c\cdot |\partial C|_{\mathrm{UV}}}{\varepsilon_{\max}}\right)\approx 24.
+\]
+With \(\xi\approx \sqrt{a_{\mathrm{cell}}}\,\ell_P\approx 1.28\,\ell_P\), the corresponding collar
+benchmark is
+\[
+\delta_{\mathrm{CMB}}\approx 31\,\ell_P.
+\]
+
+\paragraph{\textbf{Theorem 6.3 (Homogeneity as the MaxEnt default).}}
+If MaxEnt constraints are uniform across UV cells with no marked points, the MaxEnt state is
+invariant under triangulation automorphisms. In the continuum limit this gives SO(3) invariance.
+
+\subsection{Black-Hole Structural Core}
+
+The AMPS-style information trilemma assumes:
+\begin{enumerate}[leftmargin=2em]
+\item an outgoing mode \(B\) entangled with an interior partner \(A\) (smooth horizon),
+\item late radiation \(B\) entangled with early radiation \(R\) (unitarity), and
+\item monogamy of entanglement.
+\end{enumerate}
+The false assumption on the OPH branch is the naive tensor factorization
+\[
+\mathcal H \stackrel{?}{=}
+\mathcal H_{\mathrm{inside}}\otimes
+\mathcal H_{\mathrm{outside}}\otimes
+\mathcal H_{\mathrm{radiation}}.
+\]
+
+\paragraph{\textbf{Theorem 7.1 (Edge-center black-hole decomposition).}}
+Under EC, the collar decomposition gives
+\[
+\rho_{A_\delta B_\delta D_\delta}
+=
+\bigoplus_\alpha p_\alpha
+\left(\rho_{A_\delta b_L^\alpha}\otimes \rho_{b_R^\alpha D_\delta}\right).
+\]
+The glue between inside and outside is the edge-sector label \(\alpha\) in the center.
+Conditional on \(\alpha\), inside and outside factorize.
+
+\paragraph{\textbf{Theorem 7.2 (Hawking/KMS normalization).}}
+The outside algebra is in a KMS state at inverse temperature
+\[
+\beta=\frac{2\pi}{\kappa}
+\]
+with respect to the horizon Killing generator. The retained structural claim here is exactly the
+Hawking/KMS normalization together with the edge-center obstruction to naive
+inside/outside factorization and the small-CMI recoverability reading of interior encoding.
+
+When the collar conditional mutual information is small, the interior partner is approximately
+recoverable from outside plus radiation:
+\[
+\left\|
+\rho_{ABC}
+-
+(\mathrm{id}_A\otimes\mathcal R)(\rho_{AB})
+\right\|_1
+\le
+2\sqrt{\ln 2\cdot \varepsilon}.
+\]
+So the interior is encoded rather than supplied by an independent tensor factor.
+
+The same edge-center package carries a discrete area operator
+\[
+L_C=\sum_\alpha (\log d_\alpha)P_\alpha,
+\qquad
+A_\alpha=4G\log d_\alpha=4\ell_P^2\ln d_\alpha,
+\]
+and for a Schwarzschild sector transition \(d\to d'\) one has
+\[
+\Delta E=k_B T_H\ln(d'/d).
+\]
+
+\paragraph{\textbf{Scope boundary.}}
+Integer-transition combs, QNM selectors, linewidth estimates, PBH/LIGO templates, and Page-curve
+or island closure remain outside the structural core on the live synthesis surface.
+
+\subsection{Modular-Anomaly Continuation}
+
+\paragraph{\textbf{Theorem 9.1 (Modular additivity defect).}}
+Define the collar modular additivity defect by
+\[
+\Delta K_\delta:=K_{ABD}-K_{AB}-K_{BD}+K_B.
+\]
+Then
+\[
+\langle \Delta K_\delta\rangle_\omega=-I(A:D\mid B)_\omega.
+\]
+This is the precise structural identity underneath the modular-anomaly dark-sector continuation.
+
+The corresponding continuation packages the anomalous contribution into the modified Einstein
+equation
+\[
+G_{ab}+\Lambda g_{ab}
+=
+8\pi G\left(\langle T_{ab}\rangle+\langle T_{ab}^{\mathrm{anom}}\rangle\right),
+\]
+with rest-frame normalization
+\[
+\langle T_{00}^{\mathrm{anom}}\rangle
+:=
+\frac{15}{8\pi^2}\,
+\frac{\delta\langle K_C^{\mathrm{anom}}\rangle}{\ell^4}.
+\]
+On that continuation surface the anomaly gravitates, is dark by construction, is covariantly
+conserved, and is effectively classical because it is organized by central/recoverability data.
+
+If one tentatively identifies the imported D6 de Sitter scale as the unique IR scale available to
+the continuation, the natural benchmark acceleration is
+\[
+a_0^{(\mathrm{OPH})}
+:=
+\frac{15}{8\pi^2}c^2\sqrt{\frac{\Lambda}{3}}
+=
+\frac{15}{8\pi^2}\frac{c^2}{r_{dS}}
+\approx
+1.03\times 10^{-10}\ \mathrm{m/s^2},
+\]
+close to the empirical MOND scale. An illustrative MOND/RAR-style response would read
+\[
+g_{\mathrm{obs}}\approx g_b+\sqrt{a_0 g_b},
+\]
+but that functional form is not derived from the OPH axioms.
+
+\paragraph{\textbf{Reading rule.}}
+The anomaly term gravitates, is dark by construction, and is covariantly conserved, but the live
+synthesis surface does not promote any MOND/RAR-style law, galaxy-rotation template, or cluster
+phenomenology to theorem status. The missing inputs are the controlled nonrelativistic limit, a
+derived source/response law, lensing and cluster phenomenology, cosmological abundance and
+structure-formation checks, and environment/stability bounds. Those remain continuation-level
+branches above the identity written here.

@@ -1,0 +1,111 @@
+\section{D10 Heat-Kernel Calibration Supplement}
+\label{app:particle-d10-heat-kernel}
+
+This appendix rehouses the formal D10 heat-kernel items from the former technical supplement. They
+belong in the particle paper because they are the theorem-facing mathematical core beneath the
+electroweak calibration branch, while the public D10 status remains explicitly Phase II rather
+than recovered-core Phase I.
+
+\subsection{One-Loop Calibration Frame}
+
+At one loop, if couplings unify at \((M_U,\alpha_U)\),
+\[
+\alpha_i^{-1}(M_Z)=\alpha_U^{-1}+\frac{b_i}{2\pi}\ln\frac{M_U}{M_Z}.
+\]
+Writing \(A_i:=\alpha_i^{-1}(M_Z)\) and \(L:=\ln(M_U/M_Z)\), one finds
+\[
+L=\frac{2\pi}{b_1-b_2}(A_1-A_2),
+\]
+and the corresponding consistency relation for the D10 lane is
+\[
+A_3^{\mathrm{pred}}
+=
+\frac{b_3-b_2}{b_1-b_2}A_1
++
+\frac{b_1-b_3}{b_1-b_2}A_2.
+\]
+This appendix keeps that algebra on the page as a calibration relation, not as a theorem that OPH
+has derived a supersymmetric UV spectrum.
+
+\subsection{Benchmark coefficient comparison}
+
+For the standard one-loop benchmark coefficients,
+\[
+\begin{array}{c|c|c}
+\text{Model} & (b_1,b_2,b_3) & \alpha_s(M_Z)^{\mathrm{pred}} \\
+\hline
+\text{SM} & (41/10,-19/6,-7) & \approx 0.071 \\
+\text{MSSM} & (33/5,1,-3) & \approx 0.116 \\
+\text{Observed} & & 0.1179\pm 0.0010
+\end{array}
+\]
+At one loop, the printed MSSM-style coefficients reproduce the observed closure far better than
+the plain SM coefficients. On the OPH lane this remains a benchmark matched by the D10
+calibration branch, not a theorem that OPH has already derived a supersymmetric UV spectrum.
+
+\subsection{Heat-Kernel Sector Law}
+
+\begin{theorem}[Heat-kernel edge-sector weights]
+Under MaxEnt with bi-invariant constraints on a compact Lie group \(G\), the sector probabilities
+take heat-kernel form:
+\[
+p_R(t)\propto d_R\,e^{-tC_2(R)},
+\]
+where \(d_R=\dim R\) and \(C_2(R)\) is the quadratic Casimir.
+\end{theorem}
+
+\begin{lemma}[Bi-invariant operators]
+If \(G=\prod_i G_i\) is a compact semisimple Lie group written as a product of compact simple
+factors, then any bi-invariant second-order differential operator on \(G\) has the form
+\[
+D=c_0\mathbf 1-\sum_i c_i\Delta_{G_i},
+\]
+where \(\Delta_{G_i}\) is the Laplace--Beltrami operator on the factor \(G_i\).
+\end{lemma}
+
+\begin{remark}
+Bi-invariance is equivalent to \(D\in Z(U(\mathfrak g))\). Linear terms vanish because there are
+no invariant vectors in the adjoint representation, and the quadratic part is proportional to the
+Killing form on each simple factor, giving one independent coefficient per factor. The Casimir
+element then acts as \(-\Delta_G\) in the regular representation.
+\end{remark}
+
+\subsection{Peter--Weyl Multiplicity and Beta Shifts}
+
+By Peter--Weyl decomposition, the effective refinement-limit edge representation space is
+\[
+L^2(G)\cong \bigoplus_R V_R\otimes V_R^*.
+\]
+Entanglement traces over one factor give multiplicity \(d_R\) in \(p_R\), but loops see both
+factors, so the effective multiplicity entering the calibration branch is
+\[
+N_{\mathrm{eff}}(R)=d_R\,p_R.
+\]
+The one-loop beta shift from edge sectors is then
+\[
+\Delta b_a=\sum_R p_R\,d_R\,T_a(R),
+\]
+where \(T_a(R)\) is the Dynkin index for gauge factor \(a\). This is the exact mathematical point
+on the D10 lane where edge-sector heat-kernel weights feed the calibration branch. Matching to
+MSSM-like one-loop running remains a declared Phase II benchmark, not a promoted theorem-level
+MSSM spectrum claim.
+
+At the unification diffusion parameter \(t_U\approx 1.64\), the benchmark shift is
+\[
+\Delta b\approx (2.49,4.38,3.97)
+\qquad
+\text{vs MSSM}
+\qquad
+(2.50,4.17,4.00).
+\]
+With the additional D10 calibration assumption of a fermionic-grading restriction to
+half-integer \(\mathrm{SU}(2)\) sectors, this sharpens to
+\[
+\Delta b\approx (2.50,4.17,3.97),
+\]
+which matches the MSSM-style one-loop benchmark at the percent level under that declared
+calibration package. Equivalently, the benchmark ratio
+\[
+\frac{\Delta b_3}{\Delta b_2}\approx 0.91
+\]
+sits close to the MSSM comparison value \(0.96\).
