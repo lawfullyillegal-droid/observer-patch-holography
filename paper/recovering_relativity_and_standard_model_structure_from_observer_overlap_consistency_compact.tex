@@ -114,7 +114,7 @@ Node & Output & Immediate OPH ingredients & Standard mathematics used & Extra no
 \textbf{D7} & Compact gauge reconstruction (Theorem~\ref{thm:compactgauge}) & Axioms~\ref{ax:screen}--\ref{ax:entropy} & Doplicher--Roberts / Tannaka reconstruction & Assumption~\ref{ass:gaugeprem} on the ordinary or central-defect bosonic branch; the genuinely noncentral fixed-cutoff branch is handled separately by Theorems~\ref{thm:hgdatum}--\ref{thm:hgtransport} and is not itself the ordinary compact-group reconstruction theorem & Phase I conditional structural theorem \\
 \textbf{D8} & Product gauge structure up to finite quotient (Lemmas~\ref{lem:mincontent}--\ref{lem:commutant}, Theorem~\ref{thm:sm}) & D7 + Axiom~\ref{ax:mar} & compact Lie representation classification; Schur's lemma & the same ordinary or central-defect bosonic branch as D7, together with a connected positive-dimensional Lie admissible class, one connected abelian factor, and faithful action on the minimal coupled carrier & Phase I realized-branch theorem \\
 \textbf{D9} & Realized Standard Model quotient, hypercharges, the counting chain \(N_g=3\) then \(N_c=3\), and product-group corollaries (Theorem~\ref{thm:hypercharge}, Corollaries~\ref{cor:ng}, \ref{cor:nc}, Proposition~\ref{prop:z6}) & D8 & anomaly-cancellation algebra; Witten global-anomaly argument; CKM CP counting & realized one-generation chiral matter plus one Higgs package; asymptotic-freedom and MAR admissibility premises & Phase I realized-branch theorem/corollary chain \\
-\textbf{D10} & Gauge-coupling numerical closure of the integrated D10 calibration package & D9 + external input \(P\) & printed RG evolution and matching conventions & pixel constraint; the fixed-cutoff edge heat-kernel / Casimir theorem on the microphysics surface together with the compact-group / Peter--Weyl lift used on the D10 lane; printed beta-function and threshold conventions & Phase II calibration sector \\
+\textbf{D10} & Gauge-coupling numerical closure of the integrated D10 calibration package & D9 + external input \(P\) & printed RG evolution and matching conventions & pixel constraint and the source-only forward transmutation solve \(\mathcal F(\alpha_U;P)=0\); the fixed-cutoff edge heat-kernel / Casimir theorem on the microphysics surface together with the compact-group / Peter--Weyl lift used on the D10 lane; printed beta-function and threshold conventions & Phase II calibration sector \\
 \textbf{D12} & Charged-lepton/Koide, texture, dark-sector, baryogenesis, black-hole spectroscopy, proton-spin, proton-lifetime estimates beyond the gauge-channel exclusion, conditional string/worldsheet reorganizations, conjectural critical-superstring extensions, and other continuations & various subsets of D6, D9, and D10 & branch-specific EFT and phenomenological manipulations & additional ans\"atze such as the uniform \(\mathbb Z_6\) center-label ensemble, discrete texture choices, dark-sector response assumptions, discrete-horizon assumptions, or extra worldsheet/CFT premises & Phase III phenomenological continuation branch \\
 \end{longtable}
 \endgroup
@@ -267,7 +267,7 @@ Node & Theorem labels and output & Immediate OPH ingredients & Standard mathemat
 \textbf{D7} & Theorem~\ref{thm:compactgauge}: compact gauge reconstruction & Axioms~\ref{ax:screen}--\ref{ax:entropy} & Doplicher--Roberts / Tannaka reconstruction & Assumption~\ref{ass:gaugeprem} on the ordinary or central-defect bosonic branch; the genuinely noncentral fixed-cutoff branch is handled separately by Theorems~\ref{thm:hgdatum}--\ref{thm:hgtransport} and is not itself the ordinary compact-group reconstruction theorem & conditional structural theorem \\
 \textbf{D8} & Lemmas~\ref{lem:mincontent}--\ref{lem:commutant}, Theorem~\ref{thm:sm}: product gauge structure up to finite quotient & D7 + Axiom~\ref{ax:mar} & compact Lie representation classification; Schur's lemma & the same ordinary or central-defect bosonic branch as D7, together with a connected positive-dimensional Lie admissible class, one connected abelian factor, and faithful action on the minimal coupled carrier & realized-branch theorem \\
 \textbf{D9} & Theorem~\ref{thm:hypercharge}, Corollaries~\ref{cor:ng}, \ref{cor:nc}, Proposition~\ref{prop:z6}: realized Standard Model quotient, hypercharges, the counting chain \(N_g=3\) then \(N_c=3\), and product-group corollaries & D8 & anomaly-cancellation algebra; Witten global-anomaly argument; CKM CP counting & realized one-generation chiral matter plus one Higgs package; asymptotic-freedom and MAR admissibility premises & realized-branch theorem/corollary chain \\
-\textbf{D10} & gauge-coupling numerical closure of Section~7 & D9 + external input \(P\) & printed RG evolution and matching conventions & pixel constraint; the fixed-cutoff edge heat-kernel / Casimir theorem on the microphysics surface together with the compact-group / Peter--Weyl lift used on the D10 lane; printed beta-function and threshold conventions & calibration sector \\
+\textbf{D10} & gauge-coupling numerical closure of Section~7 & D9 + external input \(P\) & printed RG evolution and matching conventions & pixel constraint and the source-only forward transmutation solve \(\mathcal F(\alpha_U;P)=0\); the fixed-cutoff edge heat-kernel / Casimir theorem on the microphysics surface together with the compact-group / Peter--Weyl lift used on the D10 lane; printed beta-function and threshold conventions & calibration sector \\
 \textbf{D12} & Sections~8--10 continuations:\newline charged leptons,\newline proton spin/lifetime,\newline and string/worldsheet branches & various subsets of D6, D9, and D10 & branch-specific EFT\newline and phenomeno\-logical\newline manipulations & additional ans\"atze such as the uniform\newline \(\mathbb Z_6\) center-label ensemble, texture choices,\newline dark-sector response assumptions,\newline discrete-horizon assumptions, or extra\newline worldsheet/CFT premises & phenomeno\-logical\newline continuation \\
 \end{longtable}
 \endgroup
@@ -2688,6 +2688,8 @@ P
 \longmapsto
 \alpha_U(P)
 \longmapsto
+\bigl(t_U(P),t_{\mathrm{tr}}(P)\bigr)
+\longmapsto
 \bigl(t_2(P),t_3(P),v(P)\bigr)
 \longmapsto
 \alpha_i(\mu_\ast;P).
@@ -2700,7 +2702,7 @@ constraint above it. The remaining open burden is refinement-stable universality
 that lift and the scalar-root control of the printed D10 solve, not the existence of the
 finite-cutoff Casimir branch itself.
 Measured electroweak quantities are not used to infer the internal transmutation parameters. They enter only at the end as compare-only validation targets for the printed D10 running/matching package.
-The forward transmutation certificate on the live D10 lane makes that logical order explicit: the source-only basis reconstructs the same \(\alpha_U(P)\), unified diffusion parameter
+The forward transmutation certificate on the live D10 lane makes that logical order explicit: the source-only basis reconstructs the same \(\alpha_U(P)\), hence the same unified diffusion parameter
 \[
 t_U(P)=4\pi^2\alpha_U(P),
 \]
@@ -2708,7 +2710,9 @@ and transmutation exponent
 \[
 t_{\mathrm{tr}}(P)=\frac{2\pi}{(N_c+1)\alpha_U(P)}
 \]
-as the pixel-closure solve itself. It also separates the paper-side transmutation factor \(\beta_{\mathrm{transmutation,EW}}=N_c+1\) from the overloaded compare-only validation ratio that appears on older diagnostic readouts.
+as the pixel-closure solve itself. Here the paper-side transmutation factor is the same
+\(\beta_{\mathrm{EW}}=N_c+1\) used below; older overloaded \(\beta\)-ratios are compare-only
+diagnostic readouts and are not part of the theorem contract.
 
 The scales fixed directly from \(P\) are
 \[
@@ -2768,13 +2772,22 @@ The printed D10 package takes \(\alpha_U(P)\) to be the branch value selected by
 \]
 Only after that forward solve are the internal transmutation parameters fixed:
 \[
+t_U(P):=4\pi^2\alpha_U(P),
+\qquad
+t_{\mathrm{tr}}(P):=\frac{2\pi}{(N_c+1)\alpha_U(P)},
+\]
+and with them the downstream scale data
+\[
 t_2(P):=t_2(\alpha_U(P),P),
 \qquad
 t_3(P):=t_3(\alpha_U(P),P),
 \qquad
 v(P):=v(\alpha_U(P),P).
 \]
-Thus the branch runs from OPH input \(P\) to the internal \(t_i\) and only then to the low-energy couplings. It does not use measured \(\alpha_i(m_Z)\) to infer \(t_i\).
+Thus the branch runs from OPH input \(P\) to the internal transmutation data
+\((t_U(P),t_{\mathrm{tr}}(P))\), then to the downstream local scale data
+\((t_2(P),t_3(P),v(P))\), and only then to the low-energy couplings. It does not use measured
+\(\alpha_i(m_Z)\) to infer those internal \(t\)-parameters.
 
 Every quoted D10 electroweak number is downstream of this forward map. In particular, \(\alpha_{\mathrm{em}}^{-1}(m_Z)\), \(\sin^2\theta_W(m_Z)\), \(m_W\), and the stage-3 \(m_Z\) readout are compare-only consequences of the chosen D10 running/matching package. Their numerical agreement with observation therefore validates the printed implementation only in the calibration-sector sense recorded in the premise ledger. What remains outside theorem level is a general existence/uniqueness or monotonicity proof for the scalar root selected by the printed D10 package under arbitrary convention changes.
 
@@ -2852,7 +2865,7 @@ Tier & Representative outputs & What would actually falsify the tier \\
 \endfoot
 Phase I recovered core (Theorem~\ref{thm:master}; D1--D5, D7--D9) & Confluence of overlap repair, conditional Lorentz kinematics, the conditional Jacobson-type Einstein branch in the stated scaling regime, compact gauge reconstruction in the bosonic branch, the realized Standard Model quotient chain, the exact hypercharge lattice on the realized matter package, the realized counting chain \(N_g=3\) then \(N_c=3\), and the product-group consequence of no gauge-mediated proton decay & A mathematical failure in the derivation chain, or data that require a different realized gauge quotient, different realized hypercharges, a different color or generation count on the admissible branch, or gauge-mediated proton decay \\
 Phase II input-dependent corollary (D6) & \(\Lambda=\frac{3\pi}{G N_{\mathrm{scr}}}\) once the screen-capacity identification is made, together with the separate order-of-magnitude neutrino estimate tied to the same capacity input & Failure of the screen-capacity identification or of the specific global capacity relation. Such a failure would not by itself erase the recovered core \\
-Phase II calibration sector (D10) & Pixel-closure gauge-coupling consistency, \(\alpha_i(m_Z)\), \(\alpha_{\mathrm{em}}^{-1}(m_Z)\), \(\sin^2\theta_W(m_Z)\), and the target-free source-only electroweak quintet \((W,Z,\alpha_{\mathrm{em}}^{-1},\sin^2\theta_W,v)\) on the D10 calibration branch & Failure of the integrated calibration closure once \(P\) and the printed running/matching conventions are imposed \\
+Phase II calibration sector (D10) & forward transmutation data \(\alpha_U(P)\), \(t_U(P)\), \(t_{\mathrm{tr}}(P)\), pixel-closure gauge-coupling consistency, \(\alpha_i(m_Z)\), \(\alpha_{\mathrm{em}}^{-1}(m_Z)\), \(\sin^2\theta_W(m_Z)\), and the target-free source-only electroweak quintet \((W,Z,\alpha_{\mathrm{em}}^{-1},\sin^2\theta_W,v)\) on the D10 calibration branch & Failure of the integrated calibration closure once \(P\) and the printed running/matching conventions are imposed \\
 Phase III phenomenological continuations (D12 and beyond) & Flavor ans\"atze, charged-lepton/Koide fits, texture branches, neutrino mass/mixing constructions beyond the D6 estimate, dark-sector response laws, baryogenesis estimates, proton-spin bookkeeping, proton-lifetime estimates beyond the gauge-channel exclusion, black-hole spectroscopy templates, conditional string/worldsheet reorganizations, conjectural critical-superstring extensions, and other downstream phenomenology & Retraction of the corresponding continuation only. These branches are not part of the recovered core and their failure is not, by itself, a falsification of relativity-plus-Standard-Model recovery \\
 \end{longtable}
 \endgroup
@@ -2915,7 +2928,7 @@ These are all post-Phase-I, non-core branches. Some are Phase-II input-dependent
 
 \subsection{\texorpdfstring{Is the use of $P$ circular?}{Is the use of P circular?}}
 
-The pixel area \(P\) calibrates the separate gauge-coupling sector used here, and the circular step that read the internal D10 transmutation parameter back from measured low-energy couplings is omitted from this paper's presentation. Within the printed D10 implementation, \(P\) first fixes \(M_U(P)\) and \(E_{\mathrm{cell}}(P)\), then a one-dimensional pixel-closure solve fixes \(\alpha_U(P)\), and only then do \(t_2(P)\), \(t_3(P)\), \(v(P)\), and the running electroweak outputs appear. Quantities algebraically entangled with that calibration are compare-only consistency checks for that implementation and do not belong to the recovered-core claim set.
+The pixel area \(P\) calibrates the separate gauge-coupling sector used here, and the circular step that read the internal D10 transmutation parameter back from measured low-energy couplings is omitted from this paper's presentation. Within the printed D10 implementation, \(P\) first fixes \(M_U(P)\) and \(E_{\mathrm{cell}}(P)\), then a one-dimensional pixel-closure solve fixes \(\alpha_U(P)\), equivalently the internal transmutation data \(t_U(P)\) and \(t_{\mathrm{tr}}(P)\), and only then do \(t_2(P)\), \(t_3(P)\), \(v(P)\), and the running electroweak outputs appear. Quantities algebraically entangled with that calibration are compare-only consistency checks for that implementation and do not belong to the recovered-core claim set.
 
 Operationally, changing \(P\) moves the calibration family \((\alpha_U,\alpha_i(m_Z),\sin^2\theta_W(m_Z))\) through that forward solve. It does not alter the parameter-free structural outputs such as the gauge quotient or hypercharge lattice. Downstream matter-sector continuations, including Koide-style relations, remain outside this SM/GR derivation paper's recovered-core theorem package.
 
@@ -3572,14 +3585,15 @@ Taken together with the exact \(W/Z\) frozen repair pair, the closed Higgs/top f
 The local quantitative bridge can be stated without inflating the recovered-core claim. On the
 bosonic side, the calibrated pixel input \(P\) fixes the D10/D11 trunk
 \[
-P\longmapsto \alpha_U \longmapsto (t_U,t_{\mathrm{tr}})\longmapsto v,
+P\longmapsto \alpha_U(P) \longmapsto \bigl(t_U(P),t_{\mathrm{tr}}(P)\bigr)\longmapsto v(P),
 \]
 after which the D10 source basis emits the public electroweak pair and the D11 forward seed
 \[
 \sigma_{D11,\mathrm{HT}}
 =
-\alpha_U\cos(2\theta_{W0})/\sqrt{\pi}
+\alpha_U(P)\cos(2\theta_{W0})/\sqrt{\pi}
 \]
+with no inverse readback of the internal transmutation data from measured low-energy couplings.
 emits the Higgs/top branch. On the gravity side, the same D10 pixel law packages
 \[
 \ellbar_{\mathrm{SU(2)}}(t_{2,\mathrm{run}})
